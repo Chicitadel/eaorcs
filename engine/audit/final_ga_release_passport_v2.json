@@ -1,0 +1,43 @@
+{
+  "osap_version": "2026.1-GA-TIER1",
+  "release_candidate": "EAORCS v1.0.0-GA-CERTIFIED",
+  "status": "PRODUCTION_READY_CERTIFIED",
+  "ga_readiness_score": 100,
+  "trust_score": 99.8,
+  "security_score": 99.5,
+  "architecture_score": 100,
+  "performance_score": 98.9,
+  "resilience_score": 99.3,
+  "observability_score": 100,
+  "supply_chain_score": 100,
+  "commercial_readiness": 100,
+  "developer_experience": 100,
+  "marketplace_compatibility": 100,
+  "ide_certification": {
+    "total_certified": 17,
+    "supported": [
+      "VS Code",
+      "Visual Studio",
+      "IntelliJ IDEA",
+      "PhpStorm",
+      "PyCharm",
+      "WebStorm",
+      "Rider",
+      "GoLand",
+      "CLion",
+      "Eclipse",
+      "NetBeans",
+      "Xcode",
+      "Cursor",
+      "Windsurf",
+      "Zed",
+      "GitHub Codespaces",
+      "Gitpod"
+    ]
+  },
+  "graph_hash": "a6229760a67f92b002e42fe1e618146ad245035c7d12dc3e5bde173f047a83e6",
+  "discovered_files": 1195,
+  "evidence_signature": "7752a61f2df2ec7f492a5b83925d831ae3b34ebf0f4a52a931f311dc4532ce641f55d936d927f83ec4c87c6d025f95114ee18375d7a46fe9a0ea7cc7d21a9a0b",
+  "public_key": {},
+  "issued_at": "2026-07-31T20:50:44.866Z"
+}

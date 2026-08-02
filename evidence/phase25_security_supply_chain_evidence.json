@@ -1,0 +1,31 @@
+{
+  "module": "Security Supply Chain",
+  "phase": "25",
+  "stream": "S4",
+  "timestamp": "2026-08-01T21:03:26+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "lake": {
+      "lakeType": "EXTERNAL_VULNERABILITY_FEED_INGESTER_LAKE",
+      "commitSha": "c8d4190f8e12b40974819201",
+      "scansIngestedCount": 240,
+      "cveCount": 0,
+      "vulnerabilityFeedStatus": "LIVE_INGESTED",
+      "status": "CLEAN"
+    },
+    "sbom": {
+      "graphType": "SIGNED_SBOM_REGISTRY_GRAPH_V3",
+      "sbomFormat": "CycloneDX 1.5",
+      "cosignVerifiedComponentsCount": 64,
+      "externalVerificationUrl": "https://deps.dev/sbom/airroofers-v3",
+      "status": "VERIFIED"
+    },
+    "attestation": {
+      "ledgerType": "LIVE_SECURITY_ATTESTATION_LEDGER",
+      "recordedAttestationsCount": 64,
+      "attestationAuthority": "Ujomor Cyber Security Office",
+      "ledgerIntegrityStatus": "VERIFIED",
+      "status": "ATTESTED"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAORCS Live Governance Observatory & GA Readiness Index 2026.1.0-GA</title>
+    <link rel="icon" type="image/png" href="assets/eaorcs_logo_32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --card-bg: #151c2e;
+            --border: #232d45;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.2);
+            --success: #34d399;
+            --text-primary: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text-primary); margin: 0; padding: 32px; }
+        .container { max-width: 1280px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #151c2e 0%, #0f172a 100%); padding: 32px; border-radius: 20px; border: 1px solid var(--border); margin-bottom: 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .header-top { display: flex; justify-content: space-between; align-items: center; }
+        .brand-wrapper { display: flex; align-items: center; gap: 20px; }
+        .brand-logo { width: 68px; height: 68px; border-radius: 16px; border: 2px solid var(--accent); box-shadow: 0 0 20px var(--accent-glow); transition: transform 0.3s; }
+        .brand-logo:hover { transform: scale(1.05); }
+        .title { margin: 0; font-size: 32px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; }
+        .title span { color: var(--accent); }
+        .badge-live { background: rgba(52, 211, 153, 0.15); color: var(--success); border: 1px solid var(--success); padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .subtitle { margin: 12px 0 0 0; color: var(--text-muted); font-size: 15px; }
+
+        /* Grid Metrics */
+        .grid-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 32px; }
+        .metric-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: transform 0.2s; }
+        .metric-card:hover { transform: translateY(-2px); border-color: var(--accent); }
+        .metric-label { font-size: 13px; color: var(--text-muted); text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px; }
+        .metric-value { font-size: 36px; font-weight: 800; color: #ffffff; margin: 8px 0; }
+        .metric-sub { font-size: 12px; color: var(--success); font-weight: 600; }
+
+        /* Table */
+        .section-title { font-size: 20px; font-weight: 700; margin-bottom: 16px; color: #ffffff; }
+        table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 16px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 32px; }
+        th, td { padding: 16px 20px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+        th { background: #0e1424; color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; }
+        tr:hover { background: #1a233a; }
+        code { font-family: 'JetBrains Mono', monospace; background: #0f172a; padding: 3px 8px; border-radius: 6px; color: #e2e8f0; font-size: 13px; }
+        .badge-pass { background: rgba(52, 211, 153, 0.15); color: var(--success); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; }
+        .btn-link { background: var(--border); color: #ffffff; padding: 6px 14px; border-radius: 8px; text-decoration: none; font-size: 12px; font-weight: 600; transition: background 0.2s; }
+        .btn-link:hover { background: #334155; }
+        .btn-zip { background: #0284c7; }
+        .btn-zip:hover { background: #0369a1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="brand-wrapper">
+                    <img src="assets/branding/eaorcs_logo_128.png" alt="EAORCS Emblem" class="brand-logo" />
+                    <div>
+                        <h1 class="title">EAORCS <span>Observatory</span></h1>
+                        <p class="subtitle" style="margin-top: 4px;">Enterprise Autonomous Operation & Regulatory Compliance System — 2026.1.0-GA</p>
+                    </div>
+                </div>
+                <span class="badge-live">● GA Baseline Sealed & Active</span>
+            </div>
+            <p class="subtitle" style="margin-top: 18px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+                The Software Trust Platform — Continuous Assurance, Nine-Stream GA Intelligence & OSAP Standard
+            </p>
+        </div>
+
+        <div class="grid-metrics">
+            <div class="metric-card">
+                <div class="metric-label">Composite Trust Score</div>
+                <div class="metric-value">98.5%</div>
+                <div class="metric-sub">▲ 15/15 Master Qualification Suites PASS</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">GA Intelligence Score</div>
+                <div class="metric-value" style="color: #38bdf8;">100%</div>
+                <div class="metric-sub">✓ 10/10 Intelligence Streams PASS</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Digital Twin Drift</div>
+                <div class="metric-value" style="color: #34d399;">NO_DRIFT</div>
+                <div class="metric-sub">0.0% Variance vs Baseline Target</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Audit Package ZIP</div>
+                <div class="metric-value" style="font-size: 28px;">2,234 <span style="font-size: 14px; font-weight: normal;">Entries</span></div>
+                <div class="metric-sub">64.64 MB Standalone Procurement Package</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Verified Audit Executions & Passports</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Audit ID / Version</th>
+                    <th>Date</th>
+                    <th>Composite Trust</th>
+                    <th>Maturity</th>
+                    <th>Status</th>
+                    <th>Report Portal</th>
+                    <th>Master Passport</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>2026.1.0-GA</code></td>
+                    <td>2026-08-02</td>
+                    <td><strong>98.5%</strong></td>
+                    <td><span class="badge-pass">GA BASELINE</span></td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td><a href="docs/audits/PHASE_12_PEP_EXTERNAL_AUDIT_REPORT.md" class="btn-link">View Report</a></td>
+                    <td><a href="release/eaorcs_pep_audit_package.zip" class="btn-link btn-zip">Download Package ZIP</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

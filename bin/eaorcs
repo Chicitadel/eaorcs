@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+###############################################################################
+# Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+# Module         : EAORCS CLI Launcher (Bash)
+# File           : eaorcs
+# Version        : 2026.1-LTS
+# Author         : Architectural Governance Council & Ujomor Systems Engineering
+# Organization   : Ujomor Systems Ecosystem
+###############################################################################
+
+set -e
+
+COMMAND="${1:-audit}"
+SUBCOMMAND="${2:-run}"
+WORKSPACE_ROOT="${WORKSPACE_ROOT:-$(pwd)}"
+
+echo "=========================================================================="
+echo " EAORCS 2026.1-LTS: ENTERPRISE ASSURANCE & CERTIFICATION PLATFORM"
+echo " UAIGOS 3.0.0 Standardized Product Engine"
+echo "=========================================================================="
+echo " Command   : $COMMAND $SUBCOMMAND"
+echo " Workspace : $WORKSPACE_ROOT"
+echo "=========================================================================="
+
+case "$COMMAND $SUBCOMMAND" in
+    "audit run"|"audit"|"run")
+        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" audit run
+        ;;
+    "certify"|"certify run")
+        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" certify
+        ;;
+    "verify")
+        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" verify
+        ;;
+    "utcf")
+        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" utcf
+        ;;
+    *)
+        echo "Usage: eaorcs [audit run | certify | verify | utcf]"
+        ;;
+esac

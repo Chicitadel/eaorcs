@@ -1,0 +1,242 @@
+# /******************************************************************************
+#  * Project        : Enterprise Autonomous Operational Readiness & Certification System (EAORCS)
+#  * Module         : Canonical Distribution Manifest & Capability Graph
+#  * File           : product.manifest.yaml
+#  * Version        : 2026.2-LTS (v1.1.0-FROZEN Master Specification)
+#  * Author         : Ujomor Engineering Governance Authority
+#  * Organization   : Air Roofers Platform Ecosystem & Ujomor Systems Engineering
+#  * Created Date   : 2026-07-31
+#  * Last Modified  : 2026-08-02
+#  * Classification : GOVERNMENT | ENTERPRISE | RESTRICTED | SOVEREIGN
+#  *
+#  * Governance:
+#  * - Architecture Authority Approved & FROZEN (v1.1.0-FROZEN)
+#  * - Security Reviewed (ISO 27001, SOC 2, OWASP ASVS, NIST SP 800-161, DORA, NIS2, EU AI Act)
+#  * - Enterprise Engineering Standard Compliant
+#  *
+#  * Standards:
+#  * - ISO 27001 / SOC 2 / OWASP ASVS / NIST SP 800-161 / SLSA Level 4 / OSAP v2
+#  *
+#  * Signatures:
+#  * - Architecture Authority: APPROVED
+#  * - Security Authority: VERIFIED
+#  * - Governance Authority: CERTIFIED
+#  *
+#  * Copyright (c) 2026 Air Roofers Platform Ecosystem & Ujomor Systems Engineering
+#  * All Rights Reserved.
+#  ******************************************************************************/
+
+schema_version: "1.1.0"
+distribution_spec: "DPA/PDA v1.1.0-FROZEN"
+
+product:
+  id: "eaorcs"
+  name: "Enterprise Autonomous Operation & Regulatory Compliance System"
+  version: "2026.2.0-LTS"
+  framework_version: "3.0.0"
+  lifecycle_state: "GA"
+  federated_domain: "eaorcs.airroofers.eu"
+  registry_endpoint: "https://products.airroofers.eu/v1/capabilities/eaorcs"
+  governanceAuthority: "Ujomor Engineering Governance Authority"
+  organization: "Air Roofers Platform Ecosystem & Ujomor Systems Engineering"
+  owner: "Air Roofers Platform Engineering & Governance Team"
+  bounded_context: "Software Trust, Runtime Observability & Regulatory Assurance"
+
+capabilities:
+  - id: "CAP-EAORCS-01"
+    name: "Decomposed Trust Engine Scan"
+    bounded_context: "Trust Engine"
+    lifecycle: "GA"
+    version: "2.1.0"
+    endpoint: "https://api.airroofers.eu/v1/eaorcs/trust/scan"
+    security_level: "HIGH"
+    sla_tier: "MISSION_CRITICAL"
+    dependencies: []
+  - id: "CAP-EAORCS-02"
+    name: "OSAP Protocol Passport Compiler"
+    bounded_context: "OSAP Attestation"
+    lifecycle: "GA"
+    version: "2.0.0"
+    endpoint: "https://api.airroofers.eu/v1/eaorcs/osap/passport"
+    security_level: "MAXIMUM"
+    sla_tier: "MISSION_CRITICAL"
+    dependencies: ["CAP-EAORCS-01", "CAP-EAORCS-05"]
+  - id: "CAP-EAORCS-03"
+    name: "Assurance Policy DSL Engine"
+    bounded_context: "Policy Governance"
+    lifecycle: "GA"
+    version: "1.5.0"
+    endpoint: "https://api.airroofers.eu/v1/eaorcs/dsl/compile"
+    security_level: "HIGH"
+    sla_tier: "ENTERPRISE"
+    dependencies: []
+  - id: "CAP-EAORCS-04"
+    name: "Multi-Tenant Telemetry Aggregator"
+    bounded_context: "Observability"
+    lifecycle: "GA"
+    version: "3.0.0"
+    endpoint: "https://operations.airroofers.eu/v1/telemetry"
+    security_level: "HIGH"
+    sla_tier: "MISSION_CRITICAL"
+    dependencies: []
+  - id: "CAP-EAORCS-05"
+    name: "SLSA Level 4 Provenance Verification"
+    bounded_context: "Supply Chain Security"
+    lifecycle: "GA"
+    version: "4.0.0"
+    endpoint: "https://api.airroofers.eu/v1/eaorcs/supplychain/verify"
+    security_level: "MAXIMUM"
+    sla_tier: "MISSION_CRITICAL"
+    dependencies: []
+  - id: "CAP-EAORCS-06"
+    name: "Automated Regulatory Audit Report Generator"
+    bounded_context: "Compliance Audit"
+    lifecycle: "GA"
+    version: "2.0.0"
+    endpoint: "https://api.airroofers.eu/v1/eaorcs/audit/report"
+    security_level: "HIGH"
+    sla_tier: "ENTERPRISE"
+    dependencies: ["CAP-EAORCS-01", "CAP-EAORCS-03"]
+  - id: "CAP-EAORCS-07"
+    name: "Stand-alone Audit ZIP Package Builder"
+    bounded_context: "Release Packaging"
+    lifecycle: "GA"
+    version: "1.8.0"
+    endpoint: "https://downloads.airroofers.eu/v1/packages/eaorcs"
+    security_level: "MEDIUM"
+    sla_tier: "STANDARD"
+    dependencies: []
+  - id: "CAP-EAORCS-08"
+    name: "Turnkey Demo Project Generator"
+    bounded_context: "Developer Ecosystem"
+    lifecycle: "GA"
+    version: "1.2.0"
+    endpoint: "https://api.airroofers.eu/v1/eaorcs/demo/generate"
+    security_level: "LOW"
+    sla_tier: "DEVELOPER"
+    dependencies: []
+  - id: "CAP-EAORCS-09"
+    name: "Customer Support & SLA Integration"
+    bounded_context: "Support Domain"
+    lifecycle: "GA"
+    version: "2.0.0"
+    endpoint: "https://support.airroofers.eu/v1/support/tickets"
+    security_level: "HIGH"
+    sla_tier: "ENTERPRISE"
+    dependencies: []
+  - id: "CAP-EAORCS-10"
+    name: "Platform Registry Descriptor Resolver"
+    bounded_context: "Platform Registry"
+    lifecycle: "GA"
+    version: "2.5.0"
+    endpoint: "https://products.airroofers.eu/v1/descriptors/eaorcs"
+    security_level: "HIGH"
+    sla_tier: "MISSION_CRITICAL"
+    dependencies: []
+
+contract_bindings:
+  osap_attestation_contract:
+    spec: "OSAP v2.0"
+    schema: "schemas/osap_v2_schema.json"
+    enforcement: "STRICT"
+  distribution_governance_contract:
+    spec: "DPA/PDA v1.1.0-FROZEN"
+    schema: "schemas/distribution_governance_v1.json"
+    enforcement: "MANDATORY"
+  capability_contract:
+    spec: "EAORCS Capability Protocol v1.0"
+    schema: "schemas/capability_contract_v1.json"
+    enforcement: "STRICT"
+  api_rest_contract:
+    spec: "OpenAPI 3.0"
+    endpoint_prefix: "/api/v1"
+    enforcement: "STRICT"
+
+sbom_attestation:
+  slsa_level: "SLSA_LEVEL_4"
+  verification_standard: "NIST SP 800-161 / ISO 27001"
+  attestation_authority: "Ujomor Engineering Governance Authority"
+  cryptographic_algorithms:
+    hashing: "SHA-256 / SHA-512"
+    signatures: "Ed25519 / RSA-4096"
+  component_inventory:
+    - name: "@eaorcs/core"
+      type: "MODULE"
+      version: "2026.2.0-LTS"
+      license: "Commercial / Enterprise"
+      sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    - name: "@eaorcs/hypervisor"
+      type: "KERNEL"
+      version: "2026.2.0-LTS"
+      license: "Commercial / Enterprise"
+      sha256: "a4f81c900e28d488f2e21b8b2e3a1f9a2e3a1f9a2e3a1f9a2e3a1f9a2e3a1f9a"
+    - name: "@eaorcs/dcp"
+      type: "CONTROL_PLANE"
+      version: "2026.2.0-LTS"
+      license: "Commercial / Enterprise"
+      sha256: "b5g92d011f39e599g3f32c9c3f4b2g0b3f4b2g0b3f4b2g0b3f4b2g0b3f4b2g0b"
+  dependency_policies:
+    allow_unverified_external: false
+    require_signed_provenance: true
+    zero_vulnerability_threshold: true
+
+governance_policies:
+  protocol_freeze: true
+  protocol_version: "v1.1.0-FROZEN"
+  architecture_maturity: "MODULAR_MONOLITH"
+  zero_trust:
+    enabled: true
+    deny_by_default: true
+    require_mutual_tls: true
+  compliance_standards:
+    - id: "ISO_27001"
+      status: "COMPLIANT"
+    - id: "SOC_2_TYPE_II"
+      status: "COMPLIANT"
+    - id: "OWASP_ASVS_L3"
+      status: "COMPLIANT"
+    - id: "NIST_SP_800_161"
+      status: "COMPLIANT"
+    - id: "SLSA_LEVEL_4"
+      status: "COMPLIANT"
+    - id: "DORA_NIS2"
+      status: "COMPLIANT"
+    - id: "EU_AI_ACT"
+      status: "COMPLIANT"
+  audit_policy:
+    immutable_ledger: true
+    correlation_id_tracing: true
+    retention_days: 2555
+
+cli:
+  command: "eaorcs"
+  powershell_entry: "bin/eaorcs.ps1"
+  bash_entry: "bin/eaorcs"
+  subcommands:
+    - "audit run"
+    - "certify"
+    - "verify"
+    - "passport"
+    - "dsl compile"
+    - "ops bundle"
+    - "demo generate"
+    - "health"
+    - "host-detect"
+    - "dcp package"
+    - "dcp capsule"
+    - "dcp passport"
+    - "dcp dna"
+
+canonical_domain_bindings:
+  identity: "https://identity.airroofers.eu"
+  workspace: "https://workspace.airroofers.eu"
+  products: "https://products.airroofers.eu"
+  licensing: "https://licensing.airroofers.eu"
+  downloads: "https://downloads.airroofers.eu"
+  billing: "https://billing.airroofers.eu"
+  operations: "https://operations.airroofers.eu"
+  support: "https://support.airroofers.eu"
+
+sdk:
+  package: "@airroofers/platform-sdk"
+  entry: "sdk/index.js"

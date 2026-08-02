@@ -1,0 +1,15 @@
+{
+  "deploymentId": "PROD-0D3C0C76",
+  "environment": "production-global-multi-region",
+  "rolloutStrategy": "Canary (10% -> 50% -> 100%)",
+  "canaryHealth": "100% HEALTHY",
+  "rollbackDrillOutcome": "VERIFIED_ZERO_DOWNTIME",
+  "rollbackDurationMs": 120,
+  "activeRegions": [
+    "eu-west-1",
+    "us-east-1",
+    "ap-southeast-1"
+  ],
+  "isProductionRolloutComplete": true,
+  "deployedAt": "2026-08-02T16:24:21.797Z"
+}

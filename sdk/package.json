@@ -1,0 +1,9 @@
+{
+  "name": "@eaorcs/sdk",
+  "version": "2026.1.0-lts",
+  "description": "Enterprise Autonomous Operational Readiness & Certification System (EAORCS) Plugin & Policy SDK",
+  "main": "index.js",
+  "author": "Ujomor Systems Engineering & Architectural Governance Council",
+  "license": "UNLICENSED",
+  "private": true
+}

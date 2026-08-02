@@ -1,0 +1,75 @@
+{
+  "integrity": {
+    "status": "PASSED",
+    "total_events": 5,
+    "genesis_hash": "49107deefafec2474d7b725b2c8bb24519651455829c9e57cb85839557eb2fd2",
+    "latest_hash": "75e78321c130bff4702644f84a3fc6eed2061319d349628358ced1fd9270cf2b"
+  },
+  "events": [
+    {
+      "id": "evt_1_1785532499383",
+      "type": "COMMIT_CREATED",
+      "actor": "system.ci",
+      "timestamp": "2026-07-31T21:14:59.383Z",
+      "data": {
+        "commit_sha": "v8-realignment-001",
+        "branch": "main",
+        "repository": "airroofers.eu"
+      },
+      "previous_hash": "GENESIS_ROOT",
+      "hash": "49107deefafec2474d7b725b2c8bb24519651455829c9e57cb85839557eb2fd2"
+    },
+    {
+      "id": "evt_2_1785532499383",
+      "type": "EVIDENCE_CREATED",
+      "actor": "eaorcs.verifier",
+      "timestamp": "2026-07-31T21:14:59.383Z",
+      "data": {
+        "evidence_type": "UNIT_TEST_PASS",
+        "coverage": 100,
+        "sha256": "abc123def456"
+      },
+      "previous_hash": "49107deefafec2474d7b725b2c8bb24519651455829c9e57cb85839557eb2fd2",
+      "hash": "a71e4779eebb856a8ea1a7008798082bbd0a3f9970259924a6a97e05c9fe3f82"
+    },
+    {
+      "id": "evt_3_1785532499383",
+      "type": "POLICY_EVALUATED",
+      "actor": "eaorcs.policy_engine",
+      "timestamp": "2026-07-31T21:14:59.383Z",
+      "data": {
+        "policy_set": "UAIGOS_CORE_SECURITY",
+        "result": "PASSED",
+        "violation_count": 0
+      },
+      "previous_hash": "a71e4779eebb856a8ea1a7008798082bbd0a3f9970259924a6a97e05c9fe3f82",
+      "hash": "93a643b3324491539c05ce1897628a5f98b43ddfc1a568695c64a3e57965f32b"
+    },
+    {
+      "id": "evt_4_1785532499383",
+      "type": "CERTIFICATE_ISSUED",
+      "actor": "eaorcs.certification_authority",
+      "timestamp": "2026-07-31T21:14:59.383Z",
+      "data": {
+        "passport_id": "osap_v2_canonical_001",
+        "status": "CERTIFIED",
+        "prr_gate": "PRR-6"
+      },
+      "previous_hash": "93a643b3324491539c05ce1897628a5f98b43ddfc1a568695c64a3e57965f32b",
+      "hash": "234463396ef38def0d607706367bcb82a227c6d45fd2b98223973aa72e499596"
+    },
+    {
+      "id": "evt_5_1785532499383",
+      "type": "DEPLOYMENT_VERIFIED",
+      "actor": "eaorcs.smart_deploy",
+      "timestamp": "2026-07-31T21:14:59.383Z",
+      "data": {
+        "environment": "production",
+        "status": "VERIFIED",
+        "drift": "NONE"
+      },
+      "previous_hash": "234463396ef38def0d607706367bcb82a227c6d45fd2b98223973aa72e499596",
+      "hash": "75e78321c130bff4702644f84a3fc6eed2061319d349628358ced1fd9270cf2b"
+    }
+  ]
+}

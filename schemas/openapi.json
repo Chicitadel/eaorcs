@@ -1,0 +1,30 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "EAORCS Software Trust Platform API",
+    "version": "2026.1.0-LTS",
+    "description": "Enterprise qualification & software trust governance API contracts"
+  },
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Health Observatory Check",
+        "responses": {
+          "200": {
+            "description": "System operational and healthy"
+          }
+        }
+      }
+    },
+    "/api/v1/governance/status": {
+      "get": {
+        "summary": "Governance & Compliance Status",
+        "responses": {
+          "200": {
+            "description": "Governance status details"
+          }
+        }
+      }
+    }
+  }
+}

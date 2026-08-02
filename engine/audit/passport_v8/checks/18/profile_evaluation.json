@@ -1,0 +1,10 @@
+{
+  "profile_evaluated": "Critical Infrastructure Profile",
+  "profile_id": "critical_infra",
+  "compliant": true,
+  "trust_score": 96.27,
+  "required_min_trust_score": 95,
+  "score_passed": true,
+  "status": "COMPLIANT",
+  "timestamp": "2026-08-01T09:01:29.032Z"
+}

@@ -1,0 +1,13 @@
+{
+  "certificateId": "CERT-MAST-2026-08-02",
+  "issuedBy": "Architectural Governance Council & Ujomor Systems Engineering",
+  "issueDate": "2026-08-02",
+  "status": "ISSUED",
+  "certifiedSuites": [
+    "platform-core",
+    "airroofers.eu",
+    "platform-experience",
+    "static"
+  ],
+  "complianceLevel": "ISO 27001, SOC 2, OWASP ASVS, NIST"
+}

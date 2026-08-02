@@ -1,0 +1,10 @@
+{
+  "profile_evaluated": "Enterprise Profile",
+  "profile_id": "enterprise",
+  "compliant": true,
+  "trust_score": 96.27,
+  "required_min_trust_score": 90,
+  "score_passed": true,
+  "status": "COMPLIANT",
+  "timestamp": "2026-07-31T21:14:59.293Z"
+}

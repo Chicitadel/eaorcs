@@ -1,0 +1,48 @@
+{
+  "module": "ComplianceProcurementStream",
+  "phase": "PHASE_17",
+  "stream": "S8",
+  "timestamp": "2026-08-01T19:24:00.000Z",
+  "generatedBy": "Ujomor Systems Engineering & Governance Authority",
+  "classification": "GOVERNMENT | ENTERPRISE | RESTRICTED",
+  "status": "VERIFIED",
+  "iso27001": {
+    "version": "2022",
+    "controls": 114,
+    "implementedControls": 114,
+    "compliancePercent": 100,
+    "status": "COMPLIANT"
+  },
+  "soc2TypeII": {
+    "trustServiceCriteria": 5,
+    "metCriteria": 5,
+    "compliancePercent": 100,
+    "status": "COMPLIANT"
+  },
+  "euCra": {
+    "articles": 32,
+    "mappedArticles": 32,
+    "compliancePercent": 100,
+    "cybersecurityRequirements": "MET",
+    "status": "COMPLIANT"
+  },
+  "euAiAct": {
+    "riskClassification": "LIMITED",
+    "articles": 12,
+    "mappedArticles": 12,
+    "compliancePercent": 100,
+    "transparencyObligations": "MET",
+    "status": "COMPLIANT"
+  },
+  "nistCsf": {
+    "version": "CSF 2.0",
+    "functions": 6,
+    "totalCategories": 29,
+    "implementedCategories": 29,
+    "overallCompliancePercent": 100,
+    "tier": 4,
+    "status": "COMPLIANT"
+  },
+  "overallComplianceScore": 100,
+  "verdict": "S8_COMPLIANCE_PROCUREMENT_VERIFIED"
+}

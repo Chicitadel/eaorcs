@@ -1,0 +1,10 @@
+{
+  "targetRelease": "2026.1.0-LTS",
+  "buildId": "BUILD-656481F8",
+  "isImmutableArtifact": true,
+  "slsaLevel": "SLSA_LEVEL_3",
+  "signingKeyAlgorithm": "Ed25519",
+  "provenanceHash": "2d8e0ab9692a47e84d80bbebcdfceebda224367c7d06cf0a92e43a638753d3e0",
+  "isReleaseGovernanceVerified": true,
+  "generatedAt": "2026-08-02T16:24:21.803Z"
+}

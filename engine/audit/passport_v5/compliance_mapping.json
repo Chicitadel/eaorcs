@@ -1,0 +1,7 @@
+{
+  "spdx": "SPDX-2.3 (Software Bill of Materials)",
+  "owasp_asvs": "OWASP ASVS Level 3 (Application Security Verification Standard)",
+  "nist_ssdf": "NIST SSDF SP 800-218 (Secure Software Development Framework)",
+  "slsa": "SLSA Level 3 (Supply Chain Levels for Software Artifacts)",
+  "opentelemetry": "OpenTelemetry v1.25 (Distributed Tracing & Telemetry)"
+}

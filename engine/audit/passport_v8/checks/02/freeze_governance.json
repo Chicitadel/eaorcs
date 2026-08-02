@@ -1,0 +1,21 @@
+{
+  "status": "PASSED",
+  "freeze_enforced": true,
+  "architecture_drift_detected": false,
+  "digests": {
+    "specification": {
+      "path": "docs/EAORCS_Architecture_Specification.md",
+      "sha256": "923cf07868e43814e3eb0b2bfee24e34b5f067d149bf9311fa9deff43343fbc1"
+    },
+    "frozen_decisions": {
+      "path": ".governance/state/frozen.decisions.yaml",
+      "sha256": "d481546ec320b582dae2aeff0106012cdcd92cadd2b2f92f1ef013fd3395eb8b"
+    },
+    "runtime_constraints": {
+      "path": ".governance/state/runtime.constraints.yaml",
+      "sha256": "068c4c5115d1bf050d8f2a72d53202fa63781b23f60cfa2e33cc9c778bd5b65e"
+    }
+  },
+  "governance_decision": "APPROVE_EXECUTION",
+  "timestamp": "2026-08-01T09:01:28.964Z"
+}

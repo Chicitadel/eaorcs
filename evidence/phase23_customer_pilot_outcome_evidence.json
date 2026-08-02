@@ -1,0 +1,31 @@
+{
+  "module": "operations",
+  "phase": 23,
+  "stream": "L6",
+  "timestamp": "2026-08-01T20:40:06.000Z",
+  "status": "VERIFIED",
+  "evidenceDetails": {
+    "telemetry": {
+      "lakeType": "REAL_CUSTOMER_PILOT_TELEMETRY_LAKE",
+      "commitSha": "a4f8e2d9c3b17f2e1a498801",
+      "monitoredTenantsCount": 12,
+      "activeUserSessionsCount": 3840,
+      "status": "COLLECTED"
+    },
+    "sla": {
+      "graphType": "DELIVERED_SLA_PROOF_GRAPH",
+      "committedSlaPercent": 99.9,
+      "deliveredSlaPercent": 99.999,
+      "slaBreachesCount": 0,
+      "proofGraphHash": "sha256:d8b74a38f38d38b8374a2b972ef919876e54f917548b898083819875",
+      "status": "PROVED"
+    },
+    "satisfaction": {
+      "archiveType": "CUSTOMER_SATISFACTION_ARCHIVE",
+      "npsScore": 92,
+      "csatScore": 4.8,
+      "renewalForecastPercent": 100,
+      "status": "ARCHIVED"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "highest_satisfied_level": "L7",
+  "source": "Computed",
+  "rules_evaluation": [
+    {
+      "level": "L1",
+      "title": "Deterministic Execution",
+      "criterion": "ExecutionGraph DAG engine present with spec hash calculation",
+      "passed": true
+    },
+    {
+      "level": "L2",
+      "title": "Governance Policies",
+      "criterion": "PolicyEngine and executable policy manifests available",
+      "passed": true
+    },
+    {
+      "level": "L3",
+      "title": "Cryptographic Evidence",
+      "criterion": "SHA-256 evidence bundles and Merkle tree generation active",
+      "passed": true
+    },
+    {
+      "level": "L4",
+      "title": "Quantitative Metrics",
+      "criterion": "Measured coverage & metric classification engine active",
+      "passed": true
+    },
+    {
+      "level": "L5",
+      "title": "Optimization & Predictive Risk",
+      "criterion": "Cyber Weather and release probability forecasting enabled",
+      "passed": true
+    },
+    {
+      "level": "L6",
+      "title": "Autonomous Governance",
+      "criterion": "AI Council consensus engine and automated PRR gating enabled",
+      "passed": true
+    },
+    {
+      "level": "L7",
+      "title": "Federated Verification",
+      "criterion": "Standalone offline verifier CLI and OSAP v2 core passport active",
+      "passed": true
+    }
+  ],
+  "all_levels_passed": true,
+  "timestamp": "2026-08-01T09:01:29.015Z"
+}

@@ -1,0 +1,41 @@
+{
+  "osap_version": "2.0.0",
+  "schema_version": "2.0.0",
+  "passport_id": "OSAP-PASS-200-1785664091353-0BD634D3",
+  "issued_at": "2026-08-02T09:48:11.353Z",
+  "expires_at": "2026-10-31T09:48:11.353Z",
+  "issuer": {
+    "id": "urn:eaorcs:authority:ujomor-systems",
+    "organization": "Ujomor Systems & Enterprise Governance",
+    "environment": "PRODUCTION_AUDIT_KERNEL",
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA4TPNugNIiRYCARI6gTzrMjvWNqiruxa5FZpQUGzIDd4=\n-----END PUBLIC KEY-----\n",
+    "digital_signature": "6489a502b9fd38a0a06c762e235f33ff79da83020e99c39f9044ef0fea3f1c5905183d531d4080bb7c2bbac72624d5a7434c1f48404c19d4f709cd6a76779500",
+    "signature_algorithm": "Ed25519"
+  },
+  "subject": {
+    "artifact_id": "eaorcs-enterprise-demo",
+    "version": "2026.1.0",
+    "repository": "workspace://local",
+    "commit_hash": "HEAD",
+    "build_id": "BUILD-1785664091431"
+  },
+  "trust_summary": {
+    "trust_score": 94.83,
+    "tier": "SILVER",
+    "readiness_score": 95.98,
+    "evidence_confidence": 0.98,
+    "statistical_confidence": 0.97
+  },
+  "domain_scores": {},
+  "evidence_manifest": {
+    "merkle_root": "0x2dcbc26a20ab175461b3f737946896ba75d9ad8b4aecd9f2ca523e99c4316e4b",
+    "total_evidence_items": 42,
+    "evidence_hashes": []
+  },
+  "certification": {
+    "certificate_id": "EAORCS-CERT-SILVER-1785664091337-8E4D7778",
+    "status": "QUALIFIED",
+    "tier": "GOLD"
+  },
+  "extensions": {}
+}

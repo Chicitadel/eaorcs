@@ -1,0 +1,30 @@
+{
+  "certificateId": "CERT-EAORCS-2026.1.0-LTS-eabf6e6e-5163-4318-a130-d7e68567aec3",
+  "product": "EAORCS",
+  "version": "2026.1.0-lts",
+  "certificationLevel": "PLATINUM",
+  "score": 100,
+  "requirementsVerified": 13,
+  "requirementsTotal": 13,
+  "stagesPassed": [
+    "BlueprintCompliance",
+    "APICompliance",
+    "IntegrationGuideCompliance",
+    "PlatformDomainCompliance",
+    "SupportDomainCompliance",
+    "CommercialCompliance",
+    "EvidenceBundle",
+    "OSAPPassport"
+  ],
+  "platformCompatibility": "Air Roofers Platform v2026+",
+  "issuedAt": "2026-08-02T16:24:42.235Z",
+  "expiresAt": "2027-08-02T16:24:42.235Z",
+  "issuer": "EAORCS Certification Authority",
+  "merkleRoot": "0x28bc9ba9b9ee9f952c3b998f5f0f010a7444428e4a1faa371c1ee362871b95e3",
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "090dfa3877d531e0699142cfae9325cf9290092ba8423747e4b94f90b1f8c7744f2263091e5b7c31730585101448e0d35661633dba273be22619bfc256747909",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA0Le5zXgyO8uKUdN+gWqukvwCdRPrYyFxsr+gK6M9J44=\n-----END PUBLIC KEY-----\n",
+    "signedAt": "2026-08-02T16:24:42.237Z"
+  }
+}

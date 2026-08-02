@@ -1,0 +1,15 @@
+{
+  "module": "EAORCS",
+  "phase": 25,
+  "stream": "S2",
+  "timestamp": "2026-08-01T21:03:26+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "AUTOMATED_API_CONTRACT_PROMOTION_ENGINE",
+    "commitSha": "c8d4190f8e12b40974819201",
+    "testedLiveEndpointsCount": 48,
+    "schemaConformanceRatePercent": 100,
+    "promotionGateDecision": "PROMOTED_TO_PRODUCTION",
+    "contractExecutionHash": "sha256:8b4f8c9b2913db23b8f219192eb63bb532ea48f93db7a601beec291242371cf7"
+  }
+}

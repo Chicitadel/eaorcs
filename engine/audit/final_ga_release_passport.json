@@ -1,0 +1,11 @@
+{
+  "osap_version": "2026.1-GA",
+  "release_candidate": "EAORCS v1.0.0-GA",
+  "status": "PRODUCTION_READY_CERTIFIED",
+  "ga_readiness_score": 100,
+  "graph_hash": "62cfdf59a15f73ae5a7a763d85ad306563dbc290c654a18c16daa1a440864852",
+  "discovered_files": 1193,
+  "evidence_signature": "99b08908e574ecfa55ae25d4ab88e722a229f306d0fd4a1ed40345e16e52e756f0963f738123747ab605e06551bf3b0465c0360af69424a8a5e76bf6b75b0e0f",
+  "public_key": {},
+  "timestamp": "2026-07-31T20:41:54.442Z"
+}

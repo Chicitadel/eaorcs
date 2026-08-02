@@ -1,0 +1,16 @@
+{
+  "attestationId": "ATT-04B5E884",
+  "releaseVersion": "2026.1.0-LTS",
+  "signer": "Ujomor Systems Engineering & Governance Authority",
+  "signature": "99c3f684a54e87de31e144145e128609e52c14651033b63be805161d9f389dbb",
+  "verifiedItems": [
+    "SBOM",
+    "SLSA_PROVENANCE",
+    "TRACEABILITY_GRAPH",
+    "API_CONTRACTS",
+    "PLATFORM_ADAPTERS",
+    "BENCHMARKS",
+    "SECURITY_SCAN"
+  ],
+  "signedAt": "2026-08-02T16:24:21.506Z"
+}

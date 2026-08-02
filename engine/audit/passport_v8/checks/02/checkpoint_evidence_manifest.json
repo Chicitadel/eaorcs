@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 2,
+  "checkpoint_name": "Clean Build & Artifact Validation",
+  "domain": "BUILD_VALIDATION",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "build_validation.json",
+      "sha256": "bf87143ba574675f053ba2e2301200812966bbf8bfaad2a38166c765fe49253b",
+      "bytes": 723
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.783Z"
+}

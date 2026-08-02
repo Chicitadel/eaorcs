@@ -1,0 +1,266 @@
+{
+  "title": "EAORCS Public Benchmark Validation Report",
+  "version": "2026.1.0-LTS",
+  "governanceAuthority": "Ujomor Systems & Enterprise Governance Authority",
+  "classification": "ENTERPRISE | RESTRICTED",
+  "generatedAt": "2026-08-02T16:24:35.578Z",
+  "summary": {
+    "totalEvaluated": 4,
+    "passedCount": 4,
+    "failedCount": 0,
+    "averageComplianceScore": 96,
+    "overallStatus": "PASSED",
+    "generatedAt": "2026-08-02T16:24:35.578Z",
+    "results": [
+      {
+        "evaluationId": "BENCH-EXPRESS-9116B885",
+        "modelId": "express",
+        "canonicalName": "Express (Node.js REST)",
+        "framework": "Express.js",
+        "language": "JavaScript / Node.js",
+        "architectureStyle": "RESTful Middleware Micro-Service",
+        "repositoryUrl": "https://github.com/expressjs/express",
+        "status": "PASSED",
+        "complianceScore": 95.17,
+        "targetThreshold": 85,
+        "passedRulesCount": 6,
+        "failedRulesCount": 0,
+        "totalRulesCount": 6,
+        "ruleEvaluations": [
+          {
+            "ruleId": "REST_CONTRACT_VALIDATION",
+            "score": 98,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.569Z"
+          },
+          {
+            "ruleId": "ASYNC_ERROR_HANDLING",
+            "score": 94,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.571Z"
+          },
+          {
+            "ruleId": "DEPENDENCY_VULNERABILITY_FREE",
+            "score": 92,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.571Z"
+          },
+          {
+            "ruleId": "TLS_STRICT_TRANSPORT",
+            "score": 94,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.571Z"
+          },
+          {
+            "ruleId": "HELMET_SECURITY_HEADERS",
+            "score": 94,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.571Z"
+          },
+          {
+            "ruleId": "OSAP_PASSPORT_COMPLIANCE",
+            "score": 99,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.571Z"
+          }
+        ],
+        "performanceMetrics": {
+          "latencyMs": 15,
+          "memoryUsageMb": 120,
+          "owaspScore": 92,
+          "modularityIndex": 88.5,
+          "evaluationDurationMs": 2
+        },
+        "merkleProof": "f17d0668a249ac5b86278e70115c0ab800452cf7c47d544ee9f2a8cd17f64471",
+        "evaluatedAt": "2026-08-02T16:24:35.572Z"
+      },
+      {
+        "evaluationId": "BENCH-NESTJS-A1E457FD",
+        "modelId": "nestjs",
+        "canonicalName": "NestJS (TypeScript Enterprise)",
+        "framework": "NestJS",
+        "language": "TypeScript / Node.js",
+        "architectureStyle": "Modular Dependency Injection Platform",
+        "repositoryUrl": "https://github.com/nestjs/nest",
+        "status": "PASSED",
+        "complianceScore": 95.67,
+        "targetThreshold": 85,
+        "passedRulesCount": 6,
+        "failedRulesCount": 0,
+        "totalRulesCount": 6,
+        "ruleEvaluations": [
+          {
+            "ruleId": "STRICT_TYPE_CHECKING",
+            "score": 97,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.573Z"
+          },
+          {
+            "ruleId": "DEPENDENCY_INJECTION_ISOLATION",
+            "score": 96,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.573Z"
+          },
+          {
+            "ruleId": "INTERCEPTOR_AUDIT_LOGGING",
+            "score": 98,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.573Z"
+          },
+          {
+            "ruleId": "SWAGGER_OPENAPI_SPEC_FREEZE",
+            "score": 92,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.573Z"
+          },
+          {
+            "ruleId": "ROLE_BASED_ACCESS_CONTROL",
+            "score": 93,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.573Z"
+          },
+          {
+            "ruleId": "OSAP_PASSPORT_COMPLIANCE",
+            "score": 98,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.573Z"
+          }
+        ],
+        "performanceMetrics": {
+          "latencyMs": 25,
+          "memoryUsageMb": 250,
+          "owaspScore": 96,
+          "modularityIndex": 95,
+          "evaluationDurationMs": 0
+        },
+        "merkleProof": "2283837b022554bccbe3ef6fe39290d0ce15d3c3a5ed94bd0fd23022a1c252ae",
+        "evaluatedAt": "2026-08-02T16:24:35.574Z"
+      },
+      {
+        "evaluationId": "BENCH-SPRING_BOOT-F2371BB4",
+        "modelId": "spring_boot",
+        "canonicalName": "Spring Boot (Java Enterprise)",
+        "framework": "Spring Boot",
+        "language": "Java / JVM",
+        "architectureStyle": "Tiered Enterprise Service & JPA Domain",
+        "repositoryUrl": "https://github.com/spring-projects/spring-boot",
+        "status": "PASSED",
+        "complianceScore": 96.83,
+        "targetThreshold": 85,
+        "passedRulesCount": 6,
+        "failedRulesCount": 0,
+        "totalRulesCount": 6,
+        "ruleEvaluations": [
+          {
+            "ruleId": "SPRING_SECURITY_FILTER_CHAIN",
+            "score": 98,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.574Z"
+          },
+          {
+            "ruleId": "BEAN_VALIDATION_STRICTNESS",
+            "score": 99,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.574Z"
+          },
+          {
+            "ruleId": "ACTUATOR_HEALTH_GATING",
+            "score": 98,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.574Z"
+          },
+          {
+            "ruleId": "TRANSACTION_AUDITABILITY",
+            "score": 99,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.574Z"
+          },
+          {
+            "ruleId": "ZERO_TRUST_SERVICE_MESH",
+            "score": 94,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.574Z"
+          },
+          {
+            "ruleId": "OSAP_PASSPORT_COMPLIANCE",
+            "score": 93,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.575Z"
+          }
+        ],
+        "performanceMetrics": {
+          "latencyMs": 35,
+          "memoryUsageMb": 512,
+          "owaspScore": 98,
+          "modularityIndex": 92,
+          "evaluationDurationMs": 1
+        },
+        "merkleProof": "ea2f90b73f596c0812897aca1431ce8757fa4b074d2cf5e42919f9f763b92c47",
+        "evaluatedAt": "2026-08-02T16:24:35.575Z"
+      },
+      {
+        "evaluationId": "BENCH-DJANGO-480183D2",
+        "modelId": "django",
+        "canonicalName": "Django (Python Web)",
+        "framework": "Django",
+        "language": "Python",
+        "architectureStyle": "MVT (Model-View-Template) / REST Framework",
+        "repositoryUrl": "https://github.com/django/django",
+        "status": "PASSED",
+        "complianceScore": 96.33,
+        "targetThreshold": 85,
+        "passedRulesCount": 6,
+        "failedRulesCount": 0,
+        "totalRulesCount": 6,
+        "ruleEvaluations": [
+          {
+            "ruleId": "ORM_SQL_INJECTION_PROTECTION",
+            "score": 94,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.575Z"
+          },
+          {
+            "ruleId": "CSRF_MIDDLEWARE_ENFORCEMENT",
+            "score": 93,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.577Z"
+          },
+          {
+            "ruleId": "SECRET_KEY_ENVIRONMENT_ISOLATION",
+            "score": 99,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.577Z"
+          },
+          {
+            "ruleId": "SECURE_COOKIE_ATTRIBUTES",
+            "score": 95,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.577Z"
+          },
+          {
+            "ruleId": "TYPE_HINT_COMPLIANCE",
+            "score": 99,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.577Z"
+          },
+          {
+            "ruleId": "OSAP_PASSPORT_COMPLIANCE",
+            "score": 98,
+            "status": "PASSED",
+            "verifiedAt": "2026-08-02T16:24:35.577Z"
+          }
+        ],
+        "performanceMetrics": {
+          "latencyMs": 30,
+          "memoryUsageMb": 180,
+          "owaspScore": 94,
+          "modularityIndex": 90,
+          "evaluationDurationMs": 2
+        },
+        "merkleProof": "752cbe6471baa2baa1abf8fa0b287b6fd5c58c195bf99ea7136acb1cde0c07e8",
+        "evaluatedAt": "2026-08-02T16:24:35.577Z"
+      }
+    ]
+  },
+  "proofSignature": "956b60982fd0477c433ae2a4d22e1b80cbfae83b4730599d299720fe24a91dcb"
+}

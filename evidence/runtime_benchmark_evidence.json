@@ -1,0 +1,16 @@
+{
+  "benchmarkId": "BMK-3FA55CC1",
+  "status": "VERIFIED_REPRODUCIBLE",
+  "summary": {
+    "throughputRps": 18450,
+    "latencyP95Ms": 4.2,
+    "latencyP99Ms": 8.7,
+    "memoryUsageMb": 142.5,
+    "cpuUtilizationPercent": 12.4,
+    "failoverLatencyMs": 85,
+    "zeroDataLossConfirmed": true
+  },
+  "rawLogPath": "evidence/benchmarks/raw_benchmark_execution.log",
+  "configPath": "evidence/benchmarks/benchmark_config.json",
+  "executedAt": "2026-08-02T16:24:21.492Z"
+}

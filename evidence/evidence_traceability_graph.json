@@ -1,0 +1,49 @@
+{
+  "totalRequirementsMapped": 8,
+  "totalGraphNodes": 8,
+  "orphanedCapabilitiesCount": 0,
+  "isGraphComplete": true,
+  "graphSummary": [
+    {
+      "reqId": "REQ-BP-001",
+      "name": "Blueprint Parity & Drift Control",
+      "modulesCount": 3
+    },
+    {
+      "reqId": "REQ-AR-001",
+      "name": "Air Roofers Platform Centralized Ecosystem Integration",
+      "modulesCount": 2
+    },
+    {
+      "reqId": "REQ-CG-001",
+      "name": "API & Schema Contract Compatibility Assurance",
+      "modulesCount": 2
+    },
+    {
+      "reqId": "REQ-PR-001",
+      "name": "Canonical Product & Capability Registry",
+      "modulesCount": 2
+    },
+    {
+      "reqId": "REQ-RE-001",
+      "name": "Automated Runtime Evidence & Benchmarking Engine",
+      "modulesCount": 2
+    },
+    {
+      "reqId": "REQ-CO-001",
+      "name": "Commercial Enablement & Procurement Readiness",
+      "modulesCount": 1
+    },
+    {
+      "reqId": "REQ-DOC-001",
+      "name": "Documentation Intelligence Engine",
+      "modulesCount": 1
+    },
+    {
+      "reqId": "REQ-PA-001",
+      "name": "Autonomous Product Assurance Pipeline",
+      "modulesCount": 1
+    }
+  ],
+  "evaluatedAt": "2026-08-02T16:24:21.476Z"
+}

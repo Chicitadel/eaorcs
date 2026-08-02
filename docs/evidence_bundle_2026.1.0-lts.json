@@ -1,0 +1,135 @@
+{
+  "bundleId": "bundle-193de71499b652a8",
+  "version": "2026.1.0-lts",
+  "merkleRoot": "aca3eab2fd59a55d36536c18b936526ae62b8a22455e0b3b189cfdae75a8609e",
+  "evidenceItems": [
+    {
+      "type": "test",
+      "suiteName": "E2E Integration Suite",
+      "passed": 19,
+      "total": 19,
+      "successRate": 1,
+      "details": {
+        "file": "tests/e2e_integration.test.js"
+      },
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "test",
+      "suiteName": "Master Verification Suite",
+      "passed": 21,
+      "total": 21,
+      "successRate": 1,
+      "details": {
+        "file": "tests/suite.test.js"
+      },
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "test",
+      "suiteName": "Blueprint Traceability",
+      "passed": 23,
+      "total": 23,
+      "successRate": 1,
+      "details": {
+        "file": "tests/blueprint_traceability_matrix.js"
+      },
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "test",
+      "suiteName": "Environment Certification",
+      "passed": 10,
+      "total": 10,
+      "successRate": 1,
+      "details": {
+        "file": "tests/environment_certification_matrix.test.js"
+      },
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "security",
+      "scanType": "RBAC Security Scan",
+      "findingCount": 0,
+      "severity": "LOW",
+      "findings": [],
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "security",
+      "scanType": "Crypto Verification",
+      "findingCount": 0,
+      "severity": "LOW",
+      "findings": [],
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "compliance",
+      "standard": "ISO 27001",
+      "controlCount": 5,
+      "passed": true,
+      "controls": [
+        "A.5",
+        "A.8",
+        "A.9",
+        "A.12",
+        "A.14"
+      ],
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "compliance",
+      "standard": "SOC 2",
+      "controlCount": 3,
+      "passed": true,
+      "controls": [
+        "CC6",
+        "CC7",
+        "CC8"
+      ],
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    },
+    {
+      "type": "compliance",
+      "standard": "OWASP ASVS",
+      "controlCount": 5,
+      "passed": true,
+      "controls": [
+        "V1",
+        "V2",
+        "V3",
+        "V9",
+        "V14"
+      ],
+      "addedAt": "2026-08-02T16:24:41.976Z"
+    }
+  ],
+  "certificate": {
+    "certificate": {
+      "certificateId": "EAORCS-CERT-GOLD-1785687881980-18CA4426",
+      "version": "2.0.0",
+      "tier": "GOLD",
+      "issuer": "EAORCS Software Certification Authority (UAIGOS v2026.1)",
+      "subject": {
+        "name": "pkg:npm/eaorcs@2026.1.0-lts",
+        "version": "1.0.0",
+        "repository": "workspace://local",
+        "commitHash": "HEAD",
+        "merkleRoot": "aca3eab2fd59a55d36536c18b936526ae62b8a22455e0b3b189cfdae75a8609e"
+      },
+      "trustMetrics": {
+        "trustScore": 99.1,
+        "readinessScore": 99,
+        "evidenceConfidence": 1,
+        "statisticalConfidence": 1
+      },
+      "issuedAt": "2026-08-02T16:24:41.980Z",
+      "expiresAt": "2026-10-31T16:24:41.980Z",
+      "classification": "ENTERPRISE_GOVERNED"
+    },
+    "signatureAlgorithm": "HMAC-SHA256",
+    "signature": "d60bb56a1a11118183a3d6235cd7fe30b42e615ce8e492777dee9a1590466dd9"
+  },
+  "trustScore": 99.1,
+  "compiledAt": "2026-08-02T16:24:41.977Z"
+}

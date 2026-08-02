@@ -1,0 +1,33 @@
+{
+  "certification_domain": "SCM Ecosystem Certification",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "scm_systems": [
+    {
+      "name": "Git",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "GitHub",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "GitLab",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "Bitbucket",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "Azure DevOps",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.129Z"
+}

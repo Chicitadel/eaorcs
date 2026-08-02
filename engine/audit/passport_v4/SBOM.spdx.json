@@ -1,0 +1,18 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "EAORCS Software Bill of Materials",
+  "packages": [
+    {
+      "name": "eaorcs-engine",
+      "versionInfo": "1.0.0-GA",
+      "downloadLocation": "NOASSERTION"
+    },
+    {
+      "name": "express",
+      "versionInfo": "4.18.2",
+      "downloadLocation": "NOASSERTION"
+    }
+  ]
+}

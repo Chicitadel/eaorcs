@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://eaorcs.ujomor.org/schemas/certification-v1.schema.json",
+  "title": "EAORCS ISO/IEC 25010 & Security Certification Schema v1.0",
+  "description": "Formal JSON Schema defining platform qualification, quality assurance, and security certificates.",
+  "type": "object",
+  "required": [
+    "certificateId",
+    "issuedTo",
+    "issuer",
+    "issueDate",
+    "expiryDate",
+    "standard",
+    "complianceLevel",
+    "signature"
+  ],
+  "properties": {
+    "certificateId": {
+      "type": "string",
+      "pattern": "^cert:[a-zA-Z0-9._-]+$"
+    },
+    "issuedTo": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string",
+      "pattern": "^did:eaorcs:[a-zA-Z0-9._-]+$"
+    },
+    "issueDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiryDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "standard": {
+      "type": "string",
+      "enum": ["ISO_IEC_25010", "SOC_2_TYPE_II", "OWASP_ASVS_LEVEL_3", "NIST_SP_800_53"]
+    },
+    "complianceLevel": {
+      "type": "string",
+      "enum": ["GOLD", "SILVER", "BRONZE", "ENTERPRISE_GRADE"]
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "reliabilityScore": { "type": "number" },
+        "securityScore": { "type": "number" },
+        "performanceScore": { "type": "number" }
+      }
+    },
+    "signature": {
+      "type": "string"
+    }
+  }
+}

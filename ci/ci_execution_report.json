@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-08-01T11:59:04.159Z",
+  "totalDurationMs": 4554,
+  "totalPass": 10,
+  "totalFail": 0,
+  "totalSkip": 0,
+  "streams": [
+    {
+      "name": "Blueprint Traceability",
+      "script": "tests/traceability/run_traceability.js",
+      "exitCode": 0,
+      "durationMs": 354,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Blueprint_Traceability_1785585539605.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Integration Workflows",
+      "script": "tests/integration/cross_module_workflow_suite.js",
+      "exitCode": 0,
+      "durationMs": 225,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Integration_Workflows_1785585539963.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Enterprise Qualification",
+      "script": "tests/enterprise/enterprise_qualification_suite.js",
+      "exitCode": 0,
+      "durationMs": 947,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Enterprise_Qualification_1785585540190.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Security Qualification",
+      "script": "tests/security/security_qualification_suite.js",
+      "exitCode": 0,
+      "durationMs": 1863,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Security_Qualification_1785585541139.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Commercial Qualification",
+      "script": "tests/commercial/commercial_qualification_suite.js",
+      "exitCode": 0,
+      "durationMs": 188,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Commercial_Qualification_1785585543003.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Platform Compliance",
+      "script": "tests/integration/run_compliance.js",
+      "exitCode": 0,
+      "durationMs": 146,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Platform_Compliance_1785585543193.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifecycle Verification",
+      "script": "tests/lifecycle/run_lifecycle.js",
+      "exitCode": 0,
+      "durationMs": 168,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Lifecycle_Verification_1785585543341.log",
+      "status": "PASS"
+    },
+    {
+      "name": "API Governance",
+      "script": "tests/governance/run_governance.js",
+      "exitCode": 0,
+      "durationMs": 159,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\API_Governance_1785585543510.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-Domain Validation",
+      "script": "tests/cross-domain/run_cross_domain.js",
+      "exitCode": 0,
+      "durationMs": 327,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Cross-Domain_Validation_1785585543671.log",
+      "status": "PASS"
+    },
+    {
+      "name": "Enterprise Expanded",
+      "script": "tests/enterprise/run_enterprise_expanded.js",
+      "exitCode": 0,
+      "durationMs": 159,
+      "logPath": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs\\Enterprise_Expanded_1785585543998.log",
+      "status": "PASS"
+    }
+  ]
+}

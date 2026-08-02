@@ -1,0 +1,44 @@
+{
+  "executionId": "exec_prr2a_001",
+  "context": {
+    "targetDir": "d:\\ujomor-platform\\airroofers.eu"
+  },
+  "status": "SUCCEEDED",
+  "startTime": 1785528042662,
+  "endTime": 1785528042663,
+  "steps": [
+    {
+      "stepId": "step_1",
+      "action": "execution_graph",
+      "inputs": {
+        "graph_hash": "26cd8fabe5da9c3e1ce0d400a5b918df8cdea5061cb7eb48deaf59a14d3d2c2b"
+      },
+      "outputs": {
+        "status": "SUCCEEDED"
+      },
+      "timestamp": 1785528042662
+    },
+    {
+      "stepId": "step_2",
+      "action": "security_analyzer",
+      "inputs": {
+        "findings_count": 54
+      },
+      "outputs": {
+        "status": "SUCCEEDED"
+      },
+      "timestamp": 1785528042662
+    },
+    {
+      "stepId": "step_3",
+      "action": "policy_engine",
+      "inputs": {
+        "decision": "PASS"
+      },
+      "outputs": {
+        "status": "SUCCEEDED"
+      },
+      "timestamp": 1785528042662
+    }
+  ]
+}

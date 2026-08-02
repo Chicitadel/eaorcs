@@ -1,0 +1,110 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "EAORCS Software Trust Platform — Production IaC Cloud Infrastructure Stack (Stream J)",
+  "Parameters": {
+    "EnvironmentName": {
+      "Type": "String",
+      "Default": "production",
+      "AllowedValues": ["development", "staging", "production"],
+      "Description": "Deployment environment name"
+    },
+    "InstanceType": {
+      "Type": "String",
+      "Default": "t3.large",
+      "Description": "EC2 / VM Instance size for EAORCS core worker nodes"
+    },
+    "VpcCIDR": {
+      "Type": "String",
+      "Default": "10.0.0.0/16",
+      "Description": "CIDR block for main VPC"
+    },
+    "DBAllocatedStorage": {
+      "Type": "Number",
+      "Default": 50,
+      "Description": "Allocated storage size in GB for RDS Database"
+    }
+  },
+  "Resources": {
+    "EaorcsVPC": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": { "Ref": "VpcCIDR" },
+        "EnableDnsSupport": true,
+        "EnableDnsHostnames": true,
+        "Tags": [
+          { "Key": "Name", "Value": { "Fn::Sub": "eaorcs-vpc-${EnvironmentName}" } },
+          { "Key": "GovernanceTier", "Value": "Enterprise" }
+        ]
+      }
+    },
+    "EaorcsPublicSubnet": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": { "Ref": "EaorcsVPC" },
+        "CidrBlock": "10.0.1.0/24",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [{ "Key": "Name", "Value": "eaorcs-public-subnet" }]
+      }
+    },
+    "EaorcsInternetGateway": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [{ "Key": "Name", "Value": "eaorcs-igw" }]
+      }
+    },
+    "EaorcsVpcIgwAttachment": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": { "Ref": "EaorcsVPC" },
+        "InternetGatewayId": { "Ref": "EaorcsInternetGateway" }
+      }
+    },
+    "EaorcsSecurityGroup": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "Allow HTTP/HTTPS traffic to EAORCS Trust Platform",
+        "VpcId": { "Ref": "EaorcsVPC" },
+        "SecurityGroupIngress": [
+          { "IpProtocol": "tcp", "FromPort": 80, "ToPort": 80, "CidrIp": "0.0.0.0/0" },
+          { "IpProtocol": "tcp", "FromPort": 443, "ToPort": 443, "CidrIp": "0.0.0.0/0" },
+          { "IpProtocol": "tcp", "FromPort": 3000, "ToPort": 3000, "CidrIp": "0.0.0.0/0" }
+        ]
+      }
+    },
+    "EaorcsS3StorageBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": { "Fn::Sub": "eaorcs-audit-storage-${EnvironmentName}-${AWS::AccountId}" },
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              }
+            }
+          ]
+        },
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "VpcId": {
+      "Description": "VPC ID of EAORCS Stack",
+      "Value": { "Ref": "EaorcsVPC" }
+    },
+    "StorageBucketName": {
+      "Description": "S3 Audit & Evidence Bundle Storage Bucket",
+      "Value": { "Ref": "EaorcsS3StorageBucket" }
+    },
+    "SecurityGroupId": {
+      "Description": "EAORCS Core Security Group",
+      "Value": { "Ref": "EaorcsSecurityGroup" }
+    }
+  }
+}

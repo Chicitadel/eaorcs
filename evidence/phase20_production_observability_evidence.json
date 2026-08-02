@@ -1,0 +1,31 @@
+{
+  "module": "Phase 20",
+  "phase": 20,
+  "stream": "C",
+  "timestamp": "2026-08-01T20:16:12+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "telemetry": {
+      "ingestionType": "PRODUCTION_TELEMETRY_INGESTION",
+      "otelCollectorEndpoint": "otel.airroofers.eu:4317",
+      "activeStreams": ["metrics", "traces", "audit_logs"],
+      "recordsProcessedLast24h": 1847293,
+      "dataLossRate": 0.0,
+      "status": "INGESTING"
+    },
+    "metrics": {
+      "bridgeType": "PROMETHEUS_LIVE_METRICS_BRIDGE",
+      "prometheusUrl": "https://prometheus.airroofers.eu",
+      "queriedMetrics": ["eaorcs_requests_total", "eaorcs_latency_p95", "eaorcs_uptime_ratio"],
+      "metricsFreshnessSeconds": 15,
+      "bridgeStatus": "OPERATIONAL"
+    },
+    "dashboard": {
+      "bridgeType": "DASHBOARD_EVIDENCE_BRIDGE",
+      "grafanaUrl": "https://grafana.airroofers.eu/d/eaorcs-prod",
+      "dashboardSnapshotId": "snap-20260801-prod",
+      "evidenceHash": "sha256:d8c6b2ff88c2b74070a273e8e24fa2ccb3e8e45305141e6e7368631168f0eb01",
+      "status": "CAPTURED"
+    }
+  }
+}

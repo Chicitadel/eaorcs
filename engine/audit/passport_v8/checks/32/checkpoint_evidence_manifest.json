@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 32,
+  "checkpoint_name": "Cloud Ecosystem Certification",
+  "domain": "CLOUD_ECOSYSTEM",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 99.5,
+  "evidence_artifacts": [
+    {
+      "name": "cloud_ecosystem_verification.json",
+      "sha256": "c338882d69b6418fa906931638ee00837e8fae1becd85feafb49917e7e339f2c",
+      "bytes": 692
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.149Z"
+}

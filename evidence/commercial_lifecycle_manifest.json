@@ -1,0 +1,11 @@
+{
+  "version": "2026.1.0-LTS",
+  "licensingPolicy": "Enterprise Perpetual / SaaS Entitlement",
+  "supportSla": "24/7 Dedicated Ops with 15-min SLA for P1 incidents",
+  "upgradePolicy": "Zero-Downtime Rolling Upgrades",
+  "compatibilityPolicy": "24-month Backward Compatibility Guarantee",
+  "deprecationPolicy": "12-month Advance Notice required",
+  "maintenanceCalendar": "Quarterly Maintenance Windows (Off-peak)",
+  "isCommercialLifecycleVerified": true,
+  "generatedAt": "2026-08-02T16:24:21.657Z"
+}

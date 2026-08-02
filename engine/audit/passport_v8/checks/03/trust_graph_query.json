@@ -1,0 +1,34 @@
+{
+  "trust_graph_id": "tg_1785574888968",
+  "composite_trust_score": 96.27,
+  "node_count": 5,
+  "edge_count": 4,
+  "trust_projections": {
+    "node_governance": {
+      "label": "UAIGOS Core Constitution",
+      "type": "Policy",
+      "trust_score": 100
+    },
+    "node_arch_spec": {
+      "label": "Frozen Nine-Layer Spec",
+      "type": "Artifact",
+      "trust_score": 98
+    },
+    "node_sec_verifier": {
+      "label": "Security & Integrity Verifier",
+      "type": "Verifier",
+      "trust_score": 93.1
+    },
+    "node_evidence_suite": {
+      "label": "Continuous Test & Audit Evidence",
+      "type": "Evidence",
+      "trust_score": 90.25
+    },
+    "node_prr_gatekeeper": {
+      "label": "PRR Milestone Gatekeeper",
+      "type": "PRRGate",
+      "trust_score": 100
+    }
+  },
+  "timestamp": "2026-08-01T09:01:28.968Z"
+}

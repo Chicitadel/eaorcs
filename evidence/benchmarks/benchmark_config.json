@@ -1,0 +1,17 @@
+{
+  "version": "2026.1.0-LTS",
+  "concurrency": 64,
+  "durationSeconds": 30,
+  "targetEndpoint": "https://api.airroofers.eu/trust/v1/health",
+  "faultInjection": {
+    "circuitBreaker": true,
+    "failoverTest": true
+  },
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "cpuCores": 8,
+    "totalMemoryMb": 32758,
+    "nodeVersion": "v24.17.0"
+  }
+}

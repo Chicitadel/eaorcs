@@ -1,0 +1,20 @@
+{
+  "module": "Operations",
+  "phase": 25,
+  "stream": "S6",
+  "timestamp": "2026-08-01T21:03:28+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "DELIVERED_SLA_EVIDENCE_LAKE_ENGINE",
+    "commitSha": "c8d4190f8e12b40974819201",
+    "committedSlaPercent": 99.9,
+    "deliveredSlaPercent": 99.999,
+    "slaBreachIncidentsCount": 0,
+    "lakeStatus": "SUBSTANTIATED",
+    "monitoredPilotTenantsCount": 12,
+    "activeUserSessionsCount": 6420,
+    "verifiedCustomerNpsScore": 94,
+    "verifiedCustomerCsatScore": 4.9,
+    "customerRenewalForecastPercent": 100
+  }
+}

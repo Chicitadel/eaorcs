@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 5,
+  "checkpoint_name": "OpenAPI 3.1 & Schema Contract Validation",
+  "domain": "SCHEMA_CONTRACTS",
+  "status": "PASSED",
+  "evidence_level": "Level D",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "openapi_validation.json",
+      "sha256": "f6eee883ae22f40664a8050913d88d77a958ada5f0aabb32aa738ca06c9f7838",
+      "bytes": 1699
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.793Z"
+}

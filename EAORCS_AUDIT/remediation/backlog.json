@@ -1,0 +1,44 @@
+[
+  {
+    "id": "GAP-FED-01",
+    "title": "Inject X-Telemetry-Key & X-Correlation-ID in platform-experience HTTP client",
+    "priority": "HIGH",
+    "state": "Fully Implemented"
+  },
+  {
+    "id": "GAP-FED-02",
+    "title": "Implement StorageGovernor module and temp directory cleanup crons",
+    "priority": "HIGH",
+    "state": "Fully Implemented"
+  },
+  {
+    "id": "GAP-FED-03",
+    "title": "Attach diagnostic telemetry & X-Correlation-ID to support tickets",
+    "priority": "MEDIUM",
+    "state": "Fully Implemented"
+  },
+  {
+    "id": "GAP-FED-04",
+    "title": "Expose /health and /ready endpoints on discovery & edge microservices",
+    "priority": "HIGH",
+    "state": "Fully Implemented"
+  },
+  {
+    "id": "GAP-FED-05",
+    "title": "Wire live API sandbox key generation in developers.enterprise.local",
+    "priority": "MEDIUM",
+    "state": "Fully Implemented"
+  },
+  {
+    "id": "GAP-FED-06",
+    "title": "Add Cache-Control immutable headers and asset checksum manifest in static/",
+    "priority": "MEDIUM",
+    "state": "Fully Implemented"
+  },
+  {
+    "id": "GAP-FED-07",
+    "title": "Implement canonical platform DTO layer across platform-core",
+    "priority": "HIGH",
+    "state": "Fully Implemented"
+  }
+]

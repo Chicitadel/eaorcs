@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 30,
+  "checkpoint_name": "Operating System Compatibility Certification",
+  "domain": "OS_COMPATIBILITY",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "os_compatibility_verification.json",
+      "sha256": "9915f3d12302ae320ac850ab167953cf03a0153a5affafd1c1e2e4b09f6890b8",
+      "bytes": 717
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.141Z"
+}

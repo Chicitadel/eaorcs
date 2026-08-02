@@ -1,0 +1,30 @@
+{
+  "module": "PilotCustomerSuccessScorecard",
+  "phase": "PHASE_18",
+  "stream": "P6",
+  "timestamp": "2026-08-01T19:42:14.000Z",
+  "status": "VERIFIED",
+  "evidenceType": "TIME_SERIES_VERIFIED",
+  "slaHistory": {
+    "periodDays": 30,
+    "totalBreaches": 0,
+    "avgCompliance": 99.999,
+    "status": "COMPLIANT"
+  },
+  "customerScorecard": {
+    "tenants": 12,
+    "aggregateNps": 92,
+    "aggregateCsat": 4.7,
+    "tenantsAtRisk": 0,
+    "status": "HEALTHY"
+  },
+  "supportArchive": {
+    "totalCases": 50,
+    "resolved": 49,
+    "p1Cases": 0,
+    "avgResolutionHours": 2.3,
+    "status": "ARCHIVED"
+  },
+  "externallyVerifiable": true,
+  "verdict": "P6_PILOT_CUSTOMER_SUCCESS_VERIFIED"
+}

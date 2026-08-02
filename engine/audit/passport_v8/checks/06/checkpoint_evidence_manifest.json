@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 6,
+  "checkpoint_name": "System Latency & Throughput Benchmark",
+  "domain": "PERFORMANCE",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 98.9,
+  "evidence_artifacts": [
+    {
+      "name": "performance_benchmarks.json",
+      "sha256": "c8602ad8730258065a7c61f5a9f7f800e1ba9fd6fdcebdb360d3fa476ffd0ed5",
+      "bytes": 552
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.796Z"
+}

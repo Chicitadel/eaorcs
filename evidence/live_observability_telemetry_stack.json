@@ -1,0 +1,21 @@
+{
+  "openTelemetryStatus": "STREAMING_ACTIVE",
+  "prometheusMetricsEndpoint": "https://telemetry.airroofers.eu/metrics",
+  "jaegerTracingEndpoint": "https://telemetry.airroofers.eu/jaeger/api/traces",
+  "grafanaDashboards": [
+    {
+      "name": "EAORCS-Production-Overview",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "EAORCS-Security-Assurance",
+      "status": "ACTIVE"
+    },
+    {
+      "name": "EAORCS-Adapter-Health",
+      "status": "ACTIVE"
+    }
+  ],
+  "isLiveObservabilityActive": true,
+  "exportedAt": "2026-08-02T16:24:21.799Z"
+}

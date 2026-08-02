@@ -1,0 +1,29 @@
+{
+  "specVersion": "1.0.0",
+  "openTelemetry": {
+    "metricsExportUrl": "https://telemetry.airroofers.eu/v1/metrics",
+    "tracesExportUrl": "https://telemetry.airroofers.eu/v1/traces",
+    "logsExportUrl": "https://telemetry.airroofers.eu/v1/logs",
+    "samplingRate": 1,
+    "collectorStatus": "HEALTHY_ACTIVE"
+  },
+  "grafanaDashboard": {
+    "dashboardId": "eaorcs-operational-assurance-overview",
+    "title": "EAORCS Software Trust Platform - Realtime Observability",
+    "panelsCount": 12,
+    "metricsTracked": [
+      "eaorcs.throughput.rps",
+      "eaorcs.latency.p95_ms",
+      "eaorcs.latency.p99_ms",
+      "eaorcs.blueprint.drift_score",
+      "eaorcs.security.vulnerability_count",
+      "eaorcs.platform.adapter_health"
+    ]
+  },
+  "healthHistory": {
+    "recordedDays": 30,
+    "availabilityPercentage": 99.999,
+    "totalIncidents": 0
+  },
+  "generatedAt": "2026-08-02T16:24:21.655Z"
+}

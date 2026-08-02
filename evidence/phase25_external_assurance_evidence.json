@@ -1,0 +1,15 @@
+{
+  "module": "ExternalAssurance",
+  "phase": "25",
+  "stream": "S8",
+  "timestamp": "2026-08-01T21:03:29+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "lakeType": "EXTERNAL_ASSURANCE_INGESTION_LAKE",
+    "verifiedThirdPartyAttestationsCount": 28,
+    "graphType": "RFC3161_TSA_RECEIPT_GRAPH_V3",
+    "issuedTimestampTokensCount": 160,
+    "bridgeType": "EXTERNAL_AUDITOR_PORTAL_BRIDGE_V3",
+    "activeAuditorTokensCount": 12
+  }
+}

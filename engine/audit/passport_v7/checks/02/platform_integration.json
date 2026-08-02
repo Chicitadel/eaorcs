@@ -1,0 +1,15 @@
+{
+  "platform_version": "2026.1-PLATFORM",
+  "identity_integration": "OIDC / WebAuthn (identity.airroofers.eu)",
+  "billing_integration": "Stripe Metered Billing Rating",
+  "telemetry_integration": "OpenTelemetry v1.25 / Prometheus",
+  "mandatory_context_headers": [
+    "X-Correlation-ID",
+    "X-Tenant-ID",
+    "X-License-ID",
+    "X-User-ID",
+    "X-Org-ID",
+    "X-App-ID"
+  ],
+  "status": "COMPLIANT"
+}

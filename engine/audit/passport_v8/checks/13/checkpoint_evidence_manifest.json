@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 13,
+  "checkpoint_name": "Database Migration Certification",
+  "domain": "DB_MIGRATIONS",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "db_migration_certification.json",
+      "sha256": "2e68310ffd05c19890d82279e16da9b5710f563d583b91f8e648a9e3720a9f25",
+      "bytes": 346
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.818Z"
+}

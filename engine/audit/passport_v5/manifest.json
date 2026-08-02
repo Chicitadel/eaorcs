@@ -1,0 +1,18 @@
+{
+  "bundle_version": "5.0.0",
+  "exported_at": "2026-08-01T09:04:59.854Z",
+  "total_checkpoints": 25,
+  "structure": [
+    "artifacts",
+    "checks",
+    "signatures",
+    "attestations",
+    "SBOM",
+    "OpenAPI",
+    "SPDX",
+    "CycloneDX",
+    "SLSA",
+    "in_toto"
+  ],
+  "root_merkle_hash": "c4a26e736e0bd9c09e5f726b435778e9003deef78b92db27366b1494794a28ce"
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="EAORCS.VisualStudio.Extension" Version="2026.1.0" Publisher="ujomor-systems" Language="en-US" />
+    <DisplayName>EAORCS — Enterprise Software Trust & Governance Engine</DisplayName>
+    <Description xml:space="preserve">Real-time compliance, software assurance, trust score calculation, OSAP passport generation, and governance diagnostics for IDEs.</Description>
+    <MoreInfo>https://ujomor.com</MoreInfo>
+    <License>LICENSE.txt</License>
+  </Metadata>
+  <Installation TargetPlatform="amd64">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0, 18.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.8,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="EAORCS.Package.pkgdef" />
+  </Assets>
+</PackageManifest>

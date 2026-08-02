@@ -1,0 +1,36 @@
+{
+  "total_domains": 21,
+  "coverage_metrics": [
+    {
+      "domain": "Languages (15+)",
+      "coverage_pct": 95,
+      "status": "VERIFIED"
+    },
+    {
+      "domain": "Cloud (AWS, Azure, GCP, OCI)",
+      "coverage_pct": 100,
+      "status": "VERIFIED"
+    },
+    {
+      "domain": "Containers & K8s",
+      "coverage_pct": 100,
+      "status": "VERIFIED"
+    },
+    {
+      "domain": "AI Models & Frameworks",
+      "coverage_pct": 96,
+      "status": "VERIFIED"
+    },
+    {
+      "domain": "IDEs (45+ Environments)",
+      "coverage_pct": 98,
+      "status": "VERIFIED"
+    },
+    {
+      "domain": "Compliance (19+ Frameworks)",
+      "coverage_pct": 99,
+      "status": "VERIFIED"
+    }
+  ],
+  "overall_utcf_coverage_pct": 98
+}

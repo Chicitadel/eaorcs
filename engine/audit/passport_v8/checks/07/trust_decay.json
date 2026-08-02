@@ -1,0 +1,31 @@
+{
+  "evidence_count": 2,
+  "effective_decay_ratio": 1,
+  "decayed_evidence_items": [
+    {
+      "evidence_id": "ev_zjcjj5",
+      "type": "SECURITY_AUDIT",
+      "base_score": 100,
+      "decayed_score": 100,
+      "freshness": {
+        "age_days": 0,
+        "freshness_status": "Fresh",
+        "trust_decay_multiplier": 1,
+        "timestamp": "2026-07-31T21:14:59.281Z"
+      }
+    },
+    {
+      "evidence_id": "ev_yr84gc",
+      "type": "TEST_SUITE",
+      "base_score": 98,
+      "decayed_score": 98,
+      "freshness": {
+        "age_days": 0,
+        "freshness_status": "Fresh",
+        "trust_decay_multiplier": 1,
+        "timestamp": "2026-07-31T21:14:59.281Z"
+      }
+    }
+  ],
+  "evaluated_at": "2026-07-31T21:14:59.282Z"
+}

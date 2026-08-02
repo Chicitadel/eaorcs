@@ -1,0 +1,38 @@
+{
+  "certification_domain": "Database Compatibility Certification",
+  "status": "PASSED",
+  "evidence_level": "Level B",
+  "databases_verified": [
+    {
+      "name": "PostgreSQL",
+      "version": "15/16",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "MySQL / MariaDB",
+      "version": "8.0 / 10.11",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "SQL Server",
+      "version": "2022",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Oracle",
+      "version": "19c / 21c",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "SQLite",
+      "version": "3.42+",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.145Z"
+}

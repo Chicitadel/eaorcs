@@ -1,0 +1,9 @@
+[
+  {
+    "exception_id": "SEC-004",
+    "reason": "Legacy Vendor Interface",
+    "approver": "Security Board",
+    "expires": "2027-01-15",
+    "compensating_control": "Runtime WAF"
+  }
+]

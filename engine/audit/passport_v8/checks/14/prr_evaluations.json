@@ -1,0 +1,45 @@
+{
+  "overall_prr_status": "PASSED",
+  "commercial_release_authorized": true,
+  "blocking_gate": null,
+  "gate_evaluations": [
+    {
+      "gate": "PRR-1",
+      "name": "Architecture Freeze & Constitution",
+      "status": "PASSED",
+      "blueprint_hash": "923cf07868e43814...",
+      "rule": "Master Blueprint specification hash identity match & Nine-Layer Freeze"
+    },
+    {
+      "gate": "PRR-2",
+      "name": "Protocol & OSAP v2 Standard Freeze",
+      "status": "PASSED",
+      "rule": "OSAP v2 core schema & OpenAPI router contracts frozen"
+    },
+    {
+      "gate": "PRR-3",
+      "name": "Predictive Risk & Org Twin Readiness",
+      "status": "PASSED",
+      "rule": "Org Twin Memory & Cyber Weather forecast active"
+    },
+    {
+      "gate": "PRR-4",
+      "name": "Digital Twin 2.0 & AI Council Readiness",
+      "status": "PASSED",
+      "rule": "Digital Twin point-in-time state & AI Council consensus active"
+    },
+    {
+      "gate": "PRR-5",
+      "name": "Marketplace Plugin & Extension SDK",
+      "status": "PASSED",
+      "rule": "Marketplace Engine, Plugin SDK, & Insurance Index active"
+    },
+    {
+      "gate": "PRR-6",
+      "name": "GA Operational Certification & Academy",
+      "status": "PASSED",
+      "rule": "EAORCS Academy, 25 Tier-1 Checkpoints, & Sovereign Passport active"
+    }
+  ],
+  "timestamp": "2026-07-31T21:14:59.369Z"
+}

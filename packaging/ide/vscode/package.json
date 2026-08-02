@@ -1,0 +1,112 @@
+{
+  "name": "eaorcs-vscode",
+  "displayName": "EAORCS — Enterprise Software Trust & Governance Engine",
+  "description": "Real-time compliance, software assurance, trust score calculation, OSAP passport generation, and governance diagnostics for VS Code.",
+  "version": "2026.1.0",
+  "publisher": "ujomor-systems",
+  "license": "Commercial / Enterprise",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Linters",
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "eaorcs",
+    "uaigos",
+    "compliance",
+    "audit",
+    "trust",
+    "osap",
+    "lsp"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:yaml",
+    "onLanguage:json",
+    "onLanguage:eaorcs",
+    "onCommand:eaorcs.runAudit",
+    "onCommand:eaorcs.compileDsl",
+    "onCommand:eaorcs.exportPassport",
+    "onCommand:eaorcs.verifyCertificate",
+    "onCommand:eaorcs.startLspServer"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "eaorcs.runAudit",
+        "title": "EAORCS: Run Full Software Assurance Audit",
+        "category": "EAORCS Trust Engine"
+      },
+      {
+        "command": "eaorcs.compileDsl",
+        "title": "EAORCS: Compile Policy Assurance DSL Script",
+        "category": "EAORCS Policy Engine"
+      },
+      {
+        "command": "eaorcs.exportPassport",
+        "title": "EAORCS: Export Standard OSAP v2.0 Passport",
+        "category": "EAORCS OSAP"
+      },
+      {
+        "command": "eaorcs.verifyCertificate",
+        "title": "EAORCS: Verify Sovereign Compliance Certificate",
+        "category": "EAORCS Verifier"
+      },
+      {
+        "command": "eaorcs.startLspServer",
+        "title": "EAORCS: Restart Language Server (LSP)",
+        "category": "EAORCS Language Server"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "EAORCS Configuration",
+      "properties": {
+        "eaorcs.lsp.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable EAORCS Language Server for real-time IDE governance diagnostics."
+        },
+        "eaorcs.lsp.path": {
+          "type": "string",
+          "default": "engine/ide/LspServer.js",
+          "description": "Path to EAORCS LSP server executable script."
+        },
+        "eaorcs.autoAuditOnSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically run background trust score audit whenever files are saved."
+        },
+        "eaorcs.licenseKey": {
+          "type": "string",
+          "default": "COMMUNITY-FREE",
+          "description": "EAORCS Enterprise License Key."
+        },
+        "eaorcs.trustThreshold": {
+          "type": "number",
+          "default": 85.0,
+          "description": "Minimum required Trust Score threshold for build passing."
+        }
+      }
+    },
+    "languages": [
+      {
+        "id": "eaorcs",
+        "aliases": [
+          "EAORCS Assurance Policy",
+          "assure"
+        ],
+        "extensions": [
+          ".assure",
+          ".eaorcs"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  }
+}

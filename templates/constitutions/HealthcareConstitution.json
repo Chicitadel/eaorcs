@@ -1,0 +1,59 @@
+{
+  "sector": "Healthcare",
+  "version": "1.1.0",
+  "title": "Healthcare & Life Sciences Regulatory Rulepack",
+  "standards": [
+    "HIPAA Privacy & Security Rule",
+    "HITECH Act",
+    "FDA 21 CFR Part 11",
+    "GxP Quality System Regulations"
+  ],
+  "mandatorySecurityControls": [
+    "PHI Encryption at Rest (AES-256-GCM) and Transit (TLS 1.3)",
+    "Electronic Signatures & Immutable Audit Trails",
+    "PHI De-Identification & Pseudonymization Engine",
+    "Role-Based Minimum Necessary Access Control"
+  ],
+  "governancePolicies": {
+    "auditRetentionYears": 7,
+    "phiProtectionLevel": "MAXIMUM",
+    "gxpValidationRequired": true
+  },
+  "rules": [
+    {
+      "id": "HLT-SEC-01",
+      "title": "Protected Health Information (PHI) Encryption Mandatory",
+      "severity": "CRITICAL",
+      "description": "All PHI payloads stored in persistent tables or transmitted across networks must be encrypted using AES-256-GCM and TLS 1.3.",
+      "checkType": "STATIC_PATTERN"
+    },
+    {
+      "id": "HLT-COMP-01",
+      "title": "FDA 21 CFR Part 11 Electronic Signature & Audit Compliance",
+      "severity": "CRITICAL",
+      "description": "Electronic records and signatures must contain timestamp, signer identity, purpose, and tamper-evident hash links.",
+      "checkType": "BEHAVIORAL"
+    },
+    {
+      "id": "HLT-PRIV-01",
+      "title": "Automated Safe Harbor PHI De-Identification",
+      "severity": "HIGH",
+      "description": "Non-clinical data streams, logs, and analytics pipelines must automatically strip 18 HIPAA identifier categories.",
+      "checkType": "STATIC_PATTERN"
+    },
+    {
+      "id": "HLT-GOV-01",
+      "title": "Minimum Necessary Access & Role-Based Authorization",
+      "severity": "HIGH",
+      "description": "Access to patient medical records must strictly conform to minimum necessary access permissions based on verified practitioner role.",
+      "checkType": "BEHAVIORAL"
+    },
+    {
+      "id": "HLT-QUAL-01",
+      "title": "GxP Software Validation & Verification Evidence",
+      "severity": "HIGH",
+      "description": "Software deployments in clinical environments require automated verification test runs and GxP validation certificates.",
+      "checkType": "BEHAVIORAL"
+    }
+  ]
+}

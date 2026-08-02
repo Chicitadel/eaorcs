@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 25,
+  "checkpoint_name": "Production Operations Certification",
+  "domain": "PROD_OPERATIONS",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "production_operations.json",
+      "sha256": "139e5a0ceb5e7214720d3ca8a431b288efdc65b2ce895482464b73d2875ea8d5",
+      "bytes": 468
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.847Z"
+}

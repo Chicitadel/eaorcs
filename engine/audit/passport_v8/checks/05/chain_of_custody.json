@@ -1,0 +1,38 @@
+{
+  "artifact_id": "execution.log",
+  "custody_chain_length": 5,
+  "custody_steps": [
+    {
+      "step_id": "custody_1",
+      "action": "CREATED_BY",
+      "actor": "Audit Engine",
+      "timestamp": "2026-08-01T09:01:28.977Z"
+    },
+    {
+      "step_id": "custody_2",
+      "action": "SIGNED",
+      "actor": "Release Authority",
+      "timestamp": "2026-08-01T09:01:28.977Z"
+    },
+    {
+      "step_id": "custody_3",
+      "action": "TRANSFERRED",
+      "actor": "CI Pipeline",
+      "timestamp": "2026-08-01T09:01:28.977Z"
+    },
+    {
+      "step_id": "custody_4",
+      "action": "IMPORTED",
+      "actor": "Evidence Vault",
+      "timestamp": "2026-08-01T09:01:28.977Z"
+    },
+    {
+      "step_id": "custody_5",
+      "action": "VERIFIED",
+      "actor": "Third-party Auditor",
+      "timestamp": "2026-08-01T09:01:28.977Z"
+    }
+  ],
+  "chain_verified": true,
+  "timestamp": "2026-08-01T09:01:28.977Z"
+}

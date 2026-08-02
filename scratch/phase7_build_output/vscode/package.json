@@ -1,0 +1,46 @@
+{
+  "name": "eaorcs-vscode",
+  "displayName": "EAORCS — Enterprise Software Trust & Governance Engine",
+  "description": "Real-time compliance, software assurance, trust score calculation, OSAP passport generation, and governance diagnostics for IDEs.",
+  "version": "2026.1.0",
+  "publisher": "ujomor-systems",
+  "license": "Commercial / Enterprise",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Linters",
+    "Programming Languages",
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:yaml",
+    "onLanguage:json",
+    "onCommand:eaorcs.runAudit"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "eaorcs.runAudit",
+        "title": "EAORCS: Run Full Software Assurance Audit"
+      },
+      {
+        "command": "eaorcs.exportPassport",
+        "title": "EAORCS: Export Standard OSAP v2.0 Passport"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "EAORCS Settings",
+      "properties": {
+        "eaorcs.lsp.enabled": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}

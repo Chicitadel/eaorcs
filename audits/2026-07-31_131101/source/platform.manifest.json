@@ -1,0 +1,1680 @@
+{
+  "platformName": "Air Roofers Ecosystem",
+  "platformVersion": "6.0.0",
+  "timestamp": "2026-07-31T13:11:03.004Z",
+  "gitCommit": "df4f9d0e9f6728cd1b6041210bdbfbc2048a2cfd",
+  "gitBranch": "master",
+  "totalFiles": 334,
+  "manifest": [
+    {
+      "file": "src\\Services\\AeroBillService.php",
+      "sha256": "ea5a26192588d73390875e6957f22d366002353bd57123e8d07b5e4957b66fb6",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\AITriageEngine.php",
+      "sha256": "32725c554e93570ec2a0976ebc4edcd30e689745c71744f59277f906f0339182",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\CommunityService.php",
+      "sha256": "74c9513044eb4a83ee5aedf01b4a446c6bff5bc58d7aa6cc9d8d36c24bacff09",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\ContractCompiler.php",
+      "sha256": "95c1f2f1ca4f114ee0ed7bb8388909d776ee3996b911209c7cfad5db72493bc4",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\DescriptorService.php",
+      "sha256": "10ba3f5ad4665d06494b4746066ae9cb0b0569ee46499d4f81ca4677b7bbccae",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\DocumentationService.php",
+      "sha256": "c959bd6ba030deb96480fc00ac0c7775795eb8090bf6f08a31ac5561597aaef5",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\IdentityService.php",
+      "sha256": "72438149cd16acd30c7b73d5e62d81590c7e9b9e42d2043c75eaaa8937676761",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\MandatagService.php",
+      "sha256": "a15dbeb636bc95df9f6e435aea4fcee16b8bffe94146430162caae734102437c",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\ProvisionerService.php",
+      "sha256": "67d59c80fba3050f7644ffbb69f869353cd6eb68391782552e0ddb7c787a4120",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\SupportAuditLogger.php",
+      "sha256": "ab71f18f658e5230b3fc430ce1780365ac91a7142ea2ecf9c33e1d2bf5714380",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\SupportEventBus.php",
+      "sha256": "f25c01b5ea73b010b87255bd80d8508162d010b5c940f4097f8c0889d680e6ea",
+      "size": 0
+    },
+    {
+      "file": "src\\Services\\SupportService.php",
+      "sha256": "3ccfce00de572952efa41b82773c62aff84bc8e31b09f9dfceaa78fed86aa823",
+      "size": 0
+    },
+    {
+      "file": "public_html\\.htaccess",
+      "sha256": "8b5140b2ce1aff769e63c614cc55aa48efd04b3ba78b043e9eb31f67f6106651",
+      "size": 0
+    },
+    {
+      "file": "public_html\\assets\\css\\style.css",
+      "sha256": "ffc4e558a606e70775fca06c18567efcc7f15259e6ad6edaa61c2f33fe1f2d71",
+      "size": 0
+    },
+    {
+      "file": "public_html\\assets\\favicon.svg",
+      "sha256": "38881ef22be5cea0a03fcaccda4cacde6f41d33f7915bbbd2681fd5f4e7a1eef",
+      "size": 0
+    },
+    {
+      "file": "public_html\\assets\\images\\stack_core.png",
+      "sha256": "24fa84c412e7448ce0144dcf87cd0beb243d170958c1dd81ae3f3ccb0896d697",
+      "size": 0
+    },
+    {
+      "file": "public_html\\assets\\index-BAcTf1us.js",
+      "sha256": "6528e295b1026dc01497f30ddf49d97b48ad97fe1451fa354bda55d6eaa92750",
+      "size": 0
+    },
+    {
+      "file": "public_html\\assets\\index-CUPFJfgS.css",
+      "sha256": "0f873120b8ceaa21dca713b3271ee86fedcb118105fdc3856d1b814ecb1b4d15",
+      "size": 0
+    },
+    {
+      "file": "public_html\\assets\\logo.svg",
+      "sha256": "e0ac031c232e9a805fbd11f36822873f5d1f9bf548700c20eefe4e3b9dd05a43",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\.htaccess",
+      "sha256": "6b817083ef9d947002e5ffe1e216de9b1ecd9bba813f0d8493b25dab83001699",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\activations.json",
+      "sha256": "0e87ece00a909935bac924ca84a60aaa71371971f15c14631572ed1f24b8e820",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\api_keys.json",
+      "sha256": "559a0fb17f5c633822eebed59c773688527cdef74bf7501afe8d93822a4b159f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\budget_controls.json",
+      "sha256": "93fc0c42f1062b19f920861e0521ae4d6ea0712537a7aaf5597d63bbcb3adc9c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\cache\\1e1e482ef2efa7319dc057dad1e3da60.cache",
+      "sha256": "0e43cce8f375b9582f51886c9d1fc35f0977a60cefa5d71158520ebb1f28a913",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\cases.json",
+      "sha256": "82355918657109b7a0330425dbc09b23bede3a3505192b958bd14adae36a44bc",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\commercial_catalog.json",
+      "sha256": "b1a27a8e18541ea1df232dee30eff35d5072567c36ff38cf0ab81cc1ada52157",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\consents.json",
+      "sha256": "c15198006eeece7de55404939e0e187018d806018063e4ae139b4225adb78063",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\contacts.json",
+      "sha256": "4dc416c56e080831eb3589f66d2de568913c2393628be117093f8f92150cc82a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\contracts.json",
+      "sha256": "a2b0deb6b89f5d2f798b7a3ec72dc75cf6b58bc00999492dca5cace5ef537963",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\contract_workflow_history.json",
+      "sha256": "19ef051324c5d4e829384da4eec59f64a535beb6ba8a8ad8263a915b9196093f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\customer_timeline.json",
+      "sha256": "65f975357a76914833d0375c254187565532659cad96a499b01b897e11037431",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\feedback.json",
+      "sha256": "880748585970d7b6ad19e6aaa50f15bd4179272f172b345d9e1ec3d719a811fb",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\kb_articles.json",
+      "sha256": "fc94c4376e52712fb9398e9e8bc8e77779fcc7380dfeb665d42ff935fc11f6f0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\licenses.json",
+      "sha256": "c13c8064b59dfa45121f22a622ebe330bc930e538e080dd1582baa8527c3a096",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\orders.json",
+      "sha256": "a48da5dc3dbc4f5571970beb147de255ee0841bc13a6459690a89ac113ec5843",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\organizations.json",
+      "sha256": "1d68e805019d97b53386d23a9b4661d00a0ed4cfca48dff83a0a418c6f9677aa",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\partner_registry.json",
+      "sha256": "7d0b2cac84e9657bf29ae28818b49a683c3541e8b42c8176d53c00409dfe74fe",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\platform_events.json",
+      "sha256": "8f6ffd008230cb546d1ea046fdb535d6d531a4c265abc6a4e64cdc8691dc11fd",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\platform_registry.json",
+      "sha256": "2548191b998756bdb15f237fec7214f685c9e370cd019cfd21c7aca22e7763f9",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\product_config_audit.json",
+      "sha256": "8cf6cce93eafd45a7d505ddbe46e91edecdc58b302aff825a9bca9cede59914b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\product_registry.json",
+      "sha256": "a0d9a23d95091c23f68c40b772d396f7742f2cc59e0a834ca72a5b8c562356d4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\provisioned_workspaces.json",
+      "sha256": "712a603dc6749121d3a8c2faf393937da2dc219cffa091f800a4e6153d8ee13f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\rated_usage.json",
+      "sha256": "034f5d9708290f33f10132ea25c7f6897f120f0ce51f527efee2c56d2dafd2fb",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\registry.json",
+      "sha256": "00db1446ac4fe20f78d7f2c8f3c9558454a50ce0026a62b2bcf615d242eee810",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\revenue_splits.json",
+      "sha256": "cac23e33d4bfb7a896fa5125c4a9a4c60b2836792ca6d9f295218963b97f314a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\support.json",
+      "sha256": "82c86d97fa59011072db6a09f48c11ec8946dbbea3eea99da2f265336405a81f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\transactions.json",
+      "sha256": "902068c841ca4fa45f7b245c036a9e2a9621420670a4006afde54f6f04b9ada0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\usage_meters.json",
+      "sha256": "13c8657156276ab7704cb6876a8008682679784f99d02ea2abfa4e86614f2f31",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\users.json",
+      "sha256": "4426beed3f574d7bf04bc0a563ca6c521ad6f65d5ffade8871acfa05e1d12c2a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\webauthn_challenges.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "file": "public_html\\data\\webauthn_credentials.json",
+      "sha256": "40043220606a2bac19cebe889b29c31f6acf15f6819348fc1b108fdb1b5a9c0a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\events\\support_events.jsonl",
+      "sha256": "1b09ba431e1bae59649790cd9adc24e5a929607c82fee14baebb467f652e6e27",
+      "size": 0
+    },
+    {
+      "file": "public_html\\fix_permissions.php",
+      "sha256": "eedad4151c1b47ed80bf4c2116b6413df54f14d7046c377d9a7c65f0367f69c8",
+      "size": 0
+    },
+    {
+      "file": "public_html\\fix_subdomain_symlinks.php",
+      "sha256": "41c3c616c14df7cf66d4ec5be3fa1b0c4b669e224a3985ca6ad5528ce026c50e",
+      "size": 0
+    },
+    {
+      "file": "public_html\\global\\css\\design-system.css",
+      "sha256": "d73dd74a8d65e10af6a8d8aac4319fef8d8387b6be9c9472f2913fce9527118f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\global\\css\\ui-components.css",
+      "sha256": "2d27a0a25afff35e4b153094e87fad801f9fa3c4704ffbd5d20d9add0777861e",
+      "size": 0
+    },
+    {
+      "file": "public_html\\global\\js\\auth-runtime.js",
+      "sha256": "6f48f7da98fcce246c6aada9a6d0a1101c429ef5458be730773e762a85fdb83b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\index.php",
+      "sha256": "8f2e5b982aaf9d0de2da1a27aa7c338bf48fd3a348d2e9f70b53da363968299d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\locales\\de.json",
+      "sha256": "36135d4a3c7599bb00e1e1b86f5ef091fed26dc9288da5a5040d78b48bc00e89",
+      "size": 0
+    },
+    {
+      "file": "public_html\\locales\\en.json",
+      "sha256": "f0ae566519b60ae7a4e5870d47f6bbbd804396d9eaee73cb3806fdb9d8f34720",
+      "size": 0
+    },
+    {
+      "file": "public_html\\locales\\fr.json",
+      "sha256": "32eee719ff27f98347a4036becb163bedc3070fb48502bc6b6b98392b1cb8704",
+      "size": 0
+    },
+    {
+      "file": "public_html\\logs\\support_audit.jsonl",
+      "sha256": "be60f6fc50778caf44f51ccd6a5a3f32b07a17dc0231f277233df49605227214",
+      "size": 0
+    },
+    {
+      "file": "public_html\\operational_readiness_summary.json",
+      "sha256": "5ef54e14f236c8dfba204262060dffd7bf4413b58037a38aa6072f7e73c14fc4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Audit\\AuditLogger.php",
+      "sha256": "257196c3542c481bcd3b32e616aa564f03a9f923652b42e6aa76087580fe4d72",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Database\\JsonDatabase.php",
+      "sha256": "4c8e343417d9458078936710d675448297d196754b1f5c91d0cbb57da495a7a7",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Database\\MigrationRunner.php",
+      "sha256": "699824a4dfc9857d6e4dd99835bf13f0420c31b1b7f786925cf1fe792721c308",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\DTOs\\InvoiceDTO.php",
+      "sha256": "54838b3816ddb84e167471b73ae9c11aef17e840b2f79eee4893a46e3b842043",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\DTOs\\LicenseDTO.php",
+      "sha256": "cb633b81ac67b5bddd784787ae8cdac720e2764f389bb02ea1c0bb24648ea675",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\DTOs\\OrganizationDTO.php",
+      "sha256": "465c6e3bb5b72d620f8ce14aadc2386e847854fd5bc6388808a33e1c5042ae2a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\DTOs\\ProductDTO.php",
+      "sha256": "4efb7c4f1e67eceff4d965194ecefcffa00ce2271e544cff103804a314c595ce",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\DTOs\\SubscriptionDTO.php",
+      "sha256": "d1c8eb30118b1b37d4ea42a394541b5b24d2f552e5496bc69749c3adaf7f57d2",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\DTOs\\UserDTO.php",
+      "sha256": "0575c5eefb58d84292be7e7ba3b266fe6fab9fef524658ed3220eb715eb4d4dc",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Engine\\EngineInterface.php",
+      "sha256": "e6fda285e35d0a44333e1c8827605a14b868046314936f5e278b026c7a8a6bb7",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Error\\PlatformError.php",
+      "sha256": "115abcc9618f19105b9738de9ebc8e5e5c50a0055d07174c949dd454f1718104",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Events\\CloudEventEnvelope.php",
+      "sha256": "b5f8d563bb1d3950565dec1f45ecd525b6efeb5dd22684604c7f8a760f3d6aba",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Events\\EventBus.php",
+      "sha256": "4ef5818457291161e7f9558e42618de16b05e6211b997dc258f1c0d7a5d47aa2",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Events\\EventBusInterface.php",
+      "sha256": "5de6e1211712e9033553ef2d3506a253a791152d6590dc15eb8c1210e5cb1d42",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Events\\LocalEventBusAdapter.php",
+      "sha256": "e79db584a057bbf83982ef5fe4092c3ba45f9706a121b6bc08300668525b682a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Governance\\CapabilityType.php",
+      "sha256": "9169a50e89cf2aea9aa39e4800529ca7231514e5589e7c9f4d087a69a6a02748",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Governance\\DataClassification.php",
+      "sha256": "1ee7f8d04c4843596f8b173c5520ffcda2c2f0038ded90c02163e772b65bb183",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Governance\\LifecycleStatus.php",
+      "sha256": "6df89d809ead2d758a839cea647c786963dc2b4ded34620e7c0e4f39485271e7",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Http\\BrandedErrorPage.php",
+      "sha256": "82169a4d4101403753ad60912b57d642d3bd4d0c78dcb9b93de088f651377725",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Http\\PlatformShell.php",
+      "sha256": "298dce7d42587264125d9bb56b22f68bf8c4191c0e4e6709dc1f00424a12b42c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Http\\ResponseFormatter.php",
+      "sha256": "c198e3ecf343b76b03221490d06647d9ae0d7e45ca6fe42b8d1d01d6e07d3190",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Http\\SharedPlatformMiddleware.php",
+      "sha256": "da523e8ddce5596708b320209280e4e2c2831fa64415bf0e2e830280c83fdeef",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Payment\\LocalPaymentAdapter.php",
+      "sha256": "426848d062777c3cc26842cd19970ef839b2e1140d58612c904d945c760fc3ea",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Payment\\PaymentGatewayInterface.php",
+      "sha256": "0dc47ad415d5c57dd1b81b85267e24524467474e05f0fc0c08969bb19e40e98a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Payment\\PaymentProviderInterface.php",
+      "sha256": "0933c74d285e6a6fab2448b99b83de1dc1f774e54de983fce2a78dfe14b076b1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Payment\\PayPalProvider.php",
+      "sha256": "d1c4945646e73455690c34754b5513b5b4cc827707be2db400de6bbfc3973e91",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Payment\\StripeProvider.php",
+      "sha256": "66620af0551ec2ed91408dd31c64f594580731831eddd2bf6365131841a24609",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Repository\\BaseRepository.php",
+      "sha256": "486168f6a53534f69a03a8a321a93d4d53a1e0dd62e93fc97af2cb06e0f54fa3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\BillingClient.php",
+      "sha256": "ce3e12ce27646a6335f486cb90dbf7f8d165070b7f732c11c888b835ab6d8bfa",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\DiscoveryClient.php",
+      "sha256": "767deb1f5d4acb9a341c40e6d86dab1bcf914f78880113d9c3999faeb92d1b39",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\AbstractClient.php",
+      "sha256": "27056642dc11db65ec9237232407c47c42a86e2a6e47d4d4e95fab595820fc26",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\CircuitBreaker.php",
+      "sha256": "e582831cb58dcdd730019fcc100034335e6f47d3252bb73682e603ed765ec61c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\CurlTransport.php",
+      "sha256": "257ba946528bfae6ec7d799d52533b0d7df636806001389b8b8a7b5bde6de9e4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\ErrorMapper.php",
+      "sha256": "62abb6e8201b02ce271dea303ab64bad2985efdfc9fedcd7b02bd88ea5989bf6",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\RetryPolicy.php",
+      "sha256": "17d1800ea04b95ca127142c5811fa4be296374244ffed90c6229dc12ba632618",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\StreamTransport.php",
+      "sha256": "4db369df75a54b9a6a8be6196b1cfad5d6b2c94e73765a5f463ec180bebaf0fc",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\TelemetryDecorator.php",
+      "sha256": "d639ebd0bdd78003b31dd4f5a6a74040a32aa76646e36270a0e206072cf0488b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\Foundation\\TransportInterface.php",
+      "sha256": "9279b0373fb3033f6cdf5c631f97a628fd1f95e3cb5bf7d091a40a7599d147c3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\IdentityClient.php",
+      "sha256": "62195778fbdbe533c51c79969cd9dc925d43aebf162135f3e41fd71f28f8ae59",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\LicenseClient.php",
+      "sha256": "531ed0fe9714e77807ff18eb3b803e655bc98504f2dfea968a0856cc9eb7c6d1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\OperationsClient.php",
+      "sha256": "e6411bad3f779475c8780024147ef0789004ac42038600c201ddeea7508a3156",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Sdk\\ProductsClient.php",
+      "sha256": "8663fcf72c911a25d289dae9e1ab69b7eccf0302a2f3dba9f69e8970bd950308",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\AdminAuthenticator.php",
+      "sha256": "c12353ca45a356365fc0aa9dc97bbcda26570ca446509b5f2602a1e414648e2c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\AdminSessionMiddleware.php",
+      "sha256": "8eea52d0636082fdd414148119eb31af0ee1a3da048d9bf9a00f388a50f2098a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\ApiAuth.php",
+      "sha256": "9cb0fdd2b42449cc9bac153edfa6e72a1b30701d51f42ccea613cf4613bf52b1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\ApiAuthenticator.php",
+      "sha256": "2ca30be5be39cec5e0969cea2fbfc01d9f71aa2a14a44f7b7d200b1adfd62870",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\ApiAuthMiddleware.php",
+      "sha256": "5aa5517daf3487ca75e331e567110dcb30888d54a4b00669617ad0e33f8f6fd2",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\AuthoritySurfaceMiddleware.php",
+      "sha256": "6b5ef1bea30eab7ffe9834a92f952164d70f4b69baa4043539b03047369201dc",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\AuthorityTrustMiddleware.php",
+      "sha256": "1dfef3e9fe9ab2aaa60594c24b53502e6c75db322cce2f83f5be2697b43e6ae0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\BreakGlass.php",
+      "sha256": "c6aa1194229a16f782e6de41c9eb4a7c2c59a9cbd7d2f46a97887b193867654f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\BreakGlassDualApproval.php",
+      "sha256": "4b14dcaf0bc2fa926497191a3b81ebf1ea7e73b37960c0fe04ff7927dc4a9b84",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\BreakGlassResetService.php",
+      "sha256": "29f4362a09ae7f115392d0fd65a7ef0e0f03c1d873fb125ae537678faed67ee3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\CapabilityOverrideManager.php",
+      "sha256": "43ff4d0873f652a2610a037772de9aa038b494472bdc8d31e0495fc094d4c7ec",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\Csrf.php",
+      "sha256": "3338babae3baf4e38604ae566884969f094c8c2242f781340c0d8f562b33e2f1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\CustomerSurfaceMiddleware.php",
+      "sha256": "172688b149e483617614c69c8a4c00273c300f5f15ffe036eb499e7306f6e183",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\GatewayTrustMiddleware.php",
+      "sha256": "47bf75b453d846d496602a5a8b8cec294fafe904ab6beafaa6833f7ab7cd442c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\JwtIssuer.php",
+      "sha256": "0da8d05af3d16a1e2537301efd788e91641abe2b5e887b293d1d33373acdcd61",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\JwtMiddleware.php",
+      "sha256": "42f51e3fa4010be8ef777a64763371470c9aaffc6bd3f9a4a6a58c3c58ec8c62",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\JwtScopeMiddleware.php",
+      "sha256": "a4c0132251b5b19d80889f93a6dd77e78e7b51e03924071c8c21ed01c96c03f6",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\LoginRateLimiter.php",
+      "sha256": "043aabb9608365b47c7cec51c06e88e671a0ac165e2e93f8fc97d6c286534b77",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\MandatagKeyAuthMiddleware.php",
+      "sha256": "e883a2463c767b7ed21d370a9931320f8e757721a3e4a9b14755027fd2954589",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Security\\Auth\\TrustAuthorityManager.php",
+      "sha256": "b4fd3b07acf61e9db67fb7b3284c65d319d74717c277ed908912ec302d0d1c1f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Storage\\BlobStorageInterface.php",
+      "sha256": "066fc16865012cfc11b0882ebc0b4e43dccfecad892e14689adf4f2efb03ad57",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Storage\\DatabaseAdapter.php",
+      "sha256": "b1729396855f559317c9d67a6123b08e92a9b30c3b7ba685e58a9983abe7e117",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Storage\\JsonStorageAdapter.php",
+      "sha256": "cc15634f7bff2f995da6da1ca0d8e0b5eb0473e51d04355e865017eda79400ad",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Storage\\LocalBlobAdapter.php",
+      "sha256": "46c6b929aabc3209523bb59d3da0971255912861dc8b22496d8c0f9c9bd3f9c0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Storage\\StorageInterface.php",
+      "sha256": "168e08e6fa17c220e9544257d1bee06ce9f0257bd64e93a1e045ceec25439cd5",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Telemetry\\CorrelationIdGenerator.php",
+      "sha256": "2b1440692218849e284561edd477ce01c4086a0249ed978c133108c8c92c7dfd",
+      "size": 0
+    },
+    {
+      "file": "public_html\\platform-core\\src\\Telemetry\\TelemetryClient.php",
+      "sha256": "fa702af9c9601464c4aaeca41ca18c2b15b3ac841a551bb5aa09acb9e7d839a3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\public\\assets\\images\\new-airroofers.eu.png",
+      "sha256": "3f2f4255796bd7ef98fa3ef0a7a7b18234bcbff0d0e5279f13bfa6f6764775f9",
+      "size": 0
+    },
+    {
+      "file": "public_html\\public\\assets\\images\\stack_core.png",
+      "sha256": "24fa84c412e7448ce0144dcf87cd0beb243d170958c1dd81ae3f3ccb0896d697",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\common.php",
+      "sha256": "543ed9afcc0ec1762159c2db064f55a80f0564443dfd056dd4eba48935450b98",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\dispatch.php",
+      "sha256": "e392877c8cbbe04fa73b63117f0d38bcde39dbae7ce57d076f9eff7727f2aa83",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\home.php",
+      "sha256": "80dc7e3e9e296b0be79745999ec3a670bdea0298eab01a80005e00402fd0f102",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\legal.php",
+      "sha256": "e9f65a7841c941471e4ff6fdbd06d1c5201f75e0e8c5937c755cf819e51e8f85",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\locale.json",
+      "sha256": "3166ebd8baa08d8004ec9f8eda04118b38cfd854413418a705502a21ff68e529",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\support.php",
+      "sha256": "9d7f4323daad83da616fd4e8042ed70aa826da722fd0b652b0b9f35ac61eff2b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\de\\validation.php",
+      "sha256": "7dcd5aca3df99de2090b850bb2e93dc7d429d5644184dda446dd92faf4a8e5ea",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\common.php",
+      "sha256": "dfa6ddd88a5bd062ab490617f6996736b1e66722f00ccc23b377b8ba13955d1c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\dispatch.php",
+      "sha256": "487f8c3809b3e3257950ddddab70e1af4b5fa2642570ff6956b4b1f8449e066b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\home.php",
+      "sha256": "acbf0d02a111bd988ad2fc5ee304c193624f49bec1c22e957c3c7719e32efcaa",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\legal.php",
+      "sha256": "e4a26c3933ce07a96982f89c7c5281d80b4b2bcf4c08cd31fca437690ade0f30",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\locale.json",
+      "sha256": "0afd47dbf47acffe1db9e506e3284c857f4c3efa567fd02a131ad2a489922d98",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\support.php",
+      "sha256": "7d2897f912cd4089f7a51c7e832a26270be6024679f261d280830107d1d05750",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\en\\validation.php",
+      "sha256": "2e26e4ded2ce880d08a07e11440e50f4dc2ba30cd161f015bfb54f48ee590c6b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\common.php",
+      "sha256": "eac2206691bd676cceb3416452943918dd07e011345ed05f9d552acba59fb97d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\dispatch.php",
+      "sha256": "cf48db356121916a3c03ee51bbccfe9f6fec11b4ef7ec95b5fb0a56f08170452",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\home.php",
+      "sha256": "a70a93d78de0a03ae1b3946870754fdd0bbc713cbaaa405d1c9d7619be1d2f5c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\legal.php",
+      "sha256": "44bcd41ec80d48db410543cac509524c1ade8c6aaa7314af0dd622b7d11fb70c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\locale.json",
+      "sha256": "b160b8ea7e0463f63cb47f439bfa392ab169ab15f5c5576771d20a747a487d2b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\support.php",
+      "sha256": "fcb8ecb469fef3852ac61e1af1cda39f93ecfd8b4bbaf65948d91bde9c791650",
+      "size": 0
+    },
+    {
+      "file": "public_html\\resources\\lang\\fr\\validation.php",
+      "sha256": "cc6eb53ab625cffbd2b5e0d812053d4c36a77ed7c032a6fc13d9e2536910daf6",
+      "size": 0
+    },
+    {
+      "file": "public_html\\restore_public_html.php",
+      "sha256": "4ca8aa7dae4d3987777f43088c65f436e9297810f9ce9aea9c9416178c9f8372",
+      "size": 0
+    },
+    {
+      "file": "public_html\\run_operational_readiness_audit.php",
+      "sha256": "cebaa380651c3c0e535f1a9c35a60c482c16ddad2efe3e51c77ffa9d0eb2d98d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\run_phpunit_tests.php",
+      "sha256": "2defa6e6030f2a71a07861859c96a88673b1c43e15c0f6e3b1fca051e2c97ad0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\scripts\\publish_release_notes.php",
+      "sha256": "78092cc044c2a688fdf6fefcf2a22307f5fef07003a363f4b3443f4d35503716",
+      "size": 0
+    },
+    {
+      "file": "public_html\\smart_fix_subdomain_symlinks.php",
+      "sha256": "d0c3c425476864a584cab0c5c970dca18cb2dc2d8a423fd9274ccb04ec1825c7",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Catalog\\CatalogService.php",
+      "sha256": "6f12c2371c82b45b37a981dbb251dce55685f0634e4fc4d3c54fea0f8080f88b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\BillingProvider.php",
+      "sha256": "e45826e682b07e00bf0d6ef351f21cb05bfaa2122de6f0f4848777d491d2581f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\BillingProviderV1.php",
+      "sha256": "c3fe2549d8c61736b5e66d5b6d45ad1ab70b65934d825f7fe45eda49ca3d269a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\CacheProvider.php",
+      "sha256": "ae5b20bbd91d740fa29bc14016cf5aac8c6bfe2b93ac8ad72216eee824f48ee4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\CatalogProvider.php",
+      "sha256": "ed61dd0791889d097ec7bb667f5934c045753768c7a6c9ad289970240ecc82e0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\CatalogProviderV1.php",
+      "sha256": "091f795b5ad9e1b3729aae5d88e830bbae889ae7ae60983a01e910dada558f28",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\FileCacheProvider.php",
+      "sha256": "b214098392b5768814d15ebc2d282ecd9168722e07b59eae15fa85ec6edec54d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\LicenseProvider.php",
+      "sha256": "41a84ff7188e1103ed7d0f0bd4a99ab7b97ce66523ab05b579b01974ae27b16c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\LicenseProviderV1.php",
+      "sha256": "e84d5bb72880322ab552c5e4d1db9da69c220ce105b81e77fd1314d8bca7ed16",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\MarketplaceProviderV1.php",
+      "sha256": "eaf91c9edd06c6d751f4b402cffd71f0d18eba0748b285e08bd1b6e71cbee4c3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\PartnerProviderV1.php",
+      "sha256": "1dedba000dbe83629672a8e2840b436f24e0a09882826fd79f55209d7aa18b12",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\RatingProviderV1.php",
+      "sha256": "9cfd6dabf4c051d3e71e715d05acb6d7542a0436a0bfd9e27a8105cd590f576d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\RevenueProviderV1.php",
+      "sha256": "1e1770a68bfc0a71e3496d21eab9d8dcb4fa5335bdf39a4f6241193331ee50df",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Contracts\\UsageMeterProviderV1.php",
+      "sha256": "9a3d83972da7d6c4ddbd18f4ce6de41d5da6af89ecb2eb1243023edffb9eff1d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Monetization\\BillingPolicyEngine.php",
+      "sha256": "31fb6b69dffc19aeadd54f07ceba44bc3e879cbb2125ffd5bfd70eaf611b172d",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Monetization\\RatingEngineService.php",
+      "sha256": "be2dcf4d6a0a095daf0e1ebdd8e0120f269e068ce95c76dadef293aa1dcadb00",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Monetization\\RevenueIntelligenceService.php",
+      "sha256": "4afcadac6217f497d4f3dff2d38cd793a1b51ef9fb5620e0a9c5e4de13fb866f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Monetization\\UsageMeteringService.php",
+      "sha256": "1fd01100466f4059c09eaa8384470262d15e5bab23aacc3234e024e3280dcf38",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Provisioning\\ProvisioningEngine.php",
+      "sha256": "1819fbeacd359adb41aa02790f3d718725d9da22823b21759b5b46c5f3221a46",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Registry\\PlatformRegistry.php",
+      "sha256": "4c725330a0a344b79c1c90c92857d313df1620a37e61e53a5273f0c5083f3543",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Registry\\ProductRegistry.php",
+      "sha256": "15445bee1ce270984bb22af56b77d520bf75434d9946fd5eb8179f1de5c4764f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Rules\\CommercialValidator.php",
+      "sha256": "6f2239a643a93868a55dc89357c85b94d17489f19549ece90b1bc865107253de",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Rules\\RulesEngine.php",
+      "sha256": "4c649b72021237bb30defbaa2fd5379ffb17b0bf0926ec187f0905cb286c8b28",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\CommercialCore\\Timeline\\TimelineService.php",
+      "sha256": "1cbd914cf567ffb8fea93c19d718d0b1112a723449f8cbb57c30592d617c01ad",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\AdminConfigController.php",
+      "sha256": "6c21bf176cdad843d78c278f87e8a93ee601bb5219006e924c3ffed03439a4ff",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\AdminPortalController.php",
+      "sha256": "1037e3ed92bad7cfe26463a558952471f7e6144002a6c0588e56f131fa9be4ca",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\AnalyticsController.php",
+      "sha256": "9eb11a49b274df22b13de7e3a7079ae1e8211ad270447daef23f27a98a0b3cee",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\CheckoutController.php",
+      "sha256": "3db77a0a4058570661ab57b6acbe7a75ac5d6da6f514ec947a26140601d068a6",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\ContactController.php",
+      "sha256": "d0d5b63b25a7c152b02dce072ad5d59fcfcf8795f09f2ffb60d19638b36c4ab4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\ContractController.php",
+      "sha256": "d83d04b68a21ad868aa6a7fed683ae3be3514feaf30744b80d439a4154353014",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\COPController.php",
+      "sha256": "34345be737cf17c04fcb37bea5c90f9126f969175069df1057c1d3605e124ec8",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\SupportPortalController.php",
+      "sha256": "069e46898a068b13d851665f3a4343ab4d2942986d88ea37c292551dd9373f92",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Controllers\\WebAuthnController.php",
+      "sha256": "03f680bc720bae21922ccd846228c296a19eb8c746b8531dda512e109b131559",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\AssetResolver.php",
+      "sha256": "718bc284a42eca013598ba88a53d4138e95b8b5b116976f52cffdf5e7029c060",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\BrandContext.php",
+      "sha256": "1a8aa0c0795db3205ef5c1977908b2da7f0656391cb856b232648a047ecb1c4c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\Database.php",
+      "sha256": "12bbe04a84f187484cf40aa6f4d1ae21199d5549e5e8f27db2cbc9c7ebfa6067",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\DegradedModeHandler.php",
+      "sha256": "4c5308996790200a9708e58257dd1ccf06996f2d122a2a344b5d59f789358563",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\DeploymentContext.php",
+      "sha256": "082c09e0174f8cf9826d865d2af9ea115f5e393f5c6694cfb9b913845e7c8131",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\DomainContext.php",
+      "sha256": "1d7a5d305b0824a5089164c2c77f3c9fde6e1ee995c76790e940d7b8744b55e3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\EventBus.php",
+      "sha256": "ca367735d37e689630a69febc3ac06e42b619b54c4527301b72db7b0c5c6d811",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\FeatureContext.php",
+      "sha256": "e1b7e409be4b498c2da13fb59ff94b5a960e48a70a6c07f2d037875cef9f56b5",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\LicenseAuthority.php",
+      "sha256": "d66b9a3c9edbfe480755f400af80114adc37561f1e3887c493396cc9cc274329",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\LocaleContext.php",
+      "sha256": "974f8596a3cef121d341e1395a787d7b4d51bd8c45227cf1a5d25626bab91669",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\LocaleResolver.php",
+      "sha256": "1057cad7c1a5d7cec4450cd7e87f99c9c8acd913de7bb14d79eac55a1631b6d0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\Localization.php",
+      "sha256": "50bbbb1d29bcf9ae599e02e4fac5a6072368d1f8a1ac7a7c748ccca4c2f4d9e9",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\PlatformContext.php",
+      "sha256": "5862e8a131ac14e7af7c67c619635f125b8d17059802ef8d5ca775a316f53164",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\ProductionGuard.php",
+      "sha256": "c50c361bc583dfb7693f6a69e582358b5463489cfa073d63cdd7b3f5e359ed9c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\RegulatoryContext.php",
+      "sha256": "480f9207cddd3bbd9d7ba15e6f9c19faf309061251c0dd321535e7d0a5f146c1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\Router.php",
+      "sha256": "601230d8d4e47e2a6675e7c5896524ac5f908573fa4e0c511f71ac0ce773acc4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\ServiceProxy.php",
+      "sha256": "0247f24a1c7d9047b0b997e0a30f5d74cf0b8c33c8e015acecab065b03f87837",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Core\\ThemeContext.php",
+      "sha256": "658622d1fd6d17f1b33ace627bb4deb814656b6fb0bf752cbaf604e0942c35f0",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Integrations\\AeroBillAdapter.php",
+      "sha256": "84405e5f743da870ce99d65e96b2da57e46a2b20767282f293459244b5be80b2",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Integrations\\AeroBillSdkAdapter.php",
+      "sha256": "854a54c0ed510579ca1b7621fac9cec4128a31e1062369ace53ca93bf6057df9",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Integrations\\IntegrationManager.php",
+      "sha256": "5e12e124fff4347e24ffa40d5b1b727d6342e3c5e012374b02f0ffd434e8f9d3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Integrations\\MandatagAdapter.php",
+      "sha256": "8f4f37c7bd654eb45f9da98155c126c26e36e2880bd387a07f502573f975d362",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Integrations\\MandatagSdkAdapter.php",
+      "sha256": "01c1ad4e698dad32ddeb7c59f2ecea491d51bb89f4c07ab63fbc705fa034bfc4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Modules\\Dispatch\\AIClassifier.php",
+      "sha256": "d771a59d74946a7cb55dff7273b8311ff5a21f147a4726a843d4e8834ffe9d60",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Modules\\Dispatch\\RoutingEngine.php",
+      "sha256": "c69343ae3a8b9a652df5406b9b32188f81beaf276a62e7cea52f62e8bfe87ed4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Repositories\\SupportRepository.php",
+      "sha256": "ec7bbd40f0a5cfa95813e3794bb820d2b0b2e17bfbe6d0db92371dc5a4f26dc3",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Security\\WebAuthn\\CoseKeyConverter.php",
+      "sha256": "7c109514867651708c81e619e857ae52ea414da468cb13f56f3c54f4f92790dc",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Security\\WebAuthn\\WebAuthnService.php",
+      "sha256": "473404d99dad2b3cd7a05e49969f9494d4b5ef4ad6abf614b120e487cf2a802f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\AeroBillService.php",
+      "sha256": "ea5a26192588d73390875e6957f22d366002353bd57123e8d07b5e4957b66fb6",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\AITriageEngine.php",
+      "sha256": "32725c554e93570ec2a0976ebc4edcd30e689745c71744f59277f906f0339182",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\CommunityService.php",
+      "sha256": "74c9513044eb4a83ee5aedf01b4a446c6bff5bc58d7aa6cc9d8d36c24bacff09",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\ContractCompiler.php",
+      "sha256": "95c1f2f1ca4f114ee0ed7bb8388909d776ee3996b911209c7cfad5db72493bc4",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\DescriptorService.php",
+      "sha256": "10ba3f5ad4665d06494b4746066ae9cb0b0569ee46499d4f81ca4677b7bbccae",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\DocumentationService.php",
+      "sha256": "c959bd6ba030deb96480fc00ac0c7775795eb8090bf6f08a31ac5561597aaef5",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\IdentityService.php",
+      "sha256": "72438149cd16acd30c7b73d5e62d81590c7e9b9e42d2043c75eaaa8937676761",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\MandatagService.php",
+      "sha256": "a15dbeb636bc95df9f6e435aea4fcee16b8bffe94146430162caae734102437c",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\ProvisionerService.php",
+      "sha256": "67d59c80fba3050f7644ffbb69f869353cd6eb68391782552e0ddb7c787a4120",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\SupportAuditLogger.php",
+      "sha256": "ab71f18f658e5230b3fc430ce1780365ac91a7142ea2ecf9c33e1d2bf5714380",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\SupportEventBus.php",
+      "sha256": "f25c01b5ea73b010b87255bd80d8508162d010b5c940f4097f8c0889d680e6ea",
+      "size": 0
+    },
+    {
+      "file": "public_html\\src\\Services\\SupportService.php",
+      "sha256": "3ccfce00de572952efa41b82773c62aff84bc8e31b09f9dfceaa78fed86aa823",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\CommercialCore\\Catalog\\CatalogServiceTest.php",
+      "sha256": "f3a672c88b4bfc2d0a7f80fe35094a7e222a8b27392df61d098a67d947f6235b",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Controllers\\CheckoutControllerTest.php",
+      "sha256": "7de299177517dafd8ed1c9d77907b4fc85469fd4aced4eadf77fc8b668c7c390",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Controllers\\ContractLifecycleTest.php",
+      "sha256": "581249354975a4a26fecef75e1f63f1b67e73b1734474353b1565acd5bc81cc1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Integrations\\TelemetryGatewayTest.php",
+      "sha256": "36995eb8bc80aebe45a8fc80005bbdb22a5dd857754ac5db9a46f49e642a7151",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Services\\AeroBillServiceTest.php",
+      "sha256": "75e32a749e8aadd699fd1547d68021133a81412887ea811fec204d7477cff230",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Services\\DegradedModeHandlerTest.php",
+      "sha256": "81511f3abad0ca8cb83f33cff2c755414c995363c36fa21ee82ea2d337e31cfd",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Services\\IdentityServiceTest.php",
+      "sha256": "186d7b648835b65cbccf4800bd7d3d814a381f1f936aeadb58fa1f2dea2bf036",
+      "size": 0
+    },
+    {
+      "file": "public_html\\tests\\Services\\ProvisionerServiceTest.php",
+      "sha256": "c4c5e63f9277b57a58e00cb3d63225409c63527b48cf669383c661a79e315330",
+      "size": 0
+    },
+    {
+      "file": "public_html\\test_airroofers_domains.php",
+      "sha256": "1e91fc27bc926ca330cbb105d744b26047a143998bb0b78749d33514fda8a4e7",
+      "size": 0
+    },
+    {
+      "file": "public_html\\verify_frontend_completeness.php",
+      "sha256": "8bdacb512efd59074e21865ee0d8869016317ff1488fd0b04b02c08271282382",
+      "size": 0
+    },
+    {
+      "file": "public_html\\verify_operational_readiness.php",
+      "sha256": "419abd8598253a554940aca75fc1a755a11f979a4965aef3638670775551ca60",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\layout\\footer.php",
+      "sha256": "776329f1d74aa864883db81355781613f8e8b2bcd8659179eea1ead3b5803acd",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\layout\\header.php",
+      "sha256": "5d3a51124a3d7f4539560dd47bfca9d50297e3bf6439ca8cb6b70aabf1ce909e",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\ai_classifier.php",
+      "sha256": "1af6512935b94ff54c4f8bc687145d9adf6304b7cf2fe44d5ef98e94900ad740",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\attachments_grid.php",
+      "sha256": "d96ed647540b56533ae3afa3a9e305c3cf06c6a24768e91bafa86d1248de25c1",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\category_step.php",
+      "sha256": "4e3ee90dc0116229c50e5a2b38e463b02936297d15e59b2fc5ba4c1ba954bf32",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\details_step.php",
+      "sha256": "cac47fbfbd97cff98ecf3e22b7814041281610465bc5a94647c37d943a12c579",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\identity_step.php",
+      "sha256": "6b892677c8f89746401aa6613e4aa545148b70284540fd6a645e72ec66e5b7bc",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\review_step.php",
+      "sha256": "a380810b2e36eb312aa46afb9ff0a8ac8887ed475e38a1bb0e5615d8642cfb60",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\modules\\dispatch\\summary_panel.php",
+      "sha256": "d055de555d50ba32dcfa6d1ec2841211bc520dbe275e35b7527b269b7d03583f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\about.php",
+      "sha256": "027f3899265f4ecce982f67cb33b81a7fba0d5e55d0c7fa742a175574b5e330a",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\admin.php",
+      "sha256": "0eb76dcd8689b18f0a61d583eafed96ec587a299a39f03ea60df6c5a8e02a996",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\admin_config.php",
+      "sha256": "76cea993e0e62edcb30c3664e8494968536a42762b7a0c5877de2f6cba074630",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\command-center.php",
+      "sha256": "d320d9b2ada77cc2aaea0bcd933d1b1a7ad314ffc7085038d343b0ae33d7ecad",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\contact.php",
+      "sha256": "0b91d212bce4d91571753a550f7f1b2627eab0249fc70b44a63c568f8f076a29",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\cop_portal.php",
+      "sha256": "7dc6177aadaf72ef6bfe7ec141b5d4ad9d0d7a574a218bfcbe8beb5963112682",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\downloads.php",
+      "sha256": "75df7727b4aef56f74032a621582b97484062e9cf5ac9d2d631311c6bec4b646",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\engagement.php",
+      "sha256": "d83eb56dea16ad19a43ce6519c55a98da43c53778455ecf9e22a790783e85180",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\home.php",
+      "sha256": "7fd65f5c7723f4e5c6ea9f9509af3b83855ed60d27ba86218ceaa3674d892cfa",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\invoice.php",
+      "sha256": "30b8f6e260f55ef9067cfca719e6b3f03bd3766d28b6f7da770945c33cb4c390",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\legal.php",
+      "sha256": "f1e0192a873514e81d7d9bc99ea4954caf13c6923b53c4cab57f9dff8864e94e",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\portal.php",
+      "sha256": "3af69a09123765cee3e6cb94495a36fecc58516cce2013da1beadec258196a21",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\products.php",
+      "sha256": "74290e4e2fd9c44c7ec032d99d74b1dbf6b0ec69ae3ab2c3b590ed5be07cd548",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\security.php",
+      "sha256": "294b3d5dcdcc1c30c293fed84638ff7f176ad6d1da2cfbb222870eaa07c8fc9f",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\solutions.php",
+      "sha256": "83aec6451850e1b4cc36301857907d20c436fc05eca5c3aea7d4022eb5bc6c65",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\status.php",
+      "sha256": "7a07dca789fd0d39dc48e3fc7b14219d400653e569e9978841b1a79255a4cbbe",
+      "size": 0
+    },
+    {
+      "file": "public_html\\views\\pages\\support.php",
+      "sha256": "7837ac8e144babb2b2ce4c3919f8b3dde19c842d99bb206cd4feaaefa450a358",
+      "size": 0
+    },
+    {
+      "file": "api\\index.php",
+      "sha256": "e0dca28d610ba14c117660a3f472f7771a6b0befa9b34f0fbe9bd5daea453d51",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\AuthController.php",
+      "sha256": "fd3ff891a6c33500ab25f305e97a4de05409e63ce2401318807f6dcccf9a366a",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\BillingController.php",
+      "sha256": "dcc3c2dfe0e748762d18e385206dca808f36634fc840f2b22e50c46e939715e7",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\DiscoveryController.php",
+      "sha256": "b65e24d0ba50c2c7f7ac5560310c7bf0f4372dc36fd2b3a8953c914f39eaf4d7",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\GovernanceController.php",
+      "sha256": "ac0ae0f97d4dc6c14d6da8a3371f85813b41de08abb603cc62a45cf6aa0d3fbb",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\LicenseController.php",
+      "sha256": "182d869936c19e4e9c296f60d20a4cc0df498295b65b7403e001c87cfc43d84a",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\NativeGatewayController.php",
+      "sha256": "fd49c7d46c6a6804eb495e1792f4020d60d475b28ec7b93f49036bdee1d159f7",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\NotificationController.php",
+      "sha256": "69939e11f618175af1d5610f9bc0ed0bff9515ed711b9c917d9af8d2eddea1ec",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\ProductController.php",
+      "sha256": "25b516600747c7c6b49f14766386a8c0823349a70680784835bd145e910673a6",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\SupportController.php",
+      "sha256": "70540e7ed97ae47cb0b660c1961523c088a4036940dd33e817808dd19567ec0e",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\TelemetryController.php",
+      "sha256": "efbf0767e381af656100a43c94925e83d344531b533b2f23d5cb1618b886ba47",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\UserController.php",
+      "sha256": "66731a543454cd825611e20f0f2efccc974a36818f6d5441f93b56811eae7cce",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\controllers\\WorkspaceController.php",
+      "sha256": "7b1eb96cc9150cc70ccd08feaa08746ced36a08b8b30747fd7e7b766be9e9388",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\ApiResponseDTO.php",
+      "sha256": "8492287bf66dee017b6380b8986542d16078e7d8efef8d44898e3027e7ceb9b3",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\AuthDTO.php",
+      "sha256": "1f04fa9515df19c46eb12bf65b53809d61a07c824976f2b492b5f5c13b8ecfc3",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\BillingDTO.php",
+      "sha256": "d2ff31ad13651900888f18f91e21efcaa0bd29a37267d30bba3ed589380cf740",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\GovernanceDTO.php",
+      "sha256": "ac604c1fcf5725d74336fdac57e4f6c8728644c72b10ce95b352dce3139b83e4",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\LicenseDTO.php",
+      "sha256": "86d42b5584c874fcc35e04fc6a06cbdfe2ff0ddf9bcafed228b0b86ee8250077",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\ProductDTO.php",
+      "sha256": "2625b085939e0b230d8519f6e30f7ace720c8a7c53401553b8e11562634f05f4",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\SupportDTO.php",
+      "sha256": "f9e8c4f1a79081bf94b573922b2b9a1fcf78b315da7f3e0dc964d518c3997d14",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\TelemetryDTO.php",
+      "sha256": "674a6b7b224e104511e67be310888a77d8eacb039a075c780295b0c9e5b05a20",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\UserDTO.php",
+      "sha256": "b29c032caa7d996d81c7e305e3d075d4c26801909892b66b1a64031f3deb034a",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\dto\\WorkspaceDTO.php",
+      "sha256": "e1ba0911692100830c86f044588ea740437cab7df4a88a65d68f14894fb83c27",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\openapi.json",
+      "sha256": "5cfd40aba0f42315a5cc0cf4c15f60ba858d44b1361608e5c5df19968b135123",
+      "size": 0
+    },
+    {
+      "file": "api\\v1\\router.php",
+      "sha256": "668e7db495daf8b80557eec67dfa67631ef732331725ca6a228ee08bef53ccf0",
+      "size": 0
+    },
+    {
+      "file": "config\\support_descriptors.json",
+      "sha256": "c24e65a76dee77cf70c138ffb38d0073f38efb8e2f86fdf08c720c8c3f56bafa",
+      "size": 0
+    },
+    {
+      "file": "kernel\\eaorcs_v7_kernel.ps1",
+      "sha256": "95dfc6ccaeed190e0a954856b5dad1811908f2140b0e188f87de9d7cf2d83780",
+      "size": 0
+    },
+    {
+      "file": "kernel\\eaorcs_v8_kernel.ps1",
+      "sha256": "2576a7fc8f1c8819b8963aecf3690c18efe6b12f91bdf95728b20fdd72b21578",
+      "size": 0
+    },
+    {
+      "file": "kernel\\lts_maturity_suite.ps1",
+      "sha256": "e4f916b85b090200418f3b93ac3d5072e8e6e5cecba132c1406fda8630aecb7f",
+      "size": 0
+    },
+    {
+      "file": "kernel\\plugin_sdk.json",
+      "sha256": "6481357673a045b9c8defcee330cf928e1aea620b2813a401b7d963f84e778e4",
+      "size": 0
+    },
+    {
+      "file": "kernel\\registry.json",
+      "sha256": "11c4c5cb37d212dcd9c03de0e3e9263bff5296c2f0759f2e63b5db383381533d",
+      "size": 0
+    },
+    {
+      "file": "kernel\\reproduce_lts_metrics.ps1",
+      "sha256": "c14350050243c4b29cee3011a3aeb2e31da77399985be307b8802bb7b9b4e7cb",
+      "size": 0
+    },
+    {
+      "file": "kernel\\run_full_platform_audit_v8.ps1",
+      "sha256": "e4282bb91789d1fbd0a86dbb75d38f6e8d7b63c846479d1cbb685f6dbf3cb0dd",
+      "size": 0
+    },
+    {
+      "file": "kernel\\run_lts_2026_1_evidence.ps1",
+      "sha256": "baff68676ec4bf37123ed448fe8fa0598a488833a939ec98b0fac82ede03030c",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\AutonomousLearningEngine.ps1",
+      "sha256": "c6f9f0d32b3c8b11a2a0903a7b668d1b9e7e4f0d5b593edcde16f5a8ca26d4bc",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\CostScheduler.ps1",
+      "sha256": "85620215eccdcfa1261cb18c119325c340745d0b175c14bd832dd631b0b7b188",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\EvidenceConfidenceEngine.ps1",
+      "sha256": "dcc41963ef40912641445a90944aff25d3dcab7d466882e16855b488ecb9cc4e",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\ExecutionGraph.ps1",
+      "sha256": "f68d73f7581d0642424f3c5eaaaa9c52ff20582b76a5652a1d983ea3730e558c",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\FreezeProtocolEngine.ps1",
+      "sha256": "b8a583d1dab8ff5a6179c304760f31a4e0f3c04a0f8a0e98c06d262f0d8298c1",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\MultiAgentCoordinator.ps1",
+      "sha256": "8e2e4558050c85e6d0ef3b68133e633ee5f7917cd3ca63903ef9875de17034c0",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\OperationalGatesEngine.ps1",
+      "sha256": "3c9e9b92f3afc950dac46404802c4d2098fc88b68f6d87f811308d510d065950",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\PatchGenerator.ps1",
+      "sha256": "8183a1b77e5a00863b53faf132350836ef2424d278152b9a76226e09c11ea43e",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\RollbackEngine.ps1",
+      "sha256": "4bc95aa867dfe437ea19a92685c41792839b2b624d09335618785254214f1b5e",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\SelfHealingLoop.ps1",
+      "sha256": "c11966ccc9b7fa7220fb9a055280d5c2a63622690dd69e2b9c0829590307a855",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\StateMachineEngine.ps1",
+      "sha256": "a3d6cebb8041df1028e0d5dce8be93254b0c6fe7bb0dd39927de52fb445f538d",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v7\\WorkQueuePrioritizer.ps1",
+      "sha256": "b3bda5d81bea332283ec3f2aec26c0d85215a8e92d6fe0b22490eb6ec0559844",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\ArchitectureConstraintEngine.ps1",
+      "sha256": "0a8215713dc36643323a4ff0bbc086605d479862b557e28993026bf20ee8fe1d",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\CrossRepoPlanner.ps1",
+      "sha256": "d2297e3edc747805f677c4b73563a3367321be9bdb52aac92987334921a7dfd8",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\DeterministicReplayEngine.ps1",
+      "sha256": "bcb4756b9cc403c98c45b603b2d522101f31218c9a11fa5e8929ec799c725873",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\EngineeringMemory.ps1",
+      "sha256": "db13159b43602d7e19fd62c5c55c772dd2fa178ae1fc93ea9def078428cf63a1",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\HumanApprovalWorkflow.ps1",
+      "sha256": "1d55ae2a5adbc4102cae89a1cf2302ec8bef67757d1e71ac9bea1abbabd3c312",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\IncrementalCertificationEngine.ps1",
+      "sha256": "c90fe45bd1a66a9f0311aaea0465f7be074ea9e5e5bfbb8d3e8bcff33a00912f",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\PolicyEngine.ps1",
+      "sha256": "d26eb79eda3c2c16593aca103dba7935c3b7e5c7bf50c0e6cb9578cecdf0d990",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\RiskPredictionModel.ps1",
+      "sha256": "839eb3f1e4a5646f4c39bcdec5dd7e43447a3ab11a26ba83fde0f3e3261653c1",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\RuntimeDriftDetector.ps1",
+      "sha256": "ecc475d11a4d1a8c9a3f7f42f41b9a520e842bf6a5e2771b4fe75099c61d00a3",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8\\SemanticGraph.ps1",
+      "sha256": "b27283cdeedc1cc5a87309f1c38da9edf7215de558fc600040a5150c7753546f",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\ChaosFaultInjector.ps1",
+      "sha256": "ab2eed4b0a13795076adfd83a392ef80b32e5c555d5ac0666ad32a6d2f52c40d",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\DecisionExplainabilityEngine.ps1",
+      "sha256": "0a1f95ed097be8867d1000e898ea45f920c9ee3fd47cdfc73d79f76953c41d91",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\EvidenceMaturityIndex.ps1",
+      "sha256": "a2b7ff865335e425c774941722e212d3453c6ed04def74c4809637132116d0fc",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\FormalInvariantEngine.ps1",
+      "sha256": "fb72c264c053605894d2dbf4152b51658c5a441ad9f6883ee00c15d37f3052f0",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\MutationTestingEngine.ps1",
+      "sha256": "d4c6edb61d29b6fc3faf29034d0fc30b7f69c0f46e2049dd7b3776803eec4701",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\ReliabilityMetricsEngine.ps1",
+      "sha256": "13e4d7bb35baadfb87bea60116bd229cbe3d488459e772a9dd1fa9ffcfb64467",
+      "size": 0
+    },
+    {
+      "file": "kernel\\v8_lts\\ScalabilityBenchmarker.ps1",
+      "sha256": "0b56248fa1a9bb791b94ea6d1a419fc4cb05683969c0e0c394d07f6668d97ab9",
+      "size": 0
+    },
+    {
+      "file": "composer.json",
+      "sha256": "40cf357b82caeeaa3f1ddc0af26376b5aa6028dc045a727fef6a151e503bec55",
+      "size": 290
+    }
+  ]
+}

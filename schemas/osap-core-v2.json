@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Open Software Assurance Passport (OSAP) Core v2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "compatible_with",
+    "passport_id",
+    "subject",
+    "issue_timestamp",
+    "issuer",
+    "trust_summary",
+    "evidence_lineage",
+    "extensions"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "default": "2.0.0" },
+    "compatible_with": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["1.x", "2.x"]
+    },
+    "passport_id": { "type": "string" },
+    "issue_timestamp": { "type": "string", "format": "date-time" },
+    "subject": {
+      "type": "object",
+      "required": ["product_id", "product_name", "version"],
+      "properties": {
+        "product_id": { "type": "string" },
+        "product_name": { "type": "string" },
+        "version": { "type": "string" },
+        "repository": { "type": "string" },
+        "commit_sha": { "type": "string" }
+      }
+    },
+    "issuer": {
+      "type": "object",
+      "required": ["organization", "authority"],
+      "properties": {
+        "organization": { "type": "string" },
+        "authority": { "type": "string" },
+        "digital_signature": { "type": "string" }
+      }
+    },
+    "trust_summary": {
+      "type": "object",
+      "required": ["trust_score", "risk_level", "certification_status"],
+      "properties": {
+        "trust_score": { "type": "number" },
+        "risk_level": { "type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"] },
+        "certification_status": { "type": "string", "enum": ["CERTIFIED", "PROVISIONAL", "BLOCKED", "REVOKED"] }
+      }
+    },
+    "evidence_lineage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "type", "provider", "sha256"],
+        "properties": {
+          "evidence_id": { "type": "string" },
+          "type": { "type": "string" },
+          "provider": { "type": "string" },
+          "sha256": { "type": "string" }
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": { "type": "object" }
+    }
+  }
+}

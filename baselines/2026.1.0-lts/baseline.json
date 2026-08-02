@@ -1,0 +1,139 @@
+{
+  "baselineId": "BASELINE-EAORCS-2026.1.0-lts-2026-08-01T11-56-18-558Z",
+  "version": "2026.1.0-lts",
+  "capturedAt": "2026-08-01T11:56:18.558Z",
+  "fileCount": 26,
+  "merkleRoot": "758d65668a78fcbb11bf233f0add76d08cbe750abc61357669f6c504e932e9b8",
+  "files": [
+    {
+      "relativePath": "air_roofers_compliance_report.md",
+      "sha256": "f2440c832604be3469c423c2baeb4733481a51017483b7764631be5d04c8c62c",
+      "sizeBytes": 4288
+    },
+    {
+      "relativePath": "api_governance_report.md",
+      "sha256": "e658355ec6354662be2cc67857c3a872e9855b5be4f226e16f46353405fcaa65",
+      "sizeBytes": 1702
+    },
+    {
+      "relativePath": "blueprint_execution_matrix.md",
+      "sha256": "7ecafba280a28063068320d2da8ee15622412a658d2dc882aec7689c46259aa0",
+      "sizeBytes": 7626
+    },
+    {
+      "relativePath": "commercial_qualification_report.md",
+      "sha256": "3c090b65d11b82380c5d971d17aabac9c4eecb5c8b6e0413e994e01529912e7b",
+      "sizeBytes": 424
+    },
+    {
+      "relativePath": "continuous_certification_report.md",
+      "sha256": "bdfca72b30ffefefffa6164dc030f60dcbe89afb42d644341e8005ea357d3dff",
+      "sizeBytes": 1993
+    },
+    {
+      "relativePath": "cross_domain_report.md",
+      "sha256": "6cf37805bf82d9fe69e3f93500a03e9f8d03ef79a2bcab5a2f4307a46ebb6edf",
+      "sizeBytes": 2691
+    },
+    {
+      "relativePath": "EAORCS_Architecture_Specification.md",
+      "sha256": "923cf07868e43814e3eb0b2bfee24e34b5f067d149bf9311fa9deff43343fbc1",
+      "sizeBytes": 9998
+    },
+    {
+      "relativePath": "EAORCS_COMMERCIALIZATION_STRATEGY.md",
+      "sha256": "d25d854353f14ce83bf18dc789a21270f4eb096e11c9a7307f43f0641e5e805c",
+      "sizeBytes": 6031
+    },
+    {
+      "relativePath": "EAORCS_Operations_Manual.md",
+      "sha256": "7912db4c89fe5faaa884ded3d9df8829615e1bbae3c4fdacb2aa962bcfc7dcb2",
+      "sizeBytes": 2799
+    },
+    {
+      "relativePath": "EAORCS_Verification_Standard.md",
+      "sha256": "4df4bc58606395db306c99cf48726eaed30b13808ccfcbaa31c64439611c9de9",
+      "sizeBytes": 2777
+    },
+    {
+      "relativePath": "enterprise_expanded_report.md",
+      "sha256": "82efafc7efc21268af338e433eb11519fc9599422dd6f6aa387e78c6c00770c1",
+      "sizeBytes": 10995
+    },
+    {
+      "relativePath": "enterprise_qualification_report.md",
+      "sha256": "2bb4b3e849213118e417aa845eca629f822fdbe9c4ec6b5dd5c2711c66dee743",
+      "sizeBytes": 602
+    },
+    {
+      "relativePath": "evidence_bundle_2026.1.0-lts.json",
+      "sha256": "4ee9e3c5631496194deb25e252f32b56eef44c5b02a83e569ae5ed9caf5e8cc6",
+      "sizeBytes": 3402
+    },
+    {
+      "relativePath": "lifecycle_verification_report.md",
+      "sha256": "bfc014e30b40ba17b58e32e73223f8c7ad8ff90eaa16a235a3ddae16e169a1f2",
+      "sizeBytes": 4501
+    },
+    {
+      "relativePath": "manifest_2026.1.0-lts.json",
+      "sha256": "2c2de0edfcf2378d665e02d828c0f02758338e3d8431d76abe4141aaee8a7edb",
+      "sizeBytes": 45362
+    },
+    {
+      "relativePath": "osap_passport_2026.1.0-lts.json",
+      "sha256": "868604f0163bb6d33fcc01211a7ca1857ae45059eff0e63da6e6560f292e22cb",
+      "sizeBytes": 1537
+    },
+    {
+      "relativePath": "phase2_qualification_report.md",
+      "sha256": "aaf13bc1f0518efa93bc91899fa10902f09485ff0ca0086f197b9380132cd06a",
+      "sizeBytes": 14600
+    },
+    {
+      "relativePath": "platform_compliance_report.md",
+      "sha256": "a59172f9a313f7575819cdb7b9b887e8bca09a48564237ecf3990e62a86ffd5b",
+      "sizeBytes": 2269
+    },
+    {
+      "relativePath": "platform_qualification_report.md",
+      "sha256": "5b8ea5da70629fecae368a9cd2683c243320fc5cfd1996dfda333586888661fb",
+      "sizeBytes": 12280
+    },
+    {
+      "relativePath": "product_readiness_certificate.json",
+      "sha256": "35b2f78e1dcededc63041a2d7956b38244ce62ed31a5606147142b2074cb8696",
+      "sizeBytes": 1136
+    },
+    {
+      "relativePath": "release_notes_2026.1.0-lts.md",
+      "sha256": "4a7e0e71852b287a35c1211da092d10947e3d575c4a8b4816cd7782449250346",
+      "sizeBytes": 1973
+    },
+    {
+      "relativePath": "reproducibility_report.md",
+      "sha256": "84233ab63b6f4e795ca2e4fe5d8adc290a300c7e47b8cd9529aa5a72da973e29",
+      "sizeBytes": 4240
+    },
+    {
+      "relativePath": "sbom_2026.1.0-lts.json",
+      "sha256": "4bef1ba1a4f828dce47a6f9ff01e450af0524a2159efda5d62b4fe08b89dec4a",
+      "sizeBytes": 124391
+    },
+    {
+      "relativePath": "security_qualification_report.md",
+      "sha256": "bbb7812388b27c8fe01abbf0763f00139cdd6a6cbc45bfefdd2fe3dbf4846c9f",
+      "sizeBytes": 615
+    },
+    {
+      "relativePath": "signature_manifest_2026.1.0-lts.json",
+      "sha256": "04539fbb7cabc15abd8926d99eb708a5107c5ce9353edc530dcdf8821ceb6ace",
+      "sizeBytes": 28509
+    },
+    {
+      "relativePath": "traceability_report.md",
+      "sha256": "07391bdfdb5abde940133ec6dfc9d11e291bcb0fccb44e8d3351720751576a0c",
+      "sizeBytes": 10071
+    }
+  ]
+}

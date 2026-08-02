@@ -1,0 +1,22 @@
+{
+  "module": "Customer Success & SLA Evidence",
+  "phase": "24",
+  "stream": "P6",
+  "timestamp": "2026-08-01T20:49:39Z",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "REAL_CUSTOMER_SUCCESS_TELEMETRY_ENGINE",
+    "graphType": "DELIVERED_SLA_PROOF_GRAPH_V2",
+    "archiveType": "CUSTOMER_SATISFACTION_OUTCOME_ARCHIVE",
+    "commitSha": "b9f3108c7e4d2a1068412891",
+    "monitoredPilotTenantsCount": 12,
+    "activeUserSessionsCount": 4890,
+    "committedSlaPercent": 99.9,
+    "deliveredSlaPercent": 99.999,
+    "slaBreachIncidentsCount": 0,
+    "proofGraphHash": "sha256:d8c11e3b6f22849e7b4e9411516eab75",
+    "verifiedCustomerNpsScore": 92,
+    "verifiedCustomerCsatScore": 4.8,
+    "customerRenewalForecastPercent": 100
+  }
+}

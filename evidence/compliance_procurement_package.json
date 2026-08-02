@@ -1,0 +1,13 @@
+{
+  "packageId": "COMP-PROC-6915BF35",
+  "frameworkMappings": {
+    "ISO_27001": "100% MAPPED_VERIFIED",
+    "SOC_2_TYPE_II": "100% MAPPED_VERIFIED",
+    "NIST_SP_800_53": "100% MAPPED_VERIFIED",
+    "EU_CYBER_RESILIENCE_ACT": "COMPLIANT_READY",
+    "EU_AI_ACT_GOVERNANCE": "HIGH_RISK_AI_GOVERNANCE_COMPLIANT"
+  },
+  "signedAttestationDigest": "b5e451da93e42d0390475910ae20cb188c13df852656e2ce42fee209970686d9",
+  "isProcurementPackageComplete": true,
+  "packagedAt": "2026-08-02T16:24:21.804Z"
+}

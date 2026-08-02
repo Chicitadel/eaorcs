@@ -1,0 +1,780 @@
+{
+  "timestamp": "2026-08-02T20:22:10.552Z",
+  "inferredProduct": "Product: Core (55.0% Confidence)",
+  "identity": {
+    "productName": "Core",
+    "organization": "EAORCS Platform",
+    "confidence": "55.0% Confidence",
+    "detectionSources": [
+      "package.json",
+      "README.md"
+    ]
+  },
+  "totalFindings": 40,
+  "summary": {
+    "passed": 40,
+    "actionRequired": 0
+  },
+  "findings": [
+    {
+      "id": "FIND-Stream-A",
+      "streamId": "Stream A",
+      "title": "Repository Inventory",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream A evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-B",
+      "streamId": "Stream B",
+      "title": "Blueprint Compliance",
+      "category": "COMPLIANCE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream B evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-C",
+      "streamId": "Stream C",
+      "title": "Integration Guide",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream C evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-D",
+      "streamId": "Stream D",
+      "title": "Microservice Dependency Graph",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream D evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-E",
+      "streamId": "Stream E",
+      "title": "Customer Journey E2E",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream E evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-F",
+      "streamId": "Stream F",
+      "title": "UI Design Parity",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream F evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-G",
+      "streamId": "Stream G",
+      "title": "Static Asset Hash Verification",
+      "category": "PERFORMANCE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream G evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-H",
+      "streamId": "Stream H",
+      "title": "Identity Federation",
+      "category": "SECURITY",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream H evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-I",
+      "streamId": "Stream I",
+      "title": "API Governance",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream I evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-J",
+      "streamId": "Stream J",
+      "title": "Performance & Latency",
+      "category": "PERFORMANCE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream J evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-K",
+      "streamId": "Stream K",
+      "title": "Security & OWASP",
+      "category": "SECURITY",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream K evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-L",
+      "streamId": "Stream L",
+      "title": "Commercial Readiness",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream L evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-M",
+      "streamId": "Stream M",
+      "title": "Support Readiness",
+      "category": "OPERATIONS",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream M evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-N",
+      "streamId": "Stream N",
+      "title": "Developer Experience",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream N evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-O",
+      "streamId": "Stream O",
+      "title": "Deployment & CI/CD",
+      "category": "OPERATIONS",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream O evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-P",
+      "streamId": "Stream P",
+      "title": "Telemetry & Tracing",
+      "category": "OPERATIONS",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream P evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-Q",
+      "streamId": "Stream Q",
+      "title": "Architecture Drift",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream Q evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-R",
+      "streamId": "Stream R",
+      "title": "Domain-Driven Design",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream R evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-S",
+      "streamId": "Stream S",
+      "title": "Technical Debt Scoring",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream S evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-T",
+      "streamId": "Stream T",
+      "title": "Feature Completeness",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream T evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-U",
+      "streamId": "Stream U",
+      "title": "Product Lifecycle",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream U evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-V",
+      "streamId": "Stream V",
+      "title": "Documentation Coverage",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream V evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-W",
+      "streamId": "Stream W",
+      "title": "Dead Code & Duplication",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream W evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-X",
+      "streamId": "Stream X",
+      "title": "API Compatibility Matrix",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream X evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-Y",
+      "streamId": "Stream Y",
+      "title": "Vulnerability Scanning",
+      "category": "SECURITY",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream Y evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-Z",
+      "streamId": "Stream Z",
+      "title": "Database Migration Audit",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream Z evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-AA",
+      "streamId": "Stream AA",
+      "title": "Disaster Recovery & DR",
+      "category": "OPERATIONS",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream AA evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-BB",
+      "streamId": "Stream BB",
+      "title": "Internationalization (i18n)",
+      "category": "COMPLIANCE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream BB evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-CC",
+      "streamId": "Stream CC",
+      "title": "Accessibility (WCAG 2.1 AA)",
+      "category": "COMPLIANCE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream CC evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-DD",
+      "streamId": "Stream DD",
+      "title": "SEO & Metadata",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream DD evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-EE",
+      "streamId": "Stream EE",
+      "title": "Legal & Compliance",
+      "category": "COMPLIANCE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream EE evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-FF",
+      "streamId": "Stream FF",
+      "title": "16 Layered Release Gates",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream FF evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-GG",
+      "streamId": "Stream GG",
+      "title": "Project Registry Sync",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream GG evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-HH",
+      "streamId": "Stream HH",
+      "title": "AI Remediation Engine",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream HH evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-II",
+      "streamId": "Stream II",
+      "title": "Business Impact Engine",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream II evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-JJ",
+      "streamId": "Stream JJ",
+      "title": "Technical Debt Engine",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream JJ evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-KK",
+      "streamId": "Stream KK",
+      "title": "Maturity Progression Engine",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream KK evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-LL",
+      "streamId": "Stream LL",
+      "title": "Historical Trend Engine",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream LL evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-MM",
+      "streamId": "Stream MM",
+      "title": "Report Bundle Compiler",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream MM evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    },
+    {
+      "id": "FIND-Stream-NN",
+      "streamId": "Stream NN",
+      "title": "Continuous Zero-Trust Engine",
+      "category": "ARCHITECTURE",
+      "severity": "LOW",
+      "status": "PASSED",
+      "rootCause": "Stream Stream NN evaluated under canonical EAORCS rules.",
+      "impactStatement": "Zero operational impact under baseline governance.",
+      "affectedComponents": [
+        "identity-provider",
+        "telemetry-provider"
+      ],
+      "suggestedConfigs": {
+        "eaorcs.gate.status": "VERIFIED"
+      },
+      "fixTimeEstimate": "0 mins",
+      "priorityRating": "P3"
+    }
+  ]
+}

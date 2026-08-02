@@ -1,0 +1,90 @@
+{
+  "osap_version": "2.0.0",
+  "schema_version": "2.0.0",
+  "passport_id": "OSAP-PASS-200-1785687873520-6A50B0FD",
+  "issued_at": "2026-08-02T16:24:33.516Z",
+  "expires_at": "2026-10-31T16:24:33.516Z",
+  "issuer": {
+    "id": "urn:eaorcs:authority:ujomor-systems",
+    "organization": "Ujomor Systems & Enterprise Governance",
+    "environment": "PRODUCTION_AUDIT_KERNEL",
+    "signature_algorithm": "Ed25519",
+    "digital_signature": "019ea015b9b77661006420192135ad03674e249d3ef22db3cdd36c0dc5bb027c"
+  },
+  "subject": {
+    "artifact_id": "eaorcs-core",
+    "version": "2026.1.0-lts",
+    "repository": "workspace://local",
+    "commit_hash": "HEAD",
+    "build_id": "BUILD-1785687873521"
+  },
+  "trust_summary": {
+    "trust_score": 99.5,
+    "tier": "GOLD",
+    "readiness_score": 100,
+    "evidence_confidence": 1,
+    "statistical_confidence": 1
+  },
+  "domain_scores": {
+    "ARCHITECTURE_INTEGRITY": 100,
+    "SECURITY_VULNERABILITIES": 100,
+    "COMPLIANCE_GOVERNANCE": 100,
+    "PROTOCOL_FREEZE": 100,
+    "AUTONOMOUS_REMEDIATION": 100
+  },
+  "evidence_manifest": {
+    "merkle_root": "0x09853c11992cae745c44c6812cb84c44eebde6874a45b3775225df6cf6f61e40",
+    "total_evidence_items": 44,
+    "evidence_hashes": [
+      "bb8fe4377c6785a5183eb2c38777af4160f44ef0620ae4cca11cf82c0b1ec562",
+      "68a193079fbc85d77f5e6cd05e84a6e578d165a0d55307e25c3375806dab4fcc",
+      "025c608f4c852bea4a44afb0ce72e2ef0930a377c7b92815cc9e504e7a05b962",
+      "48d0eaecb19db209c4045d1d9d7dbf98bb42a75e61857390411d7994d5a715a8",
+      "958caacba4e86e8ae2323fdd49a149c8780d49cc32295abecfdb92c5e06d29a5",
+      "8b3b3a5be4e465f6beb8d8207425e2439f1107e73a3baea45270004a6701861d",
+      "25166e36e06b1869b89c1563a4968e5daefebbb74cc43b5aeee1f7b2df9e8017",
+      "16fe2c43cd6b04b6414870bd53ae2db04cdc4ace4de28650a413b6e1fa4e081f",
+      "ec7eb9a0e5b45174ee6a3b90289b8c560832b374e5238d1871e0a840d16237de",
+      "043649fc8438d2b00614b3e598b5a32806b5f2587e135ab30fffdac4cc57044d",
+      "6c17b0ea9fbf0a2f29a7ea8f7dceb280ef6530fc0e16962d4265a6ce8c15d31b",
+      "7017b948a63b613b4a29149a931172ef1b77a7af5d883ee37036bbdd541ae8c3",
+      "0fe25ee61d6eaf6a79f6b4a124b86e6ac031fcc8f374b0e726cef3f117d49bd3",
+      "d30a73cb70b92ad546a26bbe2c5575043b2256a2714831f9fffabe4e45242d7b",
+      "064cf0a4aeb38a9b1b542ed24c767b56beee15d3b8b3b43b57c4d0ed1436916b",
+      "be712d0aeba895c99250a0f8cf4f294257041eb802c0639e4ba440f9be30c302",
+      "89031601110f1cca31a09415eb3bd3d239f3435aab9498158251c7b83a940724",
+      "dca3267ebea7c3b5ada37d9ff55838f224503ea38a254d3bcf302aa7ef0592e1",
+      "194732d30080ae0a986b262051db923a36b7d76c3befe61221277123ba0bdda5",
+      "f06bedb7619d3db9236af597ab0cc89a1db00117a1634d2553980adab532e44a",
+      "9441af60a7265e50b7c944136c09bca60fbba6b8b75d18aec08ec4626ef180ef",
+      "b4788e53f8b87c91da5e63bd13176b0cefd75c17216eace098f484de6dc08559",
+      "c71b93f17ad22ebb4cf9d8224623d87282375934e7cef231fb889002311faea3",
+      "d701439f20f595ec013f805fe5d6423bbf96af30f2bc78fd374ff1a0f6240e48",
+      "00caebef3f858e4bcc33252724ce25961e2d30e9f8e89b1a6c1f771351c6cadd",
+      "9a60762e9442f3b8f6112b6c28179f7fd334624a162419f3a84b0ec60014a5cf",
+      "d7af5ecc371999138fe3d05b302f6deb76c5f5637d7e1ec43f03b041a6f6a426",
+      "941873b262397c3a1161bdb44f2842189ec83312918b9d0dce2bc190c3b94f37",
+      "edf6e34fb4d6c82beb39e34c10d6e76767eb51489f42e8848f251df783eed6ad",
+      "f8de8063a481ab3c1e6f64a833f36a1a9c7698fb2088b1a29659929320341b47",
+      "8aca748db7f8317277aaa3aa6c3fbcfa1fcfb39f776dca98dc14f6b8c48371a3",
+      "ee2dc2aa528c06979965a409886a40796c94ab9a926885b16ed07b6c678ffc8a",
+      "1ba1127bfca44b79814fc4b3784c20c2f74bf498b15e71b1346a42255a5b3af8",
+      "aa40ad61331f28935d9ee06d771f771d69740f64267d6b5ad986e10c7bb8e4d6",
+      "2c00d05034567141e4405ffaa2c2cf582728988ae0f7422da90010a867d22eba",
+      "5a6f6fb414c200ff81653fd80d71e999e8048b65020b9bed728aaf5a76340e62",
+      "41349f64869bb72e040a54dc9eabb6e41228e0bce419fb2f84edff923db7cf6c",
+      "e55267111849d356cfa81926b61520f57bef2c6a8b5f76c516a3bd0386aaf7e0",
+      "820c3dd8c7c916ecf5fce057ffb3190a36bcb25766bbbfa5e5fdd055c5eb1ec6",
+      "5caa7b83a69f5147c09c5a68d8841bcf42609b142619b00c1787b1e39b53512d",
+      "f4b8c16ad8d354280b85ad2c40082feca3b7c9f23c09bd8a9e061bfc40608747",
+      "a6b215f32b4c37a37eecb3c600d7728a774fa9c05caf1e2f6c11142d78a7385d",
+      "7e803969f799b42a3a30f25fc361eac260496ef0e89801679dbcef97f1cc94bc",
+      "a5f69a179c1846dd4a462c90102ee87e5eb277ae91d8e4923b2a1386f68763c1"
+    ]
+  },
+  "certification": {
+    "certificate_id": "CERT-OSAP-PASS-200-1785687873520-6A50B0FD",
+    "status": "QUALIFIED",
+    "tier": "GOLD"
+  }
+}

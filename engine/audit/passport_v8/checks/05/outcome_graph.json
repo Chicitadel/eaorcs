@@ -1,0 +1,39 @@
+{
+  "outcome_graph_id": "og_1785532366904",
+  "lineage_chain": [
+    {
+      "layer": "Evidence",
+      "item": "Automated Test & Static Audit Evidence",
+      "value": "99.2% pass"
+    },
+    {
+      "layer": "Capability",
+      "item": "Continuous Software Assurance & Self-Healing",
+      "status": "ACTIVE"
+    },
+    {
+      "layer": "Business KPI",
+      "item": "Security Incident & Downtime Reduction",
+      "value": "-94.2%"
+    },
+    {
+      "layer": "Financial ROI",
+      "item": "Net Assured ROI",
+      "value": "+958.3% ($1,270,000 USD value created)"
+    },
+    {
+      "layer": "Executive Dashboard",
+      "item": "Air Roofers Platform C-Suite Overview",
+      "status": "SYNCHRONIZED"
+    }
+  ],
+  "metrics": {
+    "release_velocity_multiplier": 2.49,
+    "compliance_efficiency_pct": 99.1,
+    "avoided_breach_costs_usd": 850000,
+    "labor_automation_savings_usd": 420000,
+    "net_benefit_usd": 1270000,
+    "net_roi_pct": 958.3
+  },
+  "executive_summary": "EAORCS Continuous Software Assurance generated $1,270,000 USD in value with a 958.3% Net ROI."
+}

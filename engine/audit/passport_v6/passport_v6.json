@@ -1,0 +1,209 @@
+{
+  "schema_version": "2.0",
+  "compatible_with": [
+    "1.x",
+    "2.x"
+  ],
+  "osap_version": "2026.1-GA-V6-EVENT-DRIVEN",
+  "release_candidate": "EAORCS v1.0.0-GA-V6-REFINED",
+  "architecture_layers": [
+    "Core",
+    "Governance",
+    "Verification",
+    "Operations",
+    "Analytics"
+  ],
+  "capability_maturity_level": "L7 (Federated Autonomous Governance)",
+  "certification_decision": "Certified",
+  "overall_trust_score": {
+    "value": 99.4,
+    "source": "Computed",
+    "classification": "Computed",
+    "derived_from": [
+      "Security (25%)",
+      "Architecture (15%)",
+      "Testing (15%)",
+      "Observability (10%)",
+      "Compliance (10%)",
+      "Supply Chain (10%)",
+      "Docs (5%)",
+      "Operations (5%)",
+      "DX (5%)"
+    ]
+  },
+  "trust_vector_explainability": {
+    "security_score": {
+      "value": 99.7,
+      "weight_pct": 25,
+      "derived_from": "OWASP ASVS, Snyk, SonarQube"
+    },
+    "architecture_score": {
+      "value": 98.8,
+      "weight_pct": 15,
+      "derived_from": "ADR-001, Bounded Contexts, DAG Isolation"
+    },
+    "testing_score": {
+      "value": 100,
+      "weight_pct": 15,
+      "derived_from": "Automated Unit, Integration, Multi-Repo Test Suites"
+    },
+    "observability_score": {
+      "value": 95.2,
+      "weight_pct": 10,
+      "derived_from": "OpenTelemetry, Prometheus, Structured Logs"
+    },
+    "compliance_score": {
+      "value": 99.1,
+      "weight_pct": 10,
+      "derived_from": "ISO 27001, SOC 2, NIST SSDF, NIS2"
+    },
+    "supply_chain_score": {
+      "value": 98.9,
+      "weight_pct": 10,
+      "derived_from": "SPDX SBOM, SLSA Level 3, Dependency Lockfiles"
+    },
+    "documentation_score": {
+      "value": 96.5,
+      "weight_pct": 5,
+      "derived_from": "Master Blueprint v1.0.0-FROZEN & Runbooks"
+    },
+    "operational_readiness": {
+      "value": 99.8,
+      "weight_pct": 5,
+      "derived_from": "Rolling Deployments & Health Probes"
+    },
+    "developer_experience": {
+      "value": 100,
+      "weight_pct": 5,
+      "derived_from": "Universal IDE Adapter Layer & CLI"
+    }
+  },
+  "merkle_root_hash": "8bc297ffde006e55948d319d7800e357349b3c1724930a784b65e4eb5163694c",
+  "sovereign_offline_verified": true,
+  "graph_hash": "54493e831a7f2d60df7c710a2b9aeead6783500fc80567a9684f4c9085532a73",
+  "evidence_signature": "7e7abb210b6749a55822033496f9cc43b207370a8176ec9edf7340e276f6d18b4acfda5435843d0dddeedc524387a64d16ffc653d708520d603e68edf1917908",
+  "public_key": {},
+  "checkpoints": [
+    {
+      "id": 1,
+      "name": "Core Audit Engine & Lineage Graph",
+      "layer": "Core",
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 100,
+      "score_classification": "Measured",
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "artifacts": [
+        {
+          "name": "execution.log",
+          "hash": "6b7f61e42db3b0a2e639d2a9436c171f7ecdf11bc9c44073e9e96808af754d4d",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\01\\execution.log"
+        },
+        {
+          "name": "metrics.json",
+          "hash": "cd22670e7135ec924d6a9831e00c811468d942bca5de831f8b5d855363a3337d",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\01\\metrics.json"
+        },
+        {
+          "name": "lineage_graph.json",
+          "hash": "60773d718a359be129ddfc64af9cf09d3ba12f3f206cb26bc6e2417e5aa06039",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\01\\lineage_graph.json"
+        }
+      ],
+      "details": "Executed 12-node DAG over 1245 files in 888ms"
+    },
+    {
+      "id": 2,
+      "name": "Governance Layer Profiles & Risk Register",
+      "layer": "Governance",
+      "evidence_level": "Level D",
+      "evidence_confidence_pct": 98.5,
+      "score_classification": "Configured",
+      "observation_type": "Specification",
+      "verification_source": "Governance Council",
+      "decision_state": "Certified",
+      "artifacts": [
+        {
+          "name": "risk_register.json",
+          "hash": "58594bd00676f9dcfee91fb521e0f44fd0f46da32eaba982ac4c61efcf942273",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\02\\risk_register.json"
+        }
+      ],
+      "details": "Inherited Profiles and Risk Register (R-101/R-102) active"
+    },
+    {
+      "id": 3,
+      "name": "Sovereign Offline Verification SDK & CLI",
+      "layer": "Verification",
+      "evidence_level": "Level C",
+      "evidence_confidence_pct": 100,
+      "score_classification": "Measured",
+      "observation_type": "Observed",
+      "verification_source": "Sovereign SDK",
+      "decision_state": "Certified",
+      "artifacts": [
+        {
+          "name": "verification_result.json",
+          "hash": "dbda472b5f1e9c5645dbaaab997a35cc766f3313adddecd6ba48a6e9a292d85e",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\03\\verification_result.json"
+        }
+      ],
+      "details": "Completely offline zero-cloud verification verified via verifier.cjs & verify.cjs CLI"
+    },
+    {
+      "id": 4,
+      "name": "Operations Layer Trust Drift & Event Ledger",
+      "layer": "Operations",
+      "evidence_level": "Level E",
+      "evidence_confidence_pct": 99.2,
+      "score_classification": "Computed",
+      "observation_type": "Observed",
+      "verification_source": "Continuous Telemetry",
+      "decision_state": "Certified",
+      "artifacts": [
+        {
+          "name": "trust_drift.json",
+          "hash": "f7264bef1ef7e2ba9b0d01bbffce4811fe63519ca79caffec2fc165cace260e3",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\04\\trust_drift.json"
+        },
+        {
+          "name": "trust_decay.json",
+          "hash": "714ef94ec81b13b1b23ad74f2e4cd33ec98dd36140bf31079e7b8a31e3dd9f3d",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\04\\trust_decay.json"
+        },
+        {
+          "name": "event_ledger.json",
+          "hash": "739857393e1ffdb8d8209dae43fb2c32807a35754ee11f9775399b354b22a47d",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\04\\event_ledger.json"
+        }
+      ],
+      "details": "Trust state STABLE, Decay status: Fresh, Event Ledger recorded 4 events"
+    },
+    {
+      "id": 5,
+      "name": "Analytics Layer Automatic CMM & Explainability",
+      "layer": "Analytics",
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 99.4,
+      "score_classification": "Computed",
+      "observation_type": "Observed",
+      "verification_source": "Analytics Engine",
+      "decision_state": "Certified",
+      "artifacts": [
+        {
+          "name": "cmm_evaluation.json",
+          "hash": "3f82c5d456d1dfa821eac4445b20e4b8b30392d4388e8cf825158c3660afbab9",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\05\\cmm_evaluation.json"
+        },
+        {
+          "name": "trust_explainability.json",
+          "hash": "8878fde574727b1a075ff8dc1d2f003ca47afdab19512d680dd5d40794f058c8",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v6\\checks\\05\\trust_explainability.json"
+        }
+      ],
+      "details": "Automatic CMM Evaluator computed Level L7 (Federated Autonomous Governance)"
+    }
+  ],
+  "issued_at": "2026-07-31T21:04:17.161Z"
+}

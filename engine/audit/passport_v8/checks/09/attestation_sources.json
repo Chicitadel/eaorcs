@@ -1,0 +1,42 @@
+[
+  {
+    "id": "src_internal_ci",
+    "type": "Internal CI",
+    "name": "Air Roofers Automated Build & Test Pipeline",
+    "trust_weight": 0.95,
+    "verification_method": "Cryptographic Pipeline Signatures",
+    "registered_at": "2026-07-31T21:14:59.287Z"
+  },
+  {
+    "id": "src_independent_auditor",
+    "type": "Independent Auditor",
+    "name": "Enterprise Third-Party Security Audit Authority",
+    "trust_weight": 1,
+    "verification_method": "ISO 27001 / SOC 2 Formal Attestation",
+    "registered_at": "2026-07-31T21:14:59.287Z"
+  },
+  {
+    "id": "src_customer_deployment",
+    "type": "Customer Deployment",
+    "name": "Production Tenant Runtime Telemetry",
+    "trust_weight": 0.9,
+    "verification_method": "Telemetry Gateway Metrics",
+    "registered_at": "2026-07-31T21:14:59.287Z"
+  },
+  {
+    "id": "src_government_auditor",
+    "type": "Government Auditor",
+    "name": "EU Cybersecurity Compliance Body",
+    "trust_weight": 1,
+    "verification_method": "Sovereignty & GDPR Seal Verification",
+    "registered_at": "2026-07-31T21:14:59.287Z"
+  },
+  {
+    "id": "src_certification_authority",
+    "type": "Certification Authority",
+    "name": "EAORCS Master Certification Body",
+    "trust_weight": 1,
+    "verification_method": "Sovereign Ed25519 Root Key Signature",
+    "registered_at": "2026-07-31T21:14:59.287Z"
+  }
+]

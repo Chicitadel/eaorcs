@@ -1,0 +1,184 @@
+{
+  "manifestId": "HM-EAORCS-2026.1.0-LTS-1785585370280",
+  "version": "2026.1.0-lts",
+  "generatedAt": "2026-08-01T11:56:10.280Z",
+  "merkleRoot": "0167cc8c36a4fdb8bd78e2f9a19d6dcc2c92052a6a11f7f89c5af2e75115ab16",
+  "fileCount": 25,
+  "files": [
+    {
+      "file": "air_roofers_compliance_report.md",
+      "relativePath": "air_roofers_compliance_report.md",
+      "sha256": "f2440c832604be3469c423c2baeb4733481a51017483b7764631be5d04c8c62c",
+      "sizeBytes": 4288,
+      "generatedAt": "2026-08-01T11:35:23.254Z"
+    },
+    {
+      "file": "api_governance_report.md",
+      "relativePath": "api_governance_report.md",
+      "sha256": "e658355ec6354662be2cc67857c3a872e9855b5be4f226e16f46353405fcaa65",
+      "sizeBytes": 1702,
+      "generatedAt": "2026-08-01T11:34:58.071Z"
+    },
+    {
+      "file": "blueprint_execution_matrix.md",
+      "relativePath": "blueprint_execution_matrix.md",
+      "sha256": "7ecafba280a28063068320d2da8ee15622412a658d2dc882aec7689c46259aa0",
+      "sizeBytes": 7626,
+      "generatedAt": "2026-07-31T20:37:59.646Z"
+    },
+    {
+      "file": "commercial_qualification_report.md",
+      "relativePath": "commercial_qualification_report.md",
+      "sha256": "3c090b65d11b82380c5d971d17aabac9c4eecb5c8b6e0413e994e01529912e7b",
+      "sizeBytes": 424,
+      "generatedAt": "2026-08-01T11:08:18.134Z"
+    },
+    {
+      "file": "continuous_certification_report.md",
+      "relativePath": "continuous_certification_report.md",
+      "sha256": "bdfca72b30ffefefffa6164dc030f60dcbe89afb42d644341e8005ea357d3dff",
+      "sizeBytes": 1993,
+      "generatedAt": "2026-08-01T11:35:23.258Z"
+    },
+    {
+      "file": "cross_domain_report.md",
+      "relativePath": "cross_domain_report.md",
+      "sha256": "6cf37805bf82d9fe69e3f93500a03e9f8d03ef79a2bcab5a2f4307a46ebb6edf",
+      "sizeBytes": 2691,
+      "generatedAt": "2026-08-01T11:36:41.850Z"
+    },
+    {
+      "file": "EAORCS_Architecture_Specification.md",
+      "relativePath": "EAORCS_Architecture_Specification.md",
+      "sha256": "923cf07868e43814e3eb0b2bfee24e34b5f067d149bf9311fa9deff43343fbc1",
+      "sizeBytes": 9998,
+      "generatedAt": "2026-07-29T16:06:45.900Z"
+    },
+    {
+      "file": "EAORCS_COMMERCIALIZATION_STRATEGY.md",
+      "relativePath": "EAORCS_COMMERCIALIZATION_STRATEGY.md",
+      "sha256": "d25d854353f14ce83bf18dc789a21270f4eb096e11c9a7307f43f0641e5e805c",
+      "sizeBytes": 6031,
+      "generatedAt": "2026-07-31T13:28:06.159Z"
+    },
+    {
+      "file": "EAORCS_Operations_Manual.md",
+      "relativePath": "EAORCS_Operations_Manual.md",
+      "sha256": "7912db4c89fe5faaa884ded3d9df8829615e1bbae3c4fdacb2aa962bcfc7dcb2",
+      "sizeBytes": 2799,
+      "generatedAt": "2026-07-29T16:06:50.307Z"
+    },
+    {
+      "file": "EAORCS_Verification_Standard.md",
+      "relativePath": "EAORCS_Verification_Standard.md",
+      "sha256": "4df4bc58606395db306c99cf48726eaed30b13808ccfcbaa31c64439611c9de9",
+      "sizeBytes": 2777,
+      "generatedAt": "2026-07-29T15:23:23.493Z"
+    },
+    {
+      "file": "enterprise_expanded_report.md",
+      "relativePath": "enterprise_expanded_report.md",
+      "sha256": "82efafc7efc21268af338e433eb11519fc9599422dd6f6aa387e78c6c00770c1",
+      "sizeBytes": 10995,
+      "generatedAt": "2026-08-01T11:34:18.132Z"
+    },
+    {
+      "file": "enterprise_qualification_report.md",
+      "relativePath": "enterprise_qualification_report.md",
+      "sha256": "6cd4503a4dd3c5b06079d05a6a09f02a69ef9822ef95cc5663a7b51a2aefd324",
+      "sizeBytes": 602,
+      "generatedAt": "2026-08-01T11:09:39.382Z"
+    },
+    {
+      "file": "evidence_bundle_2026.1.0-lts.json",
+      "relativePath": "evidence_bundle_2026.1.0-lts.json",
+      "sha256": "4ee9e3c5631496194deb25e252f32b56eef44c5b02a83e569ae5ed9caf5e8cc6",
+      "sizeBytes": 3402,
+      "generatedAt": "2026-08-01T11:07:56.656Z"
+    },
+    {
+      "file": "lifecycle_verification_report.md",
+      "relativePath": "lifecycle_verification_report.md",
+      "sha256": "bfc014e30b40ba17b58e32e73223f8c7ad8ff90eaa16a235a3ddae16e169a1f2",
+      "sizeBytes": 4501,
+      "generatedAt": "2026-08-01T11:34:24.611Z"
+    },
+    {
+      "file": "manifest_2026.1.0-lts.json",
+      "relativePath": "manifest_2026.1.0-lts.json",
+      "sha256": "2c2de0edfcf2378d665e02d828c0f02758338e3d8431d76abe4141aaee8a7edb",
+      "sizeBytes": 45362,
+      "generatedAt": "2026-08-01T11:07:55.933Z"
+    },
+    {
+      "file": "osap_passport_2026.1.0-lts.json",
+      "relativePath": "osap_passport_2026.1.0-lts.json",
+      "sha256": "868604f0163bb6d33fcc01211a7ca1857ae45059eff0e63da6e6560f292e22cb",
+      "sizeBytes": 1537,
+      "generatedAt": "2026-08-01T11:35:23.244Z"
+    },
+    {
+      "file": "phase2_qualification_report.md",
+      "relativePath": "phase2_qualification_report.md",
+      "sha256": "aaf13bc1f0518efa93bc91899fa10902f09485ff0ca0086f197b9380132cd06a",
+      "sizeBytes": 14600,
+      "generatedAt": "2026-08-01T11:39:07.369Z"
+    },
+    {
+      "file": "platform_compliance_report.md",
+      "relativePath": "platform_compliance_report.md",
+      "sha256": "a59172f9a313f7575819cdb7b9b887e8bca09a48564237ecf3990e62a86ffd5b",
+      "sizeBytes": 2269,
+      "generatedAt": "2026-08-01T11:37:01.358Z"
+    },
+    {
+      "file": "platform_qualification_report.md",
+      "relativePath": "platform_qualification_report.md",
+      "sha256": "5b8ea5da70629fecae368a9cd2683c243320fc5cfd1996dfda333586888661fb",
+      "sizeBytes": 12280,
+      "generatedAt": "2026-08-01T11:15:19.106Z"
+    },
+    {
+      "file": "product_readiness_certificate.json",
+      "relativePath": "product_readiness_certificate.json",
+      "sha256": "35b2f78e1dcededc63041a2d7956b38244ce62ed31a5606147142b2074cb8696",
+      "sizeBytes": 1136,
+      "generatedAt": "2026-08-01T11:35:23.252Z"
+    },
+    {
+      "file": "release_notes_2026.1.0-lts.md",
+      "relativePath": "release_notes_2026.1.0-lts.md",
+      "sha256": "4a7e0e71852b287a35c1211da092d10947e3d575c4a8b4816cd7782449250346",
+      "sizeBytes": 1973,
+      "generatedAt": "2026-08-01T11:07:56.778Z"
+    },
+    {
+      "file": "sbom_2026.1.0-lts.json",
+      "relativePath": "sbom_2026.1.0-lts.json",
+      "sha256": "4bef1ba1a4f828dce47a6f9ff01e450af0524a2159efda5d62b4fe08b89dec4a",
+      "sizeBytes": 124391,
+      "generatedAt": "2026-08-01T11:07:56.118Z"
+    },
+    {
+      "file": "security_qualification_report.md",
+      "relativePath": "security_qualification_report.md",
+      "sha256": "bbb7812388b27c8fe01abbf0763f00139cdd6a6cbc45bfefdd2fe3dbf4846c9f",
+      "sizeBytes": 615,
+      "generatedAt": "2026-08-01T11:12:56.260Z"
+    },
+    {
+      "file": "signature_manifest_2026.1.0-lts.json",
+      "relativePath": "signature_manifest_2026.1.0-lts.json",
+      "sha256": "04539fbb7cabc15abd8926d99eb708a5107c5ce9353edc530dcdf8821ceb6ace",
+      "sizeBytes": 28509,
+      "generatedAt": "2026-08-01T11:07:56.776Z"
+    },
+    {
+      "file": "traceability_report.md",
+      "relativePath": "traceability_report.md",
+      "sha256": "07391bdfdb5abde940133ec6dfc9d11e291bcb0fccb44e8d3351720751576a0c",
+      "sizeBytes": 10071,
+      "generatedAt": "2026-08-01T11:55:48.234Z"
+    }
+  ]
+}

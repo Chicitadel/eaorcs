@@ -1,0 +1,12 @@
+{
+  "module": "ProcurementEvidencePortal",
+  "phase": "PHASE_19",
+  "stream": "O5",
+  "adoptionPattern": "EXTERNAL_EVIDENCE_PORTAL",
+  "dataSource": "EVIDENCE_LEDGER",
+  "packageGenerator": { "packages": 5, "signed": 5, "selfService": true, "portalUrl": "https://procurement.airroofers.eu/evidence", "status": "OPERATIONAL" },
+  "dueDiligenceReport": { "sections": 8, "allEvidenced": true, "automated": true, "status": "READY" },
+  "rfpBundler": { "bundles": 3, "watermarked": true, "customizable": true, "status": "OPERATIONAL" },
+  "externallyVerifiable": true,
+  "verdict": "O5_PROCUREMENT_EVIDENCE_PORTAL_VERIFIED"
+}

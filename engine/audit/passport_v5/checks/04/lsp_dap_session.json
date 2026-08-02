@@ -1,0 +1,38 @@
+{
+  "certifiedIdes": [
+    "Visual Studio",
+    "VS Code",
+    "Azure Dev Box",
+    "IntelliJ IDEA",
+    "Rider",
+    "PhpStorm",
+    "PyCharm",
+    "GoLand",
+    "WebStorm",
+    "CLion",
+    "DataGrip",
+    "RubyMine",
+    "RustRover",
+    "Eclipse IDE",
+    "Eclipse Che",
+    "NetBeans",
+    "Xcode",
+    "Cursor",
+    "Windsurf",
+    "Zed",
+    "Trae",
+    "GitHub Codespaces",
+    "Gitpod",
+    "JetBrains Gateway",
+    "AWS Cloud9",
+    "Android Studio",
+    "Arduino IDE",
+    "PlatformIO",
+    "Qt Creator"
+  ],
+  "protocols": [
+    "LSP v3.17",
+    "DAP v1.53",
+    "CodeLens v1.0"
+  ]
+}

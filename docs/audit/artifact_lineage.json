@@ -1,0 +1,144 @@
+{
+  "header": {
+    "project": "Enterprise Autonomous Operational Readiness & Certification System (EAORCS)",
+    "module": "Stream I — Quality, Deliverables & Audit Packaging",
+    "file": "artifact_lineage.json",
+    "version": "2026.2-LTS (v1.1.0-FROZEN Master Specification)",
+    "author": "Ujomor Engineering Governance Authority",
+    "organization": "Air Roofers Platform Ecosystem & Ujomor Systems Engineering",
+    "createdDate": "2026-08-02",
+    "lastModified": "2026-08-02",
+    "classification": "INTERNAL_ENGINEERING_AUDIT | RESTRICTED",
+    "governance": "Architecture Authority Approved & FROZEN (v1.1.0-FROZEN)"
+  },
+  "graph_type": "DIRECTED_ACYCLIC_GRAPH",
+  "nodes": [
+    { "id": "NODE-BLUEPRINT-01", "type": "BLUEPRINT", "name": "EAORCS Blueprint v1.0", "path": "docs/EAORCS_Architecture_Specification.md" },
+    { "id": "NODE-BLUEPRINT-02", "type": "BLUEPRINT", "name": "DPA/PDA v1.1.0-FROZEN Specification", "path": "docs/standards/DPA_PDA_v1.1.0_FROZEN.md" },
+    { "id": "NODE-BLUEPRINT-03", "type": "BLUEPRINT", "name": "Master Product Manifest", "path": "product.manifest.yaml" },
+    { "id": "NODE-IMPL-01", "type": "IMPLEMENTATION", "name": "Kernel Engine", "path": "engine/kernel/KernelEngine.js" },
+    { "id": "NODE-IMPL-02", "type": "IMPLEMENTATION", "name": "Capability Capsule Packer", "path": "packaging/CapabilityCapsulePacker.js" },
+    { "id": "NODE-IMPL-03", "type": "IMPLEMENTATION", "name": "Distribution Control Plane Router", "path": "engine/dcp/DistributionControlPlane.js" },
+    { "id": "NODE-IMPL-04", "type": "IMPLEMENTATION", "name": "Product DNA Compiler", "path": "engine/certification/ProductDnaCompiler.js" },
+    { "id": "NODE-IMPL-05", "type": "IMPLEMENTATION", "name": "Product Passport V2 Engine", "path": "engine/certification/ProductPassportV2Engine.js" },
+    { "id": "NODE-IMPL-06", "type": "IMPLEMENTATION", "name": "Audit Package Builder", "path": "bin/create_eaorcs_package.js" },
+    { "id": "NODE-TEST-01", "type": "TEST", "name": "Master Test Suite", "path": "tests/suite.test.js" },
+    { "id": "NODE-TEST-02", "type": "TEST", "name": "End-to-End Integration Suite", "path": "tests/e2e_integration.test.js" },
+    { "id": "NODE-TEST-03", "type": "TEST", "name": "Package Formats Test Suite", "path": "tests/stream_b_package_format.test.js" },
+    { "id": "NODE-TEST-04", "type": "TEST", "name": "DCP Test Suite", "path": "tests/stream_d_dcp.test.js" },
+    { "id": "NODE-EVIDENCE-01", "type": "EVIDENCE", "name": "Requirement Manifest", "path": "evidence/requirement_manifest.json" },
+    { "id": "NODE-EVIDENCE-02", "type": "EVIDENCE", "name": "Signed Evidence Bundle", "path": "evidence/signed_evidence_bundle.json" },
+    { "id": "NODE-EVIDENCE-03", "type": "EVIDENCE", "name": "Hash Manifest Index", "path": "evidence/hash_manifest.json" },
+    { "id": "NODE-RELEASE-01", "type": "RELEASE", "name": "Distribution Manifest", "path": "distribution_manifest.yaml" },
+    { "id": "NODE-RELEASE-02", "type": "RELEASE", "name": "Compatibility Matrix", "path": "compatibility_matrix.json" },
+    { "id": "NODE-RELEASE-03", "type": "RELEASE", "name": "SLSA Level 4 Product DNA", "path": "release/dna.json" },
+    { "id": "NODE-RELEASE-04", "type": "RELEASE", "name": "OSAP v2 Digital Passport", "path": "release/passport.json" },
+    { "id": "NODE-RELEASE-05", "type": "RELEASE", "name": "Engineering Package Classification", "path": "audit/ENGINEERING_PACKAGE_CLASSIFICATION.md" },
+    { "id": "NODE-RELEASE-06", "type": "RELEASE", "name": "Audit Manifest Index", "path": "audit/MANIFEST_INDEX.md" },
+    { "id": "NODE-RELEASE-07", "type": "RELEASE", "name": "Architecture Conformance Matrix", "path": "audit/architecture_conformance_matrix.md" },
+    { "id": "NODE-RELEASE-08", "type": "RELEASE", "name": "Audit Summary & DRI Score", "path": "audit/audit_summary.json" },
+    { "id": "NODE-RELEASE-09", "type": "RELEASE", "name": "Version Synchronization", "path": "version_synchronization.json" },
+    { "id": "NODE-ZIP-01", "type": "ZIP", "name": "External Audit Package ZIP", "path": "release/eaorcs_external_audit_package.zip" },
+    { "id": "NODE-ZIP-02", "type": "ZIP", "name": "PEP Audit Package ZIP", "path": "release/eaorcs_pep_audit_package.zip" }
+  ],
+  "lineage_chains": [
+    {
+      "chain_id": "CHAIN-01-DNA-PROVENANCE",
+      "description": "SLSA Level 4 Product DNA Provenance Lineage",
+      "path": [
+        "NODE-BLUEPRINT-01",
+        "NODE-IMPL-04",
+        "NODE-TEST-01",
+        "NODE-EVIDENCE-02",
+        "NODE-RELEASE-03",
+        "NODE-ZIP-01"
+      ]
+    },
+    {
+      "chain_id": "CHAIN-02-PASSPORT-ATTESTATION",
+      "description": "OSAP v2 Digital Product Passport Lineage",
+      "path": [
+        "NODE-BLUEPRINT-02",
+        "NODE-IMPL-05",
+        "NODE-TEST-02",
+        "NODE-EVIDENCE-01",
+        "NODE-RELEASE-04",
+        "NODE-ZIP-01"
+      ]
+    },
+    {
+      "chain_id": "CHAIN-03-DISTRIBUTION-TOPOLOGY",
+      "description": "Distribution Control Plane Topology Lineage",
+      "path": [
+        "NODE-BLUEPRINT-03",
+        "NODE-IMPL-03",
+        "NODE-TEST-04",
+        "NODE-EVIDENCE-03",
+        "NODE-RELEASE-01",
+        "NODE-ZIP-01"
+      ]
+    },
+    {
+      "chain_id": "CHAIN-04-PACKAGE-CLASSIFICATION",
+      "description": "Capability Capsule & Packaging Classification Lineage",
+      "path": [
+        "NODE-BLUEPRINT-02",
+        "NODE-IMPL-02",
+        "NODE-TEST-03",
+        "NODE-EVIDENCE-02",
+        "NODE-RELEASE-05",
+        "NODE-ZIP-02"
+      ]
+    },
+    {
+      "chain_id": "CHAIN-05-AUDIT-RECONCILIATION",
+      "description": "Canonical Audit Metadata Reconciliation Lineage",
+      "path": [
+        "NODE-BLUEPRINT-01",
+        "NODE-IMPL-06",
+        "NODE-TEST-02",
+        "NODE-EVIDENCE-01",
+        "NODE-RELEASE-08",
+        "NODE-ZIP-01"
+      ]
+    }
+  ],
+  "edges": [
+    { "from": "NODE-BLUEPRINT-01", "to": "NODE-IMPL-01", "relation": "SPECIFIES" },
+    { "from": "NODE-BLUEPRINT-01", "to": "NODE-IMPL-04", "relation": "SPECIFIES" },
+    { "from": "NODE-BLUEPRINT-02", "to": "NODE-IMPL-02", "relation": "GOVERNS" },
+    { "from": "NODE-BLUEPRINT-02", "to": "NODE-IMPL-05", "relation": "GOVERNS" },
+    { "from": "NODE-BLUEPRINT-03", "to": "NODE-IMPL-03", "relation": "DEFINES_TOPOLOGY" },
+    { "from": "NODE-IMPL-01", "to": "NODE-TEST-01", "relation": "TESTED_BY" },
+    { "from": "NODE-IMPL-02", "to": "NODE-TEST-03", "relation": "TESTED_BY" },
+    { "from": "NODE-IMPL-03", "to": "NODE-TEST-04", "relation": "TESTED_BY" },
+    { "from": "NODE-IMPL-04", "to": "NODE-TEST-01", "relation": "TESTED_BY" },
+    { "from": "NODE-IMPL-05", "to": "NODE-TEST-02", "relation": "TESTED_BY" },
+    { "from": "NODE-IMPL-06", "to": "NODE-TEST-02", "relation": "TESTED_BY" },
+    { "from": "NODE-TEST-01", "to": "NODE-EVIDENCE-01", "relation": "GENERATES_EVIDENCE" },
+    { "from": "NODE-TEST-02", "to": "NODE-EVIDENCE-02", "relation": "GENERATES_EVIDENCE" },
+    { "from": "NODE-TEST-03", "to": "NODE-EVIDENCE-02", "relation": "GENERATES_EVIDENCE" },
+    { "from": "NODE-TEST-04", "to": "NODE-EVIDENCE-03", "relation": "GENERATES_EVIDENCE" },
+    { "from": "NODE-EVIDENCE-01", "to": "NODE-RELEASE-04", "relation": "ATTESTS" },
+    { "from": "NODE-EVIDENCE-02", "to": "NODE-RELEASE-03", "relation": "VERIFIES" },
+    { "from": "NODE-EVIDENCE-03", "to": "NODE-RELEASE-01", "relation": "VALIDATES" },
+    { "from": "NODE-RELEASE-01", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-02", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-03", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-04", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-05", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-06", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-07", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-08", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-09", "to": "NODE-ZIP-01", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-01", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-02", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-03", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-04", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-05", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-06", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-07", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-08", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" },
+    { "from": "NODE-RELEASE-09", "to": "NODE-ZIP-02", "relation": "PACKAGED_INTO" }
+  ]
+}

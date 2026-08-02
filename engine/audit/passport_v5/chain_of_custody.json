@@ -1,0 +1,32 @@
+[
+  {
+    "step": 1,
+    "action": "Source Creation",
+    "actor": "EAORCS Audit Engine",
+    "timestamp": "2026-07-31T20:57:53.486Z"
+  },
+  {
+    "step": 2,
+    "action": "Ed25519 Signature Injection",
+    "actor": "Cryptographic Engine",
+    "timestamp": "2026-07-31T20:57:53.486Z"
+  },
+  {
+    "step": 3,
+    "action": "CI Pipeline Handshake",
+    "actor": "GitHub Actions / GitLab CI Runner",
+    "timestamp": "2026-07-31T20:57:53.486Z"
+  },
+  {
+    "step": 4,
+    "action": "Evidence Vault Ledger Record",
+    "actor": "Immutable Vault Ledger",
+    "timestamp": "2026-07-31T20:57:53.486Z"
+  },
+  {
+    "step": 5,
+    "action": "Federated Attestation Export",
+    "actor": "Master Audit Authority",
+    "timestamp": "2026-07-31T20:57:53.486Z"
+  }
+]

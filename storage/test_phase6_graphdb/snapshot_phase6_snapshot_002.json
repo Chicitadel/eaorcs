@@ -1,0 +1,483 @@
+{
+  "snapshotId": "phase6_snapshot_002",
+  "version": "2026.1-LTS",
+  "timestamp": "2026-08-02T16:24:33.993Z",
+  "merkleHash": "03d7e077de595fdb09c6229c2113ce561e145a2ee1f448e0a44ce6e3d62b2a5f",
+  "nodeCount": 20,
+  "edgeCount": 38,
+  "metadata": {
+    "description": "Second snapshot test"
+  },
+  "services": [],
+  "nodes": [
+    {
+      "id": "service:auth-service",
+      "type": "SERVICE",
+      "name": "auth-service",
+      "repoPath": "/repos/auth-service",
+      "domain": "Identity & Access",
+      "version": "2.1.0",
+      "owner": "Security Team"
+    },
+    {
+      "id": "endpoint:auth-service:POST /auth/token",
+      "type": "ENDPOINT",
+      "service": "auth-service",
+      "endpointId": "POST /auth/token",
+      "method": "POST",
+      "path": "/auth/token",
+      "reqId": "REQ-AUTH-101",
+      "calls": []
+    },
+    {
+      "id": "req:REQ-AUTH-101",
+      "type": "REQUIREMENT",
+      "reqId": "REQ-AUTH-101",
+      "title": "REQ-AUTH-101"
+    },
+    {
+      "id": "endpoint:auth-service:GET /auth/verify",
+      "type": "ENDPOINT",
+      "service": "auth-service",
+      "endpointId": "GET /auth/verify",
+      "method": "GET",
+      "path": "/auth/verify",
+      "reqId": "REQ-AUTH-101",
+      "calls": []
+    },
+    {
+      "id": "req:REQ-GOV-001",
+      "type": "REQUIREMENT",
+      "reqId": "REQ-GOV-001",
+      "title": "REQ-GOV-001"
+    },
+    {
+      "id": "code:auth-service:src/controllers/authController.js",
+      "type": "CODE_MODULE",
+      "service": "auth-service",
+      "path": "src/controllers/authController.js",
+      "exports": [
+        "issueToken",
+        "verifyToken"
+      ]
+    },
+    {
+      "id": "test:auth-service:auth_security.test.js",
+      "type": "TEST_SUITE",
+      "service": "auth-service",
+      "name": "auth_security.test.js"
+    },
+    {
+      "id": "evidence:auth-service:EVID-AUTH-001",
+      "type": "EVIDENCE",
+      "service": "auth-service",
+      "evidenceId": "EVID-AUTH-001",
+      "hash": "a1b2c3d4e5f678901234567890abcdef1234567890abcdef1234567890abcdef"
+    },
+    {
+      "id": "service:payment-service",
+      "type": "SERVICE",
+      "name": "payment-service",
+      "repoPath": "/repos/payment-service",
+      "domain": "Financial Transactions",
+      "version": "1.4.2",
+      "owner": "FinTech Guild"
+    },
+    {
+      "id": "endpoint:payment-service:POST /payment/charge",
+      "type": "ENDPOINT",
+      "service": "payment-service",
+      "endpointId": "POST /payment/charge",
+      "method": "POST",
+      "path": "/payment/charge",
+      "reqId": "REQ-PAY-001",
+      "calls": [
+        "auth-service"
+      ]
+    },
+    {
+      "id": "req:REQ-PAY-001",
+      "type": "REQUIREMENT",
+      "reqId": "REQ-PAY-001",
+      "title": "REQ-PAY-001"
+    },
+    {
+      "id": "code:payment-service:lib/processor.js",
+      "type": "CODE_MODULE",
+      "service": "payment-service",
+      "path": "lib/processor.js",
+      "exports": [
+        "processCard"
+      ]
+    },
+    {
+      "id": "test:payment-service:payment_flow.test.js",
+      "type": "TEST_SUITE",
+      "service": "payment-service",
+      "name": "payment_flow.test.js"
+    },
+    {
+      "id": "evidence:payment-service:EVID-PAY-001",
+      "type": "EVIDENCE",
+      "service": "payment-service",
+      "evidenceId": "EVID-PAY-001",
+      "hash": "f6e5d4c3b2a109876543210987fedcba0987654321fedcba0987654321fedcba"
+    },
+    {
+      "id": "service:order-service",
+      "type": "SERVICE",
+      "name": "order-service",
+      "repoPath": "/repos/order-service",
+      "domain": "Order Management",
+      "version": "3.0.1",
+      "owner": "Core Platform Team"
+    },
+    {
+      "id": "endpoint:order-service:POST /orders",
+      "type": "ENDPOINT",
+      "service": "order-service",
+      "endpointId": "POST /orders",
+      "method": "POST",
+      "path": "/orders",
+      "reqId": "REQ-ORD-001",
+      "calls": [
+        "auth-service",
+        "payment-service"
+      ]
+    },
+    {
+      "id": "req:REQ-ORD-001",
+      "type": "REQUIREMENT",
+      "reqId": "REQ-ORD-001",
+      "title": "REQ-ORD-001"
+    },
+    {
+      "id": "code:order-service:services/orderManager.js",
+      "type": "CODE_MODULE",
+      "service": "order-service",
+      "path": "services/orderManager.js",
+      "exports": [
+        "createOrder"
+      ]
+    },
+    {
+      "id": "test:order-service:orders_e2e.test.js",
+      "type": "TEST_SUITE",
+      "service": "order-service",
+      "name": "orders_e2e.test.js"
+    },
+    {
+      "id": "evidence:order-service:EVID-ORD-001",
+      "type": "EVIDENCE",
+      "service": "order-service",
+      "evidenceId": "EVID-ORD-001",
+      "hash": "1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+    }
+  ],
+  "edges": [
+    {
+      "id": "service:auth-service->EXPOSES_ENDPOINT->endpoint:auth-service:POST /auth/token",
+      "source": "service:auth-service",
+      "target": "endpoint:auth-service:POST /auth/token",
+      "type": "EXPOSES_ENDPOINT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.956Z"
+    },
+    {
+      "id": "endpoint:auth-service:POST /auth/token->IMPLEMENTS_REQUIREMENT->req:REQ-AUTH-101",
+      "source": "endpoint:auth-service:POST /auth/token",
+      "target": "req:REQ-AUTH-101",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:auth-service->EXPOSES_ENDPOINT->endpoint:auth-service:GET /auth/verify",
+      "source": "service:auth-service",
+      "target": "endpoint:auth-service:GET /auth/verify",
+      "type": "EXPOSES_ENDPOINT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "endpoint:auth-service:GET /auth/verify->IMPLEMENTS_REQUIREMENT->req:REQ-AUTH-101",
+      "source": "endpoint:auth-service:GET /auth/verify",
+      "target": "req:REQ-AUTH-101",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:auth-service->IMPLEMENTS_REQUIREMENT->req:REQ-AUTH-101",
+      "source": "service:auth-service",
+      "target": "req:REQ-AUTH-101",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:auth-service->IMPLEMENTS_REQUIREMENT->req:REQ-GOV-001",
+      "source": "service:auth-service",
+      "target": "req:REQ-GOV-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:auth-service->CONTAINS_MODULE->code:auth-service:src/controllers/authController.js",
+      "source": "service:auth-service",
+      "target": "code:auth-service:src/controllers/authController.js",
+      "type": "CONTAINS_MODULE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "code:auth-service:src/controllers/authController.js->IMPLEMENTS_REQUIREMENT->req:REQ-AUTH-101",
+      "source": "code:auth-service:src/controllers/authController.js",
+      "target": "req:REQ-AUTH-101",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:auth-service->CONTAINS_TEST->test:auth-service:auth_security.test.js",
+      "source": "service:auth-service",
+      "target": "test:auth-service:auth_security.test.js",
+      "type": "CONTAINS_TEST",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "test:auth-service:auth_security.test.js->VERIFIES_REQUIREMENT->req:REQ-AUTH-101",
+      "source": "test:auth-service:auth_security.test.js",
+      "target": "req:REQ-AUTH-101",
+      "type": "VERIFIES_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:auth-service->PRODUCES_EVIDENCE->evidence:auth-service:EVID-AUTH-001",
+      "source": "service:auth-service",
+      "target": "evidence:auth-service:EVID-AUTH-001",
+      "type": "PRODUCES_EVIDENCE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "evidence:auth-service:EVID-AUTH-001->ATTESTS_REQUIREMENT->req:REQ-AUTH-101",
+      "source": "evidence:auth-service:EVID-AUTH-001",
+      "target": "req:REQ-AUTH-101",
+      "type": "ATTESTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->EXPOSES_ENDPOINT->endpoint:payment-service:POST /payment/charge",
+      "source": "service:payment-service",
+      "target": "endpoint:payment-service:POST /payment/charge",
+      "type": "EXPOSES_ENDPOINT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "endpoint:payment-service:POST /payment/charge->IMPLEMENTS_REQUIREMENT->req:REQ-PAY-001",
+      "source": "endpoint:payment-service:POST /payment/charge",
+      "target": "req:REQ-PAY-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "endpoint:payment-service:POST /payment/charge->CALLS_SERVICE->service:auth-service",
+      "source": "endpoint:payment-service:POST /payment/charge",
+      "target": "service:auth-service",
+      "type": "CALLS_SERVICE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->CROSS_SERVICE_DEPENDENCY->service:auth-service",
+      "source": "service:payment-service",
+      "target": "service:auth-service",
+      "type": "CROSS_SERVICE_DEPENDENCY",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->IMPLEMENTS_REQUIREMENT->req:REQ-PAY-001",
+      "source": "service:payment-service",
+      "target": "req:REQ-PAY-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->IMPLEMENTS_REQUIREMENT->req:REQ-GOV-001",
+      "source": "service:payment-service",
+      "target": "req:REQ-GOV-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->CONTAINS_MODULE->code:payment-service:lib/processor.js",
+      "source": "service:payment-service",
+      "target": "code:payment-service:lib/processor.js",
+      "type": "CONTAINS_MODULE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "code:payment-service:lib/processor.js->IMPLEMENTS_REQUIREMENT->req:REQ-PAY-001",
+      "source": "code:payment-service:lib/processor.js",
+      "target": "req:REQ-PAY-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->CONTAINS_TEST->test:payment-service:payment_flow.test.js",
+      "source": "service:payment-service",
+      "target": "test:payment-service:payment_flow.test.js",
+      "type": "CONTAINS_TEST",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "test:payment-service:payment_flow.test.js->VERIFIES_REQUIREMENT->req:REQ-PAY-001",
+      "source": "test:payment-service:payment_flow.test.js",
+      "target": "req:REQ-PAY-001",
+      "type": "VERIFIES_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:payment-service->PRODUCES_EVIDENCE->evidence:payment-service:EVID-PAY-001",
+      "source": "service:payment-service",
+      "target": "evidence:payment-service:EVID-PAY-001",
+      "type": "PRODUCES_EVIDENCE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "evidence:payment-service:EVID-PAY-001->ATTESTS_REQUIREMENT->req:REQ-PAY-001",
+      "source": "evidence:payment-service:EVID-PAY-001",
+      "target": "req:REQ-PAY-001",
+      "type": "ATTESTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->EXPOSES_ENDPOINT->endpoint:order-service:POST /orders",
+      "source": "service:order-service",
+      "target": "endpoint:order-service:POST /orders",
+      "type": "EXPOSES_ENDPOINT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "endpoint:order-service:POST /orders->IMPLEMENTS_REQUIREMENT->req:REQ-ORD-001",
+      "source": "endpoint:order-service:POST /orders",
+      "target": "req:REQ-ORD-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "endpoint:order-service:POST /orders->CALLS_SERVICE->service:auth-service",
+      "source": "endpoint:order-service:POST /orders",
+      "target": "service:auth-service",
+      "type": "CALLS_SERVICE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->CROSS_SERVICE_DEPENDENCY->service:auth-service",
+      "source": "service:order-service",
+      "target": "service:auth-service",
+      "type": "CROSS_SERVICE_DEPENDENCY",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "endpoint:order-service:POST /orders->CALLS_SERVICE->service:payment-service",
+      "source": "endpoint:order-service:POST /orders",
+      "target": "service:payment-service",
+      "type": "CALLS_SERVICE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->CROSS_SERVICE_DEPENDENCY->service:payment-service",
+      "source": "service:order-service",
+      "target": "service:payment-service",
+      "type": "CROSS_SERVICE_DEPENDENCY",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->IMPLEMENTS_REQUIREMENT->req:REQ-ORD-001",
+      "source": "service:order-service",
+      "target": "req:REQ-ORD-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->IMPLEMENTS_REQUIREMENT->req:REQ-PAY-001",
+      "source": "service:order-service",
+      "target": "req:REQ-PAY-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->CONTAINS_MODULE->code:order-service:services/orderManager.js",
+      "source": "service:order-service",
+      "target": "code:order-service:services/orderManager.js",
+      "type": "CONTAINS_MODULE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "code:order-service:services/orderManager.js->IMPLEMENTS_REQUIREMENT->req:REQ-ORD-001",
+      "source": "code:order-service:services/orderManager.js",
+      "target": "req:REQ-ORD-001",
+      "type": "IMPLEMENTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->CONTAINS_TEST->test:order-service:orders_e2e.test.js",
+      "source": "service:order-service",
+      "target": "test:order-service:orders_e2e.test.js",
+      "type": "CONTAINS_TEST",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "test:order-service:orders_e2e.test.js->VERIFIES_REQUIREMENT->req:REQ-ORD-001",
+      "source": "test:order-service:orders_e2e.test.js",
+      "target": "req:REQ-ORD-001",
+      "type": "VERIFIES_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "service:order-service->PRODUCES_EVIDENCE->evidence:order-service:EVID-ORD-001",
+      "source": "service:order-service",
+      "target": "evidence:order-service:EVID-ORD-001",
+      "type": "PRODUCES_EVIDENCE",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    },
+    {
+      "id": "evidence:order-service:EVID-ORD-001->ATTESTS_REQUIREMENT->req:REQ-ORD-001",
+      "source": "evidence:order-service:EVID-ORD-001",
+      "target": "req:REQ-ORD-001",
+      "type": "ATTESTS_REQUIREMENT",
+      "metadata": {},
+      "createdTime": "2026-08-02T16:24:33.957Z"
+    }
+  ]
+}

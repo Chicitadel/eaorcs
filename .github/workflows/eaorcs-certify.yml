@@ -1,0 +1,43 @@
+name: EAORCS Platform Certification
+on:
+  push:
+    branches: [main, release/*]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to certify'
+        required: false
+        default: '2026.1.0-lts'
+jobs:
+  certify:
+    name: Full Certification Pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install --if-present
+      - name: Run qualification streams
+        run: node certify.js
+      - name: Upload qualification docs
+        uses: actions/upload-artifact@v4
+        with:
+          name: qualification-docs-${{ github.sha }}
+          path: docs/
+          retention-days: 90
+      - name: Upload CI logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-logs-${{ github.sha }}
+          path: ci/logs/
+          retention-days: 90
+      - name: Upload evidence bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-${{ github.sha }}
+          path: evidence/
+          retention-days: 90

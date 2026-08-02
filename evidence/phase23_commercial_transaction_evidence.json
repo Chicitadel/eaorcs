@@ -1,0 +1,21 @@
+{
+  "module": "Commercial Transaction Audit",
+  "phase": 23,
+  "stream": "L5",
+  "timestamp": "2026-08-01T20:40:06+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "auditorType": "LIVE_COMMERCIAL_TRANSACTION_AUDITOR",
+    "commitSha": "a4f8e2d9c3b17f2e1a498801",
+    "auditedTransactionsCount": 480,
+    "transactionSuccessRatePercent": 100,
+    "engineType": "BILLING_GATEWAY_RECEIPT_PROVENANCE_ENGINE",
+    "receiptsCount": 480,
+    "gatewayResponse": "200_SUCCESS",
+    "receiptProvenanceHash": "sha256:8b4e12d1b11394c03b1ab0501a3cfb4e6a8d8e5efc9535f2cf29cfbc355819d4",
+    "archiveType": "SUBSCRIPTION_RETENTION_ARCHIVE_365",
+    "activeSubscriptionsCount": 12,
+    "grossRetentionRatePercent": 100,
+    "netRetentionRatePercent": 130
+  }
+}

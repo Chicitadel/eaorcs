@@ -1,0 +1,223 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://eaorcs.ujomor.org/schemas/osap-v1.1.schema.json",
+  "title": "Open Software Assurance Passport (OSAP) Protocol Version 1.1 Specification Schema",
+  "description": "Formal JSON Schema defining structure, data types, constraints, governance metadata, evidence manifests, and cryptographic proofs for Open Software Assurance Passport v1.1.",
+  "type": "object",
+  "properties": {
+    "passportId": {
+      "type": "string",
+      "pattern": "^(osap:urn:eaorcs:passport:|OSAP-PASS-)[a-zA-Z0-9._-]+$",
+      "description": "Unique identifier for the software assurance passport."
+    },
+    "version": {
+      "type": "string",
+      "const": "1.1",
+      "description": "OSAP specification version string."
+    },
+    "issuer": {
+      "type": "string",
+      "pattern": "^did:eaorcs:[a-zA-Z0-9._-]+$",
+      "description": "W3C Decentralized Identifier (DID) of the issuing authority node."
+    },
+    "subject": {
+      "type": "object",
+      "description": "Target software component, package, or system metadata.",
+      "properties": {
+        "softwareId": {
+          "type": "string",
+          "description": "Unique software package or system identifier."
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable name of the software application or component."
+        },
+        "version": {
+          "type": "string",
+          "description": "Semantic version identifier of the software build."
+        },
+        "buildHash": {
+          "type": "string",
+          "description": "Cryptographic SHA-256 digest of the build artifact or commit."
+        },
+        "repository": {
+          "type": "string",
+          "description": "Source code repository URI or workspace reference."
+        }
+      },
+      "required": ["softwareId", "name", "version", "buildHash"],
+      "additionalProperties": true
+    },
+    "issuedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp when the passport was issued."
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp when the passport expires."
+    },
+    "assuranceLevel": {
+      "type": "string",
+      "enum": [
+        "BASIC",
+        "STANDARD",
+        "HIGH",
+        "CRITICAL",
+        "LEVEL_1",
+        "LEVEL_2",
+        "LEVEL_3",
+        "LEVEL_4",
+        "LEVEL_5"
+      ],
+      "description": "Assurance and security classification tier of the passport."
+    },
+    "governance": {
+      "type": "object",
+      "description": "Governance and regulatory audit compliance metadata.",
+      "properties": {
+        "complianceStandard": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "description": "List of regulatory standards validated (e.g. ISO 27001, SOC 2, OWASP ASVS, NIST)."
+        },
+        "auditState": {
+          "type": "string",
+          "description": "Audit state verdict (e.g. PASSED_VERIFIED, QUALIFIED, AUDITED)."
+        },
+        "policyDigest": {
+          "type": "string",
+          "description": "Cryptographic hash of active UAIGOS policy governance ruleset."
+        },
+        "verificationStatus": {
+          "type": "string",
+          "description": "Formal verification status flag."
+        }
+      },
+      "required": ["complianceStandard", "auditState"],
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "array",
+      "description": "List of verifiable attestation evidence items supporting the passport.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidenceId": {
+            "type": "string",
+            "description": "Unique identifier for the evidence item."
+          },
+          "type": {
+            "type": "string",
+            "description": "Type classification of evidence (e.g. CODE_AUDIT_REPORT, CONTRACT_CONFORMANCE)."
+          },
+          "checksum": {
+            "type": "string",
+            "description": "SHA-256 checksum digest of the raw evidence payload."
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 UTC timestamp of evidence collection."
+          },
+          "attestation": {
+            "type": "string",
+            "description": "Human and machine readable attestation statement."
+          }
+        },
+        "required": ["evidenceId", "type", "checksum"],
+        "additionalProperties": true
+      }
+    },
+    "proof": {
+      "type": "object",
+      "description": "Cryptographic signature proof linking the passport content to the issuing node DID.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Cryptographic proof suite type (e.g. EaorcsHmacSha256, Ed25519Signature2020)."
+        },
+        "created": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when signature proof was generated."
+        },
+        "verificationMethod": {
+          "type": "string",
+          "description": "DID URL fragment referencing the verification key (e.g. did:eaorcs:node-1#key-1)."
+        },
+        "proofPurpose": {
+          "type": "string",
+          "const": "assertionMethod",
+          "description": "Proof purpose conforming to W3C DID specification."
+        },
+        "proofValue": {
+          "type": "string",
+          "description": "Hexadecimal or multibase signature proof string."
+        }
+      },
+      "required": ["type", "verificationMethod", "proofValue"],
+      "additionalProperties": true
+    },
+    "trustExchange": {
+      "type": "object",
+      "description": "P2P Trust Exchange routing and relay metadata.",
+      "properties": {
+        "protocolVersion": {
+          "type": "string"
+        },
+        "relayNode": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        }
+      },
+      "required": ["protocolVersion", "relayNode"],
+      "additionalProperties": true
+    },
+    "certification": {
+      "type": "object",
+      "description": "Verification certification details.",
+      "properties": {
+        "certificateId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "certifiedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "authority": {
+          "type": "string"
+        },
+        "digest": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "passportId",
+    "version",
+    "issuer",
+    "subject",
+    "issuedAt",
+    "expiresAt",
+    "assuranceLevel",
+    "governance",
+    "evidence",
+    "proof"
+  ],
+  "additionalProperties": true
+}

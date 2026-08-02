@@ -1,0 +1,18 @@
+[
+  {
+    "risk_id": "R-101",
+    "severity": "Low",
+    "title": "Telemetry Drift",
+    "evidence_checkpoint": "Check 4",
+    "status": "Mitigated",
+    "owner": "Platform Team"
+  },
+  {
+    "risk_id": "R-102",
+    "severity": "Medium",
+    "title": "3rd Party Package Update",
+    "evidence_checkpoint": "Check 5",
+    "status": "Open",
+    "owner": "Security Team"
+  }
+]

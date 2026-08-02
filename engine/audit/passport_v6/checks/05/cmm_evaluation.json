@@ -1,0 +1,48 @@
+{
+  "computed_maturity_level": "L7",
+  "maturity_title": "Federated Autonomous Governance",
+  "rule_evaluation_matrix": [
+    {
+      "level": "L1",
+      "name": "Repeatable",
+      "rule": "Deterministic Execution & Replay Hash Match",
+      "passed": true
+    },
+    {
+      "level": "L2",
+      "name": "Managed",
+      "rule": "Policy Engine & OpenAPI Schema Contracts",
+      "passed": true
+    },
+    {
+      "level": "L3",
+      "name": "Defined",
+      "rule": "OSAP v1 Specification & Cryptographic Passports",
+      "passed": true
+    },
+    {
+      "level": "L4",
+      "name": "Quantitatively Managed",
+      "rule": "Epistemic Trust Scoring & Performance SLAs",
+      "passed": true
+    },
+    {
+      "level": "L5",
+      "name": "Optimizing",
+      "rule": "Predictive Assurance & Carbon Intelligence Green Score",
+      "passed": true
+    },
+    {
+      "level": "L6",
+      "name": "Autonomous",
+      "rule": "Autonomous AI Council 100% Consensus Voting",
+      "passed": true
+    },
+    {
+      "level": "L7",
+      "name": "Federated Autonomous Governance",
+      "rule": "Sovereign Offline Verification & Merkle Provenance",
+      "passed": true
+    }
+  ]
+}

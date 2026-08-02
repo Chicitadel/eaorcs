@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2026.2-LTS",
+  "distributionSpec": "DPA/PDA v1.1.0-FROZEN",
+  "organization": "Air Roofers Platform Ecosystem & Ujomor Systems",
+  "auditAuthority": "Ujomor Engineering Governance Authority",
+  "timestamp": "2026-08-02T12:00:00.000Z",
+  "auditStatus": "PASSED",
+  "complianceSummary": {
+    "iso27001": true,
+    "soc2": true,
+    "owaspASVS": true,
+    "nistSP800161": true,
+    "slsaLevel": "SLSA Level 4"
+  },
+  "verifications": {
+    "packageIntegrity": "VERIFIED",
+    "signatureChain": "VERIFIED",
+    "capabilityBoundary": "VERIFIED"
+  }
+}

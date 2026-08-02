@@ -1,0 +1,413 @@
+{
+  "total_ides_certified": 27,
+  "overall_status": "PASSED",
+  "evidence_level": "Level C",
+  "ide_list": [
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "vendor": "Microsoft",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_vscode.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "visual_studio",
+      "name": "Visual Studio",
+      "vendor": "Microsoft",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_visual_studio.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "azure_dev_box",
+      "name": "Azure Dev Box",
+      "vendor": "Microsoft",
+      "category": "Cloud",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_azure_dev_box.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "intellij",
+      "name": "IntelliJ IDEA",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_intellij.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "rider",
+      "name": "Rider",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_rider.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "phpstorm",
+      "name": "PhpStorm",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_phpstorm.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "pycharm",
+      "name": "PyCharm",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_pycharm.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "goland",
+      "name": "GoLand",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_goland.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "webstorm",
+      "name": "WebStorm",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_webstorm.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "clion",
+      "name": "CLion",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_clion.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "datagrip",
+      "name": "DataGrip",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_datagrip.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "rubymine",
+      "name": "RubyMine",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_rubymine.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "rustrover",
+      "name": "RustRover",
+      "vendor": "JetBrains",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_rustrover.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse IDE",
+      "vendor": "Eclipse Foundation",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_eclipse.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "eclipse_che",
+      "name": "Eclipse Che",
+      "vendor": "Eclipse Foundation",
+      "category": "Cloud",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_eclipse_che.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "netbeans",
+      "name": "Apache NetBeans",
+      "vendor": "Apache",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_netbeans.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "xcode",
+      "name": "Xcode",
+      "vendor": "Apple",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_xcode.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "vendor": "Anysphere",
+      "category": "AI Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_cursor.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "vendor": "Codeium",
+      "category": "AI Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_windsurf.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "vendor": "Zed Industries",
+      "category": "Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_zed.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "trae",
+      "name": "Trae",
+      "vendor": "ByteDance",
+      "category": "AI Desktop",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_trae.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "codespaces",
+      "name": "GitHub Codespaces",
+      "vendor": "GitHub",
+      "category": "Cloud",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_codespaces.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "gitpod",
+      "name": "Gitpod",
+      "vendor": "Gitpod",
+      "category": "Cloud",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_gitpod.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "jetbrains_gateway",
+      "name": "JetBrains Gateway",
+      "vendor": "JetBrains",
+      "category": "Cloud",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_jetbrains_gateway.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "aws_cloud9",
+      "name": "AWS Cloud9",
+      "vendor": "AWS",
+      "category": "Cloud",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_aws_cloud9.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "android_studio",
+      "name": "Android Studio",
+      "vendor": "Google",
+      "category": "Mobile",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_android_studio.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    },
+    {
+      "id": "platformio",
+      "name": "PlatformIO",
+      "vendor": "PlatformIO Labs",
+      "category": "IoT/Embedded",
+      "evidenceLevel": "Level C",
+      "status": "PASSED",
+      "telemetry": {
+        "plugin_manifest": "manifest_platformio.json",
+        "lsp_handshake": "SUCCESS",
+        "dap_session": "SUCCESS",
+        "diagnostic_execution": "PASSED",
+        "policy_execution": "PASSED"
+      }
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.825Z"
+}

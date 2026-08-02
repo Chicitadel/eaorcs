@@ -1,0 +1,57 @@
+{
+  "platformDomain": "airroofers.eu",
+  "totalAdaptersVerified": 8,
+  "isAllConnected": true,
+  "attestationSignature": "25e5ba3fb75dc155e4565141f57f1c11c883c62996b60f0404f26f0a3512bd13",
+  "adapters": [
+    {
+      "id": "IAM",
+      "endpoint": "https://auth.airroofers.eu/v1/health",
+      "latencyMs": 12,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "LICENSING",
+      "endpoint": "https://licensing.airroofers.eu/v1/health",
+      "latencyMs": 15,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "BILLING",
+      "endpoint": "https://billing.airroofers.eu/v1/health",
+      "latencyMs": 18,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "TELEMETRY",
+      "endpoint": "https://telemetry.airroofers.eu/v1/health",
+      "latencyMs": 10,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "STORAGE",
+      "endpoint": "https://storage.airroofers.eu/v1/health",
+      "latencyMs": 22,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "SUPPORT",
+      "endpoint": "https://support.airroofers.eu/v1/health",
+      "latencyMs": 14,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "NOTIFICATIONS",
+      "endpoint": "https://notifications.airroofers.eu/v1/health",
+      "latencyMs": 11,
+      "status": "CONNECTED_VALID"
+    },
+    {
+      "id": "SEARCH",
+      "endpoint": "https://search.airroofers.eu/v1/health",
+      "latencyMs": 19,
+      "status": "CONNECTED_VALID"
+    }
+  ],
+  "validatedAt": "2026-08-02T16:24:21.653Z"
+}

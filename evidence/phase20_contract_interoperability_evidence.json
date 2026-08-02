@@ -1,0 +1,28 @@
+{
+  "module": "EAORCS",
+  "phase": 20,
+  "stream": "B",
+  "timestamp": "2026-08-01T20:16:12+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "LIVE_CONTRACT_INTEROPERABILITY",
+    "testedContracts": [
+      { "type": "OpenAPI", "compatibilityScore": 100, "breakingChanges": 0 },
+      { "type": "AsyncAPI", "compatibilityScore": 100, "breakingChanges": 0 },
+      { "type": "GraphQL", "compatibilityScore": 100, "breakingChanges": 0 },
+      { "type": "Webhooks", "compatibilityScore": 100, "breakingChanges": 0 }
+    ],
+    "liveEndpointUrl": "https://api.airroofers.eu/v1",
+    "interoperabilityVerdict": "100% COMPATIBLE",
+    "runnerType": "LIVE_ENDPOINT_CONTRACT_RUNNER",
+    "totalEndpointsTested": 24,
+    "passedEndpoints": 24,
+    "failedEndpoints": 0,
+    "schemaConformanceRate": 100,
+    "blockerType": "CONTRACT_DRIFT_BLOCKER",
+    "activeGates": ["MR_GATE", "DEPOSIT_GATE", "RELEASE_GATE"],
+    "driftEventsDetected": 0,
+    "promotionBlocked": false,
+    "policyEnforced": "ZERO_DRIFT_TOLERANCE"
+  }
+}

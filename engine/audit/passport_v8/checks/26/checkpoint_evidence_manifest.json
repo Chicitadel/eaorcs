@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 26,
+  "checkpoint_name": "Package Manager Compatibility Certification",
+  "domain": "PACKAGE_MANAGERS",
+  "status": "PASSED",
+  "evidence_level": "Level B",
+  "confidence_pct": 99,
+  "evidence_artifacts": [
+    {
+      "name": "package_managers_verification.json",
+      "sha256": "78378bc3b53992cd1aeae69e667b211fa95bacab7597376e2519170febeaa04c",
+      "bytes": 1481
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.126Z"
+}

@@ -1,0 +1,17 @@
+{
+  "module": "Independent Assurance & Attestation",
+  "phase": "26",
+  "stream": "F",
+  "timestamp": "2026-08-01T19:28:57Z",
+  "status": "VERIFIED",
+  "evidence": {
+    "crestAttestationStatus": "VERIFIED",
+    "penTestVerdict": "PASSED_ZERO_CRITICALS",
+    "tsaReceiptsCount": 200,
+    "assessorAuthority": "CREST-Certified Cyber Security Body",
+    "criticalFindingsCount": 0,
+    "highFindingsCount": 0,
+    "tsaAuthority": "DigiCert Timestamp Authority",
+    "ingestedTokensCount": 200
+  }
+}

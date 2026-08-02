@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 20,
+  "checkpoint_name": "Observability Certification",
+  "domain": "OBSERVABILITY",
+  "status": "PASSED",
+  "evidence_level": "Level E",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "observability_certification.json",
+      "sha256": "dd1c9a6a63edef94fdfc678fc78e76d545d9d409bf9e457c67af68acfa5be97e",
+      "bytes": 413
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.838Z"
+}

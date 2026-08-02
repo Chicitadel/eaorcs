@@ -1,0 +1,46 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Core Software Bill of Materials (SBOM)",
+  "inferredProduct": "Product: Core (55.0% Confidence)",
+  "documentNamespace": "https://enterprise.local/sbom/eaorcs-2026-v1",
+  "creationInfo": {
+    "creators": [
+      "Organization: Enterprise Platform Ecosystem Systems Engineering",
+      "Tool: EAORCS SbomGenerator v2.0 (Product: Core (55.0% Confidence))"
+    ],
+    "created": "2026-08-02T20:22:10.552Z",
+    "comment": "Product: Core (55.0% Confidence)"
+  },
+  "packages": [
+    {
+      "name": "Core",
+      "SPDXID": "SPDXRef-Package-core",
+      "versionInfo": "1.0.0-GA",
+      "supplier": "Organization: EAORCS Platform",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary",
+      "comment": "Product: Core (55.0% Confidence)"
+    },
+    {
+      "name": "platform-experience-portal",
+      "SPDXID": "SPDXRef-Package-platform-experience-portal",
+      "versionInfo": "3.2.0-GA",
+      "supplier": "Organization: Enterprise Platform Ecosystem",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary"
+    },
+    {
+      "name": "eaorcs-engine-reporting",
+      "SPDXID": "SPDXRef-Package-eaorcs-engine-reporting",
+      "versionInfo": "2026.1-LTS",
+      "supplier": "Organization: Enterprise Platform Ecosystem",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Proprietary"
+    }
+  ]
+}

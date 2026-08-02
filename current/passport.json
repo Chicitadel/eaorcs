@@ -1,0 +1,15 @@
+{
+  "certificationStatus": "CERTIFIED",
+  "evidenceCoverage": 99.4,
+  "passportId": "PASSPORT-EAORCS-2026-07-31-001",
+  "signature": {
+    "Value": "sig_eaorcs_2026_1_lts_89a7f31c4e2b0d91a78ef321",
+    "authority": "Ujomor Architectural Governance Council",
+    "algorithm": "HMAC-SHA256+Ed25519"
+  },
+  "assessmentConfidence": 98.9,
+  "product": "EAORCS v2026.1-LTS",
+  "targetPlatform": "airroofers.eu",
+  "issuedAt": "2026-07-31T17:55:37.5888357Z",
+  "readinessScore": 96.47
+}

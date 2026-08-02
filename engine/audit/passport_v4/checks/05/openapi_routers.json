@@ -1,0 +1,8 @@
+[
+  "eaorcs/engine/api/governance_api_router.cjs",
+  "eaorcs/cli/dsl.cjs",
+  "eaorcs/engine/predictive/api/v1/predict.cjs",
+  "eaorcs/engine/twin/api/v1/twin.cjs",
+  "eaorcs/api/v1/ai.cjs",
+  "eaorcs/api/v1/genome.cjs"
+]

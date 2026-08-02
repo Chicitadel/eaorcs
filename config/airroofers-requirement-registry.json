@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "productId": "eaorcs",
+  "totalRequirements": 8,
+  "requirements": [
+    {
+      "id": "REQ-BP-001",
+      "name": "Blueprint Parity & Drift Control",
+      "category": "BLUEPRINT_TRACEABILITY",
+      "description": "Continuous verification of implementation code against frozen EAORCS blueprint specifications.",
+      "mappedCapabilities": ["CAP-BLUEPRINT-INTEGRITY"],
+      "implementationModules": ["engine/spec/", "engine/drift/", "engine/traceability/RequirementGraphEngine.js"],
+      "testSuites": ["tests/spec/", "tests/traceability/"],
+      "evidenceArtifacts": ["evidence/traceability_matrix.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-AR-001",
+      "name": "Air Roofers Platform Centralized Ecosystem Integration",
+      "category": "PLATFORM_INTEGRATION",
+      "description": "Integration with centralized Air Roofers IAM, Licensing, Billing, Telemetry, Storage, and Support.",
+      "mappedCapabilities": ["CAP-AIRROOFERS-INTEGRATION"],
+      "implementationModules": ["adapters/airroofers/", "adapters/airroofers/PlatformAdapterVerificationSuite.js"],
+      "testSuites": ["tests/pep/stream_b_platform_integration.test.js"],
+      "evidenceArtifacts": ["evidence/airroofers_interoperability_matrix.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-CG-001",
+      "name": "API & Schema Contract Compatibility Assurance",
+      "category": "CONTRACT_GOVERNANCE",
+      "description": "Strict contract enforcement for OpenAPI 3.0.3, AsyncAPI, GraphQL, and webhooks with zero breaking changes.",
+      "mappedCapabilities": ["CAP-CONTRACT-GOVERNANCE"],
+      "implementationModules": ["engine/contract/OpenApiContractAuditor.js", "schemas/"],
+      "testSuites": ["tests/pep/stream_c_api_governance.test.js"],
+      "evidenceArtifacts": ["evidence/openapi_compatibility_report.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-PR-001",
+      "name": "Canonical Product & Capability Registry",
+      "category": "PRODUCT_REGISTRY",
+      "description": "Single source of truth for product identity, capability tree, requirements, editions, and endpoints.",
+      "mappedCapabilities": ["CAP-PRODUCT-REGISTRY"],
+      "implementationModules": ["engine/registry/AirRoofersProductRegistry.js", "engine/registry/CapabilityRegistry.js"],
+      "testSuites": ["tests/pep/stream_d_ecosystem_audit.test.js"],
+      "evidenceArtifacts": ["evidence/product_capability_graph.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-RE-001",
+      "name": "Automated Runtime Evidence & Benchmarking Engine",
+      "category": "RUNTIME_EVIDENCE",
+      "description": "Dynamic generation of load testing, resilience, performance benchmarks, and health verification evidence.",
+      "mappedCapabilities": ["CAP-EVIDENCE-GENERATION"],
+      "implementationModules": ["engine/audit/RuntimeEvidenceEngine.js", "engine/audit/EvidenceGenerator.js"],
+      "testSuites": ["tests/pep/stream_h_evidence_generation.test.js"],
+      "evidenceArtifacts": ["evidence/runtime_benchmark_report.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-CO-001",
+      "name": "Commercial Enablement & Procurement Readiness",
+      "category": "COMMERCIAL_OPERATIONS",
+      "description": "Edition entitlement calculator, SLA catalogue, evaluation tenant sandbox, and procurement packs.",
+      "mappedCapabilities": ["CAP-COMMERCIAL-OPERATIONS"],
+      "implementationModules": ["engine/commercial/CommercialEnablementSuite.js"],
+      "testSuites": ["tests/pep/stream_e_product_readiness.test.js"],
+      "evidenceArtifacts": ["evidence/commercial_entitlement_matrix.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-DOC-001",
+      "name": "Documentation Intelligence Engine",
+      "category": "DOCUMENTATION_INTELLIGENCE",
+      "description": "Auto-generation of versioned multi-audience documentation directly from capability and requirement registries.",
+      "mappedCapabilities": ["CAP-DOCUMENTATION"],
+      "implementationModules": ["engine/portal/DocumentationIntelligenceEngine.js"],
+      "testSuites": ["tests/pep/stream_f_documentation.test.js"],
+      "evidenceArtifacts": ["evidence/documentation_completeness_report.json"],
+      "status": "VERIFIED"
+    },
+    {
+      "id": "REQ-PA-001",
+      "name": "Autonomous Product Assurance Pipeline",
+      "category": "AUTONOMOUS_ASSURANCE",
+      "description": "Continuous pre-merge verification of blueprint, capability, API, doc, support, and deployment drift.",
+      "mappedCapabilities": ["CAP-EVIDENCE-GENERATION", "CAP-LAUNCH-OPERATIONS"],
+      "implementationModules": ["engine/audit/AutonomousProductAssurancePipeline.js"],
+      "testSuites": ["tests/pep/stream_acceleration_suite.test.js"],
+      "evidenceArtifacts": ["evidence/autonomous_assurance_report.json"],
+      "status": "VERIFIED"
+    }
+  ]
+}

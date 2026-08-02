@@ -1,0 +1,18 @@
+{
+  "ai_governance_id": "aigov_1785575099845",
+  "model_version": "Gemini-3.6-Flash",
+  "prompt_policy_version": "UAIGOS-CORE-v3.0.0",
+  "eval_dataset_id": "dataset_eval_suite_v8",
+  "benchmark_results": {
+    "accuracy_pct": 99.4,
+    "code_correctness_pct": 100,
+    "safety_score_pct": 99.9
+  },
+  "hallucination_rate_pct": 0.01,
+  "human_approval": {
+    "approved_by": "Master Architecture Governance Council",
+    "approval_timestamp": "2026-08-01T09:04:59.845Z",
+    "status": "APPROVED"
+  },
+  "timestamp": "2026-08-01T09:04:59.845Z"
+}

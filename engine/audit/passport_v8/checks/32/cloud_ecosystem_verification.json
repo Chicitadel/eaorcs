@@ -1,0 +1,32 @@
+{
+  "certification_domain": "Cloud Ecosystem Certification",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "clouds_verified": [
+    {
+      "name": "AWS",
+      "region": "eu-west-1",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "Azure",
+      "region": "westeurope",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "Google Cloud",
+      "region": "europe-west3",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "OCI",
+      "region": "eu-frankfurt-1",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.148Z"
+}

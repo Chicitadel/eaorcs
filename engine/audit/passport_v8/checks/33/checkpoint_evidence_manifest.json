@@ -1,0 +1,26 @@
+{
+  "checkpoint_id": 33,
+  "checkpoint_name": "Merkle Tree Root Seal & Federated Bundle Exporter",
+  "domain": "SOVEREIGN_VERIFICATION",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "sovereign_verification.json",
+      "sha256": "a07ab6207e6f0fd94ab28b31a15a1ad4b66a5397a335148d0ea6586bec42f8db",
+      "bytes": 224
+    },
+    {
+      "name": "federated_export_manifest.json",
+      "sha256": "786ab3e493fe8dc2817925fb8915199e7c71aa7c7c9f027b43d0b8daec38aabd",
+      "bytes": 483
+    },
+    {
+      "name": "merkle_root.txt",
+      "sha256": "8d02f0d55bcba10c7781809b2920636a25c5cb149e664954a05d52591f2f8f5c",
+      "bytes": 64
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.168Z"
+}

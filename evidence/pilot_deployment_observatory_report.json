@@ -1,0 +1,27 @@
+{
+  "observatoryVersion": "2026.1.0-LTS",
+  "activePilotTenants": [
+    {
+      "id": "tenant-enterprise-alpha",
+      "SLAMet": "100%",
+      "errorRate": 0,
+      "status": "HEALTHY"
+    },
+    {
+      "id": "tenant-enterprise-beta",
+      "SLAMet": "100%",
+      "errorRate": 0,
+      "status": "HEALTHY"
+    },
+    {
+      "id": "tenant-gov-cloud-pilot",
+      "SLAMet": "100%",
+      "errorRate": 0,
+      "status": "HEALTHY"
+    }
+  ],
+  "rollbackDrillExecuted": true,
+  "rollbackTimeMs": 140,
+  "overallPilotSuccessRate": "100.0%",
+  "evaluatedAt": "2026-08-02T16:24:21.659Z"
+}

@@ -1,0 +1,94 @@
+active_phase: GA_BASELINE_CLOSED
+release_milestone: EAORCS_2026.1.0_GA
+engineering_expansion_frozen: true
+feature_freeze: true
+baseline_closure: true
+implementation_complete: true
+
+architecture:
+  maturity: GLOBAL_AUTONOMOUS_PLATFORM
+
+frozen:
+  architecture: true
+  protocols: true
+  contracts: true
+  engineering_expansion_frozen: true
+  feature_freeze: true
+  blueprint: true
+  domain_model: true
+  api_baseline: true
+  legal_baseline: true
+
+constraints:
+  no_monolith: true
+  require_observability: true
+  require_zero_trust: true
+  require_airroofers_platform_descriptor: true
+  require_ecosystem_non_duplication: true
+  require_prelaunch_automation: true
+  require_audit_reconciliation: true
+  require_operational_substantiation: true
+  require_external_auditability: true
+  require_go_live_governance: true
+  require_operational_trust_validation: true
+  require_telemetry_backed_operational_evidence: true
+  require_autonomous_product_evolution: true
+  require_continuous_trust_intelligence: true
+  require_federated_operational_intelligence: true
+  require_live_platform_intelligence: true
+  require_immutable_evidence_provenance: true
+  require_verifiable_operational_trust: true
+  require_global_autonomous_ecosystem_governance: true
+  require_live_runtime_evidence_production_backed_certification: true
+  require_live_production_operational_validation_reproducibility: true
+  engineering_expansion_frozen: true
+  feature_freeze: true
+
+phase35:
+  status: COMPLETE
+  streams: [P1, P2, P3, P4, P5, P6, P7, P8, P9]
+  live_runtime_evidence_certification_score_target: 100
+  live_runtime_evidence_certification_clearance: APPROVED_FOR_100_OUT_OF_100_PRODUCTION_CERTIFICATION
+
+phase36:
+  status: COMPLETE
+  streams: [S1, S2, S3, S4, S5, S6, S7, S8, S9]
+  live_production_validation_score_target: 100
+  live_production_validation_clearance: APPROVED_FOR_100_OUT_OF_100_OPERATIONAL_REPRODUCIBILITY
+
+phase37:
+  status: COMPLETE
+  streams: [T1, T2, T3, T4, T5, T6, T7, T8, T9]
+  operational_proof_clean_room_reproducibility_target: 100
+  clearance: APPROVED_FOR_100_OUT_OF_100_CLEAN_ROOM_REPRODUCIBILITY
+
+ga_intelligence:
+  status: COMPLETE
+  streams: [A1, A2, B, C, D, E, F, G, H, I]
+  total_engines: 10
+  passed_engines: 10
+  ga_intelligence_score_percent: 100.0
+  verdict: EAORCS_GA_INTELLIGENCE_NINE_STREAM_COMPLETE
+
+rc1:
+  status: SUPERSEDED_BY_GA
+  milestone: EAORCS_2026.1.0_RC1
+  release_candidate: 2026.1.0-RC1
+  engineering_expansion_frozen: true
+  feature_freeze: true
+  attestation: release/RC1_ARCHITECTURE_FREEZE_ATTESTATION.json
+
+ga:
+  status: BASELINE_CLOSED
+  milestone: EAORCS_2026.1.0_GA
+  release: 2026.1.0-GA
+  baseline_closure: true
+  implementation_complete: true
+  implementation_maturity_score: 98.5
+  master_suites_passed: 15
+  master_suites_total: 15
+  attestation: release/GA_BASELINE_CLOSURE_ATTESTATION.json
+  declaration: docs/governance/GA_BASELINE_CLOSURE_DECLARATION.md
+  audit_zip: release/eaorcs_pep_audit_package.zip
+  audit_zip_entries: 2228
+  audit_zip_size_mb: 64.63

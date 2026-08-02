@@ -1,0 +1,33 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "subject": [
+    {
+      "name": "eaorcs_pep_audit_package.zip",
+      "digest": {
+        "sha256": "b69ebc376e5ae53423c46fc8f453f482a5be70cfe852a02cec6fef4a9084be30"
+      }
+    }
+  ],
+  "predicateType": "https://slsa.dev/provenance/v0.2",
+  "predicate": {
+    "builder": {
+      "id": "https://ci.airroofers.eu/builders/governance-builder@v1"
+    },
+    "buildType": "https://airroofers.eu/buildtypes/pep-clean-build@v1",
+    "invocation": {
+      "configSource": {
+        "uri": "git+https://github.com/ujomor/eaorcs.git",
+        "entryPoint": "bin/create_eaorcs_package.js"
+      }
+    },
+    "metadata": {
+      "buildStartedOn": "2026-08-02T16:24:21.505Z",
+      "completeness": {
+        "parameters": true,
+        "environment": true,
+        "materials": true
+      },
+      "reproducible": true
+    }
+  }
+}

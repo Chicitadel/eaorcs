@@ -1,0 +1,133 @@
+# Universal Autonomous AI Governance Operating System (UAIGOS)
+# Module: Distribution Platform — Kubernetes Production Manifest (Stream J)
+# Standards: ISO 27001, SOC 2, OWASP ASVS, NIST
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: eaorcs-system
+  labels:
+    app.kubernetes.io/name: eaorcs
+    governance.tier: enterprise
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eaorcs-config
+  namespace: eaorcs-system
+data:
+  NODE_ENV: "production"
+  HOST_TYPE: "Kubernetes"
+  PORT: "3000"
+  STORAGE_DRIVER: "S3Storage"
+  CACHE_DRIVER: "RedisCache"
+  QUEUE_DRIVER: "RedisQueue"
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: eaorcs-secrets
+  namespace: eaorcs-system
+type: Opaque
+stringData:
+  DB_PASSWORD: "eaorcs_secure_k8s_db_pass_2026"
+  REDIS_PASSWORD: "eaorcs_secure_k8s_redis_pass_2026"
+  JWT_SECRET: "eaorcs_enterprise_jwt_signing_key_2026"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eaorcs-core-deployment
+  namespace: eaorcs-system
+  labels:
+    app: eaorcs-core
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: eaorcs-core
+  template:
+    metadata:
+      labels:
+        app: eaorcs-core
+    spec:
+      containers:
+        - name: eaorcs-engine
+          image: eaorcs/core:2026.1.0-lts
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http
+          envFrom:
+            - configMapRef:
+                name: eaorcs-config
+          env:
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: eaorcs-secrets
+                  key: DB_PASSWORD
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1000m"
+              memory: "2048Mi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 15
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          securityContext:
+            allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            runAsUser: 10001
+            readOnlyRootFilesystem: false
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eaorcs-core-service
+  namespace: eaorcs-system
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+      name: http
+  selector:
+    app: eaorcs-core
+
+---
+apiVersion: autoscaling/2v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: eaorcs-hpa
+  namespace: eaorcs-system
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: eaorcs-core-deployment
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 75

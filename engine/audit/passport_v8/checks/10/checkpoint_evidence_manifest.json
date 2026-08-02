@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 10,
+  "checkpoint_name": "Multi-Party Cryptographic Passport Signing",
+  "domain": "RELEASE_SIGNATURES",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "passport_signatures.json",
+      "sha256": "4c43aa503d222dae984e2377b6f47c0ec6be5308657f5e5f5c902f52cbfc932b",
+      "bytes": 835
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.810Z"
+}

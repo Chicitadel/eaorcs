@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" style="background:#0f172a">
+        <text x="40" y="40" fill="#38bdf8" font-size="18" font-family="sans-serif" font-weight="bold">Enterprise Platform Ecosystem Microservice Dependency Graph</text>
+        <g stroke="#38bdf8" stroke-width="2" fill="none">
+            <path d="M 100 150 L 300 150 L 500 150 L 700 150"/>
+            <path d="M 300 150 L 300 280 L 500 280"/>
+        </g>
+        <circle cx="100" cy="150" r="30" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <text x="80" y="155" fill="#fff" font-size="12">Gateway</text>
+        <circle cx="300" cy="150" r="30" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+        <text x="280" y="155" fill="#fff" font-size="12">Identity</text>
+        <circle cx="500" cy="150" r="30" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+        <text x="485" y="155" fill="#fff" font-size="12">Billing</text>
+        <circle cx="700" cy="150" r="30" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+        <text x="675" y="155" fill="#fff" font-size="12">Telemetry</text>
+        <circle cx="500" cy="280" r="30" fill="#1e293b" stroke="#ec4899" stroke-width="2"/>
+        <text x="480" y="285" fill="#fff" font-size="12">Support</text>
+    </svg>

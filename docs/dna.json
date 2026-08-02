@@ -1,0 +1,97 @@
+{
+  "product_dna": {
+    "dna_version": "1.1.0",
+    "product_id": "prod.eaorcs.enterprise",
+    "build_id": "build-20260802-84cc85ec",
+    "release_tier": "ENTERPRISE_LTS",
+    "authoritative_organization": "Air Roofers Platform Ecosystem & Ujomor Systems Engineering",
+    "governance_authority": "Ujomor Engineering Governance Authority",
+    "provenance": {
+      "source_commit": "c89f1a238e819f0012293819283719283719283f",
+      "builder_identity": "build-runner-04.airroofers.eu",
+      "slsa_level": "SLSA_LEVEL_4",
+      "recipe": "https://github.com/airroofers/eaorcs/.github/workflows/slsa_level4_build.yml",
+      "materials": [
+        {
+          "uri": "git+https://github.com/airroofers/eaorcs.git",
+          "digest": {
+            "sha256": "c89f1a238e819f0012293819283719283719283f"
+          }
+        }
+      ],
+      "reproducibility": "VERIFIED_HERMETIC",
+      "hermetic_build_environment": true
+    },
+    "lineage_graph": {
+      "root_commit": "c89f1a238e819f0012293819283719283719283f",
+      "nodes": [
+        {
+          "id": "node-source",
+          "type": "SOURCE_COMMIT",
+          "commit": "c89f1a238e819f0012293819283719283719283f",
+          "label": "Source Repository"
+        },
+        {
+          "id": "node-compiler",
+          "type": "COMPILER",
+          "identity": "Ujomor ProductDnaCompiler v2.0",
+          "label": "DNA Compiler"
+        },
+        {
+          "id": "node-build",
+          "type": "BUILD_ARTIFACT",
+          "build_id": "build-20260802-84cc85ec",
+          "label": "Compiled Artifact"
+        },
+        {
+          "id": "node-cert",
+          "type": "CERTIFICATION",
+          "tier": "GOLD",
+          "label": "SLSA Level 4 Provenance Attestation"
+        }
+      ],
+      "edges": [
+        {
+          "from": "node-source",
+          "to": "node-compiler",
+          "relation": "COMPILED_BY"
+        },
+        {
+          "from": "node-compiler",
+          "to": "node-build",
+          "relation": "PRODUCED_ARTIFACT"
+        },
+        {
+          "from": "node-build",
+          "to": "node-cert",
+          "relation": "CERTIFIED_UNDER"
+        }
+      ],
+      "merkle_root": "512888220cc909c5a52b26231934e7f13b57050884f48408476919973e278a35"
+    },
+    "capability_matrix": [
+      "cap.eaorcs.sie.blueprint_parsing",
+      "cap.eaorcs.saos.assurance_engine",
+      "cap.eaorcs.trust.evidence_ledger",
+      "cap.eaorcs.cert.gold_certification",
+      "cap.eaorcs.osap.passport_v2",
+      "cap.eaorcs.slsa.provenance_level4"
+    ],
+    "sbom_summary": {
+      "format": "SPDX-2.3-JSON",
+      "attestation_authority": "Ujomor Engineering Governance Authority",
+      "components_count": 3,
+      "verified_zero_vulnerability": true,
+      "hashes": {
+        "core": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "hypervisor": "a4f81c900e28d488f2e21b8b2e3a1f9a2e3a1f9a2e3a1f9a2e3a1f9a2e3a1f9a",
+        "dcp": "b5g92d011f39e599g3f32c9c3f4b2g0b3f4b2g0b3f4b2g0b3f4b2g0b3f4b2g0b"
+      }
+    },
+    "compiled_at": "2026-08-02T13:31:27.056Z",
+    "checksums": {
+      "sha256": "7d288b57edba650044ea9769f337c12f19966481833be313d2d14ca7becea23f",
+      "sha512": "11d5b28ea1958477dbdab46f11afbee28f9d8f27a01e31f04743805a0964356b6286fa3da53f8001af0987cc43c0a288af662b75717d65f5effbae88aa043fcf"
+    }
+  }
+}

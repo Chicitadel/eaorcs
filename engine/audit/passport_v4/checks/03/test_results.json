@@ -1,0 +1,10 @@
+{
+  "testSuites": [
+    "eaorcs/tests/assure_dsl.test.cjs",
+    "eaorcs/engine/predictive/tests/predictive_assurance.test.cjs",
+    "eaorcs/tests/digital_twin.test.cjs",
+    "eaorcs/tests/ai_council.test.cjs",
+    "eaorcs/tests/genome.test.cjs"
+  ],
+  "passRate": "100%"
+}

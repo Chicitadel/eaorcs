@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "graph_id": "trust_graph_1785574888969",
+  "timestamp": "2026-08-01T09:01:28.969Z",
+  "nodes": [
+    {
+      "id": "node_governance",
+      "type": "Policy",
+      "label": "UAIGOS Core Constitution",
+      "trust_weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "node_arch_spec",
+      "type": "Artifact",
+      "label": "Frozen Nine-Layer Spec",
+      "trust_weight": 1,
+      "metadata": {}
+    },
+    {
+      "id": "node_sec_verifier",
+      "type": "Verifier",
+      "label": "Security & Integrity Verifier",
+      "trust_weight": 0.98,
+      "metadata": {}
+    },
+    {
+      "id": "node_evidence_suite",
+      "type": "Evidence",
+      "label": "Continuous Test & Audit Evidence",
+      "trust_weight": 0.95,
+      "metadata": {}
+    },
+    {
+      "id": "node_prr_gatekeeper",
+      "type": "PRRGate",
+      "label": "PRR Milestone Gatekeeper",
+      "trust_weight": 1,
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_sec_verifier",
+      "target": "node_arch_spec",
+      "relationship": "verifies",
+      "weight": 0.98
+    },
+    {
+      "source": "node_evidence_suite",
+      "target": "node_sec_verifier",
+      "relationship": "supports",
+      "weight": 0.95
+    },
+    {
+      "source": "node_sec_verifier",
+      "target": "node_governance",
+      "relationship": "validates",
+      "weight": 1
+    },
+    {
+      "source": "node_prr_gatekeeper",
+      "target": "node_evidence_suite",
+      "relationship": "gates",
+      "weight": 0.95
+    }
+  ]
+}

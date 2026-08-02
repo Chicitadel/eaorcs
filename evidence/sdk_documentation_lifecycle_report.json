@@ -1,0 +1,11 @@
+{
+  "apiDocVersion": "3.0.3",
+  "sdkVersions": {
+    "vscode": "2026.1.0",
+    "jetbrains": "2026.1.0",
+    "node": "2026.1.0"
+  },
+  "tutorialsCount": 16,
+  "zeroDriftConfirmed": true,
+  "evaluatedAt": "2026-08-02T16:24:21.657Z"
+}

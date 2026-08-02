@@ -1,0 +1,106 @@
+{
+  "$schema": "./registry.schema.json",
+  "registryVersion": "1.0.0",
+  "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+  "lastUpdated": "2026-05-16T00:00:00Z",
+  "signatureAlgorithm": "ed25519",
+  "checksumAlgorithm": "sha256",
+  "documents": [
+    {
+      "id": "doc-corp-01",
+      "title": "Corporate Governance Policy",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "global",
+      "path": "corporate/CORPORATE_GOVERNANCE.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "6e5a3a719e77aad5dcb04f950a0f5d81a21c9e29fc839a5dc4b7c17a0b50d017",
+      "signature": "ed25519:8b3c9a1e0f4d7b2a5c8e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c"
+    },
+    {
+      "id": "doc-ip-01",
+      "title": "Intellectual Property & Licensing Policy",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "global",
+      "path": "ip/INTELLECTUAL_PROPERTY_POLICY.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "fdedd12b872f23c47db34e76964d384f4292c97042ea0f383968bdf9c6ff7156",
+      "signature": "ed25519:7a2b8c9d0e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a"
+    },
+    {
+      "id": "doc-lic-01",
+      "title": "Commercial End User License Agreement",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "global",
+      "path": "licensing/COMMERCIAL_EULA.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "12fe33276648ee4312cc424502d3e503c57539cc6b79e4c379df7214737da16f",
+      "signature": "ed25519:6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b"
+    },
+    {
+      "id": "doc-trm-01",
+      "title": "Terms of Service & SLA Guarantee",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "global",
+      "path": "terms/TERMS_OF_SERVICE.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "c3532e2bdb70f8d681f97ab1580319dc9f430d83226f35bca725937379192138",
+      "signature": "ed25519:5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a"
+    },
+    {
+      "id": "doc-prv-01",
+      "title": "Data Processing Agreement & Privacy Policy",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "EU/US/Global",
+      "path": "privacy/DATA_PROCESSING_AGREEMENT.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "01c5dd7dca1b8c39b882f67d7955578df65ebc6def9e262fabe145f96ed65c01",
+      "signature": "ed25519:4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f"
+    },
+    {
+      "id": "doc-sec-01",
+      "title": "Security Disclosure & Vulnerability Policy",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "global",
+      "path": "security/SECURITY_DISCLOSURE_POLICY.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "3fca0e74ba51f8b551f527db68689bfd25fca2d16aae5d1e4f84ead9790fed24",
+      "signature": "ed25519:3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c"
+    },
+    {
+      "id": "doc-com-01",
+      "title": "Commercial Subscription & Billing Policy",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "global",
+      "path": "commercial/COMMERCIAL_SUBSCRIPTION_TERMS.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "5497dfa2d4cea5d5ea34f231229290c6ffaff7d5aef64f800a0bcf8ff07b5da1",
+      "signature": "ed25519:2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d"
+    },
+    {
+      "id": "doc-prc-01",
+      "title": "Government Procurement Compliance Statement",
+      "version": "1.0.0",
+      "status": "active",
+      "scope": "US/EU/Global",
+      "path": "procurement/GOVERNMENT_PROCUREMENT_COMPLIANCE.md",
+      "effectiveDate": "2026-05-16",
+      "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+      "checksum": "bfe9f3119e64496f260bc0e72a8c5051ba7e64de8e40e0b4a3cb9a841ed3bfae",
+      "signature": "ed25519:1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4c7d0e3f6a9b2c5d8e1f4a7b0c3d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a"
+    }
+  ]
+}

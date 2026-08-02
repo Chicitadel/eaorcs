@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "osap_version": "2026.1-GA-V6",
+  "release_candidate": "EAORCS v1.0.0-GA-V6-SOVEREIGN",
+  "overall_trust_score": 100,
+  "maturity_level": "L7 Federated Autonomous Governance",
+  "merkle_root_match": true,
+  "signature_present": true,
+  "verification_mode": "Sovereign Offline Zero-Cloud"
+}

@@ -1,0 +1,9 @@
+{
+  "target_hash": "923cf07868e43814e3eb0b2bfee24e34b5f067d149bf9311fa9deff43343fbc1",
+  "tsa_authority": "Air Roofers Global Trusted Timestamp Authority (RFC 3161)",
+  "timestamp_utc": "2026-08-01T09:01:28.988Z",
+  "nonce": "a42dc8a6d6bbbebe",
+  "timestamp_token": "tsa_sig_00a6ad556625f9713d0b9744292b7801caa22b5feb89ce2d5e3eb8547b79878a",
+  "verified": true,
+  "standard": "RFC 3161"
+}

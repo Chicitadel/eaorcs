@@ -1,0 +1,19 @@
+{
+  "module": "EAORCS",
+  "phase": "PHASE_22",
+  "stream": "STREAM_R9",
+  "timestamp": "2026-08-01T20:31:59Z",
+  "status": "VERIFIED",
+  "evidence": {
+    "scorecardType": "CONTINUOUS_GOVERNANCE_SCORECARD_V2",
+    "blueprintConformanceScorePercent": 100,
+    "implementationIntegrityScorePercent": 100,
+    "operationalEvidenceScorePercent": 100,
+    "overallGovernanceScorePercent": 100,
+    "auditedBoundedContextsCount": 8,
+    "architecturalViolationsCount": 0,
+    "conformanceVerdict": "FULLY_CONFORMANT",
+    "phase22Verdict": "PHASE_22_CONTINUOUS_OPERATIONAL_PROOFS_COMPLETE",
+    "signature": "gov_sig_eaorcs_p22_r9_verified"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://eaorcs.ujomor.org/schemas/schema-registry.json",
+  "registryVersion": "1.0.0",
+  "title": "EAORCS Master Standards & Schema Registry Catalog",
+  "organization": "Ujomor Systems & Enterprise Governance",
+  "lastUpdated": "2026-08-01T00:00:00Z",
+  "description": "Master schema index cataloging OSAP v1.1, W3C DID, audit attestation, certification, and trust graph schemas for EAORCS Phase 10.",
+  "schemas": {
+    "osap-v1.1": {
+      "id": "osap-v1.1",
+      "name": "Open Software Assurance Passport v1.1 Specification",
+      "version": "1.1.0",
+      "status": "FROZEN",
+      "file": "osap-v1.1.schema.json",
+      "schemaUri": "https://eaorcs.ujomor.org/schemas/osap-v1.1.schema.json",
+      "category": "ASSET_ATTESTATION",
+      "description": "Formal JSON Schema defining structure, metadata, evidence manifests, and cryptographic proofs for OSAP v1.1."
+    },
+    "did-eaorcs-v1": {
+      "id": "did-eaorcs-v1",
+      "name": "EAORCS Sovereign Identity Node W3C DID Schema v1.0",
+      "version": "1.0.0",
+      "status": "FROZEN",
+      "file": "did-eaorcs-v1.schema.json",
+      "schemaUri": "https://eaorcs.ujomor.org/schemas/did-eaorcs-v1.schema.json",
+      "category": "SOVEREIGN_IDENTITY",
+      "description": "W3C Decentralized Identifier (DID) v1.0 Document Schema for EAORCS Sovereign Nodes."
+    },
+    "audit-attestation-v1": {
+      "id": "audit-attestation-v1",
+      "name": "EAORCS Audit Attestation Record Schema v1.0",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "file": "audit-attestation-v1.schema.json",
+      "schemaUri": "https://eaorcs.ujomor.org/schemas/audit-attestation-v1.schema.json",
+      "category": "AUDIT_COMPLIANCE",
+      "description": "Schema defining cryptographically verifiable audit trail records and compliance attestations."
+    },
+    "certification-v1": {
+      "id": "certification-v1",
+      "name": "EAORCS ISO/IEC 25010 & Security Certification Schema v1.0",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "file": "certification-v1.schema.json",
+      "schemaUri": "https://eaorcs.ujomor.org/schemas/certification-v1.schema.json",
+      "category": "CERTIFICATION",
+      "description": "Schema for platform qualification and ISO/IEC 25010 quality assurance certificates."
+    },
+    "osap-core-v2": {
+      "id": "osap-core-v2",
+      "name": "Open Software Assurance Passport Core v2",
+      "version": "2.0.0",
+      "status": "ACTIVE",
+      "file": "osap-core-v2.json",
+      "schemaUri": "https://eaorcs.ujomor.org/schemas/osap-core-v2.json",
+      "category": "ASSET_ATTESTATION",
+      "description": "OSAP Core v2 multi-tier lineage and risk evaluation schema."
+    },
+    "trust-graph-v1": {
+      "id": "trust-graph-v1",
+      "name": "EAORCS Trust Graph Model Schema v1.0",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "file": "trust-graph-v1.json",
+      "schemaUri": "https://eaorcs.ujomor.org/schemas/trust-graph-v1.json",
+      "category": "FEDERATION_TRUST",
+      "description": "Schema representing enterprise trust graphs, node relationships, and attestation flows."
+    }
+  }
+}

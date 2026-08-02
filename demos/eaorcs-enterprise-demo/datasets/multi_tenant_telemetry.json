@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-02T09:48:08.113Z",
+    "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+    "classification": "ENTERPRISE_GOVERNED",
+    "datasetVersion": "2026.1.0"
+  },
+  "sectors": {
+    "financialServices": {
+      "tenantId": "TENANT-FIN-0912",
+      "organization": "Global Apex Financial Trust",
+      "trustScore": 98.4,
+      "readinessScore": 97.2,
+      "slsaLevel": 4,
+      "activeNodes": 128,
+      "telemetry": {
+        "tps": 45200,
+        "latencyP99Ms": 4.2,
+        "availabilitySla": 99.999,
+        "securityScanStatus": "CLEAN"
+      },
+      "findings": [
+        {
+          "id": "FND-FIN-01",
+          "domain": "SECURITY",
+          "severity": "INFO",
+          "description": "TLS 1.3 cipher suite rotation scheduled",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    "governmentDefense": {
+      "tenantId": "TENANT-GOV-4481",
+      "organization": "Sovereign Defense Systems Agency",
+      "trustScore": 99.1,
+      "readinessScore": 98.9,
+      "slsaLevel": 4,
+      "activeNodes": 256,
+      "telemetry": {
+        "tps": 18400,
+        "latencyP99Ms": 2.8,
+        "availabilitySla": 100,
+        "securityScanStatus": "AIRGAPPED_VERIFIED"
+      },
+      "findings": [
+        {
+          "id": "FND-GOV-01",
+          "domain": "COMPLIANCE",
+          "severity": "INFO",
+          "description": "FIPS 140-3 module verification active",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    "healthcareHipaa": {
+      "tenantId": "TENANT-HLT-3310",
+      "organization": "Apex BioHealth Network",
+      "trustScore": 96.8,
+      "readinessScore": 95.5,
+      "slsaLevel": 4,
+      "activeNodes": 64,
+      "telemetry": {
+        "tps": 12100,
+        "latencyP99Ms": 6.1,
+        "availabilitySla": 99.99,
+        "securityScanStatus": "CLEAN"
+      },
+      "findings": [
+        {
+          "id": "FND-HLT-01",
+          "domain": "PRIVACY",
+          "severity": "LOW",
+          "description": "PHI anonymization audit trail verified",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    "enterpriseSaas": {
+      "tenantId": "TENANT-ENT-8821",
+      "organization": "Ujomor Enterprise Cloud Platform",
+      "trustScore": 97.5,
+      "readinessScore": 96,
+      "slsaLevel": 4,
+      "activeNodes": 512,
+      "telemetry": {
+        "tps": 120500,
+        "latencyP99Ms": 8.4,
+        "availabilitySla": 99.99,
+        "securityScanStatus": "CLEAN"
+      },
+      "findings": [
+        {
+          "id": "FND-ENT-01",
+          "domain": "PERFORMANCE",
+          "severity": "INFO",
+          "description": "Auto-scaling pool expanded across 4 regions",
+          "status": "VERIFIED"
+        }
+      ]
+    }
+  }
+}

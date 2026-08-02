@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 29,
+  "checkpoint_name": "Container & Orchestration Certification",
+  "domain": "CONTAINERS_K8S",
+  "status": "PASSED",
+  "evidence_level": "Level B",
+  "confidence_pct": 99,
+  "evidence_artifacts": [
+    {
+      "name": "container_orchestration_verification.json",
+      "sha256": "92ad008faaf572a7525fe96c8177801cab8d543031e647849ecff4da8717e603",
+      "bytes": 866
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.137Z"
+}

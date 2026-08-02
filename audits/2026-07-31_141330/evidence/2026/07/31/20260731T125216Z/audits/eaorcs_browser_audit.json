@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-07-31T12:51:46.591Z",
+  "targetUrl": "http://localhost:8088",
+  "pagesTested": 10,
+  "passedPages": 10,
+  "failedPages": 0,
+  "consoleErrors": [],
+  "renderingFailures": [],
+  "findings": []
+}

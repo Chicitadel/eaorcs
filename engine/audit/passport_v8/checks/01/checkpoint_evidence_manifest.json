@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 1,
+  "checkpoint_name": "Physical Module & Boundary Verification",
+  "domain": "MODULE_INTEGRITY",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "physical_modules.json",
+      "sha256": "5406d710002e867011e99bbb8bb0dea7eb22d080aadd416533d0a47e5f4d1a41",
+      "bytes": 1159
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.779Z"
+}

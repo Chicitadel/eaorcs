@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://eaorcs.ujomor.org/schemas/did-eaorcs-v1.schema.json",
+  "title": "EAORCS Sovereign Identity Node W3C Decentralized Identifier (DID) Document Schema v1.0",
+  "description": "Formal JSON Schema defining structure for EAORCS sovereign identity nodes conforming to W3C Decentralized Identifiers (DIDs) v1.0 specification.",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "oneOf": [
+        {
+          "type": "string",
+          "const": "https://www.w3.org/ns/did/v1"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        }
+      ],
+      "description": "W3C DID JSON-LD context references."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^did:eaorcs:[a-zA-Z0-9._-]+$",
+      "description": "W3C Decentralized Identifier URI formatted as did:eaorcs:<nodeId>."
+    },
+    "verificationMethod": {
+      "type": "array",
+      "description": "List of cryptographic verification keys controlled by the DID subject.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "DID URL referencing the specific key fragment (e.g. did:eaorcs:node-1#key-1)."
+          },
+          "type": {
+            "type": "string",
+            "description": "Cryptographic key type (e.g. Ed25519VerificationKey2020, JsonWebKey2020)."
+          },
+          "controller": {
+            "type": "string",
+            "pattern": "^did:eaorcs:[a-zA-Z0-9._-]+$",
+            "description": "DID controlling this key."
+          },
+          "publicKeyJwk": {
+            "type": "object",
+            "description": "Public key expressed in JSON Web Key format."
+          },
+          "publicKeyMultibase": {
+            "type": "string",
+            "description": "Public key expressed in Multibase encoding."
+          },
+          "publicKeyPem": {
+            "type": "string",
+            "description": "Public key expressed in PEM format."
+          }
+        },
+        "required": ["id", "type", "controller"],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "authentication": {
+      "type": "array",
+      "description": "Verification methods used for node identity authentication.",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "assertionMethod": {
+      "type": "array",
+      "description": "Verification methods used for signing OSAP attestation passports.",
+      "items": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object"
+          }
+        ]
+      },
+      "minItems": 1
+    },
+    "service": {
+      "type": "array",
+      "description": "List of service endpoints published by the sovereign node.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique URI fragment identifying the service."
+          },
+          "type": {
+            "type": "string",
+            "description": "Service type (e.g. OSAPTrustExchangeService, EAORCSAuditVerifierEndpoint)."
+          },
+          "serviceEndpoint": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object"
+              }
+            ],
+            "description": "Service network URL or structure."
+          }
+        },
+        "required": ["id", "type", "serviceEndpoint"],
+        "additionalProperties": true
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp of DID document creation."
+    },
+    "updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp of DID document last update."
+    },
+    "deactivated": {
+      "type": "boolean",
+      "description": "Flag indicating if the sovereign DID node has been revoked or deactivated."
+    }
+  },
+  "required": [
+    "@context",
+    "id",
+    "verificationMethod",
+    "authentication",
+    "assertionMethod",
+    "created"
+  ],
+  "additionalProperties": true
+}

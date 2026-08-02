@@ -1,0 +1,22 @@
+{
+  "evidence_level": "Level E - Production Telemetry",
+  "opentelemetry": {
+    "traces_collected": 12450,
+    "spans_analyzed": 49800,
+    "sample_trace_id": "trace_7f8a9b0c1d2e"
+  },
+  "prometheus": {
+    "uptime_pct": 99.99,
+    "p99_latency_ms": 14.2,
+    "error_rate_pct": 0.001
+  },
+  "reliability_metrics": {
+    "sla_target_pct": 99.9,
+    "slo_attainment_pct": 99.98,
+    "error_budget_remaining_pct": 94.5,
+    "mttr_minutes": 4.2,
+    "incidents_last_30d": 0,
+    "rollback_frequency_pct": 0
+  },
+  "timestamp": "2026-08-01T09:04:59.795Z"
+}

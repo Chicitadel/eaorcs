@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 17,
+  "checkpoint_name": "Runtime Chaos Certification",
+  "domain": "CHAOS_RESILIENCE",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 99.3,
+  "evidence_artifacts": [
+    {
+      "name": "runtime_chaos_certification.json",
+      "sha256": "c0e80070cdf678826c466090095a7304cbb585b0226307624905a930cf05a3fc",
+      "bytes": 769
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.831Z"
+}

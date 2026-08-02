@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 21,
+  "checkpoint_name": "Disaster Recovery Certification",
+  "domain": "DISASTER_RECOVERY",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "disaster_recovery.json",
+      "sha256": "6b53c6301e325bf68c3edbc0197de74f8ff0a091202bc09327bfb3706ba90b25",
+      "bytes": 397
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.839Z"
+}

@@ -1,0 +1,10 @@
+{
+  "bundleId": "BUNDLE-EAORCS-2026.1.0-LTS-02a2b1cc-33d0-4a22-bff1-1f0e5ff76efb",
+  "product": "EAORCS",
+  "version": "2026.1.0-lts",
+  "generatedAt": "2026-08-01T11:56:10.369Z",
+  "merkleRoot": "0167cc8c36a4fdb8bd78e2f9a19d6dcc2c92052a6a11f7f89c5af2e75115ab16",
+  "fileCount": 25,
+  "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA/scrSwgx6Maa9Vga4p44SJcpa3xutVNs3nmJOkHq3zo=\n-----END PUBLIC KEY-----\n",
+  "signature": "0356a046820ce3c11b223fcdf6ea9e673e11b4424f84d6d3a14653b3aeb806d1431074ca8be9d0d2ec63fb7d4faa1cbc393ad36852c32c6933d61d82e71b350c"
+}

@@ -1,0 +1,23 @@
+{
+  "releaseVersion": "2026.1.0-RC1",
+  "architectureFrozen": true,
+  "contractsFrozen": true,
+  "blueprintFrozen": true,
+  "timestamp": "2026-08-01T23:55:28.000Z",
+  "author": "Ujomor Systems Engineering & Governance Authority",
+  "verificationStatus": "VERIFIED_RC1_RELEASE_CANDIDATE",
+  "organization": "Ujomor Systems & Enterprise Governance",
+  "milestone": "EAORCS_2026.1.0_RC1",
+  "governance": {
+    "securityReviewed": true,
+    "architectureControlled": true,
+    "protocolFrozen": true,
+    "modularizationEnforced": true
+  },
+  "standards": [
+    "ISO 27001",
+    "SOC 2",
+    "OWASP ASVS",
+    "NIST"
+  ]
+}

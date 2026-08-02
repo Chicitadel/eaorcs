@@ -1,0 +1,80 @@
+{
+  "pipelineVersion": "2026.1.0-LTS",
+  "timestamp": "2026-08-01T14:13:30.378Z",
+  "durationMs": 18,
+  "overallPassed": true,
+  "gateDecision": "APPROVED",
+  "compositeGovernanceScore": 100,
+  "thresholdScore": 95,
+  "stages": {
+    "blueprintTraceability": {
+      "stageName": "Blueprint Traceability Verification",
+      "passed": true,
+      "score": 100,
+      "coverage": 100,
+      "tracedComponents": 3,
+      "totalComponents": 3,
+      "adrReferences": [
+        "ADR-001-Architecture-Freeze",
+        "ADR-004-Zero-Trust"
+      ],
+      "issues": []
+    },
+    "apiContractCompatibility": {
+      "stageName": "API Contract Compatibility",
+      "passed": true,
+      "score": 100,
+      "breakingChangesCount": 0,
+      "schemaCatalogVerified": true,
+      "issues": []
+    },
+    "zeroTrustPolicies": {
+      "stageName": "Zero-Trust Policy Checks",
+      "passed": true,
+      "securityScore": 100,
+      "evaluatedPolicies": 5,
+      "violations": []
+    },
+    "securityScans": {
+      "stageName": "Security Scans",
+      "passed": true,
+      "score": 100,
+      "criticalLeaks": 0,
+      "threatCount": 0,
+      "scannedItems": 0,
+      "issues": []
+    },
+    "preCertificationGate": {
+      "stageName": "Pre-Certification Checks & Build Gate Evaluation",
+      "passed": true,
+      "gateDecision": "APPROVED",
+      "compositeGovernanceScore": 100,
+      "thresholdScore": 95,
+      "osapPassportVerified": true,
+      "iso25010CertificateVerified": true,
+      "gateChecks": [
+        {
+          "stage": "Blueprint Traceability Verification",
+          "passed": true,
+          "score": 100
+        },
+        {
+          "stage": "API Contract Compatibility",
+          "passed": true,
+          "score": 100
+        },
+        {
+          "stage": "Zero-Trust Policy Checks",
+          "passed": true,
+          "score": 100
+        },
+        {
+          "stage": "Security Scans",
+          "passed": true,
+          "score": 100
+        }
+      ],
+      "violations": []
+    }
+  }
+}

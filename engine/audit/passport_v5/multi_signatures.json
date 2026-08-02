@@ -1,0 +1,7 @@
+{
+  "developer_signature": "c2f6bc627641ab54aee02a3a2d8e55a2fd86378bd8f0daaa93a70be63ec50b1f2cbcfa81e03d6403e58ce39f9f14c1324b62f2c30dd2c1aacc29f79940e15a03",
+  "build_system_signature": "000064de9d2e23c39a2b5f287de447f670ac65b7d2776838870a165189c4be42",
+  "ci_runner_signature": "9a7a1f6308736612853f996d506a5be28ed926cc3fa63194349e003899404d94",
+  "release_manager_signature": "f65222ee5983d278d735dba8e35ff1ffa95fc2d0fe042091453dc0a23d873f37",
+  "auditor_signature": "0355fddc62b86edbaf1adc93584f4fe82935e53c5bd45ad758b734a4bb1f051d"
+}

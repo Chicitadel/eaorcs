@@ -1,0 +1,26 @@
+{
+  "total_reviews_required": 2,
+  "all_approved": true,
+  "human_signoff_status": "PASSED",
+  "reviews": [
+    {
+      "checkpoint_id": "chk_arch_freeze",
+      "reviewer": "Chief Architectural Authority",
+      "domain": "Architecture & System Design",
+      "machine_status": "PASS",
+      "human_status": "APPROVED",
+      "review_date": "2026-08-01T09:01:29.018Z",
+      "comments": "Architecture freeze and ADR hashes verified clean without drift."
+    },
+    {
+      "checkpoint_id": "chk_privacy_gdpr",
+      "reviewer": "Data Protection Officer (DPO)",
+      "domain": "Legal & Data Privacy",
+      "machine_status": "PASS",
+      "human_status": "APPROVED",
+      "review_date": "2026-08-01T09:01:29.018Z",
+      "comments": "Data minimization and PII isolation compliance signoff completed."
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.018Z"
+}

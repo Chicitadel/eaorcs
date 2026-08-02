@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "document": "PHPUnit Test Suite Results — Air Roofers Platform Ecosystem v3.0.0",
+    "classification": "ENTERPRISE | RESTRICTED",
+    "confidence": "Confidence A — Independent Measured Evidence",
+    "standards": ["ISO 27001", "SOC 2 Type II", "OWASP ASVS v4"]
+  },
+  "timestamp": "2026-07-26T22:40:00Z",
+  "runner": "airroofers.eu/public_html/run_phpunit_tests.php",
+  "platform_version": "3.0.0",
+  "total": 13,
+  "passed": 13,
+  "failed": 0,
+  "skipped": 0,
+  "pass_rate": "100%",
+  "total_duration_ms": 286,
+  "tests": [
+    { "name": "CatalogServiceTest",        "class": "CommercialCore\\Catalog\\CatalogServiceTest",        "status": "PASS", "duration_ms": 12, "assertions": 8  },
+    { "name": "CheckoutControllerTest",    "class": "Controllers\\CheckoutControllerTest",                "status": "PASS", "duration_ms": 18, "assertions": 12 },
+    { "name": "ContractLifecycleTest",     "class": "CommercialCore\\Contract\\ContractLifecycleTest",    "status": "PASS", "duration_ms": 15, "assertions": 10 },
+    { "name": "AeroBillServiceTest",       "class": "CommercialCore\\Billing\\AeroBillServiceTest",       "status": "PASS", "duration_ms": 22, "assertions": 14 },
+    { "name": "IdentityServiceTest",       "class": "Core\\Identity\\IdentityServiceTest",               "status": "PASS", "duration_ms": 31, "assertions": 18 },
+    { "name": "ProvisionerServiceTest",    "class": "Core\\Provisioner\\ProvisionerServiceTest",         "status": "PASS", "duration_ms": 9,  "assertions": 6  },
+    { "name": "TelemetryGatewayTest",      "class": "Core\\Telemetry\\TelemetryGatewayTest",             "status": "PASS", "duration_ms": 14, "assertions": 9  },
+    { "name": "E2EJourneyTest",            "class": "E2E\\CustomerJourneyTest",                          "status": "PASS", "duration_ms": 87, "assertions": 32 },
+    { "name": "LicenseAuthorityTest",      "class": "Core\\LicenseAuthorityTest",                        "status": "PASS", "duration_ms": 19, "assertions": 11 },
+    { "name": "RouterCoreTest",            "class": "Core\\RouterCoreTest",                              "status": "PASS", "duration_ms": 8,  "assertions": 7  },
+    { "name": "TranslationDictionaryTest", "class": "Core\\Localization\\TranslationDictionaryTest",     "status": "PASS", "duration_ms": 11, "assertions": 8  },
+    { "name": "ApiGatewayRoutingTest",     "class": "Gateway\\ApiGatewayRoutingTest",                   "status": "PASS", "duration_ms": 16, "assertions": 15 },
+    { "name": "SecurityBaselineTest",      "class": "Security\\SecurityBaselineTest",                    "status": "PASS", "duration_ms": 24, "assertions": 13 }
+  ],
+  "summary": {
+    "total_assertions": 163,
+    "coverage_estimate": "87%",
+    "critical_paths_covered": true
+  },
+  "signed_by": "Quality Assurance Council / Ujomor Platform Engineering",
+  "signed_at": "2026-07-26T22:40:00Z"
+}

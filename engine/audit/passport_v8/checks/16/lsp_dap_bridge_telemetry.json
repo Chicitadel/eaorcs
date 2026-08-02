@@ -1,0 +1,28 @@
+{
+  "lsp": {
+    "version": "3.17.0",
+    "capabilities": [
+      "textDocument/publishDiagnostics",
+      "textDocument/codeLens",
+      "textDocument/codeAction"
+    ],
+    "status": "ACTIVE"
+  },
+  "dap": {
+    "version": "1.51.0",
+    "capabilities": [
+      "evaluate",
+      "setBreakpoints",
+      "customEvents"
+    ],
+    "status": "ACTIVE"
+  },
+  "features": {
+    "inline_diagnostics": "ENABLED",
+    "codelens_triggers": "ACTIVE",
+    "live_remediation": "ENABLED",
+    "ai_chat_integration": "ACTIVE",
+    "local_policy_execution": "PASSED"
+  },
+  "timestamp": "2026-08-01T09:04:59.826Z"
+}

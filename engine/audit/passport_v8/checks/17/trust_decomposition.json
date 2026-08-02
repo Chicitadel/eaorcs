@@ -1,0 +1,47 @@
+{
+  "overall_trust_score": 98.84,
+  "dimensions_count": 8,
+  "dimensional_breakdown": {
+    "security": {
+      "score": 99.7,
+      "weight": 0.2,
+      "status": "EXCELLENT"
+    },
+    "architecture": {
+      "score": 98.8,
+      "weight": 0.15,
+      "status": "EXCELLENT"
+    },
+    "testing": {
+      "score": 100,
+      "weight": 0.15,
+      "status": "OPTIMAL"
+    },
+    "observability": {
+      "score": 95.2,
+      "weight": 0.1,
+      "status": "HIGH"
+    },
+    "compliance": {
+      "score": 99.1,
+      "weight": 0.15,
+      "status": "EXCELLENT"
+    },
+    "supply_chain": {
+      "score": 98.9,
+      "weight": 0.1,
+      "status": "EXCELLENT"
+    },
+    "documentation": {
+      "score": 96.5,
+      "weight": 0.05,
+      "status": "HIGH"
+    },
+    "operational_readiness": {
+      "score": 99.8,
+      "weight": 0.1,
+      "status": "OPTIMAL"
+    }
+  },
+  "timestamp": "2026-08-01T09:01:29.028Z"
+}

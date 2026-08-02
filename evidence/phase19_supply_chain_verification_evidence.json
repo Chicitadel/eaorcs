@@ -1,0 +1,31 @@
+{
+  "module": "SupplyChainVerification",
+  "phase": "PHASE_19",
+  "stream": "O6",
+  "adoptionPattern": "EXTERNAL_SUPPLY_CHAIN_INTEGRATION",
+  "dataSource": "SUPPLY_CHAIN",
+  "sbomVerifier": {
+    "releases": 5,
+    "vulnerableComponents": 0,
+    "externalRegistries": 3,
+    "continuousScanning": true,
+    "status": "VERIFIED"
+  },
+  "dependencyAttestation": {
+    "dependencies": 8,
+    "attested": 8,
+    "unpinned": 0,
+    "status": "ATTESTED"
+  },
+  "signatureChain": {
+    "artifacts": 5,
+    "validSignatures": 5,
+    "invalid": 0,
+    "independentlyVerifiable": true,
+    "status": "VERIFIED"
+  },
+  "externallyVerifiable": true,
+  "verdict": "O6_SUPPLY_CHAIN_VERIFICATION_VERIFIED",
+  "timestamp": "2026-08-01T19:56:40+02:00",
+  "status": "VERIFIED"
+}

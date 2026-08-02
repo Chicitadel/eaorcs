@@ -1,0 +1,26 @@
+[
+  {
+    "event_id": 1,
+    "event": "AUDIT_INITIATED",
+    "actor": "EAORCS Audit Engine",
+    "timestamp": "2026-07-31T21:04:17.151Z"
+  },
+  {
+    "event_id": 2,
+    "event": "DAG_DISCOVERY_COMPLETED",
+    "actor": "ExecutionGraph",
+    "timestamp": "2026-07-31T21:04:17.151Z"
+  },
+  {
+    "event_id": 3,
+    "event": "MERKLE_TREE_BUILT",
+    "actor": "Merkle Engine",
+    "timestamp": "2026-07-31T21:04:17.151Z"
+  },
+  {
+    "event_id": 4,
+    "event": "PASSPORT_V6_ISSUED",
+    "actor": "Certification Authority",
+    "timestamp": "2026-07-31T21:04:17.151Z"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "openApiContractVersion": "3.0.3",
+  "totalSdksSynced": 3,
+  "isZeroDriftConfirmed": true,
+  "sdks": [
+    {
+      "id": "vscode-extension",
+      "identifier": "ujomor.eaorcs-vscode",
+      "status": "SYNCHRONIZED",
+      "driftDetected": false
+    },
+    {
+      "id": "jetbrains-plugin",
+      "identifier": "com.ujomor.eaorcs.jetbrains",
+      "status": "SYNCHRONIZED",
+      "driftDetected": false
+    },
+    {
+      "id": "node-sdk",
+      "package": "@airroofers/eaorcs-sdk",
+      "status": "SYNCHRONIZED",
+      "driftDetected": false
+    }
+  ],
+  "syncedAt": "2026-08-02T16:24:21.501Z"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="eaorcs-vscode" Version="2026.1.0" Publisher="ujomor-systems" Language="en-US" />
+    <DisplayName>EAORCS — Enterprise Software Trust & Governance Engine</DisplayName>
+    <Description xml:space="preserve">Real-time compliance, software assurance, trust score calculation, OSAP passport generation, and governance diagnostics for IDEs.</Description>
+    <Tags>eaorcs,uaigos,compliance,audit,trust,osap,lsp</Tags>
+    <Categories>Linters,Programming Languages,Other</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Icon>extension/icon.png</Icon>
+    <License>extension/LICENSE.txt</License>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code" Version="^1.85.0" />
+  </Installation>
+  <Dependencies />
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+  </Assets>
+</PackageManifest>

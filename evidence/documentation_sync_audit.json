@@ -1,0 +1,17 @@
+{
+  "totalCapabilitiesDocumented": 8,
+  "totalDocLinks": 8,
+  "isDocumentation100PercentComplete": true,
+  "audiencesCovered": [
+    "Architecture",
+    "API",
+    "SDK",
+    "Operations",
+    "Security",
+    "Procurement",
+    "Admin",
+    "Dev",
+    "User"
+  ],
+  "auditedAt": "2026-08-02T16:24:21.336Z"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "EXPORTED",
+  "bundle_directory": "D:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5",
+  "passport_path": "D:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\passport.json",
+  "manifest_path": "D:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\manifest.json",
+  "contained_standards": [
+    "CycloneDX",
+    "OpenAPI 3.1",
+    "SLSA Level 3",
+    "in-toto"
+  ],
+  "timestamp": "2026-08-01T08:59:27.584Z"
+}

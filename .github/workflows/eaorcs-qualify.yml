@@ -1,0 +1,33 @@
+name: EAORCS Platform Qualification
+on:
+  pull_request:
+    branches: [main, 'release/*']
+
+jobs:
+  qualify:
+    name: Qualification Pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install --if-present
+      - name: Run qualification streams
+        run: node ci/run_ci_locally.js
+      - name: Post Job Summary
+        if: always()
+        run: |
+          if [ -f docs/ci_execution_log.md ]; then
+            cat docs/ci_execution_log.md >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## Qualification Execution Log Not Found" >> $GITHUB_STEP_SUMMARY
+          fi
+      - name: Upload qualification logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qualification-logs-${{ github.sha }}
+          path: ci/logs/
+          retention-days: 30

@@ -1,0 +1,22 @@
+{
+  "auditId": "AUDIT-2026-08-02",
+  "status": "COMPLETED",
+  "suites": [
+    "platform-core",
+    "airroofers.eu",
+    "platform-experience",
+    "static"
+  ],
+  "gaps": [
+    {
+      "component": "HSTS Headers",
+      "status": "PENDING_VERIFICATION",
+      "severity": "HIGH"
+    },
+    {
+      "component": "CSP Headers",
+      "status": "PENDING_VERIFICATION",
+      "severity": "HIGH"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "attestation_level": "Certified with External Attestation",
+  "total_claims": 4,
+  "has_independent_auditor": true,
+  "has_customer_verification": true,
+  "claims_breakdown": [
+    {
+      "source": "Internal Engine",
+      "claim": "Unit & Static Policy Checks",
+      "status": "PASS"
+    },
+    {
+      "source": "Independent Auditor",
+      "claim": "SOC 2 & ISO 27001 Formal Audit",
+      "status": "PASS"
+    },
+    {
+      "source": "Customer Environment",
+      "claim": "Production Telemetry Baseline",
+      "status": "PASS"
+    },
+    {
+      "source": "Laboratory",
+      "claim": "Sovereign Penetration Testing",
+      "status": "PASS"
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.026Z"
+}

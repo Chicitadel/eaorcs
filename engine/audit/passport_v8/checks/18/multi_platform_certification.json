@@ -1,0 +1,32 @@
+{
+  "certification_domain": "Operating System Compatibility",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "platforms_verified": [
+    {
+      "name": "Windows",
+      "target": "win32 (x64/arm64)",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "Linux",
+      "target": "linux (x64/arm64)",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "macOS",
+      "target": "darwin (x64/arm64)",
+      "status": "PASSED",
+      "evidenceLevel": "Level A"
+    },
+    {
+      "name": "FreeBSD",
+      "target": "freebsd (x64)",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.833Z"
+}

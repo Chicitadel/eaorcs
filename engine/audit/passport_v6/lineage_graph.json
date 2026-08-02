@@ -1,0 +1,34 @@
+{
+  "root_node": "Source Commit",
+  "nodes": [
+    {
+      "id": "commit",
+      "name": "Source Commit",
+      "hash": "fedcf104d1cdb898b8c8fee6df424d62d5472732b407728b59623795691b880c"
+    },
+    {
+      "id": "build",
+      "name": "Build Execution",
+      "parent": "commit",
+      "hash": "824bea0f78d3aeb65da007d184669ca9a9f0c38cf6feb685d14301191ec1c7d2"
+    },
+    {
+      "id": "sbom",
+      "name": "SBOM Generation",
+      "parent": "build",
+      "hash": "9933dc6eabee691eba286ace795aa3f733b5e6545548ac3c37c4e308cff65acb"
+    },
+    {
+      "id": "container",
+      "name": "Container Packaging",
+      "parent": "sbom",
+      "hash": "56f42e0b62f46700108c23920bf0f253305fcd5599c841d655d000b0e1fe7da4"
+    },
+    {
+      "id": "passport",
+      "name": "OSAP v6 Passport",
+      "parent": "container",
+      "hash": "54493e831a7f2d60df7c710a2b9aeead6783500fc80567a9684f4c9085532a73"
+    }
+  ]
+}

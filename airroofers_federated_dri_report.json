@@ -1,0 +1,10 @@
+{
+  "auditId": "AUDIT-2026-08-02",
+  "dri": "Architectural Governance Council",
+  "responsibilities": {
+    "platform-core": "Core Architecture Team",
+    "airroofers.eu": "EU Region Operations",
+    "platform-experience": "Experience Governance Team",
+    "static": "Static CDN Administration"
+  }
+}

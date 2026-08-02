@@ -1,0 +1,17 @@
+{
+  "module": "Procurement Compliance",
+  "phase": 26,
+  "stream": "Stream G",
+  "timestamp": "2026-08-01T21:28:58+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "PROCUREMENT_COMPLIANCE_DOSSIER_ENGINE",
+    "compiledDossierDocumentsCount": 112,
+    "rfpAutomationCoveragePercent": 100,
+    "downloadUrl": "https://procurement.airroofers.eu/dossier/eaorcs-v1.0.zip",
+    "mappedRfpQuestionsCount": 280,
+    "verifiedAnswersCount": 280,
+    "executiveSummaryPagesCount": 12,
+    "complianceMatrixCount": 8
+  }
+}

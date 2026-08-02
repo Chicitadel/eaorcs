@@ -1,0 +1,157 @@
+{
+  "title": "EAORCS Live Governance Observatory",
+  "version": "2026.1-v8.1",
+  "timestamp": "2026-07-31T21:14:59.401Z",
+  "status_overview": {
+    "trust_trend": "STABLE_UPWARD (+1.4%)",
+    "composite_trust_score": 96.27,
+    "cmm_maturity_level": "L7",
+    "trust_drift_status": "NO_DRIFT",
+    "evidence_freshness": "Fresh",
+    "open_risks_count": 0,
+    "active_exceptions_count": 0,
+    "signature_validity": "VERIFIED_ROOT_CA"
+  },
+  "classified_metrics": {
+    "trust_score": {
+      "name": "Trust Score",
+      "value": 96.27,
+      "source": "Computed",
+      "derived_from": [
+        "security_test_evidence",
+        "arch_freeze_signature",
+        "platform_compliance"
+      ],
+      "policy_threshold": {
+        "min_required": 90
+      },
+      "timestamp": "2026-07-31T21:14:59.401Z"
+    },
+    "test_coverage": {
+      "name": "Test Coverage",
+      "value": 98.4,
+      "source": "Measured",
+      "derived_from": [
+        "jest_lcov_report",
+        "php_unit_clover"
+      ],
+      "policy_threshold": {
+        "min_required": 80
+      },
+      "timestamp": "2026-07-31T21:14:59.401Z"
+    },
+    "cmm_maturity_level": {
+      "name": "Capability Maturity Level",
+      "value": "L7",
+      "source": "Computed",
+      "derived_from": [
+        "cmm_rule_evaluator"
+      ],
+      "policy_threshold": {
+        "target_level": "L7"
+      },
+      "timestamp": "2026-07-31T21:14:59.401Z"
+    },
+    "security_policy_decision": {
+      "name": "Security Policy Status",
+      "value": "PASSED",
+      "source": "Measured",
+      "derived_from": [
+        "SecurityAnalyzer",
+        "PolicyEngine"
+      ],
+      "policy_threshold": {
+        "allowed": [
+          "PASSED"
+        ]
+      },
+      "timestamp": "2026-07-31T21:14:59.401Z"
+    },
+    "sovereignty_declaration": {
+      "name": "Sovereignty Domain",
+      "value": "EU_CENTRAL",
+      "source": "Declared",
+      "derived_from": [
+        "product.manifest.yaml"
+      ],
+      "policy_threshold": null,
+      "timestamp": "2026-07-31T21:14:59.401Z"
+    }
+  },
+  "digital_twin_drift": {
+    "observed_trust": {
+      "trust_score": 96.27,
+      "test_coverage": 98.4,
+      "security_passing": true
+    },
+    "expected_trust": {
+      "trust_score": 90,
+      "test_coverage": 85,
+      "security_passing": true
+    },
+    "drift_metrics": {
+      "score_drift_delta": 6.27,
+      "coverage_drift_delta": 13.4,
+      "security_drift_delta": 0,
+      "overall_drift_status": "NO_DRIFT"
+    },
+    "drift_detected": false,
+    "action_required": "CONTINUE_MONITORING",
+    "timestamp": "2026-07-31T21:14:59.401Z"
+  },
+  "cmm_evaluation": {
+    "highest_satisfied_level": "L7",
+    "source": "Computed",
+    "rules_evaluation": [
+      {
+        "level": "L1",
+        "title": "Deterministic Execution",
+        "criterion": "ExecutionGraph DAG engine present with spec hash calculation",
+        "passed": true
+      },
+      {
+        "level": "L2",
+        "title": "Governance Policies",
+        "criterion": "PolicyEngine and executable policy manifests available",
+        "passed": true
+      },
+      {
+        "level": "L3",
+        "title": "Cryptographic Evidence",
+        "criterion": "SHA-256 evidence bundles and Merkle tree generation active",
+        "passed": true
+      },
+      {
+        "level": "L4",
+        "title": "Quantitative Metrics",
+        "criterion": "Measured coverage & metric classification engine active",
+        "passed": true
+      },
+      {
+        "level": "L5",
+        "title": "Optimization & Predictive Risk",
+        "criterion": "Cyber Weather and release probability forecasting enabled",
+        "passed": true
+      },
+      {
+        "level": "L6",
+        "title": "Autonomous Governance",
+        "criterion": "AI Council consensus engine and automated PRR gating enabled",
+        "passed": true
+      },
+      {
+        "level": "L7",
+        "title": "Federated Verification",
+        "criterion": "Standalone offline verifier CLI and OSAP v2 core passport active",
+        "passed": true
+      }
+    ],
+    "all_levels_passed": true,
+    "timestamp": "2026-07-31T21:14:59.401Z"
+  },
+  "supply_chain_status": {
+    "sbom_verified": true,
+    "vulnerabilities": 0,
+    "signed_packages": 142
+  }
+}

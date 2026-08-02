@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 27,
+  "checkpoint_name": "SCM Ecosystem Certification",
+  "domain": "SCM_ECOSYSTEM",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "scm_ecosystem_verification.json",
+      "sha256": "64630df47105a6b1bf8bb4729848c0bd67e295f4132328e990c3a6fb8b3add01",
+      "bytes": 664
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.130Z"
+}

@@ -1,0 +1,32 @@
+{
+  "module": "CustomerPilotOperations",
+  "phase": "22",
+  "stream": "R6",
+  "timestamp": "2026-08-01T20:31:58+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "telemetry": {
+      "engineType": "CONTINUOUS_PILOT_TELEMETRY_ENGINE",
+      "activePilotTenantsCount": 12,
+      "monitoredUserSessionsCount": 2480,
+      "telemetryIntegrityRatePercent": 100,
+      "status": "COLLECTED"
+    },
+    "slaLedger": {
+      "ledgerType": "DELIVERED_SLA_PROOF_LEDGER",
+      "committedSlaPercent": 99.9,
+      "deliveredSlaPercent": 99.999,
+      "slaBreachIncidentsCount": 0,
+      "slaProofHash": "sha256:7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069",
+      "status": "PROVED"
+    },
+    "customerOutcome": {
+      "archiveType": "CUSTOMER_OUTCOME_ARCHIVE",
+      "verifiedCustomerNpsScore": 92,
+      "verifiedCustomerCsatScore": 4.8,
+      "customerRenewalForecastPercent": 100,
+      "archiveHash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "ARCHIVED"
+    }
+  }
+}

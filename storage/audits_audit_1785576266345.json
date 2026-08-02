@@ -1,0 +1,10 @@
+{
+  "auditId": "audit_1785576266345",
+  "status": "SUCCESS",
+  "timestamp": "2026-08-01T09:24:26.345Z",
+  "hostEnvironment": "VPS",
+  "edition": "Community",
+  "nodesAudited": 42,
+  "trustScore": 98.5,
+  "complianceStatus": "PASSED"
+}

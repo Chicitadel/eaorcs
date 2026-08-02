@@ -1,0 +1,10 @@
+{
+  "assessmentId": "SEC-ASSUR-6C2E9D7B",
+  "sastStatus": "PASS",
+  "dastStatus": "PASS",
+  "zeroTrustCompliance": "VERIFIED_STRICT",
+  "vulnerabilitiesFound": 0,
+  "sbomSigned": true,
+  "signature": "2ab7efcf8e6468efd76199d357e2221691826f34e7c378981fd39161e02ec614",
+  "validatedAt": "2026-08-02T16:24:21.656Z"
+}

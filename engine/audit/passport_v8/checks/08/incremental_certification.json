@@ -1,0 +1,40 @@
+{
+  "mode": "INCREMENTAL_REVALIDATION",
+  "changed_components_count": 1,
+  "total_checkpoints": 33,
+  "affected_checkpoints": 3,
+  "revalidated_checkpoints": 3,
+  "skipped_checkpoints": 30,
+  "time_saved_pct": 90.9,
+  "dependency_dag": [
+    {
+      "id": "chk_repo_snapshot",
+      "depends_on": []
+    },
+    {
+      "id": "chk_compilation",
+      "depends_on": [
+        "chk_repo_snapshot"
+      ]
+    },
+    {
+      "id": "chk_build",
+      "depends_on": [
+        "chk_compilation"
+      ]
+    },
+    {
+      "id": "chk_openapi_validation",
+      "depends_on": [
+        "chk_build"
+      ]
+    },
+    {
+      "id": "chk_passport_seal",
+      "depends_on": [
+        "chk_openapi_validation"
+      ]
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:28.993Z"
+}

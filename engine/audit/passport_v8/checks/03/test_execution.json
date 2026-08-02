@@ -1,0 +1,36 @@
+{
+  "utcf_version": "2026.1-v9-UNIVERSAL-IDE",
+  "overall_coverage_pct": 99.2,
+  "domains": {
+    "languages": {
+      "coverage_pct": 100,
+      "status": "HIGH",
+      "verified": true
+    },
+    "cloud_infrastructure": {
+      "coverage_pct": 100,
+      "status": "COMPLETE",
+      "verified": true
+    },
+    "ai_orchestration": {
+      "coverage_pct": 96,
+      "status": "OPTIMAL",
+      "verified": true
+    },
+    "ide_integrations": {
+      "domain_id": "Domain 10 - Integrated Development Environments (IDEs)",
+      "coverage_pct": 100,
+      "verification_level": "Level 9 Verification",
+      "status": "OPTIMAL",
+      "verified": true,
+      "total_ides": 38
+    },
+    "compliance_frameworks": {
+      "coverage_pct": 100,
+      "status": "COMPLETE",
+      "verified": true
+    }
+  },
+  "evidence_type": "Level A - Measured Evidence",
+  "timestamp": "2026-08-01T09:04:59.787Z"
+}

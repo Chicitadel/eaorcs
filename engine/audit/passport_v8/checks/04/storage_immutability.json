@@ -1,0 +1,9 @@
+{
+  "immutable": true,
+  "storage_backend": "WORM",
+  "retention_years": 7,
+  "deletion_policy": "Never",
+  "backend_supported": true,
+  "compliance_status": "COMPLIANT",
+  "timestamp": "2026-08-01T09:01:28.973Z"
+}

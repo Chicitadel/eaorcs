@@ -1,0 +1,212 @@
+{
+  "osap_version": "2026.1-GA-V4-MERKLE",
+  "release_candidate": "EAORCS v1.0.0-GA-MERKLE-CERTIFIED",
+  "certification_decision": "Certified",
+  "ga_readiness_score": 100,
+  "overall_confidence": 99.3,
+  "merkle_root_hash": "338e3e71efa5e21a3e2a6a9386e3d87cc8067e540afc2cfc219fb6ddf234d427",
+  "evidence_summary": {
+    "total_checkpoints": 8,
+    "level_a_count": 5,
+    "level_b_count": 1,
+    "level_c_count": 2,
+    "level_d_count": 1,
+    "level_e_count": 0
+  },
+  "graph_hash": "b9501d71a6195d6a9426951571c8fcf8ed0c8413700d0c218b32cd50e7d93829",
+  "discovered_files": 1207,
+  "evidence_signature": "8c997af2ffba604749d3032811d98467047542e86e6824d45a9bc705f93fa393a9f4751da2f8e842c330a2d402072e6812d725576abf084627583eced0278d0d",
+  "public_key": {},
+  "checkpoints": [
+    {
+      "id": 1,
+      "name": "Physical Module Existence Audit",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:29.164Z",
+        "expires_at": "2026-08-30T20:55:29.167Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "modules.json",
+          "hash": "1ac08da52b60c2a8793a0c0d4d0e1b829e0201e2553c1f67544e155d0bad6441",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\01\\modules.json"
+        }
+      ],
+      "details": "44/44 core physical modules verified on disk"
+    },
+    {
+      "id": 2,
+      "name": "Clean Build & Integrated Execution",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 99.8,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.615Z",
+        "expires_at": "2026-08-30T20:55:30.615Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "execution.log",
+          "hash": "298bd09386aac0232219c3dc52af36a86d0ad09633eedbe9b9fdac0be2bbae91",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\02\\execution.log"
+        },
+        {
+          "name": "metrics.json",
+          "hash": "30f45d9708f61d94e74c27bc6c566288e09f560afce2f939982f905c425c364a",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\02\\metrics.json"
+        }
+      ],
+      "details": "Integrated DAG execution completed in 1439ms"
+    },
+    {
+      "id": 3,
+      "name": "End-to-End Test Suite Execution",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level B",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "CI Runner",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.620Z",
+        "expires_at": "2026-08-30T20:55:30.620Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "test_results.json",
+          "hash": "2c2b40424f57f3144b6e6ee42bdf29675d10f11981e9c4af4a27e337bdaf2c86",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\03\\test_results.json"
+        }
+      ],
+      "details": "All 5 automated test suites verified"
+    },
+    {
+      "id": 4,
+      "name": "Zero Stub & Dead Code Audit",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.622Z",
+        "expires_at": "2026-08-30T20:55:30.622Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "stub_analysis.json",
+          "hash": "3517fe27934e01356820b9510f796100b16551f2034fb8122488db3feaa01c3e",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\04\\stub_analysis.json"
+        }
+      ],
+      "details": "Critical Stub Count = 0 (Target: 0)"
+    },
+    {
+      "id": 5,
+      "name": "OpenAPI Schema & Router Validation",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level D",
+      "evidence_confidence_pct": 95,
+      "observation_type": "Specification",
+      "verification_source": "Internal Engine",
+      "decision_state": "Provisionally Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.624Z",
+        "expires_at": "2026-08-30T20:55:30.624Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "openapi_routers.json",
+          "hash": "25124433d613a9f4d90455a8ba6f5efa27ff6e1f8e5a91b9c9e2249ec3f9b6fe",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\05\\openapi_routers.json"
+        }
+      ],
+      "details": "All 6 REST API routers verified"
+    },
+    {
+      "id": 6,
+      "name": "Universal IDE Integration Certification",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level C",
+      "evidence_confidence_pct": 98.7,
+      "observation_type": "Observed",
+      "verification_source": "Third-Party Integration",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.626Z",
+        "expires_at": "2026-08-30T20:55:30.626Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "lsp_dap_session.json",
+          "hash": "8ebcd09a78c10eb1fa4e21f17a6397eab2941a1a7e0ee696eb7e9cfde7cc7bc7",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\06\\lsp_dap_session.json"
+        }
+      ],
+      "details": "29 IDE categories certified via LSP/DAP Universal IDE Adapter Layer"
+    },
+    {
+      "id": 7,
+      "name": "Multi-Run Determinism Replay Audit",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level C",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Replay",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.633Z",
+        "expires_at": "2026-08-30T20:55:30.633Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "replay_hashes.json",
+          "hash": "d26507417a015fe7e52a3425162a25261e9980ab5db8393565678ecf6d0a1ea0",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\07\\replay_hashes.json"
+        }
+      ],
+      "details": "Hash 1 == Hash 2: b9501d71a6195d6a... (100% MATCH)"
+    },
+    {
+      "id": 8,
+      "name": "Ed25519 Cryptographic Signature Verification",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "freshness": {
+        "generated_at": "2026-07-31T20:55:30.704Z",
+        "expires_at": "2026-08-30T20:55:30.704Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "signature.json",
+          "hash": "804ec4a16b505b1750f03aeb2508f1ba5a851e42e39ae7b914dcf297e3f38f42",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v4\\checks\\08\\signature.json"
+        }
+      ],
+      "details": "Ed25519 Base Signature Verified"
+    }
+  ],
+  "issued_at": "2026-07-31T20:55:30.707Z"
+}

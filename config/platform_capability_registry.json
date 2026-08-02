@@ -1,0 +1,19 @@
+{
+  "project": "Universal Autonomous AI Governance Operating System",
+  "version": "3.0.0",
+  "classification": "ENTERPRISE",
+  "capabilities": {
+    "identity": { "enabled": true, "endpoint": "/v1/identity" },
+    "telemetry": { "enabled": true, "endpoint": "/v1/telemetry" },
+    "licensing": { "enabled": true, "endpoint": "/v1/licensing" },
+    "support": { "enabled": true, "endpoint": "/v1/support" },
+    "billing": { "enabled": true, "endpoint": "/v1/billing" },
+    "products": { "enabled": true, "endpoint": "/v1/products" },
+    "akpati": { "enabled": true, "version": "latest" },
+    "consunexia": { "enabled": true, "version": "latest" },
+    "civiscore": { "enabled": true, "version": "latest" },
+    "mandatag": { "enabled": true, "version": "latest" },
+    "aerobill": { "enabled": true, "version": "latest" },
+    "eaorcs": { "enabled": true, "version": "latest" }
+  }
+}

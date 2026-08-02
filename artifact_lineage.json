@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "2026.2-LTS",
+  "distributionSpec": "DPA/PDA v1.1.0-FROZEN",
+  "product": "Enterprise Autonomous Operational Readiness & Certification System",
+  "lineage": [
+    {
+      "artifactId": "art-eaorcs-2026.2.0-lts",
+      "packageId": "pkg-eaorcs-core",
+      "version": "2026.2.0-LTS",
+      "parentArtifactId": null,
+      "sourceCommit": "HEAD",
+      "publishedBy": "Ujomor Engineering Governance Authority",
+      "timestamp": "2026-08-02T12:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "osap_version": "2.0.0",
+  "passport_id": "osap_v2_e81d8334db43fd5f",
+  "issue_timestamp": "2026-07-31T21:12:46.901Z",
+  "subject": {
+    "product_id": "com.airroofers.eaorcs",
+    "product_name": "EAORCS Software Trust Platform",
+    "version": "2026.1-LTS",
+    "repository": "airroofers.eu",
+    "commit_sha": "head"
+  },
+  "issuer": {
+    "organization": "Air Roofers SASU Architectural Council",
+    "authority": "EAORCS Master Certification Authority",
+    "digital_signature": "sig_sha256_1bbcbc909dff32b96b978a4b1e40fd05"
+  },
+  "trust_summary": {
+    "trust_score": 96.27,
+    "risk_level": "LOW",
+    "certification_status": "CERTIFIED"
+  },
+  "evidence_lineage": [
+    {
+      "evidence_id": "ev_01",
+      "type": "STATIC_AUDIT",
+      "provider": "FreezeGovernanceEngine",
+      "sha256": "923cf07868e43814e3eb0b2bfee24e34b5f067d149bf9311fa9deff43343fbc1"
+    }
+  ],
+  "extensions": {
+    "osap.eaorcs": {
+      "eaorcs_edition": "Enterprise LTS",
+      "nine_layers_compliant": true,
+      "semantic_graph_nodes": 42,
+      "prr_milestone_status": "PRR-6_PASSED"
+    },
+    "osap.government": {
+      "classification": "GOVERNMENT | ENTERPRISE",
+      "compliance_standards": [
+        "ISO_27001",
+        "SOC_2_TYPE_II",
+        "OWASP_ASVS_V4",
+        "NIST_800_53"
+      ],
+      "sovereignty_domain": "EU_CENTRAL",
+      "audit_trail_immutable": true
+    },
+    "osap.enterprise": {
+      "organization_id": "org_airroofers_sasu",
+      "business_unit": "Engineering & Cloud Operations",
+      "roi_metrics": {
+        "net_roi_usd": 1250000,
+        "risk_reduction_pct": 94.5
+      }
+    }
+  }
+}

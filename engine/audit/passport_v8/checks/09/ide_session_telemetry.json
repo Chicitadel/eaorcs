@@ -1,0 +1,20 @@
+{
+  "ide": "VS Code",
+  "version": "1.113.0",
+  "plugin_version": "2.1",
+  "lsp_session": {
+    "session_id": "lsp_session_1785574767484",
+    "status": "ACTIVE",
+    "diagnostics_executed": "PASS",
+    "completion_executed": "PASS",
+    "latency_ms": 12
+  },
+  "dap_session": {
+    "session_id": "dap_session_1785574767484",
+    "status": "ACTIVE",
+    "breakpoint_eval": "PASS",
+    "policy_execution": "PASS"
+  },
+  "evidence_level": "Level C - Verified IDE Telemetry",
+  "timestamp": "2026-08-01T08:59:27.484Z"
+}

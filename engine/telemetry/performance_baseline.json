@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-07-31T20:38:28.470Z",
+  "target_directory": "d:\\ujomor-platform\\airroofers.eu",
+  "discovered_files_count": 1192,
+  "graph_execution_time_ms": 521,
+  "evidence_generation_time_ms": 3,
+  "replay_duration_ms": 1,
+  "total_pipeline_duration_ms": 525,
+  "peak_memory_heap_mb": 9.2,
+  "replay_verified": true
+}

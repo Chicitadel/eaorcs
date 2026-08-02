@@ -1,0 +1,115 @@
+{
+  "auditId": "audit_1785579184844",
+  "status": "SUCCESS",
+  "timestamp": "2026-08-01T10:13:04.844Z",
+  "hostEnvironment": "VPS",
+  "edition": "Community",
+  "trustReport": {
+    "trustScore": 40.12,
+    "baseScore": 75.12,
+    "tier": "UNTRUSTED",
+    "components": {
+      "readiness": 95.98,
+      "evidenceConfidence": 0.3,
+      "statisticalConfidence": 0.9632,
+      "confidenceMultiplier": 0.7826
+    },
+    "weights": {
+      "readiness": 0.5,
+      "evidence": 0.3,
+      "confidence": 0.2
+    },
+    "penalties": {
+      "totalPenalty": 35,
+      "breakdown": [
+        {
+          "factor": "CRITICAL_SECURITY_GAPS",
+          "count": 1,
+          "penalty": 25
+        },
+        {
+          "factor": "HIGH_SECURITY_GAPS",
+          "count": 1,
+          "penalty": 10
+        }
+      ]
+    },
+    "domainScores": {},
+    "calculatedAt": "2026-08-01T10:13:04.842Z"
+  },
+  "readinessEval": {
+    "readinessScore": 95.98,
+    "maturityLevel": "LEVEL_3_SERVICE_ORIENTED",
+    "domainScores": {
+      "ARCHITECTURE_INTEGRITY": 100,
+      "CODE_QUALITY": 100,
+      "SECURITY_VULNERABILITIES": 70,
+      "COMPLIANCE_GOVERNANCE": 85,
+      "CRYPTOGRAPHIC_PROTECTION": 100,
+      "PERFORMANCE_SCALABILITY": 100,
+      "OBSERVABILITY_TELEMETRY": 100,
+      "TEST_COVERAGE_QUALITY": 100,
+      "DEPENDENCY_RISK": 100,
+      "INFRASTRUCTURE_AS_CODE": 100,
+      "CICD_PIPELINE": 100,
+      "SECRETS_ISOLATION": 100,
+      "DATA_PRIVACY_GDPR": 100,
+      "RESILIENCE_DISASTER_RECOVERY": 100,
+      "PROTOCOL_FREEZE": 95
+    },
+    "domainStatus": {
+      "ARCHITECTURE_INTEGRITY": "READY",
+      "CODE_QUALITY": "READY",
+      "SECURITY_VULNERABILITIES": "GAPS_IDENTIFIED",
+      "COMPLIANCE_GOVERNANCE": "READY",
+      "CRYPTOGRAPHIC_PROTECTION": "READY",
+      "PERFORMANCE_SCALABILITY": "READY",
+      "OBSERVABILITY_TELEMETRY": "READY",
+      "TEST_COVERAGE_QUALITY": "READY",
+      "DEPENDENCY_RISK": "READY",
+      "INFRASTRUCTURE_AS_CODE": "READY",
+      "CICD_PIPELINE": "READY",
+      "SECRETS_ISOLATION": "READY",
+      "DATA_PRIVACY_GDPR": "READY",
+      "RESILIENCE_DISASTER_RECOVERY": "READY",
+      "PROTOCOL_FREEZE": "READY"
+    },
+    "domainGaps": {
+      "SECURITY_VULNERABILITIES": [
+        {
+          "id": "FND-02",
+          "domain": "SECURITY_VULNERABILITIES",
+          "status": "PASSED",
+          "severity": "CRITICAL"
+        }
+      ]
+    },
+    "totalGapsCount": 1,
+    "blockingGapsCount": 1,
+    "evaluatedDomainsCount": 15,
+    "isReadyForProduction": false,
+    "evaluatedAt": "2026-08-01T10:13:04.838Z"
+  },
+  "prediction": {
+    "predictedFailureProbability": 0.3557,
+    "failureProbabilityPercentage": 35.57,
+    "riskRating": "HIGH",
+    "decision": "NO_GO",
+    "environment": "PRODUCTION",
+    "confidence": 0.92,
+    "primaryRiskFactors": [
+      "Low Trust Score (40.12%)"
+    ],
+    "threshold": 0.35,
+    "evalMetrics": {
+      "trustScore": 40.12,
+      "readinessScore": 95.98,
+      "criticalSecurityGaps": 0,
+      "highSecurityGaps": 0,
+      "codeVolatilityRatio": 0.15,
+      "testPassRate": 0.95
+    },
+    "evaluatedAt": "2026-08-01T10:13:04.843Z"
+  },
+  "merkleRoot": "aa3954d018f977751a03fe38bb80a3e4b7e6ad30ae3dd40d90da51ed3634be88"
+}

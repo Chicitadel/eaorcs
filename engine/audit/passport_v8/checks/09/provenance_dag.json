@@ -1,0 +1,139 @@
+{
+  "nodes": [
+    {
+      "id": "node_commit",
+      "type": "Commit",
+      "hash": "b67bc23d66445de2f1a882f2ce876e70206f1d2575be21ecb2c11f9d6166defe",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": null,
+      "data": {
+        "commit_sha": "v8.1-001",
+        "repo": "airroofers.eu",
+        "author": "Human Author"
+      }
+    },
+    {
+      "id": "node_build",
+      "type": "Build",
+      "hash": "5e8fef8cc64d16f5add48d5cbd152424c06c3ee297924c21bb84131ed3e6d0ff",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": "node_commit",
+      "data": {
+        "build_id": "b_1001",
+        "status": "SUCCESS"
+      }
+    },
+    {
+      "id": "node_sbom",
+      "type": "SBOM",
+      "hash": "c9c5d7ec70a2ad4f3458949f67f7b0e2f06c5120af906587a7c86445affb41ca",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": "node_build",
+      "data": {
+        "format": "CycloneDX",
+        "package_count": 142
+      }
+    },
+    {
+      "id": "node_container",
+      "type": "Container",
+      "hash": "dba6df39a5eb2ce2d2fe892b3dad83fd1cb1ce95c38b2546ce78a2308a778f62",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": "node_sbom",
+      "data": {
+        "image_digest": "sha256:4a3b8c9d..."
+      }
+    },
+    {
+      "id": "node_deployment",
+      "type": "Deployment",
+      "hash": "2be928148f3fa6f52727000e55250b9e336ef65f4497e933627e47c53d71ffb5",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": "node_container",
+      "data": {
+        "env": "production",
+        "cluster": "eu-central-1"
+      }
+    },
+    {
+      "id": "node_runtime",
+      "type": "Runtime",
+      "hash": "0c4c8c0780678d90638510c91295764cef2837e35fc0da6823170e44c1aeb429",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": "node_deployment",
+      "data": {
+        "uptime_sec": 86400,
+        "health": "OPTIMAL"
+      }
+    },
+    {
+      "id": "node_telemetry",
+      "type": "Telemetry",
+      "hash": "5c6818fcf297f101fe0e899089e3a60c140f172c92f5f4727e50df2aecf9cceb",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.211Z",
+      "parent_id": "node_runtime",
+      "data": {
+        "metrics_logged": 4820,
+        "error_rate": 0
+      }
+    },
+    {
+      "id": "node_passport",
+      "type": "Passport",
+      "hash": "b8dd736e0756e92465838f39fa48b33516b825294617317c039a41ecf855be6c",
+      "signer": "EAORCS_PROVENANCE_AUTHORITY",
+      "timestamp": "2026-08-01T08:56:58.212Z",
+      "parent_id": "node_telemetry",
+      "data": {
+        "osap_version": "2.0.0",
+        "status": "CERTIFIED"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_commit",
+      "target": "node_build",
+      "relation": "derivedFrom"
+    },
+    {
+      "source": "node_build",
+      "target": "node_sbom",
+      "relation": "derivedFrom"
+    },
+    {
+      "source": "node_sbom",
+      "target": "node_container",
+      "relation": "derivedFrom"
+    },
+    {
+      "source": "node_container",
+      "target": "node_deployment",
+      "relation": "derivedFrom"
+    },
+    {
+      "source": "node_deployment",
+      "target": "node_runtime",
+      "relation": "derivedFrom"
+    },
+    {
+      "source": "node_runtime",
+      "target": "node_telemetry",
+      "relation": "derivedFrom"
+    },
+    {
+      "source": "node_telemetry",
+      "target": "node_passport",
+      "relation": "derivedFrom"
+    }
+  ],
+  "total_nodes": 8,
+  "lineage_complete": true
+}

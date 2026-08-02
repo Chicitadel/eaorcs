@@ -1,0 +1,26 @@
+{
+  "certificate": {
+    "certificateId": "EAORCS-CERT-GOLD-1785687873522-06D0BB0D",
+    "version": "2.0.0",
+    "tier": "GOLD",
+    "issuer": "EAORCS Software Certification Authority (UAIGOS v2026.1)",
+    "subject": {
+      "name": "EAORCS Workspace",
+      "version": "2026.1.0-lts",
+      "repository": "workspace://local",
+      "commitHash": "HEAD",
+      "merkleRoot": "0x09853c11992cae745c44c6812cb84c44eebde6874a45b3775225df6cf6f61e40"
+    },
+    "trustMetrics": {
+      "trustScore": 99.5,
+      "readinessScore": 100,
+      "evidenceConfidence": 1,
+      "statisticalConfidence": 1
+    },
+    "issuedAt": "2026-08-02T16:24:33.516Z",
+    "expiresAt": "2026-10-31T16:24:33.516Z",
+    "classification": "ENTERPRISE_GOVERNED"
+  },
+  "signatureAlgorithm": "HMAC-SHA256",
+  "signature": "6553005dfa2f59bc6025602d6c417f82b749a67729bc463105f10a3056f7eb92"
+}

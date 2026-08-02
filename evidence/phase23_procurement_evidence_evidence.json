@@ -1,0 +1,23 @@
+{
+  "module": "Automated Procurement Package Generator",
+  "phase": "Phase 23",
+  "stream": "Stream L7",
+  "timestamp": "2026-08-01T20:40:06.000Z",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "AUTOMATED_PROCUREMENT_PACKAGE_ENGINE",
+    "commitSha": "a4f8e2d9c3b17f2e1a498801",
+    "compiledDocumentsCount": 72,
+    "downloadUrl": "https://procurement.airroofers.eu/bundles/rfp-2026-v3.zip",
+    "packageChecksum": "sha256:8b3e8db4f79612a4a34b2f153a7a9223ef38290382d3345d315f69d3f11d1a66",
+    "generationStatus": "GENERATED",
+    "compilerType": "RFP_EVIDENCE_GRAPH_COMPILER",
+    "mappedRequirementsCount": 180,
+    "evidenceCoveragePercent": 100,
+    "compilerStatus": "COMPLETE",
+    "manifestType": "DUE_DILIGENCE_EXPORT_MANIFEST",
+    "exportedManifestCount": 20,
+    "manifestHash": "sha256:7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069",
+    "status": "VERIFIED"
+  }
+}

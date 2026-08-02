@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 7,
+  "checkpoint_name": "Cross-Platform Path Normalization",
+  "domain": "SYSTEM_PATHS",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "path_normalization.json",
+      "sha256": "2bc0234dfe33434a061e7a0828cb00b6a501e4aef7ba92b91ef78c0daf54b96d",
+      "bytes": 59
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.798Z"
+}

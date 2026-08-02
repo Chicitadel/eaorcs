@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAORCS v3.5 Operational Readiness Dashboard</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-orange: #f59e0b;
+            --border-color: #334155;
+        }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg-dark); color: var(--text-main); margin: 0; padding: 32px; line-height: 1.5; }
+        .container { max-width: 1400px; margin: 0 auto; }
+        .header { background: var(--bg-card); padding: 32px; border-radius: 16px; border: 1px solid var(--border-color); margin-bottom: 32px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; }
+        .title { margin: 0; font-size: 28px; font-weight: 800; color: #ffffff; letter-spacing: -0.5px; }
+        .subtitle { margin: 8px 0 0 0; color: var(--text-muted); font-size: 14px; }
+        .hero-metrics { display: flex; align-items: center; gap: 24px; margin-top: 24px; flex-wrap: wrap; }
+        .status-badge { padding: 10px 24px; border-radius: 8px; font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .status-approved { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid #059669; }
+        .status-blocked { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid #dc2626; }
+        .score-pill { font-size: 36px; font-weight: 900; color: var(--accent-blue); }
+        .score-label { font-size: 12px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 1px; }
+
+        .section-title { font-size: 20px; font-weight: 700; margin: 32px 0 16px 0; color: #ffffff; display: flex; align-items: center; gap: 8px; }
+        
+        .gates-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .gate-card { background: var(--bg-card); padding: 16px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; }
+        .gate-name { font-size: 14px; font-weight: 600; }
+        .gate-status { font-weight: 700; font-size: 12px; padding: 4px 10px; border-radius: 6px; }
+        .gate-pass .gate-status { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+        .gate-fail .gate-status { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+        table { width: 100%; border-collapse: collapse; background: var(--bg-card); border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); margin-bottom: 32px; }
+        th, td { padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--border-color); font-size: 14px; }
+        th { background: #0b1329; color: var(--accent-blue); font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: 0.5px; }
+        tr:hover { background: var(--bg-card-hover); }
+
+        .badge { padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+        .badge-pass { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+        .badge-fail { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+        .badge-neutral { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
+        .badge-warn { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+        .badge-critical { background: rgba(239, 68, 68, 0.3); color: #fca5a5; }
+        .badge-high { background: rgba(245, 158, 11, 0.25); color: #fcd34d; }
+        .badge-medium { background: rgba(56, 189, 248, 0.2); color: #7dd3fc; }
+
+        .score-container { display: flex; align-items: center; gap: 12px; }
+        .score-num { font-weight: 700; width: 60px; }
+        .score-bar { flex: 1; height: 6px; background: #334155; border-radius: 3px; overflow: hidden; }
+        .score-fill { height: 100%; background: linear-gradient(90deg, #38bdf8, #10b981); border-radius: 3px; }
+
+        .findings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .finding-card { background: var(--bg-card); padding: 18px; border-radius: 12px; border: 1px solid var(--border-color); }
+        .finding-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .finding-id { font-weight: 700; font-family: monospace; color: var(--accent-blue); }
+        .finding-desc { font-size: 14px; margin-bottom: 8px; color: #f1f5f9; }
+        .finding-file, .finding-rem { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        a { color: var(--accent-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .footer-links { background: var(--bg-card); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; gap: 24px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+        .resource-group { display: flex; gap: 16px; flex-wrap: wrap; }
+        .btn-link { background: #334155; color: #ffffff; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 13px; text-decoration: none; transition: background 0.2s; }
+        .btn-link:hover { background: #475569; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div>
+                    <h1 class="title">EAORCS v3.5 Operational Readiness Dashboard</h1>
+                    <p class="subtitle">Target Platform: <strong>airroofers.eu (33 Subdomains)</strong> | Generated At: <strong>2026-07-31T14:13:29.5618156Z</strong> | Commit: <code>df4f9d0e9f6728cd1b6041210bdbfbc2048a2cfd</code></p>
+                </div>
+                <div class="status-badge status-approved">
+                    APPROVED
+                </div>
+            </div>
+            <div class="hero-metrics">
+                <div>
+                    <div class="score-label">Overall Readiness Score</div>
+                    <div class="score-pill">99.15 / 100</div>
+                </div>
+                <div>
+                    <div class="score-label">Production Status</div>
+                    <div style="font-weight: 700; font-size: 18px; color: #10b981;">YES - CERTIFIED</div>
+                </div>
+                <div>
+                    <div class="score-label">Evaluated Engines</div>
+                    <div style="font-weight: 700; font-size: 18px;">51 Active Engines</div>
+                </div>
+                <div>
+                    <div class="score-label">Blocking Findings</div>
+                    <div style="font-weight: 700; font-size: 18px;">Total: 35 | Critical: 0 | High: 0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title">🛡️ 10 Layered Release Gates</div>
+        <div class="gates-grid">
+            
+        <div class="gate-card gate-pass">
+            <div class="gate-name">UX Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Governance Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Code Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Business Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Performance Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Runtime Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Architecture Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Integration Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Security Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        <div class="gate-card gate-pass">
+            <div class="gate-name">Documentation Gate</div>
+            <div class="gate-status">PASS</div>
+        </div>
+        </div>
+
+        <div class="section-title">📊 30 Engine Evaluation Matrix</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Engine ID</th>
+                    <th>Audit Engine Name</th>
+                    <th style="width: 250px;">Score</th>
+                    <th>Status</th>
+                    <th>Confidence Level</th>
+                    <th>Findings</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td><code>00-governance</code></td>
+            <td><strong>Governance Policy Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">90/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 90%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A (Runtime Verification)</td>
+            <td><span class="badge badge-warn">1 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>01-documentation</code></td>
+            <td><strong>Documentation Synchronization Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level E (Documentation Verification)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>02-architecture</code></td>
+            <td><strong>Architecture Topology Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>03-subdomain</code></td>
+            <td><strong>Subdomain & Multi-Tenant Routing Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Routing Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>04-ingress</code></td>
+            <td><strong>Ingress Gateway & Front Controller Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A/D Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>05-endpoints</code></td>
+            <td><strong>API Endpoints 16-Point Wiring Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static AST & Pattern Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>06-business-logic</code></td>
+            <td><strong>Business Logic Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Code Inspection)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>07-controller</code></td>
+            <td><strong>Controller Layer Hygiene Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>08-service</code></td>
+            <td><strong>Service Layer Isolation Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>09-repository</code></td>
+            <td><strong>Repository & Database Query Safety Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>10-storage</code></td>
+            <td><strong>Storage & Asset Integrity Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Inspection)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>11-authentication</code></td>
+            <td><strong>Authentication & Identity Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A/D Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>12-authorization</code></td>
+            <td><strong>Authorization & RBAC Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>13-configuration</code></td>
+            <td><strong>Configuration & Code Debt Classification Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">90/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 90%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Lexical AST Analysis)</td>
+            <td><span class="badge badge-warn">34 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>22-runtime</code></td>
+            <td><strong>Runtime Execution & Web Server Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A (Runtime HTTP Verification)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>14-ui</code></td>
+            <td><strong>UI Component Classification Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static CSS/DOM Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>15-ux</code></td>
+            <td><strong>UX Experience & State Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A/D Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>16-branding</code></td>
+            <td><strong>Branding & Graphic Asset Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Asset Verification)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>17-localization</code></td>
+            <td><strong>Localization & i18n Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D (Static Dictionary Analysis)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>23-browser</code></td>
+            <td><strong>Browser Automation & Visual UX Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A (Runtime Headless Browser Execution)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>18-security</code></td>
+            <td><strong>OWASP Security Baseline Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D/A Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>undefined</code></td>
+            <td><strong>undefined</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-fail">undefined</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>19-performance</code></td>
+            <td><strong>Performance & Accessibility Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">98/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 98%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A (Runtime Lighthouse Execution)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>20-observability</code></td>
+            <td><strong>Observability & Telemetry Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D/A Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>21-testing</code></td>
+            <td><strong>Automated Test Suite & Journey Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level B (Automated Execution Verification)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>24-integration</code></td>
+            <td><strong>Cross-Service Integration & Event Bus Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D/A Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>25-documentation-sync</code></td>
+            <td><strong>Multi-Source Drift Detection Audit</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level D/E Cross-Source Drift Verification</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>26-remediation</code></td>
+            <td><strong>Automated Remediation Backlog Engine</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>27-scorecard</code></td>
+            <td><strong>Executive Operational Scorecard Engine</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>28-release-gate</code></td>
+            <td><strong>11 Layered Release Gate Evaluation Engine</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">N/A/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A/D</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+        <tr>
+            <td><code>29-evidence</code></td>
+            <td><strong>Immutable Evidence Ledger Engine</strong></td>
+            <td>
+                <div class="score-container">
+                    <span class="score-num">100/100</span>
+                    <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+                </div>
+            </td>
+            <td><span class="badge badge-pass">PASS</span></td>
+            <td>Level A (Cryptographic SHA256 Evidence Ledger)</td>
+            <td><span class="badge badge-neutral">0 findings</span></td>
+        </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title">🔍 Detailed Audit Findings & Remediation</div>
+        <div class="findings-grid">
+            
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-GOV-004</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">No Architecture Decision Records found in adr/</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/adr/" target="_blank">adr/</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Document baseline ADRs in adr/</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DUPLICATE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'duplicate' marker in \src\Services\AITriageEngine.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/src\Services\AITriageEngine.php" target="_blank">\src\Services\AITriageEngine.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'duplicate' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-LEGACY</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'legacy' marker in \public_html\run_phpunit_tests.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\run_phpunit_tests.php" target="_blank">\public_html\run_phpunit_tests.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'legacy' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-LEGACY</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'legacy' marker in \public_html\assets\index-BAcTf1us.js</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\assets\index-BAcTf1us.js" target="_blank">\public_html\assets\index-BAcTf1us.js</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'legacy' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-FEATURE_FLAG</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'feature flag' marker in \public_html\assets\index-BAcTf1us.js</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\assets\index-BAcTf1us.js" target="_blank">\public_html\assets\index-BAcTf1us.js</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'feature flag' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DISABLED</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'disabled' marker in \public_html\assets\index-BAcTf1us.js</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\assets\index-BAcTf1us.js" target="_blank">\public_html\assets\index-BAcTf1us.js</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'disabled' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-EXAMPLE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'example' marker in \public_html\data\licenses.json</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\data\licenses.json" target="_blank">\public_html\data\licenses.json</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'example' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DEAD</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'dead' marker in \public_html\data\licenses.json</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\data\licenses.json" target="_blank">\public_html\data\licenses.json</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'dead' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-EXAMPLE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'example' marker in \public_html\data\platform_events.json</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\data\platform_events.json" target="_blank">\public_html\data\platform_events.json</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'example' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DEAD</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'dead' marker in \public_html\data\platform_events.json</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\data\platform_events.json" target="_blank">\public_html\data\platform_events.json</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'dead' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-EXAMPLE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'example' marker in \public_html\data\provisioned_workspaces.json</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\data\provisioned_workspaces.json" target="_blank">\public_html\data\provisioned_workspaces.json</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'example' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-EXAMPLE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'example' marker in \public_html\data\users.json</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\data\users.json" target="_blank">\public_html\data\users.json</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'example' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-LEGACY</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'legacy' marker in \public_html\platform-core\src\Security\Auth\Csrf.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\platform-core\src\Security\Auth\Csrf.php" target="_blank">\public_html\platform-core\src\Security\Auth\Csrf.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'legacy' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DUPLICATE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'duplicate' marker in \public_html\platform-core\src\Security\Auth\JwtMiddleware.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\platform-core\src\Security\Auth\JwtMiddleware.php" target="_blank">\public_html\platform-core\src\Security\Auth\JwtMiddleware.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'duplicate' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DUPLICATE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'duplicate' marker in \public_html\src\Controllers\AdminPortalController.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\src\Controllers\AdminPortalController.php" target="_blank">\public_html\src\Controllers\AdminPortalController.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'duplicate' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DEPRECATED</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'deprecated' marker in \public_html\src\Core\LicenseAuthority.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\src\Core\LicenseAuthority.php" target="_blank">\public_html\src\Core\LicenseAuthority.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'deprecated' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DUPLICATE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'duplicate' marker in \public_html\src\Repositories\SupportRepository.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\src\Repositories\SupportRepository.php" target="_blank">\public_html\src\Repositories\SupportRepository.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'duplicate' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-UNUSED</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'unused' marker in \public_html\src\Security\WebAuthn\CoseKeyConverter.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\src\Security\WebAuthn\CoseKeyConverter.php" target="_blank">\public_html\src\Security\WebAuthn\CoseKeyConverter.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'unused' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-LEGACY</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'legacy' marker in \public_html\src\Security\WebAuthn\WebAuthnService.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\src\Security\WebAuthn\WebAuthnService.php" target="_blank">\public_html\src\Security\WebAuthn\WebAuthnService.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'legacy' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DUPLICATE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'duplicate' marker in \public_html\src\Services\AITriageEngine.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\src\Services\AITriageEngine.php" target="_blank">\public_html\src\Services\AITriageEngine.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'duplicate' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\layout\header.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\layout\header.php" target="_blank">\public_html\views\layout\header.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\modules\dispatch\ai_classifier.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\modules\dispatch\ai_classifier.php" target="_blank">\public_html\views\modules\dispatch\ai_classifier.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\modules\dispatch\details_step.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\modules\dispatch\details_step.php" target="_blank">\public_html\views\modules\dispatch\details_step.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\modules\dispatch\identity_step.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\modules\dispatch\identity_step.php" target="_blank">\public_html\views\modules\dispatch\identity_step.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-MOCK</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'mock' marker in \public_html\views\pages\admin.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\admin.php" target="_blank">\public_html\views\pages\admin.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'mock' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\pages\admin.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\admin.php" target="_blank">\public_html\views\pages\admin.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DISABLED</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'disabled' marker in \public_html\views\pages\admin.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\admin.php" target="_blank">\public_html\views\pages\admin.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'disabled' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\pages\admin_config.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\admin_config.php" target="_blank">\public_html\views\pages\admin_config.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-FEATURE_FLAG</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'feature flag' marker in \public_html\views\pages\admin_config.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\admin_config.php" target="_blank">\public_html\views\pages\admin_config.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'feature flag' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DISABLED</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'disabled' marker in \public_html\views\pages\admin_config.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\admin_config.php" target="_blank">\public_html\views\pages\admin_config.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'disabled' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\pages\downloads.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\downloads.php" target="_blank">\public_html\views\pages\downloads.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-DISABLED</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'disabled' marker in \public_html\views\pages\downloads.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\downloads.php" target="_blank">\public_html\views\pages\downloads.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'disabled' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-low">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-SAMPLE</span>
+                    <span class="badge badge-low">LOW</span>
+                </div>
+                <div class="finding-desc">Detected 'sample' marker in \public_html\views\pages\invoice.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\invoice.php" target="_blank">\public_html\views\pages\invoice.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'sample' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\pages\products.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\products.php" target="_blank">\public_html\views\pages\products.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+            <div class="finding-card severity-medium">
+                <div class="finding-header">
+                    <span class="finding-id">EAORCS-DEBT-PLACEHOLDER</span>
+                    <span class="badge badge-medium">MEDIUM</span>
+                </div>
+                <div class="finding-desc">Detected 'placeholder' marker in \public_html\views\pages\support.php</div>
+                <div class="finding-file"><strong>File/Route:</strong> <a href="file:///D:/ujomor-platform/airroofers.eu/public_html\views\pages\support.php" target="_blank">\public_html\views\pages\support.php</a></div>
+                <div class="finding-rem"><strong>Remediation:</strong> Resolve 'placeholder' marker and replace with production implementation</div>
+            </div>
+        </div>
+
+        <div class="section-title">📦 Dynamic Evidence & Artifact Package Links</div>
+        <div class="footer-links">
+            <div class="resource-group">
+                <a href="file:///D:/ujomor-platform/airroofers.eu/reports/eaorcs_operational_readiness_certification_report.md" class="btn-link" target="_blank">📄 Markdown Report</a>
+                <a href="file:///D:/ujomor-platform/airroofers.eu/reports/eaorcs_remediation_backlog.json" class="btn-link" target="_blank">📋 Remediation Backlog JSON</a>
+                <a href="file:///D:/ujomor-platform/airroofers.eu/reports/eaorcs_canonical_results.json" class="btn-link" target="_blank">⚙️ Canonical Evaluation Object</a>
+                <a href="file:///D:/ujomor-platform/airroofers.eu/scratch/support_subsystem_v6.0.0_complete.zip" class="btn-link" target="_blank">📦 Deployment ZIP Package</a>
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted);">
+                SHA256 Cryptographic Evidence Ledger Verified • EAORCS Engine v3.5
+            </div>
+        </div>
+    </div>
+</body>
+</html>

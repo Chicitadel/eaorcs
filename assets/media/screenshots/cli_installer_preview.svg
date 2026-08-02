@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1017"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="#000000" rx="16"/>
+  <rect x="10" y="10" width="1180" height="655" fill="url(#term-bg)" stroke="rgba(0, 240, 255, 0.2)" stroke-width="2" rx="12"/>
+
+  <!-- Window Controls -->
+  <circle cx="36" cy="34" r="6" fill="#ef4444"/>
+  <circle cx="56" cy="34" r="6" fill="#f59e0b"/>
+  <circle cx="76" cy="34" r="6" fill="#10b981"/>
+  <text x="520" y="38" fill="#64748b" font-family="monospace" font-size="13">eaorcs-installer-doctor — bash - 120x40</text>
+
+  <line x1="10" y1="56" x2="1190" y2="56" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- ANSI Banner -->
+  <text x="40" y="90" fill="#00f0ff" font-family="monospace" font-size="13">================================================================================</text>
+  <text x="40" y="110" fill="#00f0ff" font-family="monospace" font-weight="bold" font-size="13">  ███████╗ █████╗  ██████╗ ██████╗  ██████╗██╗</text>
+  <text x="40" y="130" fill="#00f0ff" font-family="monospace" font-weight="bold" font-size="13">  ██╔════╝██╔══██╗██╔═══██╗██╔══██╗██╔════╝██║</text>
+  <text x="40" y="150" fill="#00f0ff" font-family="monospace" font-weight="bold" font-size="13">  █████╗  ███████║██║   ██║██████╔╝██║     ██║</text>
+  <text x="40" y="170" fill="#00f0ff" font-family="monospace" font-weight="bold" font-size="13">  ██╔══╝  ██╔══██║██║   ██║██╔══██╗██║     ╚═╝</text>
+  <text x="40" y="190" fill="#00f0ff" font-family="monospace" font-weight="bold" font-size="13">  ███████╗██║  ██║╚██████╔╝██║  ██║╚██████╗██╗</text>
+  <text x="40" y="210" fill="#00f0ff" font-family="monospace" font-weight="bold" font-size="13">  ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝</text>
+  <text x="40" y="230" fill="#00f0ff" font-family="monospace" font-size="13">================================================================================</text>
+  <text x="40" y="255" fill="#ffffff" font-family="monospace" font-weight="bold" font-size="14">  EAORCS SYSTEM DOCTOR &amp; DIAGNOSTIC SUITE (v2026.1.0-GA)</text>
+  <text x="40" y="275" fill="#00f0ff" font-family="monospace" font-size="13">================================================================================</text>
+
+  <!-- Output Lines -->
+  <text x="40" y="310" fill="#94a3b8" font-family="monospace" font-size="13">  Operating System: Windows_NT 10.0.19045 (x64)</text>
+  <text x="40" y="330" fill="#94a3b8" font-family="monospace" font-size="13">  CPU Cores:        8</text>
+  <text x="40" y="350" fill="#94a3b8" font-family="monospace" font-size="13">  Node.js Version:  v24.17.0</text>
+  <text x="40" y="370" fill="#94a3b8" font-family="monospace" font-size="13">  Working Directory:D:\ujomor-platform\products\eaorcs</text>
+
+  <text x="40" y="410" fill="#ffffff" font-family="monospace" font-weight="bold" font-size="14">--- Diagnostic Inspections ---</text>
+  <text x="40" y="440" fill="#10b981" font-family="monospace" font-size="13">  ✓ Node Runtime Environment:   OK</text>
+  <text x="40" y="465" fill="#10b981" font-family="monospace" font-size="13">  ✓ File System Permissions:    OK (Read/Write)</text>
+  <text x="40" y="490" fill="#10b981" font-family="monospace" font-size="13">  ✓ Governance Engine State:    FROZEN (GA_BASELINE_CLOSED)</text>
+  <text x="40" y="515" fill="#10b981" font-family="monospace" font-size="13">  ✓ Brand Emblem Asset State:  VERIFIED (1254x1254 + 6 Resized Variants)</text>
+  <text x="40" y="540" fill="#10b981" font-family="monospace" font-size="13">  ✓ Storage Engine Integrity:   OK</text>
+  <text x="40" y="565" fill="#10b981" font-family="monospace" font-size="13">  ✓ Security Attestation State: VERIFIED</text>
+
+  <rect x="40" y="595" width="700" height="40" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1" rx="6"/>
+  <text x="60" y="620" fill="#10b981" font-family="monospace" font-weight="bold" font-size="14">  ✅ SYSTEM DOCTOR PASSED: ENVIRONMENT HEALTHY &amp; BRANDED FOR DEPLOYMENT.</text>
+</svg>

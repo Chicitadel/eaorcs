@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 24,
+  "checkpoint_name": "AI Governance Certification",
+  "domain": "AI_GOVERNANCE",
+  "status": "PASSED",
+  "evidence_level": "Level C",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "ai_governance_certification.json",
+      "sha256": "fe2c7ef728f297c965e450fc88a16c4d8054d009037651ddce6eeba8e8b74443",
+      "bytes": 543
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.845Z"
+}

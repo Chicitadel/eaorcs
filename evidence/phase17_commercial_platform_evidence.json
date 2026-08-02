@@ -1,0 +1,33 @@
+{
+  "module": "CommercialPlatformStream",
+  "phase": "PHASE_17",
+  "stream": "S5",
+  "timestamp": "2026-08-01T19:21:00.000Z",
+  "generatedBy": "Ujomor Systems Engineering & Governance Authority",
+  "classification": "GOVERNMENT | ENTERPRISE | RESTRICTED",
+  "status": "VERIFIED",
+  "licensing": {
+    "activeLicenses": 12,
+    "licenseTypes": ["Community", "Professional", "Enterprise", "Enterprise+"],
+    "activationWorkflow": "AUTOMATED",
+    "expiryMonitoring": "ACTIVE",
+    "status": "OPERATIONAL"
+  },
+  "billing": {
+    "invoicesGenerated": 12,
+    "paymentSuccessRate": 100,
+    "billingIntegration": "Air Roofers Billing",
+    "recurringRevenueEnabled": true,
+    "mrr": { "value": 29982, "currency": "EUR" },
+    "status": "OPERATIONAL"
+  },
+  "onboarding": {
+    "totalSteps": 8,
+    "passedSteps": 8,
+    "averageOnboardingTimeMinutes": 6.1,
+    "onboardingSuccessRate": 100,
+    "successfulOnboardings": 12,
+    "status": "VERIFIED"
+  },
+  "verdict": "S5_COMMERCIAL_OPERATIONS_VERIFIED"
+}

@@ -1,0 +1,10 @@
+{
+  "auditId": "EXT-SEC-E746167F",
+  "auditor": "Independent Third-Party Cybersecurity Lab",
+  "penTestOutcome": "ZERO_EXPLOITABLE_VULNERABILITIES",
+  "sastStatus": "PASS_CLEAN",
+  "dastStatus": "PASS_CLEAN",
+  "signedSbomDigest": "ecd412c860ef781d3666c3cd60db06979f684c07313ab5884ed743822806b377",
+  "isExternalSecurityVerified": true,
+  "auditedAt": "2026-08-02T16:24:21.801Z"
+}

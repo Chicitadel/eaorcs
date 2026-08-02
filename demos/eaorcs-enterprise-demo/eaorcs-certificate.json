@@ -1,0 +1,26 @@
+{
+  "certificate": {
+    "certificateId": "EAORCS-CERT-SILVER-1785664091337-8E4D7778",
+    "version": "2.0.0",
+    "tier": "SILVER",
+    "issuer": "EAORCS Software Certification Authority (UAIGOS v2026.1)",
+    "subject": {
+      "name": "EAORCS Enterprise Demo Workspace",
+      "version": "2026.1.0",
+      "repository": "workspace://local",
+      "commitHash": "HEAD",
+      "merkleRoot": "0x0"
+    },
+    "trustMetrics": {
+      "trustScore": 94.83,
+      "readinessScore": 95.98,
+      "evidenceConfidence": 0.98,
+      "statisticalConfidence": 0.97
+    },
+    "issuedAt": "2026-08-02T09:48:11.337Z",
+    "expiresAt": "2026-10-31T09:48:11.337Z",
+    "classification": "ENTERPRISE_GOVERNED"
+  },
+  "signatureAlgorithm": "HMAC-SHA256",
+  "signature": "9f3bf7fc74306dd32f31ae7325e9efb4eccf190ebadc09479d6a57454dc65606"
+}

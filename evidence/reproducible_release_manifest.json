@@ -1,0 +1,8 @@
+{
+  "releaseVersion": "2026.1.0-LTS",
+  "isReproducibleBuild": true,
+  "artifactSigningStatus": "SIGNED_ED25519",
+  "rollbackValidation": "TESTED_SUCCESSFUL",
+  "buildChecksum": "0ed1ab24973a8a1aacee778cd75aced5c19f4f5c19a04742703472adfe9d5a4f",
+  "evaluatedAt": "2026-08-01T21:58:44.222Z"
+}

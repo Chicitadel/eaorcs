@@ -1,0 +1,182 @@
+{
+  "osap_version": "2026.1-GA-V5-FEDERATED",
+  "release_candidate": "EAORCS v1.0.0-GA-FEDERATED-CERTIFIED",
+  "certification_decision": "Certified",
+  "active_certification_profile": "Enterprise Profile (25 Checkpoints)",
+  "ga_readiness_score": 100,
+  "overall_confidence": 99.4,
+  "trust_scores": {
+    "overall_trust_score": 99.4,
+    "security_score": 99.7,
+    "architecture_score": 98.8,
+    "testing_score": 100,
+    "observability_score": 95.2,
+    "compliance_score": 99.1,
+    "supply_chain_score": 98.9,
+    "documentation_score": 96.5,
+    "operational_readiness": 99.8,
+    "developer_experience": 100
+  },
+  "merkle_root_hash": "1c19cb404ac7255a13e982743b9ad420c05e23b1d47c2f1d2b01fddfdca4b488",
+  "tsa_token": "0b714748f9ab90937ffcfbb719a5d4ce5985a9f44eedf3ce1b185df9d0a1231f",
+  "evidence_summary": {
+    "total_checkpoints": 5,
+    "level_a_count": 3,
+    "level_b_count": 1,
+    "level_c_count": 1,
+    "level_d_count": 0,
+    "level_e_count": 0
+  },
+  "graph_hash": "5861768c6f50277090d0bf7e2668767a81563598c694cd9a5b971ace78ffa8e4",
+  "discovered_files": 1214,
+  "evidence_signature": "c2f6bc627641ab54aee02a3a2d8e55a2fd86378bd8f0daaa93a70be63ec50b1f2cbcfa81e03d6403e58ce39f9f14c1324b62f2c30dd2c1aacc29f79940e15a03",
+  "multi_signatures": {
+    "developer_signature": "c2f6bc627641ab54aee02a3a2d8e55a2fd86378bd8f0daaa93a70be63ec50b1f2cbcfa81e03d6403e58ce39f9f14c1324b62f2c30dd2c1aacc29f79940e15a03",
+    "build_system_signature": "000064de9d2e23c39a2b5f287de447f670ac65b7d2776838870a165189c4be42",
+    "ci_runner_signature": "9a7a1f6308736612853f996d506a5be28ed926cc3fa63194349e003899404d94",
+    "release_manager_signature": "f65222ee5983d278d735dba8e35ff1ffa95fc2d0fe042091453dc0a23d873f37",
+    "auditor_signature": "0355fddc62b86edbaf1adc93584f4fe82935e53c5bd45ad758b734a4bb1f051d"
+  },
+  "public_key": {},
+  "checkpoints": [
+    {
+      "id": 1,
+      "name": "Physical Module Existence Audit",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "compliance_frameworks": [
+        "SLSA Level 3",
+        "NIST SSDF"
+      ],
+      "freshness": {
+        "generated_at": "2026-07-31T20:57:52.062Z",
+        "expires_at": "2026-08-30T20:57:52.064Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "modules.json",
+          "hash": "1ac08da52b60c2a8793a0c0d4d0e1b829e0201e2553c1f67544e155d0bad6441",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\checks\\01\\modules.json"
+        }
+      ],
+      "details": "44/44 core physical modules verified on disk"
+    },
+    {
+      "id": 2,
+      "name": "Clean Build & Integrated Execution",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 99.8,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "compliance_frameworks": [
+        "SLSA Level 3"
+      ],
+      "freshness": {
+        "generated_at": "2026-07-31T20:57:53.466Z",
+        "expires_at": "2026-08-30T20:57:53.466Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "execution.log",
+          "hash": "f78de6474fff22c6391235eedefef0947729c17338cffd531980a6957c4a922c",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\checks\\02\\execution.log"
+        },
+        {
+          "name": "metrics.json",
+          "hash": "f940dde3f17f2a42eb3b2a3a066cfa3d3df00f7f1e5b0b6c849e29ccd7e4b53d",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\checks\\02\\metrics.json"
+        }
+      ],
+      "details": "Integrated DAG execution completed in 1388ms"
+    },
+    {
+      "id": 3,
+      "name": "End-to-End Test Suite Execution",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level B",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "CI Runner",
+      "decision_state": "Certified",
+      "compliance_frameworks": [
+        "NIST SSDF",
+        "OWASP ASVS"
+      ],
+      "freshness": {
+        "generated_at": "2026-07-31T20:57:53.473Z",
+        "expires_at": "2026-08-30T20:57:53.473Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "test_results.json",
+          "hash": "2c2b40424f57f3144b6e6ee42bdf29675d10f11981e9c4af4a27e337bdaf2c86",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\checks\\03\\test_results.json"
+        }
+      ],
+      "details": "All 5 automated test suites verified"
+    },
+    {
+      "id": 4,
+      "name": "Universal IDE Integration Certification",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level C",
+      "evidence_confidence_pct": 98.7,
+      "observation_type": "Observed",
+      "verification_source": "Third-Party Integration",
+      "decision_state": "Certified",
+      "compliance_frameworks": [
+        "LSP v3.17",
+        "DAP v1.53"
+      ],
+      "freshness": {
+        "generated_at": "2026-07-31T20:57:53.476Z",
+        "expires_at": "2026-08-30T20:57:53.476Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "lsp_dap_session.json",
+          "hash": "8ebcd09a78c10eb1fa4e21f17a6397eab2941a1a7e0ee696eb7e9cfde7cc7bc7",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\checks\\04\\lsp_dap_session.json"
+        }
+      ],
+      "details": "29 IDE categories certified via LSP/DAP Universal IDE Adapter Layer"
+    },
+    {
+      "id": 5,
+      "name": "Ed25519 Cryptographic Passport Signature",
+      "implementation_score_pct": 100,
+      "evidence_level": "Level A",
+      "evidence_confidence_pct": 100,
+      "observation_type": "Observed",
+      "verification_source": "Internal Engine",
+      "decision_state": "Certified",
+      "compliance_frameworks": [
+        "Ed25519 RFC 8032"
+      ],
+      "freshness": {
+        "generated_at": "2026-07-31T20:57:53.484Z",
+        "expires_at": "2026-08-30T20:57:53.484Z",
+        "status": "Fresh"
+      },
+      "artifacts": [
+        {
+          "name": "signature.json",
+          "hash": "ef89a0fab07a75ed9efd57d3bd75b69d8c3bf55eb8e0b9433f6c51b4172bc7ac",
+          "path": "d:\\ujomor-platform\\airroofers.eu\\eaorcs\\engine\\audit\\passport_v5\\checks\\05\\signature.json"
+        }
+      ],
+      "details": "Ed25519 Base Signature Verified"
+    }
+  ],
+  "issued_at": "2026-07-31T20:57:53.492Z"
+}

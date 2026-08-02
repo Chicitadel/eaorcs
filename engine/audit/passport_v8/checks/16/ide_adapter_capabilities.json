@@ -1,0 +1,27 @@
+{
+  "ide_name": "VS Code Universal Adapter",
+  "adapter_version": "2.0.0",
+  "capabilities": {
+    "realtime_diagnostics": "ACTIVE",
+    "background_repo_scanning": "ACTIVE",
+    "incremental_ast_analysis": "ACTIVE",
+    "live_trust_score": 96.27,
+    "security_findings": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "architecture_validation": "COMPLIANT",
+    "policy_validation": "ENFORCED",
+    "ai_assisted_remediation": "ENABLED",
+    "local_osap_passport_preview": "AVAILABLE",
+    "one_click_certification": "READY",
+    "digital_twin_synchronization": "SYNCED",
+    "evidence_capture": "AUTOMATED",
+    "offline_mode": "SOVEREIGN_PASSED",
+    "enterprise_sso": "AUTHENTICATED",
+    "workspace_health_dashboard": "HEALTHY"
+  },
+  "timestamp": "2026-08-01T09:04:59.826Z"
+}

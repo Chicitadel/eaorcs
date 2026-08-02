@@ -1,0 +1,34 @@
+{
+  "scanId": "SEC-EF6224A8",
+  "scanVersion": "3.0.0",
+  "sastScan": {
+    "status": "PASS",
+    "vulnerabilities": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "dastScan": {
+    "status": "PASS",
+    "endpointsTested": 14,
+    "OWASP_Top_10_Compliant": true
+  },
+  "dependencyScan": {
+    "status": "PASS",
+    "totalDependencies": 0,
+    "vulnerablePackages": 0
+  },
+  "secretsDetection": {
+    "status": "PASS",
+    "hardcodedSecretsFound": 0
+  },
+  "sbomVerification": {
+    "status": "PASS",
+    "format": "CycloneDX-1.4",
+    "valid": true
+  },
+  "isSecurityGatePassed": true,
+  "scannedAt": "2026-08-02T16:24:21.497Z"
+}

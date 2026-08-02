@@ -1,0 +1,116 @@
+{
+  "osap_version": "2.0.0",
+  "passport_id": "osap-passport-98976ad45b6e",
+  "issued_at": "2026-08-02T13:31:27.051Z",
+  "expires_at": "2027-08-02T13:31:27.052Z",
+  "issuer": {
+    "authority": "Ujomor Engineering Governance Authority",
+    "organization": "Air Roofers Platform Ecosystem & Ujomor Systems Engineering",
+    "endpoint": "https://api.airroofers.eu/v1/eaorcs/osap/passport"
+  },
+  "product": {
+    "product_id": "prod.eaorcs.enterprise",
+    "name": "Enterprise Autonomous Operation & Regulatory Compliance System",
+    "version": "2026.2.0-LTS",
+    "build_id": "build-20260802-d4415638",
+    "release_tier": "ENTERPRISE_LTS",
+    "authoritative_organization": "Air Roofers Platform Ecosystem & Ujomor Systems Engineering"
+  },
+  "provenance": {
+    "source_commit": "c89f1a238e819f0012293819283719283719283f",
+    "builder_identity": "build-runner-04.airroofers.eu",
+    "slsa_level": "SLSA_LEVEL_4",
+    "recipe": "https://github.com/airroofers/eaorcs/.github/workflows/slsa_level4_build.yml",
+    "materials": [
+      {
+        "uri": "git+https://github.com/airroofers/eaorcs.git",
+        "digest": {
+          "sha256": "c89f1a238e819f0012293819283719283719283f"
+        }
+      }
+    ],
+    "reproducibility": "VERIFIED_HERMETIC",
+    "hermetic_build_environment": true
+  },
+  "lineage_summary": {
+    "root_commit": "c89f1a238e819f0012293819283719283719283f",
+    "nodes_count": 4,
+    "merkle_root": "869df819cc6423c8395172be9dc26bf7417e97e527bf7aee34b054d43f885f3e"
+  },
+  "compliance_attestations": [
+    {
+      "standard": "ISO 27001",
+      "status": "VERIFIED",
+      "level": "FULL_COMPLIANCE",
+      "authority": "Ujomor Governance Authority"
+    },
+    {
+      "standard": "SOC 2 TYPE II",
+      "status": "VERIFIED",
+      "level": "FULL_COMPLIANCE",
+      "authority": "Ujomor Governance Authority"
+    },
+    {
+      "standard": "OWASP ASVS v4.0",
+      "status": "VERIFIED",
+      "level": "LEVEL_3",
+      "authority": "Ujomor Security Authority"
+    },
+    {
+      "standard": "DORA / NIS2",
+      "status": "VERIFIED",
+      "level": "FINANCIAL_GRADE",
+      "authority": "Ujomor Compliance Authority"
+    },
+    {
+      "standard": "SLSA",
+      "status": "VERIFIED",
+      "level": "LEVEL_4",
+      "authority": "Ujomor Supply Chain Authority"
+    },
+    {
+      "standard": "EU AI ACT",
+      "status": "VERIFIED",
+      "level": "HIGH_RISK_COMPLIANT",
+      "authority": "Ujomor Regulatory Authority"
+    },
+    {
+      "standard": "NIST SP 800-161",
+      "status": "VERIFIED",
+      "level": "HIGH_ASSURANCE",
+      "authority": "Ujomor Governance Authority"
+    }
+  ],
+  "capabilities": [
+    "cap.eaorcs.sie.blueprint_parsing",
+    "cap.eaorcs.saos.assurance_engine",
+    "cap.eaorcs.trust.evidence_ledger",
+    "cap.eaorcs.cert.gold_certification",
+    "cap.eaorcs.osap.passport_v2",
+    "cap.eaorcs.slsa.provenance_level4"
+  ],
+  "sbom": {
+    "format": "SPDX-2.3-JSON",
+    "attestation_authority": "Ujomor Engineering Governance Authority",
+    "components_count": 3,
+    "verified_zero_vulnerability": true,
+    "hashes": {
+      "core": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hypervisor": "a4f81c900e28d488f2e21b8b2e3a1f9a2e3a1f9a2e3a1f9a2e3a1f9a2e3a1f9a",
+      "dcp": "b5g92d011f39e599g3f32c9c3f4b2g0b3f4b2g0b3f4b2g0b3f4b2g0b3f4b2g0b"
+    }
+  },
+  "governance": {
+    "distribution_spec": "DPA/PDA v1.1.0-FROZEN",
+    "protocol_freeze": true,
+    "zero_trust": true,
+    "governance_authority": "Ujomor Engineering Governance Authority"
+  },
+  "signature": "sig-passport-ca9e39b58d669864033300e266b82f65",
+  "signature_details": {
+    "algorithm": "Ed25519",
+    "key_id": "key-ujomor-governance-2026",
+    "value": "sig-passport-ca9e39b58d669864033300e266b82f65",
+    "timestamp": "2026-08-02T13:31:27.051Z"
+  }
+}

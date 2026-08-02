@@ -1,0 +1,14 @@
+{
+  "pilotDeploymentId": "PILOT-6D2E9BDC",
+  "targetEnvironment": "staging-pilot-eu-west",
+  "healthObservatoryStatus": "MONITORED_HEALTHY",
+  "rollbackReadiness": "AUTOMATED_ZERO_DOWNTIME",
+  "metrics": {
+    "activePilotTenants": 5,
+    "syntheticRequestsProcessed": 125000,
+    "errorRatePercent": 0,
+    "uptimePercentage": 100
+  },
+  "isDeploymentVerified": true,
+  "verifiedAt": "2026-08-02T16:24:21.507Z"
+}

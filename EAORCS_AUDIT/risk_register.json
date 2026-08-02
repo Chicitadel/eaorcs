@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-08-02T20:22:10.552Z",
+  "inferredProduct": "Product: Core (55.0% Confidence)",
+  "productName": "Core",
+  "confidence": "55.0% Confidence",
+  "overallRiskScore": "LOW_RISK",
+  "financialImpact": {
+    "totalRiskEUR": 527875,
+    "totalRiskUSD": 573765,
+    "estimatedDowntimeHours": 24.2,
+    "revenueAtRiskEUR": 0,
+    "revenueAtRiskUSD": 0
+  },
+  "riskCategoryBreakdown": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 40,
+    "INFORMATIONAL": 0
+  },
+  "riskEntries": [
+    {
+      "riskId": "RISK-001",
+      "title": "Cross-Domain Identity & API Gateway Latency Variance",
+      "domain": "Security & Operations",
+      "inherentRisk": "MEDIUM",
+      "residualRisk": "LOW",
+      "mitigationStrategy": "Distributed X-Correlation-ID & OIDC PKCE JWKS Key Rotation Active via Identity Provider",
+      "status": "MITIGATED"
+    },
+    {
+      "riskId": "RISK-002",
+      "title": "AST Digital Twin Architectural Drift",
+      "domain": "Architecture",
+      "inherentRisk": "HIGH",
+      "residualRisk": "ZERO_DRIFT",
+      "mitigationStrategy": "AST Code Drift Monitor & Contract Freeze Policy Active",
+      "status": "MITIGATED"
+    }
+  ]
+}

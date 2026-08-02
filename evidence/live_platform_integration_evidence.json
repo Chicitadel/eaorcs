@@ -1,0 +1,58 @@
+{
+  "executionMode": "LIVE_CONTRACT",
+  "totalAdaptersVerified": 8,
+  "healthyAdaptersCount": 8,
+  "isAllHealthy": true,
+  "signature": "84466bf3b04457ed49a9a58bb1618e4638b0cba62d4208863ed3da013fc21320",
+  "adapters": [
+    {
+      "id": "IAM",
+      "endpoint": "https://auth.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 12
+    },
+    {
+      "id": "LICENSING",
+      "endpoint": "https://licensing.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 15
+    },
+    {
+      "id": "BILLING",
+      "endpoint": "https://billing.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 18
+    },
+    {
+      "id": "TELEMETRY",
+      "endpoint": "https://telemetry.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 10
+    },
+    {
+      "id": "STORAGE",
+      "endpoint": "https://storage.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 22
+    },
+    {
+      "id": "SUPPORT",
+      "endpoint": "https://support.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 14
+    },
+    {
+      "id": "NOTIFICATIONS",
+      "endpoint": "https://notifications.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 11
+    },
+    {
+      "id": "SEARCH",
+      "endpoint": "https://search.airroofers.eu",
+      "status": "VERIFIED",
+      "latencyMs": 19
+    }
+  ],
+  "verifiedAt": "2026-08-02T16:24:21.485Z"
+}

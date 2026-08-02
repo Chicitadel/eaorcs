@@ -1,0 +1,78 @@
+{
+  "bundleId": "EAORCS-BUNDLE-20260802T202210",
+  "timestamp": "2026-08-02T20:22:10.552Z",
+  "targetPlatform": "Enterprise Platform Ecosystem (*.enterprise.local)",
+  "inferredProduct": "Product: Core (55.0% Confidence)",
+  "productName": "Core",
+  "confidence": "55.0% Confidence",
+  "overallReadinessScore": 100,
+  "certificationDecision": "PRODUCTION_READY",
+  "totalStreams": 40,
+  "artifactsCount": 9,
+  "artifacts": [
+    {
+      "name": "manifest.json",
+      "sizeBytes": 0,
+      "sha256": "",
+      "format": "JSON",
+      "path": "manifest.json"
+    },
+    {
+      "name": "findings.json",
+      "sizeBytes": 24141,
+      "sha256": "22645a1a2929e07ec3c7a2360ec818b231bf7c9d56f80006d4fc90b1e4626d14",
+      "format": "JSON",
+      "path": "findings.json"
+    },
+    {
+      "name": "recommendations.json",
+      "sizeBytes": 97340,
+      "sha256": "b538dc2e5cf4f65c6568cfb0ec353855f3a09bda7f5e1399039c50c631709c21",
+      "format": "JSON",
+      "path": "recommendations.json"
+    },
+    {
+      "name": "risk_register.json",
+      "sizeBytes": 1185,
+      "sha256": "0ab26fbea355e97ea5d5315559bedd5122b8446e3e853841dc091837cc4f3b52",
+      "format": "JSON",
+      "path": "risk_register.json"
+    },
+    {
+      "name": "findings.sarif.json",
+      "sizeBytes": 35550,
+      "sha256": "d7142e08e930a4cec738c9ca46497f3e6f4449720a53c46b3fefbbd8827ca1ff",
+      "format": "JSON",
+      "path": "findings.sarif.json"
+    },
+    {
+      "name": "sbom.spdx.json",
+      "sizeBytes": 1554,
+      "sha256": "19b1e37d7edc01809ec7e2905b1fae6a4fecc9ad21ffca67878187a37e27984c",
+      "format": "JSON",
+      "path": "sbom.spdx.json"
+    },
+    {
+      "name": "certificate.json",
+      "sizeBytes": 975,
+      "sha256": "e5305dcc9ac1a8bf1e02842042f7dd97aec3ed3457dfb5252d1ff9b789f3788b",
+      "format": "JSON",
+      "path": "certificate.json"
+    },
+    {
+      "name": "index.html",
+      "sizeBytes": 4509305,
+      "sha256": "fdf34ad21dfab87c5b98c7f809a12241351f750fc68859e4cd22c8c54a5703cd",
+      "format": "HTML5",
+      "path": "index.html"
+    },
+    {
+      "name": "readiness-scorecard.html",
+      "sizeBytes": 4509305,
+      "sha256": "fdf34ad21dfab87c5b98c7f809a12241351f750fc68859e4cd22c8c54a5703cd",
+      "format": "HTML5",
+      "path": "readiness-scorecard.html"
+    }
+  ],
+  "generator": "EAORCS ReportBundleCompiler Stream 4 v2026.1-LTS"
+}

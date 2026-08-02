@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-07-31T21:04:17.116Z",
+  "previous_trust_score": 99.4,
+  "current_trust_score": 99.4,
+  "score_delta": 0,
+  "drift_status": "STABLE",
+  "evaluated_vectors": [
+    {
+      "name": "Dependency Drift",
+      "status": "PASS",
+      "score": 100
+    },
+    {
+      "name": "SBOM Freshness",
+      "status": "PASS",
+      "score": 98.9
+    },
+    {
+      "name": "Signature Validity",
+      "status": "PASS",
+      "score": 100
+    },
+    {
+      "name": "Infrastructure Parity",
+      "status": "PASS",
+      "score": 99.5
+    }
+  ]
+}

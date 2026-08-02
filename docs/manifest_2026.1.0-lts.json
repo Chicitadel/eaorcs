@@ -1,0 +1,4891 @@
+{
+  "version": "2026.1.0-lts",
+  "buildId": "BUILD-1785687879836-73384C40",
+  "buildTimestamp": "2026-08-02T16:24:39.834Z",
+  "releaseType": "LTS",
+  "componentCount": 810,
+  "components": [
+    {
+      "path": "adapters/airroofers/PlatformAdapterVerificationSuite.js",
+      "size": 3472,
+      "lastModified": "2026-08-01T16:16:25.651Z",
+      "hash": "1133a986f05d2a847a4dbc6164ace9d8971b16ac8873043cb51e9ca4d6d35818"
+    },
+    {
+      "path": "adapters/AirRoofersPlatformSuite.js",
+      "size": 7475,
+      "lastModified": "2026-08-01T14:11:41.746Z",
+      "hash": "70703a831755c7c209175585683cc866aeb325c0be54a2532fa6f06100289429"
+    },
+    {
+      "path": "adapters/BaseAdapter.js",
+      "size": 1186,
+      "lastModified": "2026-08-01T09:22:51.593Z",
+      "hash": "3964a66a6f848f74a3e022b963b8a70b518f4e568ef9c4ad9b2301e5d0dc2faa"
+    },
+    {
+      "path": "adapters/BillingAdapter.js",
+      "size": 2288,
+      "lastModified": "2026-08-01T12:14:53.711Z",
+      "hash": "2264d28871560331b3b3fe3b9c9cacd1da18dfad5a900fe3512a065d76bdba1e"
+    },
+    {
+      "path": "adapters/IdentityAdapter.js",
+      "size": 2907,
+      "lastModified": "2026-08-01T12:14:57.675Z",
+      "hash": "15e18ca488900f8344d03c3f772525907dcca8d908faf2c1d90d97cf3b995613"
+    },
+    {
+      "path": "adapters/LicensingAdapter.js",
+      "size": 2370,
+      "lastModified": "2026-08-01T12:14:55.200Z",
+      "hash": "70840eefc6b95ed9ea04b96156dab4c2240da22c8df956d0c1530429de913587"
+    },
+    {
+      "path": "adapters/NotificationsAdapter.js",
+      "size": 5018,
+      "lastModified": "2026-08-01T14:11:32.089Z",
+      "hash": "a7b7df8bbbedaa64eae89a2aefe9b0493b564e091f60203888f06f948b35f1de"
+    },
+    {
+      "path": "adapters/PlatformContractValidator.js",
+      "size": 18066,
+      "lastModified": "2026-08-01T15:32:31.588Z",
+      "hash": "9383ec091e3b9f3774f6216fcd5a0cab4ccc97eff8b5db8414f41ea99ca0ebcb"
+    },
+    {
+      "path": "adapters/SearchAdapter.js",
+      "size": 5038,
+      "lastModified": "2026-08-01T14:11:35.310Z",
+      "hash": "3a35493cbbaa47eee9a7898eb5673061f46db966694754ad60102f0f4a3596ba"
+    },
+    {
+      "path": "adapters/StorageAdapter.js",
+      "size": 3213,
+      "lastModified": "2026-08-01T10:14:18.011Z",
+      "hash": "0f3c759cda1d48643ae3c3ec7d55daa674942c9db8fd2619f5f7cba73c910597"
+    },
+    {
+      "path": "adapters/SupportAdapter.js",
+      "size": 3250,
+      "lastModified": "2026-08-01T12:15:01.038Z",
+      "hash": "0e02f917c48bba72cdc7c10f05ad999be3961456908cbe10d25b9b134baf2d77"
+    },
+    {
+      "path": "adapters/TelemetryAdapter.js",
+      "size": 2251,
+      "lastModified": "2026-08-01T12:14:59.563Z",
+      "hash": "08c5ed0635dd8067aa5c369dd527052239e1540383452af07a3f038f3da060dc"
+    },
+    {
+      "path": "adapters/utcf_adapter_engine.js",
+      "size": 3374,
+      "lastModified": "2026-07-31T17:54:54.913Z",
+      "hash": "2e6f3bd0b1be3b661585b0aa7381137fd9c38d1d8a1fd4e19cea83f9bed711f0"
+    },
+    {
+      "path": "api/legal/LegalRoutes.js",
+      "size": 3053,
+      "lastModified": "2026-08-01T22:25:07.103Z",
+      "hash": "a17d72efe340afc1ab6e66d32c82b7de33b45786b5e49a0172fb15d816554bd1"
+    },
+    {
+      "path": "api/routes/dsl.cjs",
+      "size": 1460,
+      "lastModified": "2026-07-31T20:29:46.112Z",
+      "hash": "218cb51c1f50c187e7b3d276edca90716a46ffa15000aa87d77cb48a3da23f51"
+    },
+    {
+      "path": "api/routes/observatory.cjs",
+      "size": 1372,
+      "lastModified": "2026-07-31T21:03:55.070Z",
+      "hash": "e73c33c767171e38673e56ab89eb8bc1c923742d219392e6399debf157b0b07c"
+    },
+    {
+      "path": "api/v1/ai.cjs",
+      "size": 2113,
+      "lastModified": "2026-07-31T20:33:25.060Z",
+      "hash": "9387608f5dd686a42e540d5eceaea78c3c7bcc690a562ff964e23144c0dd7574"
+    },
+    {
+      "path": "api/v1/dcp.js",
+      "size": 12482,
+      "lastModified": "2026-08-02T13:53:51.550Z",
+      "hash": "48040a810b8fa7a8bd7278ac9026198d809999327ff56ae2b9d5f869da7a7c6c"
+    },
+    {
+      "path": "api/v1/genome.cjs",
+      "size": 2216,
+      "lastModified": "2026-07-31T20:33:45.184Z",
+      "hash": "51265e290f354e8561a5957cde31645c048dbba5fcb2975770146d7ee1ff4fde"
+    },
+    {
+      "path": "baselines/BaselineManager.js",
+      "size": 8985,
+      "lastModified": "2026-08-01T11:55:54.938Z",
+      "hash": "4aa9a83db2df4e29ebdb85da00db9db99e648e1c7f4e1570125e65f92ce4bdf1"
+    },
+    {
+      "path": "baselines/DriftDetector.js",
+      "size": 4111,
+      "lastModified": "2026-08-01T11:56:01.364Z",
+      "hash": "fc7c107b04598e6fd84804a8d946adb59ffb609b2edfa948b6abe4e98111e755"
+    },
+    {
+      "path": "baselines/run_baseline.js",
+      "size": 5883,
+      "lastModified": "2026-08-01T11:56:04.347Z",
+      "hash": "41144e40e0725cb6b43b6292bda7a9278f9933d5ce7d040793fc5c9c9877761f"
+    },
+    {
+      "path": "bin/create_eaorcs_package.js",
+      "size": 13037,
+      "lastModified": "2026-08-02T13:31:54.292Z",
+      "hash": "99d7fe3314f66dc4a586073c2053c2c2dda3a76e0d3e013d34c5f19f0489a5f0"
+    },
+    {
+      "path": "bin/eaorcs_installer.js",
+      "size": 12939,
+      "lastModified": "2026-08-01T23:42:48.893Z",
+      "hash": "e0527b2c23e4c3bc3317f49f81e57df2c6e20c342fe2462121dcca8ece7e0047"
+    },
+    {
+      "path": "bin/eaorcs.js",
+      "size": 6266,
+      "lastModified": "2026-07-31T20:13:48.714Z",
+      "hash": "624cd2fa9d4412b90477c107596ce5502532fbf5a73f4ccbeb197b42a75747b6"
+    },
+    {
+      "path": "bin/emit_stream_h_evidence.cjs",
+      "size": 1969,
+      "lastModified": "2026-07-31T20:16:05.784Z",
+      "hash": "efa4652f8ecc1e0acd64d90fb2760511b669d5715a59a57951b9802567a190ac"
+    },
+    {
+      "path": "bin/ga_readiness_certification.js",
+      "size": 5457,
+      "lastModified": "2026-08-01T22:44:29.783Z",
+      "hash": "ddaa1c440bf29f644f1a6e58986c12e799d95262e3b31af352d4efcb4b3887b2"
+    },
+    {
+      "path": "bin/generate_audit_report.js",
+      "size": 40460,
+      "lastModified": "2026-08-02T10:14:13.833Z",
+      "hash": "3b5ea07deb98372c27ab261cb6d60a3612d1ba259ad5e3b297a4a4fb4b727bd5"
+    },
+    {
+      "path": "bin/generate_demo_project.js",
+      "size": 26457,
+      "lastModified": "2026-08-02T09:47:14.537Z",
+      "hash": "ef7ef70299b841daaa4c3338e8c30c10f950c2c0d1ed47838724587324ddca1a"
+    },
+    {
+      "path": "bin/generate_dri_report.js",
+      "size": 3079,
+      "lastModified": "2026-08-02T13:30:10.375Z",
+      "hash": "7a871a08d67af706950362071057b161e0aa8ce6953e933563a104d659e54681"
+    },
+    {
+      "path": "bin/publish_launch_verification.js",
+      "size": 5403,
+      "lastModified": "2026-08-02T09:47:18.326Z",
+      "hash": "8a7a3bd45094e62ebc2723eba01060b061127a2b7ad4f22353314afc35b3d610"
+    },
+    {
+      "path": "bin/rc1_release_certification.js",
+      "size": 8197,
+      "lastModified": "2026-08-01T22:03:18.792Z",
+      "hash": "c6362e92055d338aaad5fffce98be6676fc6b20c3ed3a6c9473850d31ab1f7b5"
+    },
+    {
+      "path": "bin/verify_version_sync.js",
+      "size": 6228,
+      "lastModified": "2026-08-02T13:29:47.614Z",
+      "hash": "54cbe4d96b8a34d9eb39242206fe08ed58a3c7de213cc231afefa7aa80c17a8b"
+    },
+    {
+      "path": "certify.js",
+      "size": 9151,
+      "lastModified": "2026-08-01T13:25:50.904Z",
+      "hash": "5a1c5d79459e520797c5da0bf50bf9cacf940237992db88531f14a286f029472"
+    },
+    {
+      "path": "ci/autonomous_governance_pipeline.js",
+      "size": 14276,
+      "lastModified": "2026-08-01T14:12:31.509Z",
+      "hash": "455a10a217d403af4ebdeaafd936331e3c736471a196d790cf1cbc5e4f90f6a0"
+    },
+    {
+      "path": "ci/CiOrchestrator.js",
+      "size": 5840,
+      "lastModified": "2026-08-01T11:56:52.363Z",
+      "hash": "66cff86248276d6cd4be5106f0ee8c21f224669ba71b3b8c110123bb188fd932"
+    },
+    {
+      "path": "ci/ContinuousAssurancePipeline.js",
+      "size": 14544,
+      "lastModified": "2026-08-01T14:39:43.552Z",
+      "hash": "2ec30357ccb43f134c33f3859f92d1cb29f6f2399c07c3c71b99c0289fd42031"
+    },
+    {
+      "path": "ci/ProductExecutionAssurancePipeline.js",
+      "size": 5771,
+      "lastModified": "2026-08-01T15:31:06.734Z",
+      "hash": "8f14e103a6ba48b15579254fbd26689c02cae4bc4adf86f2c0eec912ae0dab5c"
+    },
+    {
+      "path": "ci/run_ci_locally.js",
+      "size": 4811,
+      "lastModified": "2026-08-01T11:56:55.968Z",
+      "hash": "ffe871853e9b88696f6f690f223c7393f78f428d2c01d3bda5c5be219c41805f"
+    },
+    {
+      "path": "cli/dcp_cli.js",
+      "size": 1238,
+      "lastModified": "2026-08-02T13:49:06.104Z",
+      "hash": "d19c4ecf0ab4e4474aac5e9f7d4a8c9babda450930111d70520bc4a4c0eca7c9"
+    },
+    {
+      "path": "cli/dsl.cjs",
+      "size": 1912,
+      "lastModified": "2026-07-31T20:29:45.939Z",
+      "hash": "740e1860283d3d4a4b0fa03bac7357dfea78bb93ddbf1edddba121091dad37b0"
+    },
+    {
+      "path": "cli/index.js",
+      "size": 2195,
+      "lastModified": "2026-08-02T13:49:02.427Z",
+      "hash": "0354524cb39f0186996f5b8598991e916f46887f107f8c22dbe23da788f3c788"
+    },
+    {
+      "path": "cli/verifier_cli.cjs",
+      "size": 4650,
+      "lastModified": "2026-08-01T08:56:38.393Z",
+      "hash": "26654b2ce672ec3a12e6e6752e79a3500c69ba92b72d9f8c01561c108ef48178"
+    },
+    {
+      "path": "cli/verify.cjs",
+      "size": 2511,
+      "lastModified": "2026-07-31T21:03:33.611Z",
+      "hash": "0b496d2c5c7ba1d10992724fabf93575a7b8c9a9dcefc80ba7cc28f8513fa849"
+    },
+    {
+      "path": "demos/eaorcs-enterprise-demo/run_demo.js",
+      "size": 4635,
+      "lastModified": "2026-08-02T09:48:08.270Z",
+      "hash": "224373fadd8671b97b38329b16302a19ebfc141e246717471cc037fe257cafc5"
+    },
+    {
+      "path": "demos/test-demo-project/run_demo.js",
+      "size": 4841,
+      "lastModified": "2026-08-02T00:35:46.408Z",
+      "hash": "a7e603ab977cc0b77f8552a2ea3723025f6f2d70bf2a96c886a71cc19da2df46"
+    },
+    {
+      "path": "domains/domain_manager.js",
+      "size": 2675,
+      "lastModified": "2026-07-31T17:53:35.481Z",
+      "hash": "ad734d22de22ff21b012870bf17f7e3380dd865df22d5d81280d265cdef8951e"
+    },
+    {
+      "path": "dsl/AssureCompiler.cjs",
+      "size": 2887,
+      "lastModified": "2026-08-01T10:12:51.845Z",
+      "hash": "8c0f6ffca9a804e4f7b8f5d1ea6ad60cf27847028fe73b53ed43f816bdaf91d9"
+    },
+    {
+      "path": "dsl/AssureLexer.cjs",
+      "size": 3419,
+      "lastModified": "2026-08-01T10:12:46.678Z",
+      "hash": "002c8482f1b1b0edfed4b1af4562c056b09caf17b7d6f6c1f1184c9b9da01548"
+    },
+    {
+      "path": "dsl/AssureParser.cjs",
+      "size": 3431,
+      "lastModified": "2026-08-01T10:12:49.414Z",
+      "hash": "bdf172938640c69a0b1ca37eee905140a24e6cab25381471f4d647a3b1ea105d"
+    },
+    {
+      "path": "dsl/AssureRuntime.cjs",
+      "size": 3851,
+      "lastModified": "2026-08-01T10:12:54.800Z",
+      "hash": "696988c6a3b88f71cfd28f38b75957b8c136d1aa72bb03640a114cfcbd65ea4f"
+    },
+    {
+      "path": "engine/ai/AiCorpusBenchmarkVerifier.js",
+      "size": 20903,
+      "lastModified": "2026-08-01T18:03:15.737Z",
+      "hash": "44e7f7d3f8ace4f40b7d6885abd307ac9d9b3947dc1c2fb62e45b7818baed144"
+    },
+    {
+      "path": "engine/ai/AiCouncilEngine.cjs",
+      "size": 1836,
+      "lastModified": "2026-07-31T20:33:24.944Z",
+      "hash": "87cfa43ef21879dd788b4e7424ca9f06d36e5ad0c03def19fc9b5fc9894a559c"
+    },
+    {
+      "path": "engine/ai/AiCouncilEngine.js",
+      "size": 982,
+      "lastModified": "2026-08-01T18:03:15.745Z",
+      "hash": "9e26808a0a48f20807d878e8bdabd2f09da11e189abb27eca84e9ac00a0bd6db"
+    },
+    {
+      "path": "engine/ai/AiGovernanceTracker.cjs",
+      "size": 1609,
+      "lastModified": "2026-07-31T21:14:17.727Z",
+      "hash": "552ccce1106e6bac80fad1b62897fd0f2712b18c68640921e7466ee9b4188dfc"
+    },
+    {
+      "path": "engine/ai/AiPrecisionRecallBenchmark.js",
+      "size": 11137,
+      "lastModified": "2026-08-01T18:03:15.771Z",
+      "hash": "6d2718476eed859cef63cd0f46b7f8d79716c456eeb71eb221590d1a70a2a69b"
+    },
+    {
+      "path": "engine/ai/BlueprintGenerator.js",
+      "size": 11719,
+      "lastModified": "2026-08-01T18:03:15.848Z",
+      "hash": "d3a1489008591c804fe7ab8f3221fe67b23c4542cf71c0fd0e67f0ad062634b2"
+    },
+    {
+      "path": "engine/ai/ConsensusProtocol.cjs",
+      "size": 1947,
+      "lastModified": "2026-07-31T20:33:16.864Z",
+      "hash": "b7fd2d62b8100752b88f2a26ed5dff5bb30f56a52c2c7646556d68138b5e26f0"
+    },
+    {
+      "path": "engine/ai/EngineeringInterviewEngine.js",
+      "size": 8932,
+      "lastModified": "2026-08-01T18:03:15.947Z",
+      "hash": "dbfdb9da09ca2005bc3fc6d42939ffbfbe431650af3c18af5facc5b609d91b93"
+    },
+    {
+      "path": "engine/ai/MissingRequirementGenerator.js",
+      "size": 8154,
+      "lastModified": "2026-08-01T18:03:15.985Z",
+      "hash": "60b824d9c2949a5ba6cb695bafbbf4c3ebd94bbf5cd40220a9d7bdf4c7456096"
+    },
+    {
+      "path": "engine/ai/PeerReviewedAiCorpus.js",
+      "size": 2537,
+      "lastModified": "2026-08-01T18:03:16.023Z",
+      "hash": "b90d1827dc5b28c1ffb0a132667a54c7ff41da949c1fc4c5eb4c70646d8f208d"
+    },
+    {
+      "path": "engine/ai/RequirementGenerator.js",
+      "size": 8942,
+      "lastModified": "2026-08-01T18:03:16.035Z",
+      "hash": "842d03bacf9ea13209ae1b84ac78bd09e2c849e705c1adcb71bf870907677444"
+    },
+    {
+      "path": "engine/ai/SpecialistAgents.cjs",
+      "size": 2387,
+      "lastModified": "2026-07-31T20:33:12.226Z",
+      "hash": "c94b90fbc8b7c9ae96976ac5528428e2c9994587ff7d7ace1b8e287c17057e6d"
+    },
+    {
+      "path": "engine/aicouncil/AiCouncilEngine.js",
+      "size": 13537,
+      "lastModified": "2026-08-01T18:03:16.091Z",
+      "hash": "8a7a352b2e3a74cd26352fb9b6278518af1a72b7dae25c9c16211587dd602dca"
+    },
+    {
+      "path": "engine/AnalyzerRegistry.cjs",
+      "size": 1612,
+      "lastModified": "2026-07-31T19:54:16.462Z",
+      "hash": "66524c4e16cafcf86cb51317e86fc86ccd7fc9d65347f932814d3e4cfd441c6e"
+    },
+    {
+      "path": "engine/analyzers/ApiProtocolsAnalyzer.cjs",
+      "size": 1531,
+      "lastModified": "2026-08-01T09:00:51.924Z",
+      "hash": "e8358bc87d2708703dd362adc884e5fe75166f12ab8edfc6f42b20ed8f39da1b"
+    },
+    {
+      "path": "engine/analyzers/CiCdEcosystemAnalyzer.cjs",
+      "size": 1798,
+      "lastModified": "2026-08-01T09:00:59.270Z",
+      "hash": "39adc44d4e9ae0d243418bffe42f41349432caa28cf087ac410efaf340972d34"
+    },
+    {
+      "path": "engine/analyzers/CloudEcosystemAnalyzer.cjs",
+      "size": 1421,
+      "lastModified": "2026-08-01T09:01:10.564Z",
+      "hash": "3900bb46ae8c03a1ac2bca089f42a3b409e12a18f765f7bcdd953bfb3c1ef2bf"
+    },
+    {
+      "path": "engine/analyzers/CommercialReadinessCertifier.cjs",
+      "size": 1453,
+      "lastModified": "2026-08-01T09:02:32.298Z",
+      "hash": "6db2c75835c990b4c27c4b03e900442e57ee976723f12f1fdbb1c5ef90870edb"
+    },
+    {
+      "path": "engine/analyzers/ConfigDriftAuditor.cjs",
+      "size": 1245,
+      "lastModified": "2026-08-01T09:02:17.381Z",
+      "hash": "e4513a232609fe7df73323d27055fb80e12987a7b6ddbf8366ba99f41baa3843"
+    },
+    {
+      "path": "engine/analyzers/ContainerOrchestrationAnalyzer.cjs",
+      "size": 1616,
+      "lastModified": "2026-08-01T09:01:01.942Z",
+      "hash": "144a77b014d1751b081a1505b87cb9d2de2ed68b2b74180159d63dad40842199"
+    },
+    {
+      "path": "engine/analyzers/DatabaseCompatibilityAnalyzer.cjs",
+      "size": 1555,
+      "lastModified": "2026-08-01T09:01:08.143Z",
+      "hash": "8312e26786d9ab1b608d5d5514502fef236ca5017b7b9d3f5100943674e8e8e8"
+    },
+    {
+      "path": "engine/analyzers/DbMigrationCertifier.cjs",
+      "size": 1194,
+      "lastModified": "2026-08-01T09:02:19.488Z",
+      "hash": "5e6a2e2d5a063ee5b8d7f13eefd981f0357d6039dd770e58f1edfde8ff9929bf"
+    },
+    {
+      "path": "engine/analyzers/DisasterRecoveryCertifier.cjs",
+      "size": 1274,
+      "lastModified": "2026-08-01T09:02:30.394Z",
+      "hash": "d357bee0a2099369aa9ae1e69abdf1856f3732c7730604bca729804b6bfd6e9a"
+    },
+    {
+      "path": "engine/analyzers/LspDapAnalyzer.cjs",
+      "size": 1659,
+      "lastModified": "2026-08-01T08:59:08.361Z",
+      "hash": "0899dc402864d4d44ee0b74afe3b7a681eb82c78612cdb646ee8214a0deed9a7"
+    },
+    {
+      "path": "engine/analyzers/ObservabilityCertifier.cjs",
+      "size": 1293,
+      "lastModified": "2026-08-01T09:02:28.371Z",
+      "hash": "e52dbc3889866ebc2821fb35680d39c38feb7a732bd0842bf6cd8d9efad59294"
+    },
+    {
+      "path": "engine/analyzers/OsCompatibilityAnalyzer.cjs",
+      "size": 1466,
+      "lastModified": "2026-08-01T09:01:05.434Z",
+      "hash": "7908c9a8f5920fd242a28314b589cb14c2861857055679756a311ac75447eaa4"
+    },
+    {
+      "path": "engine/analyzers/PackageManagerAnalyzer.cjs",
+      "size": 2071,
+      "lastModified": "2026-08-01T09:00:54.178Z",
+      "hash": "579c8f69b0ab2ba2d51a0f597de6d19b1d212d38f076cd47fe014311552d69a2"
+    },
+    {
+      "path": "engine/analyzers/ProductionOperationsCertifier.cjs",
+      "size": 1382,
+      "lastModified": "2026-08-01T09:02:34.225Z",
+      "hash": "8bfa9e3823159e8f88e3076e8103d0a40085a9c48b0d71591a24052160550c4d"
+    },
+    {
+      "path": "engine/analyzers/RuntimeChaosCertifier.cjs",
+      "size": 1508,
+      "lastModified": "2026-08-01T09:02:23.340Z",
+      "hash": "9469d78faaab1030db947aa1b0fe5c7f5c60b20c62ba8c823486f6d6f310434d"
+    },
+    {
+      "path": "engine/analyzers/ScmEcosystemAnalyzer.cjs",
+      "size": 1392,
+      "lastModified": "2026-08-01T09:00:56.756Z",
+      "hash": "c0485c1d2d1d717cb17789fa96595216f0184adb2bfeed388c18a47719e6b591"
+    },
+    {
+      "path": "engine/analyzers/SecurityAnalyzer.cjs",
+      "size": 3164,
+      "lastModified": "2026-07-31T20:05:04.733Z",
+      "hash": "4d97edf1ac5cb707f8d0c79d074aa8ff70228652734eb4a03192d97b8846dd29"
+    },
+    {
+      "path": "engine/analyzers/SecurityHardeningCertifier.cjs",
+      "size": 1470,
+      "lastModified": "2026-08-01T09:02:25.829Z",
+      "hash": "972e63dc0115529b9f1027756548491dd7047ce6566a4dd137929ea9d1e26733"
+    },
+    {
+      "path": "engine/analyzers/SupplyChainAuditor.cjs",
+      "size": 1271,
+      "lastModified": "2026-08-01T09:02:13.024Z",
+      "hash": "026257b253dd173f3875f76bf0ee6699171fbbe3929d9e96948f2443b8e41c16"
+    },
+    {
+      "path": "engine/analyzers/test_SecurityAnalyzer.cjs",
+      "size": 835,
+      "lastModified": "2026-07-31T19:51:24.976Z",
+      "hash": "b1d492906a0bb951372622968674c7693142589f21b827fb68c48f09877c881f"
+    },
+    {
+      "path": "engine/analyzers/UniversalIdeRegistry.cjs",
+      "size": 5037,
+      "lastModified": "2026-08-01T09:00:49.007Z",
+      "hash": "0ee5f911a20581ad8ce0d85373db1612b9c4039eab8eb2506ebc19efc51d2572"
+    },
+    {
+      "path": "engine/analyzers/UpgradeCompatibilityCertifier.cjs",
+      "size": 1251,
+      "lastModified": "2026-08-01T09:02:21.380Z",
+      "hash": "7bd432033560ca6c3675ac1ad7ee7b411a049d3af1a7bd828aacdd406bbeabdf"
+    },
+    {
+      "path": "engine/analyzers/UtcfCoverageEngine.cjs",
+      "size": 3629,
+      "lastModified": "2026-08-01T09:04:29.840Z",
+      "hash": "a2f023c8916091202cb7a484a4d2a75f47be78eda23314e42e586bfc90b2d0fb"
+    },
+    {
+      "path": "engine/AnalyzerSDK.cjs",
+      "size": 1699,
+      "lastModified": "2026-07-31T19:50:53.924Z",
+      "hash": "018153ff0c7cbcd34a5c892d63d597bab29e1bf0ea0b64fa8e33e4de36956600"
+    },
+    {
+      "path": "engine/api/AutonomousApiGovernanceEngine.js",
+      "size": 1466,
+      "lastModified": "2026-08-01T20:06:22.488Z",
+      "hash": "6a8dd3d06fb0445fb9c1e9c9e60f312b903981c1ef05ebce7fe092721d292232"
+    },
+    {
+      "path": "engine/api/ContractEvolutionEngine.js",
+      "size": 1554,
+      "lastModified": "2026-08-01T21:47:26.217Z",
+      "hash": "67d051416e179c34e5b7d27d1d04512288f0645a118683a936fc8a5fa2a9b7d7"
+    },
+    {
+      "path": "engine/api/governance_api_router.cjs",
+      "size": 5401,
+      "lastModified": "2026-07-31T20:04:15.333Z",
+      "hash": "15e4a22275b6fdca9a938efc0fcc357531443b887ca7427de59f3f9db157785c"
+    },
+    {
+      "path": "engine/architecture/ArchitectureManager.cjs",
+      "size": 3716,
+      "lastModified": "2026-07-31T21:11:39.937Z",
+      "hash": "934ba5aa5bbbd44c5e8cddacb55f9c5fd4f6b6c2a2f98ef2cd49ff747c2c630d"
+    },
+    {
+      "path": "engine/audit/AuditorReportExporter.js",
+      "size": 2669,
+      "lastModified": "2026-08-01T18:03:16.127Z",
+      "hash": "963bf8208166cbd7746689225badbd7f8d6c4fd182e2c03ad4af57dbaadddb47"
+    },
+    {
+      "path": "engine/audit/AuditSummaryProvider.js",
+      "size": 1786,
+      "lastModified": "2026-08-02T13:29:46.972Z",
+      "hash": "f3b41059e1d48be28db62e1a26ccf57b474fe9c647eca367fe4c909e74899468"
+    },
+    {
+      "path": "engine/audit/AutomatedExternalAuditPortalEngine.js",
+      "size": 1393,
+      "lastModified": "2026-08-01T21:24:21.166Z",
+      "hash": "0c271550562467eeb198f52f5f9bb74a0ed5f8de82e3e451c7a060c9cf30a26a"
+    },
+    {
+      "path": "engine/audit/AutonomousProductAssurancePipeline.js",
+      "size": 4224,
+      "lastModified": "2026-08-01T18:03:16.156Z",
+      "hash": "4e60814cfb952216fc12cecc0070c9b2266feefd93911ff144aa6654b8390584"
+    },
+    {
+      "path": "engine/audit/blueprint_compliance_audit.cjs",
+      "size": 9126,
+      "lastModified": "2026-07-31T20:38:03.806Z",
+      "hash": "aa5c094fa156fc108180c0a66d5cc15ca14265ab7a3453b89674fb8653f24043"
+    },
+    {
+      "path": "engine/audit/CleanRoomReproducibilityEngine.js",
+      "size": 1645,
+      "lastModified": "2026-08-01T21:47:22.175Z",
+      "hash": "fb9162e9d4dab6928e1d5881fd227310eb7968ee8694ff6c2ffcb1c3e356557c"
+    },
+    {
+      "path": "engine/audit/ComplianceProcurementPackager.js",
+      "size": 2452,
+      "lastModified": "2026-08-01T18:03:16.191Z",
+      "hash": "7f85918770958bccc61099376a3fe7026cc6ebac385af2662b69e369f6aaa6fc"
+    },
+    {
+      "path": "engine/audit/eaorcs_operational_readiness_audit.cjs",
+      "size": 7944,
+      "lastModified": "2026-07-31T20:04:44.034Z",
+      "hash": "72b062eb392a2defe8675e5c5fb10568dde192341e48c17e9822c50719b24da3"
+    },
+    {
+      "path": "engine/audit/EvidenceGenerator.js",
+      "size": 5779,
+      "lastModified": "2026-08-01T18:03:16.230Z",
+      "hash": "aebf2b1d58e433a95d22b7f9ebad128e9a4338a26458c1b26a4105f23f63ca48"
+    },
+    {
+      "path": "engine/audit/ExternalAssuranceEngine.js",
+      "size": 1626,
+      "lastModified": "2026-08-01T22:04:01.406Z",
+      "hash": "b8bc16fde645327a5cd171ba982c4ecee4fd13e6785308fce697e471cd094f74"
+    },
+    {
+      "path": "engine/audit/ExternalAuditabilityScoreEngine.js",
+      "size": 2538,
+      "lastModified": "2026-08-01T17:43:47.823Z",
+      "hash": "95694ef115660d58eeaa7df6056f9737dec2551dc4292e2ac4a226abf7488369"
+    },
+    {
+      "path": "engine/audit/ExternalAuditorAccessEngine.js",
+      "size": 2648,
+      "lastModified": "2026-08-01T18:03:16.244Z",
+      "hash": "522524a0608c7cf55323b010e8ff50287895c7ebb7971ce2aba9fac6d8c0042c"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit_v3.cjs",
+      "size": 12911,
+      "lastModified": "2026-07-31T20:52:58.650Z",
+      "hash": "b017d11b43313aafc340faca02aedc6ab3749873d84e5dbdcc4aaba9eb484029"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit_v4.cjs",
+      "size": 14562,
+      "lastModified": "2026-07-31T20:55:20.511Z",
+      "hash": "8cd4d8fba56224beeb37ddac7224c766d7a767639be23d3bf7904315cd075234"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit_v5.cjs",
+      "size": 16015,
+      "lastModified": "2026-07-31T20:57:45.040Z",
+      "hash": "6e43f6594bcd0510675659215b0b33fe444c5b9ea263e4d2e39cdc3d5029b497"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit_v6.cjs",
+      "size": 13545,
+      "lastModified": "2026-07-31T21:04:01.986Z",
+      "hash": "8dd7a553295311b02335a169cbb8edb928ba82ceb612f4725f69550ee6ba452b"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit_v7.cjs",
+      "size": 11228,
+      "lastModified": "2026-07-31T21:07:23.273Z",
+      "hash": "eb9c39b62735722f24c6d7c56b5be180e1fafc0ae332d9964812e34037e4a150"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit_v8.cjs",
+      "size": 25074,
+      "lastModified": "2026-08-01T09:04:53.650Z",
+      "hash": "e98797ff234e4b851c758dc511ddf9b4ee4ff72e04f8d046b27c8d6f28ac2b53"
+    },
+    {
+      "path": "engine/audit/final_ga_evidence_audit.cjs",
+      "size": 10403,
+      "lastModified": "2026-07-31T20:41:49.941Z",
+      "hash": "83f97608db2ca71e5ec2cdfbf827a9283b5014d998dd13354957484fa77b19e1"
+    },
+    {
+      "path": "engine/audit/IndependentAssuranceEngine.js",
+      "size": 1338,
+      "lastModified": "2026-08-01T19:44:15.161Z",
+      "hash": "fd80ddebfe6727081894de6e70c2f62f46fee8237ba1da754f99f96a9f7bbf18"
+    },
+    {
+      "path": "engine/audit/IndependentAuditEngine.js",
+      "size": 1324,
+      "lastModified": "2026-08-01T21:06:33.503Z",
+      "hash": "a26c5e6e1f8575aa25f4e57e37bce28c8e1b7eb16ef5a9a1a43845b2f9937fd3"
+    },
+    {
+      "path": "engine/audit/IndependentReproducibilityEngine.js",
+      "size": 1387,
+      "lastModified": "2026-08-01T21:36:24.292Z",
+      "hash": "15519a1990e067c95cd382965368e01bf75439942248928915c67aa9288f1e83"
+    },
+    {
+      "path": "engine/audit/LaunchGateDashboard.js",
+      "size": 3100,
+      "lastModified": "2026-08-01T18:03:16.313Z",
+      "hash": "1ffdc22660810eda4ecd1406844c85d5da2d74a5b9496985d6d56536534cda12"
+    },
+    {
+      "path": "engine/audit/ObjectiveLaunchThresholdEngine.js",
+      "size": 3005,
+      "lastModified": "2026-08-01T18:03:16.324Z",
+      "hash": "3e78920ce041bb5a308afa43259e9ca6777a46cb99c1fdf6b696110fcf050468"
+    },
+    {
+      "path": "engine/audit/ObservatoryDashboard.cjs",
+      "size": 3115,
+      "lastModified": "2026-07-31T21:14:39.763Z",
+      "hash": "1cab108208cbcc44016413c02116e6f1e0d745643c580d1c071726f3acb86fd3"
+    },
+    {
+      "path": "engine/audit/Phase15LaunchReadinessOrchestrator.js",
+      "size": 5408,
+      "lastModified": "2026-08-01T18:03:16.334Z",
+      "hash": "cf92c6df7555d6c86eef2c0898a197992f6c105a75aa82565ab771b5989c94e8"
+    },
+    {
+      "path": "engine/audit/Phase16LaunchManagementOrchestrator.js",
+      "size": 5770,
+      "lastModified": "2026-08-01T18:03:16.342Z",
+      "hash": "13689dc945f0006db3523662e7df49d1b6ba5283f8be630a4da72e24e7431e46"
+    },
+    {
+      "path": "engine/audit/Phase17GoLiveGovernanceOrchestrator.js",
+      "size": 4098,
+      "lastModified": "2026-08-01T18:03:16.406Z",
+      "hash": "2ff96cd242f7cefd5093bcd1aa78dac6afc3c8c86570c9db580b136f2269fb2e"
+    },
+    {
+      "path": "engine/audit/Phase18ExternalAuditReadinessOrchestrator.js",
+      "size": 3396,
+      "lastModified": "2026-08-01T18:03:16.438Z",
+      "hash": "1ab75a2155027514df6af80a211a0a1849a6e1dac69badd21fff9e07622df376"
+    },
+    {
+      "path": "engine/audit/Phase19OperationalAdoptionOrchestrator.js",
+      "size": 2992,
+      "lastModified": "2026-08-01T18:00:32.999Z",
+      "hash": "5f503dcd1a820e638326c0f978e791de86f657cf78a5a9b058b525f42aada31e"
+    },
+    {
+      "path": "engine/audit/Phase20ProductionValidationOrchestrator.js",
+      "size": 1948,
+      "lastModified": "2026-08-01T18:16:45.685Z",
+      "hash": "ae72fed320c825b6e2d2690acb2ecc00c8e72cdd0bded740d84433b0809ca378"
+    },
+    {
+      "path": "engine/audit/Phase21SustainedValidationOrchestrator.js",
+      "size": 2279,
+      "lastModified": "2026-08-01T18:25:44.107Z",
+      "hash": "5e529291db2e7f34c3b8e914c44464f04c234ba860f76cd9b868a110d9cb3755"
+    },
+    {
+      "path": "engine/audit/Phase22ContinuousOperationalProofsOrchestrator.js",
+      "size": 2361,
+      "lastModified": "2026-08-01T18:32:34.622Z",
+      "hash": "3777a72db9357d7e72faec573441c6ee1719a8cf3a56c6c7bfe7b54c3d4d9991"
+    },
+    {
+      "path": "engine/audit/Phase23EvidenceLakeOrchestrator.js",
+      "size": 2017,
+      "lastModified": "2026-08-01T18:40:35.280Z",
+      "hash": "43518b33548a196366b02cdd14f1a48c549ec78544207b75034bb395e36bc401"
+    },
+    {
+      "path": "engine/audit/Phase24PersistentExecutionOrchestrator.js",
+      "size": 1784,
+      "lastModified": "2026-08-01T18:50:35.103Z",
+      "hash": "28d7f8787b878e465d321d245436bccd6532f28a7f4136cbe5df8d77e503acc4"
+    },
+    {
+      "path": "engine/audit/Phase25LiveSignalSubstantiationOrchestrator.js",
+      "size": 1750,
+      "lastModified": "2026-08-01T19:04:12.106Z",
+      "hash": "8d6505ea9dd7fac280383791904c3d8a216aba7bf09adff44a1fdaa96ddbaea7"
+    },
+    {
+      "path": "engine/audit/Phase26CommercialLaunchOrchestrator.js",
+      "size": 2116,
+      "lastModified": "2026-08-01T19:29:33.027Z",
+      "hash": "9ed0a3538e1ce7921fc87e62a24d7d23dc15793ca3050231dc0045ec89f717a4"
+    },
+    {
+      "path": "engine/audit/Phase27OperationalTrustOrchestrator.js",
+      "size": 2953,
+      "lastModified": "2026-08-01T19:44:40.128Z",
+      "hash": "cd20786144a095e270aaadbccb58f80fd7854f0d2c24d0b3454fe8b8aacb93ae"
+    },
+    {
+      "path": "engine/audit/Phase28OperationalEvidenceOrchestrator.js",
+      "size": 2510,
+      "lastModified": "2026-08-01T19:58:49.032Z",
+      "hash": "99bfb343f7b0eaf3ad560ef26a62dd2f44a695ab25ba588981c88a7c85cce30f"
+    },
+    {
+      "path": "engine/audit/Phase29ContinuousTrustOrchestrator.js",
+      "size": 2669,
+      "lastModified": "2026-08-01T20:06:37.964Z",
+      "hash": "939fd6e20704841498246d07af95e1fa30d5e81b7f702a8c2090b19e270b4700"
+    },
+    {
+      "path": "engine/audit/Phase30FederatedTrustOrchestrator.js",
+      "size": 3283,
+      "lastModified": "2026-08-01T20:26:37.995Z",
+      "hash": "b28e7815c81982bacf9583adef093223ef4ac114073929737a0a4dd841797c83"
+    },
+    {
+      "path": "engine/audit/Phase31LivePlatformIntelligenceOrchestrator.js",
+      "size": 3381,
+      "lastModified": "2026-08-01T20:40:27.569Z",
+      "hash": "6e6918e6c8137ce0e052408dccd9af9f22e28f2675a3c2b11a75589ebaaf735e"
+    },
+    {
+      "path": "engine/audit/Phase32EcosystemPlatformOrchestrator.js",
+      "size": 2681,
+      "lastModified": "2026-08-01T20:51:30.092Z",
+      "hash": "bae931569fb6faa3479b9dec6d2f77c55be59ba28acb94d7195d62755dfe7020"
+    },
+    {
+      "path": "engine/audit/Phase33VerifiablePlatformOrchestrator.js",
+      "size": 3183,
+      "lastModified": "2026-08-01T21:06:40.798Z",
+      "hash": "d5b457328c77a7303ed028e9cf190d1eec7694def0915fad953056186f28592b"
+    },
+    {
+      "path": "engine/audit/Phase34GlobalEcosystemOrchestrator.js",
+      "size": 3396,
+      "lastModified": "2026-08-01T21:24:42.856Z",
+      "hash": "bdb18abbe70eddf4fbf2d2b792502c9e80bddffff96bef7b17d922fe4859babd"
+    },
+    {
+      "path": "engine/audit/Phase35LiveEvidenceOrchestrator.js",
+      "size": 3189,
+      "lastModified": "2026-08-01T21:30:46.276Z",
+      "hash": "29ac7ed35f7696f3c8f061559f978f53918c31426c7b332964c83db69a2c8b2c"
+    },
+    {
+      "path": "engine/audit/Phase36LiveProductionOrchestrator.js",
+      "size": 3281,
+      "lastModified": "2026-08-01T21:37:01.152Z",
+      "hash": "a7bc746234f1d826605bb79b12c69228e5e5718e04a9fa3124ed75bb00e0c666"
+    },
+    {
+      "path": "engine/audit/Phase37OperationalProofOrchestrator.js",
+      "size": 3203,
+      "lastModified": "2026-08-01T21:47:19.658Z",
+      "hash": "b4fcef050758a98278ef624538afb85a88678c509cb3ec80686b35860a08d4f6"
+    },
+    {
+      "path": "engine/audit/PlatformComplianceAuditor.cjs",
+      "size": 4249,
+      "lastModified": "2026-07-31T21:12:15.576Z",
+      "hash": "507b46a40ddb6ae9f67124235d180f75d5b69f494fe9ca216ce83db70e4fcad4"
+    },
+    {
+      "path": "engine/audit/ProcurementEvidenceEngine.js",
+      "size": 1265,
+      "lastModified": "2026-08-01T21:47:14.101Z",
+      "hash": "dd4deec6e74aac6e14cda24c89d90e6b24e1db24c52fccfb4d997025d105a06f"
+    },
+    {
+      "path": "engine/audit/ProvenanceVerificationPortal.js",
+      "size": 3705,
+      "lastModified": "2026-08-01T18:03:16.447Z",
+      "hash": "ddc1ad19e7025ef4bb30e1c92eb547ee40ab6a7d585053e88b72801275355564"
+    },
+    {
+      "path": "engine/audit/ReproducibleBenchmarkRunner.js",
+      "size": 4542,
+      "lastModified": "2026-08-01T18:03:16.461Z",
+      "hash": "39bf730a73fc264886250de0b119c890e5267d58ff39387d251904cd2c4df3e5"
+    },
+    {
+      "path": "engine/audit/run_federated_40_streams_audit.js",
+      "size": 25924,
+      "lastModified": "2026-08-02T15:45:28.974Z",
+      "hash": "70ef824b0e6714022b014a50a6f56700274879ac64169e72cd183d743a923d5b"
+    },
+    {
+      "path": "engine/audit/RuntimeEvidenceEngine.js",
+      "size": 2590,
+      "lastModified": "2026-08-01T18:03:16.479Z",
+      "hash": "0fbda93189ec25fc971c0e479ec9fb70092eeb965aad424967cd66ac63a61db0"
+    },
+    {
+      "path": "engine/audit/SignedReleaseEvidencePackager.js",
+      "size": 2333,
+      "lastModified": "2026-08-01T18:03:16.503Z",
+      "hash": "d02756cb3045a7c4fd9a46d275845ab15c8a147e86b6f91b66e30a1abc86ac3a"
+    },
+    {
+      "path": "engine/audit/ThirdPartyLabAttestationEngine.js",
+      "size": 2963,
+      "lastModified": "2026-08-01T18:03:16.536Z",
+      "hash": "2f4d8f51e6472bae3f7c4a93b6ca8df4e813577864a77c8bed788c44df18974d"
+    },
+    {
+      "path": "engine/audit/tier1_ga_release_audit.cjs",
+      "size": 14966,
+      "lastModified": "2026-07-31T20:50:40.970Z",
+      "hash": "5135cbfb774aa970bf805204d22112d2dfae9ecbe03d2a282ee9ee30498a753b"
+    },
+    {
+      "path": "engine/blueprint/BlueprintConformanceEngine.js",
+      "size": 1422,
+      "lastModified": "2026-08-01T22:41:33.837Z",
+      "hash": "3d45b8456da71784975d1cff8d508c92e596f1c4250acc1bee3543c1e261fe8d"
+    },
+    {
+      "path": "engine/blueprint/BlueprintDriftDetectorEngine.js",
+      "size": 1381,
+      "lastModified": "2026-08-01T22:41:40.970Z",
+      "hash": "b7c7096f702380e0794986e9cb7110602d4f61b5b1a4a4b23b9e264053ae9d7d"
+    },
+    {
+      "path": "engine/CapabilityNegotiator.cjs",
+      "size": 2370,
+      "lastModified": "2026-07-31T19:46:46.096Z",
+      "hash": "d72746a672eeeac61217c223b03c60cb0b504a1aa1cde000e7872d97fa0faa15"
+    },
+    {
+      "path": "engine/CapabilityNegotiator.js",
+      "size": 2419,
+      "lastModified": "2026-08-01T18:03:15.671Z",
+      "hash": "bfc07d95c5bcf3c643fb76718b7fb017318c6f1f32988a097efbc48ef3ecec16"
+    },
+    {
+      "path": "engine/cert/IndependentCertificationAuthority.js",
+      "size": 4013,
+      "lastModified": "2026-08-01T18:03:16.672Z",
+      "hash": "ad7908cd521d8f856fef05700ba4fc91f69a7cbc7b1f14aaaf472f002650b34e"
+    },
+    {
+      "path": "engine/certification/AutomatedLaunchCertificationEngine.js",
+      "size": 1433,
+      "lastModified": "2026-08-01T21:36:56.601Z",
+      "hash": "74fbd6d838a32fdfa1b81f5c995f8f1467d26b292d9e2774f44794097979871e"
+    },
+    {
+      "path": "engine/certification/CapabilityVsEvidenceEngine.cjs",
+      "size": 1844,
+      "lastModified": "2026-08-01T08:58:57.845Z",
+      "hash": "fe527952c8d6beebb23f25f5fbf4e5e31a194a93bc39fda023d91ebd0169b50c"
+    },
+    {
+      "path": "engine/certification/ChainOfCustodyTracker.cjs",
+      "size": 2383,
+      "lastModified": "2026-08-01T08:56:05.662Z",
+      "hash": "8934aa4b5228f8def41c6318887feb49e0d18e628e73a8da603cb10aad01a277"
+    },
+    {
+      "path": "engine/certification/CheckpointEvidenceManifest.cjs",
+      "size": 1678,
+      "lastModified": "2026-08-01T09:01:14.450Z",
+      "hash": "bd9e0caa4d08a78edfd02d7fc41a85beca12c3283620834844b3af880b7c0391"
+    },
+    {
+      "path": "engine/certification/ContinuousRuntimeCertificationEngine.js",
+      "size": 1528,
+      "lastModified": "2026-08-01T21:30:36.504Z",
+      "hash": "9bae0e6521db7663be95f9ec6363f1fda4a3c9c8a6a824945a0d768297172aea"
+    },
+    {
+      "path": "engine/certification/EvidenceBundle.cjs",
+      "size": 2065,
+      "lastModified": "2026-07-31T19:55:27.575Z",
+      "hash": "9164916314099f163c57c3c4012202d7a4da813c7e99fd8169edf6b706b5e456"
+    },
+    {
+      "path": "engine/certification/EvidenceTierClassifier.cjs",
+      "size": 2232,
+      "lastModified": "2026-08-01T09:00:45.512Z",
+      "hash": "935314f1d8399cc3680a6dcac8e4b80ee8327fe7bb6b3288b95a621519e6b952"
+    },
+    {
+      "path": "engine/certification/ExecutionManifest.cjs",
+      "size": 1738,
+      "lastModified": "2026-07-31T19:51:04.471Z",
+      "hash": "0691c7e557a1ab9327ce2c7f7faf6d1a05a79da22bcc31336881bdb4585f28db"
+    },
+    {
+      "path": "engine/certification/FederatedBundleExporter.cjs",
+      "size": 3261,
+      "lastModified": "2026-08-01T08:56:29.643Z",
+      "hash": "e3e93f00e45de7f62652cb870715edb1397ef6d368cea6215c848b2f6fdb77a7"
+    },
+    {
+      "path": "engine/certification/GaPassportV2Compiler.cjs",
+      "size": 2687,
+      "lastModified": "2026-08-01T09:03:41.109Z",
+      "hash": "7cf50589971760a00d8279da6308aba232cfcda74abdb6894bc1b90e9affd91c"
+    },
+    {
+      "path": "engine/certification/ProductDnaCompiler.js",
+      "size": 2389,
+      "lastModified": "2026-08-02T13:48:56.602Z",
+      "hash": "40db217422d891709e05ff9e2a9542bebef235588c28a772ab80ce15d4d7d878"
+    },
+    {
+      "path": "engine/certification/ProductPassportV2Engine.js",
+      "size": 1612,
+      "lastModified": "2026-08-02T13:48:59.624Z",
+      "hash": "41febabbb7e2dba0922f64be2b058b9c8991029a4d670fca9eb1dc8b01ead851"
+    },
+    {
+      "path": "engine/certification/ProvenanceGraph.cjs",
+      "size": 4166,
+      "lastModified": "2026-07-31T21:14:07.002Z",
+      "hash": "797c8a664430f1661c44f77959aac05ab463d819e2a8d66112aca584edbafed1"
+    },
+    {
+      "path": "engine/certification/PrrEvaluator.cjs",
+      "size": 4347,
+      "lastModified": "2026-08-01T08:59:15.131Z",
+      "hash": "175a5098a6e39babf579466670fcf301c815b948b4e1008df3a58cec286aee17"
+    },
+    {
+      "path": "engine/certification/PrrScorecard.cjs",
+      "size": 2532,
+      "lastModified": "2026-07-31T19:51:04.800Z",
+      "hash": "0b3f9d40255dad8e4b4baa7222506cf8358b890329558d64a0de44523e88c759"
+    },
+    {
+      "path": "engine/certification/ReplayEngine.cjs",
+      "size": 2007,
+      "lastModified": "2026-07-31T19:56:37.328Z",
+      "hash": "ed131288ca56548c20dc3ff3c3d027f0a0a061590d12d2b36a7d9aa8c5ea16b9"
+    },
+    {
+      "path": "engine/cicd/BuildEvidencePublisher.js",
+      "size": 2043,
+      "lastModified": "2026-08-01T18:03:35.004Z",
+      "hash": "e972991037969676b5a3c7e061baa2c6a55feea69aa440d7648146f4eaa17eb6"
+    },
+    {
+      "path": "engine/cicd/ContinuousContractIntelligenceEngine.js",
+      "size": 1442,
+      "lastModified": "2026-08-01T20:26:23.004Z",
+      "hash": "53481216adb8943694893f053fbcd0b67cefba5e107b0277d47d0d7fb0b65e39"
+    },
+    {
+      "path": "engine/cicd/DeploymentEvidenceRecorder.js",
+      "size": 2006,
+      "lastModified": "2026-08-01T18:03:35.012Z",
+      "hash": "042843b5e4a84e760c32a18176b9cd452193918699f6d861b063752557ef674b"
+    },
+    {
+      "path": "engine/cicd/PipelineAuditTrailEngine.js",
+      "size": 1968,
+      "lastModified": "2026-08-01T18:03:35.017Z",
+      "hash": "76e25cb38d378d05358f17ee32e1adec7fc31598d983f0f05a2dfe291ade9e70"
+    },
+    {
+      "path": "engine/commercial/BillingAuditTrail.js",
+      "size": 2444,
+      "lastModified": "2026-08-01T18:03:16.769Z",
+      "hash": "d660f64f541c3f018c85ebedef36597a4b132e3bb13f6eb3fc40f41d86a533d0"
+    },
+    {
+      "path": "engine/commercial/BillingEngine.js",
+      "size": 6424,
+      "lastModified": "2026-08-01T18:03:16.797Z",
+      "hash": "023055bff97d5f302357c10ae236b5fdf3d547ca6bdbc363eafeb1772cd84b39"
+    },
+    {
+      "path": "engine/commercial/BillingWorkflowOrchestrator.js",
+      "size": 1835,
+      "lastModified": "2026-08-01T18:03:16.847Z",
+      "hash": "130f369ff312698d429f5d577b4b8fc62cbe4426946852d2cfe828bf1f15c864"
+    },
+    {
+      "path": "engine/commercial/CommercialDebtEconomicsEngine.js",
+      "size": 1368,
+      "lastModified": "2026-08-01T19:58:05.159Z",
+      "hash": "093d136bde5965876d8a37b933d0b0d7ee317f60f8bd3337d39b1d86e95893c8"
+    },
+    {
+      "path": "engine/commercial/CommercialEnablementSuite.js",
+      "size": 2590,
+      "lastModified": "2026-08-01T18:03:16.863Z",
+      "hash": "b94c6440a7f4cd4c89f0804d629a23c75d904067b26ad52289b48d707e03df12"
+    },
+    {
+      "path": "engine/commercial/CommercialFederationSkuEngine.js",
+      "size": 1389,
+      "lastModified": "2026-08-01T20:26:21.008Z",
+      "hash": "4ed0155a9129aa0cb082cd5b8e96d21733b3cb638c4a98eeac3ae9d05fdbb3c4"
+    },
+    {
+      "path": "engine/commercial/CommercialHealthAnalytics.js",
+      "size": 2594,
+      "lastModified": "2026-08-01T18:03:35.041Z",
+      "hash": "c8aa026d3a2f2211097fe3e0829a8c719ae091fe04807925549b4ef07208582a"
+    },
+    {
+      "path": "engine/commercial/CommercialIntelligenceEngine.js",
+      "size": 1582,
+      "lastModified": "2026-08-01T21:36:04.730Z",
+      "hash": "28604384ccdf0622b2c804f727c63853cebab465e5d4353259984572b1b20bd9"
+    },
+    {
+      "path": "engine/commercial/CommercializationEngine.js",
+      "size": 1643,
+      "lastModified": "2026-08-01T22:03:59.744Z",
+      "hash": "9573b4e75ac2c7a422eaefe61853b47cb62f9be570daa5db66ebad840ccc95bc"
+    },
+    {
+      "path": "engine/commercial/CommercialLifecycleEngine.js",
+      "size": 2422,
+      "lastModified": "2026-08-01T18:03:16.876Z",
+      "hash": "19dc0e2790092fa002d21d32f12ac308b856db98d90b9dcbf814952e9b10b0ed"
+    },
+    {
+      "path": "engine/commercial/CommercialOperationsEngine.js",
+      "size": 2206,
+      "lastModified": "2026-08-01T22:46:05.646Z",
+      "hash": "6b84ee283300097f7593bcf344d9df4c4e3cc0349783c94d190454db210e1819"
+    },
+    {
+      "path": "engine/commercial/CommercialOperationsIntelligenceEngine.js",
+      "size": 1481,
+      "lastModified": "2026-08-01T20:51:39.866Z",
+      "hash": "cf5de2a7b9ba9cbb80f0894338258f0a91fa5bfc0e922dd6259c7794d2d91f2f"
+    },
+    {
+      "path": "engine/commercial/CommercialProcurementVerificationEngine.js",
+      "size": 1430,
+      "lastModified": "2026-08-01T21:36:47.369Z",
+      "hash": "aa8945064f6ac65b4a170a8bda19fabb975d0076a215e0ff1868597410e4c3e1"
+    },
+    {
+      "path": "engine/commercial/ContinuousCommercialIntelligenceEngine.js",
+      "size": 1511,
+      "lastModified": "2026-08-01T20:40:13.809Z",
+      "hash": "db5b260b8a37ca576508143148b75008e4dee35d7c78bcbecfd05e95f48e0b9d"
+    },
+    {
+      "path": "engine/commercial/CustomerHealthConnector.js",
+      "size": 2353,
+      "lastModified": "2026-08-01T18:03:35.049Z",
+      "hash": "8c1062df1e3fc6865814cd8c7f9503967f542b3fe70984246228d6411bedcbae"
+    },
+    {
+      "path": "engine/commercial/CustomerPilotVerificationEngine.js",
+      "size": 1309,
+      "lastModified": "2026-08-01T21:47:12.253Z",
+      "hash": "f439a3fcbe3f64f4e7f18ff51c37f362e26482882230dd7680f6d0f708030a94"
+    },
+    {
+      "path": "engine/commercial/CustomerSuccessEngine.js",
+      "size": 18201,
+      "lastModified": "2026-08-01T18:03:16.935Z",
+      "hash": "e15e326f4f7d19d4fdb8ecaae8a8fcea9e0665e9a8aa5a139f8a18ac21948faa"
+    },
+    {
+      "path": "engine/commercial/EnterpriseUnitEconomicsEngine.js",
+      "size": 1406,
+      "lastModified": "2026-08-01T21:24:16.709Z",
+      "hash": "f7e7d8482906e9bc784ff943f0f2f320b3eb448b653aa6093457dc7ed4231c78"
+    },
+    {
+      "path": "engine/commercial/LicenseLifecycleManager.js",
+      "size": 4759,
+      "lastModified": "2026-08-01T18:03:16.941Z",
+      "hash": "0cbac4c8a767037844fa6efd860d89fdfdcc1c2fc5b2083d18955cd6333d95a4"
+    },
+    {
+      "path": "engine/commercial/LicenseTransactionLedger.js",
+      "size": 2420,
+      "lastModified": "2026-08-01T18:03:16.946Z",
+      "hash": "0898442a35ac3eff18cd917f342ff054c2f20b171e6c3db31e3d2149eb0ae5b2"
+    },
+    {
+      "path": "engine/commercial/LicensingActivationEngine.js",
+      "size": 2139,
+      "lastModified": "2026-08-01T18:03:16.951Z",
+      "hash": "cc0f3a74be3d7053c378fb22d522dba353546658794f7f5f810649e205822349"
+    },
+    {
+      "path": "engine/commercial/OnboardingE2EVerifier.js",
+      "size": 2446,
+      "lastModified": "2026-08-01T18:03:16.957Z",
+      "hash": "c203447f24beac3af0c523ab8cb314c1f920f4be0eaf21c186199bfaa9cc39d6"
+    },
+    {
+      "path": "engine/commercial/OnboardingHistoryEngine.js",
+      "size": 2355,
+      "lastModified": "2026-08-01T18:03:16.965Z",
+      "hash": "a51f0a451119d38789fbf3de1046ceda3895c16278f44d8a6cb88467aba60309"
+    },
+    {
+      "path": "engine/commercial/OperationalEconomicsEngine.js",
+      "size": 1389,
+      "lastModified": "2026-08-01T21:06:27.992Z",
+      "hash": "1ea56a0919bc5618e463d3f4634fca8788b0a49de2cfbc6c2cad922998b0a6b5"
+    },
+    {
+      "path": "engine/commercial/OutcomeGraphRoiEngine.js",
+      "size": 1487,
+      "lastModified": "2026-08-01T20:06:34.818Z",
+      "hash": "5ed557e631202f180e1541fabb8722efe5b3068305d0f017e69907fa8316ccc6"
+    },
+    {
+      "path": "engine/commercial/ProductCommercialization.js",
+      "size": 12062,
+      "lastModified": "2026-08-01T18:03:16.971Z",
+      "hash": "b263ef431534e77b304a9530c599302e976bae8989994489223131d082ced71c"
+    },
+    {
+      "path": "engine/commercial/ProductReadinessEngine.js",
+      "size": 21146,
+      "lastModified": "2026-08-01T18:03:16.979Z",
+      "hash": "ffbfd416b47d732c47a38c54a5a833b006625781e7cdce65b7613a24bff022b5"
+    },
+    {
+      "path": "engine/commercial/RenewalRiskEngine.js",
+      "size": 1842,
+      "lastModified": "2026-08-01T18:03:35.046Z",
+      "hash": "865447ca4ec1fffaf0b1b8364c0e61cbc2e1997cf7dc0b81536c4cd7e9a4abf1"
+    },
+    {
+      "path": "engine/compliance/AuditTrailArchiver.js",
+      "size": 2358,
+      "lastModified": "2026-08-01T18:03:17.014Z",
+      "hash": "1f29afddae787c7e17ca36bac24e005f45aba66912f3f773390f3208e7bf9e73"
+    },
+    {
+      "path": "engine/compliance/AutomatedProcurementBundler.js",
+      "size": 24876,
+      "lastModified": "2026-08-01T18:03:17.022Z",
+      "hash": "7132ca5f931f8a90f01e444dd8aed13cd54e7e819a3dff4d027d4e35f122d38f"
+    },
+    {
+      "path": "engine/compliance/ComplianceStandardMapper.cjs",
+      "size": 2315,
+      "lastModified": "2026-08-01T08:56:20.120Z",
+      "hash": "b8f697cec067025415880db5450a531fad01c4a7c82210550d5cf1be8a2a44b8"
+    },
+    {
+      "path": "engine/compliance/EuCraAiActMapper.js",
+      "size": 2164,
+      "lastModified": "2026-08-01T18:03:17.029Z",
+      "hash": "acf2252cf74d244caa7b2b244276f3709537cd296833d6441c9914bd6b23d2bb"
+    },
+    {
+      "path": "engine/compliance/EvidenceRetentionEngine.js",
+      "size": 2570,
+      "lastModified": "2026-08-01T18:03:17.037Z",
+      "hash": "168fd7732c75a22d7b9dc3609240ba77dfe44365a65606d16aa11dfb74c10160"
+    },
+    {
+      "path": "engine/compliance/IsoSoc2EvidenceEngine.js",
+      "size": 2228,
+      "lastModified": "2026-08-01T18:03:17.047Z",
+      "hash": "3b3e5a9739422e7fea08ca3f0046b1642c6d96d2ae3811701918928065d363c4"
+    },
+    {
+      "path": "engine/compliance/NistFrameworkEngine.js",
+      "size": 2370,
+      "lastModified": "2026-08-01T18:03:17.053Z",
+      "hash": "63a86e93644cd0dfad6bda700bbcc72eaa6359024b3371ee230fcdc8c9a22c1c"
+    },
+    {
+      "path": "engine/compliance/RuntimeComplianceMappingEngine.js",
+      "size": 3415,
+      "lastModified": "2026-08-01T18:03:17.059Z",
+      "hash": "f689b1e1c14531816380db2a4e0ba826ac060ea8827b636c20b27c2971af2ad4"
+    },
+    {
+      "path": "engine/confidence/BlueprintConfidenceEngine.js",
+      "size": 8917,
+      "lastModified": "2026-08-01T18:03:17.103Z",
+      "hash": "4aca528f1f3aec1385ab1584910f049963057b4506e2cdbf2f3bd3169af41e03"
+    },
+    {
+      "path": "engine/confidence/CertificationConfidenceEngine.js",
+      "size": 5302,
+      "lastModified": "2026-08-01T18:03:17.109Z",
+      "hash": "948a79506f1abb4fd378d13c1ab0aa5828aab442e48739b2715f74c3aa79463a"
+    },
+    {
+      "path": "engine/confidence/OperationalConfidenceEngine.js",
+      "size": 5276,
+      "lastModified": "2026-08-01T18:03:17.115Z",
+      "hash": "d8023b5d195b9dba3d1e27cac067e8950c57a2f7db613df8c1c213bd73485fff"
+    },
+    {
+      "path": "engine/confidence/ProcurementConfidenceEngine.js",
+      "size": 5206,
+      "lastModified": "2026-08-01T18:03:17.120Z",
+      "hash": "8386543dea2f4a728f8ccb3da26a51e73bc34460761217a47033e6b4b0199f30"
+    },
+    {
+      "path": "engine/connectors/EcosystemConnectorRegistry.js",
+      "size": 10951,
+      "lastModified": "2026-08-01T18:03:17.128Z",
+      "hash": "a19321b1fa5fd398729692af06034c2b01b6a1b0e354c9333707a579dcb8cdfa"
+    },
+    {
+      "path": "engine/connectors/EvidenceIngestionPipeline.js",
+      "size": 2333,
+      "lastModified": "2026-08-01T18:03:17.134Z",
+      "hash": "fb64b8932f097f02824f95266889b2fdc6eb6278aa915d17fd108d0f64f6780e"
+    },
+    {
+      "path": "engine/connectors/LiveConnectorVerificationEngine.js",
+      "size": 1447,
+      "lastModified": "2026-08-01T21:36:15.299Z",
+      "hash": "a2c93600b2e50f6c6a4c37fcb3b4656482e7490c821d040feaaa0abcf24605d0"
+    },
+    {
+      "path": "engine/connectors/LiveProductionConnector.js",
+      "size": 3347,
+      "lastModified": "2026-08-01T18:03:17.140Z",
+      "hash": "f4044ad33849f28106fa1f94c237e05f825064a8b71a634592a2431d2037dc62"
+    },
+    {
+      "path": "engine/connectors/RealEcosystemConnectorValidator.js",
+      "size": 16724,
+      "lastModified": "2026-08-01T18:03:17.145Z",
+      "hash": "77310c5bf4513bc029644dc491d52d7fe4a4259b223315d99ebff4827c547193"
+    },
+    {
+      "path": "engine/connectors/ServiceHealthProbe.js",
+      "size": 2018,
+      "lastModified": "2026-08-01T18:03:17.149Z",
+      "hash": "dc76c4afdefa8b9b6c78f78265b8fc923396e6f0be6edc935a28cdfa45134f05"
+    },
+    {
+      "path": "engine/constitution/ProductConstitutionEngine.js",
+      "size": 2211,
+      "lastModified": "2026-08-02T13:49:02.387Z",
+      "hash": "c4ef951940fb044a646b5f014cb1e1e70f9baf7cc5409ce53306c58cf1c1c9d3"
+    },
+    {
+      "path": "engine/contract/ApiChangelogEngine.js",
+      "size": 1766,
+      "lastModified": "2026-08-01T18:03:17.155Z",
+      "hash": "1e50056820b193adffdd7051bdfdeae1ddb21fcb172a936d5c035f4d4182809f"
+    },
+    {
+      "path": "engine/contract/APIContractIntelligenceEngine.js",
+      "size": 1507,
+      "lastModified": "2026-08-01T22:41:55.009Z",
+      "hash": "543c4a71ddf6d8ff37a5e869f9a90e070e04064efca461bc7cea5b372fba66c0"
+    },
+    {
+      "path": "engine/contract/BreakingChangeDetector.js",
+      "size": 2285,
+      "lastModified": "2026-08-01T18:03:17.160Z",
+      "hash": "28a0f99088ba73b2fb36fc3d1bddda61589e88034e3f8462fac45f03561403d6"
+    },
+    {
+      "path": "engine/contract/CiCdApiGovernanceEnforcer.js",
+      "size": 2170,
+      "lastModified": "2026-08-01T18:03:17.166Z",
+      "hash": "628874c0f67a99d69d08e388d1e8bbc25ecca53f2f12b9e21541a121e2e4b194"
+    },
+    {
+      "path": "engine/contract/CiCdContractGate.js",
+      "size": 2221,
+      "lastModified": "2026-08-01T18:03:17.171Z",
+      "hash": "d7b3b17bfd5e0ae5c88348e296ed595b9cb3b4a74c2f4c40c5e8be6ce8085cbf"
+    },
+    {
+      "path": "engine/contract/ContinuousContractIntelligenceEngine.js",
+      "size": 1431,
+      "lastModified": "2026-08-01T21:30:11.210Z",
+      "hash": "1fdfa440156fe6d35b621205f8a704f89807062010fc128fff9dc6f7a97f592d"
+    },
+    {
+      "path": "engine/contract/ContractCompatibilityReporter.js",
+      "size": 1907,
+      "lastModified": "2026-08-01T18:03:17.175Z",
+      "hash": "5dea5c48e0cdcacf22fc1ffca44706296ccc6a46ffaf5131065b7aea41510757"
+    },
+    {
+      "path": "engine/contract/EndToEndApiContractIntelligenceEngine.js",
+      "size": 1509,
+      "lastModified": "2026-08-01T20:51:38.308Z",
+      "hash": "d2ee394cd790afe74e56781d447aa96dc7909914ed483531a36cfe21ace2ff88"
+    },
+    {
+      "path": "engine/contract/FederatedContractIntelligenceEngine.js",
+      "size": 1405,
+      "lastModified": "2026-08-01T20:39:59.679Z",
+      "hash": "89582ca3e991ff3ee49bd4d04fa2339c72f78a4cfb4a2e799facd6322f15bf44"
+    },
+    {
+      "path": "engine/contract/MergeRequestContractGate.js",
+      "size": 1748,
+      "lastModified": "2026-08-01T18:03:17.181Z",
+      "hash": "86931dc165624f10b017767225eeff10dd0f9879be7ab7e2c81e003c8cd88b3d"
+    },
+    {
+      "path": "engine/contract/OpenApiContractAuditor.js",
+      "size": 2684,
+      "lastModified": "2026-08-01T18:03:17.186Z",
+      "hash": "35d33b17c21d90a7040d8e6424f4681c331909a0a74beaea84bd70d837fc5f9e"
+    },
+    {
+      "path": "engine/contract/ProductBoundaryContract.js",
+      "size": 15549,
+      "lastModified": "2026-08-01T18:03:17.194Z",
+      "hash": "b2fe6bf4af30636605ed4da79616d69f5963b5413b14b0df23788b577d4887b3"
+    },
+    {
+      "path": "engine/contract/RuntimeContractVerificationEngine.js",
+      "size": 1400,
+      "lastModified": "2026-08-01T19:58:06.786Z",
+      "hash": "5b89dc82378b555dcb0da53f79beb78ec6e46652286de2004f8304dec2e264ae"
+    },
+    {
+      "path": "engine/contract/SdkContractSyncEngine.js",
+      "size": 2408,
+      "lastModified": "2026-08-01T18:03:17.198Z",
+      "hash": "8d565b1397962d7c58e588ac3d26ef43772aec77b2d7f82e2f2dd2c7d67839e3"
+    },
+    {
+      "path": "engine/contract/SdkSyncVerificationEngine.js",
+      "size": 1996,
+      "lastModified": "2026-08-01T18:03:17.202Z",
+      "hash": "7827befda7ee13165747f8b319b374a6f1769b5317d8e63d72b0a3d9eb2f50df"
+    },
+    {
+      "path": "engine/contract/UnifiedApiContractGraphEngine.js",
+      "size": 1365,
+      "lastModified": "2026-08-01T20:26:21.659Z",
+      "hash": "8da17c3d47aa72604458c5474c1be2c877ac973fffbd7ef833f89ae69d0b8d84"
+    },
+    {
+      "path": "engine/cx/CustomerExperienceEngine.js",
+      "size": 1634,
+      "lastModified": "2026-08-01T22:04:03.056Z",
+      "hash": "a6ed47030f98c561f6cd528de393d6ac9c6343eb237ac903a8423295e276c7a0"
+    },
+    {
+      "path": "engine/cx/CustomerSuccessEngine.js",
+      "size": 1489,
+      "lastModified": "2026-08-01T22:42:39.221Z",
+      "hash": "845900a71d540bab67c46ead133b70a094be50a6a08a881eda8aca40c0ac88b5"
+    },
+    {
+      "path": "engine/dcp/DistributionControlPlane.js",
+      "size": 23725,
+      "lastModified": "2026-08-02T13:53:51.236Z",
+      "hash": "3d3c135332ed8c66edea4eac4681df17d18ddc8acb4a93d043d6e50c44ca6b58"
+    },
+    {
+      "path": "engine/drift/BusinessDriftDetector.js",
+      "size": 9335,
+      "lastModified": "2026-08-01T18:03:17.207Z",
+      "hash": "e9abc8e2aeb7bb71e98871a9cd8721c9a70edb16d00bafec5a04a538bad430de"
+    },
+    {
+      "path": "engine/drift/ExtraFeatureEngine.js",
+      "size": 5714,
+      "lastModified": "2026-08-01T18:03:17.211Z",
+      "hash": "005f0d59d91ca920e15130f82d579528080810932830ba739d5f7fc0b61bcddd"
+    },
+    {
+      "path": "engine/drift/IntentAnalyzer.js",
+      "size": 7335,
+      "lastModified": "2026-08-01T18:03:17.215Z",
+      "hash": "8eb6f4ba11e4bc075153d50e23f761acb3d89494a59768085650068b79523a35"
+    },
+    {
+      "path": "engine/drift/MissingFeatureEngine.js",
+      "size": 5529,
+      "lastModified": "2026-08-01T18:03:17.221Z",
+      "hash": "33cf871d5b38d663fe444e07a939efff30477b99fd41ad8a32bbb51851937f9e"
+    },
+    {
+      "path": "engine/events/TrustEventLedger.cjs",
+      "size": 3468,
+      "lastModified": "2026-07-31T21:12:05.370Z",
+      "hash": "98c7a51d25b2c3d617ee1ce76fe652f7178caed893e3a12d5c5704f8157ca40e"
+    },
+    {
+      "path": "engine/evidence/AvailabilityAuditTrail.js",
+      "size": 2613,
+      "lastModified": "2026-08-01T18:03:17.227Z",
+      "hash": "fa86b239dd0fa2b7aaab8176e3e84f1dbb99b8c2080b2fbd5c87d277bf3f93d7"
+    },
+    {
+      "path": "engine/evidence/ContinuousEvidenceGraphEngine.js",
+      "size": 1327,
+      "lastModified": "2026-08-01T20:06:15.430Z",
+      "hash": "f54913e80b7c5cf8629396b0e0fb828718b2cf1862b54a849acc3d54b891a15c"
+    },
+    {
+      "path": "engine/evidence/EvidenceProvenanceChainEngine.js",
+      "size": 1371,
+      "lastModified": "2026-08-01T21:36:19.599Z",
+      "hash": "15cb6c86394bb09777fb86fe7adc5043341e6fe33208e43f5889c9fc58d408b7"
+    },
+    {
+      "path": "engine/evidence/EvidenceProvenanceFabricEngine.js",
+      "size": 1520,
+      "lastModified": "2026-08-01T20:51:33.766Z",
+      "hash": "ff00f3160b4e112fff6191bb9e4bc3364db7f0a3bdc8a32e9333ee1eb5d1afd3"
+    },
+    {
+      "path": "engine/evidence/OperationalEvidenceFabricEngine.js",
+      "size": 1423,
+      "lastModified": "2026-08-01T19:58:04.674Z",
+      "hash": "2a8820f849f45a44b28d16884ce374fb41155df408db171aef9404a53bad78c3"
+    },
+    {
+      "path": "engine/evidence/ProductionDeploymentLedger.js",
+      "size": 2593,
+      "lastModified": "2026-08-01T18:03:17.232Z",
+      "hash": "e0732518a9fbb68116cbf2db4abdcdf852b4cf92bbee06b42ed63e8731b5491a"
+    },
+    {
+      "path": "engine/evidence/RuntimeEvidenceBackboneEngine.js",
+      "size": 1471,
+      "lastModified": "2026-08-01T21:29:58.831Z",
+      "hash": "fca55784a3d2e53eb4e64b10c6bd6a31329a287783f936f5a7888618833d4701"
+    },
+    {
+      "path": "engine/evidence/RuntimeEvidenceEngine.js",
+      "size": 1327,
+      "lastModified": "2026-08-01T20:39:57.540Z",
+      "hash": "c4b581fa7a217a43150e7f4d9504ed8fcff4576300f09722f52b1af65021f339"
+    },
+    {
+      "path": "engine/evidence/UptimeHistoryEngine.js",
+      "size": 2144,
+      "lastModified": "2026-08-01T18:03:17.236Z",
+      "hash": "254884dbd59df77807025807af9c351d27e1ec23d317bcd79e74f45101e1620e"
+    },
+    {
+      "path": "engine/execution/IncrementalCertificationEngine.cjs",
+      "size": 2278,
+      "lastModified": "2026-08-01T08:56:14.673Z",
+      "hash": "a4dfdfcaf59a71233363715de80542a5b58916d7af9078c7f087532ced0b5e64"
+    },
+    {
+      "path": "engine/execution/PepStreamTracker.cjs",
+      "size": 3126,
+      "lastModified": "2026-08-01T09:04:37.768Z",
+      "hash": "96a6543e98c13587f252bbde11c7fe984e45f4a2aefe86b388bd2bdd783668f0"
+    },
+    {
+      "path": "engine/ExecutionGraph.cjs",
+      "size": 6778,
+      "lastModified": "2026-07-31T19:47:25.386Z",
+      "hash": "e971cdd2240f75acf6127004d90c78bd82442af058f67d9671f7d732ffec79ea"
+    },
+    {
+      "path": "engine/ExecutionGraph.js",
+      "size": 6675,
+      "lastModified": "2026-08-01T18:03:15.715Z",
+      "hash": "0eddda1d692f9c66460763735a1462d53023d23f6f84b4cffb70bccbe873de97"
+    },
+    {
+      "path": "engine/ExecutionGraphSpec.cjs",
+      "size": 2724,
+      "lastModified": "2026-07-31T19:46:43.403Z",
+      "hash": "ff818a64c3539ae877f5e4d5b9de298812dbd23dff7c75a4b249a68d90241e89"
+    },
+    {
+      "path": "engine/ExecutionGraphSpec.js",
+      "size": 2723,
+      "lastModified": "2026-08-01T18:03:15.723Z",
+      "hash": "0825f04453bc2506064a04210afc6d2d648821f1d8e0f327f57844cd02b96aaa"
+    },
+    {
+      "path": "engine/federation/AutonomousFederationControlPlaneEngine.js",
+      "size": 1423,
+      "lastModified": "2026-08-01T21:24:12.772Z",
+      "hash": "1eee3eae4abfe130e190e09200d4c0628d5552f7dd9d0923d4537b2e04166479"
+    },
+    {
+      "path": "engine/federation/FederatedIdentityIntegrationEngine.js",
+      "size": 1371,
+      "lastModified": "2026-08-01T20:26:17.349Z",
+      "hash": "7651ba198b039f80678c35978657a0c393eadab08d2c63e120e59d2217255384"
+    },
+    {
+      "path": "engine/federation/FederationControlPlaneEngine.js",
+      "size": 1364,
+      "lastModified": "2026-08-01T21:06:24.734Z",
+      "hash": "233e6eb2a6f41697fc500a38ca9457d49eb739450defc8271991abeb7402572b"
+    },
+    {
+      "path": "engine/federation/FederationGovernanceKernelEngine.js",
+      "size": 1512,
+      "lastModified": "2026-08-01T20:51:37.340Z",
+      "hash": "4a32f28949cab3d85f1eee1b2a9eeb04e01feb50de0e86d17abfc0b093d74382"
+    },
+    {
+      "path": "engine/federation/HighAvailabilityCluster.js",
+      "size": 2567,
+      "lastModified": "2026-08-02T13:49:03.900Z",
+      "hash": "27f9c06478f8881e9bdf1edfc88d5e1470d5ec8bc6e3bf10808d669c9aec265e"
+    },
+    {
+      "path": "engine/federation/LiveFederationVerificationEngine.js",
+      "size": 1436,
+      "lastModified": "2026-08-01T20:39:54.709Z",
+      "hash": "6ce3c1661188257f0b66ee3f8ac23c74adb397b9721fffdbd13cc77b3e7701ea"
+    },
+    {
+      "path": "engine/federation/MicroserviceFederationEngine.js",
+      "size": 17300,
+      "lastModified": "2026-08-01T18:03:17.240Z",
+      "hash": "a319443b3f314bd78893544c8bf28035bd9c9f7d19ba2bd51c0c94a245d3753b"
+    },
+    {
+      "path": "engine/genome/CarbonIntelligence.cjs",
+      "size": 1987,
+      "lastModified": "2026-07-31T20:33:35.106Z",
+      "hash": "df1d4637f8efc759665cf947a530f2925be183f7e1f25952d2bd1a400e46c5cf"
+    },
+    {
+      "path": "engine/genome/GenomeEngine.cjs",
+      "size": 3789,
+      "lastModified": "2026-07-31T20:33:45.011Z",
+      "hash": "b0a62f2d11b5f21907fabb7c6f10fc12c378ea8b5078aafde93fc3e748085406"
+    },
+    {
+      "path": "engine/genome/MaturityVector.cjs",
+      "size": 1659,
+      "lastModified": "2026-07-31T20:33:39.679Z",
+      "hash": "21c5f56f7f825884063bc03ae7648f3ae8d332fe7784a4dd6827086374ed3ec9"
+    },
+    {
+      "path": "engine/governance/ApiContractEngine.js",
+      "size": 20465,
+      "lastModified": "2026-08-01T18:03:17.247Z",
+      "hash": "070a14cdb9bf95de07a1252935ba9d59381735b4cb6c66da9b25e99086834211"
+    },
+    {
+      "path": "engine/governance/ApiGovernanceEngine.js",
+      "size": 36906,
+      "lastModified": "2026-08-01T18:03:17.251Z",
+      "hash": "93af781040722e5f810524d2e2bf68ca768aa7730cf9d56e67c76a1e65e9ad07"
+    },
+    {
+      "path": "engine/governance/ContinuousEngineeringIntelligenceEngine.js",
+      "size": 1628,
+      "lastModified": "2026-08-01T22:42:46.787Z",
+      "hash": "aab08172f27514de5bf15b7ac8d27ebad43a6845bfb8d5911b4e977edb77a0ae"
+    },
+    {
+      "path": "engine/governance/ContinuousReleaseGovernanceEngine.js",
+      "size": 1354,
+      "lastModified": "2026-08-01T21:47:16.495Z",
+      "hash": "0a84a1088f58a7626490ad428767bf3146fd74ca3f072807ba5356a4a0a8273d"
+    },
+    {
+      "path": "engine/governance/DomainRulePackLoader.js",
+      "size": 11649,
+      "lastModified": "2026-08-01T18:03:17.256Z",
+      "hash": "8a574791cc2c728a260f0093f8bcf7e59de98b63045f26cc0fba6ae8fc15cdc2"
+    },
+    {
+      "path": "engine/governance/EventContractEngine.js",
+      "size": 5124,
+      "lastModified": "2026-08-01T18:03:17.263Z",
+      "hash": "8cb60b9443b5944139f0c96bde849fd7d2c37a9e6960d6a71f0e5de70891933b"
+    },
+    {
+      "path": "engine/governance/EvidenceBackedLaunchGovernanceEngine.js",
+      "size": 1112,
+      "lastModified": "2026-08-01T19:58:16.252Z",
+      "hash": "cabff052dbfa8db59f2c1df2f516ec1226629a709fb9e8e6aee9f5cd0cf52b30"
+    },
+    {
+      "path": "engine/governance/EvidenceDriftDetector.js",
+      "size": 2159,
+      "lastModified": "2026-08-01T18:03:35.030Z",
+      "hash": "df7de0464484f1837c8a277ec2fc2785c92c6fece90884e4605be8e44c030e48"
+    },
+    {
+      "path": "engine/governance/FinalMaturityAssessmentEngine.js",
+      "size": 2707,
+      "lastModified": "2026-08-01T23:16:28.974Z",
+      "hash": "c2deeb58f11a0a643843bac6bdb2fabe0fdeee1f969d372a68a32d2993915ff4"
+    },
+    {
+      "path": "engine/governance/GAIntelligenceOrchestrator.js",
+      "size": 3280,
+      "lastModified": "2026-08-01T22:43:00.039Z",
+      "hash": "aa73c67f394e015a2adba5ea578f8878f70f0181ac1fd169204c8fbc1bd09bad"
+    },
+    {
+      "path": "engine/governance/LaunchGovernanceEngine.js",
+      "size": 1379,
+      "lastModified": "2026-08-01T19:44:37.954Z",
+      "hash": "f7f5e9a73621b8e74e19cb43c60ffa8989f7b7b364ef2785878ef1bdac289b92"
+    },
+    {
+      "path": "engine/governance/OperationalRegressionEngine.js",
+      "size": 2862,
+      "lastModified": "2026-08-01T18:03:35.037Z",
+      "hash": "159cb8e82ec722c69b62e7d754164baf3583af18985cbf3b5e01186409c6eb88"
+    },
+    {
+      "path": "engine/governance/PolicyViolationMonitor.js",
+      "size": 3297,
+      "lastModified": "2026-08-01T18:03:35.034Z",
+      "hash": "989fb8bf824d311acdc4071bd9957a338831e40ca34cd8a20165671df9fcd1e0"
+    },
+    {
+      "path": "engine/governance/SdkCompatibilityEngine.js",
+      "size": 6934,
+      "lastModified": "2026-08-01T18:03:17.286Z",
+      "hash": "540ebe2b1de572546f79438b61b256abf4804927ecf2cf29c2dff7136e72ae2e"
+    },
+    {
+      "path": "engine/governance/UniversalConstitutionEngine.js",
+      "size": 13613,
+      "lastModified": "2026-08-01T18:03:17.293Z",
+      "hash": "8ac2244523d3c97bfbb3ab613df59911f56a66989ef446fbd6a82b94439e3e1b"
+    },
+    {
+      "path": "engine/governance/VersionSyncVerifier.js",
+      "size": 1721,
+      "lastModified": "2026-08-02T13:29:45.263Z",
+      "hash": "ee797c155bd5a8dc7558e9a5c99bd6a4ba07938fc2c8d0e484a28cdfcf778185"
+    },
+    {
+      "path": "engine/hypervisor/EdhHypervisorEngine.js",
+      "size": 6993,
+      "lastModified": "2026-08-02T13:53:51.233Z",
+      "hash": "2e6d6082a64c2ab2723aa62df95b7ea9f1054ef034ad5ff3e160350d20e62d77"
+    },
+    {
+      "path": "engine/hypervisor/VirtualFilesystem.js",
+      "size": 7696,
+      "lastModified": "2026-08-02T13:53:51.215Z",
+      "hash": "637bd2e8d871b537617eefc9179f1f4b92d9a702e6662ca9f521133e31ff891c"
+    },
+    {
+      "path": "engine/ide/CoverageVisualizer.js",
+      "size": 6964,
+      "lastModified": "2026-08-01T18:03:17.302Z",
+      "hash": "e1d41691f8a3aaafb4f0c91d6d28b30b7580bcea149c4a54d98d2832bd74ba5b"
+    },
+    {
+      "path": "engine/ide/DeveloperEcosystemSuite.js",
+      "size": 17405,
+      "lastModified": "2026-08-01T18:03:17.307Z",
+      "hash": "5d4511f5dec468f4e7f6e6dd833da0ec4906de5145189ec67e0a7bebf32e319c"
+    },
+    {
+      "path": "engine/ide/IdeAdapterLayer.cjs",
+      "size": 1969,
+      "lastModified": "2026-08-01T09:04:17.609Z",
+      "hash": "c66ff02f4bb623f99f1bb7af136fc00e2489ce20e0b5bae687f65564db44ae6d"
+    },
+    {
+      "path": "engine/ide/IDEEcosystemRegistry.js",
+      "size": 11453,
+      "lastModified": "2026-08-01T18:03:17.315Z",
+      "hash": "2a263a9585fc92a3e5b848ad1c65f03c4b2a890b78418013d887c9053fa486d4"
+    },
+    {
+      "path": "engine/ide/LspServer.js",
+      "size": 8630,
+      "lastModified": "2026-08-01T18:03:17.320Z",
+      "hash": "48ca4550ba36b393e8eed8a931a63e624625a00c12ea8424e786b1890887bed0"
+    },
+    {
+      "path": "engine/ide/ProductionIdeAdapterSuite.js",
+      "size": 20800,
+      "lastModified": "2026-08-01T18:03:17.328Z",
+      "hash": "b9b52f995e8cd6a5d8997290b911a036ba600c864263cf1dfa7a226cba03c9ea"
+    },
+    {
+      "path": "engine/ide/RequirementLookupProvider.js",
+      "size": 6720,
+      "lastModified": "2026-08-01T18:03:17.334Z",
+      "hash": "1751ccb62614617825197566bb8554ef254c381d8070e91c5be4d5af873e629e"
+    },
+    {
+      "path": "engine/ide/TraceabilityNavigator.js",
+      "size": 8120,
+      "lastModified": "2026-08-01T18:03:17.341Z",
+      "hash": "ad1ad698f1fc3688b0a54278b9b8f8cbff436b94d9457900dd8989cc7ff497f1"
+    },
+    {
+      "path": "engine/ide/UniversalIdeFramework.js",
+      "size": 12602,
+      "lastModified": "2026-08-01T18:03:17.353Z",
+      "hash": "2bc217d3a1ae0a1624dfd6066ca69d55021dc6e5dfde683ee82a82a93527b64c"
+    },
+    {
+      "path": "engine/ide/UniversalIdeMatrix.cjs",
+      "size": 2376,
+      "lastModified": "2026-08-01T09:04:20.204Z",
+      "hash": "19a05396f63ad984931a88fe6cb851ac749201e01d8d8ba639bc2e3a78580989"
+    },
+    {
+      "path": "engine/index.cjs",
+      "size": 8126,
+      "lastModified": "2026-08-01T09:04:56.889Z",
+      "hash": "b64466fb2854038e76cd749f87602f30c610cb713ec599daa513ace58717698a"
+    },
+    {
+      "path": "engine/index.js",
+      "size": 3753,
+      "lastModified": "2026-08-01T18:03:15.729Z",
+      "hash": "1da3582681b7bb30fc2a570f010b349a8fbc524b9373ac9f341cf8bbbe6058fa"
+    },
+    {
+      "path": "engine/integration/AdapterComplianceEngine.js",
+      "size": 5954,
+      "lastModified": "2026-08-01T18:03:17.360Z",
+      "hash": "a63dfdac61ce6edbf85c363be1169ebcf3798be1fc28fd42468a795dd1c4acd5"
+    },
+    {
+      "path": "engine/integration/AirRoofersIamClient.js",
+      "size": 1855,
+      "lastModified": "2026-08-02T13:49:07.540Z",
+      "hash": "f28330921fe0f027afccfb6ee99ef9b0c6fc5b3a45a8845f0803f79c46256c66"
+    },
+    {
+      "path": "engine/integration/AirRoofersTelemetryClient.js",
+      "size": 1948,
+      "lastModified": "2026-08-02T13:49:07.158Z",
+      "hash": "6e423fc485d31e0d4f71ffb26a6c96a2e36901f6fbd6aa786f711b3e0971f1d6"
+    },
+    {
+      "path": "engine/integration/BoundedContextGuard.js",
+      "size": 6189,
+      "lastModified": "2026-08-01T18:03:17.367Z",
+      "hash": "46b0a39d7c736b3304952469176fd86923b63964b8a6f535e2896670ce896d28"
+    },
+    {
+      "path": "engine/integration/CrossDomainValidator.js",
+      "size": 5077,
+      "lastModified": "2026-08-01T18:03:17.374Z",
+      "hash": "3a0e9231fdb753837acc53ec4409abce1febc3f50688e5dd02aa89ad1aef6a96"
+    },
+    {
+      "path": "engine/integration/EndToEndIntegrationSuiteEngine.js",
+      "size": 1393,
+      "lastModified": "2026-08-01T21:36:30.842Z",
+      "hash": "596ab9e4a9c3e66d0ab5fd0b2d7ee1dfa3b9ef9c53d07d9df581eaffd9d12e0e"
+    },
+    {
+      "path": "engine/integration/IntegrationComplianceReporter.js",
+      "size": 3326,
+      "lastModified": "2026-08-01T18:03:17.379Z",
+      "hash": "f42ddba35fcdbebbb5b5d9a25d04462442c8137b1bb957923b50af3c5e3dd89c"
+    },
+    {
+      "path": "engine/integration/LivePlatformValidator.js",
+      "size": 3222,
+      "lastModified": "2026-08-01T18:03:17.384Z",
+      "hash": "2b0fe19375209aed1a2373659bcd1aa5f1dcfd951660e697e78ca5ef5ef96f09"
+    },
+    {
+      "path": "engine/integration/ProductIntegrationComplianceEngine.js",
+      "size": 14130,
+      "lastModified": "2026-08-01T18:03:17.388Z",
+      "hash": "0bdf08f26f7242ce6776f9b6c33c6e9072914d46364ce50230d60e02db1fa2bd"
+    },
+    {
+      "path": "engine/integration/ProductIntegrationVerificationEngine.js",
+      "size": 1539,
+      "lastModified": "2026-08-01T22:41:48.070Z",
+      "hash": "8b80aa23ac98e21ffc6d79321bc8b05b34fb85825e6a1b4777531511de6478d0"
+    },
+    {
+      "path": "engine/kernel/AirRoofersGlobalOperationsKernelEngine.js",
+      "size": 1419,
+      "lastModified": "2026-08-01T21:24:37.754Z",
+      "hash": "bcc2712ff84f130936a5632b74b497d580797402632f4a8f72f61c07730293ea"
+    },
+    {
+      "path": "engine/kernel/CapabilityBrokerEngine.js",
+      "size": 13346,
+      "lastModified": "2026-08-02T13:53:51.241Z",
+      "hash": "3acd08e5683220fafb9ba34beb2fa6d0391eecbd847faddcddfae3ba3b828d22"
+    },
+    {
+      "path": "engine/kernel/CapabilityContractValidator.js",
+      "size": 12098,
+      "lastModified": "2026-08-02T13:15:48.990Z",
+      "hash": "8363a343d3cd5b191676c41bd3da09fbe43b6f31ad4b9d9045822f00643027e1"
+    },
+    {
+      "path": "engine/kernel/CapabilityRegistry.js",
+      "size": 3029,
+      "lastModified": "2026-08-02T13:53:51.243Z",
+      "hash": "c5bde20a17e64a01b339e73a37f03e63da167d0ad4f96de327edc65f0c5650c8"
+    },
+    {
+      "path": "engine/kernel/ConfigurationManager.js",
+      "size": 4140,
+      "lastModified": "2026-08-01T18:03:17.399Z",
+      "hash": "f4d73842b76c6c49eeaccc206d70c85ed22666a55dee5af862c65490493b3278"
+    },
+    {
+      "path": "engine/kernel/DependencyInjection.js",
+      "size": 3570,
+      "lastModified": "2026-08-01T18:03:17.405Z",
+      "hash": "77e85c3cf2af1a8cd8dd863daddc2ce258ea9e1212532cb5293b01adf6536dc2"
+    },
+    {
+      "path": "engine/kernel/EcosystemOperationsKernelEngine.js",
+      "size": 1382,
+      "lastModified": "2026-08-01T21:06:36.698Z",
+      "hash": "2e9cea030a6af7c501280be54d2b61f8416074707c897ac4aee5e0ace4f01fc5"
+    },
+    {
+      "path": "engine/kernel/EventBus.js",
+      "size": 6279,
+      "lastModified": "2026-08-01T18:03:17.411Z",
+      "hash": "61548a9259faaa3971527f980c12fb8c3f6e8995cd3dfe6fde5182ec3e381378"
+    },
+    {
+      "path": "engine/kernel/FeatureFlags.js",
+      "size": 2405,
+      "lastModified": "2026-08-01T18:03:17.418Z",
+      "hash": "9f419c33bd892ae4893571931f19c6839c0680d725b011d19f401ec674523aca"
+    },
+    {
+      "path": "engine/kernel/Kernel.js",
+      "size": 6952,
+      "lastModified": "2026-08-02T12:56:23.410Z",
+      "hash": "6a38637970862cd8def81c91675bf176f98cf78e5c7f687da50d0fbc8cbe597a"
+    },
+    {
+      "path": "engine/kernel/KernelOptimizationEngine.js",
+      "size": 14443,
+      "lastModified": "2026-08-01T18:03:17.431Z",
+      "hash": "fb91fd25a96b2514c58cf86fed0904237471ac7f45ab203110e77cab535334d6"
+    },
+    {
+      "path": "engine/kernel/LifecycleManager.js",
+      "size": 2911,
+      "lastModified": "2026-08-01T18:03:17.435Z",
+      "hash": "96572e316613407a1491b3b667ef403cee5e0c5ff952fcef11b73bf5f47b6483"
+    },
+    {
+      "path": "engine/kernel/ModuleRegistry.js",
+      "size": 3404,
+      "lastModified": "2026-08-01T18:03:17.439Z",
+      "hash": "4ad50a1e59b28eea91c93d87f2fa373ef4d1f016c432b0e35230745d9dd1d95a"
+    },
+    {
+      "path": "engine/kernel/PluginManager.js",
+      "size": 3207,
+      "lastModified": "2026-08-01T18:03:17.443Z",
+      "hash": "956ad7a7a46ad137a809a93536e267a5d42ee861f61314a8e33d3f1832ab4ca2"
+    },
+    {
+      "path": "engine/kernel/ServiceLocator.js",
+      "size": 1370,
+      "lastModified": "2026-08-01T18:03:17.447Z",
+      "hash": "c6412988ea44b7e1789c063d335a69ee722c7c39f709ef5c09dd9caa9f595923"
+    },
+    {
+      "path": "engine/knowledge/CodeGraph.js",
+      "size": 4825,
+      "lastModified": "2026-08-01T18:03:17.452Z",
+      "hash": "eace6795e7437326fb76c480ba4f2de2e3126c3c70d95906594e0928c5fe459c"
+    },
+    {
+      "path": "engine/knowledge/ContinuousBlueprintIntelligenceEngine.js",
+      "size": 1045,
+      "lastModified": "2026-08-01T21:01:58.803Z",
+      "hash": "8c16df2acab772f2b9935f296b914b9c5085e648f54a86defa346b04ef1e4d28"
+    },
+    {
+      "path": "engine/knowledge/EngineeringIntelligenceGraphEngine.js",
+      "size": 1281,
+      "lastModified": "2026-08-01T20:51:20.856Z",
+      "hash": "f77756a2c6925f9c5aaa8fc656f6a3d8ed6dc8732c8c5ce5da382d15b4f862f5"
+    },
+    {
+      "path": "engine/knowledge/EngineeringIntelligenceKnowledgeGraphEngine.js",
+      "size": 1070,
+      "lastModified": "2026-08-01T20:40:18.303Z",
+      "hash": "2a7defcf300b25d5b7fec788989b5f8c3a8a4b0861a2348e0907ce5cfdb5f290"
+    },
+    {
+      "path": "engine/knowledge/EnterpriseGraphEngine.js",
+      "size": 20626,
+      "lastModified": "2026-08-01T18:03:17.456Z",
+      "hash": "ca03bda845b7dd02f486fbd7f7bf78105e546b276f3ff52f5095f9e011dadf49"
+    },
+    {
+      "path": "engine/knowledge/EnterpriseKnowledgeGraphEngine.js",
+      "size": 1447,
+      "lastModified": "2026-08-01T21:30:31.979Z",
+      "hash": "7d81366a3bf84410239370ddc8b0505041526d167e774458161441e9871933e2"
+    },
+    {
+      "path": "engine/knowledge/EvidenceGraph.js",
+      "size": 4376,
+      "lastModified": "2026-08-01T18:03:17.464Z",
+      "hash": "2cc16e86baca20a7902590d73a5cb9f30e9cd34b7d75be9d0031759f6c1ee28d"
+    },
+    {
+      "path": "engine/knowledge/FederatedKnowledgeGraphEngine.js",
+      "size": 1382,
+      "lastModified": "2026-08-01T20:26:14.540Z",
+      "hash": "759345b2c3513781ac0958aa7b550c668c862093c1521c776246658a5237b9a7"
+    },
+    {
+      "path": "engine/knowledge/PersistentGraphDatabase.js",
+      "size": 9981,
+      "lastModified": "2026-08-01T18:03:17.470Z",
+      "hash": "856cd484671384fee60db3fd580980e11416ff4215b33174b657f17e2eaa2cb9"
+    },
+    {
+      "path": "engine/knowledge/ProductIntelligenceFabricEngine.js",
+      "size": 1528,
+      "lastModified": "2026-08-01T20:40:11.111Z",
+      "hash": "9ce856d449dae7477c63edb6616790d270366c6ebd2269c765e81171c558e125"
+    },
+    {
+      "path": "engine/knowledge/RequirementGraph.js",
+      "size": 5307,
+      "lastModified": "2026-08-01T18:03:17.475Z",
+      "hash": "66cba2040efa7764946bb62f2b6acc68019a4d55d1e807a7728ff2c9a44c7e80"
+    },
+    {
+      "path": "engine/knowledge/SelfHealingBlueprintIntelligenceEngine.js",
+      "size": 1441,
+      "lastModified": "2026-08-01T21:24:25.655Z",
+      "hash": "b666a01ddaf5e8c4866540ebf81336a143ec2dcb60eab302ffef25b911f4af38"
+    },
+    {
+      "path": "engine/knowledge/TestGraph.js",
+      "size": 4625,
+      "lastModified": "2026-08-01T18:03:17.479Z",
+      "hash": "0163cebbbc49d5a320cfa5922e424303955f6b6ff7a2aeb2fa442f734d1bc164"
+    },
+    {
+      "path": "engine/legal/LegalEnforcementEngine.js",
+      "size": 4282,
+      "lastModified": "2026-08-01T22:24:05.635Z",
+      "hash": "5db26d4a38d31071d186a844cf4fc50aee698dd1c1026195b3d6435d88cb93bc"
+    },
+    {
+      "path": "engine/legal/LegalGovernanceExtensionEngine.js",
+      "size": 1563,
+      "lastModified": "2026-08-01T22:42:10.093Z",
+      "hash": "2655ce7569c3c55bd8670fe561638db6ba9a63a9ff853427ce66e2f12b96b425"
+    },
+    {
+      "path": "engine/legal/LegalManagementEngine.js",
+      "size": 2483,
+      "lastModified": "2026-08-01T22:24:26.949Z",
+      "hash": "05ce00c60814389e7c64f0f9f2c975f29f2fdc23d8c86dbfa8aa57880217d3be"
+    },
+    {
+      "path": "engine/legal/LegalRegistryEngine.js",
+      "size": 4775,
+      "lastModified": "2026-08-01T22:24:55.850Z",
+      "hash": "5334357bb8b61d1bec20dffaab5eb81f83e61a2573c81c0cb326060d43a8037d"
+    },
+    {
+      "path": "engine/lifecycle/LifecycleAuditTrail.js",
+      "size": 3823,
+      "lastModified": "2026-08-01T18:03:17.485Z",
+      "hash": "925a4062dcd328373895bf575ccea63352b9023e602ba3af84fce12508bdeaae"
+    },
+    {
+      "path": "engine/lifecycle/LifecycleOrchestrator.js",
+      "size": 9747,
+      "lastModified": "2026-08-01T18:03:17.490Z",
+      "hash": "3f86caf29202fc10271a68060b14b13ee0773556aed6cd33760f408770d6a714"
+    },
+    {
+      "path": "engine/lifecycle/LifecycleStageRegistry.js",
+      "size": 10087,
+      "lastModified": "2026-08-01T18:03:17.494Z",
+      "hash": "32c78b9b2534767cc75f4c4302fda8e995ac9918d50f85e1b564e3edc9bab66a"
+    },
+    {
+      "path": "engine/marketplace/EcosystemNonDuplicationAudit.js",
+      "size": 18213,
+      "lastModified": "2026-08-01T18:03:17.503Z",
+      "hash": "4dfb1cc32cb665ef2e4d93e87076de172527ccb3a10d8e7e84d76f46f6d61655"
+    },
+    {
+      "path": "engine/marketplace/IndustryConstitutionRegistry.js",
+      "size": 12310,
+      "lastModified": "2026-08-01T18:03:17.507Z",
+      "hash": "821de4d1ad33bf601c4b136d6739bb4c59dd43275bf9926185093c72a369951e"
+    },
+    {
+      "path": "engine/marketplace/MarketplaceEngine.js",
+      "size": 12155,
+      "lastModified": "2026-08-01T18:03:17.513Z",
+      "hash": "c2bc15e8878099db8093169dbb19e54e52b3a8bc1ec3273ff646117c35666342"
+    },
+    {
+      "path": "engine/marketplace/MarketplaceIntelligenceEngine.js",
+      "size": 1054,
+      "lastModified": "2026-08-01T19:58:16.113Z",
+      "hash": "aa280c9891931c260375942ef8494f1ffe2f926f9d79f4beeb88a0a9877b63bf"
+    },
+    {
+      "path": "engine/marketplace/MarketplacePartnerCertification.js",
+      "size": 15086,
+      "lastModified": "2026-08-01T18:03:17.517Z",
+      "hash": "cdfe2d59c1804a53cd4cb823c265f0b4e1de8806b4f02a028e4b1a2656a7bfff"
+    },
+    {
+      "path": "engine/marketplace/MarketplaceReadinessEngine.js",
+      "size": 1378,
+      "lastModified": "2026-08-01T19:44:22.318Z",
+      "hash": "650de9a3b08e01b08c47d0d3f5029edf810786d2eaefe9e5f3660d7222eed9b5"
+    },
+    {
+      "path": "engine/marketplace/PluginEcosystemSandbox.js",
+      "size": 13747,
+      "lastModified": "2026-08-01T18:03:17.521Z",
+      "hash": "59b328f90279132625114331b29d328d8be2bffb2b6f5460868e0c0edb281536"
+    },
+    {
+      "path": "engine/memory/EngineeringMemoryEngine.js",
+      "size": 13821,
+      "lastModified": "2026-08-01T18:03:17.527Z",
+      "hash": "d80e7007f221704c4297047669785a7cd57e067e6b8aebf9b52cc2657880fce1"
+    },
+    {
+      "path": "engine/operations/ApiAndSdkReferenceCompiler.js",
+      "size": 1390,
+      "lastModified": "2026-08-01T19:29:24.334Z",
+      "hash": "5e4ff690d25b30d8d8d26b6fe8ade6c6748b3d9d41676ac6851ac8ab8b4d294a"
+    },
+    {
+      "path": "engine/operations/ApiEndpointComplianceArchive.js",
+      "size": 1328,
+      "lastModified": "2026-08-01T18:40:32.214Z",
+      "hash": "2dd210d910a384dd447546a596cca9889e29579692481c3a7f1fa365a2265253"
+    },
+    {
+      "path": "engine/operations/ApiEndpointComplianceLedger.js",
+      "size": 1499,
+      "lastModified": "2026-08-01T18:33:23.748Z",
+      "hash": "a96c3376ab5f0c7be85196b59775c2ebabd31b3c0aa791b52c62eb5f29895c70"
+    },
+    {
+      "path": "engine/operations/ApiEndpointHealthArchive.js",
+      "size": 1368,
+      "lastModified": "2026-08-01T18:25:50.041Z",
+      "hash": "f239742c5698116f29dace3a02ff9b11d082a2c7d2be34ac4f6112ba481f78c2"
+    },
+    {
+      "path": "engine/operations/AuditorTokenVerificationBridge.js",
+      "size": 1408,
+      "lastModified": "2026-08-01T18:40:25.275Z",
+      "hash": "76d2e35481c0beb290c09b07baa737b45ef5dbc3837b1cbb9486fa58cb8612da"
+    },
+    {
+      "path": "engine/operations/AutomatedApiContractPromotionEngine.js",
+      "size": 1686,
+      "lastModified": "2026-08-01T19:03:55.402Z",
+      "hash": "bb6bf4949572ca722adb192127d01eb8a87a3e42840388d6d1529ef24bec6179"
+    },
+    {
+      "path": "engine/operations/AutomatedProcurementPackageEngine.js",
+      "size": 1491,
+      "lastModified": "2026-08-01T18:40:28.892Z",
+      "hash": "1b1ee072159cb475c28e4391c9ce0cd7c4205e618ed721dd144639519ffde9fd"
+    },
+    {
+      "path": "engine/operations/AutoRepairAdvisor.js",
+      "size": 4462,
+      "lastModified": "2026-08-01T18:03:17.531Z",
+      "hash": "c8c78ac0d83d032bcd7e1565dc6078bc243dbe67e0208827da2b3a5a625b40e7"
+    },
+    {
+      "path": "engine/operations/BillingEventTraceEngine.js",
+      "size": 1363,
+      "lastModified": "2026-08-01T18:25:49.145Z",
+      "hash": "5609fe80f959f5d6555256e9892e609db7fceb90b77bd9bdf98e3f98ab4bbd2a"
+    },
+    {
+      "path": "engine/operations/BillingGatewayReceiptProvenanceEngine.js",
+      "size": 1603,
+      "lastModified": "2026-08-01T18:40:32.354Z",
+      "hash": "b0e883b437e19450a51e1da9e9c32a38012515f00c3e0e4acdcc5a8659974e61"
+    },
+    {
+      "path": "engine/operations/BlueprintArchitectureDriftAuditor.js",
+      "size": 1430,
+      "lastModified": "2026-08-01T18:32:28.892Z",
+      "hash": "3ec17eaf48d8a4f1064712132ae4cd2e5e9706f22e5be271587d4530b661bc66"
+    },
+    {
+      "path": "engine/operations/BlueprintConformanceAuditor.js",
+      "size": 1510,
+      "lastModified": "2026-08-01T18:25:39.553Z",
+      "hash": "e86862b0a686e73a27ed10c7e17adbf4939bf41911880984e075c1e24ed4f4bc"
+    },
+    {
+      "path": "engine/operations/BlueprintImplementationCorrelationGraph.js",
+      "size": 1398,
+      "lastModified": "2026-08-01T18:40:31.014Z",
+      "hash": "84a29debf8759955cfcc7a84c8eed7f911fc027c0731d0dd36925283475307ff"
+    },
+    {
+      "path": "engine/operations/BlueprintToRuntimeGovernanceGraphEngine.js",
+      "size": 1541,
+      "lastModified": "2026-08-01T19:04:03.026Z",
+      "hash": "a3dea978b1910226be85b1f71e3b294006d8930bd5ec8c07d7507b2c34ca105e"
+    },
+    {
+      "path": "engine/operations/CanaryDeploymentController.js",
+      "size": 2536,
+      "lastModified": "2026-08-01T18:03:17.536Z",
+      "hash": "2081ece90350045e8854e17c657d885e54c962507e6c0690cab2cba1a88dbc9f"
+    },
+    {
+      "path": "engine/operations/CommercialLaunchGateVerifier.js",
+      "size": 1456,
+      "lastModified": "2026-08-01T19:29:28.246Z",
+      "hash": "cc8ea12fcb5bf25917e32e5d78e6b43662851f22a564ca1b75a68539b3a6076d"
+    },
+    {
+      "path": "engine/operations/CommercialPlatformEntitlementEngine.js",
+      "size": 1345,
+      "lastModified": "2026-08-01T19:29:16.787Z",
+      "hash": "06089969a2a3db0ecbcbc09337d6b86ca308c3eb53abbac844af90fd8ff4208a"
+    },
+    {
+      "path": "engine/operations/CommercialTransactionAuditor.js",
+      "size": 1372,
+      "lastModified": "2026-08-01T18:25:48.097Z",
+      "hash": "9949f951e28db4e22a18a7cbbad5cddd4d8b696cc99514a6791e11bd55a3c405"
+    },
+    {
+      "path": "engine/operations/ContinuousApiContractExecutionEngine.js",
+      "size": 1433,
+      "lastModified": "2026-08-01T18:50:27.755Z",
+      "hash": "8e1536ab67e92125421509f5c718fde27302f7f30000373d0b0f52b5dcb5f98e"
+    },
+    {
+      "path": "engine/operations/ContinuousApiVerificationEngine.js",
+      "size": 1551,
+      "lastModified": "2026-08-01T18:33:15.970Z",
+      "hash": "fbe9e04b34021b8c4cf5be7cf99ba72a68256fea49ba0573f2e1c41b27f762f8"
+    },
+    {
+      "path": "engine/operations/ContinuousCommercialOperationsEngine.js",
+      "size": 1383,
+      "lastModified": "2026-08-01T18:50:38.832Z",
+      "hash": "325db9c7d73c02c791917b5d156f982969192c94d77be5d7829b5c2225d2c984"
+    },
+    {
+      "path": "engine/operations/ContinuousCommercialTransactionEngine.js",
+      "size": 1638,
+      "lastModified": "2026-08-01T18:32:23.820Z",
+      "hash": "a38bec445d18bbb2d1ae8131bbaacaf81ffff1b15543e54e916fd16020fe726b"
+    },
+    {
+      "path": "engine/operations/ContinuousContractDriftGraph.js",
+      "size": 1330,
+      "lastModified": "2026-08-01T18:40:28.269Z",
+      "hash": "282144ca6a26c0af331f96b35ff6c0c042932c7a4d2992ff3ea5ef497ab8a07e"
+    },
+    {
+      "path": "engine/operations/ContinuousGovernanceScorecard.js",
+      "size": 1584,
+      "lastModified": "2026-08-01T18:25:38.406Z",
+      "hash": "e778f196e7b44705aad4e12fda188197b70762ca27c13fb2dd3fca28321ca947"
+    },
+    {
+      "path": "engine/operations/ContinuousGovernanceScorecardV2.js",
+      "size": 1488,
+      "lastModified": "2026-08-01T18:32:27.198Z",
+      "hash": "22c68603da50d821c2a1b67b58e8953341b434d072872d3ff2f81d9625fae7f1"
+    },
+    {
+      "path": "engine/operations/ContinuousIndependentAssuranceEngine.js",
+      "size": 1538,
+      "lastModified": "2026-08-01T18:32:26.011Z",
+      "hash": "6d5e2caebf1bcdac2e9092548cac57cc2d7a08b714bff967a9443265a72c9fe0"
+    },
+    {
+      "path": "engine/operations/ContinuousK8sTelemetryBridge.js",
+      "size": 1371,
+      "lastModified": "2026-08-01T18:32:20.871Z",
+      "hash": "449c633f1ed01ce1dbcc19101ed8c8561c6722896210ebf611a2c7c2d1d93d07"
+    },
+    {
+      "path": "engine/operations/ContinuousObservabilityLakeEngine.js",
+      "size": 1389,
+      "lastModified": "2026-08-01T18:50:32.200Z",
+      "hash": "b3cfb41284498a2091200d5b71f202c19787595cb1a3c95a13f1535671aac745"
+    },
+    {
+      "path": "engine/operations/ContinuousPilotTelemetryEngine.js",
+      "size": 1459,
+      "lastModified": "2026-08-01T18:32:25.913Z",
+      "hash": "caa29f77c87074c421ec0d98e27e606ba28fc51f3f4e1f7e0e6624ea4d576bf6"
+    },
+    {
+      "path": "engine/operations/ContinuousProcurementBundleEngine.js",
+      "size": 1680,
+      "lastModified": "2026-08-01T18:32:24.587Z",
+      "hash": "2633c290590c283f9b59eb3d77d587a2e14a99aa31e252bdc389f52218307141"
+    },
+    {
+      "path": "engine/operations/ContinuousProcurementPackageCompiler.js",
+      "size": 1665,
+      "lastModified": "2026-08-01T18:50:43.988Z",
+      "hash": "b8a3f6f6762ae2f26e939c0e94fa3821512fe34d1be6e9f9b49d8fd29651fa21"
+    },
+    {
+      "path": "engine/operations/ContinuousProcurementPackageCompilerV2.js",
+      "size": 1636,
+      "lastModified": "2026-08-01T19:04:11.378Z",
+      "hash": "b205248fdadbf71bfa4581ce7dbd0a287565a1f45bf2e9270434e9b4690f6985"
+    },
+    {
+      "path": "engine/operations/ContinuousRuntimeValidator.js",
+      "size": 1553,
+      "lastModified": "2026-08-01T18:25:36.573Z",
+      "hash": "b0f1d75df8c9b866b7fbea59047fdcb875b97955a757138cfd182f59a4661f43"
+    },
+    {
+      "path": "engine/operations/ContinuousSecOpsAttestationEngine.js",
+      "size": 1426,
+      "lastModified": "2026-08-01T18:32:18.410Z",
+      "hash": "1c4f77d2a5cae628e3b2f09bd64f4811b044ac93ca7995be2d7075cde196339e"
+    },
+    {
+      "path": "engine/operations/ContinuousSecOpsAttestationLake.js",
+      "size": 1561,
+      "lastModified": "2026-08-01T18:40:28.482Z",
+      "hash": "58eaf1002f06817f048688e272fcdce6e52f3ebad681f0ad686de67a0b9a66a0"
+    },
+    {
+      "path": "engine/operations/ContinuousSecurityAttestationEngine.js",
+      "size": 1557,
+      "lastModified": "2026-08-01T18:50:35.508Z",
+      "hash": "ec5b31425cd9734f1ef04a59289e8e1a655927227c75da6db487b758d505a03f"
+    },
+    {
+      "path": "engine/operations/ContinuousTelemetryIngestionEngine.js",
+      "size": 1478,
+      "lastModified": "2026-08-01T18:32:19.982Z",
+      "hash": "8e519d5a10d67cf3a895fbdfec30755eef1ec616428974aa4a6bbc37cad0751a"
+    },
+    {
+      "path": "engine/operations/ContractDriftPreventionGraph.js",
+      "size": 1304,
+      "lastModified": "2026-08-01T18:50:32.319Z",
+      "hash": "bac35d707653aecd75fa1fa187389f8ccac3edebfc750285dc95c5911beaa857"
+    },
+    {
+      "path": "engine/operations/CustomerOnboardingWorkflowEngine.js",
+      "size": 1272,
+      "lastModified": "2026-08-01T19:29:21.929Z",
+      "hash": "cd4b844f7707807b46f58838797175238fe0d56d1b8e6aaa8dc62f30184aa5f7"
+    },
+    {
+      "path": "engine/operations/CustomerOutcomeArchive.js",
+      "size": 1531,
+      "lastModified": "2026-08-01T18:32:32.893Z",
+      "hash": "cfd4d44a72185701a3320f9d4c3e938f07e810e196a4a4202b0dd30a24141d62"
+    },
+    {
+      "path": "engine/operations/CustomerOutcomeLedger.js",
+      "size": 1548,
+      "lastModified": "2026-08-01T18:25:53.060Z",
+      "hash": "6e9edd87307312f1d21a7ec6c967f540f961698a099ac248156e3483be74242a"
+    },
+    {
+      "path": "engine/operations/CustomerSatisfactionArchive.js",
+      "size": 1403,
+      "lastModified": "2026-08-01T18:40:37.659Z",
+      "hash": "cae88113fe17eff538d04d15361f5919a06733886627cb563ea06be14e418a2e"
+    },
+    {
+      "path": "engine/operations/CustomerSatisfactionOutcomeArchive.js",
+      "size": 1290,
+      "lastModified": "2026-08-01T18:50:33.893Z",
+      "hash": "c4f917cef056cb00d6f420ff8ca6cc9afe2ea5972f4e30e217ce0377e019aca3"
+    },
+    {
+      "path": "engine/operations/CustomerSatisfactionOutcomeArchiveV2.js",
+      "size": 1392,
+      "lastModified": "2026-08-01T19:04:14.043Z",
+      "hash": "c864ad9ce0d5f4329d34537047b4fcbad90e208196a21f43d61ba06009b2f4d3"
+    },
+    {
+      "path": "engine/operations/CustomerSuccessOnboardingEngine.js",
+      "size": 1664,
+      "lastModified": "2026-08-01T19:29:21.619Z",
+      "hash": "fc584fecad7cbdaad370596f93eb86c206ababd32eee8c4cd5691f940ff10e10"
+    },
+    {
+      "path": "engine/operations/CustomerSuccessScorecard.js",
+      "size": 1855,
+      "lastModified": "2026-08-01T18:03:17.545Z",
+      "hash": "1e09337b1899c4bf31fef7e99f243d8823d516decdfe6900fa957dd47b1a6c82"
+    },
+    {
+      "path": "engine/operations/CustomerTelemetryEngine.js",
+      "size": 2131,
+      "lastModified": "2026-08-01T18:03:17.551Z",
+      "hash": "855a0f103fc289f063e8c08da2726eab635348e85cdd975a88f6eda2d4cbdeee"
+    },
+    {
+      "path": "engine/operations/DeliveredSlaEvidenceLakeEngine.js",
+      "size": 1400,
+      "lastModified": "2026-08-01T19:04:07.279Z",
+      "hash": "77464927f49bc613689fa85c5802d6af6419de2122ce9db97ca189fe2846d680"
+    },
+    {
+      "path": "engine/operations/DeliveredSlaProofGraph.js",
+      "size": 1479,
+      "lastModified": "2026-08-01T18:40:29.432Z",
+      "hash": "48afc35c603e159cc63b012fcac69a102c3b96464d0e4650c216f5e296e2aad8"
+    },
+    {
+      "path": "engine/operations/DeliveredSlaProofGraphV2.js",
+      "size": 1297,
+      "lastModified": "2026-08-01T18:50:30.076Z",
+      "hash": "4ff44fc35f7db6fad8c6063f91be87bc200189948663967d680bd8690469930f"
+    },
+    {
+      "path": "engine/operations/DeliveredSlaProofLedger.js",
+      "size": 1510,
+      "lastModified": "2026-08-01T18:32:28.772Z",
+      "hash": "b06f3d862e19fce38d732aeac45ffdaff4da4daa9d746f351d601256f7ca004f"
+    },
+    {
+      "path": "engine/operations/DeveloperEcosystemPublisherEngine.js",
+      "size": 1277,
+      "lastModified": "2026-08-01T19:29:17.039Z",
+      "hash": "75ce0504c732743f6c31ce888d9266f6d878d7ab60dc20e8488f67a06d6d92e3"
+    },
+    {
+      "path": "engine/operations/DisasterRecoveryAndBackupVerifier.js",
+      "size": 1547,
+      "lastModified": "2026-08-01T19:29:11.200Z",
+      "hash": "033eae7fb1b3a3c4bd31630b6d06f6a3eee479cb8e975b9b4548e56e1ce0669d"
+    },
+    {
+      "path": "engine/operations/DriftAnalytics.js",
+      "size": 5225,
+      "lastModified": "2026-08-01T18:03:17.556Z",
+      "hash": "9cf624603779aca235ea32f53fb0f3ebf6eb59986a1fe5155be55c7974641cf2"
+    },
+    {
+      "path": "engine/operations/DueDiligenceArtifactExporter.js",
+      "size": 1486,
+      "lastModified": "2026-08-01T18:25:51.816Z",
+      "hash": "dc370521c2097e1d0693fbfaa71cc1a6fc4fa9f406ede1c037e06851b123d665"
+    },
+    {
+      "path": "engine/operations/DueDiligenceExportManifest.js",
+      "size": 1328,
+      "lastModified": "2026-08-01T18:40:34.597Z",
+      "hash": "401568420c00f3c2fb3caead7b4d095852e56b6c8d45a0d56602028e0d203214"
+    },
+    {
+      "path": "engine/operations/DueDiligenceExportManifestV2.js",
+      "size": 1487,
+      "lastModified": "2026-08-01T18:50:49.042Z",
+      "hash": "4dd4feff5fa1c51e850a84290f63b54e2cbfaca1f675199f79390e53bd417231"
+    },
+    {
+      "path": "engine/operations/DueDiligenceExportManifestV3.js",
+      "size": 1454,
+      "lastModified": "2026-08-01T19:04:16.232Z",
+      "hash": "036786e4c8355bc571791b116ec51909c4b132c5cd67e33e95e7909de1ab04aa"
+    },
+    {
+      "path": "engine/operations/DueDiligenceExportRegistry.js",
+      "size": 1499,
+      "lastModified": "2026-08-01T18:32:29.435Z",
+      "hash": "911cdd846c15755ae25baaaada4a6927b51b797b66ea7d2854bf958a838bfcc4"
+    },
+    {
+      "path": "engine/operations/EnterpriseDeploymentEngine.js",
+      "size": 14196,
+      "lastModified": "2026-08-01T18:03:17.560Z",
+      "hash": "1a64e91fa47d6cd295095b20bae95c818a3cf4c6b8ac9412c9738df8c041dcdb"
+    },
+    {
+      "path": "engine/operations/EnterprisePilotEngine.js",
+      "size": 19003,
+      "lastModified": "2026-08-01T18:03:17.565Z",
+      "hash": "c0fba8ed78592cef3694f5f902682a9c5371cda5b1a41f71be07b1922e6ff05c"
+    },
+    {
+      "path": "engine/operations/EnterpriseROICalculator.js",
+      "size": 9414,
+      "lastModified": "2026-08-01T18:03:17.570Z",
+      "hash": "d45e16b6dcfb76d70c7495d5c5e2cf210de34b46a7d523dc5f8a82985f524937"
+    },
+    {
+      "path": "engine/operations/EvidenceGraphCorrelationEngine.js",
+      "size": 1390,
+      "lastModified": "2026-08-01T18:40:29.677Z",
+      "hash": "f90dec426df72108931502705bf72abea333a7cc0b95cb560222c6ae1dfc7738"
+    },
+    {
+      "path": "engine/operations/ExecutiveBriefingPackageGenerator.js",
+      "size": 1475,
+      "lastModified": "2026-08-01T19:29:24.420Z",
+      "hash": "e74773b85999c581c26b9adf9fb24f1ee3b6c320932cec0f1d92b34fdfaaa0ee"
+    },
+    {
+      "path": "engine/operations/ExternalAssuranceIngestionLake.js",
+      "size": 1403,
+      "lastModified": "2026-08-01T19:04:09.359Z",
+      "hash": "b554e7769c853aef8986bbc932cd6316a993478ef524db7fbb48ad469ec82703"
+    },
+    {
+      "path": "engine/operations/ExternalAuditorPortalBridge.js",
+      "size": 1554,
+      "lastModified": "2026-08-01T18:32:32.024Z",
+      "hash": "2117d97f35e418266b0149838dca558081e06089766f841067cfff966d7fe8fa"
+    },
+    {
+      "path": "engine/operations/ExternalAuditorPortalBridgeV2.js",
+      "size": 1581,
+      "lastModified": "2026-08-01T18:50:49.602Z",
+      "hash": "dfdd0c2c0eeb51f8af932958f9c338d1f754630b1c85bbab6e6c68b2de623c01"
+    },
+    {
+      "path": "engine/operations/ExternalAuditorPortalBridgeV3.js",
+      "size": 1429,
+      "lastModified": "2026-08-01T19:04:14.323Z",
+      "hash": "aab7ca3d4dd6eac355743912d769d3bbc5106782b710f09ae396ab27e2a42253"
+    },
+    {
+      "path": "engine/operations/ExternalAuditorTokenBridge.js",
+      "size": 1468,
+      "lastModified": "2026-08-01T18:25:53.581Z",
+      "hash": "9ee6a85a0e1e280862185a853663ed3ea4ea5256062c5ffdfddec1786620bb7b"
+    },
+    {
+      "path": "engine/operations/ExternalVulnerabilityFeedIngesterLake.js",
+      "size": 1388,
+      "lastModified": "2026-08-01T19:05:24.750Z",
+      "hash": "92baff93a905c2a4abd07407b53a4b89d871c0bb2348b727f9dcafa7be1fcdae"
+    },
+    {
+      "path": "engine/operations/GoToMarketReadinessEngine.js",
+      "size": 1475,
+      "lastModified": "2026-08-01T19:29:26.551Z",
+      "hash": "1105b08043230269d30128c3a5df576d135bc703aaebc0cf2b9227f301d8a4e0"
+    },
+    {
+      "path": "engine/operations/GovernanceIntelligenceGraphEngine.js",
+      "size": 1566,
+      "lastModified": "2026-08-01T18:50:28.667Z",
+      "hash": "bf221373e811725cfd45379b6850a21550686fa765e2b828fbc06b240803d5d3"
+    },
+    {
+      "path": "engine/operations/HealthObservatory.js",
+      "size": 4130,
+      "lastModified": "2026-08-01T18:03:17.573Z",
+      "hash": "465b6df0b41568ce73328f654b0f804344693b6f35108043deace60a63768fdc"
+    },
+    {
+      "path": "engine/operations/IdeExtensionManifestCompiler.js",
+      "size": 1249,
+      "lastModified": "2026-08-01T19:29:22.526Z",
+      "hash": "041e5914af9421e786c9664dd4ed4dc019a095098673459e54a48d14003b88b6"
+    },
+    {
+      "path": "engine/operations/ImmutableDeploymentLedger.js",
+      "size": 1308,
+      "lastModified": "2026-08-01T18:40:31.317Z",
+      "hash": "6da605eff73692acbeff6570417eed5ea6fcf9623e4f9bbeeba7792567b94f63"
+    },
+    {
+      "path": "engine/operations/ImmutableDeploymentProvenanceLedger.js",
+      "size": 1499,
+      "lastModified": "2026-08-01T18:50:05.204Z",
+      "hash": "20fc6e9a48329eb79967cef6a1412864d54ab505dbdeb2317dc320d9f20ce16a"
+    },
+    {
+      "path": "engine/operations/ImmutableDeploymentProvenanceLedgerV2.js",
+      "size": 1582,
+      "lastModified": "2026-08-01T19:04:14.854Z",
+      "hash": "8a9334aec2517191841935c0af61371c0d4642f4e0832f1b2b3e46ae3c870375"
+    },
+    {
+      "path": "engine/operations/IndependentAssuranceAttestationEngine.js",
+      "size": 1510,
+      "lastModified": "2026-08-01T19:29:16.294Z",
+      "hash": "2c737f113add0442e079b056de0825dd0f9d12eece54e77369dba3bc5ef69db5"
+    },
+    {
+      "path": "engine/operations/IndependentAssuranceIntegrator.js",
+      "size": 1452,
+      "lastModified": "2026-08-01T18:25:48.455Z",
+      "hash": "530ef8abbc3f1e717f97bc4129baac5bc42f1b8e0ba4e7300f6611a1db3890b9"
+    },
+    {
+      "path": "engine/operations/IndependentAssuranceTokenBridge.js",
+      "size": 1553,
+      "lastModified": "2026-08-01T18:50:44.655Z",
+      "hash": "8ed26d2f83827961817c8b3a7466ec9bcbd9b2fe56e85f9e7518041f819f258b"
+    },
+    {
+      "path": "engine/operations/IndependentExternalAssuranceBridge.js",
+      "size": 1408,
+      "lastModified": "2026-08-01T18:40:18.349Z",
+      "hash": "bd0a56e2baeebda26ec82c0663e6a6f1ea2f364037f94a8d32f019700180f283"
+    },
+    {
+      "path": "engine/operations/K8sClusterEventProvenanceGraph.js",
+      "size": 1327,
+      "lastModified": "2026-08-01T18:40:26.891Z",
+      "hash": "691f51ded57d1207ca2af9e11cc71c536786d788d9029fa0ea8e4a9770f081dc"
+    },
+    {
+      "path": "engine/operations/K8sEventLogCollector.js",
+      "size": 1482,
+      "lastModified": "2026-08-01T18:25:38.094Z",
+      "hash": "66cf9d4190f9fc64d792dd254175a297c431f598888f5fe70fd6b2508981c15c"
+    },
+    {
+      "path": "engine/operations/KubernetesEventProvenanceGraph.js",
+      "size": 1521,
+      "lastModified": "2026-08-01T18:50:00.912Z",
+      "hash": "80ee3c158ff22fc85beef150dcff9da72f28b52641cbcd0489ede1f2c6d222b5"
+    },
+    {
+      "path": "engine/operations/KubernetesEventProvenanceGraphV2.js",
+      "size": 1616,
+      "lastModified": "2026-08-01T19:04:10.110Z",
+      "hash": "23aeb81cf006adb66488094786ed86eb14163209c76d4fafcfdf290097e431ef"
+    },
+    {
+      "path": "engine/operations/LiveApiEndpointContractRunner.js",
+      "size": 1459,
+      "lastModified": "2026-08-01T18:40:27.002Z",
+      "hash": "c800047e111bcc057d3756a5f405127160774fea588581f746b503da1220bf7e"
+    },
+    {
+      "path": "engine/operations/LiveApiVerificationEngine.js",
+      "size": 1395,
+      "lastModified": "2026-08-01T18:25:44.890Z",
+      "hash": "cf59c8f90f6bdc24a48b3d21efde48f1836467491a9f0bd6e5e086ce8f8f7ab3"
+    },
+    {
+      "path": "engine/operations/LiveBillingGatewayReceiptArchive.js",
+      "size": 1601,
+      "lastModified": "2026-08-01T18:32:25.014Z",
+      "hash": "b337ebc1d2d5ebac02945e8d054dcc3a6bb32b9baa85e642d7493c26597208d5"
+    },
+    {
+      "path": "engine/operations/LiveCommercialRevenueTelemetryEngine.js",
+      "size": 1472,
+      "lastModified": "2026-08-01T19:04:06.185Z",
+      "hash": "659d445e12fb75b173978a9f0cac7a152a545cdb4c107849a818c04e531a0083"
+    },
+    {
+      "path": "engine/operations/LiveCommercialTransactionAuditor.js",
+      "size": 1528,
+      "lastModified": "2026-08-01T18:40:30.599Z",
+      "hash": "9baa93489a5a2addb41b1a60f973e25a7f8d80f72fb781e74090bdbbcce2299a"
+    },
+    {
+      "path": "engine/operations/LiveContractDriftDetector.js",
+      "size": 1291,
+      "lastModified": "2026-08-01T18:25:46.162Z",
+      "hash": "e2721de0a9420175fdbb369e9a463b53b463fa10862ae8440163a216f567557e"
+    },
+    {
+      "path": "engine/operations/LiveContractDriftPreventer.js",
+      "size": 1445,
+      "lastModified": "2026-08-01T18:33:18.214Z",
+      "hash": "36a15dc061de4bdc72733f0357a74f3f19d05865f1d955215842e4150d952f17"
+    },
+    {
+      "path": "engine/operations/LiveEndpointCompatibilityMatrix.js",
+      "size": 1304,
+      "lastModified": "2026-08-01T18:50:28.769Z",
+      "hash": "2a2d23150a0ad88ff3166658372e343125e5388501bef563509f1f168009011b"
+    },
+    {
+      "path": "engine/operations/LiveEndpointCompatibilityMatrixV2.js",
+      "size": 1471,
+      "lastModified": "2026-08-01T19:03:56.842Z",
+      "hash": "3341420a9269944eedb3d1ba80b9bdcb8727d4ce3539ac1b1fc6df9082589893"
+    },
+    {
+      "path": "engine/operations/LiveOperationsEngine.js",
+      "size": 1305,
+      "lastModified": "2026-08-01T19:44:12.382Z",
+      "hash": "0eeeb03d899266548de0efecab7e84f9a2c28c41acbecad4dc78f642a4330f20"
+    },
+    {
+      "path": "engine/operations/LiveOtlpSpanBundleArchive.js",
+      "size": 1606,
+      "lastModified": "2026-08-01T18:32:21.217Z",
+      "hash": "e544eecce0332158462bf06c5931ae0238f776f3cca7c435eba8b305a938f4b0"
+    },
+    {
+      "path": "engine/operations/LiveOtlpTraceSpanCollector365.js",
+      "size": 1344,
+      "lastModified": "2026-08-01T18:50:32.971Z",
+      "hash": "50649fbf727e3ca7702d9954369780ad212846e98b2c650152f99ce10a0a3ca0"
+    },
+    {
+      "path": "engine/operations/LiveOtlpTraceSpanIngestionArchive.js",
+      "size": 1416,
+      "lastModified": "2026-08-01T19:04:09.172Z",
+      "hash": "3e0710e3b8cb58827d1af33a859ad072fcaa77dcd8ede198a5c3faddd1d66fae"
+    },
+    {
+      "path": "engine/operations/LivePaymentGatewayReceiptLedger.js",
+      "size": 1492,
+      "lastModified": "2026-08-01T18:51:01.232Z",
+      "hash": "b6b189ac6bae8d916fd66c52bd222fd968c2e0be4c2ff964acdaded6a2ca6a37"
+    },
+    {
+      "path": "engine/operations/LivePlatformRuntimeIngestionEngine.js",
+      "size": 1907,
+      "lastModified": "2026-08-01T19:04:08.295Z",
+      "hash": "b9efb1c8fcee2499b045157df33f52e2583b436b38e1895fc80e23304cb391cb"
+    },
+    {
+      "path": "engine/operations/LiveRuntimeOperationsEngine.js",
+      "size": 1312,
+      "lastModified": "2026-08-01T18:32:19.546Z",
+      "hash": "76d6db1a9aa3de338256bc7d7b6bf9b25391bbc4c53e20f290ee1103b56827fd"
+    },
+    {
+      "path": "engine/operations/LiveRuntimeTelemetryLakeEngine.js",
+      "size": 1496,
+      "lastModified": "2026-08-01T18:40:22.734Z",
+      "hash": "d49a3dbe99c43d5476777e0834207805be1596f90aad14ae762b76f3a11fe772"
+    },
+    {
+      "path": "engine/operations/LiveSecurityAttestationLedger.js",
+      "size": 1349,
+      "lastModified": "2026-08-01T19:05:26.559Z",
+      "hash": "c1e771afcc12d622097b9f2df8094d3c44d63593b0197895f3ead0d9368c28fd"
+    },
+    {
+      "path": "engine/operations/LiveVulnerabilityFeedIngester.js",
+      "size": 1517,
+      "lastModified": "2026-08-01T18:50:41.374Z",
+      "hash": "24f5cd24c2b92329a0f812e086e7c057a1d7eef5e070346b0aa3186b874404a5"
+    },
+    {
+      "path": "engine/operations/LiveVulnerabilityScanArchive.js",
+      "size": 1517,
+      "lastModified": "2026-08-01T18:40:34.949Z",
+      "hash": "3dd36cf8eed63e3657d756eae615746ab88f918f36ffabf47ebccde8a6bf2766"
+    },
+    {
+      "path": "engine/operations/LiveVulnerabilityScanLedger.js",
+      "size": 1380,
+      "lastModified": "2026-08-01T18:32:22.710Z",
+      "hash": "dad0cae8dc4c50aa6cb90ce1e65577f3c7dcda9f7819b556e3cf29a7a86c2502"
+    },
+    {
+      "path": "engine/operations/LongTermOtlpTraceSpanCollector.js",
+      "size": 1344,
+      "lastModified": "2026-08-01T18:40:31.842Z",
+      "hash": "097e72e6c963ea195bc59d8361ff2b65580f7c0ff656653d4efde8367b8355d2"
+    },
+    {
+      "path": "engine/operations/MultiEnvironmentValidationEngine.js",
+      "size": 1619,
+      "lastModified": "2026-08-01T21:47:24.461Z",
+      "hash": "dba1ef9de2829f369ff4d39e4612056263f22e8ca2d51b5ffc0386bc8cdc526b"
+    },
+    {
+      "path": "engine/operations/MultiLanguageSdkRegistry.js",
+      "size": 1245,
+      "lastModified": "2026-08-01T19:29:18.040Z",
+      "hash": "e008cfd4a6cf91fe35a9a226e6086438eecf0ed74ec8477d6d84251beb236f9a"
+    },
+    {
+      "path": "engine/operations/OperationalAcceptanceEngine.js",
+      "size": 1334,
+      "lastModified": "2026-08-01T21:47:10.573Z",
+      "hash": "7d1b79a5913eaef2a82718368fef0f7b42a4400984e58b0d9bc9db32394f0733"
+    },
+    {
+      "path": "engine/operations/OperationalIntelligenceEngine.js",
+      "size": 3161,
+      "lastModified": "2026-08-01T18:03:17.579Z",
+      "hash": "81dc8816168480390f13208cf419405ba38645cb32ec01d9b94819cd04001e3c"
+    },
+    {
+      "path": "engine/operations/OperationalObservabilityDashboardEngine.js",
+      "size": 1414,
+      "lastModified": "2026-08-01T21:36:51.993Z",
+      "hash": "4748c3d75b120b25215432570fb713ab5ea04c6578784bc3e3af42b08efd9845"
+    },
+    {
+      "path": "engine/operations/OtlpTraceBundleCollector.js",
+      "size": 1615,
+      "lastModified": "2026-08-01T18:25:48.841Z",
+      "hash": "6f411ce7620014fb83848dceb45c5425733914783af4bf6da2ef5760570f85d8"
+    },
+    {
+      "path": "engine/operations/PaymentGatewayReceiptProvenanceLedger.js",
+      "size": 1473,
+      "lastModified": "2026-08-01T19:04:07.243Z",
+      "hash": "079a16e88ba111f3e49804674dd44a6f0c6810a51a9bcc4b3f342301bcecfb9b"
+    },
+    {
+      "path": "engine/operations/PilotDeploymentObservatory.js",
+      "size": 2373,
+      "lastModified": "2026-08-01T18:03:17.583Z",
+      "hash": "7e0ed5c3eeb366d112b826d399799c034cefb320b0ab6c27d11b1cbc53ec3274"
+    },
+    {
+      "path": "engine/operations/PilotExpansionAssuranceEngine.js",
+      "size": 2079,
+      "lastModified": "2026-08-01T18:03:17.587Z",
+      "hash": "8182eef19e0f83c593a815f7fdfd42cab2e78a99a9649f67786a1aed3419766f"
+    },
+    {
+      "path": "engine/operations/PlatformRuntimeOperationsEngine.js",
+      "size": 1666,
+      "lastModified": "2026-08-01T18:49:59.790Z",
+      "hash": "a34d7ae314beb42fb2f3367fb67240254c369e2155ce688fb52949d11daf3090"
+    },
+    {
+      "path": "engine/operations/PreLaunchOperationsEngine.js",
+      "size": 17207,
+      "lastModified": "2026-08-01T18:03:17.593Z",
+      "hash": "a633c61b3ce9bc0503180d73312a8e318579fd2cd8c1f76fbdccefb1f43e7b1d"
+    },
+    {
+      "path": "engine/operations/ProcurementBundleGenerator.js",
+      "size": 1660,
+      "lastModified": "2026-08-01T18:25:46.629Z",
+      "hash": "8f46c3072704ce9c6f32c7d85c73dcd7a82760c51a2d328e62eb3435462719e7"
+    },
+    {
+      "path": "engine/operations/ProcurementComplianceDossierEngine.js",
+      "size": 1580,
+      "lastModified": "2026-08-01T19:29:19.926Z",
+      "hash": "e5af1a4543acb0f9776a85665ea26a5896c7ce0b11388f7159f8df28034b3b66"
+    },
+    {
+      "path": "engine/operations/ProductDocumentationSuiteEngine.js",
+      "size": 1451,
+      "lastModified": "2026-08-01T19:29:18.361Z",
+      "hash": "9d7d09bf9994b191f0449e25467f8299bb55b2402d030cf2a6e5bf4f3c14750a"
+    },
+    {
+      "path": "engine/operations/ProductionDeploymentEngine.js",
+      "size": 2345,
+      "lastModified": "2026-08-01T18:03:17.610Z",
+      "hash": "2a84e8da7d38f39175d895dec814679d8bf738a7e91db60af8d3e4eb04618bba"
+    },
+    {
+      "path": "engine/operations/ProductionDeploymentProofArchive.js",
+      "size": 1366,
+      "lastModified": "2026-08-01T18:32:25.325Z",
+      "hash": "e6bae867ba27c7af88deefa36a18ffd301e0bba080d41363bd0273cda8fe0c66"
+    },
+    {
+      "path": "engine/operations/ProductionObservabilityLakeEngine.js",
+      "size": 1335,
+      "lastModified": "2026-08-01T18:40:30.595Z",
+      "hash": "1235c60ea0982c2b0ca37ca195db2715ae3df39442d707ad47eb9940ca4f2d18"
+    },
+    {
+      "path": "engine/operations/ProductionOperationsEngine.js",
+      "size": 1665,
+      "lastModified": "2026-08-01T22:03:57.893Z",
+      "hash": "83f06193d4dfec9467336ba8ca6ea9229abc19318e2954c52dd2769c3d1d6ba2"
+    },
+    {
+      "path": "engine/operations/ProductionOperationsRunbookEngine.js",
+      "size": 1557,
+      "lastModified": "2026-08-01T19:29:09.905Z",
+      "hash": "d4f8ab1e42b3803cddb4a1e8a85b0695f6400481809e08e99f614d2fa0aeb905"
+    },
+    {
+      "path": "engine/operations/ProductionRollbackAutomator.js",
+      "size": 2138,
+      "lastModified": "2026-08-01T18:03:17.616Z",
+      "hash": "fab0bbbb1c6907baeda03ac312063b51d591aea8d4095cfeb9100c511ad1146f"
+    },
+    {
+      "path": "engine/operations/ProductionTelemetryIngester.js",
+      "size": 1463,
+      "lastModified": "2026-08-01T18:25:46.878Z",
+      "hash": "5a4ac80e940573b7a7cf966894548177e0155b97d694333eb3c26e3ffa09c368"
+    },
+    {
+      "path": "engine/operations/PrometheusMetricArchive365.js",
+      "size": 1251,
+      "lastModified": "2026-08-01T18:40:35.262Z",
+      "hash": "f24d581412c65bb292ed3879ac7b7c7c2b8d2d3216f4d8ebf2563a0ed51a8d0f"
+    },
+    {
+      "path": "engine/operations/PrometheusMetricArchive365V2.js",
+      "size": 1322,
+      "lastModified": "2026-08-01T18:50:37.453Z",
+      "hash": "a46331ee5a52a56a40218c0d0ad0d0d0ce577ff77a47dddea70bd2080adf2b17"
+    },
+    {
+      "path": "engine/operations/PrometheusMetricRetentionEngine365.js",
+      "size": 1356,
+      "lastModified": "2026-08-01T19:04:13.549Z",
+      "hash": "e126e49f2fe42c80631af3f0b2bde1f8c89b44f28ab7e413eecc6ad9c1e2de36"
+    },
+    {
+      "path": "engine/operations/PrometheusTimeSeriesExporter.js",
+      "size": 1457,
+      "lastModified": "2026-08-01T18:25:54.212Z",
+      "hash": "176ec40db323e7ebcf553665cde3c6a81e381eb4cdc307b2b0c66523d75dd966"
+    },
+    {
+      "path": "engine/operations/PrometheusTimeSeriesLedger.js",
+      "size": 1435,
+      "lastModified": "2026-08-01T18:32:25.841Z",
+      "hash": "7e3ef9d983a1d05b9aae82b7a1de26e7cc953f6af0ce159f723142c3ef461f04"
+    },
+    {
+      "path": "engine/operations/QueryableObservabilityLakeEngine.js",
+      "size": 1434,
+      "lastModified": "2026-08-01T19:04:07.450Z",
+      "hash": "b3ecf1326a405346cb2dc10d5269c558f0da6b3901f47ccd13c29d0032e2a74f"
+    },
+    {
+      "path": "engine/operations/RealCustomerPilotTelemetryLake.js",
+      "size": 1459,
+      "lastModified": "2026-08-01T18:40:26.272Z",
+      "hash": "35b47bdf499963d5ae29f136f32c624cd88fccc5655279148def18d9b58de77f"
+    },
+    {
+      "path": "engine/operations/RealCustomerSuccessTelemetryEngine.js",
+      "size": 1294,
+      "lastModified": "2026-08-01T18:50:28.670Z",
+      "hash": "40f5de2457de30a70be3a0bf06c3cefc5f3b45093f0faf236215809a97686884"
+    },
+    {
+      "path": "engine/operations/RealCustomerTelemetryGraphV2.js",
+      "size": 1309,
+      "lastModified": "2026-08-01T19:04:09.088Z",
+      "hash": "fcc3757da7238a9888e4373e9a139591950f95aaa70308234e7505488bed9bdd"
+    },
+    {
+      "path": "engine/operations/RealTenantMetricsCollector.js",
+      "size": 1413,
+      "lastModified": "2026-08-01T18:25:47.808Z",
+      "hash": "009e2ecbcf907bfd10875eb766e2f28e64284c68786e5098c8970126f23e725c"
+    },
+    {
+      "path": "engine/operations/ReleaseEngineeringEngine.js",
+      "size": 1481,
+      "lastModified": "2026-08-01T19:29:19.886Z",
+      "hash": "520b58c63055ba78315a92c0b72c1b5289494e65f380c533ce818970605a0911"
+    },
+    {
+      "path": "engine/operations/ReproducibleBuildVerifier.js",
+      "size": 1450,
+      "lastModified": "2026-08-01T19:29:20.416Z",
+      "hash": "193ce05953d3409969f3d87d6f9f1390ab4f784210d2d665a6b054e95c70f031"
+    },
+    {
+      "path": "engine/operations/Rfc3161TimestampIngestionEngine.js",
+      "size": 1444,
+      "lastModified": "2026-08-01T19:29:29.038Z",
+      "hash": "d614f6567f25467409338433979a12e0cbe97efd2b443ded400cb62366153589"
+    },
+    {
+      "path": "engine/operations/Rfc3161TsaReceiptEngine.js",
+      "size": 1510,
+      "lastModified": "2026-08-01T18:25:49.598Z",
+      "hash": "8a1cf164043223fb27ae65d9123b228e9e1dd6423c7e0195dbc04035b62ed79d"
+    },
+    {
+      "path": "engine/operations/Rfc3161TsaReceiptGraph.js",
+      "size": 1409,
+      "lastModified": "2026-08-01T18:40:20.185Z",
+      "hash": "ad512962fcd353b74a0e453d7fbf6cf3800212dc5d82d2320b138ebd91f2acfc"
+    },
+    {
+      "path": "engine/operations/Rfc3161TsaReceiptGraphV2.js",
+      "size": 1606,
+      "lastModified": "2026-08-01T18:50:45.648Z",
+      "hash": "91cfc9c6f70e2e9026afdb8fbcb6576b536d267c9424362b859a03b6f3c0c21c"
+    },
+    {
+      "path": "engine/operations/Rfc3161TsaReceiptGraphV3.js",
+      "size": 1456,
+      "lastModified": "2026-08-01T19:04:10.279Z",
+      "hash": "f98b4b5b9a7f54ad04af92e3dce792bebe31544fff3c4fce73f3c2bd9a18cd5b"
+    },
+    {
+      "path": "engine/operations/Rfc3161TsaReceiptTokenBridge.js",
+      "size": 1613,
+      "lastModified": "2026-08-01T18:32:26.994Z",
+      "hash": "39e8a363df3c971cfc47bbd45d772869f2adaf351baa7fc9b32653a9d50e2aca"
+    },
+    {
+      "path": "engine/operations/RfpEvidenceGraphCompiler.js",
+      "size": 1270,
+      "lastModified": "2026-08-01T18:40:31.039Z",
+      "hash": "77d24174999d63b6f45e3590684e5b7b216b3b6b39cfe91cb554a7c27bed44ac"
+    },
+    {
+      "path": "engine/operations/RfpEvidencePackageCompiler.js",
+      "size": 1473,
+      "lastModified": "2026-08-01T18:25:47.580Z",
+      "hash": "10c68df4ef6c0af94c6d236787a52355cecc56b12ae83c80184a062e54d4edc8"
+    },
+    {
+      "path": "engine/operations/RfpEvidencePackageCompilerV2.js",
+      "size": 1504,
+      "lastModified": "2026-08-01T18:32:25.680Z",
+      "hash": "b0162cd0b0f5cbec48b0060f054ac8b7e6e9183822f0f8d147bc790a1a5a7977"
+    },
+    {
+      "path": "engine/operations/RfpRequirementEvidenceGraph.js",
+      "size": 1421,
+      "lastModified": "2026-08-01T18:50:44.942Z",
+      "hash": "5b395da108d18277db7d8c83e4dc7d6953be3abb20419df27e253d0283924cdf"
+    },
+    {
+      "path": "engine/operations/RfpRequirementTraceabilityGraphV2.js",
+      "size": 1427,
+      "lastModified": "2026-08-01T19:04:12.378Z",
+      "hash": "30065ee1d4131e5cde92a152168b5e2efdd7fa34fe587e72812e59813e895452"
+    },
+    {
+      "path": "engine/operations/RfpResponseAutomationCompiler.js",
+      "size": 1445,
+      "lastModified": "2026-08-01T19:29:20.834Z",
+      "hash": "ae506b4b1a7b6e0d2df3dc80be1572aaec89e56dbd2096360cc03fa50c9081ee"
+    },
+    {
+      "path": "engine/operations/RollbackHistoryLedger.js",
+      "size": 1497,
+      "lastModified": "2026-08-01T18:25:43.103Z",
+      "hash": "93feedcfac51dca6cbe91b07163dbc65e9cfda9608db761ef89865aae19ef2f6"
+    },
+    {
+      "path": "engine/operations/SecOpsAttestationEngine.js",
+      "size": 1378,
+      "lastModified": "2026-08-01T18:25:43.433Z",
+      "hash": "74e9f995788e36220aecad006d7a3c521f7fad6972e6e9dfcd81544c56f92ede"
+    },
+    {
+      "path": "engine/operations/SignedReleaseArtifactRegistry.js",
+      "size": 1415,
+      "lastModified": "2026-08-01T19:29:24.967Z",
+      "hash": "332442b9431d7e469e1b89ebb794dc4f9f4fcfd667c5cc87840bce7cb7d3a0b2"
+    },
+    {
+      "path": "engine/operations/SignedSbomRegistry.js",
+      "size": 1307,
+      "lastModified": "2026-08-01T18:25:43.904Z",
+      "hash": "3eaeed17b05d216da0a59f3dd5e20df8e428393cfa7a9f087ea1c8d5ea16bfd0"
+    },
+    {
+      "path": "engine/operations/SignedSbomRegistryArchive.js",
+      "size": 1351,
+      "lastModified": "2026-08-01T18:32:19.219Z",
+      "hash": "7aa1c23dd43623a9b344389cb949295920e845397874abcd2c05c1e1bc717619"
+    },
+    {
+      "path": "engine/operations/SignedSbomRegistryGraph.js",
+      "size": 1487,
+      "lastModified": "2026-08-01T18:40:29.703Z",
+      "hash": "0edf3d7fb6d9a759f5d24f991424ad82d37e7fbb775730d1dcf3f9fe47c8219e"
+    },
+    {
+      "path": "engine/operations/SignedSbomRegistryGraphV2.js",
+      "size": 1483,
+      "lastModified": "2026-08-01T18:50:37.028Z",
+      "hash": "d51747858c33a32168ec9b57a230b6ddb4cb1ab6f2c6b6e1cc91b2396e7541d8"
+    },
+    {
+      "path": "engine/operations/SignedSbomRegistryGraphV3.js",
+      "size": 1341,
+      "lastModified": "2026-08-01T19:05:26.483Z",
+      "hash": "c719f5b565d2389b334b42ea6860b96ee6a1ff5aaf3e980f511b1fd524f54c05"
+    },
+    {
+      "path": "engine/operations/SlaComplianceHistory.js",
+      "size": 1865,
+      "lastModified": "2026-08-01T18:03:17.622Z",
+      "hash": "dce4bbafeb5862345b81d9d2f455ab47df69e7b404ce0a29fe6c9cbf4c14f03b"
+    },
+    {
+      "path": "engine/operations/SlaProofAggregator.js",
+      "size": 1523,
+      "lastModified": "2026-08-01T18:25:49.016Z",
+      "hash": "ec54e48eecabf3bce9814e50739f27faef6c48c811207ec2aab9cd2801ff9fce"
+    },
+    {
+      "path": "engine/operations/SloAlertingAndIncidentResponseEngine.js",
+      "size": 1536,
+      "lastModified": "2026-08-01T19:29:15.757Z",
+      "hash": "50ce2d630f9e467c0505fb37015d5435d01b3dfbbd82dd0add770caf68b7b409"
+    },
+    {
+      "path": "engine/operations/StagingPilotDeploymentEngine.js",
+      "size": 2405,
+      "lastModified": "2026-08-01T18:03:17.628Z",
+      "hash": "d6e72cdfe7dce4ee67f1853eadc32010ca1bcc00c7815006694fbb70aaa6e6b3"
+    },
+    {
+      "path": "engine/operations/SubscriptionHealthArchive.js",
+      "size": 1300,
+      "lastModified": "2026-08-01T18:25:53.923Z",
+      "hash": "bfcd9eeb883344fbede0cf4509e03c23be2d49e8665d3bedf5147be9ae6ccd05"
+    },
+    {
+      "path": "engine/operations/SubscriptionRetentionAnalytics365.js",
+      "size": 1362,
+      "lastModified": "2026-08-01T18:51:34.690Z",
+      "hash": "82e213fe72a08ab9053dc4d4c0e6ac1da814bca5e7a3100d737d42eb5731737d"
+    },
+    {
+      "path": "engine/operations/SubscriptionRetentionAnalytics365V2.js",
+      "size": 1418,
+      "lastModified": "2026-08-01T19:04:13.067Z",
+      "hash": "9c0580f545f375f7c87a27fdd5a93fcca2e44d759c68706af6dc735cd9188a32"
+    },
+    {
+      "path": "engine/operations/SubscriptionRetentionArchive365.js",
+      "size": 1509,
+      "lastModified": "2026-08-01T18:40:37.640Z",
+      "hash": "9567a27e807d462ae7594fa28e68d1b82d57beada9159d612ac54bf30ac56e34"
+    },
+    {
+      "path": "engine/operations/SubscriptionRetentionLedger.js",
+      "size": 1507,
+      "lastModified": "2026-08-01T18:32:29.756Z",
+      "hash": "b9a28915c974ab635f692eca0c46fc107d1d58c31496b69177dc6bcbba98a789"
+    },
+    {
+      "path": "engine/operations/SupportDiagnosticsBundle.js",
+      "size": 3709,
+      "lastModified": "2026-08-01T18:03:17.636Z",
+      "hash": "c586f8578475d283d00d0d5286a478a438bbdea0ce898ea6d6a229b7a3f50428"
+    },
+    {
+      "path": "engine/operations/SupportMetricsDashboard.js",
+      "size": 1899,
+      "lastModified": "2026-08-01T18:03:17.641Z",
+      "hash": "1a2f604e8d151a7d9626f9ca065dfa41dcc9870c0848f6c615f7941fb5470458"
+    },
+    {
+      "path": "engine/operations/SupportResolutionArchive.js",
+      "size": 2089,
+      "lastModified": "2026-08-01T18:03:17.649Z",
+      "hash": "926cb32dc33b2a6fa98663f3b8aa8806ecf01b73b605012de6519db25a05ac0e"
+    },
+    {
+      "path": "engine/operations/SupportSlaMonitoringEngine.js",
+      "size": 1556,
+      "lastModified": "2026-08-01T19:29:27.480Z",
+      "hash": "a8992ffdc351df4dd1ab1e9d2158b321755d0a2487f1e4c37f0021fab0166520"
+    },
+    {
+      "path": "engine/operations/TenantBillingAndSubscriptionManager.js",
+      "size": 1333,
+      "lastModified": "2026-08-01T19:29:17.818Z",
+      "hash": "4e94f536597a8a483b08c6e76fc68e7dee1f67577eb2b1b3b46c39556e0944d8"
+    },
+    {
+      "path": "engine/operations/TenantSlaMonitor.js",
+      "size": 1826,
+      "lastModified": "2026-08-01T18:03:17.654Z",
+      "hash": "e93b6c96a81aa4fe75f6c6961a618c6d13c4588d49db8fb4fbcad08b20092cd8"
+    },
+    {
+      "path": "engine/operations/ThirdPartyPenetrationTestBridge.js",
+      "size": 1484,
+      "lastModified": "2026-08-01T19:29:25.118Z",
+      "hash": "e8a932da22e4dc2c8973eb963edf49753aa70cd15a44ae45bd269ed4fa20e3ac"
+    },
+    {
+      "path": "engine/operations/TrainingAndKnowledgeBasePublisher.js",
+      "size": 1564,
+      "lastModified": "2026-08-01T19:29:22.974Z",
+      "hash": "36b091bf6b0bfdbc66da98afb3ff3ee5ae4eef2fce7dcbacf00095f9041e3e2a"
+    },
+    {
+      "path": "engine/operations/UnifiedTraceabilityCorrelationGraph.js",
+      "size": 1534,
+      "lastModified": "2026-08-01T18:50:29.946Z",
+      "hash": "5d567b35e07247271487e2af277ba78127868a6587667277756cfa04fb1c32ef"
+    },
+    {
+      "path": "engine/operations/UnifiedTraceabilityCorrelationGraphV2.js",
+      "size": 1481,
+      "lastModified": "2026-08-01T19:04:05.083Z",
+      "hash": "932d07566cd2d37a9173d822b732643810673de79cc79c896a303ceb21f703c4"
+    },
+    {
+      "path": "engine/operations/UptimeMetricsCollector.js",
+      "size": 2162,
+      "lastModified": "2026-08-01T18:03:17.661Z",
+      "hash": "c58ad9ef3fc16801eca0e8a5d22ff47f507f8f30acf797ad68b4f5d140ea0ba8"
+    },
+    {
+      "path": "engine/operations/UserAndAdminGuidePublisher.js",
+      "size": 1439,
+      "lastModified": "2026-08-01T19:29:19.942Z",
+      "hash": "912798f68178f13f577fe51dec5da3695ca13dcfea87cfe09a325f1ed820aaf7"
+    },
+    {
+      "path": "engine/operations/VulnerabilityScanHistory.js",
+      "size": 1404,
+      "lastModified": "2026-08-01T18:25:47.478Z",
+      "hash": "186b42ed8b6610c7bc6f490234560c65062e8159193bc4dcd252c9f16d712552"
+    },
+    {
+      "path": "engine/operations/ZeroDriftContractGatePolicy.js",
+      "size": 1452,
+      "lastModified": "2026-08-01T19:04:01.121Z",
+      "hash": "3c898913d7570e49d9c42d6a23c706611a9406a50f59e13c14a6513c0af7d22c"
+    },
+    {
+      "path": "engine/osap/CryptoSigner.js",
+      "size": 4791,
+      "lastModified": "2026-08-01T18:03:17.666Z",
+      "hash": "0ff0195ed78912332a34bfa9fe555dbb3f5ea9078b5e58d1899cd4223aa95f4f"
+    },
+    {
+      "path": "engine/osap/OsapEngine.js",
+      "size": 16290,
+      "lastModified": "2026-08-01T18:03:17.674Z",
+      "hash": "0db328306d0dee55dc4ce14c90207bae2d6388e07888ec1f544e53de463e62b9"
+    },
+    {
+      "path": "engine/packaging/CapabilityCapsulePacker.js",
+      "size": 13565,
+      "lastModified": "2026-08-02T13:53:51.247Z",
+      "hash": "32e87cb13e0bf12bd2161fef816b67ce4a8408b6e0c55b5b21929ebafef2f321"
+    },
+    {
+      "path": "engine/packaging/EnterpriseBundlePacker.js",
+      "size": 14133,
+      "lastModified": "2026-08-02T13:53:51.252Z",
+      "hash": "36f506598aa1d645e5c887391f778f4cfe8f622e3a2f08d1918f8217d41824cd"
+    },
+    {
+      "path": "engine/packaging/StandardPackagePacker.js",
+      "size": 13422,
+      "lastModified": "2026-08-02T13:53:51.250Z",
+      "hash": "710cbb0df014fc500a070a26d239d7d3e40cabbbb41f9cb2244511e409ccaa91"
+    },
+    {
+      "path": "engine/pilot/CustomerSuccessIntelligenceEngine.js",
+      "size": 1357,
+      "lastModified": "2026-08-01T19:58:08.974Z",
+      "hash": "f9de4e71af8fcba01afec1a8a04cf41c24a9d5719f816ace58e51b05551b5ba3"
+    },
+    {
+      "path": "engine/pilot/CustomerValidationEngine.js",
+      "size": 1327,
+      "lastModified": "2026-08-01T19:44:13.692Z",
+      "hash": "7874c7bd96151d56074318c82243d6096ab19017c0a89b3afdf5b495036634f2"
+    },
+    {
+      "path": "engine/pilot/PilotHealthMonitor.js",
+      "size": 1985,
+      "lastModified": "2026-08-01T18:03:17.679Z",
+      "hash": "fc59374c3fea923cece3cda06fd09df22663f076cfccf1cd7f9599403d206b20"
+    },
+    {
+      "path": "engine/pilot/PilotInstrumentationEngine.js",
+      "size": 1864,
+      "lastModified": "2026-08-01T18:03:35.020Z",
+      "hash": "a4bba13866c7ee754a1bfc9a1c3bddeca0a007913fd336c77045ae89c6c653f5"
+    },
+    {
+      "path": "engine/pilot/TenantUsageCollector.js",
+      "size": 2409,
+      "lastModified": "2026-08-01T18:03:35.024Z",
+      "hash": "cf52179d8a98b570fecda04dee0fced75204503a804b7f1aba578fd535e092ff"
+    },
+    {
+      "path": "engine/plugin/MarketplacePluginEngine.cjs",
+      "size": 6971,
+      "lastModified": "2026-08-01T09:04:44.565Z",
+      "hash": "1baf02443b46ab15c69876c1fd6502f6e143ece3c27e26f272f5615abbc3e083"
+    },
+    {
+      "path": "engine/plugin/PluginRegistry.js",
+      "size": 9308,
+      "lastModified": "2026-08-01T18:03:17.698Z",
+      "hash": "f66fae162c365d4990efd6df5331e8f9ffbcbed66bea3dc072beab50e454e29c"
+    },
+    {
+      "path": "engine/policy/FindingModel.cjs",
+      "size": 1584,
+      "lastModified": "2026-07-31T19:50:49.546Z",
+      "hash": "86dbc1a4aa77144b1a0f64ade054e00c3f373f154c9186429c228b0d20d81b50"
+    },
+    {
+      "path": "engine/policy/HumanReviewEngine.cjs",
+      "size": 2515,
+      "lastModified": "2026-08-01T08:56:17.015Z",
+      "hash": "2863316f2c3158e2ddf885910c1fa4801cd3d1f0dc6a5332df16852dbea4da20"
+    },
+    {
+      "path": "engine/policy/PolicyBundle.cjs",
+      "size": 1168,
+      "lastModified": "2026-07-31T19:50:49.697Z",
+      "hash": "9592c0ec7eee6f20b5750741cb3bf494bdd04ff4b8f13afdd599b75b7d745fbe"
+    },
+    {
+      "path": "engine/policy/PolicyEngine.cjs",
+      "size": 2744,
+      "lastModified": "2026-07-31T19:55:19.172Z",
+      "hash": "126c6d9641dd6efd83d41b6c168fb1ab5684759eca1bc1f9d6ffe738866855c9"
+    },
+    {
+      "path": "engine/policy/PolicyPackLoader.js",
+      "size": 14893,
+      "lastModified": "2026-08-01T18:03:17.705Z",
+      "hash": "913d46c6a1ccd860477c9126a58640221802d3e08e05ab908e52ec3657d77378"
+    },
+    {
+      "path": "engine/policy/ProfileBundleLoader.cjs",
+      "size": 2313,
+      "lastModified": "2026-08-01T09:03:43.165Z",
+      "hash": "a2968c302dc0df50660237cabf61dd103a31182c412e6a6a48ccb9943834fef5"
+    },
+    {
+      "path": "engine/portal/DeveloperPlaygroundPortal.js",
+      "size": 2638,
+      "lastModified": "2026-08-01T18:03:17.712Z",
+      "hash": "24eff8b079e794577f4b981b7ed6a3b353cdcc5407654a11a8eaf529f7ebb29a"
+    },
+    {
+      "path": "engine/portal/DeveloperPortalEngine.js",
+      "size": 18548,
+      "lastModified": "2026-08-01T18:03:17.719Z",
+      "hash": "2a1c2594a480c6d48bdedb4b6a9ea7aec1089d8f068d374358232db34d2e4f31"
+    },
+    {
+      "path": "engine/portal/DocumentationIntelligenceEngine.js",
+      "size": 2474,
+      "lastModified": "2026-08-01T18:03:17.725Z",
+      "hash": "4a42e18f5d6f25cd83fdd3f0dd873383b689ae5dc2e8bb7e53b877d9ff1a76fe"
+    },
+    {
+      "path": "engine/portal/EnterpriseDocPortalEngine.js",
+      "size": 34589,
+      "lastModified": "2026-08-01T18:03:17.730Z",
+      "hash": "bda123766b33c86dd3a57bf21386769ecd71d131b60efab0dc7d7dbbb93f309a"
+    },
+    {
+      "path": "engine/portal/PublicTrustPortal.js",
+      "size": 3626,
+      "lastModified": "2026-08-01T18:03:17.735Z",
+      "hash": "e67f82c61783d23852d16d83ce3855c98ebf235e695e776b5c6cf6ded7d22daf"
+    },
+    {
+      "path": "engine/portal/SdkDocumentationLifecycleEngine.js",
+      "size": 2111,
+      "lastModified": "2026-08-01T18:03:17.740Z",
+      "hash": "8120cdc6cf7833cbc69a156f7a9196477fddc40e5a184e522bfe5a26f5177cd9"
+    },
+    {
+      "path": "engine/predictive/api/v1/predict.cjs",
+      "size": 2783,
+      "lastModified": "2026-07-31T20:29:14.036Z",
+      "hash": "bc6e1549fb49d5517abded66449e969e330f7775b4649e8ff8633267ce80c9b7"
+    },
+    {
+      "path": "engine/predictive/ConfidenceModel.cjs",
+      "size": 1485,
+      "lastModified": "2026-07-31T20:29:13.957Z",
+      "hash": "1b93021b71ec15ab758db66937cfc0eb63bce6ff128201ef21e9fefe522fae77"
+    },
+    {
+      "path": "engine/predictive/CyberWeather.cjs",
+      "size": 2392,
+      "lastModified": "2026-07-31T20:29:03.996Z",
+      "hash": "89139b38b07c08f8e87b53f74bd6c115ec6693f44eb73594501a22eccc0713f2"
+    },
+    {
+      "path": "engine/predictive/CyberWeatherEngine.cjs",
+      "size": 737,
+      "lastModified": "2026-08-01T10:12:22.749Z",
+      "hash": "3752999d4af4c18de2346b4737b89360e9fa62b50b8faa3f508f7de333db26f6"
+    },
+    {
+      "path": "engine/predictive/CyberWeatherEngine.js",
+      "size": 9503,
+      "lastModified": "2026-08-01T18:03:17.746Z",
+      "hash": "dab387515d5ce5e6c75ae994f19d8b2dcac7d956294a129782df6bd19414ecd3"
+    },
+    {
+      "path": "engine/predictive/ProductAcceleratorEngine.js",
+      "size": 1355,
+      "lastModified": "2026-08-01T21:30:41.338Z",
+      "hash": "7238c61377063285848d5f764975aa92df83797d446d4528033d9859f38aaf70"
+    },
+    {
+      "path": "engine/predictive/ReleaseProbability.cjs",
+      "size": 1855,
+      "lastModified": "2026-07-31T20:29:05.942Z",
+      "hash": "6a45080961421b1fdf650ee12a4418a2e2ceb2fff9355714fd406e9c599d639d"
+    },
+    {
+      "path": "engine/predictive/RoiEngine.cjs",
+      "size": 696,
+      "lastModified": "2026-08-01T10:12:15.853Z",
+      "hash": "1af490b47368b871f4b363b5d8fe36717a05a48756dcc49b17dc9b4cbedb5874"
+    },
+    {
+      "path": "engine/predictive/RoiEngine.js",
+      "size": 12522,
+      "lastModified": "2026-08-01T18:03:17.754Z",
+      "hash": "56382726b96ed433f2b529c0514e8d19fe9f83e8a5670e56d483e81e008b4c7f"
+    },
+    {
+      "path": "engine/predictive/TrendForecaster.cjs",
+      "size": 1435,
+      "lastModified": "2026-07-31T20:29:09.461Z",
+      "hash": "e3402d4c6af67668613ebf9c7ba888873c6b3c6b1af054084f9076f02cbc683a"
+    },
+    {
+      "path": "engine/procurement/AutonomousProcurementEngine.js",
+      "size": 1425,
+      "lastModified": "2026-08-01T21:30:27.410Z",
+      "hash": "320ad59d7731ac7676b3cd870fca399cabce5b9db109990b2b0c04c91eb5c31e"
+    },
+    {
+      "path": "engine/procurement/ContinuousProcurementIntelligenceEngine.js",
+      "size": 1582,
+      "lastModified": "2026-08-01T20:06:19.646Z",
+      "hash": "665a18278b74e85df2d0b35ffc34ee4c53a1144a27d8721fd0b456625a7a2229"
+    },
+    {
+      "path": "engine/procurement/DueDiligenceReporter.js",
+      "size": 1903,
+      "lastModified": "2026-08-01T17:57:14.499Z",
+      "hash": "15ceb02610619acb4dc730247b350b4b4938811cf0d416f59198a6ec07d1ba70"
+    },
+    {
+      "path": "engine/procurement/EvidencePackageGenerator.js",
+      "size": 3239,
+      "lastModified": "2026-08-01T18:03:17.769Z",
+      "hash": "63baa82adad7a8f9d6d7ff628d9a07007755c8084b06ee261066892c47be5aec"
+    },
+    {
+      "path": "engine/procurement/ProcurementAssuranceFabricEngine.js",
+      "size": 1544,
+      "lastModified": "2026-08-01T20:51:42.227Z",
+      "hash": "3fa82ca61e8bb5f66815eb7f54ba31d8cff393404181392d5f710293c4b3db46"
+    },
+    {
+      "path": "engine/procurement/ProcurementAutomationEngine.js",
+      "size": 1449,
+      "lastModified": "2026-08-01T19:58:09.327Z",
+      "hash": "6f02d7a33ffde772762ee8f932b83f1d7287eafa53fe9ac125faf8e2ba652efe"
+    },
+    {
+      "path": "engine/procurement/ProcurementIntelligenceFreshnessEngine.js",
+      "size": 1581,
+      "lastModified": "2026-08-01T20:40:15.972Z",
+      "hash": "f10a9477728ecc14d3bd349d4c1d72737de282a438c0c12d8c94dba63dfcbb41"
+    },
+    {
+      "path": "engine/procurement/ProcurementReadinessEngine.js",
+      "size": 1401,
+      "lastModified": "2026-08-01T19:44:26.763Z",
+      "hash": "0106e04e605b6e283dcc2b562de8e48301453d900a61ed7bde92587745fc79d3"
+    },
+    {
+      "path": "engine/procurement/RfpEvidenceBundler.js",
+      "size": 2707,
+      "lastModified": "2026-08-01T18:03:17.776Z",
+      "hash": "ef27162363fd0e048149e8f938991c16af9aafa2ca0d89dbbd95b9e41ccd690c"
+    },
+    {
+      "path": "engine/providers/AwsProvider.js",
+      "size": 6322,
+      "lastModified": "2026-08-01T18:03:17.785Z",
+      "hash": "60a95f90c1fa39af45528efce2ba80050c512c0ee3b3c9df5a731c61a7f860f8"
+    },
+    {
+      "path": "engine/providers/AzureProvider.js",
+      "size": 6227,
+      "lastModified": "2026-08-01T18:03:17.791Z",
+      "hash": "e9a5649bff52517a0fafb43bc173494f652ffa8aec30b209895f7c6aab96e925"
+    },
+    {
+      "path": "engine/providers/CronProvider.js",
+      "size": 3010,
+      "lastModified": "2026-08-01T18:03:17.798Z",
+      "hash": "32283059c5bb45ffa576bd8203502355737786564f84f8429b1d64ea6b25b006"
+    },
+    {
+      "path": "engine/providers/DockerProvider.js",
+      "size": 3475,
+      "lastModified": "2026-08-02T13:16:10.499Z",
+      "hash": "3137bf0b9cee322dc92f124a6c757151cc8a5e40b1ee1eb25cb2b991ec01e671"
+    },
+    {
+      "path": "engine/providers/FilesystemProvider.js",
+      "size": 3520,
+      "lastModified": "2026-08-01T18:03:17.809Z",
+      "hash": "331d763a3d82d86e5db7eb8150966f292a386900bba55f88000fe1d2313e2dae"
+    },
+    {
+      "path": "engine/providers/GcpProvider.js",
+      "size": 5586,
+      "lastModified": "2026-08-01T18:03:17.813Z",
+      "hash": "c87cb3e149f496f1d67d74ca478cdaea4f2fb82202dc31b06c88da02d048d261"
+    },
+    {
+      "path": "engine/providers/index.js",
+      "size": 1433,
+      "lastModified": "2026-08-01T18:03:17.822Z",
+      "hash": "731f254f90b3977f4805aa0d32f245e88d689c137dd1ccd778d47a3716a6a73b"
+    },
+    {
+      "path": "engine/providers/KubernetesProvider.js",
+      "size": 4182,
+      "lastModified": "2026-08-02T13:16:13.290Z",
+      "hash": "9ad3a005e695cac829830fe90ff6102a94c5427c0bdd83c1fa4f866350f1639a"
+    },
+    {
+      "path": "engine/providers/MysqlProvider.js",
+      "size": 3759,
+      "lastModified": "2026-08-02T13:15:41.846Z",
+      "hash": "7f08a15903d5a584def5378ec837463a82feff8b8406942862eb80e2a49420e0"
+    },
+    {
+      "path": "engine/providers/RedisProvider.js",
+      "size": 4069,
+      "lastModified": "2026-08-02T13:15:44.138Z",
+      "hash": "b2c5a518010c40ee5ebacfbb3dd1abdc5e8a2a94e4b067ae080030727d249996"
+    },
+    {
+      "path": "engine/quality/AutonomousEngineeringGovernanceEngine.js",
+      "size": 1885,
+      "lastModified": "2026-08-01T21:01:41.759Z",
+      "hash": "32ba2d7e73d21a92f3c0f454ccc981372a38dc33a928066567817b3214fd651e"
+    },
+    {
+      "path": "engine/quality/AutonomousQualityGovernanceEngine.js",
+      "size": 1321,
+      "lastModified": "2026-08-01T20:51:25.531Z",
+      "hash": "0b348edebcbd4ae166c30795b7f1d17fea4f4e98db1f1ee65f0d904f61d0f37a"
+    },
+    {
+      "path": "engine/quality/AutonomousQualityIntelligenceEngine.js",
+      "size": 1019,
+      "lastModified": "2026-08-01T20:40:23.470Z",
+      "hash": "8d3322d1cb5c5b124e25411f3ed540c4871dd71e2e906ba8d0b63f47a0811dbe"
+    },
+    {
+      "path": "engine/quality/ContinuousProductionQualityGovernanceEngine.js",
+      "size": 1662,
+      "lastModified": "2026-08-01T21:24:33.559Z",
+      "hash": "6d936d0e02981f1bca3daaa8c3d3f6c60f41708bd1b604824217082fdef9abac"
+    },
+    {
+      "path": "engine/quality/RuntimeResilienceChaosEngine.js",
+      "size": 1423,
+      "lastModified": "2026-08-01T21:36:35.645Z",
+      "hash": "aa67a8257628e0f96af56bbbab1e085bc30ee9d48af616fd6d423f4e6c6477ac"
+    },
+    {
+      "path": "engine/readiness/ContinuousReadinessScoreEngine.js",
+      "size": 2970,
+      "lastModified": "2026-08-01T18:00:18.109Z",
+      "hash": "cdbdbe1caaff6ac7d6e812ca9963f7d1a63a0b25caabb6f3d2da1766f52fc7e2"
+    },
+    {
+      "path": "engine/readiness/DriIndexCalculator.js",
+      "size": 3716,
+      "lastModified": "2026-08-02T13:56:08.174Z",
+      "hash": "5c0b9fc3099a8f2802125dd09f2c1d26a814f16381fc7062aeee893d81ab47bf"
+    },
+    {
+      "path": "engine/readiness/OperationalReadinessDashboard.js",
+      "size": 3414,
+      "lastModified": "2026-08-01T18:00:25.689Z",
+      "hash": "d96b6fecc82633940e010209c3fa65ae0b998f7602749d046a512d8e5a52f626"
+    },
+    {
+      "path": "engine/registry/AirRoofersProductRegistry.js",
+      "size": 5771,
+      "lastModified": "2026-08-01T18:03:17.879Z",
+      "hash": "e74456f469289a80fe8f4a1d4239d6eb9875743d0c0cb5997786b3bf44dab83f"
+    },
+    {
+      "path": "engine/registry/CapabilityRegistry.js",
+      "size": 4249,
+      "lastModified": "2026-08-01T18:03:17.886Z",
+      "hash": "aecc882bcae7a3688e497b9b998862c284bf75a88030914d921691efb425cfcb"
+    },
+    {
+      "path": "engine/registry/FederatedProductRegistryEngine.js",
+      "size": 1400,
+      "lastModified": "2026-08-01T20:26:19.467Z",
+      "hash": "dd0e1ddd2327018b9f5a9c950c5215d9ec52208c9a572283c9dccb9621ad9e1a"
+    },
+    {
+      "path": "engine/remediation/AutonomousPatchGenerator.js",
+      "size": 7206,
+      "lastModified": "2026-08-01T18:03:17.941Z",
+      "hash": "fd8f1ade69edfd88c5b8706a60afdb5708d96044ab2e9f1197f6fcb97c3bd07e"
+    },
+    {
+      "path": "engine/remediation/EvidenceRecertifier.js",
+      "size": 9700,
+      "lastModified": "2026-08-01T18:03:17.945Z",
+      "hash": "aac9c0ead474a4f17c73c3fb17fd6bc385b72c31ab6810c717928b3f1f7a78d7"
+    },
+    {
+      "path": "engine/remediation/TestUpdater.js",
+      "size": 6450,
+      "lastModified": "2026-08-01T18:03:17.949Z",
+      "hash": "596355f0b0d92938644e037148845725653c7df1834386f0c6e1c26fef0a2bda"
+    },
+    {
+      "path": "engine/research/ReproducibleResearchExporter.js",
+      "size": 4524,
+      "lastModified": "2026-08-01T18:03:17.956Z",
+      "hash": "a8ff61c1c3b58a6e59f42d5458f1ef6d21c7b479eb1682038eddc14b2bf2a46a"
+    },
+    {
+      "path": "engine/RuleRegistry.cjs",
+      "size": 1365,
+      "lastModified": "2026-07-31T19:54:30.537Z",
+      "hash": "09b963b9239205d4822e1a2f40086b15a82f41765fda2d2295dca60f2eed48be"
+    },
+    {
+      "path": "engine/runtime/CacheProvider.js",
+      "size": 979,
+      "lastModified": "2026-08-01T18:03:17.961Z",
+      "hash": "e83acc323abaa0937a049677c9c0635ce2e0df705db4cc99b1c9574d1da21312"
+    },
+    {
+      "path": "engine/runtime/CapabilityMatrix.js",
+      "size": 7286,
+      "lastModified": "2026-08-01T18:03:17.966Z",
+      "hash": "cff8dc6f18331918947b65ee403dfb69c32e7896c472544e89277ed93ca0b616"
+    },
+    {
+      "path": "engine/runtime/Detector.js",
+      "size": 6003,
+      "lastModified": "2026-08-01T18:03:17.972Z",
+      "hash": "3061609c5398e3e33fe607e7c59efd76fb5502b1fbc1f49bdb1accd2cc05cdb3"
+    },
+    {
+      "path": "engine/runtime/Diagnostics.js",
+      "size": 2431,
+      "lastModified": "2026-08-01T18:03:17.976Z",
+      "hash": "fab633eb4fa540194e295e61d76c3c21fa901885f9d4d3cf88b77cdeddc67280"
+    },
+    {
+      "path": "engine/runtime/HostAwarenessEngine.js",
+      "size": 1458,
+      "lastModified": "2026-08-01T18:03:17.981Z",
+      "hash": "38d3e7b0510945c7af078a1623e851fbd029184d4ebad4f3ee8a0132dbc82402"
+    },
+    {
+      "path": "engine/runtime/MigrationPlanner.js",
+      "size": 7025,
+      "lastModified": "2026-08-01T18:03:17.985Z",
+      "hash": "3ec72d2a76bd6c09f923820fd8bac699790148abd1de167c9a752bb273850808"
+    },
+    {
+      "path": "engine/runtime/ProfileRegistry.js",
+      "size": 4026,
+      "lastModified": "2026-08-01T18:03:17.989Z",
+      "hash": "c007b9cd1e74b0f4d064c0b3aded49c7eb7313f5371d0a47f99740a12497e7cf"
+    },
+    {
+      "path": "engine/runtime/QueueProvider.js",
+      "size": 995,
+      "lastModified": "2026-08-01T18:03:17.995Z",
+      "hash": "0ecd7fe569486cfae2f30f870119bfc7f6447f5d7d7e7523d840cd8eedb82c84"
+    },
+    {
+      "path": "engine/runtime/RuntimeValidationEngine.js",
+      "size": 1517,
+      "lastModified": "2026-08-01T22:42:02.170Z",
+      "hash": "5d03fbc3524f0bf0700f63669fd6e77caf97f9de26ed02980f8cad5734195680"
+    },
+    {
+      "path": "engine/runtime/SchedulerProvider.js",
+      "size": 897,
+      "lastModified": "2026-08-01T18:03:17.999Z",
+      "hash": "1a7d2f18f1a83815c25a2bc54c0d47e0d71373305c36b849f9458f2300ddf7f4"
+    },
+    {
+      "path": "engine/runtime/StorageProvider.js",
+      "size": 1974,
+      "lastModified": "2026-08-01T18:03:18.004Z",
+      "hash": "c4afd593f294bf4b56c37c71ac9d6fa97d529a0316bef3ffc93b31d2a4901fe4"
+    },
+    {
+      "path": "engine/saas/ProductIntelligenceEngine.js",
+      "size": 1377,
+      "lastModified": "2026-08-01T21:30:16.031Z",
+      "hash": "8e2afae159eafb476e02e9d2517209a197d4e3d7512dd0aa2dbea0d18528b05f"
+    },
+    {
+      "path": "engine/saas/RbacEngine.js",
+      "size": 8726,
+      "lastModified": "2026-08-01T18:03:18.010Z",
+      "hash": "2f7a63a210ca54798a600a419db5f1c022d62577407912d2de94e6a28eaa2043"
+    },
+    {
+      "path": "engine/saas/SaaSDisasterRecoveryEngine.js",
+      "size": 16381,
+      "lastModified": "2026-08-01T18:03:18.015Z",
+      "hash": "bcaad8d576ae615c2a959ec9c4916350ca13e7c043271173b72d5db539a4cacf"
+    },
+    {
+      "path": "engine/saas/SaaSOperationalIntelligenceEngine.js",
+      "size": 27112,
+      "lastModified": "2026-08-01T18:03:18.021Z",
+      "hash": "580234e2e65e420e4a13ecd77579d6c410d6ef49216e5520bb99663786b85e6b"
+    },
+    {
+      "path": "engine/saas/SaaSPlatform.js",
+      "size": 12025,
+      "lastModified": "2026-08-01T18:03:18.024Z",
+      "hash": "aba94e29741edf5af29c7f1b5d6901575eab24ead278e537ad21deef0014f5db"
+    },
+    {
+      "path": "engine/saas/SaaSProductionHardeningEngine.js",
+      "size": 13084,
+      "lastModified": "2026-08-01T18:03:18.027Z",
+      "hash": "97b2dea510e74e3771ac0595e2130f215edd28056bd7186886cf5c3208998d6c"
+    },
+    {
+      "path": "engine/saas/SaaSProductPlatform.js",
+      "size": 19973,
+      "lastModified": "2026-08-01T18:03:18.033Z",
+      "hash": "73138552799c49e49ce2187581bb956c2dde695b914714cbd9cafa6f7c42a95e"
+    },
+    {
+      "path": "engine/saas/SubscriptionGate.js",
+      "size": 8307,
+      "lastModified": "2026-08-01T18:03:18.038Z",
+      "hash": "28e64ba529ff501f59b90b58eafdc5919a6b70cd1b81862f08a0f442cd1e6de2"
+    },
+    {
+      "path": "engine/saas/TenantAnalyticsEngine.js",
+      "size": 29308,
+      "lastModified": "2026-08-01T18:03:18.045Z",
+      "hash": "ec001522ef2c55afa43d0143e11d67e015a14ae626932d933b43b23a4bfb3c75"
+    },
+    {
+      "path": "engine/saas/TenantManager.js",
+      "size": 10874,
+      "lastModified": "2026-08-01T18:03:18.050Z",
+      "hash": "857dd92a227b133f981f81d98b03fb34d95f6a03e6f29d3c6a246529b245e602"
+    },
+    {
+      "path": "engine/sdk/AnalyzerSDK.cjs",
+      "size": 1178,
+      "lastModified": "2026-07-31T19:51:00.034Z",
+      "hash": "67d6b4b5c39c01e5c851f4a76eb7ba4e8aba963bd05a7f3ab97a8c5fafa4464a"
+    },
+    {
+      "path": "engine/sdk/DeveloperAdoptionEngine.js",
+      "size": 1344,
+      "lastModified": "2026-08-01T19:44:24.818Z",
+      "hash": "3957d712eef48b374ec0a6a2a0bd2bad1bd938d421339e9627d8f5aa1c9dc3ce"
+    },
+    {
+      "path": "engine/sdk/LspDapBridgeEngine.cjs",
+      "size": 1505,
+      "lastModified": "2026-08-01T09:04:24.784Z",
+      "hash": "8a5216c478a8f428e410a88a81f9cec85feb99824295708d1aaebcd5482c65dc"
+    },
+    {
+      "path": "engine/sdk/OsapExtensionEngine.cjs",
+      "size": 4480,
+      "lastModified": "2026-07-31T21:14:36.920Z",
+      "hash": "f55cc450e6576747f81ed86a571e674c5d33c0a1c78c3e401a6f409f740ef2bb"
+    },
+    {
+      "path": "engine/security/ComplianceValidationChain.js",
+      "size": 2400,
+      "lastModified": "2026-08-01T18:03:18.058Z",
+      "hash": "d380a9944721801991c10438a93e9897ae0994f009efdcf7293c54a99adfeae5"
+    },
+    {
+      "path": "engine/security/ExternalSecurityAssuranceEngine.js",
+      "size": 2359,
+      "lastModified": "2026-08-01T18:03:18.064Z",
+      "hash": "bf932d6b6d49195833131de555675012154107e540a332efc6fc1b1bcf50835d"
+    },
+    {
+      "path": "engine/security/IndependentAssuranceEngine.js",
+      "size": 1519,
+      "lastModified": "2026-08-01T22:42:32.029Z",
+      "hash": "f315764ad544194edd8988f294a5f8308ced6aa560b64ecc55c4e380ff341a3c"
+    },
+    {
+      "path": "engine/security/MultiSigAttestationEngine.cjs",
+      "size": 2522,
+      "lastModified": "2026-08-01T08:56:08.894Z",
+      "hash": "6cda5389451233552db015a1afc01b63a216acb22c4325bb8b1b7b04ec5b065f"
+    },
+    {
+      "path": "engine/security/PenTestChainOfCustodyEngine.js",
+      "size": 3020,
+      "lastModified": "2026-08-01T18:03:18.068Z",
+      "hash": "cdd6aef06752f7926c4e9c3271331f437d4a35e948d54b18c30b789f74dbf48e"
+    },
+    {
+      "path": "engine/security/PenTestSimulationEngine.js",
+      "size": 3108,
+      "lastModified": "2026-08-01T18:03:18.072Z",
+      "hash": "263d10b648f1152cbfa891ff7e3bdcda798109e83fa4839aa75c4ae96cccff9d"
+    },
+    {
+      "path": "engine/security/SastDastPipelineOrchestrator.js",
+      "size": 2361,
+      "lastModified": "2026-08-01T18:03:18.076Z",
+      "hash": "ad8e855f5c24fcbc080500cee8bcf19b1b97484a9352e84103dee81b569f979b"
+    },
+    {
+      "path": "engine/security/SbomValidationEngine.js",
+      "size": 1698,
+      "lastModified": "2026-08-01T18:03:18.080Z",
+      "hash": "1da3fd993f24669447725add5f74c1f2243609899ff621e0fb684e703f8c66d1"
+    },
+    {
+      "path": "engine/security/SecurityAssuranceValidator.js",
+      "size": 2268,
+      "lastModified": "2026-08-01T18:03:18.083Z",
+      "hash": "9d04439f60daa249ac87a57c8b4f196b8774ef2f315cf94866ff61ccf6f6600a"
+    },
+    {
+      "path": "engine/security/SecurityAttestationEngine.js",
+      "size": 1372,
+      "lastModified": "2026-08-01T21:36:40.420Z",
+      "hash": "12adb5e65ba42553c9c8e55b09efc5e75e07c4c653d1d4e689311c5af6a3255c"
+    },
+    {
+      "path": "engine/security/SecurityHardeningEngine.js",
+      "size": 2695,
+      "lastModified": "2026-08-01T18:03:18.088Z",
+      "hash": "0eb4c52af0c975aba39927dc50b054d1a49827e6c9e5837dc2295c90f17f5de6"
+    },
+    {
+      "path": "engine/security/SecurityScanner.js",
+      "size": 2484,
+      "lastModified": "2026-08-01T18:03:18.091Z",
+      "hash": "5e0bc614b201b18133f7946959db191adf181af77afeb914fe12368ac6657471"
+    },
+    {
+      "path": "engine/security/SupplyChainAttestationEngine.js",
+      "size": 1570,
+      "lastModified": "2026-08-01T21:47:30.232Z",
+      "hash": "60ee462c38b42f3a85ffccca937329dcc06f4200e8a0dc17df91918a4b1835e6"
+    },
+    {
+      "path": "engine/security/ThirdPartyAssessmentEngine.js",
+      "size": 3089,
+      "lastModified": "2026-08-01T18:03:18.094Z",
+      "hash": "643d441a3541be0909a5aaec56d1ebba15a1e8413b361665aa4cd5aa3e921aa6"
+    },
+    {
+      "path": "engine/security/TimestampAuthority.cjs",
+      "size": 1556,
+      "lastModified": "2026-08-01T08:56:11.157Z",
+      "hash": "d7899eb2c950f98e6d8ba0e29543598c6ff1faf1f401d48356939284a7c374ba"
+    },
+    {
+      "path": "engine/sovereign/SovereignAirGapManager.js",
+      "size": 2733,
+      "lastModified": "2026-08-02T13:48:53.247Z",
+      "hash": "7e6cc3ccb8da0e479c43fc40878cd82ef0021f455902991053ac6eef850eb995"
+    },
+    {
+      "path": "engine/spec/AutonomousBlueprintIntelligenceEngine.js",
+      "size": 1391,
+      "lastModified": "2026-08-01T20:06:19.889Z",
+      "hash": "61d1d22c8a2ac3d6e4d6426d81456882c8add159ef197e88c9292012c0db25ae"
+    },
+    {
+      "path": "engine/spec/AutonomousPlatformEvolutionEngine.js",
+      "size": 1412,
+      "lastModified": "2026-08-01T20:26:14.662Z",
+      "hash": "6acc37078076b8ada4ddb787b5a27ec89752042d01dcd14725c086b031c84d93"
+    },
+    {
+      "path": "engine/spec/AutonomousProductEvolutionEngine.js",
+      "size": 1055,
+      "lastModified": "2026-08-01T19:58:16.358Z",
+      "hash": "6bddb0326bcb8bbf3efe8e0a10a036bcfcddd946ddfb4206074f57d54a48da48"
+    },
+    {
+      "path": "engine/spec/AutonomousProductEvolutionLoopEngine.js",
+      "size": 1549,
+      "lastModified": "2026-08-01T20:06:36.393Z",
+      "hash": "5e70f3faf00875c4a637b4a6101477f74f57ff6a778989f3901a30d2a67ef8c5"
+    },
+    {
+      "path": "engine/spec/BlueprintCompilerEngine.js",
+      "size": 1348,
+      "lastModified": "2026-08-01T21:30:03.495Z",
+      "hash": "72b09eb54677eba730421efa758b174c2ebbfe78fc24da84f1ea0690792fffcc"
+    },
+    {
+      "path": "engine/spec/BlueprintDiscoveryEngine.js",
+      "size": 6992,
+      "lastModified": "2026-08-01T18:03:18.100Z",
+      "hash": "80774d4ab7259629480cbe9f865b3408c489dfbc98263af0211c5a4e28e2dd42"
+    },
+    {
+      "path": "engine/spec/BlueprintParser.js",
+      "size": 8281,
+      "lastModified": "2026-08-01T18:03:18.105Z",
+      "hash": "abc841bc5c332f812c31ba306454b22af7a1bd1972b81d593838f2bbe2eac154"
+    },
+    {
+      "path": "engine/spec/EcosystemIntelligenceKernelEngine.js",
+      "size": 1025,
+      "lastModified": "2026-08-01T20:40:27.156Z",
+      "hash": "2da0c768a939d0b0c0b378f92f803a08c27161b59a6349dfa0083ff8ab0c3936"
+    },
+    {
+      "path": "engine/spec/EcosystemIntelligencePlatformEngine.js",
+      "size": 1238,
+      "lastModified": "2026-08-01T20:51:27.842Z",
+      "hash": "7eaba7fdd572517d1351fb5f4083bea12aff5d1961d3b6902200a7d5e24ac880"
+    },
+    {
+      "path": "engine/spec/OSAPConformanceSuite.js",
+      "size": 27028,
+      "lastModified": "2026-08-01T18:03:18.109Z",
+      "hash": "f198e943f1d5645f69a86f912ec5b681681405946b0c90ffa40eed43073f3c03"
+    },
+    {
+      "path": "engine/spec/OSAPSpecificationEngine.js",
+      "size": 20361,
+      "lastModified": "2026-08-01T18:03:18.115Z",
+      "hash": "fd07fb24aeb9fe5ec07295ba0d2b6b1c33c981faf5bb8032d83c6ed82d97673a"
+    },
+    {
+      "path": "engine/spec/RequirementDsl.js",
+      "size": 7425,
+      "lastModified": "2026-08-01T18:03:18.118Z",
+      "hash": "e8aeede0b6820a0983bf551eec8961349d254d8ecc57176300c095e355486a22"
+    },
+    {
+      "path": "engine/spec/RequirementParser.js",
+      "size": 8100,
+      "lastModified": "2026-08-01T18:03:18.121Z",
+      "hash": "e86180d06f95b884f5ebd00cde0fd636a7be698a8d95de089f96c74cd55a9ead"
+    },
+    {
+      "path": "engine/spec/StandardsRegistryEngine.js",
+      "size": 27564,
+      "lastModified": "2026-08-01T18:03:18.127Z",
+      "hash": "8d2ceba46246cc9b88a9843a8bcd5f2073f5fc0231d0057724fc6c920b65cee7"
+    },
+    {
+      "path": "engine/state/LivePlatformStateEngine.js",
+      "size": 1451,
+      "lastModified": "2026-08-01T20:51:36.131Z",
+      "hash": "ff1237927a28de8c8339831e955b31141646fa899b4e17b94108ccbfdeb0500b"
+    },
+    {
+      "path": "engine/supplychain/DependencyAttestationEngine.js",
+      "size": 3982,
+      "lastModified": "2026-08-01T18:03:18.132Z",
+      "hash": "8ed0f87692e081b8b8f6622e2082903467944d5e963c79a291cae34ca0141de6"
+    },
+    {
+      "path": "engine/supplychain/SbomExternalVerifier.js",
+      "size": 2980,
+      "lastModified": "2026-08-01T18:03:18.135Z",
+      "hash": "a00aab851b2925df7db809cd3025cfde730661f7b320a0988681968a1b7391c4"
+    },
+    {
+      "path": "engine/supplychain/SignatureVerificationChain.js",
+      "size": 3221,
+      "lastModified": "2026-08-01T18:03:18.140Z",
+      "hash": "b000cfd429821cc459b1c7dcaf6a3a475f2f9c46bf89c0b5253785b4e5f1b124"
+    },
+    {
+      "path": "engine/telemetry/AlertingRulesEngine.js",
+      "size": 2925,
+      "lastModified": "2026-08-01T18:03:18.144Z",
+      "hash": "a81c80883ad4fae208a144e53989dd4e5a923c4f60e3e7fe0d8d3fafb29d86d1"
+    },
+    {
+      "path": "engine/telemetry/DashboardSnapshotEngine.js",
+      "size": 2465,
+      "lastModified": "2026-08-01T18:03:18.148Z",
+      "hash": "9d869642b4304097402f8c170f20df599f353d1c5bdcdc39b7e5d8ef9310d8da"
+    },
+    {
+      "path": "engine/telemetry/FederatedTelemetryLakeEngine.js",
+      "size": 1404,
+      "lastModified": "2026-08-01T20:26:18.857Z",
+      "hash": "53b610ea9aa19202425b14207c46c655207ece9b61c0b81d1701d3b1b64818f5"
+    },
+    {
+      "path": "engine/telemetry/GrafanaDashboardSpecEngine.js",
+      "size": 3458,
+      "lastModified": "2026-08-01T18:03:18.152Z",
+      "hash": "c4231af275608d21a59dc63b767536bd435d3fd17c39dcd7fd6d7950fc6d97df"
+    },
+    {
+      "path": "engine/telemetry/IntentTelemetryCorrelationEngine.js",
+      "size": 17352,
+      "lastModified": "2026-08-01T18:03:18.156Z",
+      "hash": "bd1ed1e4941830a1ac76c4d03ee230fd00f71774a773983d1676a926188aefae"
+    },
+    {
+      "path": "engine/telemetry/JaegerTraceRetentionEngine.js",
+      "size": 1937,
+      "lastModified": "2026-08-01T18:03:18.159Z",
+      "hash": "9b5c99ea2b6fb809d55fe08003b37fa38190bb97667703510f8cd22280641469"
+    },
+    {
+      "path": "engine/telemetry/LiveObservabilityExporter.js",
+      "size": 2335,
+      "lastModified": "2026-08-01T18:03:18.162Z",
+      "hash": "0f180ac4cdef5dc38dbedf93010d67a4798ab0373f5af36a1d888d3ee18572ef"
+    },
+    {
+      "path": "engine/telemetry/MetricsRetentionArchive.js",
+      "size": 2423,
+      "lastModified": "2026-08-01T18:03:18.167Z",
+      "hash": "7656db698c602ec9e5cecae0462aa897728c079af8dddd478cc83b53532e3fda"
+    },
+    {
+      "path": "engine/telemetry/OpenTelemetryObservabilityEngine.js",
+      "size": 2922,
+      "lastModified": "2026-08-01T18:03:18.171Z",
+      "hash": "a87cdbd0827f3e61f383757107a1216c00a08bd7ac904ae8fa06e3a949082574"
+    },
+    {
+      "path": "engine/telemetry/OpenTelemetryPipelineEngine.js",
+      "size": 2186,
+      "lastModified": "2026-08-01T18:03:18.174Z",
+      "hash": "cd8fd0e326b4819d84b0fc680c4f5681266ac636fb5426292e7e59f5d78400e0"
+    },
+    {
+      "path": "engine/telemetry/performance_baseline.cjs",
+      "size": 4339,
+      "lastModified": "2026-07-31T20:00:22.730Z",
+      "hash": "ee99d8936b8dc7457542317439cab90b40ec8a014e17e7e4598df23ac9e4db3b"
+    },
+    {
+      "path": "engine/telemetry/ProductionTelemetryCollector.cjs",
+      "size": 1638,
+      "lastModified": "2026-08-01T08:59:11.743Z",
+      "hash": "3d41305b95dda7bf3390511bb48d4b91a828cca7232edc86a753f41652eb21da"
+    },
+    {
+      "path": "engine/telemetry/ProductionTelemetryVerificationEngine.js",
+      "size": 1692,
+      "lastModified": "2026-08-01T21:47:18.463Z",
+      "hash": "ac081fc117d014ee47f204783ab8c360e5d0bb50e06ec6d5fe47f005d3d04dd2"
+    },
+    {
+      "path": "engine/telemetry/PrometheusMetricsExporter.js",
+      "size": 2683,
+      "lastModified": "2026-08-01T18:03:18.180Z",
+      "hash": "c3b50da6ba749eac5260ac19bea91e04b221f6193e906a7dba9c52aa58600405"
+    },
+    {
+      "path": "engine/test-analyzers.cjs",
+      "size": 1011,
+      "lastModified": "2026-07-31T19:50:56.544Z",
+      "hash": "ce936feb2b9a3c7b8fdb3b9a227c905f5f8f5ebc18d7876fc77bf88737ea9e52"
+    },
+    {
+      "path": "engine/traceability/ApiMatrix.js",
+      "size": 9008,
+      "lastModified": "2026-08-01T18:03:18.185Z",
+      "hash": "adcec1216ba17f5c7bac24e339eb29918ee228ccbcca862ae46f717353830d68"
+    },
+    {
+      "path": "engine/traceability/FeatureMatrix.js",
+      "size": 9734,
+      "lastModified": "2026-08-01T18:03:18.188Z",
+      "hash": "df5aea09c707d73b8091793bb4aae2f0a625f1ae9a8294ab88e255d2331e5f50"
+    },
+    {
+      "path": "engine/traceability/RequirementGraphEngine.js",
+      "size": 4680,
+      "lastModified": "2026-08-01T18:03:18.194Z",
+      "hash": "5a59014cb859bf541ab9e817afdbe91b30e761f2dfb98e1db907951d059f0578"
+    },
+    {
+      "path": "engine/traceability/RequirementMatrix.js",
+      "size": 15187,
+      "lastModified": "2026-08-01T18:03:18.199Z",
+      "hash": "fee7f2a5c51d15eb51cbb15a27f83d94aac07b3d3d84bb14c7267c22ff344454"
+    },
+    {
+      "path": "engine/traceability/RequirementRegistry.js",
+      "size": 2811,
+      "lastModified": "2026-08-01T18:03:18.203Z",
+      "hash": "01b6a2159953a9904581c95f96f4bad3024f51d5a79e17440bc1e13b8f8ac0d0"
+    },
+    {
+      "path": "engine/traceability/RuntimeTraceabilityFabricEngine.js",
+      "size": 1385,
+      "lastModified": "2026-08-01T21:06:20.758Z",
+      "hash": "7c00def3bcc8d2e670a4831e8f40e1534c972b4136ede1aea2cd0795aaae41e8"
+    },
+    {
+      "path": "engine/traceability/TestMatrix.js",
+      "size": 9114,
+      "lastModified": "2026-08-01T18:03:18.208Z",
+      "hash": "a94deedb20a4b44675d3c5f8de056f8cff7660359da11005435c85ce9742614a"
+    },
+    {
+      "path": "engine/traceability/ZeroTrustTraceabilityFabricEngine.js",
+      "size": 1379,
+      "lastModified": "2026-08-01T21:24:04.347Z",
+      "hash": "05a5dd34b0095ccbcf406a6374fcfe65862f1332a3962cb7c60b02680de6f8ee"
+    },
+    {
+      "path": "engine/trust/AttestationSourceRegistry.cjs",
+      "size": 2747,
+      "lastModified": "2026-07-31T21:14:12.330Z",
+      "hash": "4908ab10bcbae611c1625a5e15bbd24d4590a47ee3c8bf84d142bd6568c5e644"
+    },
+    {
+      "path": "engine/trust/CATransparencyLogEngine.js",
+      "size": 11591,
+      "lastModified": "2026-08-01T18:03:18.212Z",
+      "hash": "350baae6d76ddd1538d68976bc6a3f468a53038c67adda9122596e22795df8cf"
+    },
+    {
+      "path": "engine/trust/CertificationEngine.js",
+      "size": 7969,
+      "lastModified": "2026-08-01T18:03:18.216Z",
+      "hash": "5d15db805ab06324e06dec64d6da2d0f19ed6881256375d02b7b73ddf4abaa8f"
+    },
+    {
+      "path": "engine/trust/CmmEvaluator.cjs",
+      "size": 3705,
+      "lastModified": "2026-07-31T21:13:59.873Z",
+      "hash": "b1cd97da15654d6a109441e9b40bd2541e3b6c4c75a00c663f5c0448fb868bf3"
+    },
+    {
+      "path": "engine/trust/ConfidenceEngine.js",
+      "size": 5588,
+      "lastModified": "2026-08-01T18:03:18.221Z",
+      "hash": "f69d31c89385f220a3938e86ae6e1bd863539051bfe6e1dd3569108eba535044"
+    },
+    {
+      "path": "engine/trust/DecentralizedIdentityBridge.js",
+      "size": 3917,
+      "lastModified": "2026-08-01T18:03:18.225Z",
+      "hash": "6283fb44844b57625be5a3156bcf2ab37f86170820af49a6c3f083efb585e240"
+    },
+    {
+      "path": "engine/trust/EvidenceConfidenceEngine.cjs",
+      "size": 2227,
+      "lastModified": "2026-08-01T08:59:00.208Z",
+      "hash": "592609deffaffdf539a548f98ee19f1f12ffc50d1e3348cd57fd575ab54730db"
+    },
+    {
+      "path": "engine/trust/EvidenceEngine.js",
+      "size": 8554,
+      "lastModified": "2026-08-01T18:03:18.228Z",
+      "hash": "7486c5b7266500807c3a7f0edaed603287472878ba098400855939d684bae168"
+    },
+    {
+      "path": "engine/trust/ExternalAttestationVerifier.cjs",
+      "size": 1896,
+      "lastModified": "2026-08-01T08:56:22.584Z",
+      "hash": "1ead4f0448fcdf1490b698abfb1a42f1d4cef35f26a47bd0f33a017ade915459"
+    },
+    {
+      "path": "engine/trust/FederatedTrustNetworkNode.js",
+      "size": 4017,
+      "lastModified": "2026-08-01T18:03:18.234Z",
+      "hash": "1c4d0ccda464f3406050c93df82bbedbb5ba73f79f0e2c098725c04fb7460224"
+    },
+    {
+      "path": "engine/trust/GlobalCryptographicProvenanceLedgerEngine.js",
+      "size": 1489,
+      "lastModified": "2026-08-01T21:23:52.119Z",
+      "hash": "e4e4f9ab55a8fb5a8f3d7b9c958dde62e015a218f56c80cf3dfc48d1aefec1ae"
+    },
+    {
+      "path": "engine/trust/ImmutableTrustLedgerEngine.js",
+      "size": 1356,
+      "lastModified": "2026-08-01T21:06:12.544Z",
+      "hash": "9b049fb9f350ffb6c5c0b9c80bc9db095c3a1e97b00bcadace1eed5339ad61eb"
+    },
+    {
+      "path": "engine/trust/KeyCeremonyOrchestrator.js",
+      "size": 20528,
+      "lastModified": "2026-08-01T18:03:18.238Z",
+      "hash": "7fa28010e46818992b184b783e8dd2f887884a029d98aceef4b41423cc4d8840"
+    },
+    {
+      "path": "engine/trust/LiveTrustOperationsSuite.js",
+      "size": 22123,
+      "lastModified": "2026-08-01T18:03:18.241Z",
+      "hash": "05cd3b013319e333338aca4889ad3265abd48dbcbc3bc45b81b7ef7ccf5c9660"
+    },
+    {
+      "path": "engine/trust/MetricClassifier.cjs",
+      "size": 3190,
+      "lastModified": "2026-07-31T21:13:57.300Z",
+      "hash": "6d2e44e343a9df3d62f8169f87bcd904da6408bc247e6f603f44e12bd04025f5"
+    },
+    {
+      "path": "engine/trust/ObservationTypeClassifier.cjs",
+      "size": 1426,
+      "lastModified": "2026-08-01T08:59:05.629Z",
+      "hash": "864697a32f2cb4f4b8d1644b9697c2d4b6fd9dd021dfa4c3f7efe70810cf4122"
+    },
+    {
+      "path": "engine/trust/OperationalTrustController.js",
+      "size": 17367,
+      "lastModified": "2026-08-01T18:03:18.248Z",
+      "hash": "418f6f1389b0d7ce0e7d10407d1658b87eaec238adb80acbe8e2c2f6859f58d9"
+    },
+    {
+      "path": "engine/trust/OperationalTrustIntelligenceEngine.js",
+      "size": 1409,
+      "lastModified": "2026-08-01T20:26:14.601Z",
+      "hash": "bb6f5896f45291e5f4b4d86bec881507110e4d85ace67b2b547e933c86cab9a1"
+    },
+    {
+      "path": "engine/trust/PredictionEngine.js",
+      "size": 5790,
+      "lastModified": "2026-08-01T18:03:18.252Z",
+      "hash": "75f7512f638e4841d9de6b5d6b40776c09e4dd70b172f5fe4346d62b93071b52"
+    },
+    {
+      "path": "engine/trust/ReadinessEngine.js",
+      "size": 7273,
+      "lastModified": "2026-08-01T18:03:18.256Z",
+      "hash": "42478ba86e59eaf73ced7e735fdbe8a61db9eeff0570d94ec1efd7b780f17b8c"
+    },
+    {
+      "path": "engine/trust/RecommendationEngine.js",
+      "size": 5789,
+      "lastModified": "2026-08-01T18:03:18.262Z",
+      "hash": "2f92f4e7b6840349f85002152a8a1645a4b43bcd20a502d3161bdd5dc59672ba"
+    },
+    {
+      "path": "engine/trust/TrustDecayEngine.cjs",
+      "size": 3366,
+      "lastModified": "2026-08-01T08:59:03.371Z",
+      "hash": "d643ba0cbe97137dff447f72ade43bc53d4470703ad577e78e31628a3914e760"
+    },
+    {
+      "path": "engine/trust/TrustDecompositionEngine.cjs",
+      "size": 1973,
+      "lastModified": "2026-08-01T08:56:32.515Z",
+      "hash": "594cc2ce8ec0b389e0aa09079e8390a2ec77ef234a9303a3a3dd3cd3f058c5b8"
+    },
+    {
+      "path": "engine/trust/TrustDriftDetector.cjs",
+      "size": 2762,
+      "lastModified": "2026-07-31T21:14:09.804Z",
+      "hash": "ddd9ef3359f8ff7b6988495e7152fc738dbdd44087e0cca31539a454778bc07a"
+    },
+    {
+      "path": "engine/trust/TrustExplainability.cjs",
+      "size": 1986,
+      "lastModified": "2026-07-31T21:00:13.415Z",
+      "hash": "c885c39eb3beb783433cd74b4d7c94d4b1cbbf49fd618ff5c8b671ff3f54a050"
+    },
+    {
+      "path": "engine/trust/TrustFabric2Engine.js",
+      "size": 1532,
+      "lastModified": "2026-08-01T20:06:29.642Z",
+      "hash": "7c436771243a2937dd82f47189d01c9f8eb4440fda955e3dbad5a26ba9e91a2f"
+    },
+    {
+      "path": "engine/trust/TrustFabricEngine.js",
+      "size": 1054,
+      "lastModified": "2026-08-01T19:44:35.772Z",
+      "hash": "d71d1a30789d4470fa74d4b0900309c60cd9958ee40a90f120c83bf60cb451d6"
+    },
+    {
+      "path": "engine/trust/TrustFabricGraph.js",
+      "size": 18404,
+      "lastModified": "2026-08-01T18:03:18.266Z",
+      "hash": "c84cc935218b0892549077fd134467603aba961cc2aa2c32ed78bc0dc4f50ea8"
+    },
+    {
+      "path": "engine/trust/TrustFabricLineageEngine.js",
+      "size": 1383,
+      "lastModified": "2026-08-01T19:58:07.147Z",
+      "hash": "27c6a814c8a744208d589eb8d519e1d87d9b7f8e7fd641a4fd6147d9e3987a24"
+    },
+    {
+      "path": "engine/trust/TrustGraphEngine.cjs",
+      "size": 2244,
+      "lastModified": "2026-08-01T10:29:28.655Z",
+      "hash": "55e2533fc2013f70c7c7532c69b88f285def2edd501def2f07569a87426b2ad1"
+    },
+    {
+      "path": "engine/trust/TrustIntelligenceSuite.js",
+      "size": 3662,
+      "lastModified": "2026-08-01T18:03:18.270Z",
+      "hash": "bb6eb5d7a8cb3981d3c22d7ac18581eb47e4ace2d925b00cd237d30b369d17e7"
+    },
+    {
+      "path": "engine/trust/TrustScoreCalculator.js",
+      "size": 7586,
+      "lastModified": "2026-08-01T18:03:18.276Z",
+      "hash": "3d8ae16ee70fd11ca40c195b3dc54fa2dc18563327cf6ed535fd297c09a2f8cf"
+    },
+    {
+      "path": "engine/twin/api/v1/twin.cjs",
+      "size": 2464,
+      "lastModified": "2026-07-31T20:33:20.333Z",
+      "hash": "eed3b77f78779a04229e5778a39fcb22839b231e1a3bb201a6dcff0817332c92"
+    },
+    {
+      "path": "engine/twin/DigitalTwinEngine.cjs",
+      "size": 2203,
+      "lastModified": "2026-07-31T20:33:09.200Z",
+      "hash": "3517132818a029ec427c1c4864d1f4831bc31639ed507903fab6eed5d9629081"
+    },
+    {
+      "path": "engine/twin/DigitalTwinEngine.js",
+      "size": 10009,
+      "lastModified": "2026-08-01T18:03:18.281Z",
+      "hash": "3d9a07c20599f5df1c424a2180b720bd1b21461ec3698127a8a2e7e87dd100f9"
+    },
+    {
+      "path": "engine/twin/DigitalTwinRuntimeEngine.js",
+      "size": 1308,
+      "lastModified": "2026-08-01T20:06:17.643Z",
+      "hash": "b0b8e670ec117e4199c1087bc52a27c40878a220436879be67a8b9b86953a699"
+    },
+    {
+      "path": "engine/twin/EcosystemDigitalTwinNetworkEngine.js",
+      "size": 1378,
+      "lastModified": "2026-08-01T21:23:58.127Z",
+      "hash": "5739669b9405844bdab4018d4a0c09f334c7b92f738913f8835240dc10ee6c96"
+    },
+    {
+      "path": "engine/twin/LiveDigitalTwinEngine.js",
+      "size": 1327,
+      "lastModified": "2026-08-01T21:06:17.276Z",
+      "hash": "735a7ec64eec455f053ffa82ff23b223a3f7ce702bd10191c434fed31e3aa6d0"
+    },
+    {
+      "path": "engine/twin/OutcomeGraphEngine.cjs",
+      "size": 3089,
+      "lastModified": "2026-07-31T21:11:56.801Z",
+      "hash": "0f85ac906909c2a639646c6a383ed977e0180ce1f14b8a326f4f575e0910c30b"
+    },
+    {
+      "path": "engine/twin/StateReconstruction.cjs",
+      "size": 1843,
+      "lastModified": "2026-07-31T20:33:14.988Z",
+      "hash": "e1f2d4c85d2a4a7300964c1249ff87224d74965ae6be135157e254f42e7331bc"
+    },
+    {
+      "path": "engine/twin/TimelineViewer.cjs",
+      "size": 1633,
+      "lastModified": "2026-07-31T20:33:20.201Z",
+      "hash": "8023acd03f90abb38f14f7ebde7b0a82ca06d8191e8b8bfb4014ed330598a97f"
+    },
+    {
+      "path": "engine/utcf/adapters/CiCdAdapters.js",
+      "size": 7775,
+      "lastModified": "2026-08-01T18:03:18.300Z",
+      "hash": "d0693d8eb02cf8849fd87b3275760d60949b9ab2d4b7526d62342dba62706e4e"
+    },
+    {
+      "path": "engine/utcf/adapters/CloudInfrastructureAdapters.js",
+      "size": 11994,
+      "lastModified": "2026-08-01T18:03:18.305Z",
+      "hash": "6f2ae4733f4281c3bdae0a21e2583ecd4fef9b3fbce545b2bce5be32b747a838"
+    },
+    {
+      "path": "engine/utcf/adapters/FrameworkAdapters.js",
+      "size": 15125,
+      "lastModified": "2026-08-01T18:03:18.308Z",
+      "hash": "096cb2d86a78257cdbc98939fbda27215b4647d60d9e8572edc9654e942005a8"
+    },
+    {
+      "path": "engine/utcf/adapters/LanguageAdapters.js",
+      "size": 14348,
+      "lastModified": "2026-08-01T18:03:18.313Z",
+      "hash": "00f90f474e1e36562f04e83733d2cccf80b24e61594cfc80005f55be6ca1369a"
+    },
+    {
+      "path": "engine/utcf/MultiLanguageParserEngine.js",
+      "size": 26626,
+      "lastModified": "2026-08-01T18:03:18.289Z",
+      "hash": "c41e4c3c14a811428f4e8db6476c3f3b925b14b4787548ae4d12583ce00e908d"
+    },
+    {
+      "path": "engine/utcf/UtcfEngine.js",
+      "size": 17481,
+      "lastModified": "2026-08-01T18:03:18.294Z",
+      "hash": "c480900003ad3f19c504f2d27db9ffd22d15f4135a610cb37ee0323e370b93a4"
+    },
+    {
+      "path": "engine/validation/AttestedSbomSigner.js",
+      "size": 1372,
+      "lastModified": "2026-08-01T18:16:41.955Z",
+      "hash": "ca399365a8dd4d42c151e92009b9ad117b14c3f33ee844891b0a1e5a25f6e372"
+    },
+    {
+      "path": "engine/validation/AuditorArtifactBundler.js",
+      "size": 1457,
+      "lastModified": "2026-08-01T18:16:44.588Z",
+      "hash": "d5f5de5fe4b2dba9e667b66abb56d9e95552a1c7b1489775b4db9dee7d1db377"
+    },
+    {
+      "path": "engine/validation/AutomatedSecOpsOrchestrator.js",
+      "size": 1460,
+      "lastModified": "2026-08-01T18:16:36.504Z",
+      "hash": "b982e7bdf02a77c005c87bc03076b78bf92c8aa12ed6d73317595c8a7cfb6de7"
+    },
+    {
+      "path": "engine/validation/BlueprintImplementationDriftMonitor.js",
+      "size": 1338,
+      "lastModified": "2026-08-01T18:16:40.572Z",
+      "hash": "421e892ff104d3c8d8a2c4561b5aea3156c34d6fb328f89f621ae9629523fc9e"
+    },
+    {
+      "path": "engine/validation/ContinuousRuntimeGovernanceEngine.js",
+      "size": 1308,
+      "lastModified": "2026-08-01T18:16:39.374Z",
+      "hash": "d14815501bfc53c1eb991e0f51eed2be37f802d4dc960fcdade31b9a41beab06"
+    },
+    {
+      "path": "engine/validation/ContractDriftBlocker.js",
+      "size": 1523,
+      "lastModified": "2026-08-01T18:16:45.751Z",
+      "hash": "72c17102747fd692588f01f5996af5b23a3e5fe32d4819157245b9642b5cf0ac"
+    },
+    {
+      "path": "engine/validation/CustomerSatisfactionEvidenceEngine.js",
+      "size": 1410,
+      "lastModified": "2026-08-01T18:16:44.349Z",
+      "hash": "a57f5970a6b77dcd9f3e5befa6bafc12eb49081d150d87a3fa412fb5f1322a35"
+    },
+    {
+      "path": "engine/validation/DeploymentHealthAttestor.js",
+      "size": 1600,
+      "lastModified": "2026-08-01T18:16:42.753Z",
+      "hash": "7ddd63506c6c210001bbc9b923c27b3a8a790305f324e80f76d328a5e4b866b5"
+    },
+    {
+      "path": "engine/validation/ExternalAttestationBridge.js",
+      "size": 1516,
+      "lastModified": "2026-08-01T18:16:37.791Z",
+      "hash": "f06e2b378f1d7eac7d7d51ed11fde02aca46cef0214261018e23129ad7183963"
+    },
+    {
+      "path": "engine/validation/ExternalAttestationHarness.js",
+      "size": 14592,
+      "lastModified": "2026-08-01T18:03:18.319Z",
+      "hash": "c1b14d7602df3dad2569185f52fe257d4d3be24841eb1c718565f514b85b683f"
+    },
+    {
+      "path": "engine/validation/FreezeGovernanceEngine.cjs",
+      "size": 2889,
+      "lastModified": "2026-07-31T21:11:42.910Z",
+      "hash": "2b24b67952b59dc952903379573dae2c6605e8045ff8a60292a4de56008af924"
+    },
+    {
+      "path": "engine/validation/LiveCommercialWorkflowVerifier.js",
+      "size": 1337,
+      "lastModified": "2026-08-01T18:16:35.032Z",
+      "hash": "0cee1dbc6bac6799fb0926537c2710b80e9fdfa343c050952611d105eb889436"
+    },
+    {
+      "path": "engine/validation/LiveContractInteroperabilityEngine.js",
+      "size": 1871,
+      "lastModified": "2026-08-01T18:16:38.902Z",
+      "hash": "18570e60d5cb0b2e257e10e8406b709400deeb07bd95d4ad17a892850431d963"
+    },
+    {
+      "path": "engine/validation/LiveDeploymentValidator.js",
+      "size": 1600,
+      "lastModified": "2026-08-01T18:16:36.701Z",
+      "hash": "03c2d86949f54734181108eef06bd421e20109281c8fb2818c58c637f372f802"
+    },
+    {
+      "path": "engine/validation/LiveEndpointContractRunner.js",
+      "size": 1507,
+      "lastModified": "2026-08-01T18:16:40.871Z",
+      "hash": "9ee4ac9e6c3df434ac1723669c18d2a19cae6ed84445edb82940c578f2f12a5a"
+    },
+    {
+      "path": "engine/validation/LiveRfpAttestationGenerator.js",
+      "size": 1427,
+      "lastModified": "2026-08-01T18:16:40.181Z",
+      "hash": "a96ba104c28cfa7f0672a8cc5cdf631bd449835ad3e6d44943e11ff1985d4c5b"
+    },
+    {
+      "path": "engine/validation/LiveSlaOutcomeTracker.js",
+      "size": 1346,
+      "lastModified": "2026-08-01T18:16:39.756Z",
+      "hash": "d9ec51fb29902fcdddb42488a4ba07b556bc2d1dda7d0ca04927fd5baf13bd8c"
+    },
+    {
+      "path": "engine/validation/LiveVulnerabilityScannerBridge.js",
+      "size": 1431,
+      "lastModified": "2026-08-01T18:16:37.478Z",
+      "hash": "940483a2c6417a16d3561290bbc57aff6ab406f9cffb2bc5660da709141ace2a"
+    },
+    {
+      "path": "engine/validation/ProductionBillingTransactionRecorder.js",
+      "size": 1361,
+      "lastModified": "2026-08-01T18:16:36.377Z",
+      "hash": "cfd8c65a271c2e315347a429af33b9b38aaada154a8f5b8b40059bf85b96a8b5"
+    },
+    {
+      "path": "engine/validation/ProductionDashboardEvidenceBridge.js",
+      "size": 1646,
+      "lastModified": "2026-08-01T18:16:43.876Z",
+      "hash": "4a4eee82b60be429191bcd95079983905b2a238cf63cf743ec70dd46ac21db6c"
+    },
+    {
+      "path": "engine/validation/ProductionProcurementPackageEngine.js",
+      "size": 1690,
+      "lastModified": "2026-08-01T18:16:38.868Z",
+      "hash": "ffbe31ef1f27e0829f6f0a46135aebf7b8f4d36d1d5fdd1527eb254ad783d8d5"
+    },
+    {
+      "path": "engine/validation/ProductionTelemetryIngestionEngine.js",
+      "size": 1632,
+      "lastModified": "2026-08-01T18:16:37.942Z",
+      "hash": "1950bb272e04f8d469090dfb79e2214efa13633f6a786c247459f3319009c51b"
+    },
+    {
+      "path": "engine/validation/PrometheusLiveMetricsBridge.js",
+      "size": 1607,
+      "lastModified": "2026-08-01T18:16:40.345Z",
+      "hash": "cb103002181ab6a76c7d2fd9df6e2459c1056df244a208fd3f13d149ae972f15"
+    },
+    {
+      "path": "engine/validation/prr2a_independent_validator.cjs",
+      "size": 3815,
+      "lastModified": "2026-07-31T20:00:15.080Z",
+      "hash": "200779c8631457acc57192004dfb8eb0546cc6f49f9a6beb96adf4c4b14e7622"
+    },
+    {
+      "path": "engine/validation/RealTenantTelemetryVerifier.js",
+      "size": 1386,
+      "lastModified": "2026-08-01T18:16:38.090Z",
+      "hash": "6fb8e90e2b16cf1d4ec39ee69d704ecfa640e135befe0ec23e3ffcdd42416f65"
+    },
+    {
+      "path": "engine/validation/ReproducibleAuditEngine.js",
+      "size": 16499,
+      "lastModified": "2026-08-01T18:03:18.324Z",
+      "hash": "e8545a8d031adf4c1107fb5a3d9388a3d28fc14c7bc4e1df2e3620adcd69ecf7"
+    },
+    {
+      "path": "engine/validation/Rfc3161TimestampingEngine.js",
+      "size": 1511,
+      "lastModified": "2026-08-01T18:16:39.176Z",
+      "hash": "b0c4ef0a336108cf0b661f06b237338e1b6360d56ae9770d3b02192bde5017d4"
+    },
+    {
+      "path": "engine/validation/RuntimeEnvironmentVerifier.js",
+      "size": 1335,
+      "lastModified": "2026-08-01T18:16:37.933Z",
+      "hash": "50e9e128f3937449ed5b73482b1a654bc719b0e75b80d21e1f932fefa63c3fcc"
+    },
+    {
+      "path": "engine/validation/SubscriptionLifecycleAttestor.js",
+      "size": 1270,
+      "lastModified": "2026-08-01T18:16:40.144Z",
+      "hash": "d156ba6c4cd2f14ee138a5b60a87a0f3b0df02955f10612e8e635bc36f4a3183"
+    },
+    {
+      "path": "engine/validation/ZeroKnowledgeEvidenceProofEngine.js",
+      "size": 1501,
+      "lastModified": "2026-08-01T18:16:43.058Z",
+      "hash": "bf0f99c0a885a170065027da86232e7258b9848de2b05d7a5ae4de23f843bb2d"
+    },
+    {
+      "path": "evidence/HashManifestGenerator.js",
+      "size": 3972,
+      "lastModified": "2026-08-01T11:55:45.483Z",
+      "hash": "1cb11d1b0898e26c468259b195cd6886a7d6b47d5676fd2b552e2ef227430ffe"
+    },
+    {
+      "path": "evidence/ManifestGenerator.js",
+      "size": 5874,
+      "lastModified": "2026-08-01T11:59:06.691Z",
+      "hash": "c69f58948dab6d92eb857b1f0ca37f8dd3a5153d1c246c0db317ce80528378d4"
+    },
+    {
+      "path": "evidence/ManifestValidator.js",
+      "size": 3754,
+      "lastModified": "2026-08-01T11:59:09.217Z",
+      "hash": "7ebf0c5b608b8c2730673f97b25ad5cd985cb6137ed9c68cf0e942cbbd927192"
+    },
+    {
+      "path": "evidence/public_benchmark_corpus/OpenBenchmarkCorpusVault.js",
+      "size": 4459,
+      "lastModified": "2026-08-01T13:22:48.168Z",
+      "hash": "b89abd7165c9c93a55cc807288d8212169f84e9726d1790d1da6323785ea2b56"
+    },
+    {
+      "path": "evidence/ReproducibilityVerifier.js",
+      "size": 3335,
+      "lastModified": "2026-08-01T11:55:51.341Z",
+      "hash": "db70811b42a86b4da5a3ea66e84a3fbe92b3067939a288afd9c697ec53f134ee"
+    },
+    {
+      "path": "evidence/RequirementManifest.js",
+      "size": 33557,
+      "lastModified": "2026-08-01T11:59:02.577Z",
+      "hash": "3a72cc8a3f8d9196006ccd22945b3bd6860b9f323e72db9f53fba01a1801e02a"
+    },
+    {
+      "path": "evidence/run_manifest.js",
+      "size": 6557,
+      "lastModified": "2026-08-01T11:59:12.835Z",
+      "hash": "9d5399b9e17e397c7ded79adbfd134658235a9cf1033d80f36f297be7f524fed"
+    },
+    {
+      "path": "evidence/run_reproducibility.js",
+      "size": 6724,
+      "lastModified": "2026-08-01T11:55:59.831Z",
+      "hash": "edb9389cf8bede052b1f4f34c16835ff054fcd6cb014508624c4b6032c544121"
+    },
+    {
+      "path": "evidence/SignedEvidenceBundle.js",
+      "size": 4087,
+      "lastModified": "2026-08-01T11:55:56.126Z",
+      "hash": "7937fc0f970a1d6a6cf09f774961d57eb74d231353bf839a9a5599636ef12b80"
+    },
+    {
+      "path": "fix-headers.js",
+      "size": 2574,
+      "lastModified": "2026-08-02T13:53:25.055Z",
+      "hash": "876712c305a91c823cfd43f7ff87aa3e7ed13bed361791b73972ce46cb636321"
+    },
+    {
+      "path": "packaging/ide/IdeMarketplacePackageBuilder.js",
+      "size": 17301,
+      "lastModified": "2026-08-01T13:07:26.492Z",
+      "hash": "04622195400e6fd78f9ccc9ced98189fd0a241d9edbf78e537455ca9186375fa"
+    },
+    {
+      "path": "quality/AwardPackageGenerator.js",
+      "size": 13897,
+      "lastModified": "2026-08-01T12:15:29.100Z",
+      "hash": "e53207d7fc149f7f9aaa799f67153c581c12cc3c0808fa045ba977094623d204"
+    },
+    {
+      "path": "quality/CleanBuildValidator.js",
+      "size": 5977,
+      "lastModified": "2026-08-01T12:15:51.463Z",
+      "hash": "2e91307c9a7a6b0536378702dc05f465cd46421414d4504b7e9b870a8ba935cc"
+    },
+    {
+      "path": "quality/CommercialReadinessVerifier.js",
+      "size": 4079,
+      "lastModified": "2026-08-01T12:15:10.723Z",
+      "hash": "2beb88019103b1eb4836033520419137f1f8c177b9f827a935bd64d3bcb69535"
+    },
+    {
+      "path": "quality/CrossPlatformMatrix.js",
+      "size": 17950,
+      "lastModified": "2026-08-01T12:14:40.346Z",
+      "hash": "d4ba3ac1b738cd83c5b9209cb58b962906a8b2d5faa135e410ecedb8c35211a5"
+    },
+    {
+      "path": "quality/DependencyAuditor.js",
+      "size": 3454,
+      "lastModified": "2026-08-01T12:16:23.502Z",
+      "hash": "78ae846b3183f0e85014ff94941310af7852cb23ddee133f9aac861f6b2f4d27"
+    },
+    {
+      "path": "quality/DeterministicReleaseAuditor.js",
+      "size": 10921,
+      "lastModified": "2026-08-01T12:15:56.337Z",
+      "hash": "3d2c7d3f9bc89d980da145dedbc638b24c5f7b65d86d9b77d8de7269a5020978"
+    },
+    {
+      "path": "quality/DoraCompliancePackager.js",
+      "size": 9049,
+      "lastModified": "2026-08-01T12:15:14.486Z",
+      "hash": "d902e08ef59a9cc8eef57b58b427a08fa11e514f29ee0cfd5e97d494f49cddb5"
+    },
+    {
+      "path": "quality/EnterprisePilotDeploymentSimulator.js",
+      "size": 16410,
+      "lastModified": "2026-08-01T13:06:59.639Z",
+      "hash": "9a174e7f7a72b0afb5aae7b17e1193da6547f145b851fb5c3be7593702dddc1a"
+    },
+    {
+      "path": "quality/EnterpriseScaleBenchmarker.js",
+      "size": 10534,
+      "lastModified": "2026-08-01T12:56:54.340Z",
+      "hash": "dbf8b7558ca99ec582e49d3c01dd1a95ecf55d69f1ce42db6467d12d77946360"
+    },
+    {
+      "path": "quality/FailureRecoveryEngine.js",
+      "size": 3341,
+      "lastModified": "2026-08-01T12:14:44.000Z",
+      "hash": "3a0f114e6461f704f2fdc793035f0aa92257d3f762d2797a993b7a0adbc2b400"
+    },
+    {
+      "path": "quality/FuzzingEngine.js",
+      "size": 3402,
+      "lastModified": "2026-08-01T12:16:37.411Z",
+      "hash": "6adc14c4db33801d00e7cf0ee651ba46697f4b078e2ca249038da6b49261e775"
+    },
+    {
+      "path": "quality/IndependentLabPerformanceCertifier.js",
+      "size": 14519,
+      "lastModified": "2026-08-01T13:07:08.938Z",
+      "hash": "0f34bc8bb9a6f8d23af5e02afc9c5fa15d7d86ada6d78bfc2c064411892516aa"
+    },
+    {
+      "path": "quality/IsoEvidencePackager.js",
+      "size": 11291,
+      "lastModified": "2026-08-01T12:15:02.178Z",
+      "hash": "da827526489b32ccae5ff4e32815ceb7ae93ce26199c671ce7de55ae890ea10a"
+    },
+    {
+      "path": "quality/LifecycleReadinessEngine.js",
+      "size": 2437,
+      "lastModified": "2026-08-01T12:15:12.916Z",
+      "hash": "23af7a4f5e9b83dd20bcf3c75be24cbf3ec55bb4658609fbd35a94f2a089f4cb"
+    },
+    {
+      "path": "quality/LiveIntegrationMonitor.js",
+      "size": 5983,
+      "lastModified": "2026-08-01T12:15:07.724Z",
+      "hash": "1dcfbb281e044c3fe1cdbd7b8a78c60eaee19dfadb79702017fd10e8c4116179"
+    },
+    {
+      "path": "quality/OWASPPenetrationSimulator.js",
+      "size": 6508,
+      "lastModified": "2026-08-01T12:16:44.150Z",
+      "hash": "6a58dcc04d938ac7634f96c1557308da582abef6dd28ffedfe2c4eb6fbddfeae"
+    },
+    {
+      "path": "quality/PerformanceBenchmark.js",
+      "size": 7339,
+      "lastModified": "2026-08-01T12:21:11.249Z",
+      "hash": "4911647dcad33ba42a561f5f98712050df966652879990296c18b4eb772a3e37"
+    },
+    {
+      "path": "quality/ProcurementQuestionnaire.js",
+      "size": 19575,
+      "lastModified": "2026-08-01T12:15:23.416Z",
+      "hash": "f76a87392756479095087d53f43824ee4c81eaef8a31c1de313b4e893e1d74ee"
+    },
+    {
+      "path": "quality/PublicBenchmarkValidationSuite.js",
+      "size": 13540,
+      "lastModified": "2026-08-01T13:06:59.503Z",
+      "hash": "b34fecc4e6194e1a1588d6be0a744924c198132ed746450243e7fc4368b3e29f"
+    },
+    {
+      "path": "quality/run_award_package.js",
+      "size": 5644,
+      "lastModified": "2026-08-01T12:15:34.253Z",
+      "hash": "3ea3d8593c491d9d748a84908a61048c09f3ba72c4e97a3f6a70f5264531695e"
+    },
+    {
+      "path": "quality/run_clean_build.js",
+      "size": 5889,
+      "lastModified": "2026-08-01T12:15:59.551Z",
+      "hash": "117f54ebba7b5ba5ebe9448126244593f44d4d832ece3767baccc281b4f72054"
+    },
+    {
+      "path": "quality/run_cross_platform.js",
+      "size": 9333,
+      "lastModified": "2026-08-01T12:14:56.194Z",
+      "hash": "e7b63f39b831ca1b807a6d49976edfc1725ecbd929fc5a002596d4dc1ee6fac8"
+    },
+    {
+      "path": "quality/run_live_integration.js",
+      "size": 9475,
+      "lastModified": "2026-08-01T12:15:17.475Z",
+      "hash": "bdf8e7b976e542300247e61f4c626ec052ae1783e77d599167366bd14dbc32c1"
+    },
+    {
+      "path": "quality/run_performance.js",
+      "size": 12035,
+      "lastModified": "2026-08-01T12:20:06.804Z",
+      "hash": "b3f21d4df790f6560141659bcd7b9dcfb08da8c16ae1e10f648624e47395e4c3"
+    },
+    {
+      "path": "quality/run_security_qualification.js",
+      "size": 11492,
+      "lastModified": "2026-08-01T12:16:50.633Z",
+      "hash": "45e4ee4f62ff9cead3bb853e5a5c43f80456ece636d9b18b4a79d4d939702fd4"
+    },
+    {
+      "path": "quality/ScalabilityEngine.js",
+      "size": 4100,
+      "lastModified": "2026-08-01T12:20:42.406Z",
+      "hash": "e5d84f6c8f8143a415abeae5031e25ce325a04b0bba499364a27ab86f75fe070"
+    },
+    {
+      "path": "quality/SocEvidencePackager.js",
+      "size": 10550,
+      "lastModified": "2026-08-01T12:15:09.065Z",
+      "hash": "6730b23447673cfd77dd659e300779626bb1d5c336bbe1966d68e7a3adef5d7a"
+    },
+    {
+      "path": "quality/SupplyChainVerifier.js",
+      "size": 6938,
+      "lastModified": "2026-08-01T12:16:30.006Z",
+      "hash": "9dd1e4787e9a7692bcb334fa4ec383219bba0818dc5070c2729f057cd684c68e"
+    },
+    {
+      "path": "quality/ThirdPartyValidationPackage.js",
+      "size": 15915,
+      "lastModified": "2026-08-01T12:14:51.480Z",
+      "hash": "05bf42d889a922a96ac9b19dccd89551600ae78d4270ed6657cb772b7b1c4efe"
+    },
+    {
+      "path": "sdk/index.js",
+      "size": 1423,
+      "lastModified": "2026-08-02T13:49:06.515Z",
+      "hash": "9c3c965ddf161de2f4cdf30da1f66a01de58be1f32eed6289bee71b8c0876962"
+    },
+    {
+      "path": "sdk/jetbrains/plugin.js",
+      "size": 6071,
+      "lastModified": "2026-08-01T14:11:44.729Z",
+      "hash": "706dcf47d7b62522cb32a5243e8eb18d3f13f174836b38f09609b952bfbff98a"
+    },
+    {
+      "path": "sdk/public/PublicSdkPackageBuilder.js",
+      "size": 27668,
+      "lastModified": "2026-08-01T13:07:32.757Z",
+      "hash": "19ff1ecb9c852d79cbfdbbff1e1441f26272a3c0fa41546e35a4326f8860d98f"
+    },
+    {
+      "path": "sdk/verifier.cjs",
+      "size": 9165,
+      "lastModified": "2026-08-01T11:33:29.416Z",
+      "hash": "bb39ae5b39fc5a6413ef80d78b8c4ea0cf0ad2eb22218f796b69e1c30503764b"
+    },
+    {
+      "path": "sdk/vscode/extension.js",
+      "size": 5029,
+      "lastModified": "2026-08-01T14:11:40.603Z",
+      "hash": "dab6ad2b53fb4f5e402d131a959aeaa2c572542873d15881cc44cd71620e831f"
+    }
+  ],
+  "releaseHash": "05074fbac8a67614e0e637245bf309ffcce4a58111618e8498207d8171e780cd",
+  "platform": {
+    "minNodeVersion": "18.0.0",
+    "supportedEnvironments": [
+      "SharedHost",
+      "VPS",
+      "Docker",
+      "Kubernetes",
+      "Cloud_AWS",
+      "Cloud_Azure",
+      "Cloud_GCP",
+      "AirGapped"
+    ]
+  },
+  "editions": [
+    "Community",
+    "Pro",
+    "Business",
+    "Enterprise",
+    "Sovereign"
+  ],
+  "changeSummary": "EAORCS 2026.1.0-lts LTS — Full platform release with Trust Fabric, OSAP, UTCF, AI Council, Marketplace, SaaS, and Release Engineering."
+}

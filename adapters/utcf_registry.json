@@ -1,0 +1,26 @@
+{
+  "utcfVersion": "1.0.0",
+  "totalLayers": 20,
+  "layers": [
+    { "layer": 1, "name": "Programming Languages", "adapters": ["C/C++", "Rust", "Java", "Python", "Go", "TypeScript", "C#", "Swift", "PHP"] },
+    { "layer": 2, "name": "Backend & Web Frameworks", "adapters": ["Spring Boot", "ASP.NET", "Django", "Laravel", "Express", "Fastify", "Symfony"] },
+    { "layer": 3, "name": "Operating Systems", "adapters": ["Windows", "RHEL", "Ubuntu", "macOS", "Android", "iOS", "QNX"] },
+    { "layer": 4, "name": "Cloud Platforms", "adapters": ["AWS", "Azure", "GCP", "OCI", "Alibaba", "Private Cloud"] },
+    { "layer": 5, "name": "Containers & Orchestration", "adapters": ["Docker", "Podman", "Kubernetes", "OpenShift", "Nomad"] },
+    { "layer": 6, "name": "CI/CD Orchestration", "adapters": ["GitHub Actions", "GitLab CI", "Azure DevOps Pipelines", "Jenkins", "Harness"] },
+    { "layer": 7, "name": "Version Control Systems", "adapters": ["Git", "Apache SVN", "Perforce Helix", "Mercurial"] },
+    { "layer": 8, "name": "Database Engines", "adapters": ["PostgreSQL", "Oracle", "SQL Server", "MySQL", "MongoDB", "Redis", "Elasticsearch"] },
+    { "layer": 9, "name": "Messaging & Streaming", "adapters": ["Apache Kafka", "RabbitMQ", "Amazon SQS", "NATS", "Pulsar"] },
+    { "layer": 10, "name": "API Protocols & Standards", "adapters": ["REST/OpenAPI", "SOAP/WSDL", "GraphQL", "gRPC/Protobuf", "WebSockets", "AsyncAPI"] },
+    { "layer": 11, "name": "Identity & Access Management", "adapters": ["OAuth 2.0", "OIDC", "SAML 2.0", "LDAP", "Entra ID", "Keycloak"] },
+    { "layer": 12, "name": "Infrastructure-as-Code", "adapters": ["Terraform", "OpenTofu", "CloudFormation", "Bicep", "Ansible", "Helm"] },
+    { "layer": 13, "name": "Observability Platforms", "adapters": ["Prometheus", "Grafana", "OpenTelemetry", "Datadog", "Splunk", "Sentry"] },
+    { "layer": 14, "name": "Security Scanners & SAST/DAST", "adapters": ["SonarQube", "Snyk", "Fortify", "Trivy", "Semgrep", "Checkmarx"] },
+    { "layer": 15, "name": "Package Managers", "adapters": ["npm", "pnpm", "Composer", "Maven", "NuGet", "Cargo", "Pip", "Go Modules"] },
+    { "layer": 16, "name": "Architecture Patterns", "adapters": ["Monolith", "Microservices", "Modular Monolith", "Event-Driven", "Serverless", "Hexagonal"] },
+    { "layer": 17, "name": "Industry Verticals", "adapters": ["Government", "Defense", "Healthcare", "Finance & Banking", "Insurance", "Telecommunications"] },
+    { "layer": 18, "name": "Compliance Frameworks", "adapters": ["ISO 27001", "SOC 2 Type II", "PCI DSS v4.0", "NIS2", "DORA", "EU AI Act", "NIST SSDF"] },
+    { "layer": 19, "name": "AI Models & Frameworks", "adapters": ["OpenAI", "Anthropic Claude", "Google Gemini", "Ollama", "LangChain", "MCP"] },
+    { "layer": 20, "name": "Deployment Targets", "adapters": ["Desktop", "Mobile", "Embedded", "Cloud Node", "Edge", "Air-Gapped Network"] }
+  ]
+}

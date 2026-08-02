@@ -1,0 +1,44 @@
+{
+  "multi_sig_status": "PASSED",
+  "all_required_present": true,
+  "total_signatures": 5,
+  "signers_evaluation": [
+    {
+      "signer": "Developer",
+      "type": "REQUIRED",
+      "status": "PASSED",
+      "signature": "sig_dev_68676bcce0876867"
+    },
+    {
+      "signer": "Build System",
+      "type": "REQUIRED",
+      "status": "PASSED",
+      "signature": "sig_build_e8dee528c36629d7"
+    },
+    {
+      "signer": "CI",
+      "type": "REQUIRED",
+      "status": "PASSED",
+      "signature": "sig_ci_9bfce15581debf17"
+    },
+    {
+      "signer": "Release Manager",
+      "type": "REQUIRED",
+      "status": "PASSED",
+      "signature": "sig_rel_8ccd46ee318bd6d2"
+    },
+    {
+      "signer": "Independent Auditor",
+      "type": "OPTIONAL",
+      "status": "PASSED",
+      "signature": "sig_auditor_b1243e337523e76e"
+    },
+    {
+      "signer": "Customer Verification",
+      "type": "OPTIONAL",
+      "status": "NOT_PRESENT",
+      "signature": null
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:28.981Z"
+}

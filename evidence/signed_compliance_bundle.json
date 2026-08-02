@@ -1,0 +1,14 @@
+{
+  "bundleId": "BUNDLE-9B93C947",
+  "releaseVersion": "2026.1.0-LTS",
+  "signerAuthority": "Ujomor Systems Engineering & Governance Authority",
+  "complianceFrameworks": [
+    "ISO_27001",
+    "SOC_2",
+    "OWASP_ASVS",
+    "NIST_SP_800_53"
+  ],
+  "bundleSignature": "b816a360e7406c661a6c15f3a43fb94b506e593ed4522f584f0a5c54db736c2f",
+  "isBundleVerified": true,
+  "packagedAt": "2026-08-02T16:24:21.660Z"
+}

@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 11,
+  "checkpoint_name": "Dependency & Supply Chain Integrity",
+  "domain": "SUPPLY_CHAIN",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "supply_chain_integrity.json",
+      "sha256": "7110725f9ee673384fef65d34b1052b75bc54fc9895bf538110b356551f4300b",
+      "bytes": 404
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.814Z"
+}

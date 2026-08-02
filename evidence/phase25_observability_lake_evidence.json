@@ -1,0 +1,16 @@
+{
+  "module": "Live Observability Lake",
+  "phase": "25",
+  "stream": "S3",
+  "timestamp": "2026-08-01T21:03:26+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "engineType": "QUERYABLE_OBSERVABILITY_LAKE_ENGINE",
+    "otlpCollectorEndpoint": "otlp-lake-v2.airroofers.eu:4317",
+    "totalSpansIngestedCount": 32892000,
+    "lakeQueryLatencyMs": 14.2,
+    "archiveHash": "sha256:d8a55c2f0fefb9c8b0e737c631a0e8d084725b8201a08332152862d226a45",
+    "retentionWindowDays": 365,
+    "timeSeriesMetricsCount": 520
+  }
+}

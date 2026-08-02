@@ -1,0 +1,26 @@
+{
+  "module": "API Governance",
+  "phase": 22,
+  "stream": "R2",
+  "timestamp": "2026-08-01T20:31:56+02:00",
+  "status": "VERIFIED",
+  "activeEndpointsMonitoredCount": 36,
+  "contractConformanceScorePercent": 100,
+  "unresolvedDriftEventsCount": 0,
+  "verificationHash": "sha256:4a7e937fae0147e098ffbeec8c2323f465d3f443b79f64cb2db3f6797cc50f4a",
+  "preventerData": {
+    "preventerType": "LIVE_CONTRACT_DRIFT_PREVENTER",
+    "monitoredSchemasCount": 12,
+    "blockedBreakingChangesCount": 0,
+    "gateEnforcementPolicy": "ZERO_BREAKING_CHANGES_STRICT",
+    "status": "ENFORCED"
+  },
+  "ledgerData": {
+    "ledgerType": "API_ENDPOINT_COMPLIANCE_LEDGER",
+    "complianceHistoryDays": 180,
+    "p99LatencyMs": 84.2,
+    "http200RatePercent": 99.999,
+    "ledgerHash": "sha256:b1d8f58c743818e69e0ee2541a8770119e83ec56cb33c87f9dcc89ffc7d5ea8e",
+    "status": "ARCHIVED"
+  }
+}

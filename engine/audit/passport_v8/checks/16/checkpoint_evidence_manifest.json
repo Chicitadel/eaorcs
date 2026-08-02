@@ -1,0 +1,31 @@
+{
+  "checkpoint_id": 16,
+  "checkpoint_name": "Universal IDE Integration Framework Pillar",
+  "domain": "IDE_INTEGRATION",
+  "status": "PASSED",
+  "evidence_level": "Level C",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "ide_integration_certification.json",
+      "sha256": "1a42566402b2e7a7f519ff792f3dd726aad0c86d90af6585a004c28eae03edfd",
+      "bytes": 11331
+    },
+    {
+      "name": "ide_adapter_capabilities.json",
+      "sha256": "6de06305367de9ec688a1c548dfbb1428fc4b3acdb42559fdb2d3d5b1421d350",
+      "bytes": 819
+    },
+    {
+      "name": "lsp_dap_bridge_telemetry.json",
+      "sha256": "55bc04637d553ca2034b72cb0872eb9359aa29b84f24531734c334469ac42682",
+      "bytes": 602
+    },
+    {
+      "name": "utcf_domain10_matrix.json",
+      "sha256": "c1819b2761d7c04d8002de8950f2cbbf5d2972ddbecd874f91080faaf6cb6fcc",
+      "bytes": 971
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.827Z"
+}

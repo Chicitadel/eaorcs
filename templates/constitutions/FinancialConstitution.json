@@ -1,0 +1,60 @@
+{
+  "sector": "Financial",
+  "version": "1.1.0",
+  "title": "Financial Services & Banking Governance Rulepack",
+  "standards": [
+    "PCI-DSS 4.0",
+    "SOC 2 Type II",
+    "DORA (Digital Operational Resilience Act)",
+    "NIS2 Directive"
+  ],
+  "mandatorySecurityControls": [
+    "Cardholder & Payment Data Tokenization",
+    "DORA Resilience & Failover Testing (< 15m RTO)",
+    "Real-Time Fraud Telemetry & Audit Trail Isolation",
+    "Dual-Control Approval (Four-Eyes Principle) for Ledger Mutations"
+  ],
+  "governancePolicies": {
+    "cdeScopeIsolation": true,
+    "rtoLimitMinutes": 15,
+    "rpoLimitSeconds": 60,
+    "soc2EvidenceAutoCollection": true
+  },
+  "rules": [
+    {
+      "id": "FIN-SEC-01",
+      "title": "Cardholder Data Environment (CDE) Tokenization & Encryption",
+      "severity": "CRITICAL",
+      "description": "Primary account numbers (PAN) and sensitive authentication data must be tokenized and never stored in plaintext.",
+      "checkType": "STATIC_PATTERN"
+    },
+    {
+      "id": "FIN-COMP-01",
+      "title": "DORA Digital Operational Resilience & Recovery RTO/RPO Enforcement",
+      "severity": "CRITICAL",
+      "description": "Financial core transaction systems must meet operational resilience thresholds with RTO < 15 mins and RPO < 60s.",
+      "checkType": "BEHAVIORAL"
+    },
+    {
+      "id": "FIN-AUD-01",
+      "title": "Real-Time Fraud Detection Telemetry & Tamper-Evident Audit Logs",
+      "severity": "HIGH",
+      "description": "Monetary transfers and key updates must produce cryptographically chained audit events for instant fraud inspection.",
+      "checkType": "BEHAVIORAL"
+    },
+    {
+      "id": "FIN-GOV-01",
+      "title": "Four-Eyes Dual Control for High-Value Financial Operations",
+      "severity": "HIGH",
+      "description": "Transactions exceeding financial threshold limits require approval from at least two authorized system roles.",
+      "checkType": "BEHAVIORAL"
+    },
+    {
+      "id": "FIN-RISK-01",
+      "title": "Automated SOC 2 Audit Evidence & Continuous Vulnerability Scans",
+      "severity": "HIGH",
+      "description": "Platform components must generate automated SOC 2 audit evidence logs and pass automated vulnerability checks.",
+      "checkType": "STATIC_PATTERN"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "evidence_id": "ev_01",
+  "confidence_pct": 99.93,
+  "empirical_signals": {
+    "execution_log": true,
+    "timing_report": true,
+    "heap_metrics": true,
+    "hash_present": true,
+    "signature_present": true
+  },
+  "timestamp": "2026-08-01T09:01:29.006Z"
+}

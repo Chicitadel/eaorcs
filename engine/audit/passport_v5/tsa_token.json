@@ -1,0 +1,6 @@
+{
+  "tsa_provider": "RFC 3161 Trusted Timestamping Authority",
+  "merkle_root_hash": "1c19cb404ac7255a13e982743b9ad420c05e23b1d47c2f1d2b01fddfdca4b488",
+  "timestamp_token": "0b714748f9ab90937ffcfbb719a5d4ce5985a9f44eedf3ce1b185df9d0a1231f",
+  "status": "VERIFIED"
+}

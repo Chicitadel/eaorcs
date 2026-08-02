@@ -1,0 +1,45 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:95501826-a26f-42c8-90c2-92dd3e5147ce",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-08-02T16:24:21.504Z",
+    "component": {
+      "type": "application",
+      "name": "@eaorcs/core",
+      "version": "2026.2.0-LTS",
+      "description": "EAORCS - Enterprise Autonomous Operation & Regulatory Compliance System (The Software Trust Platform)"
+    },
+    "manufacture": {
+      "name": "Ujomor Systems Engineering & Governance Authority",
+      "url": "https://airroofers.eu"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "utcf-kernel",
+      "version": "3.0.0",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b2158e631698495afaf20f8b80b6071a8af5b6c01a1ca1e039047a26595ae40b"
+        }
+      ]
+    },
+    {
+      "type": "framework",
+      "name": "airroofers-adapters",
+      "version": "2026.1.0",
+      "scope": "required",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "37430e003f4ea28a9a00df13e0f5fbaf1682b344ad93f88a8fbb6455720f4b94"
+        }
+      ]
+    }
+  ]
+}

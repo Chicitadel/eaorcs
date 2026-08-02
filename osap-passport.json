@@ -1,0 +1,45 @@
+{
+  "osap_version": "2.0.0",
+  "schema_version": "2.0.0",
+  "passport_id": "OSAP-PASS-200-1785579190128-98A4FD6B",
+  "issued_at": "2026-08-01T10:13:10.128Z",
+  "expires_at": "2026-10-30T10:13:10.128Z",
+  "issuer": {
+    "id": "urn:eaorcs:authority:ujomor-systems",
+    "organization": "Ujomor Systems & Enterprise Governance",
+    "environment": "PRODUCTION_AUDIT_KERNEL",
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAFcWsVbIWuexdimrFWnUK5ZW4LV+YBFTV4MIOKsYReq4=\n-----END PUBLIC KEY-----\n",
+    "digital_signature": "56a26e4073ee2ac7b747f35297d3b5c736131fbe657b2cf6477fc164c9ccc4b720a35543e78cc4300672c8808ad19f5e92be4cc2ba566923ec44730bd9f6d50a",
+    "signature_algorithm": "Ed25519"
+  },
+  "subject": {
+    "artifact_id": "eaorcs-core",
+    "version": "2026.1.0",
+    "repository": "workspace://local",
+    "commit_hash": "HEAD",
+    "build_id": "BUILD-1785579190162"
+  },
+  "trust_summary": {
+    "trust_score": 96.5,
+    "tier": "GOLD",
+    "readiness_score": 95,
+    "evidence_confidence": 1,
+    "statistical_confidence": 1
+  },
+  "domain_scores": {
+    "ARCHITECTURE_INTEGRITY": 95,
+    "SECURITY_VULNERABILITIES": 98,
+    "COMPLIANCE_GOVERNANCE": 96,
+    "PROTOCOL_FREEZE": 100
+  },
+  "evidence_manifest": {
+    "merkle_root": "0xab3b6950b5e9181df016764d7c07e20bf20a7575a1947b418407be41f8698356",
+    "total_evidence_items": 42,
+    "evidence_hashes": []
+  },
+  "certification": {
+    "certificate_id": "CERT-OSAP-PASS-200-1785579190128-98A4FD6B",
+    "status": "QUALIFIED",
+    "tier": "GOLD"
+  }
+}

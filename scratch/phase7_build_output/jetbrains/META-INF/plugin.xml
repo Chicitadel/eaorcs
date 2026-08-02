@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+    <id>com.ujomor.eaorcs</id>
+    <name>EAORCS — Enterprise Software Trust & Governance Engine</name>
+    <version>2026.1.0</version>
+    <vendor email="support@ujomor.com" url="https://ujomor.com">Ujomor Systems & Enterprise Governance Authority</vendor>
+    <description><![CDATA[
+      Real-time compliance, software assurance, trust score calculation, OSAP passport generation, and governance diagnostics for IDEs.
+    ]]></description>
+    <change-notes><![CDATA[
+      v2026.1.0 production release with full OSAP v2.0 certification support.
+    ]]></change-notes>
+    <idea-version since-build="231.0" until-build="242.*"/>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="EAORCS Audit" anchor="bottom" factoryClass="com.ujomor.eaorcs.ui.AuditToolWindowFactory"/>
+        <statusBarWidgetFactory id="EAORCSTrustStatus" implementation="com.ujomor.eaorcs.ui.TrustWidgetFactory"/>
+    </extensions>
+    <actions>
+        <action id="EAORCS.RunAudit" class="com.ujomor.eaorcs.actions.RunAuditAction" text="Run EAORCS Audit" description="Triggers immediate trust score audit."/>
+    </actions>
+</idea-plugin>

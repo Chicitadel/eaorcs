@@ -1,0 +1,20 @@
+{
+  "module": "IndependentExternalAssurance",
+  "phase": "23",
+  "stream": "L8",
+  "timestamp": "2026-08-01T20:40:07+02:00",
+  "status": "VERIFIED",
+  "evidence": {
+    "assuranceBridge": "ACTIVE",
+    "commitSha": "a4f8e2d9c3b17f2e1a498801",
+    "verifiedThirdPartyAttestationsCount": 20,
+    "assessorAuthority": "CREST-Certified Security Authority",
+    "tsaAuthorityName": "DigiCert RFC3161 Timestamp Authority",
+    "receiptTokensCount": 80,
+    "tokenValidationStatus": "VERIFIED",
+    "tsaGraphHash": "sha256:d8c1c5a987d65b1285325a74e92a83bd897c9c049615024e6ab81f4a46a6f1d0",
+    "activeAuditorTokensCount": 8,
+    "tokenPermissions": ["READ_EVIDENCE_LAKE", "VERIFY_TSA_RECEIPTS", "EXPORT_PROVENANCE_GRAPH"],
+    "tokenSecurityState": "READ_ONLY_ENFORCED"
+  }
+}

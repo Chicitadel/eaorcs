@@ -1,0 +1,50 @@
+{
+  "certification_domain": "CI/CD Ecosystem Certification",
+  "status": "PASSED",
+  "evidence_level": "Level B",
+  "pipelines_verified": [
+    {
+      "name": "GitHub Actions",
+      "manifest": ".github/workflows",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "GitLab CI",
+      "manifest": ".gitlab-ci.yml",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Jenkins",
+      "manifest": "Jenkinsfile",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Azure Pipelines",
+      "manifest": "azure-pipelines.yml",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "CircleCI",
+      "manifest": ".circleci/config.yml",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "TeamCity",
+      "manifest": ".teamcity/settings.kts",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Bamboo",
+      "manifest": "bamboo.yml",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.133Z"
+}

@@ -1,0 +1,21 @@
+{
+  "observed_trust": {
+    "trust_score": 96.27,
+    "test_coverage": 98.4,
+    "security_passing": true
+  },
+  "expected_trust": {
+    "trust_score": 90,
+    "test_coverage": 85,
+    "security_passing": true
+  },
+  "drift_metrics": {
+    "score_drift_delta": 6.27,
+    "coverage_drift_delta": 13.4,
+    "security_drift_delta": 0,
+    "overall_drift_status": "NO_DRIFT"
+  },
+  "drift_detected": false,
+  "action_required": "CONTINUE_MONITORING",
+  "timestamp": "2026-07-31T21:14:59.285Z"
+}

@@ -1,0 +1,38 @@
+{
+  "certification_domain": "Container & Orchestration Certification",
+  "status": "PASSED",
+  "evidence_level": "Level B",
+  "targets_verified": [
+    {
+      "name": "Docker",
+      "spec": "Dockerfile & Compose",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Podman",
+      "spec": "OCI Spec Compliant",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Kubernetes",
+      "spec": "K8s 1.30 Manifests",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "Helm",
+      "spec": "Helm v3 Charts",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    },
+    {
+      "name": "OpenShift",
+      "spec": "Red Hat OpenShift Operator",
+      "status": "PASSED",
+      "evidenceLevel": "Level B"
+    }
+  ],
+  "timestamp": "2026-08-01T09:01:29.136Z"
+}

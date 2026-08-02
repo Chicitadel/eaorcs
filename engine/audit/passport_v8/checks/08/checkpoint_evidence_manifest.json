@@ -1,0 +1,16 @@
+{
+  "checkpoint_id": 8,
+  "checkpoint_name": "Cryptographic Execution Determinism",
+  "domain": "DETERMINISM",
+  "status": "PASSED",
+  "evidence_level": "Level A",
+  "confidence_pct": 100,
+  "evidence_artifacts": [
+    {
+      "name": "execution_determinism.json",
+      "sha256": "3b60d9f6f3686f0b0af9f7641359fa71ab1af8d1c0e645e33c429e134751ff6c",
+      "bytes": 216
+    }
+  ],
+  "timestamp": "2026-08-01T09:04:59.801Z"
+}

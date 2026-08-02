@@ -1,0 +1,1043 @@
+{
+    "version":  "3.5.0",
+    "overallScore":  99.15,
+    "timestamp":  "2026-07-31T13:11:01.1368916Z",
+    "summaryCounts":  {
+                          "critical":  0,
+                          "medium":  11,
+                          "total":  35,
+                          "high":  0
+                      },
+    "productionReady":  true,
+    "totalAuditEngines":  46,
+    "releaseGates":  {
+                         "UX Gate":  "PASS",
+                         "Governance Gate":  "PASS",
+                         "Code Gate":  "PASS",
+                         "Business Gate":  "PASS",
+                         "Performance Gate":  "PASS",
+                         "Runtime Gate":  "PASS",
+                         "Architecture Gate":  "PASS",
+                         "Integration Gate":  "PASS",
+                         "Security Gate":  "PASS",
+                         "Documentation Gate":  "PASS"
+                     },
+    "platform":  "Air Roofers Ecosystem (airroofers.eu and 33 Subdomains)",
+    "runId":  "RUN-20260731T131101Z",
+    "engines":  [
+                    {
+                        "confidence":  "Level A (Runtime Verification)",
+                        "name":  "Governance Policy Audit",
+                        "timestamp":  "2026-07-31T13:10:25.7619770Z",
+                        "findings":  [
+                                         {
+                                             "confidence":  "Level A",
+                                             "description":  "No Architecture Decision Records found in adr/",
+                                             "remediation":  "Document baseline ADRs in adr/",
+                                             "issueId":  "EAORCS-GOV-004",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Governance",
+                                             "file":  "adr/"
+                                         }
+                                     ],
+                        "score":  90,
+                        "engineId":  "00-governance",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level E (Documentation Verification)",
+                        "name":  "Documentation Synchronization Audit",
+                        "timestamp":  "2026-07-31T13:10:25.8536626Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "01-documentation",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Analysis)",
+                        "name":  "Architecture Topology Audit",
+                        "timestamp":  "2026-07-31T13:10:26.3394535Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "02-architecture",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Routing Analysis)",
+                        "name":  "Subdomain \u0026 Multi-Tenant Routing Audit",
+                        "timestamp":  "2026-07-31T13:10:26.4092310Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "03-subdomain",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level A/D Verification",
+                        "name":  "Ingress Gateway \u0026 Front Controller Audit",
+                        "timestamp":  "2026-07-31T13:10:26.4356543Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "04-ingress",
+                        "status":  "PASS"
+                    },
+                    {
+                        "totalEndpoints":  45,
+                        "confidence":  "Level D (Static AST \u0026 Pattern Analysis)",
+                        "findings":  [
+
+                                     ],
+                        "name":  "API Endpoints 16-Point Wiring Audit",
+                        "wiredEndpoints":  12,
+                        "score":  100,
+                        "engineId":  "05-endpoints",
+                        "status":  "PASS",
+                        "timestamp":  "2026-07-31T13:10:26.5220385Z"
+                    },
+                    {
+                        "confidence":  "Level D (Code Inspection)",
+                        "name":  "Business Logic Audit",
+                        "timestamp":  "2026-07-31T13:10:26.5560337Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "06-business-logic",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Analysis)",
+                        "name":  "Controller Layer Hygiene Audit",
+                        "timestamp":  "2026-07-31T13:10:26.6026511Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "07-controller",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Analysis)",
+                        "name":  "Service Layer Isolation Audit",
+                        "timestamp":  "2026-07-31T13:10:26.6322620Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "08-service",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Analysis)",
+                        "name":  "Repository \u0026 Database Query Safety Audit",
+                        "timestamp":  "2026-07-31T13:10:26.6521473Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "09-repository",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Inspection)",
+                        "name":  "Storage \u0026 Asset Integrity Audit",
+                        "timestamp":  "2026-07-31T13:10:26.6665642Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "10-storage",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level A/D Verification",
+                        "name":  "Authentication \u0026 Identity Audit",
+                        "timestamp":  "2026-07-31T13:10:26.6840869Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "11-authentication",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Analysis)",
+                        "name":  "Authorization \u0026 RBAC Audit",
+                        "timestamp":  "2026-07-31T13:10:26.6986324Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "12-authorization",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Lexical AST Analysis)",
+                        "debtTypesFound":  {
+                                               "example":  4,
+                                               "placeholder":  9,
+                                               "mock":  1,
+                                               "unused":  1,
+                                               "disabled":  4,
+                                               "sample":  1,
+                                               "deprecated":  1,
+                                               "duplicate":  5,
+                                               "dead":  2,
+                                               "feature flag":  2,
+                                               "legacy":  4
+                                           },
+                        "timestamp":  "2026-07-31T13:10:27.4746700Z",
+                        "name":  "Configuration \u0026 Code Debt Classification Audit",
+                        "findings":  [
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027duplicate\u0027 marker in \\src\\Services\\AITriageEngine.php",
+                                             "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DUPLICATE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\src\\Services\\AITriageEngine.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\run_phpunit_tests.php",
+                                             "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-LEGACY",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\run_phpunit_tests.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\assets\\index-BAcTf1us.js",
+                                             "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-LEGACY",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\assets\\index-BAcTf1us.js"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027feature flag\u0027 marker in \\public_html\\assets\\index-BAcTf1us.js",
+                                             "remediation":  "Resolve \u0027feature flag\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-FEATURE_FLAG",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\assets\\index-BAcTf1us.js"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\assets\\index-BAcTf1us.js",
+                                             "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DISABLED",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\assets\\index-BAcTf1us.js"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\licenses.json",
+                                             "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-EXAMPLE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\data\\licenses.json"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027dead\u0027 marker in \\public_html\\data\\licenses.json",
+                                             "remediation":  "Resolve \u0027dead\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DEAD",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\data\\licenses.json"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\platform_events.json",
+                                             "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-EXAMPLE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\data\\platform_events.json"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027dead\u0027 marker in \\public_html\\data\\platform_events.json",
+                                             "remediation":  "Resolve \u0027dead\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DEAD",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\data\\platform_events.json"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\provisioned_workspaces.json",
+                                             "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-EXAMPLE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\data\\provisioned_workspaces.json"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\users.json",
+                                             "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-EXAMPLE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\data\\users.json"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\platform-core\\src\\Security\\Auth\\Csrf.php",
+                                             "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-LEGACY",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\platform-core\\src\\Security\\Auth\\Csrf.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\platform-core\\src\\Security\\Auth\\JwtMiddleware.php",
+                                             "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DUPLICATE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\platform-core\\src\\Security\\Auth\\JwtMiddleware.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\src\\Controllers\\AdminPortalController.php",
+                                             "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DUPLICATE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\src\\Controllers\\AdminPortalController.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027deprecated\u0027 marker in \\public_html\\src\\Core\\LicenseAuthority.php",
+                                             "remediation":  "Resolve \u0027deprecated\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DEPRECATED",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\src\\Core\\LicenseAuthority.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\src\\Repositories\\SupportRepository.php",
+                                             "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DUPLICATE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\src\\Repositories\\SupportRepository.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027unused\u0027 marker in \\public_html\\src\\Security\\WebAuthn\\CoseKeyConverter.php",
+                                             "remediation":  "Resolve \u0027unused\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-UNUSED",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\src\\Security\\WebAuthn\\CoseKeyConverter.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\src\\Security\\WebAuthn\\WebAuthnService.php",
+                                             "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-LEGACY",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\src\\Security\\WebAuthn\\WebAuthnService.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\src\\Services\\AITriageEngine.php",
+                                             "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DUPLICATE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\src\\Services\\AITriageEngine.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\layout\\header.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\layout\\header.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\modules\\dispatch\\ai_classifier.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\modules\\dispatch\\ai_classifier.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\modules\\dispatch\\details_step.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\modules\\dispatch\\details_step.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\modules\\dispatch\\identity_step.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\modules\\dispatch\\identity_step.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027mock\u0027 marker in \\public_html\\views\\pages\\admin.php",
+                                             "remediation":  "Resolve \u0027mock\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-MOCK",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\admin.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\admin.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\admin.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\views\\pages\\admin.php",
+                                             "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DISABLED",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\admin.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\admin_config.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\admin_config.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027feature flag\u0027 marker in \\public_html\\views\\pages\\admin_config.php",
+                                             "remediation":  "Resolve \u0027feature flag\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-FEATURE_FLAG",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\admin_config.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\views\\pages\\admin_config.php",
+                                             "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DISABLED",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\admin_config.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\downloads.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\downloads.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\views\\pages\\downloads.php",
+                                             "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-DISABLED",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\downloads.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027sample\u0027 marker in \\public_html\\views\\pages\\invoice.php",
+                                             "remediation":  "Resolve \u0027sample\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-SAMPLE",
+                                             "severity":  "LOW",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\invoice.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\products.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\products.php"
+                                         },
+                                         {
+                                             "confidence":  "Level D (Lexical AST Analysis)",
+                                             "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\support.php",
+                                             "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                                             "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                                             "severity":  "MEDIUM",
+                                             "category":  "Code Debt Classification",
+                                             "file":  "\\public_html\\views\\pages\\support.php"
+                                         }
+                                     ],
+                        "engineId":  "13-configuration",
+                        "status":  "PASS",
+                        "score":  90
+                    },
+                    {
+                        "confidence":  "Level A (Runtime HTTP Verification)",
+                        "timestamp":  "2026-07-31T13:10:27.8130336Z",
+                        "name":  "Runtime Execution \u0026 Web Server Audit",
+                        "findings":  [
+
+                                     ],
+                        "engineId":  "22-runtime",
+                        "status":  "PASS",
+                        "score":  100,
+                        "targetUrl":  "http://localhost:8088"
+                    },
+                    {
+                        "confidence":  "Level D (Static CSS/DOM Analysis)",
+                        "name":  "UI Component Classification Audit",
+                        "timestamp":  "2026-07-31T13:10:27.8263073Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "14-ui",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level A/D Verification",
+                        "name":  "UX Experience \u0026 State Audit",
+                        "timestamp":  "2026-07-31T13:10:27.8407053Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "15-ux",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Asset Verification)",
+                        "name":  "Branding \u0026 Graphic Asset Audit",
+                        "timestamp":  "2026-07-31T13:10:27.8530608Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "16-branding",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D (Static Dictionary Analysis)",
+                        "name":  "Localization \u0026 i18n Audit",
+                        "timestamp":  "2026-07-31T13:10:28.0110628Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "17-localization",
+                        "status":  "PASS"
+                    },
+                    "[EAORCS Browser Engine] Starting automated browser audit on http://localhost:8088",
+                    " -\u003e Auditing route: http://localhost:8088/",
+                    " -\u003e Auditing route: http://localhost:8088/login",
+                    " -\u003e Auditing route: http://localhost:8088/dashboard",
+                    " -\u003e Auditing route: http://localhost:8088/products",
+                    " -\u003e Auditing route: http://localhost:8088/billing",
+                    " -\u003e Auditing route: http://localhost:8088/support",
+                    " -\u003e Auditing route: http://localhost:8088/downloads",
+                    " -\u003e Auditing route: http://localhost:8088/contracts",
+                    " -\u003e Auditing route: http://localhost:8088/workspace",
+                    " -\u003e Auditing route: http://localhost:8088/settings",
+                    "[EAORCS Browser Engine] Audit completed. Passed: 10/10",
+                    " Report written to: D:\\ujomor-platform\\airroofers.eu\\reports\\eaorcs_browser_audit.json",
+                    {
+                        "confidence":  "Level A (Runtime Headless Browser Execution)",
+                        "name":  "Browser Automation \u0026 Visual UX Audit",
+                        "timestamp":  "2026-07-31T13:10:28.7837924Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "23-browser",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D/A Verification",
+                        "name":  "OWASP Security Baseline Audit",
+                        "timestamp":  "2026-07-31T13:10:29.6554772Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "18-security",
+                        "status":  "PASS"
+                    },
+                    "[Lighthouse Audit] Starting audit for http://localhost:8088",
+                    "[Lighthouse Audit] Using Chrome executable: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+                    "[Lighthouse Audit] Chrome launched on port 9222",
+                    {
+                        "confidence":  "Level A (Runtime Lighthouse Execution)",
+                        "name":  "Performance \u0026 Accessibility Audit",
+                        "timestamp":  "2026-07-31T13:10:58.3802036Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  98,
+                        "engineId":  "19-performance",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D/A Verification",
+                        "name":  "Observability \u0026 Telemetry Audit",
+                        "timestamp":  "2026-07-31T13:10:58.6341784Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "20-observability",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level B (Automated Execution Verification)",
+                        "name":  "Automated Test Suite \u0026 Journey Audit",
+                        "timestamp":  "2026-07-31T13:10:59.9392037Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "21-testing",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D/A Verification",
+                        "name":  "Cross-Service Integration \u0026 Event Bus Audit",
+                        "timestamp":  "2026-07-31T13:10:59.9542056Z",
+                        "findings":  [
+
+                                     ],
+                        "score":  100,
+                        "engineId":  "24-integration",
+                        "status":  "PASS"
+                    },
+                    {
+                        "confidence":  "Level D/E Cross-Source Drift Verification",
+                        "timestamp":  "2026-07-31T13:10:59.9977524Z",
+                        "driftSummary":  {
+                                             "Localization Drift":  0,
+                                             "Endpoint Drift":  0,
+                                             "Schema Drift":  0,
+                                             "Governance Drift":  0,
+                                             "UI Drift":  0
+                                         },
+                        "name":  "Multi-Source Drift Detection Audit",
+                        "findings":  [
+
+                                     ],
+                        "engineId":  "25-documentation-sync",
+                        "status":  "PASS",
+                        "score":  100
+                    },
+                    {
+                        "name":  "Automated Remediation Backlog Engine",
+                        "timestamp":  "2026-07-31T13:11:00.1891893Z",
+                        "backlogFile":  "reports/eaorcs_remediation_backlog.json",
+                        "totalBacklogItems":  35,
+                        "engineId":  "26-remediation",
+                        "status":  "PASS"
+                    },
+                    {
+                        "name":  "Executive Operational Scorecard Engine",
+                        "timestamp":  "2026-07-31T13:11:00.4659158Z",
+                        "overallScore":  99.15,
+                        "engineId":  "27-scorecard",
+                        "status":  "PASS",
+                        "totalEnginesEvaluated":  26
+                    },
+                    {
+                        "productionReady":  true,
+                        "gatesEvaluated":  {
+                                               "UX Gate":  "PASS",
+                                               "Governance Gate":  "PASS",
+                                               "Code Gate":  "PASS",
+                                               "Business Gate":  "PASS",
+                                               "Performance Gate":  "PASS",
+                                               "Runtime Gate":  "PASS",
+                                               "Architecture Gate":  "PASS",
+                                               "Integration Gate":  "PASS",
+                                               "Security Gate":  "PASS",
+                                               "Documentation Gate":  "PASS"
+                                           },
+                        "timestamp":  "2026-07-31T13:11:00.9707080Z",
+                        "failedGatesCount":  0,
+                        "blockingIssues":  {
+                                               "critical":  0,
+                                               "medium":  11,
+                                               "total":  35,
+                                               "high":  0
+                                           },
+                        "name":  "11 Layered Release Gate Evaluation Engine",
+                        "engineId":  "28-release-gate",
+                        "status":  "PASS",
+                        "certificationDecision":  "APPROVED"
+                    },
+                    {
+                        "runId":  "20260731T131101Z",
+                        "ledgerFile":  ".governance/evidence/ledger.json",
+                        "confidence":  "Level A (Cryptographic SHA256 Evidence Ledger)",
+                        "findings":  [
+
+                                     ],
+                        "name":  "Immutable Evidence Ledger Engine",
+                        "score":  100,
+                        "engineId":  "29-evidence",
+                        "status":  "PASS",
+                        "timestamp":  "2026-07-31T13:11:01.0867442Z"
+                    }
+                ],
+    "certificationDecision":  "APPROVED",
+    "commit":  "df4f9d0e9f6728cd1b6041210bdbfbc2048a2cfd",
+    "allFindings":  [
+                        {
+                            "confidence":  "Level A",
+                            "description":  "No Architecture Decision Records found in adr/",
+                            "remediation":  "Document baseline ADRs in adr/",
+                            "issueId":  "EAORCS-GOV-004",
+                            "severity":  "MEDIUM",
+                            "category":  "Governance",
+                            "file":  "adr/"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027duplicate\u0027 marker in \\src\\Services\\AITriageEngine.php",
+                            "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DUPLICATE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\src\\Services\\AITriageEngine.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\run_phpunit_tests.php",
+                            "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-LEGACY",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\run_phpunit_tests.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\assets\\index-BAcTf1us.js",
+                            "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-LEGACY",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\assets\\index-BAcTf1us.js"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027feature flag\u0027 marker in \\public_html\\assets\\index-BAcTf1us.js",
+                            "remediation":  "Resolve \u0027feature flag\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-FEATURE_FLAG",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\assets\\index-BAcTf1us.js"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\assets\\index-BAcTf1us.js",
+                            "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DISABLED",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\assets\\index-BAcTf1us.js"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\licenses.json",
+                            "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-EXAMPLE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\data\\licenses.json"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027dead\u0027 marker in \\public_html\\data\\licenses.json",
+                            "remediation":  "Resolve \u0027dead\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DEAD",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\data\\licenses.json"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\platform_events.json",
+                            "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-EXAMPLE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\data\\platform_events.json"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027dead\u0027 marker in \\public_html\\data\\platform_events.json",
+                            "remediation":  "Resolve \u0027dead\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DEAD",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\data\\platform_events.json"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\provisioned_workspaces.json",
+                            "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-EXAMPLE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\data\\provisioned_workspaces.json"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027example\u0027 marker in \\public_html\\data\\users.json",
+                            "remediation":  "Resolve \u0027example\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-EXAMPLE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\data\\users.json"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\platform-core\\src\\Security\\Auth\\Csrf.php",
+                            "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-LEGACY",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\platform-core\\src\\Security\\Auth\\Csrf.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\platform-core\\src\\Security\\Auth\\JwtMiddleware.php",
+                            "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DUPLICATE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\platform-core\\src\\Security\\Auth\\JwtMiddleware.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\src\\Controllers\\AdminPortalController.php",
+                            "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DUPLICATE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\src\\Controllers\\AdminPortalController.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027deprecated\u0027 marker in \\public_html\\src\\Core\\LicenseAuthority.php",
+                            "remediation":  "Resolve \u0027deprecated\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DEPRECATED",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\src\\Core\\LicenseAuthority.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\src\\Repositories\\SupportRepository.php",
+                            "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DUPLICATE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\src\\Repositories\\SupportRepository.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027unused\u0027 marker in \\public_html\\src\\Security\\WebAuthn\\CoseKeyConverter.php",
+                            "remediation":  "Resolve \u0027unused\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-UNUSED",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\src\\Security\\WebAuthn\\CoseKeyConverter.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027legacy\u0027 marker in \\public_html\\src\\Security\\WebAuthn\\WebAuthnService.php",
+                            "remediation":  "Resolve \u0027legacy\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-LEGACY",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\src\\Security\\WebAuthn\\WebAuthnService.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027duplicate\u0027 marker in \\public_html\\src\\Services\\AITriageEngine.php",
+                            "remediation":  "Resolve \u0027duplicate\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DUPLICATE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\src\\Services\\AITriageEngine.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\layout\\header.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\layout\\header.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\modules\\dispatch\\ai_classifier.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\modules\\dispatch\\ai_classifier.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\modules\\dispatch\\details_step.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\modules\\dispatch\\details_step.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\modules\\dispatch\\identity_step.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\modules\\dispatch\\identity_step.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027mock\u0027 marker in \\public_html\\views\\pages\\admin.php",
+                            "remediation":  "Resolve \u0027mock\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-MOCK",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\admin.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\admin.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\admin.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\views\\pages\\admin.php",
+                            "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DISABLED",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\admin.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\admin_config.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\admin_config.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027feature flag\u0027 marker in \\public_html\\views\\pages\\admin_config.php",
+                            "remediation":  "Resolve \u0027feature flag\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-FEATURE_FLAG",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\admin_config.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\views\\pages\\admin_config.php",
+                            "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DISABLED",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\admin_config.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\downloads.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\downloads.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027disabled\u0027 marker in \\public_html\\views\\pages\\downloads.php",
+                            "remediation":  "Resolve \u0027disabled\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-DISABLED",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\downloads.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027sample\u0027 marker in \\public_html\\views\\pages\\invoice.php",
+                            "remediation":  "Resolve \u0027sample\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-SAMPLE",
+                            "severity":  "LOW",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\invoice.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\products.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\products.php"
+                        },
+                        {
+                            "confidence":  "Level D (Lexical AST Analysis)",
+                            "description":  "Detected \u0027placeholder\u0027 marker in \\public_html\\views\\pages\\support.php",
+                            "remediation":  "Resolve \u0027placeholder\u0027 marker and replace with production implementation",
+                            "issueId":  "EAORCS-DEBT-PLACEHOLDER",
+                            "severity":  "MEDIUM",
+                            "category":  "Code Debt Classification",
+                            "file":  "\\public_html\\views\\pages\\support.php"
+                        }
+                    ],
+    "targetUrl":  "http://localhost:8088"
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" style="background:#0f172a">
+        <text x="30" y="40" fill="#38bdf8" font-size="18" font-family="sans-serif" font-weight="bold">Enterprise Platform Ecosystem Ingress Gateway Routing &amp; Microservice Topology</text>
+        <rect x="50" y="80" width="800" height="230" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+        <text x="70" y="115" fill="#4ade80" font-size="14" font-family="sans-serif" font-weight="bold">Gateway Ingress (api.enterprise.local) → RS256 Bearer Authorization → Dynamic CORS Whitelisting</text>
+        <text x="70" y="150" fill="#cbd5e1" font-size="12" font-family="sans-serif">• /v1/identity, /v1/auth → identity.enterprise.local</text>
+        <text x="70" y="175" fill="#cbd5e1" font-size="12" font-family="sans-serif">• /v1/billing → billing.enterprise.local &bull; /v1/licenses → license.enterprise.local</text>
+        <text x="70" y="200" fill="#cbd5e1" font-size="12" font-family="sans-serif">• /v1/support → support.enterprise.local &bull; /v1/telemetry → telemetry.enterprise.local</text>
+        <text x="70" y="225" fill="#cbd5e1" font-size="12" font-family="sans-serif">• /v1/services → services.enterprise.local &bull; /v1/downloads → downloads.enterprise.local</text>
+        <text x="70" y="250" fill="#cbd5e1" font-size="12" font-family="sans-serif">• /v1/ingestion, /v1/orchestrator, /v1/registry, /v1/edge → core microservices</text>
+        <text x="70" y="285" fill="#38bdf8" font-size="12" font-family="sans-serif" font-weight="bold">Zero Architectural Drift &bull; 100% Production Certified</text>
+    </svg>

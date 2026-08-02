@@ -1,0 +1,49 @@
+{
+  "productId": "eaorcs",
+  "name": "EAORCS — Enterprise Autonomous Operation & Regulatory Compliance System",
+  "platformDomain": "airroofers.eu",
+  "boundedContext": "SOFTWARE_TRUST_PLATFORM",
+  "version": "2026.1.0-LTS",
+  "lifecycleStage": "GA_LTS",
+  "governanceAuthority": "Ujomor Systems Engineering & Governance Authority",
+  "editions": [
+    "COMMUNITY",
+    "COMMERCIAL",
+    "ENTERPRISE",
+    "GOV_CLOUD"
+  ],
+  "apiContracts": {
+    "openApiVersion": "3.0.3",
+    "baseUri": "https://api.airroofers.eu/trust/v1",
+    "specUri": "https://api.airroofers.eu/trust/v1/openapi.json"
+  },
+  "sdkSupport": {
+    "vscode": { "version": "2026.1.0", "identifier": "ujomor.eaorcs-vscode" },
+    "jetbrains": { "version": "2026.1.0", "identifier": "com.ujomor.eaorcs.jetbrains" },
+    "node": { "version": "2026.1.0", "package": "@airroofers/eaorcs-sdk" }
+  },
+  "platformIntegrationContracts": {
+    "identity": "https://auth.airroofers.eu",
+    "billing": "https://billing.airroofers.eu",
+    "licensing": "https://licensing.airroofers.eu",
+    "storage": "https://storage.airroofers.eu",
+    "telemetry": "https://telemetry.airroofers.eu",
+    "support": "https://support.airroofers.eu",
+    "notifications": "https://notifications.airroofers.eu",
+    "search": "https://search.airroofers.eu"
+  },
+  "supportRouting": {
+    "portalUrl": "https://support.airroofers.eu/products/eaorcs",
+    "kbUrl": "https://docs.airroofers.eu/eaorcs",
+    "slaGuarantees": {
+      "ENTERPRISE": "99.99%",
+      "GOV_CLOUD": "99.999%"
+    }
+  },
+  "featureFlags": {
+    "enableLiveTransparencyLog": true,
+    "enableAirRoofersPlatformAdapters": true,
+    "enableIdeLspDiagnostics": true,
+    "enableContinuousAssurancePipeline": true
+  }
+}
