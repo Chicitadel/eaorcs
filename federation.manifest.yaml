@@ -1,0 +1,48 @@
+# Air Roofers Ecosystem Federation Manifest
+# Governed by Air Roofers Product Development Standard & Integration Guide
+product:
+  id: eaorcs
+  name: Enterprise Autonomous Operational Readiness & Certification System
+  version: 2026.3.0-LTS
+  role: Software Trust & Autonomous Governance Capability
+  classification: ENTERPRISE_CAPABILITY
+  requiredPlatformVersion: "^2026.2.0"
+  requiredSdkVersion: "@airroofers/sdk@3.0.0"
+  minimumGatewayVersion: "1.4.0"
+  supportedReleaseTrain: LTS
+  boundedContext: SoftwareTrust
+  owner: Governance Council & Air Roofers Architecture Authority
+  criticality: MISSION_CRITICAL
+  securityClassification: GOVERNMENT_ENTERPRISE_RESTRICTED
+
+consumes_platform_services:
+  - identity
+  - billing
+  - licensing
+  - telemetry
+  - notifications
+  - support
+  - marketplace
+  - registry
+  - configuration
+  - downloads
+
+publishes_events:
+  - topic: TrustScoreUpdated
+    description: Emitted when composite or decomposed software trust score changes
+  - topic: EvidenceCreated
+    description: Emitted when new cryptographic evidence chain item is recorded
+  - topic: PolicyEvaluated
+    description: Emitted when an autonomous governance policy evaluation completes
+  - topic: ArchitectureChanged
+    description: Emitted when digital twin detects architectural drift or mutation
+
+subscribes_events:
+  - topic: LicenseChanged
+    action: Recalculate tenant capability entitlements
+  - topic: ConfigurationUpdated
+    action: Reload platform branding and portal theme
+  - topic: TenantCreated
+    action: Initialize customer success journey and baseline metrics
+  - topic: IdentityUpdated
+    action: Invalidate identity token cache

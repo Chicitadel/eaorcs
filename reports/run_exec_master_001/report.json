@@ -1,0 +1,24 @@
+{
+  "productName": "Core",
+  "driScore": 96,
+  "readinessConfidence": 98,
+  "status": "READY",
+  "timestamp": "2026-08-06T16:05:13.171Z",
+  "passportId": "OSAP-AGNOSTIC-2026",
+  "evaluations": [
+    {
+      "id": "ArchitectureMaturity",
+      "name": "Architecture Maturity",
+      "score": 100,
+      "weight": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "SecurityCompliance",
+      "name": "Security Compliance",
+      "score": 98,
+      "weight": 15,
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "rollbackId": "rollback_tenant-beta_1786034662162",
+  "planId": "plan_tenant-beta_1786034662161",
+  "tenantId": "tenant-beta",
+  "triggeredBy": "Test validation trigger",
+  "failedAtStep": "UNKNOWN",
+  "rollbackStatus": "COMPLETED",
+  "trafficRestored": true,
+  "revertedStagesCount": 5,
+  "revertedStages": [
+    {
+      "step": "CP_4_RESTORE_PRIMARY_ROUTING: Switched traffic back to legacy primary schema",
+      "status": "REVERTED",
+      "timestamp": "2026-08-06T16:44:22.162Z"
+    },
+    {
+      "step": "CP_3_DISABLE_DUAL_WRITE: Terminated dual-write replication proxy",
+      "status": "REVERTED",
+      "timestamp": "2026-08-06T16:44:22.162Z"
+    },
+    {
+      "step": "CP_2_TRUNCATE_SHADOW_DATA: Purged uncommitted backfill records from shadow database",
+      "status": "REVERTED",
+      "timestamp": "2026-08-06T16:44:22.162Z"
+    },
+    {
+      "step": "CP_1_DROP_SHADOW_SCHEMA: Dropped shadow schema namespace and shadow indexes",
+      "status": "REVERTED",
+      "timestamp": "2026-08-06T16:44:22.162Z"
+    },
+    {
+      "step": "CP_0_INITIAL_STATE: Re-instated pre-migration tenant registry state",
+      "status": "REVERTED",
+      "timestamp": "2026-08-06T16:44:22.162Z"
+    }
+  ],
+  "durationMs": 0,
+  "completedAt": "2026-08-06T16:44:22.162Z"
+}

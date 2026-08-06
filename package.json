@@ -12,6 +12,8 @@
     "host-detect": "node cli/index.js host-detect",
     "test": "node tests/runtime/host_awareness.test.js && node tests/runtime/providers.test.js && node tests/runtime/kernel_and_subsystems.test.js && node tests/runtime/intelligence_and_aicouncil.test.js && node tests/utcf.test.js",
     "certify": "node certify.js",
+    "ci:certify": "node certify.js",
+    "ci:dri": "node bin/generate_dri_report.js",
     "qualify:traceability": "node tests/traceability/run_traceability.js",
     "qualify:integration": "node tests/integration/cross_module_workflow_suite.js",
     "qualify:enterprise": "node tests/enterprise/enterprise_qualification_suite.js",

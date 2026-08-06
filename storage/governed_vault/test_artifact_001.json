@@ -1,0 +1,8 @@
+{
+  "artifact_id": "test_artifact_001",
+  "stored_at": "2026-08-06T16:05:43.882Z",
+  "governance": "SLSA_LEVEL_4",
+  "system": "EAORCS",
+  "metadata": {},
+  "content": "{\n  \"passport\": \"AAA\"\n}"
+}

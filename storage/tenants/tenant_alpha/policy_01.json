@@ -1,0 +1,7 @@
+{
+  "tenant_id": "tenant_alpha",
+  "artifact_key": "policy_01",
+  "checksum_sha256": "0337c3c05cf55a6a64c7c22500edd6da5cd665d2ed50aaa77fa3bede83a4182b",
+  "stored_at": "2026-08-06T16:05:43.885Z",
+  "payload": "{\n  \"rule\": \"ALLOW\"\n}"
+}

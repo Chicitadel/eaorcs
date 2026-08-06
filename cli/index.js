@@ -6,21 +6,16 @@
  * Author         : Architectural Governance Council & Ujomor Systems Engineering
  * Organization   : Air Roofers Platform Ecosystem & Ujomor Systems
  * Created Date   : 2026-08-02
- * Last Modified  : 2026-08-02
- * Classification : ENTERPRISE
+ * Last Modified  : 2026-08-06
+ * Classification : GOVERNMENT | ENTERPRISE | RESTRICTED
  *
  * Governance:
- * - AI Governed
- * - Security Reviewed
- * - Architecture Controlled
- * - Protocol Frozen
- * - Modularization Enforced
+ * - Architecture Authority Approved & RATIFIED
+ * - Security Reviewed (ISO 27001, SOC 2, OWASP ASVS, NIST)
+ * - Protocol Frozen & Modularization Enforced
  *
  * Standards:
- * - ISO 27001
- * - SOC 2
- * - OWASP ASVS
- * - NIST
+ * - ISO 27001 / SOC 2 / OWASP ASVS / NIST
  *
  * Signatures:
  * - Architecture Authority
@@ -34,6 +29,7 @@
 
 const dcpCli = require('./dcp_cli');
 const onboardCli = require('./onboard_cli');
+const ideCli = require('./ide_cli');
 
 const args = process.argv.slice(2);
 const command = args[0];
@@ -47,6 +43,7 @@ Usage: eaorcs <command> [options]
 Commands:
   onboard         Onboard a new product (eaorcs onboard <product-path>)
   dcp             Distributed Compute Protocol (DCP) operations
+  ide             Universal IDE Framework & LSP Daemon (eaorcs ide lsp)
   verify          Verify architecture and protocols
   pack            Package the application artifact
   passport        Manage security passports and identities
@@ -64,6 +61,9 @@ switch (command) {
   case 'dcp':
     console.log('Running eaorcs dcp command...');
     dcpCli.executeDcp();
+    break;
+  case 'ide':
+    ideCli.handleIdeCli(args.slice(1));
     break;
   case 'verify':
     if (args.includes('--onboard')) {
@@ -89,3 +89,4 @@ switch (command) {
     showHelp();
     break;
 }
+

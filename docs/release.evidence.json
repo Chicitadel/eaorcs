@@ -1,0 +1,41 @@
+{
+  "releaseId": "rel-2026.3.0-LTS-ca94701e",
+  "version": "2026.3.0-LTS",
+  "gitCommit": "HEAD",
+  "buildTimestamp": "2026-08-06T19:03:58.879Z",
+  "positioning": "EAORCS — The Software Trust & Autonomous Governance Capability of the Air Roofers Platform",
+  "hashes": {
+    "sbomHash": "3565d72c0ff3b6fa2347fd3875164ee4f78e82b864bc3ca0d1d79bdb8d3765c2",
+    "openApiHash": "c67207bd9e3fcbfd18017806ac4a55288650b548f7a88f415557acd576dafddf",
+    "federationManifestHash": "edac259469f67cfd8ace10ddde30b66eb59d3d5a2b313487b18fe284a9005c57",
+    "contractRegistryHash": "7123eaeadf07cacd208568dfb8d371871314f31eeda9873007ac25d38db5b911"
+  },
+  "versions": {
+    "sdkVersion": "@airroofers/sdk@3.0.0",
+    "platformEvolutionPolicyVersion": "1.0.0",
+    "adrClosureRegisterVersion": "1.0.0"
+  },
+  "verificationResults": {
+    "regressionTests": "37/37 PASSED",
+    "federationScore": "100/100 (A+)",
+    "driScore": "100/100 PASS"
+  },
+  "approvalChain": [
+    {
+      "role": "Architecture Review Board",
+      "status": "RATIFIED",
+      "timestamp": "2026-08-06T19:03:58.879Z"
+    },
+    {
+      "role": "Security Authority",
+      "status": "RATIFIED",
+      "timestamp": "2026-08-06T19:03:58.879Z"
+    },
+    {
+      "role": "Commercial Launch Authority",
+      "status": "RATIFIED",
+      "timestamp": "2026-08-06T19:03:58.879Z"
+    }
+  ],
+  "signature": "06128ed1568a1980d09d3f5fe1939fc8b2fdecc3dfdb23914b4ae6fafa30c99c"
+}

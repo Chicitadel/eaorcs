@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-08-06T16:44:22.171Z",
+  "privacyCompliance": {
+    "anonymizationEnabled": true,
+    "hashingAlgorithm": "SHA-256",
+    "gdprCompliant": true,
+    "hipaaCompliant": true
+  },
+  "apiUsage": [],
+  "marketplaceAdoption": [],
+  "governancePackPopularity": [],
+  "aiTokenConsumption": [],
+  "reportGeneration": [
+    {
+      "format": "PDF",
+      "totalGenerated": 1,
+      "avgDurationMs": 350,
+      "totalMB": 1,
+      "reportTypes": {
+        "EXECUTIVE": 1
+      }
+    }
+  ],
+  "conversionFunnel": {
+    "funnelId": "STANDARD_CERTIFICATION_FUNNEL",
+    "stages": [
+      {
+        "stage": "TRUST_SCORE_COMPUTED",
+        "order": 1,
+        "activeTenantsCount": 0,
+        "stepConversionRate": 0,
+        "cumulativeConversionRate": 0,
+        "dropOffCount": 0,
+        "dropOffRate": 0
+      },
+      {
+        "stage": "EVIDENCE_COLLECTED",
+        "order": 2,
+        "activeTenantsCount": 0,
+        "stepConversionRate": 0,
+        "cumulativeConversionRate": 0,
+        "dropOffCount": 0,
+        "dropOffRate": 0
+      },
+      {
+        "stage": "CERTIFICATION_ISSUED",
+        "order": 3,
+        "activeTenantsCount": 0,
+        "stepConversionRate": 0,
+        "cumulativeConversionRate": 0,
+        "dropOffCount": 0,
+        "dropOffRate": 0
+      },
+      {
+        "stage": "REPORT_EXPORTED",
+        "order": 4,
+        "activeTenantsCount": 0,
+        "stepConversionRate": 0,
+        "cumulativeConversionRate": 0,
+        "dropOffCount": 0,
+        "dropOffRate": 0
+      }
+    ],
+    "overallConversionRate": 0,
+    "totalStarted": 0,
+    "totalCompleted": 0,
+    "convertedCount": 0,
+    "avgTimeToConvertMs": 0
+  }
+}

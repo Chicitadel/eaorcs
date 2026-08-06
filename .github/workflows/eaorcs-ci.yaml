@@ -1,0 +1,36 @@
+name: EAORCS Continuous Integration & Zero-Drift Certification
+
+on:
+  push:
+    branches: [ main, master, release/* ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  certify-and-verify:
+    name: EAORCS Zero-Drift Certification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Run Core Subsystem Test Suite
+        run: npm test
+
+      - name: Run Single-Command Master Certification
+        run: npm run certify
+
+      - name: Evaluate Distribution Readiness Index (DRI)
+        run: node bin/generate_dri_report.js
+
+      - name: Verify UTCF 21-Layer Adapters
+        run: node tests/utcf.test.js
