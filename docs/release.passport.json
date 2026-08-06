@@ -1,7 +1,7 @@
 {
-  "passportId": "pass-2026.3.0-LTS-3e969b06",
+  "passportId": "pass-2026.3.0-LTS-6b6cb303",
   "version": "2026.3.0-LTS",
-  "timestamp": "2026-08-06T19:45:48.948Z",
+  "timestamp": "2026-08-06T19:51:33.927Z",
   "positioning": "EAORCS — The Software Trust & Autonomous Governance Capability of the Air Roofers Platform",
   "specifications": {
     "blueprintVersion": "2026.3.0-LTS",
@@ -33,5 +33,5 @@
       "status": "RATIFIED"
     }
   ],
-  "signature": "143bd7e483805d7ce12a0d84ae1a8f91f9b2f782a62da6b0fee72fd807aa7aa7"
+  "signature": "b575d8037f026c03eacddea7ebeffbc3022e5ac5fe30c5bf79257168e977676f"
 }
