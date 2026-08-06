@@ -1,0 +1,37 @@
+{
+  "passportId": "pass-2026.3.0-LTS-3f90f994",
+  "version": "2026.3.0-LTS",
+  "timestamp": "2026-08-06T19:41:57.652Z",
+  "positioning": "EAORCS — The Software Trust & Autonomous Governance Capability of the Air Roofers Platform",
+  "specifications": {
+    "blueprintVersion": "2026.3.0-LTS",
+    "standardsVersion": "1.0.0",
+    "distributionVersion": "1.1.0"
+  },
+  "verification": {
+    "regressionTests": "47/47 PASSED",
+    "federationScore": "100/100 (A+)",
+    "driScore": "100/100 PASS",
+    "governanceScore": "98/100 PASS"
+  },
+  "externalAssurance": {
+    "penetrationTest": "Booked Q3 2026 (CyberSecure Int.)",
+    "accessibilityAudit": "Scheduled Q3 2026 (WCAG AAA)",
+    "gdprReview": "In Review (Legal Counsel)"
+  },
+  "approvalChain": [
+    {
+      "role": "Architecture Review Board",
+      "status": "RATIFIED"
+    },
+    {
+      "role": "Security Authority",
+      "status": "RATIFIED"
+    },
+    {
+      "role": "Commercial Launch Authority",
+      "status": "RATIFIED"
+    }
+  ],
+  "signature": "af09cd55f666f303a2f6d582985f8082f964c19a4d9f1c11f15e76091629be05"
+}

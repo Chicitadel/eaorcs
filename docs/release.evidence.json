@@ -1,8 +1,8 @@
 {
-  "releaseId": "rel-2026.3.0-LTS-e8d09481",
+  "releaseId": "rel-2026.3.0-LTS-247f96da",
   "version": "2026.3.0-LTS",
   "gitCommit": "HEAD",
-  "buildTimestamp": "2026-08-06T19:37:09.150Z",
+  "buildTimestamp": "2026-08-06T19:41:58.597Z",
   "positioning": "EAORCS — The Software Trust & Autonomous Governance Capability of the Air Roofers Platform",
   "hashes": {
     "sbomHash": "3565d72c0ff3b6fa2347fd3875164ee4f78e82b864bc3ca0d1d79bdb8d3765c2",
@@ -24,18 +24,18 @@
     {
       "role": "Architecture Review Board",
       "status": "RATIFIED",
-      "timestamp": "2026-08-06T19:37:09.150Z"
+      "timestamp": "2026-08-06T19:41:58.597Z"
     },
     {
       "role": "Security Authority",
       "status": "RATIFIED",
-      "timestamp": "2026-08-06T19:37:09.150Z"
+      "timestamp": "2026-08-06T19:41:58.597Z"
     },
     {
       "role": "Commercial Launch Authority",
       "status": "RATIFIED",
-      "timestamp": "2026-08-06T19:37:09.150Z"
+      "timestamp": "2026-08-06T19:41:58.597Z"
     }
   ],
-  "signature": "4f3734c89f6b06ba5346defb09baab283bb5c3f221181a2050f7a62f21accd9d"
+  "signature": "902dd9b3adb1e2401a839c6406bbfaa80748a17b098b0bf46cdc63e942771537"
 }
