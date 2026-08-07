@@ -766,9 +766,95 @@
       from { transform: translateX(100%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
     }
+    /* Subsystem 3: Dual-Mode Session Awareness & Cloud Hyperlinks Bar */
+    .session-awareness-bar {
+      background: rgba(11, 15, 25, 0.95);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+      padding: 0.4rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      font-family: 'JetBrains Mono', var(--font-mono, monospace);
+      color: #94a3b8;
+      position: relative;
+      z-index: 101;
+    }
+
+    .session-badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .session-badge-container .session-item {
+      color: #cbd5e1;
+    }
+
+    .session-badge-container .session-item strong {
+      color: #f8fafc;
+    }
+
+    .session-divider {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .status-dot-green {
+      color: #10b981;
+      text-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+    }
+
+    .status-dot-cyan {
+      color: #38bdf8;
+      text-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+    }
+
+    .cloud-hyperlinks-container {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .cloud-action-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      font-size: 0.76rem;
+    }
+
+    .cloud-action-link:hover {
+      color: #818cf8;
+      text-shadow: 0 0 8px rgba(129, 140, 248, 0.5);
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Dual-Mode Session Awareness & Cloud Hyperlinks Bar -->
+  <div class="session-awareness-bar">
+    <div class="session-badge-container">
+      <span class="session-item"><strong>Signed in:</strong> Ignatus Chika Ujomor (Air Roofers SAS)</span>
+      <span class="session-divider">|</span>
+      <span class="session-item"><strong>License:</strong> Enterprise Professional</span>
+      <span class="session-divider">|</span>
+      <span class="session-item"><strong>Session:</strong> <span class="status-dot-green">●</span> Active (Offline Mode Enabled)</span>
+      <span class="session-divider">|</span>
+      <span class="session-item"><strong>Last Validation:</strong> Today 18:32</span>
+      <span class="session-divider">|</span>
+      <span class="session-item"><strong>Trust Level:</strong> <span class="status-dot-cyan">●</span> Verified (Project Local)</span>
+    </div>
+    <div class="cloud-hyperlinks-container">
+      <a href="https://eaorcs.ujomor.com" target="_blank" class="cloud-action-link">[ View Online ]</a>
+      <a href="https://developer.ujomor.com" target="_blank" class="cloud-action-link">[ Open Developer Portal ]</a>
+      <a href="https://marketplace.ujomor.com" target="_blank" class="cloud-action-link">[ Browse Marketplace ]</a>
+      <a href="https://account.ujomor.com" target="_blank" class="cloud-action-link">[ Manage Account ]</a>
+    </div>
+  </div>
 
   <!-- Top Navigation Bar -->
   <nav class="top-navbar">

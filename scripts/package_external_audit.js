@@ -287,10 +287,14 @@ const releaseEaorcsDxcPath = path.join(releaseDir, 'eaorcs_dxc.js');
 const docsCenterHtmlPath = path.join(eaorcsRoot, 'docs', 'docs_center.html');
 const documentationIntelligenceEnginePath = path.join(eaorcsRoot, 'engine', 'docs', 'DocumentationIntelligenceEngine.js');
 const eaorcsDicPath = path.join(eaorcsRoot, 'bin', 'commercial', 'eaorcs_dic.js');
+const dualModeSessionEnginePath = path.join(eaorcsRoot, 'engine', 'session', 'DualModeSessionEngine.js');
+const eaorcsSessionPath = path.join(eaorcsRoot, 'bin', 'commercial', 'eaorcs_session.js');
 
 const releaseDocsCenterHtmlPath = path.join(releaseDir, 'docs_center.html');
 const releaseDocumentationIntelligenceEnginePath = path.join(releaseDir, 'DocumentationIntelligenceEngine.js');
 const releaseEaorcsDicPath = path.join(releaseDir, 'eaorcs_dic.js');
+const releaseDualModeSessionEnginePath = path.join(releaseDir, 'DualModeSessionEngine.js');
+const releaseEaorcsSessionPath = path.join(releaseDir, 'eaorcs_session.js');
 
 if (fs.existsSync(cliCenterHtmlPath)) fs.copyFileSync(cliCenterHtmlPath, releaseCliCenterHtmlPath);
 if (fs.existsSync(licenseCenterHtmlPath)) fs.copyFileSync(licenseCenterHtmlPath, releaseLicenseCenterHtmlPath);
@@ -301,6 +305,8 @@ if (fs.existsSync(eaorcsDxcPath)) fs.copyFileSync(eaorcsDxcPath, releaseEaorcsDx
 if (fs.existsSync(docsCenterHtmlPath)) fs.copyFileSync(docsCenterHtmlPath, releaseDocsCenterHtmlPath);
 if (fs.existsSync(documentationIntelligenceEnginePath)) fs.copyFileSync(documentationIntelligenceEnginePath, releaseDocumentationIntelligenceEnginePath);
 if (fs.existsSync(eaorcsDicPath)) fs.copyFileSync(eaorcsDicPath, releaseEaorcsDicPath);
+if (fs.existsSync(dualModeSessionEnginePath)) fs.copyFileSync(dualModeSessionEnginePath, releaseDualModeSessionEnginePath);
+if (fs.existsSync(eaorcsSessionPath)) fs.copyFileSync(eaorcsSessionPath, releaseEaorcsSessionPath);
 
 
 function safeUnlink(filePath) {
@@ -409,7 +415,9 @@ for (const entry of packageBuilders) {
             eaorcsDxcPath,
             docsCenterHtmlPath,
             documentationIntelligenceEnginePath,
-            eaorcsDicPath
+            eaorcsDicPath,
+            dualModeSessionEnginePath,
+            eaorcsSessionPath
         ];
 
         if (label !== '01_source_snapshot') {
@@ -552,6 +560,8 @@ if (fs.existsSync(eaorcsDxcPath)) checksumLines.push(`${fileStats(eaorcsDxcPath)
 if (fs.existsSync(docsCenterHtmlPath)) checksumLines.push(`${fileStats(docsCenterHtmlPath).hash}  docs_center.html`);
 if (fs.existsSync(documentationIntelligenceEnginePath)) checksumLines.push(`${fileStats(documentationIntelligenceEnginePath).hash}  DocumentationIntelligenceEngine.js`);
 if (fs.existsSync(eaorcsDicPath)) checksumLines.push(`${fileStats(eaorcsDicPath).hash}  eaorcs_dic.js`);
+if (fs.existsSync(dualModeSessionEnginePath)) checksumLines.push(`${fileStats(dualModeSessionEnginePath).hash}  DualModeSessionEngine.js`);
+if (fs.existsSync(eaorcsSessionPath)) checksumLines.push(`${fileStats(eaorcsSessionPath).hash}  eaorcs_session.js`);
 
 
 

@@ -370,6 +370,18 @@ class EAORCS {
         }
         return engine.getOverview(options);
     }
+
+    static getDualModeSession(options = {}) {
+        const DualModeSessionEngine = require('./session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine(options);
+        return engine.getSessionStatus(options);
+    }
+
+    static authenticateSession(options = {}) {
+        const DualModeSessionEngine = require('./session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine(options);
+        return engine.authenticateSession(options);
+    }
 }
 
 module.exports = EAORCS;

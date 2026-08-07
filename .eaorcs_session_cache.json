@@ -1,0 +1,23 @@
+{
+  "version": "2026.3.1-LTS",
+  "updatedAt": "2026-08-07T16:48:55.159Z",
+  "mode": "OFFLINE_FIRST",
+  "workspace": "D:\\ujomor-platform\\products\\eaorcs",
+  "session": {
+    "token": "EAORCS-SESS.eyJzZXNzaW9uSWQiOiJTRVNTLTNjY2Q5NGQ3NzdiNjUxODUiLCJ1c2VyIjoiY2xpLXJ1bi11c2VyIiwidGllciI6IkNPTU1FUkNJQUwiLCJ3b3Jrc3BhY2UiOiJEOlxcdWpvbW9yLXBsYXRmb3JtXFxwcm9kdWN0c1xcZWFvcmNzIiwiaXNzdWVkQXQiOiIyMDI2LTA4LTA3VDE2OjQ4OjU1LjE1OVoiLCJleHBpcmVzQXQiOiIyMDI2LTA4LTA4VDE2OjQ4OjU1LjE1OVoiLCJtb2RlIjoiT0ZGTElORV9GSVJTVCJ9.82f875554e395f4bdb3981b6dfb9aaa8eba017806c41a39d4b52e6cc8e478d7e",
+    "sessionId": "SESS-3ccd94d777b65185",
+    "payload": {
+      "sessionId": "SESS-3ccd94d777b65185",
+      "user": "cli-run-user",
+      "tier": "COMMERCIAL",
+      "workspace": "D:\\ujomor-platform\\products\\eaorcs",
+      "issuedAt": "2026-08-07T16:48:55.159Z",
+      "expiresAt": "2026-08-08T16:48:55.159Z",
+      "mode": "OFFLINE_FIRST"
+    },
+    "signature": "82f875554e395f4bdb3981b6dfb9aaa8eba017806c41a39d4b52e6cc8e478d7e",
+    "tier": "COMMERCIAL",
+    "issuedAt": "2026-08-07T16:48:55.159Z",
+    "expiresAt": "2026-08-08T16:48:55.159Z"
+  }
+}

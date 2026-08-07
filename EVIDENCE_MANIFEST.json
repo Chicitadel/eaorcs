@@ -4,7 +4,7 @@
     "project": "Universal Autonomous AI Governance Operating System (UAIGOS)",
     "module": "EAORCS Commercial Evidence Index",
     "author": "Ujomor Systems & Enterprise Governance Authority",
-    "generatedAt": "2026-08-07T16:29:25.682Z",
+    "generatedAt": "2026-08-07T16:49:42.801Z",
     "classification": "ENTERPRISE | RESTRICTED"
   },
   "summary": {
@@ -15,15 +15,15 @@
   "categories": {
     "security": [
       {
-        "id": "3ae665f2-6cc1-4850-b7f4-69e3faa75fe0",
+        "id": "1516451a-8419-4a1f-a462-ed36ce796f50",
         "category": "security",
         "name": "security_baseline_attestation.json",
         "path": "evidence/security/security_baseline_attestation.json",
-        "sha256": "56ab11550324bd66fd9969f31d671353d4b7303558e1499d53518cd468032dd7",
+        "sha256": "178049dde469a1a2da9ec55e0b5c93707e2639ebf7a43b7e215157a128bbbfd7",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -41,15 +41,15 @@
     ],
     "performance": [
       {
-        "id": "aa1fb750-5893-4372-b2f9-0c40cae7e94f",
+        "id": "8c50e4e5-bc11-4909-bfd5-5522c9b5b108",
         "category": "performance",
         "name": "performance_baseline_attestation.json",
         "path": "evidence/performance/performance_baseline_attestation.json",
-        "sha256": "286901148b10a8e9c91894560e47a8b576244dba5a2c2d58d99e76a2fd4711b0",
+        "sha256": "d557b2106f97417c0cceacd50723cb99c7e8d4ac7429d91cd30ac91ac05c4320",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -67,15 +67,15 @@
     ],
     "packaging": [
       {
-        "id": "89d02735-413f-4996-a156-d9a65085cf9b",
+        "id": "a6467295-7e4b-4b36-ba08-3d5a6315f272",
         "category": "packaging",
         "name": "packaging_baseline_attestation.json",
         "path": "evidence/packaging/packaging_baseline_attestation.json",
-        "sha256": "558c7f36eed2ee9d10560486f59fcffb45993ef868782f4f7b6a2a261a8c2beb",
+        "sha256": "bfcf1cf40335d5db081ba9e833ee1db0d997879d64af664383b57be268150bd6",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -93,15 +93,15 @@
     ],
     "licensing": [
       {
-        "id": "727e6aff-b768-4637-8222-6a5c1e5f27f7",
+        "id": "d37e2d1a-3d71-4cac-8448-2d76906b8d07",
         "category": "licensing",
         "name": "licensing_baseline_attestation.json",
         "path": "evidence/licensing/licensing_baseline_attestation.json",
-        "sha256": "5f43ec5f52f98db384658ad1d2f527eca44045fe26622befc3b83926000cf1b7",
+        "sha256": "e837dfb556e9badfd70243474a5046221abc34a6a1369580af37c4d116eddb11",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -119,15 +119,15 @@
     ],
     "governance": [
       {
-        "id": "d7491328-c4c8-4f65-a194-2e912495ddf4",
+        "id": "dd019b12-7371-4543-abbc-0169dddafe7d",
         "category": "governance",
         "name": "governance_baseline_attestation.json",
         "path": "evidence/governance/governance_baseline_attestation.json",
-        "sha256": "670ba179cf19b6f377ead5c92215eef52ec51e77776f737840c97a5da9f82b25",
+        "sha256": "4ca97abb49bec8434612fe8180dc101a989d973c3d3dd6bceccf6e9efec678e6",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -145,15 +145,15 @@
     ],
     "architecture": [
       {
-        "id": "f075283d-5320-4434-81f8-871a1a46127a",
+        "id": "4ebfcaf9-05c5-4b8c-9382-06b8b3a1f3d6",
         "category": "architecture",
         "name": "architecture_baseline_attestation.json",
         "path": "evidence/architecture/architecture_baseline_attestation.json",
-        "sha256": "2739d60465bbcc96e4ef4c898cefc7affc10b0a4948b0ed247cb1d902d4e9ed4",
+        "sha256": "83f9a72400cfe029c78d1f3ca59868207537b0e1e782d15aec186d36c7b872fe",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -171,15 +171,15 @@
     ],
     "marketplace": [
       {
-        "id": "97a222e9-867d-476c-b5f4-93274bcfc518",
+        "id": "37fd179a-473f-4b1b-a60d-a64d66a8b685",
         "category": "marketplace",
         "name": "marketplace_baseline_attestation.json",
         "path": "evidence/marketplace/marketplace_baseline_attestation.json",
-        "sha256": "7e3b3f70ae1fd77e2c1589589c60346e02b7f2859704558b7ee14cfde7f74fb8",
+        "sha256": "19da8ef10d625da04226f64ced9fd09a1dfaec859cf7091a293a9adbd2a7ea03",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -197,15 +197,15 @@
     ],
     "deployment": [
       {
-        "id": "ca1f2c5f-5f34-4c77-8e24-260bf91053a4",
+        "id": "a6a248df-4703-42a3-8e43-cc8308385671",
         "category": "deployment",
         "name": "deployment_baseline_attestation.json",
         "path": "evidence/deployment/deployment_baseline_attestation.json",
-        "sha256": "a5080e3b7fbb8f2aa30cd68f2705aae3419b0defea7314fd383cac1bafe4106e",
+        "sha256": "28bc3affbcbcc0e49650ad5c1c0c6288d2a2da76ebbebe80ce587b53fdae2cdb",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },
@@ -223,15 +223,15 @@
     ],
     "validation": [
       {
-        "id": "572cb539-fe35-4596-9e86-ca0a984c7ed4",
+        "id": "7284f4a5-61c9-44dd-8273-153885d8d409",
         "category": "validation",
         "name": "validation_baseline_attestation.json",
         "path": "evidence/validation/validation_baseline_attestation.json",
-        "sha256": "d280ca3872df94d1eef4af03593b790bd4df17172f76822d0d7d9f688aaabe67",
+        "sha256": "5b0a4b1d167b82c847ac995265554ef0d8ac2e16052ea574f0aef6bd60e802ff",
         "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
-        "timestamp": "2026-08-07T16:29:25.682Z",
+        "timestamp": "2026-08-07T16:49:42.801Z",
         "expiration": {
-          "expiresAt": "2027-08-07T16:29:25.682Z",
+          "expiresAt": "2027-08-07T16:49:42.801Z",
           "validityPeriodDays": 365,
           "status": "ACTIVE"
         },

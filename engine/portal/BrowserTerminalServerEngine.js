@@ -319,6 +319,47 @@ class BrowserTerminalServerEngine {
         return engine.getKnowledgeGraph(options);
     }
 
+    getSessionStatus(options = {}) {
+        const DualModeSessionEngine = require('../session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine({ workspace: options.workspace || this.baseDir, ...options });
+        return engine.getSessionStatus(options);
+    }
+
+    authenticateSession(credentials = {}, options = {}) {
+        const DualModeSessionEngine = require('../session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine({ workspace: options.workspace || this.baseDir, ...options });
+        return engine.authenticateSession(credentials);
+    }
+
+    validateSessionToken(tokenStr, options = {}) {
+        const DualModeSessionEngine = require('../session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine({ workspace: options.workspace || this.baseDir, ...options });
+        const token = tokenStr || options.token || (engine.deserializeSessionCache()?.session?.token);
+        if (!token) {
+            return { valid: false, reason: 'NO_TOKEN_PROVIDED', message: 'No token supplied or found in offline session cache.' };
+        }
+        const result = engine.verifySessionToken(token);
+        result.token = token;
+        return result;
+    }
+
+    getOfflineToken(options = {}) {
+        const DualModeSessionEngine = require('../session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine({ workspace: options.workspace || this.baseDir, ...options });
+        const cached = engine.deserializeSessionCache();
+        if (cached && cached.session && cached.session.token) {
+            return { status: 'SUCCESS', token: cached.session.token, session: cached.session };
+        }
+        const generated = engine.generateSessionToken(options);
+        return { status: 'SUCCESS', token: generated.token, session: generated };
+    }
+
+    evaluateTrustProvenance(provenanceInput, options = {}) {
+        const DualModeSessionEngine = require('../session/DualModeSessionEngine');
+        const engine = new DualModeSessionEngine({ workspace: options.workspace || this.baseDir, ...options });
+        return engine.evaluateTrustProvenance(null, { input: provenanceInput, ...options });
+    }
+
 
     /**
      * Launches the HTTP server serving REST endpoints and Browser Terminal interface.
@@ -359,6 +400,52 @@ class BrowserTerminalServerEngine {
             if (reqPath === '/' || reqPath === '/terminal' || reqPath === '/index.html') {
                 res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
                 res.end(this.renderTerminalHtml(port, workspace));
+            } else if (reqPath === '/api/session/status') {
+                sendJson(200, { status: 'SUCCESS', session: this.getSessionStatus({ workspace, ...queryObj }) });
+            } else if (reqPath === '/api/session/authenticate') {
+                if (reqMethod === 'POST') {
+                    getJsonBody((err, body) => {
+                        const resData = this.authenticateSession({ ...queryObj, ...body }, { workspace });
+                        sendJson(200, { status: 'SUCCESS', authentication: resData });
+                    });
+                } else {
+                    const resData = this.authenticateSession(queryObj, { workspace });
+                    sendJson(200, { status: 'SUCCESS', authentication: resData });
+                }
+            } else if (reqPath === '/api/session/validate') {
+                if (reqMethod === 'POST') {
+                    getJsonBody((err, body) => {
+                        const token = body.token || queryObj.token;
+                        const resData = this.validateSessionToken(token, { workspace, ...queryObj, ...body });
+                        sendJson(200, { status: 'SUCCESS', validation: resData });
+                    });
+                } else {
+                    const token = queryObj.token;
+                    const resData = this.validateSessionToken(token, { workspace, ...queryObj });
+                    sendJson(200, { status: 'SUCCESS', validation: resData });
+                }
+            } else if (reqPath === '/api/session/offline-token') {
+                if (reqMethod === 'POST') {
+                    getJsonBody((err, body) => {
+                        const resData = this.getOfflineToken({ workspace, ...queryObj, ...body });
+                        sendJson(200, { status: 'SUCCESS', offlineToken: resData });
+                    });
+                } else {
+                    const resData = this.getOfflineToken({ workspace, ...queryObj });
+                    sendJson(200, { status: 'SUCCESS', offlineToken: resData });
+                }
+            } else if (reqPath === '/api/session/trust') {
+                if (reqMethod === 'POST') {
+                    getJsonBody((err, body) => {
+                        const prov = body.provenance || queryObj.provenance || body.path || queryObj.path;
+                        const resData = this.evaluateTrustProvenance(prov, { workspace, ...queryObj, ...body });
+                        sendJson(200, { status: 'SUCCESS', trust: resData });
+                    });
+                } else {
+                    const prov = queryObj.provenance || queryObj.path;
+                    const resData = this.evaluateTrustProvenance(prov, { workspace, ...queryObj });
+                    sendJson(200, { status: 'SUCCESS', trust: resData });
+                }
             } else if (reqPath === '/api/cli/commands' && reqMethod === 'GET') {
                 sendJson(200, { status: 'SUCCESS', commands: this.getCommandRegistry() });
             } else if (reqPath === '/api/license/matrix' && reqMethod === 'GET') {

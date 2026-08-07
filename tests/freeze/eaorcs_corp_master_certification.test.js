@@ -73,11 +73,12 @@ async function runMasterCertification() {
     await runPhase('Subsystem 2 & DX — DX CLI & Browser Terminal', 'eaorcs_corp_dx_cli_subsystem.test.js');
     await runPhase('Subsystem 4 — DXC Environment & Terminal Server', 'eaorcs_corp_dxc_environment.test.js');
     await runPhase('Subsystem 4 — DIC Knowledge & Documentation Intelligence', 'eaorcs_corp_dic_knowledge.test.js');
+    await runPhase('Subsystem 4 — Dual-Mode Session & Authentication', 'eaorcs_corp_dual_mode_session.test.js');
 
     // Verify all engine files exist
     console.log('\n[ENGINE FILE INVENTORY]');
     const expectedEngines = [
-        // Subsystem 1 & 4 Home & History & EEOS & DIC
+        // Subsystem 1 & 4 Home & History & EEOS & DIC & Dual-Mode Session
         'engine/governance/ReportHistoryEngine.js',
         'engine/operations/WorkspaceMaintenanceEngine.js',
         'engine/intelligence/RepositoryIntelligenceEngine.js',
@@ -86,6 +87,7 @@ async function runMasterCertification() {
         'engine/dxc/EnvironmentDetectionEngine.js',
         'engine/docs/DocumentationIntelligenceEngine.js',
         'engine/portal/DocumentationIntelligenceEngine.js',
+        'engine/session/DualModeSessionEngine.js',
 
         // Streams J, K, L (Customer Validation, Blueprint, 5-Year Strategy)
         'engine/validation/CustomerValidationPackageEngine.js',
