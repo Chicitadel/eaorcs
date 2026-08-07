@@ -1,13 +1,13 @@
 # Universal Autonomous AI Governance Operating System (UAIGOS)
 # Commercial Evidence Index
-# Generated: 2026-08-07T15:02:40.295Z
+# Generated: 2026-08-07T15:25:29.489Z
 
 manifestVersion: 2026.3.1-LTS
 header:
   project: Universal Autonomous AI Governance Operating System (UAIGOS)
   module: EAORCS Commercial Evidence Index
   author: Ujomor Systems & Enterprise Governance Authority
-  generatedAt: "2026-08-07T15:02:40.295Z"
+  generatedAt: "2026-08-07T15:25:29.489Z"
   classification: ENTERPRISE | RESTRICTED
 summary:
   totalCategories: 9
@@ -15,15 +15,15 @@ summary:
   integrityStatus: VALIDATED_HMAC_SHA256
 categories:
   security:
-    - id: 23e4e468-8780-494d-96dc-9b81bb51ce14
+    - id: 293b172d-4079-4ffa-a68a-ff721fbf999d
       category: security
       name: security_baseline_attestation.json
       path: evidence/security/security_baseline_attestation.json
-      sha256: 8ae92cec22a38bc43d790c091a5d8a05c99ff357908ef3e545eeb514901939c2
+      sha256: e57eb2b180b333e738536871f3cf253b445e25880887de3a5d157957ca90ded2
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -35,15 +35,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   performance:
-    - id: ba40bde9-62b7-48ff-be49-765691b1fabe
+    - id: 709d502f-d5f0-4901-808d-4a94a6f86170
       category: performance
       name: performance_baseline_attestation.json
       path: evidence/performance/performance_baseline_attestation.json
-      sha256: 0e295c38bd6c18cc5dda4c2b6908e5e35ed08fc6da9b304f22abb4eae0522a97
+      sha256: ade911e92c2604e214fa58dbdf71b026985c8bda020b188e83c09284026a914c
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -55,15 +55,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   packaging:
-    - id: 5e398c86-50a9-475c-88cb-fe036439f0ad
+    - id: 5ffe6ba4-5cf7-4fe4-b446-c3ce30039440
       category: packaging
       name: packaging_baseline_attestation.json
       path: evidence/packaging/packaging_baseline_attestation.json
-      sha256: 6e69e2f88d9b73e0dba6876c636e0d55fcd552a5600742855043fd915119d7e5
+      sha256: 97b402842f5b1701714a064efc7d104516fa557b45fbddad1558e27f30dd26dc
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -75,15 +75,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   licensing:
-    - id: b26b68a9-9267-4852-809f-96c61b445ce5
+    - id: f879b17d-6645-4cf7-b38e-6a250398dbb2
       category: licensing
       name: licensing_baseline_attestation.json
       path: evidence/licensing/licensing_baseline_attestation.json
-      sha256: ad3886ce8fb8982107a62317c4d30d09da08c239ffcfbf7647453df26fab4278
+      sha256: 5ea967f7fe2086753345631032763e939f5e5333f4abe582074be0afa4bb7c3f
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -95,15 +95,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   governance:
-    - id: f7a7f6af-6cda-4db6-ac64-40b8773e4728
+    - id: 0aa097ce-be8d-4aeb-b7b4-1a7bd3aac789
       category: governance
       name: governance_baseline_attestation.json
       path: evidence/governance/governance_baseline_attestation.json
-      sha256: 0fb12db812c294de095246691fed890f83fff24e7c768acef49bee0b694849ff
+      sha256: 478755f80d602413b4a5a2226a0a6dd9a8ba34d6c093d261c0fc6873e65d8e75
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -115,15 +115,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   architecture:
-    - id: 2cc48ca9-c052-4c59-8251-352f1f2f13bf
+    - id: 03b590b9-909b-4bb6-9da7-86b56e683952
       category: architecture
       name: architecture_baseline_attestation.json
       path: evidence/architecture/architecture_baseline_attestation.json
-      sha256: d244a5fe7ddeb3be125dc5a20b54899b790527f1259330659d5feca8e8491448
+      sha256: 727ee55058d171b6207b64ec7f1caa49d36f57f720aa80356f0d4cc787104883
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -135,15 +135,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   marketplace:
-    - id: 999bf256-1d75-4e46-9488-3a11884cbea0
+    - id: f29bdf55-ee10-48d4-875f-c493690b8d99
       category: marketplace
       name: marketplace_baseline_attestation.json
       path: evidence/marketplace/marketplace_baseline_attestation.json
-      sha256: 87b70d5303ca8304fbb428cdc77e49a9b2199521e4d8896cad50208b0edc19d8
+      sha256: 299370af26480d0c2eaa0af61299a1c846dbe43361b7aca6292fd5c252f5638b
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -155,15 +155,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   deployment:
-    - id: ea54f334-f20f-44b5-9945-9556d1a2ddeb
+    - id: 64656401-3ffb-4623-9810-1cf20db17543
       category: deployment
       name: deployment_baseline_attestation.json
       path: evidence/deployment/deployment_baseline_attestation.json
-      sha256: 8523ff137aebec753d20e4db25b2cb575a483e04f5b1d25d37455fc5beffc03e
+      sha256: 9526f0697c207cb3f87bb3073edb70ee4c9833c39f0e5a0722bac2d6ef43eaef
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:
@@ -175,15 +175,15 @@ categories:
           - NIST
         reviewStatus: APPROVED
   validation:
-    - id: b809e245-83a4-4224-aa92-253db6ba4ef6
+    - id: 3a54b486-24cd-40af-877a-f8fa1088633b
       category: validation
       name: validation_baseline_attestation.json
       path: evidence/validation/validation_baseline_attestation.json
-      sha256: 72ffdcec1aa98b643ae20a9f3a3be471a2578504352b6f5191c74b3e2d424527
+      sha256: 5db42b82ed7d82c5add07260d2a40e83cfb7bb3c2b3f8cda0b431ccf799078bb
       ownerClaim: Ujomor Systems & Enterprise Governance Authority
-      timestamp: "2026-08-07T15:02:40.295Z"
+      timestamp: "2026-08-07T15:25:29.489Z"
       expiration:
-        expiresAt: "2027-08-07T15:02:40.295Z"
+        expiresAt: "2027-08-07T15:25:29.489Z"
         validityPeriodDays: 365
         status: ACTIVE
       governance:

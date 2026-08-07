@@ -1,0 +1,1672 @@
+<!--
+/******************************************************************************
+ * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+ * Module         : EAORCS Enterprise Engineering Operating System (EEOS) App
+ * File           : eeos_app.html
+ * Version        : 2026.3.1-LTS
+ * Author         : Ujomor Systems & Enterprise Governance Authority
+ * Organization   : Ujomor Systems & Enterprise Governance
+ * Created Date   : 2026-08-07
+ * Last Modified  : 2026-08-07
+ * Classification : ENTERPRISE | RESTRICTED
+ *
+ * Governance:
+ * - Security Reviewed
+ * - Architecture Controlled
+ * - Protocol Frozen
+ * - Modularization Enforced
+ * - Corporate Policy Governed
+ *
+ * CORP: Subsystem 3 / EAORCS-CORP-S3 / EEOS-APP
+ *
+ * Standards:
+ * - ISO 27001
+ * - SOC 2
+ * - OWASP ASVS
+ * - NIST
+ *
+ * Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
+ ******************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EAORCS EEOS - Enterprise Engineering Operating System</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #070a12;
+      --bg-card: rgba(15, 23, 42, 0.65);
+      --bg-card-hover: rgba(30, 41, 59, 0.75);
+      --bg-elevated: rgba(30, 41, 59, 0.85);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(56, 189, 248, 0.3);
+      
+      --accent-cyan: #38bdf8;
+      --accent-indigo: #6366f1;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #ef4444;
+      --accent-purple: #a855f7;
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 15% 15%, rgba(99, 102, 241, 0.15) 0px, transparent 40%),
+        radial-gradient(at 85% 20%, rgba(56, 189, 248, 0.12) 0px, transparent 40%),
+        radial-gradient(at 50% 80%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(15, 23, 42, 0.5);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.2);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(148, 163, 184, 0.4);
+    }
+
+    /* Header Bar */
+    header {
+      background: rgba(11, 15, 25, 0.8);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #fff;
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-version {
+      font-size: 0.7rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent-cyan);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Role Switcher */
+    .role-switcher {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+    }
+
+    .role-switcher select {
+      background: transparent;
+      border: none;
+      color: var(--accent-cyan);
+      font-family: var(--font-sans);
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .search-trigger {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.45rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .search-trigger:hover {
+      border-color: var(--accent-cyan);
+      color: var(--text-main);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+    }
+
+    .shortcut-badge {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+    }
+
+    .api-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      padding: 0.35rem 0.65rem;
+      border-radius: 20px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent-emerald);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .btn-ai-toggle {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(99, 102, 241, 0.2));
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      color: #e9d5ff;
+      padding: 0.45rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .btn-ai-toggle:hover {
+      background: linear-gradient(135deg, rgba(168, 85, 247, 0.35), rgba(99, 102, 241, 0.35));
+      box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+    }
+
+    /* Sub-header Navigation Tabs */
+    nav.nav-tabs {
+      background: rgba(15, 23, 42, 0.5);
+      border-bottom: 1px solid var(--border-color);
+      padding: 0 1.5rem;
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+    }
+
+    .nav-tab {
+      padding: 0.85rem 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .nav-tab:hover {
+      color: var(--text-main);
+    }
+
+    .nav-tab.active {
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    .nav-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-indigo));
+      box-shadow: 0 0 8px var(--accent-cyan);
+    }
+
+    /* Main Container & Workspaces */
+    main {
+      flex: 1;
+      padding: 1.5rem;
+      max-width: 1600px;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+    }
+
+    .workspace-pane {
+      display: none;
+      animation: fadeIn 0.25s ease-in-out forwards;
+    }
+
+    .workspace-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cards & Components */
+    .glass-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .metric-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent-indigo);
+    }
+
+    .metric-card.emerald::before { background: var(--accent-emerald); }
+    .metric-card.cyan::before { background: var(--accent-cyan); }
+    .metric-card.amber::before { background: var(--accent-amber); }
+    .metric-card.purple::before { background: var(--accent-purple); }
+
+    .metric-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric-value {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .metric-sub {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-cta {
+      background: linear-gradient(135deg, #0284c7, #4f46e5);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+      transition: all 0.2s;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+    }
+
+    /* Workspace 1: Mission Control Specifics */
+    .mission-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .charts-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (max-width: 1024px) {
+      .charts-row { grid-template-columns: 1fr; }
+    }
+
+    .blocked-banner {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 8px;
+      padding: 0.85rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fca5a5;
+      font-size: 0.9rem;
+    }
+
+    /* Workspace 2: Federation Explorer */
+    .federation-tree-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .tree-root-node {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(56, 189, 248, 0.2));
+      border: 1px solid var(--accent-indigo);
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      max-width: 300px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+      cursor: pointer;
+    }
+
+    .tree-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .tree-node-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .tree-node-card:hover {
+      border-color: var(--accent-cyan);
+      transform: translateY(-2px);
+      background: rgba(30, 41, 59, 0.9);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .tree-node-title {
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tree-node-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    /* Workspace 3: Repository Explorer */
+    .repo-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 1rem;
+      min-height: 550px;
+    }
+
+    .file-tree-sidebar {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      overflow-y: auto;
+      max-height: 600px;
+    }
+
+    .tree-item {
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+    }
+
+    .tree-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+    }
+
+    .tree-item.selected {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    .tree-indent { margin-left: 1.2rem; }
+
+    .file-viewer-pane {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .viewer-header {
+      background: rgba(11, 15, 25, 0.7);
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .code-editor {
+      background: #090d16;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      flex: 1;
+      overflow: auto;
+    }
+
+    .code-line {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .line-num {
+      color: var(--text-dim);
+      user-select: none;
+      width: 25px;
+      text-align: right;
+    }
+
+    /* Workspace 4: Execution Studio */
+    .execution-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .stage-pipeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .stage-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .stage-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .progress-bar-bg {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-indigo), var(--accent-cyan));
+      border-radius: 3px;
+      transition: width 0.3s;
+    }
+
+    .terminal-container {
+      background: #050811;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      height: 420px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+    }
+
+    .terminal-header {
+      background: rgba(15, 23, 42, 0.9);
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-muted);
+    }
+
+    .terminal-body {
+      padding: 1rem;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .log-entry { display: flex; gap: 0.75rem; }
+    .log-time { color: var(--text-dim); }
+    .log-tag { font-weight: 700; width: 75px; }
+    .log-tag.info { color: var(--accent-cyan); }
+    .log-tag.success { color: var(--accent-emerald); }
+    .log-tag.warn { color: var(--accent-amber); }
+    .log-tag.gov { color: var(--accent-purple); }
+
+    /* Workspace 5: Digital Twin Studio */
+    .digital-twin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .dimension-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      position: relative;
+    }
+
+    .dimension-card:hover {
+      border-color: var(--accent-indigo);
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.25);
+      transform: translateY(-3px);
+    }
+
+    .dim-number {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent-cyan);
+      background: rgba(56, 189, 248, 0.1);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+
+    .dim-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .dim-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    /* Modal / Sidecar Drawer */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .search-modal-content {
+      background: var(--bg-dark);
+      border: 1px solid var(--border-highlight);
+      border-radius: 14px;
+      width: 90%;
+      max-width: 650px;
+      box-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
+      overflow: hidden;
+    }
+
+    .search-modal-header {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .search-modal-input {
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      font-size: 1.1rem;
+      font-family: var(--font-sans);
+      width: 100%;
+      outline: none;
+    }
+
+    .search-results {
+      max-height: 400px;
+      overflow-y: auto;
+      padding: 0.75rem;
+    }
+
+    .search-result-item {
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .search-result-item:hover {
+      background: rgba(56, 189, 248, 0.1);
+    }
+
+    /* Sidecar Drawer AI */
+    .sidecar-drawer {
+      position: fixed;
+      top: 0;
+      right: -420px;
+      width: 420px;
+      height: 100vh;
+      background: rgba(11, 15, 25, 0.95);
+      backdrop-filter: blur(20px);
+      border-left: 1px solid var(--border-color);
+      z-index: 150;
+      transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    }
+
+    .sidecar-drawer.open {
+      right: 0;
+    }
+
+    .drawer-header {
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .drawer-body {
+      flex: 1;
+      padding: 1.25rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: flex-end;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .chat-bubble {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    .chat-bubble.user {
+      background: rgba(99, 102, 241, 0.2);
+      border-color: rgba(99, 102, 241, 0.4);
+      align-self: flex-end;
+    }
+
+    .chat-bubble.ai {
+      background: rgba(15, 23, 42, 0.8);
+      border-color: rgba(168, 85, 247, 0.3);
+    }
+
+    .drawer-footer {
+      padding: 1rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .chat-input {
+      flex: 1;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.6rem 0.85rem;
+      border-radius: 8px;
+      outline: none;
+      font-size: 0.85rem;
+    }
+
+    .btn-send {
+      background: var(--accent-purple);
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* SVG Chart Helpers */
+    .chart-container {
+      width: 100%;
+      height: 200px;
+    }
+
+    /* Utilities */
+    .badge {
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .badge-success { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-warning { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-info { background: rgba(56, 189, 248, 0.15); color: var(--accent-cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
+
+    /* Role-based hidden rules */
+    body.role-executive .hide-executive { display: none !important; }
+    body.role-customer .hide-customer { display: none !important; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Header Bar -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">EE</div>
+      <div>
+        <div class="brand-title">EAORCS Enterprise Engineering OS</div>
+        <div style="display: flex; gap: 0.5rem; align-items: center; margin-top: 2px;">
+          <span class="brand-version">v2026.3.1-LTS</span>
+          <span style="font-size: 0.7rem; color: var(--text-dim);">Ujomor Enterprise Governance</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- Universal Ctrl+K Search Trigger -->
+      <div class="search-trigger" onclick="openSearchModal()">
+        <span>🔍 Search APIs, Modules, ADRs...</span>
+        <span class="shortcut-badge">Ctrl + K</span>
+      </div>
+
+      <!-- Role Switcher -->
+      <div class="role-switcher">
+        <span style="color: var(--text-dim);">Role:</span>
+        <select id="roleSelector" onchange="switchRole(this.value)">
+          <option value="architect">Architect</option>
+          <option value="developer">Developer</option>
+          <option value="qa">QA Engineer</option>
+          <option value="operations">Operations</option>
+          <option value="executive">Executive</option>
+          <option value="customer">Customer View</option>
+        </select>
+      </div>
+
+      <!-- API Status Pill -->
+      <div class="api-status" id="apiStatusPill">
+        <div class="status-dot"></div>
+        <span id="apiStatusText">Connected (5s)</span>
+      </div>
+
+      <!-- AI Assistant Button -->
+      <button class="btn-ai-toggle" onclick="toggleSidecar()">
+        <span>✨ Ask EAORCS</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="nav-tab active" onclick="switchTab('mission-control', this)">
+      <span>🚀 Workspace 1: Mission Control</span>
+    </button>
+    <button class="nav-tab" onclick="switchTab('federation-explorer', this)">
+      <span>🌐 Workspace 2: Federation Explorer</span>
+    </button>
+    <button class="nav-tab" onclick="switchTab('repository-explorer', this)">
+      <span>📁 Workspace 3: Repository Explorer</span>
+    </button>
+    <button class="nav-tab" onclick="switchTab('execution-studio', this)">
+      <span>⚡ Workspace 4: Execution Studio</span>
+    </button>
+    <button class="nav-tab" onclick="switchTab('digital-twin-studio', this)">
+      <span>🌌 Workspace 5: Digital Twin Studio</span>
+    </button>
+  </nav>
+
+  <!-- Main Workspaces Container -->
+  <main>
+
+    <!-- WORKSPACE 1: MISSION CONTROL -->
+    <section id="mission-control" class="workspace-pane active">
+      <div class="mission-header">
+        <div>
+          <h1 style="font-family: var(--font-display); font-size: 1.6rem; font-weight: 700;">Executive Engineering Mission Control</h1>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Real-time enterprise readiness, automated stream governance, and operational execution status.</p>
+        </div>
+        <button class="btn-cta" onclick="startGovernedExecution()">
+          <span>▶ Start Governed Execution</span>
+        </button>
+      </div>
+
+      <!-- Blocked Items Alert Drawer (2 blocked items) -->
+      <div class="blocked-banner">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <span style="font-size: 1.2rem;">⚠️</span>
+          <div>
+            <strong>2 Blocked Execution Items Detected</strong>
+            <div style="font-size: 0.8rem; opacity: 0.85;">- `Module: billing-engine` validation key pending SOC2 signature.</div>
+            <div style="font-size: 0.8rem; opacity: 0.85;">- `Stream: S9-evidence` payload lock requires QA signoff.</div>
+          </div>
+        </div>
+        <button onclick="openAiWithQuery('Diagnose and auto-fix the 2 blocked execution items')" style="background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.5); color: #fff; padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem;">
+          Auto-Fix with AI
+        </button>
+      </div>
+
+      <!-- KPI Metrics Grid -->
+      <div class="grid-4">
+        <div class="metric-card cyan">
+          <div class="metric-label">Active Streams</div>
+          <div class="metric-value" id="kpiStreams">14</div>
+          <div class="metric-sub"><span>● 14/14 Nominal</span></div>
+        </div>
+        <div class="metric-card purple">
+          <div class="metric-label">Active Tasks</div>
+          <div class="metric-value" id="kpiTasks">62</div>
+          <div class="metric-sub"><span>⚡ 82% CPU load</span></div>
+        </div>
+        <div class="metric-card amber">
+          <div class="metric-label">Blocked Items</div>
+          <div class="metric-value" id="kpiBlocked">2</div>
+          <div class="metric-sub"><span>⚠️ Action Required</span></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Estimated Completion</div>
+          <div class="metric-value">6h 21m</div>
+          <div class="metric-sub"><span>⏱ Target: 18:00 UTC</span></div>
+        </div>
+        <div class="metric-card emerald">
+          <div class="metric-label">Commercial Readiness</div>
+          <div class="metric-value" id="kpiReadiness">92%</div>
+          <div class="metric-sub"><span>▲ +4% from Yesterday</span></div>
+        </div>
+        <div class="metric-card emerald">
+          <div class="metric-label">Certification Status</div>
+          <div class="metric-value">98%</div>
+          <div class="metric-sub"><span>✔ ISO27001 Passed</span></div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Packaging Status</div>
+          <div class="metric-value" style="font-size: 1.2rem;">95% Artifacts</div>
+          <div class="metric-sub"><span>📦 Docker & NPM ready</span></div>
+        </div>
+        <div class="metric-card purple">
+          <div class="metric-label">Technical Debt</div>
+          <div class="metric-value" id="kpiDebt">0.8h/kLOC</div>
+          <div class="metric-sub"><span>▼ -22% reduction</span></div>
+        </div>
+      </div>
+
+      <!-- Historical Trend Charts -->
+      <div class="charts-row">
+        <div class="glass-card">
+          <div class="card-title">
+            <span>Readiness Trend (Yesterday vs Today vs Target)</span>
+            <span class="badge badge-info">Target: 98%</span>
+          </div>
+          <div class="chart-container">
+            <svg viewBox="0 0 600 180" style="width: 100%; height: 100%;">
+              <defs>
+                <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <!-- Grid lines -->
+              <line x1="40" y1="30" x2="580" y2="30" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+              <line x1="40" y1="80" x2="580" y2="80" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+              <line x1="40" y1="130" x2="580" y2="130" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+              
+              <!-- Target Line -->
+              <line x1="40" y1="35" x2="580" y2="35" stroke="#10b981" stroke-width="2" stroke-dasharray="6"/>
+              <text x="520" y="28" fill="#10b981" font-size="10" font-family="JetBrains Mono">Target (98%)</text>
+
+              <!-- Area fill -->
+              <polygon points="40,150 120,135 200,110 280,95 360,70 440,55 520,45 520,160 40,160" fill="url(#chartGrad)" />
+              
+              <!-- Line path -->
+              <path d="M40 150 Q 120 135, 200 110 T 360 70 T 520 45" fill="none" stroke="#38bdf8" stroke-width="3"/>
+
+              <!-- Data Dots -->
+              <circle cx="40" cy="150" r="4" fill="#6366f1" />
+              <circle cx="200" cy="110" r="4" fill="#6366f1" />
+              <circle cx="360" cy="70" r="4" fill="#38bdf8" />
+              <circle cx="520" cy="45" r="6" fill="#10b981" stroke="#fff" stroke-width="2" />
+
+              <text x="35" y="170" fill="#64748b" font-size="10">00:00 (Yesterday)</text>
+              <text x="190" y="170" fill="#64748b" font-size="10">12:00</text>
+              <text x="350" y="170" fill="#64748b" font-size="10">00:00 (Today)</text>
+              <text x="500" y="170" fill="#38bdf8" font-size="10">Current (92%)</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-title">Technical Debt Reduction</div>
+          <div class="chart-container">
+            <svg viewBox="0 0 300 180" style="width: 100%; height: 100%;">
+              <!-- Debt reduction bar chart -->
+              <rect x="30" y="40" width="35" height="110" rx="4" fill="rgba(239, 68, 68, 0.4)" />
+              <rect x="95" y="70" width="35" height="80" rx="4" fill="rgba(245, 158, 11, 0.4)" />
+              <rect x="160" y="100" width="35" height="50" rx="4" fill="rgba(99, 102, 241, 0.4)" />
+              <rect x="225" y="125" width="35" height="25" rx="4" fill="rgba(16, 185, 129, 0.8)" />
+
+              <text x="35" y="32" fill="#ef4444" font-size="10" font-family="JetBrains Mono">2.4h</text>
+              <text x="100" y="62" fill="#f59e0b" font-size="10" font-family="JetBrains Mono">1.6h</text>
+              <text x="165" y="92" fill="#6366f1" font-size="10" font-family="JetBrains Mono">1.1h</text>
+              <text x="230" y="117" fill="#10b981" font-size="10" font-family="JetBrains Mono">0.8h</text>
+
+              <text x="32" y="165" fill="#64748b" font-size="9">Wk 1</text>
+              <text x="97" y="165" fill="#64748b" font-size="9">Wk 2</text>
+              <text x="162" y="165" fill="#64748b" font-size="9">Wk 3</text>
+              <text x="227" y="165" fill="#10b981" font-size="9">Now</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- WORKSPACE 2: FEDERATION EXPLORER -->
+    <section id="federation-explorer" class="workspace-pane">
+      <div class="glass-card">
+        <div class="card-title">
+          <span>Air Roofers Federation Hierarchy Graph</span>
+          <span class="badge badge-info">13 Subsystems Connected</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.5rem;">Interactive visual topology of federated modules, ownership bounds, and cross-domain dependencies.</p>
+        
+        <div class="federation-tree-container">
+          <!-- Root Node -->
+          <div class="tree-root-node" onclick="showNodeDetail('Air Roofers Federation Core', 'System Root', '100% Operational', 'Platform Board', '48 APIs')">
+            🏠 Air Roofers Federation
+          </div>
+
+          <div style="text-align: center; color: var(--accent-indigo); font-weight: bold;">│</div>
+
+          <!-- Grid of Subsystem Nodes -->
+          <div class="tree-grid">
+            <div class="tree-node-card" onclick="showNodeDetail('Commercial', 'Subsystem', 'Healthy', 'BizOps Team', '12 APIs')">
+              <div class="tree-node-title"><span>💼 Commercial</span> <span class="badge badge-success">SLA 99.9%</span></div>
+              <div class="tree-node-meta"><span>APIs: 12</span> <span>Debt: 0.1h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Identity', 'Subsystem', 'Healthy', 'SecOps Team', '8 APIs')">
+              <div class="tree-node-title"><span>🔑 Identity</span> <span class="badge badge-success">OAuth/OIDC</span></div>
+              <div class="tree-node-meta"><span>APIs: 8</span> <span>Debt: 0.0h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('CMS', 'Subsystem', 'Healthy', 'Content Team', '15 APIs')">
+              <div class="tree-node-title"><span>📝 CMS</span> <span class="badge badge-success">Headless</span></div>
+              <div class="tree-node-meta"><span>APIs: 15</span> <span>Debt: 0.3h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Billing', 'Subsystem', 'Warning', 'Finance Tech', '10 APIs')">
+              <div class="tree-node-title"><span>💳 Billing</span> <span class="badge badge-warning">SOC2 Pending</span></div>
+              <div class="tree-node-meta"><span>APIs: 10</span> <span>Debt: 0.4h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Marketplace', 'Subsystem', 'Healthy', 'Ecosystem Team', '22 APIs')">
+              <div class="tree-node-title"><span>🛒 Marketplace</span> <span class="badge badge-success">v2.4 Active</span></div>
+              <div class="tree-node-meta"><span>APIs: 22</span> <span>Debt: 0.2h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Developers', 'Subsystem', 'Healthy', 'DevRel Team', '18 APIs')">
+              <div class="tree-node-title"><span>👨‍💻 Developers</span> <span class="badge badge-success">Portal Ready</span></div>
+              <div class="tree-node-meta"><span>APIs: 18</span> <span>Debt: 0.1h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Licensing', 'Subsystem', 'Healthy', 'Legal Tech', '6 APIs')">
+              <div class="tree-node-title"><span>📜 Licensing</span> <span class="badge badge-success">Governed</span></div>
+              <div class="tree-node-meta"><span>APIs: 6</span> <span>Debt: 0.0h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Support', 'Subsystem', 'Healthy', 'CS Team', '9 APIs')">
+              <div class="tree-node-title"><span>🎧 Support</span> <span class="badge badge-success">Zendesk Sync</span></div>
+              <div class="tree-node-meta"><span>APIs: 9</span> <span>Debt: 0.2h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('AI', 'Subsystem', 'Healthy', 'AI Safety Board', '14 APIs')">
+              <div class="tree-node-title"><span>🤖 AI Engine</span> <span class="badge badge-info">LLM Governed</span></div>
+              <div class="tree-node-meta"><span>APIs: 14</span> <span>Debt: 0.1h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Platform Core', 'Kernel', 'Healthy', 'Core Infra', '30 APIs')">
+              <div class="tree-node-title"><span>⚙️ Platform Core</span> <span class="badge badge-success">Kernel Frozen</span></div>
+              <div class="tree-node-meta"><span>APIs: 30</span> <span>Debt: 0.0h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Platform Experience', 'Subsystem', 'Healthy', 'UX Team', '11 APIs')">
+              <div class="tree-node-title"><span>🎨 Platform Exp</span> <span class="badge badge-success">Design Sys</span></div>
+              <div class="tree-node-meta"><span>APIs: 11</span> <span>Debt: 0.2h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Static CDN', 'Infra', 'Healthy', 'Edge Ops', '4 Edge Pops')">
+              <div class="tree-node-title"><span>⚡ Static CDN</span> <span class="badge badge-success">Cloudflare</span></div>
+              <div class="tree-node-meta"><span>Edge Pops: 4</span> <span>Debt: 0.0h</span></div>
+            </div>
+            <div class="tree-node-card" onclick="showNodeDetail('Products', 'Aggregation', 'Healthy', 'Product Execs', '40 Modules')">
+              <div class="tree-node-title"><span>📦 Products</span> <span class="badge badge-info">EAORCS Main</span></div>
+              <div class="tree-node-meta"><span>Modules: 40</span> <span>Debt: 0.2h</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSPACE 3: REPOSITORY EXPLORER -->
+    <section id="repository-explorer" class="workspace-pane">
+      <div class="glass-card" style="margin-bottom: 1rem;">
+        <div class="card-title">Interactive VS Code Repository Explorer</div>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">Inspect workspace file hierarchy, size, line counts, attached debt, and syntax contracts.</p>
+      </div>
+
+      <div class="repo-layout">
+        <!-- Sidebar Tree -->
+        <div class="file-tree-sidebar">
+          <div class="tree-item" onclick="selectFile('root', 'eaorcs')">📁 Workspace Root (eaorcs)</div>
+          <div class="tree-indent">
+            <div class="tree-item" onclick="selectFile('folder', 'engine')">📁 engine</div>
+            <div class="tree-indent">
+              <div class="tree-item selected" onclick="selectFile('EAORCS.js', 'engine/EAORCS.js', '42.5 KB', '1,240 lines', 'JavaScript', '0.0h')">📄 EAORCS.js</div>
+              <div class="tree-item" onclick="selectFile('index.js', 'engine/index.js', '18.2 KB', '480 lines', 'JavaScript', '0.1h')">📄 index.js</div>
+              <div class="tree-item" onclick="selectFile('ExecutionGraph.js', 'engine/ExecutionGraph.js', '28.1 KB', '790 lines', 'JavaScript', '0.0h')">📄 ExecutionGraph.js</div>
+              <div class="tree-item" onclick="selectFile('EvidenceStore.js', 'engine/EvidenceStore.js', '15.4 KB', '390 lines', 'JavaScript', '0.2h')">📄 EvidenceStore.js</div>
+            </div>
+
+            <div class="tree-item" onclick="selectFile('folder', 'docs')">📁 docs</div>
+            <div class="tree-indent">
+              <div class="tree-item" onclick="selectFile('eeos_app.html', 'docs/eeos_app.html', '32.1 KB', '680 lines', 'HTML5', '0.0h')">📄 eeos_app.html</div>
+              <div class="tree-item" onclick="selectFile('manifest.json', 'docs/manifest_2026.1.0-lts.json', '215.8 KB', '4,500 lines', 'JSON', '0.0h')">📄 manifest_2026.1.0-lts.json</div>
+            </div>
+
+            <div class="tree-item" onclick="selectFile('folder', 'tests')">📁 tests</div>
+            <div class="tree-indent">
+              <div class="tree-item" onclick="selectFile('freeze_s0.test.js', 'tests/freeze/freeze_s0.test.js', '12.0 KB', '310 lines', 'JavaScript', '0.0h')">📄 freeze_s0.test.js</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right File Viewer -->
+        <div class="file-viewer-pane">
+          <div class="viewer-header">
+            <div>
+              <span id="selectedFileName" style="font-family: var(--font-mono); font-weight: 600; color: var(--accent-cyan);">EAORCS.js</span>
+              <span id="selectedFilePath" style="font-size: 0.75rem; color: var(--text-dim); margin-left: 0.5rem;">d:\ujomor-platform\products\eaorcs\engine\EAORCS.js</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; font-size: 0.8rem;" id="selectedFileMeta">
+              <span class="badge badge-info">Size: 42.5 KB</span>
+              <span class="badge badge-info">Lines: 1,240</span>
+              <span class="badge badge-success">Debt: 0.0h</span>
+            </div>
+          </div>
+          <div class="code-editor" id="codeEditorContent">
+            <div class="code-line"><span class="line-num">1</span><span><span style="color: #64748b;">/******************************************************************************</span></span></div>
+            <div class="code-line"><span class="line-num">2</span><span><span style="color: #64748b;"> * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)</span></span></div>
+            <div class="code-line"><span class="line-num">3</span><span><span style="color: #64748b;"> * Module         : EAORCS Engine Facade</span></span></div>
+            <div class="code-line"><span class="line-num">4</span><span><span style="color: #64748b;"> * Author         : Ujomor Systems & Enterprise Governance Authority</span></span></div>
+            <div class="code-line"><span class="line-num">5</span><span><span style="color: #64748b;"> * Classification : ENTERPRISE | RESTRICTED</span></span></div>
+            <div class="code-line"><span class="line-num">6</span><span><span style="color: #64748b;"> ******************************************************************************/</span></span></div>
+            <div class="code-line"><span class="line-num">7</span><span></span></div>
+            <div class="code-line"><span class="line-num">8</span><span><span style="color: #f472b6;">const</span> <span style="color: #38bdf8;">fs</span> = <span style="color: #818cf8;">require</span>(<span style="color: #a5f3fc;">'fs'</span>);</span></div>
+            <div class="code-line"><span class="line-num">9</span><span><span style="color: #f472b6;">const</span> <span style="color: #38bdf8;">path</span> = <span style="color: #818cf8;">require</span>(<span style="color: #a5f3fc;">'path'</span>);</span></div>
+            <div class="code-line"><span class="line-num">10</span><span></span></div>
+            <div class="code-line"><span class="line-num">11</span><span><span style="color: #f472b6;">class</span> <span style="color: #facc15;">EAORCS</span> {</span></div>
+            <div class="code-line"><span class="line-num">12</span><span>  <span style="color: #818cf8;">constructor</span>() {</span></div>
+            <div class="code-line"><span class="line-num">13</span><span>    <span style="color: #f472b6;">this</span>.version = <span style="color: #a5f3fc;">'2026.3.1-LTS'</span>;</span></div>
+            <div class="code-line"><span class="line-num">14</span><span>    <span style="color: #f472b6;">this</span>.status = <span style="color: #a5f3fc;">'OPERATIONAL'</span>;</span></div>
+            <div class="code-line"><span class="line-num">15</span><span>  }</span></div>
+            <div class="code-line"><span class="line-num">16</span><span>}</span></div>
+            <div class="code-line"><span class="line-num">17</span><span></span></div>
+            <div class="code-line"><span class="line-num">18</span><span><span style="color: #38bdf8;">module.exports</span> = <span style="color: #facc15;">EAORCS</span>;</span></div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSPACE 4: EXECUTION STUDIO -->
+    <section id="execution-studio" class="workspace-pane">
+      <div class="glass-card">
+        <div class="card-title">
+          <span>Live Execution Studio & Pipeline Stream</span>
+          <span class="badge badge-success">Stream S3: Active</span>
+        </div>
+
+        <div class="execution-grid">
+          <!-- Stage Progress Bars -->
+          <div class="stage-pipeline">
+            <div class="stage-box">
+              <div class="stage-name"><span>1. Discovery</span> <span style="color: var(--accent-emerald);">100%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="stage-box">
+              <div class="stage-name"><span>2. Audit</span> <span style="color: var(--accent-emerald);">100%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="stage-box">
+              <div class="stage-name"><span>3. Execution</span> <span style="color: var(--accent-cyan);">85%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 85%;"></div></div>
+            </div>
+            <div class="stage-box">
+              <div class="stage-name"><span>4. Documentation</span> <span style="color: var(--accent-cyan);">90%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="stage-box">
+              <div class="stage-name"><span>5. Certification</span> <span style="color: var(--accent-amber);">60%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 60%; background: var(--accent-amber);"></div></div>
+            </div>
+            <div class="stage-box">
+              <div class="stage-name"><span>6. Packaging</span> <span style="color: var(--text-dim);">40%</span></div>
+              <div class="progress-bar-bg"><div class="progress-bar-fill" style="width: 40%; background: var(--text-dim);"></div></div>
+            </div>
+          </div>
+
+          <!-- Streaming Terminal Output Logs -->
+          <div class="terminal-container">
+            <div class="terminal-header">
+              <span>🖥️ Azure DevOps / GitHub Actions Streaming Console</span>
+              <div style="display: flex; gap: 0.5rem;">
+                <button onclick="clearTerminal()" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; cursor: pointer;">Clear</button>
+                <button onclick="copyTerminal()" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.75rem; cursor: pointer;">Copy Logs</button>
+              </div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div class="log-entry"><span class="log-time">[17:20:00]</span><span class="log-tag info">[INFO]</span><span>Initializing EAORCS Engine Facade v2026.3.1-LTS...</span></div>
+              <div class="log-entry"><span class="log-time">[17:20:02]</span><span class="log-tag gov">[GOV]</span><span>UAIGOS Author Header Block verified across 14 modules.</span></div>
+              <div class="log-entry"><span class="log-time">[17:20:05]</span><span class="log-tag success">[SUCCESS]</span><span>Phase 1 (S0, S1, S3) determinism verification PASSED.</span></div>
+              <div class="log-entry"><span class="log-time">[17:20:08]</span><span class="log-tag warn">[WARN]</span><span>Billing engine SOC2 signature validation queued for background worker.</span></div>
+              <div class="log-entry"><span class="log-time">[17:20:12]</span><span class="log-tag info">[INFO]</span><span>Executing node tests/freeze/freeze_s0.test.js...</span></div>
+              <div class="log-entry"><span class="log-time">[17:20:14]</span><span class="log-tag success">[SUCCESS]</span><span>All 18 assertions passed with 0 side-effects.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSPACE 5: DIGITAL TWIN STUDIO -->
+    <section id="digital-twin-studio" class="workspace-pane">
+      <div class="glass-card" style="margin-bottom: 1rem;">
+        <div class="card-title">10-Dimensional Digital Twin Explorer</div>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">Deep-dive architecture topology connecting Intent, Code, Pipelines, Evidence, Security, Telemetry, and Licensing.</p>
+      </div>
+
+      <div class="digital-twin-grid">
+        <!-- 1. Business Intent -->
+        <div class="dimension-card" onclick="showDimensionModal('1. Business Intent & Value', 'Commercial readiness & SLA requirements', 'Owner: Product Execs', 'APIs: 4', 'Evidence: Signed charter')">
+          <span class="dim-number">DIM 01</span>
+          <div class="dim-title">Business Intent</div>
+          <div class="dim-desc">Commercial objectives, ROI targets, and customer SLA definitions.</div>
+          <span class="badge badge-success">Synced</span>
+        </div>
+
+        <!-- 2. Architecture & Topology -->
+        <div class="dimension-card" onclick="showDimensionModal('2. Architecture & Topology', 'Module boundaries & frozen kernel contracts', 'Owner: System Architect', 'APIs: 48', 'Evidence: Architecture spec')">
+          <span class="dim-number">DIM 02</span>
+          <div class="dim-title">Architecture Topology</div>
+          <div class="dim-desc">Root aggregate hierarchy, stream boundaries, and public facades.</div>
+          <span class="badge badge-success">Frozen</span>
+        </div>
+
+        <!-- 3. Code & Repo -->
+        <div class="dimension-card" onclick="showDimensionModal('3. Code & Repo', 'Node.js built-ins & zero npm external dependency policy', 'Owner: Dev Lead', 'Files: 61', 'Evidence: Header compliance')">
+          <span class="dim-number">DIM 03</span>
+          <div class="dim-title">Code Structure</div>
+          <div class="dim-desc">Mandatory corporate author headers, Node built-ins, and strict linting.</div>
+          <span class="badge badge-success">100% Compliant</span>
+        </div>
+
+        <!-- 4. Execution & Pipeline -->
+        <div class="dimension-card" onclick="showDimensionModal('4. Execution Graph', 'Deterministic state transitions', 'Owner: CI/CD Team', 'Nodes: 142', 'Evidence: Graph hash')">
+          <span class="dim-number">DIM 04</span>
+          <div class="dim-title">Execution Graph</div>
+          <div class="dim-desc">Deterministic execution DAG, transaction logs, and stage transitions.</div>
+          <span class="badge badge-info">Executing</span>
+        </div>
+
+        <!-- 5. Evidence & Compliance -->
+        <div class="dimension-card" onclick="showDimensionModal('5. Evidence & Compliance', 'ISO 27001, SOC 2, OWASP ASVS evidence bundles', 'Owner: Governance Authority', 'Bundles: 14', 'Evidence: OSAP Passport')">
+          <span class="dim-number">DIM 05</span>
+          <div class="dim-title">Evidence Bundles</div>
+          <div class="dim-desc">Cryptographic signatures, audit logs, and OSAP passport manifests.</div>
+          <span class="badge badge-success">Verified</span>
+        </div>
+
+        <!-- 6. Security & Threat -->
+        <div class="dimension-card" onclick="showDimensionModal('6. Security Surface', 'Zero secret leakage, ASVS L3 compliance', 'Owner: SecOps', 'Audits: 0 high, 0 med', 'Evidence: Security report')">
+          <span class="dim-number">DIM 06</span>
+          <div class="dim-title">Security & Threat</div>
+          <div class="dim-desc">Static analysis, dependency integrity, and vulnerability scanning.</div>
+          <span class="badge badge-success">Passed</span>
+        </div>
+
+        <!-- 7. Telemetry & Observability -->
+        <div class="dimension-card" onclick="showDimensionModal('7. Telemetry', '5s heartbeat polling & metric collection', 'Owner: Ops Team', 'Metrics: 24 active', 'Evidence: Prometheus/OTel')">
+          <span class="dim-number">DIM 07</span>
+          <div class="dim-title">Telemetry & Metrics</div>
+          <div class="dim-desc">Real-time CPU, stream health, latency bounds, and heartbeat telemetry.</div>
+          <span class="badge badge-success">Active 5s</span>
+        </div>
+
+        <!-- 8. License & Commercial -->
+        <div class="dimension-card" onclick="showDimensionModal('8. Commercial Rights', 'Ujomor Systems copyright & enterprise license', 'Owner: Legal Tech', 'License: Proprietary', 'Evidence: License manifest')">
+          <span class="dim-number">DIM 08</span>
+          <div class="dim-title">License & IP Rights</div>
+          <div class="dim-desc">Corporate copyright enforcement, enterprise license entitlement.</div>
+          <span class="badge badge-success">Protected</span>
+        </div>
+
+        <!-- 9. AI Governance -->
+        <div class="dimension-card" onclick="showDimensionModal('9. AI Governance', 'Human author reference & zero AI-only dependency', 'Owner: AI Safety Board', 'Models: EAORCS Assistant', 'Evidence: Law 9 frozen')">
+          <span class="dim-number">DIM 09</span>
+          <div class="dim-title">AI Governance</div>
+          <div class="dim-desc">14 Frozen Constitutional Laws, human governance fallback guarantee.</div>
+          <span class="badge badge-purple">Governed</span>
+        </div>
+
+        <!-- 10. Operations & Maintenance -->
+        <div class="dimension-card" onclick="showDimensionModal('10. Operations', 'Runbooks, automated recovery & 0 downtime deploys', 'Owner: SRE Lead', 'Runbooks: 18', 'Evidence: Ops manual')">
+          <span class="dim-number">DIM 10</span>
+          <div class="dim-title">Operations & SRE</div>
+          <div class="dim-desc">Deployment manifests, backup protocols, and operational manuals.</div>
+          <span class="badge badge-success">Ready</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Universal Search Modal (Ctrl+K) -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <span>🔍</span>
+        <input type="text" id="searchInput" class="search-modal-input" placeholder="Search APIs, Modules, ADRs, Evidence, Debt items..." oninput="handleSearch(this.value)">
+        <span class="shortcut-badge" style="cursor: pointer;" onclick="closeSearchModal()">ESC</span>
+      </div>
+      <div class="search-results" id="searchResults">
+        <div class="search-result-item" onclick="selectSearchResult('EAORCS Facade Engine', 'engine/EAORCS.js')">
+          <div>
+            <strong>EAORCS.js Engine Facade</strong>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Core public interface • Module API</div>
+          </div>
+          <span class="badge badge-info">API</span>
+        </div>
+        <div class="search-result-item" onclick="selectSearchResult('Air Roofers Federation Core', 'Subsystem 2')">
+          <div>
+            <strong>Air Roofers Federation</strong>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">13 Subsystems hierarchy node</div>
+          </div>
+          <span class="badge badge-success">Topology</span>
+        </div>
+        <div class="search-result-item" onclick="selectSearchResult('ADR-004: Execution Graph Protocol', 'docs/adr/004.md')">
+          <div>
+            <strong>ADR-004 Execution Graph Protocol</strong>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Architecture Decision Record</div>
+          </div>
+          <span class="badge badge-purple">ADR</span>
+        </div>
+        <div class="search-result-item" onclick="selectSearchResult('Billing Engine Debt Item', 'Subsystem 2')">
+          <div>
+            <strong>Billing Engine SOC2 Signature</strong>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">0.4h Debt item • Blocked status</div>
+          </div>
+          <span class="badge badge-warning">Debt</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global AI Assistant Sidecar Drawer -->
+  <aside class="sidecar-drawer" id="sidecarDrawer">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span style="font-size: 1.2rem;">✨</span>
+        <strong style="font-family: var(--font-display);">Ask EAORCS Assistant</strong>
+      </div>
+      <button onclick="toggleSidecar()" style="background: transparent; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.2rem;">✕</button>
+    </div>
+
+    <div class="drawer-body" id="chatBody">
+      <div class="chat-bubble ai">
+        Hello! I am your <strong>EAORCS Governance AI Assistant</strong>. How can I help you analyze readiness metrics, resolve technical debt, or audit compliance evidence today?
+      </div>
+      
+      <!-- Quick Prompts -->
+      <div style="display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.5rem;">
+        <button onclick="sendQuickPrompt('Diagnose blocked items')" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.4rem 0.75rem; border-radius: 6px; text-align: left; font-size: 0.8rem; cursor: pointer;">⚡ Diagnose 2 blocked items</button>
+        <button onclick="sendQuickPrompt('Audit technical debt breakdown')" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.4rem 0.75rem; border-radius: 6px; text-align: left; font-size: 0.8rem; cursor: pointer;">🔍 Audit technical debt breakdown</button>
+        <button onclick="sendQuickPrompt('Generate launch readiness summary')" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.4rem 0.75rem; border-radius: 6px; text-align: left; font-size: 0.8rem; cursor: pointer;">📊 Generate launch readiness summary</button>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <input type="text" id="chatInput" class="chat-input" placeholder="Type governance question..." onkeydown="if(event.key === 'Enter') handleChatSubmit()">
+      <button class="btn-send" onclick="handleChatSubmit()">Send</button>
+    </div>
+  </aside>
+
+  <!-- Interactive JavaScript Application Logic -->
+  <script>
+    // State
+    let currentRole = 'architect';
+    let currentTab = 'mission-control';
+    let isPolling = true;
+
+    // Tab Switching
+    function switchTab(tabId, el) {
+      document.querySelectorAll('.workspace-pane').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+      
+      document.getElementById(tabId).classList.add('active');
+      if (el) el.classList.add('active');
+      currentTab = tabId;
+    }
+
+    // Role Switcher
+    function switchRole(role) {
+      currentRole = role;
+      document.body.className = `role-${role}`;
+      console.log(`[EEOS] Switched role view to: ${role}`);
+    }
+
+    // Universal Ctrl+K Modal
+    function openSearchModal() {
+      document.getElementById('searchModal').classList.add('open');
+      document.getElementById('searchInput').focus();
+    }
+    function closeSearchModal() {
+      document.getElementById('searchModal').classList.remove('open');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        openSearchModal();
+      }
+      if (e.key === 'Escape') {
+        closeSearchModal();
+      }
+    });
+
+    function handleSearch(query) {
+      const results = document.getElementById('searchResults');
+      if (!query.trim()) return;
+      console.log(`[Search] Query: ${query}`);
+    }
+
+    function selectSearchResult(title, path) {
+      closeSearchModal();
+      alert(`Navigating to: ${title} (${path})`);
+    }
+
+    // AI Sidecar Drawer
+    function toggleSidecar() {
+      document.getElementById('sidecarDrawer').classList.toggle('open');
+    }
+
+    function openAiWithQuery(promptText) {
+      toggleSidecar();
+      sendQuickPrompt(promptText);
+    }
+
+    function sendQuickPrompt(promptText) {
+      const chatBody = document.getElementById('chatBody');
+      const userBubble = document.createElement('div');
+      userBubble.className = 'chat-bubble user';
+      userBubble.innerText = promptText;
+      chatBody.appendChild(userBubble);
+
+      // AI Response Simulation
+      setTimeout(() => {
+        const aiBubble = document.createElement('div');
+        aiBubble.className = 'chat-bubble ai';
+        
+        if (promptText.includes('blocked')) {
+          aiBubble.innerHTML = `<strong>Diagnostics Completed:</strong><br>Found 2 blocked signatures in <code>billing-engine</code> and <code>S9-evidence</code>.<br><br><button onclick="applyAutoFix()" style="background:#10b981; border:none; color:#fff; padding:0.3rem 0.6rem; border-radius:4px; cursor:pointer;">Apply 1-Click Fix</button>`;
+        } else if (promptText.includes('debt')) {
+          aiBubble.innerHTML = `<strong>Debt Report:</strong> Current tech debt is <strong>0.8h/kLOC</strong> across 61 repo files. Lowest debt module is <code>Platform Core</code> (0.0h).`;
+        } else {
+          aiBubble.innerHTML = `<strong>Status Summary:</strong> Commercial readiness is at <strong>92%</strong>. Certification is 98% complete with 0 open security vulnerabilities.`;
+        }
+
+        chatBody.appendChild(aiBubble);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }, 500);
+    }
+
+    function handleChatSubmit() {
+      const input = document.getElementById('chatInput');
+      if (!input.value.trim()) return;
+      sendQuickPrompt(input.value.trim());
+      input.value = '';
+    }
+
+    function applyAutoFix() {
+      document.getElementById('kpiBlocked').innerText = '0';
+      const banner = document.querySelector('.blocked-banner');
+      if (banner) {
+        banner.style.background = 'rgba(16, 185, 129, 0.1)';
+        banner.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+        banner.style.color = '#a7f3d0';
+        banner.innerHTML = '<strong>✔ All blocked items resolved automatically by EAORCS AI!</strong>';
+      }
+      alert('1-Click Fix Applied: Blocked items signed and unlocked!');
+    }
+
+    // Governed Execution CTA
+    function startGovernedExecution() {
+      switchTab('execution-studio', document.querySelectorAll('.nav-tab')[3]);
+      const body = document.getElementById('terminalBody');
+      const entry = document.createElement('div');
+      entry.className = 'log-entry';
+      const now = new Date().toTimeString().split(' ')[0];
+      entry.innerHTML = `<span class="log-time">[${now}]</span><span class="log-tag info">[GOV-EXEC]</span><span>Governed CI/CD Pipeline execution triggered manually by user.</span>`;
+      body.appendChild(entry);
+      body.scrollTop = body.scrollHeight;
+    }
+
+    // Node detail modal
+    function showNodeDetail(name, type, status, owner, apis) {
+      alert(`[Federation Node Detail]\n\nName: ${name}\nType: ${type}\nStatus: ${status}\nOwner: ${owner}\nAPIs: ${apis}`);
+    }
+
+    function showDimensionModal(name, detail, owner, apis, evidence) {
+      alert(`[Digital Twin Dimension]\n\n${name}\nDetails: ${detail}\n${owner}\n${apis}\n${evidence}`);
+    }
+
+    // Repository File Selection
+    function selectFile(filename, path, size = '15.4 KB', lines = '390 lines', lang = 'JavaScript', debt = '0.0h') {
+      document.getElementById('selectedFileName').innerText = filename;
+      document.getElementById('selectedFilePath').innerText = `d:\\ujomor-platform\\products\\eaorcs\\${path}`;
+      document.getElementById('selectedFileMeta').innerHTML = `
+        <span class="badge badge-info">Size: ${size}</span>
+        <span class="badge badge-info">Lines: ${lines}</span>
+        <span class="badge badge-success">Debt: ${debt}</span>
+      `;
+    }
+
+    // Terminal controls
+    function clearTerminal() {
+      document.getElementById('terminalBody').innerHTML = '';
+    }
+    function copyTerminal() {
+      navigator.clipboard.writeText(document.getElementById('terminalBody').innerText);
+      alert('Terminal logs copied to clipboard!');
+    }
+
+    // Simulated 5s API Polling with Embedded State Fallback
+    setInterval(async () => {
+      try {
+        const res = await fetch('/api/eeos/status', { method: 'GET' });
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById('apiStatusText').innerText = 'Connected (5s)';
+          if (data.readiness) document.getElementById('kpiReadiness').innerText = data.readiness + '%';
+        } else {
+          throw new Error('API not ok');
+        }
+      } catch (err) {
+        // Fallback state pulse update
+        document.getElementById('apiStatusText').innerText = 'Simulated (5s)';
+      }
+    }, 5000);
+
+  </script>
+</body>
+</html>

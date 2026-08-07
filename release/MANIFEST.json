@@ -3,9 +3,9 @@
   "projectName": "EAORCS Governance Platform",
   "version": "2026.3.1-LTS",
   "releaseDate": "2026-08-07",
-  "generatedAt": "2026-08-07T15:02:40.270Z",
+  "generatedAt": "2026-08-07T15:25:29.465Z",
   "governanceAuthority": "Ujomor Systems & Enterprise Governance Board",
-  "provenanceHash": "46acb41ad2c4e6867d43751cc3ca6c57ea203550172d0896dd2b11bf8d3e2a22",
+  "provenanceHash": "1e7d80e7587e3f5d686e70bc11018cb0c90c7b40df7775f87904ab62c5342b07",
   "lawsCertified": 14,
   "decisionRegistry": "DEC-01 through DEC-13",
   "artifactsCount": 7,
@@ -15,77 +15,77 @@
       "packageName": "EAORCS Full Source Snapshot",
       "filename": "01_source_snapshot.zip",
       "audience": "architects_code_reviewers",
-      "sizeBytes": 5069929,
-      "sizeMB": "4.84",
-      "sha256": "1c6870719052820c19eb267f0c21ceec48b7b28839b2694be86b92e14bcf1788",
+      "sizeBytes": 5402688,
+      "sizeMB": "5.15",
+      "sha256": "67b7232fd847f0e3466d0ddbcf8d53c969c6a2e0387868c35af49e71dd6530e1",
       "sanitized": false,
-      "generatedAt": "2026-08-07T15:02:43.405Z"
+      "generatedAt": "2026-08-07T15:25:34.730Z"
     },
     {
       "packageId": "02_external_audit",
       "packageName": "EAORCS External Technical Audit",
       "filename": "02_external_audit.zip",
       "audience": "auditors",
-      "sizeBytes": 2430207,
-      "sizeMB": "2.32",
-      "sha256": "0a4175f796ec55550e40bdb64a84f71c52bc2b94ac391dcce13ea0ac2995563f",
+      "sizeBytes": 2744381,
+      "sizeMB": "2.62",
+      "sha256": "6fc847023c86bdb344efd3e7ad0132d0b027f6e6a951554c0c0ed046766c0747",
       "sanitized": true,
-      "generatedAt": "2026-08-07T15:03:39.916Z"
+      "generatedAt": "2026-08-07T15:26:26.544Z"
     },
     {
       "packageId": "03_customer_release",
       "packageName": "EAORCS Customer Release",
       "filename": "03_customer_release.zip",
       "audience": "customers",
-      "sizeBytes": 105180,
-      "sizeMB": "0.10",
-      "sha256": "46f6607e5c596568531133668b50d2bbafda1e4a318b5367f92af00f40e6512a",
+      "sizeBytes": 394987,
+      "sizeMB": "0.38",
+      "sha256": "a438043546377e27b040867dc9274ac12d15378c246e5a58a371e6dbd9110ada",
       "sanitized": false,
-      "generatedAt": "2026-08-07T15:03:52.242Z"
+      "generatedAt": "2026-08-07T15:26:38.187Z"
     },
     {
       "packageId": "04_enterprise_sdk",
       "packageName": "EAORCS Enterprise SDK",
       "filename": "04_enterprise_sdk.zip",
       "audience": "developers",
-      "sizeBytes": 1975344,
-      "sizeMB": "1.88",
-      "sha256": "7acc4e43b1727bd04c6f43461c0eaeb14df65d87d4276bf659126780d4ba8905",
+      "sizeBytes": 2279063,
+      "sizeMB": "2.17",
+      "sha256": "bc00599fa3cff252b6eb59bd48cbe71afbc65dbb867cc7651ad370e01341199f",
       "sanitized": false,
-      "generatedAt": "2026-08-07T15:03:55.241Z"
+      "generatedAt": "2026-08-07T15:26:41.505Z"
     },
     {
       "packageId": "05_regulatory_compliance",
       "packageName": "EAORCS Regulatory & Compliance Package",
       "filename": "05_regulatory_compliance.zip",
       "audience": "procurement_compliance",
-      "sizeBytes": 445709,
-      "sizeMB": "0.43",
-      "sha256": "5c177f367845bdb356eb3bcde71778d9cb81e6ec83d07738dc1d174d6490cd47",
+      "sizeBytes": 745922,
+      "sizeMB": "0.71",
+      "sha256": "cf13783630ed42a7e51421eab6c0b85f161b9cfee019c5f4b658d35b1e354649",
       "sanitized": false,
-      "generatedAt": "2026-08-07T15:04:00.507Z"
+      "generatedAt": "2026-08-07T15:26:47.337Z"
     },
     {
       "packageId": "06_sbom",
       "packageName": "EAORCS Software Bill of Materials (SBOM)",
       "filename": "06_sbom.zip",
       "audience": "security_procurement",
-      "sizeBytes": 35821,
-      "sizeMB": "0.03",
-      "sha256": "9f0e421b0c152d2ed7c93a33de01d04c3ae2cd41f146364c73ca8f386e953adb",
+      "sizeBytes": 325579,
+      "sizeMB": "0.31",
+      "sha256": "5e0e3661a5f71538dbddff186d778e6fcf46c4618b4db8c3d25ff77c74612a78",
       "sanitized": false,
-      "generatedAt": "2026-08-07T15:04:07.673Z"
+      "generatedAt": "2026-08-07T15:26:54.630Z"
     },
     {
       "packageId": "07_signatures",
       "packageName": "EAORCS Digital Signatures & Governance Seals",
       "filename": "07_signatures.zip",
       "audience": "cryptographic_verifiers",
-      "sizeBytes": 37385,
-      "sizeMB": "0.04",
-      "sha256": "996066e4a63eb0ef59b181577eb6129f733d164ac2e0ba33e6aa2b5e0101a92d",
+      "sizeBytes": 327149,
+      "sizeMB": "0.31",
+      "sha256": "d634688dee531210c34a56ceb56601b6fc216f54698f5055e55a08628fa0e0ff",
       "sanitized": false,
-      "generatedAt": "2026-08-07T15:04:09.609Z"
+      "generatedAt": "2026-08-07T15:26:56.675Z"
     }
   ],
   "registryReferences": {

@@ -285,6 +285,21 @@ class EAORCS {
         const serverEngine = new CommandCenterServerEngine(options);
         return serverEngine.getCommandCenterData(workspaceDir);
     }
+
+    static launchEEOS(options = {}) {
+        const serverEngine = new CommandCenterServerEngine(options);
+        return serverEngine.launchCommandCenter(options);
+    }
+
+    static getEEOSData(options = {}) {
+        const workspaceDir = options.workspace || process.cwd();
+        const serverEngine = new CommandCenterServerEngine(options);
+        const data = serverEngine.getCommandCenterData(workspaceDir);
+        if (options.role) {
+            data.role = options.role;
+        }
+        return data;
+    }
 }
 
 module.exports = EAORCS;
