@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T16:12:30.452Z",
+  "timestamp": "2026-08-07T16:29:25.732Z",
   "cleanRoomDeployments": {
     "passed": true,
     "totalEnvironments": 7,
@@ -9,9 +9,9 @@
       "Windows": {
         "passed": true,
         "environment": "Windows",
-        "evidenceHash": "8c906704b4bc7792d64f3e3b9e483ff32a3dd4b2b58dffbdbba95e23ee2f47e9",
+        "evidenceHash": "5cb71a7332669055d0a07b4ededbb8607e7054b127c9cce165d3080591af522b",
         "airGapped": false,
-        "durationMs": 0,
+        "durationMs": 1,
         "steps": [
           {
             "step": "isolation_check",
@@ -54,9 +54,9 @@
       "Ubuntu": {
         "passed": true,
         "environment": "Ubuntu",
-        "evidenceHash": "3d0a7ae53c6259178aea51708ddb99f3254642240fb0e8e6881f7dba57a9f51f",
+        "evidenceHash": "35e256051515e699a84423077adc34be69577d301d6421123f33204502d4fc9a",
         "airGapped": false,
-        "durationMs": 1,
+        "durationMs": 0,
         "steps": [
           {
             "step": "isolation_check",
@@ -99,7 +99,7 @@
       "Debian": {
         "passed": true,
         "environment": "Debian",
-        "evidenceHash": "6301220e22e5da7da6498d179a55005f56e55fffc3744f0db7e3880a0ac1f14c",
+        "evidenceHash": "a9ef188878fa186339c4c3f60d6643469ed70c96e75584f168b81fbd55f9f5b3",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -144,7 +144,7 @@
       "macOS": {
         "passed": true,
         "environment": "macOS",
-        "evidenceHash": "7f0d57e9e39e442a0dc74f766f8f8bd0b8b1bfae00dc980dd68deb68ca955a6c",
+        "evidenceHash": "17376e885cef1e468c7a4a53083a9bce695c8aab3c6baebdf645f1f36e6c2320",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -189,7 +189,7 @@
       "Docker": {
         "passed": true,
         "environment": "Docker",
-        "evidenceHash": "5a54cbf62716500f492a3ec2550ec6ef2f519175e66eec3fcbcf63d1bb801a63",
+        "evidenceHash": "db8783e1347770d4ee616a0bcf58b95876f2b20a536735cafd47a52fc0580c16",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -234,7 +234,7 @@
       "Kubernetes": {
         "passed": true,
         "environment": "Kubernetes",
-        "evidenceHash": "d2f8cfebf8131c6fb1789b9204a6c280783865432ecb574e40f8f33d5298d238",
+        "evidenceHash": "2ffc9b2990821d2aec8cf5eaf6476a5af97447f6e5beab4841bc5792781ecc13",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -279,7 +279,7 @@
       "Air-Gapped": {
         "passed": true,
         "environment": "Air-Gapped",
-        "evidenceHash": "8ec68e7a477a343d49179762a6e1b119ef5d8169b7e496949dd956baf965b091",
+        "evidenceHash": "24768e4365bec5810bb01ba524c5552c905a6dfa006ecc7689116b1125ce60c4",
         "airGapped": true,
         "durationMs": 0,
         "steps": [
@@ -322,9 +322,9 @@
         ]
       }
     },
-    "aggregateEvidenceHash": "4df486fc1164ebd346f8b373e7883784422716c5fc6244c2ba3eccc8f9846bfe",
-    "totalDurationMs": 2,
-    "timestamp": "2026-08-07T16:12:30.449Z"
+    "aggregateEvidenceHash": "a88e24c7e54e91dd6e4ba8da953f497cbc371cc54aad80b0d302dbc8bbe3bb63",
+    "totalDurationMs": 1,
+    "timestamp": "2026-08-07T16:29:25.731Z"
   },
   "pluginRollbackTest": {
     "passed": true,
@@ -341,44 +341,44 @@
         "phase": "hot_swap_license_activation",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "91889fdff8a8e2f6f1d9428ee93b36872b1370e68f716cc8abb76f2d0f5a8bac",
-        "details": "Hot-swap license LIC-EAORCS-ENT-2026-C8D93FD6 activated for tier ENTERPRISE_LTS without engine restart."
+        "stateHash": "6472049ccc7427bdf6abe7b99bd9eea8f7c76f8a722413de2e46cd7cce6c4db4",
+        "details": "Hot-swap license LIC-EAORCS-ENT-2026-E1B0A07E activated for tier ENTERPRISE_LTS without engine restart."
       },
       {
         "phase": "state_recovery",
         "passed": true,
-        "durationMs": 1,
-        "stateHash": "3983bd8b790f3d9d1ebca63d5e78c809cd95d75a9437332a7753516604222da7",
+        "durationMs": 0,
+        "stateHash": "0e171e6e5a494df991e88469e3243ac0d8541c58c4fd5278476291b3503a5246",
         "details": "Simulated node disruption state recovery completed. License and plugin state reconstituted cleanly."
       },
       {
         "phase": "zero_downtime_upgrade",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "ab32f46f1ac8455cd61882d1a7e929c8153343a750a3d4406f176ceb65c83f7e",
+        "stateHash": "c69c48c5264a3d7e320d9d1a77f1a12a1ef38d40df9bcdedd4c8af089a9ac7ec",
         "details": "Zero-downtime hot upgrade to version 1.1.0 completed with zero dropped requests."
       },
       {
         "phase": "rollback_verification",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "91889fdff8a8e2f6f1d9428ee93b36872b1370e68f716cc8abb76f2d0f5a8bac",
+        "stateHash": "6472049ccc7427bdf6abe7b99bd9eea8f7c76f8a722413de2e46cd7cce6c4db4",
         "details": "Rollback to version 1.0.0 verified. State hash matched pre-upgrade baseline perfectly."
       }
     ],
     "initialStateHash": "93262f57e3b56a56ccb2d00c965e15c86f61a60c3c09001b13975c003eafba87",
     "activeLicenseState": {
-      "licenseKey": "LIC-EAORCS-ENT-2026-C8D93FD6",
+      "licenseKey": "LIC-EAORCS-ENT-2026-E1B0A07E",
       "licenseTier": "ENTERPRISE_LTS",
       "active": true
     },
-    "upgradedStateHash": "ab32f46f1ac8455cd61882d1a7e929c8153343a750a3d4406f176ceb65c83f7e",
-    "rolledBackStateHash": "91889fdff8a8e2f6f1d9428ee93b36872b1370e68f716cc8abb76f2d0f5a8bac",
+    "upgradedStateHash": "c69c48c5264a3d7e320d9d1a77f1a12a1ef38d40df9bcdedd4c8af089a9ac7ec",
+    "rolledBackStateHash": "6472049ccc7427bdf6abe7b99bd9eea8f7c76f8a722413de2e46cd7cce6c4db4",
     "zeroDowntimeVerified": true,
     "rollbackVerified": true,
-    "aggregateEvidenceHash": "54dd3aec431e985ce3135865f54f9321619cdf3f378673aaf70d61fc0549bbaa",
-    "totalDurationMs": 1,
-    "timestamp": "2026-08-07T16:12:30.452Z"
+    "aggregateEvidenceHash": "16f334b6040a8360b79dff83cd4e7be95887a0577faa80bd5fdb83ea28044788",
+    "totalDurationMs": 0,
+    "timestamp": "2026-08-07T16:29:25.732Z"
   },
   "status": "PASSED"
 }

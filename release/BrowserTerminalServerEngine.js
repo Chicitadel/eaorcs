@@ -114,6 +114,13 @@ class BrowserTerminalServerEngine {
                 category: 'SYSTEM',
                 requiredTier: 'COMMERCIAL',
                 options: ['--shell', '--port']
+            },
+            dic: {
+                command: 'dic',
+                description: 'Documentation Intelligence Center launcher & coverage reporting.',
+                category: 'GOVERNANCE',
+                requiredTier: 'FREE',
+                options: ['--category', '--coverage', '--missing', '--graph', '--json', '--help']
             }
         };
     }
@@ -127,28 +134,28 @@ class BrowserTerminalServerEngine {
             FREE: {
                 tier: 'FREE',
                 name: 'Community Open Access',
-                commands: ['analyze', 'health', 'license'],
+                commands: ['analyze', 'health', 'license', 'dic'],
                 maxWorkspaces: 1,
                 supportLevel: 'COMMUNITY_FORUM'
             },
             COMMUNITY: {
                 tier: 'COMMUNITY',
                 name: 'Developer Community',
-                commands: ['analyze', 'health', 'license', 'plan', 'audit'],
+                commands: ['analyze', 'health', 'license', 'plan', 'audit', 'dic'],
                 maxWorkspaces: 5,
                 supportLevel: 'STANDARD_TICKET'
             },
             COMMERCIAL: {
                 tier: 'COMMERCIAL',
                 name: 'Commercial Enterprise Edition',
-                commands: ['analyze', 'health', 'license', 'plan', 'audit', 'build', 'rollback', 'shell'],
+                commands: ['analyze', 'health', 'license', 'plan', 'audit', 'build', 'rollback', 'shell', 'dic'],
                 maxWorkspaces: 50,
                 supportLevel: '24_7_ENTERPRISE_SLA'
             },
             ENTERPRISE: {
                 tier: 'ENTERPRISE',
                 name: 'Mission Critical Global Enterprise',
-                commands: ['analyze', 'health', 'license', 'plan', 'audit', 'build', 'rollback', 'shell', 'certify', 'release'],
+                commands: ['analyze', 'health', 'license', 'plan', 'audit', 'build', 'rollback', 'shell', 'certify', 'release', 'dic'],
                 maxWorkspaces: -1,
                 supportLevel: 'DEDICATED_GOVERNANCE_OFFICER'
             }
@@ -288,6 +295,31 @@ class BrowserTerminalServerEngine {
         return engine.getEquivalentShellMatrix();
     }
 
+    getDicOverview(options = {}) {
+        const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+        const engine = new DocumentationIntelligenceEngine({ workspace: options.workspace || this.baseDir });
+        return engine.getOverview(options);
+    }
+
+    getDicCoverage(options = {}) {
+        const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+        const engine = new DocumentationIntelligenceEngine({ workspace: options.workspace || this.baseDir });
+        return engine.getCoverage(options);
+    }
+
+    getDicMissing(options = {}) {
+        const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+        const engine = new DocumentationIntelligenceEngine({ workspace: options.workspace || this.baseDir });
+        return engine.getMissingDocumentation(options);
+    }
+
+    getDicGraph(options = {}) {
+        const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+        const engine = new DocumentationIntelligenceEngine({ workspace: options.workspace || this.baseDir });
+        return engine.getKnowledgeGraph(options);
+    }
+
+
     /**
      * Launches the HTTP server serving REST endpoints and Browser Terminal interface.
      * @param {object} [options] 
@@ -341,6 +373,38 @@ class BrowserTerminalServerEngine {
                 });
             } else if (reqPath === '/api/dxc/equivalents') {
                 sendJson(200, { status: 'SUCCESS', equivalents: this.getDxcEquivalents({ workspace, ...queryObj }) });
+            } else if (reqPath === '/api/dic/overview') {
+                const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+                const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                sendJson(200, dicEngine.getOverview({ workspace, ...queryObj }));
+            } else if (reqPath === '/api/dic/coverage') {
+                const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+                const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                sendJson(200, dicEngine.getCoverage({ workspace, ...queryObj }));
+            } else if (reqPath === '/api/dic/missing') {
+                const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+                const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                sendJson(200, dicEngine.getMissingDocumentation({ workspace, ...queryObj }));
+            } else if (reqPath === '/api/dic/graph') {
+                const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+                const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                sendJson(200, dicEngine.getKnowledgeGraph({ workspace, ...queryObj }));
+            } else if (reqPath === '/api/dic/document') {
+                const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+                const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                const targetDoc = queryObj.docId || queryObj.id || queryObj.category || 'overview';
+                sendJson(200, dicEngine.getDocument(targetDoc, { workspace, ...queryObj }));
+            } else if (reqPath === '/api/dic/generate') {
+                const DocumentationIntelligenceEngine = require('./DocumentationIntelligenceEngine');
+                if (reqMethod === 'POST') {
+                    getJsonBody((err, body) => {
+                        const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                        sendJson(200, dicEngine.generateDocumentation({ workspace, ...queryObj, ...body }));
+                    });
+                } else {
+                    const dicEngine = new DocumentationIntelligenceEngine({ workspace });
+                    sendJson(200, dicEngine.generateDocumentation({ workspace, ...queryObj }));
+                }
             } else if (reqPath === '/api/cli/build') {
                 if (reqMethod === 'POST') {
                     getJsonBody((err, body) => {

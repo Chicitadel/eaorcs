@@ -284,12 +284,23 @@ const releaseBrowserTerminalServerEnginePath = path.join(releaseDir, 'BrowserTer
 const releaseEnvironmentDetectionEnginePath = path.join(releaseDir, 'EnvironmentDetectionEngine.js');
 const releaseEaorcsDxcPath = path.join(releaseDir, 'eaorcs_dxc.js');
 
+const docsCenterHtmlPath = path.join(eaorcsRoot, 'docs', 'docs_center.html');
+const documentationIntelligenceEnginePath = path.join(eaorcsRoot, 'engine', 'docs', 'DocumentationIntelligenceEngine.js');
+const eaorcsDicPath = path.join(eaorcsRoot, 'bin', 'commercial', 'eaorcs_dic.js');
+
+const releaseDocsCenterHtmlPath = path.join(releaseDir, 'docs_center.html');
+const releaseDocumentationIntelligenceEnginePath = path.join(releaseDir, 'DocumentationIntelligenceEngine.js');
+const releaseEaorcsDicPath = path.join(releaseDir, 'eaorcs_dic.js');
+
 if (fs.existsSync(cliCenterHtmlPath)) fs.copyFileSync(cliCenterHtmlPath, releaseCliCenterHtmlPath);
 if (fs.existsSync(licenseCenterHtmlPath)) fs.copyFileSync(licenseCenterHtmlPath, releaseLicenseCenterHtmlPath);
 if (fs.existsSync(devExperienceEnginePath)) fs.copyFileSync(devExperienceEnginePath, releaseDevExperienceEnginePath);
 if (fs.existsSync(browserTerminalServerEnginePath)) fs.copyFileSync(browserTerminalServerEnginePath, releaseBrowserTerminalServerEnginePath);
 if (fs.existsSync(environmentDetectionEnginePath)) fs.copyFileSync(environmentDetectionEnginePath, releaseEnvironmentDetectionEnginePath);
 if (fs.existsSync(eaorcsDxcPath)) fs.copyFileSync(eaorcsDxcPath, releaseEaorcsDxcPath);
+if (fs.existsSync(docsCenterHtmlPath)) fs.copyFileSync(docsCenterHtmlPath, releaseDocsCenterHtmlPath);
+if (fs.existsSync(documentationIntelligenceEnginePath)) fs.copyFileSync(documentationIntelligenceEnginePath, releaseDocumentationIntelligenceEnginePath);
+if (fs.existsSync(eaorcsDicPath)) fs.copyFileSync(eaorcsDicPath, releaseEaorcsDicPath);
 
 
 function safeUnlink(filePath) {
@@ -395,7 +406,10 @@ for (const entry of packageBuilders) {
             devExperienceEnginePath,
             browserTerminalServerEnginePath,
             environmentDetectionEnginePath,
-            eaorcsDxcPath
+            eaorcsDxcPath,
+            docsCenterHtmlPath,
+            documentationIntelligenceEnginePath,
+            eaorcsDicPath
         ];
 
         if (label !== '01_source_snapshot') {
@@ -535,6 +549,10 @@ if (fs.existsSync(devExperienceEnginePath)) checksumLines.push(`${fileStats(devE
 if (fs.existsSync(browserTerminalServerEnginePath)) checksumLines.push(`${fileStats(browserTerminalServerEnginePath).hash}  BrowserTerminalServerEngine.js`);
 if (fs.existsSync(environmentDetectionEnginePath)) checksumLines.push(`${fileStats(environmentDetectionEnginePath).hash}  EnvironmentDetectionEngine.js`);
 if (fs.existsSync(eaorcsDxcPath)) checksumLines.push(`${fileStats(eaorcsDxcPath).hash}  eaorcs_dxc.js`);
+if (fs.existsSync(docsCenterHtmlPath)) checksumLines.push(`${fileStats(docsCenterHtmlPath).hash}  docs_center.html`);
+if (fs.existsSync(documentationIntelligenceEnginePath)) checksumLines.push(`${fileStats(documentationIntelligenceEnginePath).hash}  DocumentationIntelligenceEngine.js`);
+if (fs.existsSync(eaorcsDicPath)) checksumLines.push(`${fileStats(eaorcsDicPath).hash}  eaorcs_dic.js`);
+
 
 
 const shaSumsPath = path.join(releaseDir, 'SHA256SUMS');

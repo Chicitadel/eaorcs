@@ -353,6 +353,23 @@ class EAORCS {
             equivalents: engine.getPlatformEquivalents(options)
         };
     }
+
+    static getDocumentationIntelligence(options = {}) {
+        const DocumentationIntelligenceEngine = require('./portal/DocumentationIntelligenceEngine');
+        const engine = new DocumentationIntelligenceEngine(options);
+        if (options.coverage) {
+            return engine.getCoverage(options);
+        } else if (options.missing) {
+            return engine.getMissingDocumentation(options);
+        } else if (options.graph) {
+            return engine.getKnowledgeGraph(options);
+        } else if (options.document) {
+            return engine.getDocument(options.document, options);
+        } else if (options.generate) {
+            return engine.generateDocumentation(options);
+        }
+        return engine.getOverview(options);
+    }
 }
 
 module.exports = EAORCS;

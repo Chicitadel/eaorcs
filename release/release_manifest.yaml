@@ -1,18 +1,81 @@
 releaseId: REL-2026.3.1-LTS
-buildId: BUILD-1786119150372
+buildId: BUILD-1786120165658
 gitCommit: c9b4e870e9ec48ef
 provenance:
   releaseId: REL-2026.3.1-LTS
-  buildId: BUILD-1786119150372
+  buildId: BUILD-1786120165658
   gitCommit: c9b4e870e9ec48ef
   architectureVersion: 3.0.0
   constitutionVersion: 1.4.0
   contractRegistryVersion: 2026.3.1
-  generatedAt: "2026-08-07T16:12:30.373Z"
+  generatedAt: "2026-08-07T16:29:25.658Z"
   canonicalSourceSnapshot: 01_source_snapshot.zip
   governanceAuthority: "Ujomor Systems & Enterprise Governance Board"
-  provenanceHash: b6109919c10a972c21d1ac9d1a622c86f9c0fb0435e11cf515fcde2d6fbbb04d
-artifacts:[]
+  provenanceHash: 3d40fd4cb69e29e0294b4cee9528604d25e971a084de9f6a7ce40f12d7dd567c
+artifacts:
+- packageId: 01_source_snapshot
+    packageName: "EAORCS Full Source Snapshot"
+    filename: 01_source_snapshot.zip
+    audience: architects_code_reviewers
+    sizeBytes: 6018379
+    sizeMB: "5.74"
+    sha256: 4608d6ddad483b7e8e0620e4b9019b22a3d969cd20dc9c2e0c3097769b618e1d
+    sanitized: false
+    generatedAt: "2026-08-07T16:29:32.255Z"
+- packageId: 02_external_audit
+    packageName: "EAORCS External Technical Audit"
+    filename: 02_external_audit.zip
+    audience: auditors
+    sizeBytes: 3303418
+    sizeMB: "3.15"
+    sha256: 8313f65a664368eab254d968ef8643f9aab72784a2be543c465bb9226bc4dcf0
+    sanitized: true
+    generatedAt: "2026-08-07T16:30:30.509Z"
+- packageId: 03_customer_release
+    packageName: "EAORCS Customer Release"
+    filename: 03_customer_release.zip
+    audience: customers
+    sizeBytes: 885257
+    sizeMB: "0.84"
+    sha256: fa83127930f605a93a8d3af0739acf0f9b0a835b75cf964e37d4b15a6ac3f890
+    sanitized: false
+    generatedAt: "2026-08-07T16:30:46.215Z"
+- packageId: 04_enterprise_sdk
+    packageName: "EAORCS Enterprise SDK"
+    filename: 04_enterprise_sdk.zip
+    audience: developers
+    sizeBytes: 2810250
+    sizeMB: "2.68"
+    sha256: cefc49a588b0eedcf44e5ea5328d3f4c4da614f5814cd1ac34a2691188d9e22e
+    sanitized: false
+    generatedAt: "2026-08-07T16:30:50.806Z"
+- packageId: 05_regulatory_compliance
+    packageName: "EAORCS Regulatory & Compliance Package"
+    filename: 05_regulatory_compliance.zip
+    audience: procurement_compliance
+    sizeBytes: 1263218
+    sizeMB: "1.20"
+    sha256: a456746608048a3b02864cc1bf800f33985504f2c05ff002c0aa4222a41ee20a
+    sanitized: false
+    generatedAt: "2026-08-07T16:30:56.964Z"
+- packageId: 06_sbom
+    packageName: "EAORCS Software Bill of Materials (SBOM)"
+    filename: 06_sbom.zip
+    audience: security_procurement
+    sizeBytes: 804193
+    sizeMB: "0.77"
+    sha256: 2156990d2524cd07bc0aad47f72aa4eef8d27cfa504f4821b702bb037f51f0d8
+    sanitized: false
+    generatedAt: "2026-08-07T16:31:05.015Z"
+- packageId: 07_signatures
+    packageName: "EAORCS Digital Signatures & Governance Seals"
+    filename: 07_signatures.zip
+    audience: cryptographic_verifiers
+    sizeBytes: 805763
+    sizeMB: "0.77"
+    sha256: 6b7f59f664e74ef830684badbfdc98bde1a6ce2e48be6733a8fbe1adb088406c
+    sanitized: false
+    generatedAt: "2026-08-07T16:31:07.556Z"
 registryReferences:
   platformRegistry: platform_registry.yaml
   capabilityRegistry: capability_registry.yaml
