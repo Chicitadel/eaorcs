@@ -12,6 +12,8 @@ yarn-error.log*
 ecc_dashboard_state.json
 eeos_state.json
 release/eeos_state.json
+.eaorcs_session_cache.json
+.governance/session.cache.json
 
 # Environment & Local Secrets
 .env
