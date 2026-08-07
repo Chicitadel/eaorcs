@@ -1,0 +1,12 @@
+{
+  "format": "AIRPKG_V1",
+  "capabilityId": "cap.eaorcs.policy",
+  "version": "1.0.0",
+  "licenseTier": "ENTERPRISE",
+  "issuer": "Air Roofers Governance Directorate",
+  "signature": "77c0f4b8bf9e259feffbd803cf74907c40acc433b480942bc6b80368132a0f0e",
+  "iv": "6f6ccc1a10a5e81ecc4f4462",
+  "authTag": "0e682b24131cf1892a40e3cd75a817d1",
+  "encryptedData": "4b515df52c33b189d7e960b5a6c5aaee493b417636c1f5964fb1bf507f0684f54ed1f8115bedb77868bc46cf945c40bb2b8c9d213d0459866ae22bc91330a72ec606739b7789bc8dabf03f7d9d9389327aab845cd1b021adc06715b1f58d0ddcdac4a3efa524e201f20c56910c1bb9fd0235147961645fb07ccda200f8f4be26c3a11d8ee1f7cfcfeffec8aef6b3a5f208cf77221defb570cef3cf81abf5cedf90615ab37fc83222709b214196f1035d2ea8c6bc51d4b251248dc2ca3add7630aefdae01cb93e322c0d3c98c679634afaea440a97cd41132cde08c8091bc1c5429f82a4e12c981e78a69a3c8a65ac1bbef02dce0152971e269dd0e8413e9d815f3c0fcf66d4c86dadbb224d97e6dc3d506603861cfd644be194f38876cfe9b2c",
+  "integrityHash": "04a9dcfd4c479de3453be2340475ad4e44e3fe459fe67e0bf5fad87afadb16e4"
+}

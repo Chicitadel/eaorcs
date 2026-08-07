@@ -1,7 +1,7 @@
 {
-  "bundleId": "bundle-193de71499b652a8",
+  "bundleId": "bundle-b028c96868ca47a6",
   "version": "2026.1.0-lts",
-  "merkleRoot": "aca3eab2fd59a55d36536c18b936526ae62b8a22455e0b3b189cfdae75a8609e",
+  "merkleRoot": "32dc4f14a93e1a539696ae97275a4ff0d458d5fa943cc5f81c318ab5208f856d",
   "evidenceItems": [
     {
       "type": "test",
@@ -12,7 +12,7 @@
       "details": {
         "file": "tests/e2e_integration.test.js"
       },
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.749Z"
     },
     {
       "type": "test",
@@ -23,7 +23,7 @@
       "details": {
         "file": "tests/suite.test.js"
       },
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.749Z"
     },
     {
       "type": "test",
@@ -34,7 +34,7 @@
       "details": {
         "file": "tests/blueprint_traceability_matrix.js"
       },
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.749Z"
     },
     {
       "type": "test",
@@ -45,7 +45,7 @@
       "details": {
         "file": "tests/environment_certification_matrix.test.js"
       },
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.749Z"
     },
     {
       "type": "security",
@@ -53,7 +53,7 @@
       "findingCount": 0,
       "severity": "LOW",
       "findings": [],
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.749Z"
     },
     {
       "type": "security",
@@ -61,7 +61,7 @@
       "findingCount": 0,
       "severity": "LOW",
       "findings": [],
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.749Z"
     },
     {
       "type": "compliance",
@@ -75,7 +75,7 @@
         "A.12",
         "A.14"
       ],
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.750Z"
     },
     {
       "type": "compliance",
@@ -87,7 +87,7 @@
         "CC7",
         "CC8"
       ],
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.750Z"
     },
     {
       "type": "compliance",
@@ -101,12 +101,12 @@
         "V9",
         "V14"
       ],
-      "addedAt": "2026-08-02T16:24:41.976Z"
+      "addedAt": "2026-08-07T07:02:06.750Z"
     }
   ],
   "certificate": {
     "certificate": {
-      "certificateId": "EAORCS-CERT-GOLD-1785687881980-18CA4426",
+      "certificateId": "EAORCS-CERT-GOLD-1786086126753-0D9DEF9B",
       "version": "2.0.0",
       "tier": "GOLD",
       "issuer": "EAORCS Software Certification Authority (UAIGOS v2026.1)",
@@ -115,7 +115,7 @@
         "version": "1.0.0",
         "repository": "workspace://local",
         "commitHash": "HEAD",
-        "merkleRoot": "aca3eab2fd59a55d36536c18b936526ae62b8a22455e0b3b189cfdae75a8609e"
+        "merkleRoot": "32dc4f14a93e1a539696ae97275a4ff0d458d5fa943cc5f81c318ab5208f856d"
       },
       "trustMetrics": {
         "trustScore": 99.1,
@@ -123,13 +123,13 @@
         "evidenceConfidence": 1,
         "statisticalConfidence": 1
       },
-      "issuedAt": "2026-08-02T16:24:41.980Z",
-      "expiresAt": "2026-10-31T16:24:41.980Z",
+      "issuedAt": "2026-08-07T07:02:06.753Z",
+      "expiresAt": "2026-11-05T07:02:06.753Z",
       "classification": "ENTERPRISE_GOVERNED"
     },
     "signatureAlgorithm": "HMAC-SHA256",
-    "signature": "d60bb56a1a11118183a3d6235cd7fe30b42e615ce8e492777dee9a1590466dd9"
+    "signature": "f196aeb8ba60d13480d1fe47544990764074fdb712c08ac7f51fd33f03b22430"
   },
   "trustScore": 99.1,
-  "compiledAt": "2026-08-02T16:24:41.977Z"
+  "compiledAt": "2026-08-07T07:02:06.750Z"
 }

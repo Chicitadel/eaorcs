@@ -2,7 +2,7 @@
   "reportTitle": "Independent Laboratory Performance & ISO/IEC 25010 Audit Certification Report",
   "system": "EAORCS Independent Lab Performance Certifier",
   "version": "2026.1.0-LTS",
-  "generatedAt": "2026-08-02T16:24:36.159Z",
+  "generatedAt": "2026-08-07T07:02:01.560Z",
   "governance": {
     "authority": "Ujomor Independent Laboratory Performance Certifier",
     "standards": [
@@ -13,7 +13,7 @@
     ]
   },
   "stressTestResults": {
-    "testId": "stresstest-1785687876157-9da2d39e",
+    "testId": "stresstest-1786086121558-c1b48069",
     "concurrency": 500,
     "totalRequests": 50000,
     "successfulRequests": 50000,
@@ -35,10 +35,10 @@
       "garbageCollectionPauseMs": 1.2
     },
     "errorRatePercent": 0,
-    "executedAt": "2026-08-02T16:24:36.158Z"
+    "executedAt": "2026-08-07T07:02:01.558Z"
   },
   "iso25010Evaluation": {
-    "evaluationId": "iso25010-eval-1785687876158-913680",
+    "evaluationId": "iso25010-eval-1786086121558-a507b1",
     "standard": "ISO/IEC 25010:2011 Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE)",
     "complianceStatus": "PASSED",
     "overallQualityScore": 99.81,
@@ -113,19 +113,19 @@
       }
     },
     "compliant": true,
-    "evaluatedAt": "2026-08-02T16:24:36.158Z"
+    "evaluatedAt": "2026-08-07T07:02:01.558Z"
   },
   "certificateSummary": {
-    "certificateId": "CERT-ISO25010-2026-F8ED9A1DC670",
+    "certificateId": "CERT-ISO25010-2026-EFDC92FBE6E3",
     "status": "CERTIFIED_COMPLIANT",
-    "issueDate": "2026-08-02T16:24:36.158Z",
-    "expirationDate": "2027-08-02T16:24:36.158Z",
+    "issueDate": "2026-08-07T07:02:01.558Z",
+    "expirationDate": "2027-08-07T07:02:01.558Z",
     "digitalSignature": {
       "algorithm": "HMAC-SHA256",
-      "hash": "d9acc5d57f82f74fc329c713a5d2c01900c1439ec271fa3dc31076d0298ea6d1",
-      "signature": "a165fc21f02fbcbbb1f9e7a223100fddfb6afa5a2343308db1874cbd5e0e259c",
+      "hash": "bdb7651e570de7376244ef31085c39e3e92276a2267569a72b59a5e8e98124e7",
+      "signature": "bd64027105e148e1c8ef3a91c68e5fddd9971558002a4b41eefb59f4981e95a5",
       "signerAuthority": "Ujomor Independent Laboratory Performance Certifier",
-      "signedTimestamp": "2026-08-02T16:24:36.158Z"
+      "signedTimestamp": "2026-08-07T07:02:01.558Z"
     }
   }
 }

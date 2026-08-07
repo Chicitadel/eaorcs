@@ -1,12 +1,12 @@
 {
-  "certificateId": "CERT-ISO25010-2026-2C61BE0877A3",
+  "certificateId": "CERT-ISO25010-2026-F0DAD5A33D49",
   "standard": "ISO/IEC 25010:2011 / Systems and Software Quality Model",
   "specification": "ISO/IEC 25010 Performance Efficiency & Reliability Certification",
   "issuer": "Independent Laboratory Performance Certifier & Ujomor Systems Governance Authority",
   "subject": "EAORCS SaaS & Enterprise Platform Core Engine",
   "version": "2026.1.0-LTS",
-  "issueDate": "2026-08-02T16:24:36.162Z",
-  "expirationDate": "2027-08-02T16:24:36.162Z",
+  "issueDate": "2026-08-07T07:02:01.562Z",
+  "expirationDate": "2027-08-07T07:02:01.562Z",
   "certificationStatus": "CERTIFIED_COMPLIANT",
   "overallQualityScore": 99.81,
   "characteristicsSummary": {
@@ -23,12 +23,12 @@
     "memoryFootprintMb": 142.8,
     "errorRatePercent": 0
   },
-  "verificationUrl": "https://governance.ujomor.com/verify/cert/CERT-ISO25010-2026-2C61BE0877A3",
+  "verificationUrl": "https://governance.ujomor.com/verify/cert/CERT-ISO25010-2026-F0DAD5A33D49",
   "digitalSignature": {
     "algorithm": "HMAC-SHA256",
-    "hash": "0814b3eb7cb8a4f8d2fdcc8fd2d31eb4161d04e0c3cd80b1f1d4315e2521dc8d",
-    "signature": "6a1d38fa9aae8a40afa84d57bc1a322f29b328ff46798fdbf0df3dcb47fbc5ec",
+    "hash": "1824088e04fb1f57f7f06fb8a06ccd97ce494c642ff89560ec99d8416c9afa1d",
+    "signature": "7db72dbcd17fda36a00ff86a4974249cbe3f36b4a852eb5d60efed6e90447508",
     "signerAuthority": "Independent Laboratory Performance Certifier & Ujomor Systems Governance Authority",
-    "signedTimestamp": "2026-08-02T16:24:36.162Z"
+    "signedTimestamp": "2026-08-07T07:02:01.562Z"
   }
 }

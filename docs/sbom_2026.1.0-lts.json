@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:89cfc91f-01c1-1805-eaa5-f985e6427deb",
+  "serialNumber": "urn:uuid:b9c64632-76a3-8ae4-9e9a-521722a1b8e3",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-08-02T16:24:40.952Z",
+    "timestamp": "2026-08-07T07:02:05.594Z",
     "tools": [
       {
         "vendor": "Ujomor Systems",
@@ -461,13 +461,53 @@
     },
     {
       "type": "library",
+      "name": "audit_airroofers_eu",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/audit_airroofers_eu@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a310b4cc8b2c20433c0cc88a22f4bf917e17c52ea964978eb08df90b3bf15184"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: bin/audit_airroofers_eu.js"
+    },
+    {
+      "type": "library",
+      "name": "audit_federated_ecosystem",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/audit_federated_ecosystem@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6ee7d1ee50e1317148fe82fe5e635eb8b0db51744d185bdd6d9ecd869c952f1e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: bin/audit_federated_ecosystem.js"
+    },
+    {
+      "type": "library",
       "name": "create_eaorcs_package",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/create_eaorcs_package@2026.1.0-lts",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "99d7fe3314f66dc4a586073c2053c2c2dda3a76e0d3e013d34c5f19f0489a5f0"
+          "content": "4297e55258444e8ae8131f45331afd39faaee4a850040331b4496f34be575a52"
         }
       ],
       "licenses": [
@@ -607,7 +647,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "7a871a08d67af706950362071057b161e0aa8ce6953e933563a104d659e54681"
+          "content": "3dd6830151275729ec356712451bfb502be8f27670df36a45ad8815cb1dfac18"
         }
       ],
       "licenses": [
@@ -687,7 +727,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "5a1c5d79459e520797c5da0bf50bf9cacf940237992db88531f14a286f029472"
+          "content": "0cf1e2ceca0e30dba175157bd2537a24778504ec0d5cb29541dd18df288fd73a"
         }
       ],
       "licenses": [
@@ -698,6 +738,26 @@
         }
       ],
       "description": "EAORCS component: certify.js"
+    },
+    {
+      "type": "library",
+      "name": "agpa-build-pipeline",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/agpa-build-pipeline@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d15abad69082240d26a27e46a956643e2a6250ad308879ce86da94a2d97c982a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: ci/agpa-build-pipeline.js"
     },
     {
       "type": "library",
@@ -758,6 +818,26 @@
         }
       ],
       "description": "EAORCS component: ci/ContinuousAssurancePipeline.js"
+    },
+    {
+      "type": "library",
+      "name": "package-protected-release",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/package-protected-release@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5b5592bfdcfd3139a9529a72809da5bcf2e7e6d35d0414432c13f045f09fe075"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: ci/package-protected-release.js"
     },
     {
       "type": "library",
@@ -841,13 +921,53 @@
     },
     {
       "type": "library",
+      "name": "eaorcs-registry-cli",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/eaorcs-registry-cli@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "692b0db1f905393f61e6dfb04b378a4168b126de4f02182b0f901b72f2b060cd"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: cli/eaorcs-registry-cli.js"
+    },
+    {
+      "type": "library",
+      "name": "ide_cli",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ide_cli@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "98ce2ecc34eb6d65925cb7f1241948735e8b59ff0c73989e2c06be10cea24bfa"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: cli/ide_cli.js"
+    },
+    {
+      "type": "library",
       "name": "index",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/index@2026.1.0-lts",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "0354524cb39f0186996f5b8598991e916f46887f107f8c22dbe23da788f3c788"
+          "content": "2dfb5598fec60a7ad74688c9bf8d37c17c2043c8c05a9f8a74c424b32bc05d8d"
         }
       ],
       "licenses": [
@@ -858,6 +978,26 @@
         }
       ],
       "description": "EAORCS component: cli/index.js"
+    },
+    {
+      "type": "library",
+      "name": "onboard_cli",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/onboard_cli@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e590e6156da4e9fc3fb34b8349248305c0f8d683b247053d6fba309de84a6891"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: cli/onboard_cli.js"
     },
     {
       "type": "library",
@@ -938,6 +1078,86 @@
         }
       ],
       "description": "EAORCS component: demos/test-demo-project/run_demo.js"
+    },
+    {
+      "type": "library",
+      "name": "index",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c3871003954f6e07c85576a74b83cd935652fb25354b149d90ad0862bdf139d9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: dist/CiviScore-Sovereign/runtime/index.js"
+    },
+    {
+      "type": "library",
+      "name": "UnifiedServiceLayer",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/UnifiedServiceLayer@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f6d76ef141a10e742d1035571ff5177ccfe090d5c2acf1ba9eaa3465b63e415e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: dist/CiviScore-Sovereign/sdk/UnifiedServiceLayer.js"
+    },
+    {
+      "type": "library",
+      "name": "index",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3a4c2b18660e944512d59825682b81f0125bd7b0bd5f26b31380c092807b2d92"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: dist/EAORCS-Enterprise/runtime/index.js"
+    },
+    {
+      "type": "library",
+      "name": "UnifiedServiceLayer",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/UnifiedServiceLayer@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f6d76ef141a10e742d1035571ff5177ccfe090d5c2acf1ba9eaa3465b63e415e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: dist/EAORCS-Enterprise/sdk/UnifiedServiceLayer.js"
     },
     {
       "type": "library",
@@ -1038,6 +1258,146 @@
         }
       ],
       "description": "EAORCS component: dsl/AssureRuntime.cjs"
+    },
+    {
+      "type": "library",
+      "name": "IdentityProviderAdapter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/IdentityProviderAdapter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6cf4096b6c18a1b64e19299d24db08931a5df2da4f7b24c52be1f0c83f695d0c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/adapters/IdentityProviderAdapter.js"
+    },
+    {
+      "type": "library",
+      "name": "LicenseAuthorityAdapter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/LicenseAuthorityAdapter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "346cd279219f5603fa418ec0e7b4020ba83c256b780ba05c46d85e89f4a05f97"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/adapters/LicenseAuthorityAdapter.js"
+    },
+    {
+      "type": "library",
+      "name": "SCMAdapter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SCMAdapter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b322181efa3451af35feb15090ff59d1fafce5f4e3073a566fd243b1c03ef8ca"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/adapters/SCMAdapter.js"
+    },
+    {
+      "type": "library",
+      "name": "StorageProviderAdapter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/StorageProviderAdapter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "840e0e1c0daff32992cfaa8e1f9073c6387abec1d8880be91726de90db59bbf8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/adapters/StorageProviderAdapter.js"
+    },
+    {
+      "type": "library",
+      "name": "SupportProviderAdapter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SupportProviderAdapter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b5988468cf20c0e0eed1745c0bd77e42a7a4d60268287d753d857c55ab913d56"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/adapters/SupportProviderAdapter.js"
+    },
+    {
+      "type": "library",
+      "name": "TelemetryProviderAdapter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/TelemetryProviderAdapter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "08b489b893ede10f2c192bd7781d8d1efbf0afbad3ae8971c31d032fb4f9f7a2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/adapters/TelemetryProviderAdapter.js"
+    },
+    {
+      "type": "library",
+      "name": "AiCommandCenterEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AiCommandCenterEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "46ae6d7e848557df40db74660345da82f8a6d8296f2fcb0e11b5f1daa6d380a4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ai/AiCommandCenterEngine.js"
     },
     {
       "type": "library",
@@ -1201,6 +1561,26 @@
     },
     {
       "type": "library",
+      "name": "GovernanceCopilotEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernanceCopilotEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c69dcd10e68553ea218d577d5a2d6092264e456f3b3e16294b908e092c1dd528"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ai/GovernanceCopilotEngine.js"
+    },
+    {
+      "type": "library",
       "name": "MissingRequirementGenerator",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/MissingRequirementGenerator@2026.1.0-lts",
@@ -1238,6 +1618,26 @@
         }
       ],
       "description": "EAORCS component: engine/ai/PeerReviewedAiCorpus.js"
+    },
+    {
+      "type": "library",
+      "name": "PredictiveTrustIntelligenceEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PredictiveTrustIntelligenceEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3891e6da68d223a41d4ce6375ebe922427de023c80b6f050c61740111bbebbe9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ai/PredictiveTrustIntelligenceEngine.js"
     },
     {
       "type": "library",
@@ -1838,6 +2238,26 @@
         }
       ],
       "description": "EAORCS component: engine/api/ContractEvolutionEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "EnterpriseApiSuite",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EnterpriseApiSuite@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "620490cec257efbb9018e437d8f0d7c311d40ebc8ea58dc48ab019db986076dd"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/api/EnterpriseApiSuite.js"
     },
     {
       "type": "library",
@@ -2927,7 +3347,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "70ef824b0e6714022b014a50a6f56700274879ac64169e72cd183d743a923d5b"
+          "content": "0fae73fb0649f71191bbf08609285c7ec1bf77f77ab33bb97c2323abeb4b3513"
         }
       ],
       "licenses": [
@@ -3021,6 +3441,46 @@
     },
     {
       "type": "library",
+      "name": "OperationalExcellenceBenchmarker",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/OperationalExcellenceBenchmarker@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "579031054ed15605df71605d3f92bdbde36dd0568159972efce3cd3e822c9df0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/benchmark/OperationalExcellenceBenchmarker.js"
+    },
+    {
+      "type": "library",
+      "name": "TrustBenchmarkNetworkEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/TrustBenchmarkNetworkEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "28be7829ea8d933be1f322dc9b30cbbb1f32770a84f3f9513d6b0f10716276ed"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/benchmarking/TrustBenchmarkNetworkEngine.js"
+    },
+    {
+      "type": "library",
       "name": "BlueprintConformanceEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/BlueprintConformanceEngine@2026.1.0-lts",
@@ -3058,6 +3518,46 @@
         }
       ],
       "description": "EAORCS component: engine/blueprint/BlueprintDriftDetectorEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "BrandingEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/BrandingEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "92ee7940dcc86ea5b548aa9b70f239d6c269c945f0c83062f3d8175474e78b11"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/branding/BrandingEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "CentralizedBrandingEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CentralizedBrandingEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "baccdfab3fb92a0d456b0b3c37d992cc50bf5b1fce7392ec3dca389e5d485178"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/branding/CentralizedBrandingEngine.js"
     },
     {
       "type": "library",
@@ -3521,6 +4021,26 @@
     },
     {
       "type": "library",
+      "name": "EnterpriseCollaborationEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EnterpriseCollaborationEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "85f16539d6ea9acdce6e6225f851f66dfef566eb6969ddadf791b6d37e9efd09"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/collaboration/EnterpriseCollaborationEngine.js"
+    },
+    {
+      "type": "library",
       "name": "BillingAuditTrail",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/BillingAuditTrail@2026.1.0-lts",
@@ -3698,6 +4218,26 @@
         }
       ],
       "description": "EAORCS component: engine/commercial/CommercializationEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "CommercialLaunchKitEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CommercialLaunchKitEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "164793b4fa6497de29c04dde1d28b5a04dba5ec04360b48d9aa0a00d11c5c338"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/commercial/CommercialLaunchKitEngine.js"
     },
     {
       "type": "library",
@@ -4018,6 +4558,26 @@
         }
       ],
       "description": "EAORCS component: engine/commercial/OutcomeGraphRoiEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "ProcurementCenter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ProcurementCenter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6b4c4cd44f2c6d13e29dc3dbaf91b79b4b5bb74f9bbaac591d5bed31146be015"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/commercial/ProcurementCenter.js"
     },
     {
       "type": "library",
@@ -4841,6 +5401,26 @@
     },
     {
       "type": "library",
+      "name": "ExecutiveDecisionCenterEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ExecutiveDecisionCenterEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3d30e7843a5a7ef5b733c408667b9c7c2b865097997136b031d9c51dcaa024d8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/decision/ExecutiveDecisionCenterEngine.js"
+    },
+    {
+      "type": "library",
       "name": "BusinessDriftDetector",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/BusinessDriftDetector@2026.1.0-lts",
@@ -4921,6 +5501,66 @@
     },
     {
       "type": "library",
+      "name": "EcosystemConformanceEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EcosystemConformanceEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c7af9fc0c48d452d90b105521895d61d073df3bf94b8ed5df4c49182acca3105"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ecosystem/EcosystemConformanceEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "PlatformDependencyGraphEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformDependencyGraphEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5582a1c32aad002553cf228e33dd54dde583c4abda205a766660d3f823529013"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ecosystem/PlatformDependencyGraphEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "CommercialReadinessGovernor",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CommercialReadinessGovernor@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bc08af286c08b979a0ecf160234915a3731bebcfba0eff2cfbece7f22fe1d937"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/enterprise/CommercialReadinessGovernor.js"
+    },
+    {
+      "type": "library",
       "name": "TrustEventLedger",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/TrustEventLedger@2026.1.0-lts",
@@ -4981,6 +5621,26 @@
     },
     {
       "type": "library",
+      "name": "EvidencePackageGenerator",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EvidencePackageGenerator@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4e538a67806e37c18dd4b0b3cebcd55372ba2b3f9ebe5d07bff5d16b68f2c333"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/evidence/EvidencePackageGenerator.js"
+    },
+    {
+      "type": "library",
       "name": "EvidenceProvenanceChainEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/EvidenceProvenanceChainEngine@2026.1.0-lts",
@@ -5018,6 +5678,46 @@
         }
       ],
       "description": "EAORCS component: engine/evidence/EvidenceProvenanceFabricEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "ExternalEvidenceRegistryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ExternalEvidenceRegistryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "eb9d9e05e142d104b8910fe9d6b3c128831f205b37ec0177c43a8ad4f25d7e91"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/evidence/ExternalEvidenceRegistryEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "IndependentEvidenceRepository",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/IndependentEvidenceRepository@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "22ff71596abc1f71f3e61f298c4a0c8937e525c014797e63e78051df3414d966"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/evidence/IndependentEvidenceRepository.js"
     },
     {
       "type": "library",
@@ -5241,6 +5941,66 @@
     },
     {
       "type": "library",
+      "name": "ExplainabilityLedgerEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ExplainabilityLedgerEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c62bca45ac2161d6a833179536a5d2720ebc929e300bdc02b1f98a5c8773e3b0"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/explainability/ExplainabilityLedgerEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "EnterpriseDataFabricEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EnterpriseDataFabricEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a3229f74a7fbe4e4429db569ddb0f89e2323d42a7bfd0783ef73c78f04ed8539"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/fabric/EnterpriseDataFabricEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "AirRoofersFederationScoreEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersFederationScoreEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2d87e291e5854f82aeddcf99e0a16a0cbe4ab41d5598e317ce893a65b31ab7f7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/AirRoofersFederationScoreEngine.js"
+    },
+    {
+      "type": "library",
       "name": "AutonomousFederationControlPlaneEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/AutonomousFederationControlPlaneEngine@2026.1.0-lts",
@@ -5261,6 +6021,66 @@
     },
     {
       "type": "library",
+      "name": "CapabilityRegistrationPipeline",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CapabilityRegistrationPipeline@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5015a2d7c8bbf95d24f14c7797002c9d91bef2e272fb76eac1a55e6844adda2f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/CapabilityRegistrationPipeline.js"
+    },
+    {
+      "type": "library",
+      "name": "CrossProductFederationAuditor",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CrossProductFederationAuditor@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8654ebf7493995e8b0a2b16c609bf96efa235493df08c4f85a98099d297c1e11"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/CrossProductFederationAuditor.js"
+    },
+    {
+      "type": "library",
+      "name": "EcosystemDomainRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EcosystemDomainRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4a3855f2e464e1d7e762c2513ce389fa2e52f268cf7849d6cab64ec1f17394b6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/EcosystemDomainRegistry.js"
+    },
+    {
+      "type": "library",
       "name": "FederatedIdentityIntegrationEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/FederatedIdentityIntegrationEngine@2026.1.0-lts",
@@ -5278,6 +6098,26 @@
         }
       ],
       "description": "EAORCS component: engine/federation/FederatedIdentityIntegrationEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "FederatedPlatformGateway",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/FederatedPlatformGateway@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3d075e75d2f2d79ad9e8a106afba8189baff6d475a1c8f2adbb05f6b792dc492"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/FederatedPlatformGateway.js"
     },
     {
       "type": "library",
@@ -5381,6 +6221,86 @@
     },
     {
       "type": "library",
+      "name": "NativePlatformBootSubstrate",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/NativePlatformBootSubstrate@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b3359a96e48d083c049d4f2d6a0768c174afe6dc142197d6e4bdd839de5de56b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/NativePlatformBootSubstrate.js"
+    },
+    {
+      "type": "library",
+      "name": "PlatformContractRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformContractRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4ac73a51646b2b690986dcd6dd468ed47dd42c834f2d608efdb0f0c6518b15ed"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/PlatformContractRegistry.js"
+    },
+    {
+      "type": "library",
+      "name": "PlatformServiceAdapters",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformServiceAdapters@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cb9c75aeda610705160ea0d6326d79e17074b2821029d3df70854658b22aefd1"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/PlatformServiceAdapters.js"
+    },
+    {
+      "type": "library",
+      "name": "RuntimeFederationResilienceSimulator",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/RuntimeFederationResilienceSimulator@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "24b1d616dd66082bfd6606a0557de252552f559870cc68500e94f1b3da0c1ffa"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/federation/RuntimeFederationResilienceSimulator.js"
+    },
+    {
+      "type": "library",
       "name": "CarbonIntelligence",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/CarbonIntelligence@2026.1.0-lts",
@@ -5481,6 +6401,126 @@
     },
     {
       "type": "library",
+      "name": "ArchitectureDecisionClosureRegister",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ArchitectureDecisionClosureRegister@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8ff5bb1353cd1d4d0d8db5a681ed301bdd9b5f96777534a7c2d9ca9d3d87c4d4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/ArchitectureDecisionClosureRegister.js"
+    },
+    {
+      "type": "library",
+      "name": "ArchitectureDecisionRegistryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ArchitectureDecisionRegistryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "84943cded3c35fab6bc11009c19fad25b3da3b0e8de6549d068b818bef693f42"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/ArchitectureDecisionRegistryEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "AuditManifestEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AuditManifestEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "78361455ed75b3b307fa50aa3d6d1b3e211de7073747cf6cbe5037a777537920"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/AuditManifestEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "AutonomousPolicyEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AutonomousPolicyEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "65328dfd8b3505893072331d04bd2d13973386149b5fedb92b49587bf9bf32ba"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/AutonomousPolicyEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "BaselineComparisonEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/BaselineComparisonEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "439bc95c4803889e53c81937628dd26338836f689367ba220d84363a79ac1582"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/BaselineComparisonEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "BusinessImpactEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/BusinessImpactEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1dcad08a607a1fecb313e6cd77bef3ab9144ba171c546899dd56f752a3f6219f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/BusinessImpactEngine.js"
+    },
+    {
+      "type": "library",
       "name": "ContinuousEngineeringIntelligenceEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/ContinuousEngineeringIntelligenceEngine@2026.1.0-lts",
@@ -5538,6 +6578,46 @@
         }
       ],
       "description": "EAORCS component: engine/governance/DomainRulePackLoader.js"
+    },
+    {
+      "type": "library",
+      "name": "EditionEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EditionEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "babdbeb2aa6f51dcb381e2aef15e752d8b1765b66a060bbaa6bdaaaa5104aac6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/EditionEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "EndToEndPipelineVerifierEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EndToEndPipelineVerifierEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "82edbf024b060ae4ba57ccd894d55c0399959ab66a8d56c16d26b6e1bba1669f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/EndToEndPipelineVerifierEngine.js"
     },
     {
       "type": "library",
@@ -5641,6 +6721,146 @@
     },
     {
       "type": "library",
+      "name": "GovernanceKernelGateEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernanceKernelGateEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f49f0f865438cedbd701247859fd278099d92105834adf5e3358e7c4f72fec45"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/GovernanceKernelGateEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "GovernanceKnowledgeGraphEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernanceKnowledgeGraphEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9ed6d5d006d9b5b467ea3425fd3c43d2d5873cd213718a09dea3d043497d9aa9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/GovernanceKnowledgeGraphEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "GovernancePolicyEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernancePolicyEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7077b0925b25504cf21e762444014b662d66bb68ab598cf924258561b8e99325"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/GovernancePolicyEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "GovernanceQueryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernanceQueryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c6a7867e582f7c0ee11b6d68d839dcadf3d61d69889a2a753d52af6b072c178c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/GovernanceQueryEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "GovernanceScorecardEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernanceScorecardEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d47a7ab2b6dc004696443f11a8d86fb01977ebdd7b752e55de202bdd2a4fd742"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/GovernanceScorecardEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "HistoricalTrendEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/HistoricalTrendEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bf8d2533ae5178149d58a809d39d92cd2f54ace7a35d5ad8962fa0ed4234f858"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/HistoricalTrendEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "IdentityDiscoveryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/IdentityDiscoveryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "17826b6ab2f0c277ec0f1550749ef96a96c5a8d9464eb6689600dc907d2a0ef5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/IdentityDiscoveryEngine.js"
+    },
+    {
+      "type": "library",
       "name": "LaunchGovernanceEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/LaunchGovernanceEngine@2026.1.0-lts",
@@ -5658,6 +6878,26 @@
         }
       ],
       "description": "EAORCS component: engine/governance/LaunchGovernanceEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "MaturityProgressionEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/MaturityProgressionEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3fe56564373f054ebccf591f7dd7d717df5196fa6c9b5df527ca616b927be869"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/MaturityProgressionEngine.js"
     },
     {
       "type": "library",
@@ -5681,6 +6921,26 @@
     },
     {
       "type": "library",
+      "name": "PlatformEvolutionPolicyValidator",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformEvolutionPolicyValidator@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4daa491e564f96d64cb5191487481a2ab17516978292a9eb8b412979a9776d20"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/PlatformEvolutionPolicyValidator.js"
+    },
+    {
+      "type": "library",
       "name": "PolicyViolationMonitor",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/PolicyViolationMonitor@2026.1.0-lts",
@@ -5701,6 +6961,106 @@
     },
     {
       "type": "library",
+      "name": "PrioritizedRoadmapEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PrioritizedRoadmapEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d4d2894b179c1e9d80dfd8abeca91feb80303e6d3492a175818b2f280b8fa2c6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/PrioritizedRoadmapEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "ProjectRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ProjectRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "797b5ce1bb05ef00ee4667ce04c16934e5041c62c3dcbf952416fdafe9b9dac2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/ProjectRegistry.js"
+    },
+    {
+      "type": "library",
+      "name": "RegistryLifecycleManager",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/RegistryLifecycleManager@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "918829d8717e5cd333e8cae4c41c00ff10bbbc24c1053e07e2d9d727a9a57fd2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/RegistryLifecycleManager.js"
+    },
+    {
+      "type": "library",
+      "name": "RegistryOrchestrator",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/RegistryOrchestrator@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cf8ac024fdad131a2b1ed76d11234aee738a89c9662fc02ad394e7826a1f1dfd"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/RegistryOrchestrator.js"
+    },
+    {
+      "type": "library",
+      "name": "RepositoryIntelligenceEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/RepositoryIntelligenceEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f06e3435f0b7a91705857072f77337f6de930c903c40a6379f6b8e26ef784f80"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/RepositoryIntelligenceEngine.js"
+    },
+    {
+      "type": "library",
       "name": "SdkCompatibilityEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/SdkCompatibilityEngine@2026.1.0-lts",
@@ -5718,6 +7078,106 @@
         }
       ],
       "description": "EAORCS component: engine/governance/SdkCompatibilityEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "SpecificationDependencyGraphEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SpecificationDependencyGraphEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "91eed6ca2f4bb938cf177bd9aa47b172cda3f107c4a87b5757621e6b54805a4e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/SpecificationDependencyGraphEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "SpecificationDriftDetectorEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SpecificationDriftDetectorEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "aa71476910b52d625a65143386014b0c4568aebe8130bdacd735f9c0cc0da363"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/SpecificationDriftDetectorEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "SpecificationRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SpecificationRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f0335d1d846d6df9f2a4b1bef793f94cdd0909f915c59b31dd46506b2341d331"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/SpecificationRegistry.js"
+    },
+    {
+      "type": "library",
+      "name": "TechnicalDebtEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/TechnicalDebtEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3d8748e932cdb91b3ecf53ccd8a5cb1ddd9bfc7a220a25041352312c9b46a602"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/TechnicalDebtEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "TechnologyDetector",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/TechnologyDetector@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9d24fb226c9c040f08c0000376e23372b84096a34942fc9e887b4d716881dcf8"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/TechnologyDetector.js"
     },
     {
       "type": "library",
@@ -5758,6 +7218,26 @@
         }
       ],
       "description": "EAORCS component: engine/governance/VersionSyncVerifier.js"
+    },
+    {
+      "type": "library",
+      "name": "WorkspaceResolver",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/WorkspaceResolver@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "79a9bb44fccf4ab9b6c2baa12499f29f12e67f112ae363d13bf048f2cfe71a06"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/governance/WorkspaceResolver.js"
     },
     {
       "type": "library",
@@ -5898,6 +7378,26 @@
         }
       ],
       "description": "EAORCS component: engine/ide/LspServer.js"
+    },
+    {
+      "type": "library",
+      "name": "LspServerDaemon",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/LspServerDaemon@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ff89333d85381ed371008b551dd4ece47340f72f6d60917f1518e9befa03330d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ide/LspServerDaemon.js"
     },
     {
       "type": "library",
@@ -6061,13 +7561,33 @@
     },
     {
       "type": "library",
+      "name": "AirRoofersBillingClient",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersBillingClient@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9d03ef9186f9c23a29fc3de218f1a88a41b4676a13ac5e097631ef1562cf8630"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/integration/AirRoofersBillingClient.js"
+    },
+    {
+      "type": "library",
       "name": "AirRoofersIamClient",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/AirRoofersIamClient@2026.1.0-lts",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "f28330921fe0f027afccfb6ee99ef9b0c6fc5b3a45a8845f0803f79c46256c66"
+          "content": "7a97b05877acec80dab1bf0209bb6647a96d1bc0dca04efdf94f0aa408a1d1c0"
         }
       ],
       "licenses": [
@@ -6081,13 +7601,73 @@
     },
     {
       "type": "library",
+      "name": "AirRoofersLicensingClient",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersLicensingClient@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2e1c26e21d422434c5c73f9bf597d8d32a318b5504eb0b24f910ffe2c47c3fe4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/integration/AirRoofersLicensingClient.js"
+    },
+    {
+      "type": "library",
+      "name": "AirRoofersStorageClient",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersStorageClient@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "45b1e82b31fe72530f19c18d99d9d4fcab52362ac7bdc40e24a1b03a4c63a868"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/integration/AirRoofersStorageClient.js"
+    },
+    {
+      "type": "library",
+      "name": "AirRoofersSupportClient",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersSupportClient@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c9cf29d70d5c45c6749717fb1b10ff651fa4339774f29a0014fb3961c59bca3b"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/integration/AirRoofersSupportClient.js"
+    },
+    {
+      "type": "library",
       "name": "AirRoofersTelemetryClient",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/AirRoofersTelemetryClient@2026.1.0-lts",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "6e423fc485d31e0d4f71ffb26a6c96a2e36901f6fbd6aa786f711b3e0971f1d6"
+          "content": "84f237d2ea7bd6f8b8ee5b7f372f0447aabba7f696d8b4ece39ac7842bf7be45"
         }
       ],
       "licenses": [
@@ -6107,7 +7687,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "46b0a39d7c736b3304952469176fd86923b63964b8a6f535e2896670ce896d28"
+          "content": "45351a801d0bb28dfdad47313f382b892221ccbf9f2be9df6cf694df8648152d"
         }
       ],
       "licenses": [
@@ -6307,7 +7887,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "c5bde20a17e64a01b339e73a37f03e63da167d0ad4f96de327edc65f0c5650c8"
+          "content": "d28d6ada130c977d63a231a35267d52f47fbb5793dea68dc9e8cf0f717e3d426"
         }
       ],
       "licenses": [
@@ -6378,6 +7958,26 @@
         }
       ],
       "description": "EAORCS component: engine/kernel/EcosystemOperationsKernelEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "EnterpriseEventBus",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EnterpriseEventBus@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7e5a62e1cb186172a8695f5917f37fb405b9b589a504979eeea186a1adfd798f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/kernel/EnterpriseEventBus.js"
     },
     {
       "type": "library",
@@ -6501,6 +8101,26 @@
     },
     {
       "type": "library",
+      "name": "PluginEngineRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PluginEngineRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c4a0d50592915bccdbfe4b9764a4f6dcbab2d82d86bc8f68d71a8b71fefd322e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/kernel/PluginEngineRegistry.js"
+    },
+    {
+      "type": "library",
       "name": "PluginManager",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/PluginManager@2026.1.0-lts",
@@ -6538,6 +8158,46 @@
         }
       ],
       "description": "EAORCS component: engine/kernel/ServiceLocator.js"
+    },
+    {
+      "type": "library",
+      "name": "SoftwareTrustKernel",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SoftwareTrustKernel@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "de95d720648e483f8176940b21a84958303baa5dbf9936c128956e7a9fd01083"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/kernel/SoftwareTrustKernel.js"
+    },
+    {
+      "type": "library",
+      "name": "UnifiedDomainModel",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/UnifiedDomainModel@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "80f7b89f29fb4c46cd65552d6a3dadb86d69c79189d38387bf15e5b738218f15"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/kernel/UnifiedDomainModel.js"
     },
     {
       "type": "library",
@@ -6647,7 +8307,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "7d81366a3bf84410239370ddc8b0505041526d167e774458161441e9871933e2"
+          "content": "bcef7d95590c2571df44dc37f224bf63e9476a0bc944dbce54e6f761bc43dbcf"
         }
       ],
       "licenses": [
@@ -6678,6 +8338,26 @@
         }
       ],
       "description": "EAORCS component: engine/knowledge/EvidenceGraph.js"
+    },
+    {
+      "type": "library",
+      "name": "ExpandedKnowledgeGraphEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ExpandedKnowledgeGraphEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "52082115aca5f91be4e3941605f49a4b4f6a74d2aad5642bda0e9b9fa5cd2c71"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/knowledge/ExpandedKnowledgeGraphEngine.js"
     },
     {
       "type": "library",
@@ -6781,6 +8461,26 @@
     },
     {
       "type": "library",
+      "name": "SoftwareKnowledgeGraphEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SoftwareKnowledgeGraphEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e7acbe3e37aded7d63c01599b5add9fdaded0a7dd01a711b069d58899360628"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/knowledge/SoftwareKnowledgeGraphEngine.js"
+    },
+    {
+      "type": "library",
       "name": "TestGraph",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/TestGraph@2026.1.0-lts",
@@ -6798,6 +8498,66 @@
         }
       ],
       "description": "EAORCS component: engine/knowledge/TestGraph.js"
+    },
+    {
+      "type": "library",
+      "name": "LaunchExceptionRegister",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/LaunchExceptionRegister@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "87503ef79aea4b75c4c1b8d82b7a17250ea20ab79c4b99a5fa71aa032d674da4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/launch/LaunchExceptionRegister.js"
+    },
+    {
+      "type": "library",
+      "name": "OperationalLaunchGovernanceEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/OperationalLaunchGovernanceEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5f6459bb36e83714f665bf6e54100fc0796470a2a6790ac4e416912dec1cd2ff"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/launch/OperationalLaunchGovernanceEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "TenantContinuousLearningEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/TenantContinuousLearningEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "12007e04e5e3bcac6e61ac2f60ba5d9b1b061b5478483da28ae644e234ec5adf"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/learning/TenantContinuousLearningEngine.js"
     },
     {
       "type": "library",
@@ -6878,6 +8638,26 @@
         }
       ],
       "description": "EAORCS component: engine/legal/LegalRegistryEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "EditionAuthorizationEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EditionAuthorizationEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6adbdc368c574fb06d39cb2789e7213ea735106b40c325935ec60bb1f19a4c78"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/licensing/EditionAuthorizationEngine.js"
     },
     {
       "type": "library",
@@ -6981,6 +8761,46 @@
     },
     {
       "type": "library",
+      "name": "InstallableGovernanceMarketplace",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/InstallableGovernanceMarketplace@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a688026dcca5c441e7b90b0d1ebc0dca6259abde4461e1cd5471177ae6e68538"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/marketplace/InstallableGovernanceMarketplace.js"
+    },
+    {
+      "type": "library",
+      "name": "MarketplaceCatalogEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/MarketplaceCatalogEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "515bb72aaed72696ebe9351c801242d71b95765624405a58f318fb638014fa84"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/marketplace/MarketplaceCatalogEngine.js"
+    },
+    {
+      "type": "library",
       "name": "MarketplaceEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/MarketplaceEngine@2026.1.0-lts",
@@ -7061,6 +8881,26 @@
     },
     {
       "type": "library",
+      "name": "PartnerEcosystemEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PartnerEcosystemEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e697689bf00204ea8822237a9732f06f652d831147624cb966dc56d41f67c7a2"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/marketplace/PartnerEcosystemEngine.js"
+    },
+    {
+      "type": "library",
       "name": "PluginEcosystemSandbox",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/PluginEcosystemSandbox@2026.1.0-lts",
@@ -7081,6 +8921,26 @@
     },
     {
       "type": "library",
+      "name": "VersionedGovernancePackEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/VersionedGovernancePackEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ba36f0a9f3541366da6af04203328f4165377a0dcac5b915e3ddba8be72e4552"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/marketplace/VersionedGovernancePackEngine.js"
+    },
+    {
+      "type": "library",
       "name": "EngineeringMemoryEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/EngineeringMemoryEngine@2026.1.0-lts",
@@ -7098,6 +8958,86 @@
         }
       ],
       "description": "EAORCS component: engine/memory/EngineeringMemoryEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "PlatformMigrationEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformMigrationEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e6831149cc05570845113e7fa53ba259c805429950b3810fffabc0e38e9d236"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/migration/PlatformMigrationEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "PlatformHealthObservatoryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformHealthObservatoryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "653bc6ca6df9a0373e5884f52e89ca224264c29edf972afa13ad6047126e8fd7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/observability/PlatformHealthObservatoryEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "InteractiveOnboardingEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/InteractiveOnboardingEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "22843458b6f3d871bdd74a8c7664535f17020104e65fa3d0598e2509a953692a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/onboarding/InteractiveOnboardingEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "ProductOnboardingEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ProductOnboardingEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e43514c72f2a6d34a8897b896103996c1833f1cc9dd80274978d61bb80cc914"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/onboarding/ProductOnboardingEngine.js"
     },
     {
       "type": "library",
@@ -8718,6 +10658,26 @@
         }
       ],
       "description": "EAORCS component: engine/operations/IndependentExternalAssuranceBridge.js"
+    },
+    {
+      "type": "library",
+      "name": "InteractiveOperationsEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/InteractiveOperationsEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "460fd8b0235f8caae4cc0be32bdde61bcec736a2679df0915593e0488470bcbc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/operations/InteractiveOperationsEngine.js"
     },
     {
       "type": "library",
@@ -10801,6 +12761,46 @@
     },
     {
       "type": "library",
+      "name": "AirRoofersPackagingEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersPackagingEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d2d87f98b556b9808baf58f7309ae8229f11b718c9812ffe2e2aedbdfaeea4be"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/AirRoofersPackagingEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "AirRoofersProductRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirRoofersProductRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "86cffd1d67c52ce9eb33b2dc7900ce398436fa467c38706deaefa5fb910f85ca"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/AirRoofersProductRegistry.js"
+    },
+    {
+      "type": "library",
       "name": "CapabilityCapsulePacker",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/CapabilityCapsulePacker@2026.1.0-lts",
@@ -10858,6 +12858,146 @@
         }
       ],
       "description": "EAORCS component: engine/packaging/StandardPackagePacker.js"
+    },
+    {
+      "type": "library",
+      "name": "CanonicalContainerStrategy",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CanonicalContainerStrategy@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e1d4dab3a0b5c8e5ac38b84d2581b3ff8f3743cb4539b8effe7bd50b5ad2e10c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/strategies/CanonicalContainerStrategy.js"
+    },
+    {
+      "type": "library",
+      "name": "CustomerProjectStrategy",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CustomerProjectStrategy@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "536a220afba7b12a8ccee03d56a5325b9c54f1c8dc3ac0ccd39cbb096222d502"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/strategies/CustomerProjectStrategy.js"
+    },
+    {
+      "type": "library",
+      "name": "DualPassportStrategy",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/DualPassportStrategy@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "122d9c76acbe681c2d852b370d041eafbcfd1413c82c86cf58dece163ef9f716"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/strategies/DualPassportStrategy.js"
+    },
+    {
+      "type": "library",
+      "name": "EditionStrategy",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EditionStrategy@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c2ebdc9bca96d819e2f9539e26a89e8e472232dfad52eb7ac918aa7997068297"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/strategies/EditionStrategy.js"
+    },
+    {
+      "type": "library",
+      "name": "IpProtectionStrategy",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/IpProtectionStrategy@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2c30af5f12ea6aba2d0176a64f3c43c64565d83ecb7bccee87655eb4ff09b3dd"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/strategies/IpProtectionStrategy.js"
+    },
+    {
+      "type": "library",
+      "name": "SigningAndAttestationStrategy",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SigningAndAttestationStrategy@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f17f35faee6aeb7033ccc4382c2e1eedebf56d24185bb9cf0dc8b72350ac64b5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/packaging/strategies/SigningAndAttestationStrategy.js"
+    },
+    {
+      "type": "library",
+      "name": "DualPassportEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/DualPassportEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d768501a13d916b835e85ed526dffbfc3bebb99ee11907632c98010c7a02f4f4"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/passport/DualPassportEngine.js"
     },
     {
       "type": "library",
@@ -11121,6 +13261,66 @@
     },
     {
       "type": "library",
+      "name": "AdaptiveDashboardNavigationEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AdaptiveDashboardNavigationEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "31c1661cf2f1cfd6d7887b7d6495590e4f2b5734f6cdd8527dd7fb4d7fda76f9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/portal/AdaptiveDashboardNavigationEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "CustomerPassportPortalEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CustomerPassportPortalEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2ddaeaf5b6414c17648bfda55402f64c42db0f0577f51b5864ca78c42df776b6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/portal/CustomerPassportPortalEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "CustomerSuccessPortal",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CustomerSuccessPortal@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f9f1d23d50bb7834fdfd887e7f9cb444f0075a614082b98c912a479bf969bf19"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/portal/CustomerSuccessPortal.js"
+    },
+    {
+      "type": "library",
       "name": "DeveloperPlaygroundPortal",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/DeveloperPlaygroundPortal@2026.1.0-lts",
@@ -11198,6 +13398,46 @@
         }
       ],
       "description": "EAORCS component: engine/portal/EnterpriseDocPortalEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "ExecutiveTrustCenter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ExecutiveTrustCenter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0e746d9a14be2474c23242bd481c7086cbc40a72e662dfeaa4a7dad9fdf8ac21"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/portal/ExecutiveTrustCenter.js"
+    },
+    {
+      "type": "library",
+      "name": "PersonaWorkspaceEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PersonaWorkspaceEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cff526d42451a075e11f270d28729a7ff185b8897d69364da938fa9afeec7e0a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/portal/PersonaWorkspaceEngine.js"
     },
     {
       "type": "library",
@@ -11621,6 +13861,46 @@
     },
     {
       "type": "library",
+      "name": "CommercialPackagingEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CommercialPackagingEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2ff9f5fd83e93a9bfc15b653758d7c0b818233f64f3a3139d29e21fa22665380"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/productization/CommercialPackagingEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "CryptographicProvenanceChain",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CryptographicProvenanceChain@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d9744b2ade6028f28edb7dda619c08b3bb3954034cad3332ab9aeb114e24f3f5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/provenance/CryptographicProvenanceChain.js"
+    },
+    {
+      "type": "library",
       "name": "AwsProvider",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/AwsProvider@2026.1.0-lts",
@@ -12041,6 +14321,66 @@
     },
     {
       "type": "library",
+      "name": "RegistryLifecycleManager",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/RegistryLifecycleManager@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "21f6c829fd6a8eed0a31c9c7283f14ebbdc4456d949fb084d34c5585d23a3b19"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/registry/RegistryLifecycleManager.js"
+    },
+    {
+      "type": "library",
+      "name": "AIEngineeringAdvisor",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AIEngineeringAdvisor@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "afc15bdc5825195023d678aebdf4ce3c0ccc9e257c301bdbe2e80951c6391457"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/AIEngineeringAdvisor.js"
+    },
+    {
+      "type": "library",
+      "name": "AIRemediationEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AIRemediationEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "31222ed340a821bd7949b853ceeecdb39d0bfd3c837c9f1718b0d3abbb731f4a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/AIRemediationEngine.js"
+    },
+    {
+      "type": "library",
       "name": "AutonomousPatchGenerator",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/AutonomousPatchGenerator@2026.1.0-lts",
@@ -12058,6 +14398,26 @@
         }
       ],
       "description": "EAORCS component: engine/remediation/AutonomousPatchGenerator.js"
+    },
+    {
+      "type": "library",
+      "name": "CodeDiffGenerator",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/CodeDiffGenerator@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b82e6fb50efa6ee9a9e7c8a170c7c1b0362e1b14c5e1869d3c034cc2406a7e88"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/CodeDiffGenerator.js"
     },
     {
       "type": "library",
@@ -12081,6 +14441,86 @@
     },
     {
       "type": "library",
+      "name": "index",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "32061b8c1e8a425e7e531e6fa5247b72aea516b30d7dd6fb8a8580020e74a00f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/index.js"
+    },
+    {
+      "type": "library",
+      "name": "PerformanceCostOptimizer",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PerformanceCostOptimizer@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dafab04bbd969043a57b6078a989d13c986a29141a84a26bf242c2664b710056"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/PerformanceCostOptimizer.js"
+    },
+    {
+      "type": "library",
+      "name": "test-stream2-remediation",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/test-stream2-remediation@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0c2f8341d78ab268f9b9248c03beba469c2eefb3ecd05493087154df3df9ccea"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/test-stream2-remediation.js"
+    },
+    {
+      "type": "library",
+      "name": "test-stream4-remediation",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/test-stream4-remediation@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a42f8f1f3e4ad1c536501f7abdd2b2d6c74a20411f8e4fc215f3906ad87d440e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/remediation/test-stream4-remediation.js"
+    },
+    {
+      "type": "library",
       "name": "TestUpdater",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/TestUpdater@2026.1.0-lts",
@@ -12098,6 +14538,166 @@
         }
       ],
       "description": "EAORCS component: engine/remediation/TestUpdater.js"
+    },
+    {
+      "type": "library",
+      "name": "DynamicBrandingService",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/DynamicBrandingService@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "92cbcd767cb4001e61369cca13c02390867b5d37eb069dd3a8998eeafa8a79a3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reporting/DynamicBrandingService.js"
+    },
+    {
+      "type": "library",
+      "name": "DynamicWidgetRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/DynamicWidgetRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6a57c84ceef09400ed934ce592afbbcd36b37c15cca200113f0b58f05ebb0072"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reporting/DynamicWidgetRegistry.js"
+    },
+    {
+      "type": "library",
+      "name": "index",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "50c56381bab261babb77ca8f1f1c411f72e8ff2a8bc1446e5bfaea2f9e356eab"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reporting/index.js"
+    },
+    {
+      "type": "library",
+      "name": "ReportBundleCompiler",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ReportBundleCompiler@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9135fe0218394430bd77c53d3191b7fcc099365dbde601be44683bcf7eb7be09"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reporting/ReportBundleCompiler.js"
+    },
+    {
+      "type": "library",
+      "name": "ReportMetadataRegistry",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ReportMetadataRegistry@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "397e181c7ce79c19c3409bd5771f4c10e703e455c3faae0b158ea7ac0f665a0d"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reporting/ReportMetadataRegistry.js"
+    },
+    {
+      "type": "library",
+      "name": "ReportProfileEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ReportProfileEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7c1d7d4c3242b7d4339b73d636061e1d66d6c2c7860910fc6f626bd08b2c13ce"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reporting/ReportProfileEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "HtmlDashboardGenerator",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/HtmlDashboardGenerator@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fcd546bbccb6576c04f537a97e67f01b19d46276adfc1ae027bea007f03d5e2c"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reports/HtmlDashboardGenerator.js"
+    },
+    {
+      "type": "library",
+      "name": "ReportPathResolver",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/ReportPathResolver@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "deb1ee8f54ae75681d5df0aca84f0d481e2b813ae7b8c5742c17deb9974f04e5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/reports/ReportPathResolver.js"
     },
     {
       "type": "library",
@@ -12561,6 +15161,26 @@
     },
     {
       "type": "library",
+      "name": "DecomposableScoringEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/DecomposableScoringEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fdb74bbcda143781d8e3317afff6b721a1b41c33b42b51c9d8fa02bb81de16ab"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/scoring/DecomposableScoringEngine.js"
+    },
+    {
+      "type": "library",
       "name": "AnalyzerSDK",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/AnalyzerSDK@2026.1.0-lts",
@@ -12638,6 +15258,46 @@
         }
       ],
       "description": "EAORCS component: engine/sdk/OsapExtensionEngine.cjs"
+    },
+    {
+      "type": "library",
+      "name": "UniversalSearchEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/UniversalSearchEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9e9c038a2adb953e3f534c733154ec2a9d0bad882e5acd43bd5913397f589cc6"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/search/UniversalSearchEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "AirPackageEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/AirPackageEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b71b001ca231e1943e6fa6cdf97a7936ed324b391cfb0269df6740fea4e917cc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/security/AirPackageEngine.js"
     },
     {
       "type": "library",
@@ -12938,6 +15598,46 @@
         }
       ],
       "description": "EAORCS component: engine/security/TimestampAuthority.cjs"
+    },
+    {
+      "type": "library",
+      "name": "registry-routes",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/registry-routes@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5ad2a7b8162c8576444d848f4f3c15f7173bf94f4d3d8f1ca349d11a87bdf617"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/server/registry-routes.js"
+    },
+    {
+      "type": "library",
+      "name": "SimulationLaboratoryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SimulationLaboratoryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "76d688b17f56fb2c84d610282b1c1e4007e96f3f023c3dd4b5836426e1745b8a"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/simulation/SimulationLaboratoryEngine.js"
     },
     {
       "type": "library",
@@ -13261,6 +15961,26 @@
     },
     {
       "type": "library",
+      "name": "GovernanceStudioEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/GovernanceStudioEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3179d4e7f12aedcd8772a49571039fa1dad7512296df71f23c7b2f6dbbd44c58"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/studio/GovernanceStudioEngine.js"
+    },
+    {
+      "type": "library",
       "name": "DependencyAttestationEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/DependencyAttestationEngine@2026.1.0-lts",
@@ -13318,6 +16038,26 @@
         }
       ],
       "description": "EAORCS component: engine/supplychain/SignatureVerificationChain.js"
+    },
+    {
+      "type": "library",
+      "name": "SupplyChainTrustCenter",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/SupplyChainTrustCenter@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4869abbcc8669f11c2806c21e0552dc465375e8143b31c543002635f2e4441b3"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/supplychain/SupplyChainTrustCenter.js"
     },
     {
       "type": "library",
@@ -13538,6 +16278,26 @@
         }
       ],
       "description": "EAORCS component: engine/telemetry/performance_baseline.cjs"
+    },
+    {
+      "type": "library",
+      "name": "PlatformTelemetryEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformTelemetryEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3de35574ad8a4434d9840a90fb4861ab8408adbec8cbf4891d392c2a059b12a7"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/telemetry/PlatformTelemetryEngine.js"
     },
     {
       "type": "library",
@@ -14481,6 +17241,26 @@
     },
     {
       "type": "library",
+      "name": "DigitalTwinExplorer",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/DigitalTwinExplorer@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "970bae82fd8eed37711cb8fb007d66363807d1ada176bba3fcffcf38483c8ea5"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/twin/DigitalTwinExplorer.js"
+    },
+    {
+      "type": "library",
       "name": "DigitalTwinRuntimeEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/DigitalTwinRuntimeEngine@2026.1.0-lts",
@@ -14501,6 +17281,26 @@
     },
     {
       "type": "library",
+      "name": "EcosystemDigitalTwinEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/EcosystemDigitalTwinEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3e4b093b06e187e210acd3f18b1e9050b271ada60ec89c4ccbc4ccd68c6d6451"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/twin/EcosystemDigitalTwinEngine.js"
+    },
+    {
+      "type": "library",
       "name": "EcosystemDigitalTwinNetworkEngine",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/EcosystemDigitalTwinNetworkEngine@2026.1.0-lts",
@@ -14518,6 +17318,46 @@
         }
       ],
       "description": "EAORCS component: engine/twin/EcosystemDigitalTwinNetworkEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "InteractiveDigitalTwinEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/InteractiveDigitalTwinEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "704d5d4c673fce032ad67b17b845e17e70062da190d5364795d92993e3577995"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/twin/InteractiveDigitalTwinEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "InteractiveTrustGraphVisualizer",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/InteractiveTrustGraphVisualizer@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3efaebb808b5b735f41a95ceb09fd7061c218d2ff0aba0c17ead49c2cdc7a29f"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/twin/InteractiveTrustGraphVisualizer.js"
     },
     {
       "type": "library",
@@ -14718,6 +17558,26 @@
         }
       ],
       "description": "EAORCS component: engine/utcf/UtcfEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "FluidExperienceQualityEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/FluidExperienceQualityEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "09ccc700d1aa6a970970e37ca1bbe21bb9a5c968b8d3b0db274e933c098e20af"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/ux/FluidExperienceQualityEngine.js"
     },
     {
       "type": "library",
@@ -15318,6 +18178,26 @@
         }
       ],
       "description": "EAORCS component: engine/validation/ZeroKnowledgeEvidenceProofEngine.js"
+    },
+    {
+      "type": "library",
+      "name": "VisualWorkflowDesignerEngine",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/VisualWorkflowDesignerEngine@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a18806b0ec1030a119ede302c4c9d842c1e415c8986e457a05dc616f108342fc"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: engine/workflow/VisualWorkflowDesignerEngine.js"
     },
     {
       "type": "library",
@@ -16121,13 +19001,33 @@
     },
     {
       "type": "library",
+      "name": "clean_external_consumer_sample",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/clean_external_consumer_sample@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "06e654c6c55689d11a1e5dd876ba06092c32eae364c6dc7752c6f266630dbc04"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: sdk/examples/clean_external_consumer_sample.js"
+    },
+    {
+      "type": "library",
       "name": "index",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/index@2026.1.0-lts",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "9c3c965ddf161de2f4cdf30da1f66a01de58be1f32eed6289bee71b8c0876962"
+          "content": "d526b5910da92accbdf7326d1c8985def9d8bfa338acc8ccbc7680443eca7549"
         }
       ],
       "licenses": [
@@ -16161,6 +19061,26 @@
     },
     {
       "type": "library",
+      "name": "PlatformExtensionSdk",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PlatformExtensionSdk@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "98bd783555ddf7de706b73c7b404068943b85267b3ada8a088b713867eb01ff9"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: sdk/PlatformExtensionSdk.js"
+    },
+    {
+      "type": "library",
       "name": "PublicSdkPackageBuilder",
       "version": "2026.2.0-LTS",
       "purl": "pkg:npm/%40eaorcs/PublicSdkPackageBuilder@2026.1.0-lts",
@@ -16178,6 +19098,46 @@
         }
       ],
       "description": "EAORCS component: sdk/public/PublicSdkPackageBuilder.js"
+    },
+    {
+      "type": "library",
+      "name": "PublicGovernanceSdk",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/PublicGovernanceSdk@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5673223b93f1e698b33048eba6c83a985fca6b94570e6b21ed61f88bb5adf669"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: sdk/PublicGovernanceSdk.js"
+    },
+    {
+      "type": "library",
+      "name": "UnifiedServiceLayer",
+      "version": "2026.2.0-LTS",
+      "purl": "pkg:npm/%40eaorcs/UnifiedServiceLayer@2026.1.0-lts",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f6d76ef141a10e742d1035571ff5177ccfe090d5c2acf1ba9eaa3465b63e415e"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "Commercial / Enterprise"
+          }
+        }
+      ],
+      "description": "EAORCS component: sdk/services/UnifiedServiceLayer.js"
     },
     {
       "type": "library",
@@ -16246,6 +19206,8 @@
         "pkg:npm/%40eaorcs/BaselineManager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DriftDetector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/run_baseline@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/audit_airroofers_eu@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/audit_federated_ecosystem@2026.1.0-lts",
         "pkg:npm/%40eaorcs/create_eaorcs_package@2026.1.0-lts",
         "pkg:npm/%40eaorcs/eaorcs_installer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/eaorcs@2026.1.0-lts",
@@ -16258,23 +19220,39 @@
         "pkg:npm/%40eaorcs/rc1_release_certification@2026.1.0-lts",
         "pkg:npm/%40eaorcs/verify_version_sync@2026.1.0-lts",
         "pkg:npm/%40eaorcs/certify@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/agpa-build-pipeline@2026.1.0-lts",
         "pkg:npm/%40eaorcs/autonomous_governance_pipeline@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CiOrchestrator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ContinuousAssurancePipeline@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/package-protected-release@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductExecutionAssurancePipeline@2026.1.0-lts",
         "pkg:npm/%40eaorcs/run_ci_locally@2026.1.0-lts",
         "pkg:npm/%40eaorcs/dcp_cli@2026.1.0-lts",
         "pkg:npm/%40eaorcs/dsl@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/eaorcs-registry-cli@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ide_cli@2026.1.0-lts",
         "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/onboard_cli@2026.1.0-lts",
         "pkg:npm/%40eaorcs/verifier_cli@2026.1.0-lts",
         "pkg:npm/%40eaorcs/verify@2026.1.0-lts",
         "pkg:npm/%40eaorcs/run_demo@2026.1.0-lts",
         "pkg:npm/%40eaorcs/run_demo@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/UnifiedServiceLayer@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/UnifiedServiceLayer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/domain_manager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AssureCompiler@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AssureLexer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AssureParser@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AssureRuntime@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/IdentityProviderAdapter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/LicenseAuthorityAdapter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SCMAdapter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/StorageProviderAdapter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SupportProviderAdapter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/TelemetryProviderAdapter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AiCommandCenterEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AiCorpusBenchmarkVerifier@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AiCouncilEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AiCouncilEngine@2026.1.0-lts",
@@ -16283,8 +19261,10 @@
         "pkg:npm/%40eaorcs/BlueprintGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ConsensusProtocol@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EngineeringInterviewEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernanceCopilotEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MissingRequirementGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PeerReviewedAiCorpus@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PredictiveTrustIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RequirementGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SpecialistAgents@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AiCouncilEngine@2026.1.0-lts",
@@ -16315,6 +19295,7 @@
         "pkg:npm/%40eaorcs/AnalyzerSDK@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AutonomousApiGovernanceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ContractEvolutionEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EnterpriseApiSuite@2026.1.0-lts",
         "pkg:npm/%40eaorcs/governance_api_router@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ArchitectureManager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AuditorReportExporter@2026.1.0-lts",
@@ -16374,8 +19355,12 @@
         "pkg:npm/%40eaorcs/SignedReleaseEvidencePackager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ThirdPartyLabAttestationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/tier1_ga_release_audit@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/OperationalExcellenceBenchmarker@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/TrustBenchmarkNetworkEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BlueprintConformanceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BlueprintDriftDetectorEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/BrandingEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CentralizedBrandingEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CapabilityNegotiator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CapabilityNegotiator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IndependentCertificationAuthority@2026.1.0-lts",
@@ -16399,6 +19384,7 @@
         "pkg:npm/%40eaorcs/ContinuousContractIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DeploymentEvidenceRecorder@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PipelineAuditTrailEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EnterpriseCollaborationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BillingAuditTrail@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BillingEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BillingWorkflowOrchestrator@2026.1.0-lts",
@@ -16408,6 +19394,7 @@
         "pkg:npm/%40eaorcs/CommercialHealthAnalytics@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CommercialIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CommercializationEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CommercialLaunchKitEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CommercialLifecycleEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CommercialOperationsEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CommercialOperationsIntelligenceEngine@2026.1.0-lts",
@@ -16424,6 +19411,7 @@
         "pkg:npm/%40eaorcs/OnboardingHistoryEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OperationalEconomicsEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OutcomeGraphRoiEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ProcurementCenter@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductCommercialization@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductReadinessEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RenewalRiskEngine@2026.1.0-lts",
@@ -16465,15 +19453,22 @@
         "pkg:npm/%40eaorcs/CustomerExperienceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CustomerSuccessEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DistributionControlPlane@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ExecutiveDecisionCenterEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BusinessDriftDetector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ExtraFeatureEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IntentAnalyzer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MissingFeatureEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EcosystemConformanceEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformDependencyGraphEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CommercialReadinessGovernor@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TrustEventLedger@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AvailabilityAuditTrail@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ContinuousEvidenceGraphEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EvidencePackageGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EvidenceProvenanceChainEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EvidenceProvenanceFabricEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ExternalEvidenceRegistryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/IndependentEvidenceRepository@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OperationalEvidenceFabricEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductionDeploymentLedger@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RuntimeEvidenceBackboneEngine@2026.1.0-lts",
@@ -16485,32 +19480,71 @@
         "pkg:npm/%40eaorcs/ExecutionGraph@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ExecutionGraphSpec@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ExecutionGraphSpec@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ExplainabilityLedgerEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EnterpriseDataFabricEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersFederationScoreEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AutonomousFederationControlPlaneEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CapabilityRegistrationPipeline@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CrossProductFederationAuditor@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EcosystemDomainRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FederatedIdentityIntegrationEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/FederatedPlatformGateway@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FederationControlPlaneEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FederationGovernanceKernelEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/HighAvailabilityCluster@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LiveFederationVerificationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MicroserviceFederationEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/NativePlatformBootSubstrate@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformContractRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformServiceAdapters@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/RuntimeFederationResilienceSimulator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CarbonIntelligence@2026.1.0-lts",
         "pkg:npm/%40eaorcs/GenomeEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MaturityVector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ApiContractEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ApiGovernanceEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ArchitectureDecisionClosureRegister@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ArchitectureDecisionRegistryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AuditManifestEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AutonomousPolicyEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/BaselineComparisonEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/BusinessImpactEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ContinuousEngineeringIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ContinuousReleaseGovernanceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DomainRulePackLoader@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EditionEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EndToEndPipelineVerifierEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EventContractEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EvidenceBackedLaunchGovernanceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EvidenceDriftDetector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FinalMaturityAssessmentEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/GAIntelligenceOrchestrator@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernanceKernelGateEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernanceKnowledgeGraphEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernancePolicyEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernanceQueryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernanceScorecardEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/HistoricalTrendEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/IdentityDiscoveryEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LaunchGovernanceEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/MaturityProgressionEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OperationalRegressionEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformEvolutionPolicyValidator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PolicyViolationMonitor@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PrioritizedRoadmapEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ProjectRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/RegistryLifecycleManager@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/RegistryOrchestrator@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/RepositoryIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SdkCompatibilityEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SpecificationDependencyGraphEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SpecificationDriftDetectorEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SpecificationRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/TechnicalDebtEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/TechnologyDetector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/UniversalConstitutionEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/VersionSyncVerifier@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/WorkspaceResolver@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EdhHypervisorEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/VirtualFilesystem@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CoverageVisualizer@2026.1.0-lts",
@@ -16518,6 +19552,7 @@
         "pkg:npm/%40eaorcs/IdeAdapterLayer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IDEEcosystemRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LspServer@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/LspServerDaemon@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductionIdeAdapterSuite@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RequirementLookupProvider@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TraceabilityNavigator@2026.1.0-lts",
@@ -16526,7 +19561,11 @@
         "pkg:npm/%40eaorcs/index@2026.1.0-lts",
         "pkg:npm/%40eaorcs/index@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AdapterComplianceEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersBillingClient@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AirRoofersIamClient@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersLicensingClient@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersStorageClient@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersSupportClient@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AirRoofersTelemetryClient@2026.1.0-lts",
         "pkg:npm/%40eaorcs/BoundedContextGuard@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CrossDomainValidator@2026.1.0-lts",
@@ -16542,14 +19581,18 @@
         "pkg:npm/%40eaorcs/ConfigurationManager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DependencyInjection@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EcosystemOperationsKernelEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EnterpriseEventBus@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EventBus@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FeatureFlags@2026.1.0-lts",
         "pkg:npm/%40eaorcs/Kernel@2026.1.0-lts",
         "pkg:npm/%40eaorcs/KernelOptimizationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LifecycleManager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ModuleRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PluginEngineRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PluginManager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ServiceLocator@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SoftwareTrustKernel@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/UnifiedDomainModel@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CodeGraph@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ContinuousBlueprintIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EngineeringIntelligenceGraphEngine@2026.1.0-lts",
@@ -16557,27 +19600,41 @@
         "pkg:npm/%40eaorcs/EnterpriseGraphEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EnterpriseKnowledgeGraphEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EvidenceGraph@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ExpandedKnowledgeGraphEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FederatedKnowledgeGraphEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PersistentGraphDatabase@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductIntelligenceFabricEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RequirementGraph@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SelfHealingBlueprintIntelligenceEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SoftwareKnowledgeGraphEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TestGraph@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/LaunchExceptionRegister@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/OperationalLaunchGovernanceEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/TenantContinuousLearningEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LegalEnforcementEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LegalGovernanceExtensionEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LegalManagementEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LegalRegistryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EditionAuthorizationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LifecycleAuditTrail@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LifecycleOrchestrator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LifecycleStageRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EcosystemNonDuplicationAudit@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IndustryConstitutionRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/InstallableGovernanceMarketplace@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/MarketplaceCatalogEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MarketplaceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MarketplaceIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MarketplacePartnerCertification@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MarketplaceReadinessEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PartnerEcosystemEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PluginEcosystemSandbox@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/VersionedGovernancePackEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EngineeringMemoryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformMigrationEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformHealthObservatoryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/InteractiveOnboardingEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ProductOnboardingEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ApiAndSdkReferenceCompiler@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ApiEndpointComplianceArchive@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ApiEndpointComplianceLedger@2026.1.0-lts",
@@ -16659,6 +19716,7 @@
         "pkg:npm/%40eaorcs/IndependentAssuranceIntegrator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IndependentAssuranceTokenBridge@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IndependentExternalAssuranceBridge@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/InteractiveOperationsEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/K8sClusterEventProvenanceGraph@2026.1.0-lts",
         "pkg:npm/%40eaorcs/K8sEventLogCollector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/KubernetesEventProvenanceGraph@2026.1.0-lts",
@@ -16763,9 +19821,18 @@
         "pkg:npm/%40eaorcs/ZeroDriftContractGatePolicy@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CryptoSigner@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OsapEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersPackagingEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirRoofersProductRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CapabilityCapsulePacker@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EnterpriseBundlePacker@2026.1.0-lts",
         "pkg:npm/%40eaorcs/StandardPackagePacker@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CanonicalContainerStrategy@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CustomerProjectStrategy@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/DualPassportStrategy@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EditionStrategy@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/IpProtectionStrategy@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SigningAndAttestationStrategy@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/DualPassportEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CustomerSuccessIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CustomerValidationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PilotHealthMonitor@2026.1.0-lts",
@@ -16779,10 +19846,15 @@
         "pkg:npm/%40eaorcs/PolicyEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PolicyPackLoader@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProfileBundleLoader@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AdaptiveDashboardNavigationEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CustomerPassportPortalEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CustomerSuccessPortal@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DeveloperPlaygroundPortal@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DeveloperPortalEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DocumentationIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EnterpriseDocPortalEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ExecutiveTrustCenter@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PersonaWorkspaceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PublicTrustPortal@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SdkDocumentationLifecycleEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/predict@2026.1.0-lts",
@@ -16804,6 +19876,8 @@
         "pkg:npm/%40eaorcs/ProcurementIntelligenceFreshnessEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProcurementReadinessEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RfpEvidenceBundler@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CommercialPackagingEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CryptographicProvenanceChain@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AwsProvider@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AzureProvider@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CronProvider@2026.1.0-lts",
@@ -16825,9 +19899,25 @@
         "pkg:npm/%40eaorcs/AirRoofersProductRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CapabilityRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FederatedProductRegistryEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/RegistryLifecycleManager@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AIEngineeringAdvisor@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AIRemediationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AutonomousPatchGenerator@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/CodeDiffGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EvidenceRecertifier@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PerformanceCostOptimizer@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/test-stream2-remediation@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/test-stream4-remediation@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TestUpdater@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/DynamicBrandingService@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/DynamicWidgetRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/index@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ReportBundleCompiler@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ReportMetadataRegistry@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ReportProfileEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/HtmlDashboardGenerator@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/ReportPathResolver@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ReproducibleResearchExporter@2026.1.0-lts",
         "pkg:npm/%40eaorcs/RuleRegistry@2026.1.0-lts",
         "pkg:npm/%40eaorcs/CacheProvider@2026.1.0-lts",
@@ -16851,10 +19941,13 @@
         "pkg:npm/%40eaorcs/SubscriptionGate@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TenantAnalyticsEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TenantManager@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/DecomposableScoringEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AnalyzerSDK@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DeveloperAdoptionEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LspDapBridgeEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OsapExtensionEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/UniversalSearchEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/AirPackageEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ComplianceValidationChain@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ExternalSecurityAssuranceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/IndependentAssuranceEngine@2026.1.0-lts",
@@ -16870,6 +19963,8 @@
         "pkg:npm/%40eaorcs/SupplyChainAttestationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ThirdPartyAssessmentEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/TimestampAuthority@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/registry-routes@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SimulationLaboratoryEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SovereignAirGapManager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AutonomousBlueprintIntelligenceEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AutonomousPlatformEvolutionEngine@2026.1.0-lts",
@@ -16886,9 +19981,11 @@
         "pkg:npm/%40eaorcs/RequirementParser@2026.1.0-lts",
         "pkg:npm/%40eaorcs/StandardsRegistryEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LivePlatformStateEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/GovernanceStudioEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DependencyAttestationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SbomExternalVerifier@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SignatureVerificationChain@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/SupplyChainTrustCenter@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AlertingRulesEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DashboardSnapshotEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/FederatedTelemetryLakeEngine@2026.1.0-lts",
@@ -16900,6 +19997,7 @@
         "pkg:npm/%40eaorcs/OpenTelemetryObservabilityEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OpenTelemetryPipelineEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/performance_baseline@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformTelemetryEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductionTelemetryCollector@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ProductionTelemetryVerificationEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PrometheusMetricsExporter@2026.1.0-lts",
@@ -16947,8 +20045,12 @@
         "pkg:npm/%40eaorcs/twin@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DigitalTwinEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DigitalTwinEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/DigitalTwinExplorer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/DigitalTwinRuntimeEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/EcosystemDigitalTwinEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/EcosystemDigitalTwinNetworkEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/InteractiveDigitalTwinEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/InteractiveTrustGraphVisualizer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/LiveDigitalTwinEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/OutcomeGraphEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/StateReconstruction@2026.1.0-lts",
@@ -16959,6 +20061,7 @@
         "pkg:npm/%40eaorcs/LanguageAdapters@2026.1.0-lts",
         "pkg:npm/%40eaorcs/MultiLanguageParserEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/UtcfEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/FluidExperienceQualityEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AttestedSbomSigner@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AuditorArtifactBundler@2026.1.0-lts",
         "pkg:npm/%40eaorcs/AutomatedSecOpsOrchestrator@2026.1.0-lts",
@@ -16989,6 +20092,7 @@
         "pkg:npm/%40eaorcs/RuntimeEnvironmentVerifier@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SubscriptionLifecycleAttestor@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ZeroKnowledgeEvidenceProofEngine@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/VisualWorkflowDesignerEngine@2026.1.0-lts",
         "pkg:npm/%40eaorcs/HashManifestGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ManifestGenerator@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ManifestValidator@2026.1.0-lts",
@@ -17029,9 +20133,13 @@
         "pkg:npm/%40eaorcs/SocEvidencePackager@2026.1.0-lts",
         "pkg:npm/%40eaorcs/SupplyChainVerifier@2026.1.0-lts",
         "pkg:npm/%40eaorcs/ThirdPartyValidationPackage@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/clean_external_consumer_sample@2026.1.0-lts",
         "pkg:npm/%40eaorcs/index@2026.1.0-lts",
         "pkg:npm/%40eaorcs/plugin@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PlatformExtensionSdk@2026.1.0-lts",
         "pkg:npm/%40eaorcs/PublicSdkPackageBuilder@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/PublicGovernanceSdk@2026.1.0-lts",
+        "pkg:npm/%40eaorcs/UnifiedServiceLayer@2026.1.0-lts",
         "pkg:npm/%40eaorcs/verifier@2026.1.0-lts",
         "pkg:npm/%40eaorcs/extension@2026.1.0-lts"
       ]

@@ -1,0 +1,14 @@
+{
+  "manifestVersion": "AGPA_v1.0",
+  "product": "CiviScore",
+  "name": "Civic Infrastructure Integrity & Trust Scoring Engine",
+  "edition": "Sovereign",
+  "version": "2026.3.0-LTS",
+  "createdDate": "2026-08-07T06:47:52.504Z",
+  "capabilities": [
+    "cap.trust.scoring",
+    "cap.civic.ledger",
+    "cap.audit.gate"
+  ],
+  "hash": "9455066f5f44065dbfbd1fc25b0417d24a2773e6f1e9dbcc39e99b0a36d77dcb"
+}

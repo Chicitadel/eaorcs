@@ -174,8 +174,10 @@ function createPackage() {
 
   const zipPathMain = path.join(releaseDir, 'eaorcs_external_audit_package.zip');
   const zipPathPep = path.join(releaseDir, 'eaorcs_pep_audit_package.zip');
+  const zipPathRelease = path.join(releaseDir, 'eaorcs_2026.3.0-LTS_release_commit_e418a93.zip');
+  const zipPathRootRelease = path.join(rootDir, 'eaorcs_2026.3.0-LTS_release_commit_e418a93.zip');
 
-  for (const p of [zipPathMain, zipPathPep]) {
+  for (const p of [zipPathMain, zipPathPep, zipPathRelease, zipPathRootRelease]) {
     if (fs.existsSync(p)) {
       try { fs.rmSync(p, { force: true, maxRetries: 5, retryDelay: 200 }); } catch (e) {}
     }
@@ -232,6 +234,8 @@ function createPackage() {
   if (proc.status === 0 && fs.existsSync(tmpZipPath)) {
     safeCopyFileSync(tmpZipPath, zipPathMain);
     safeCopyFileSync(tmpZipPath, zipPathPep);
+    safeCopyFileSync(tmpZipPath, zipPathRelease);
+    safeCopyFileSync(tmpZipPath, zipPathRootRelease);
     try { fs.unlinkSync(tmpZipPath); } catch (e) {}
 
     // Clean up any stale tmp files in release directory
@@ -302,9 +306,11 @@ function createPackage() {
     console.log(`   Size: ${(statsMain.size / 1024 / 1024).toFixed(2)} MB (${statsMain.size} bytes)`);
     console.log(`   Reconciled ZIP Entries Count: ${exactZipEntries} entries (automatically verified)\n`);
 
-    console.log(`✅ PEP PACKAGE SUCCESS: Created PEP Audit ZIP package!`);
-    console.log(`   Path: ${zipPathPep}`);
-    console.log(`   Size: ${(statsPep.size / 1024 / 1024).toFixed(2)} MB (${statsPep.size} bytes)\n`);
+    const statsRelease = fs.statSync(zipPathRelease);
+
+    console.log(`✅ RELEASE PACKAGE SUCCESS: Created Full Release ZIP package!`);
+    console.log(`   Path: ${zipPathRelease}`);
+    console.log(`   Size: ${(statsRelease.size / 1024 / 1024).toFixed(2)} MB (${statsRelease.size} bytes)\n`);
   } else {
     console.error('❌ PACKAGE CREATION FAILED:');
     console.error(proc.stderr || proc.stdout);

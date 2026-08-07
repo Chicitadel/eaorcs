@@ -1,0 +1,31 @@
+{
+  "passportId": "passport_3f971879726ec186_PUB",
+  "version": "2026.3.0-LTS",
+  "classification": "PUBLIC_CUSTOMER_AUDITOR",
+  "issuedAt": "2026-08-07T06:47:52.499Z",
+  "issuer": "Air Roofers Governance Directorate",
+  "subject": "Civic Infrastructure Integrity & Trust Scoring Engine",
+  "evidenceHashes": [
+    "d6cca510b2dc2f58f3f321ba0679ad20d28c81cc48de8a0eb2c9a78dbba149ba"
+  ],
+  "sbomSummary": {
+    "totalComponents": 42,
+    "vulnerabilities": 0,
+    "licenseCompliance": "PASS"
+  },
+  "complianceAttestations": [
+    {
+      "standard": "ISO 27001",
+      "status": "VERIFIED"
+    },
+    {
+      "standard": "SOC 2 Type II",
+      "status": "ATTESTED"
+    },
+    {
+      "standard": "WCAG 2.1 AA",
+      "status": "COMPLIANT"
+    }
+  ],
+  "signature": "028695fd2d7132776b1286eb7fc6d128b0dded6591f1ce34f3da6ec8e3b69f66"
+}

@@ -1,9 +1,9 @@
 # EAORCS 2026.1.0-lts Release Notes
 
-**Release Date:** 2026-08-02  
+**Release Date:** 2026-08-07  
 **Release Type:** Long-Term Support (LTS)  
-**Build ID:** BUILD-1785687879836-73384C40  
-**Release Hash:** `05074fbac8a67614e0e637245bf309ff...`
+**Build ID:** BUILD-1786086124293-C0EEF75C  
+**Release Hash:** `a8a519dc64cf8fd274b8b36b560f4c76...`
 
 ## What's Included
 
@@ -24,7 +24,7 @@
 - ✅ 21/21 Master Verification Suite Tests
 - ✅ 23/23 Blueprint Traceability Sections
 - ✅ 10/10 Environment Certification Matrix
-- ✅ SBOM: 810 components (CycloneDX 1.4)
+- ✅ SBOM: 958 components (CycloneDX 1.4)
 - ✅ Ed25519 Signed Release Artifacts
 - ✅ Reproducible Build Verified
 

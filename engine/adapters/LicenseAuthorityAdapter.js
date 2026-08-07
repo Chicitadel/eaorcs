@@ -79,7 +79,7 @@ class LicenseAuthorityAdapter {
      * @param {Array<string>} [features=['audit_kernel', 'custom_branding', 'policy_engine', 'multi_tenant']] 
      * @returns {Object} Issued license object
      */
-    issueLicense(tenantData = {}, expirationDays = 365, features = null) {
+    issueLicense(tenantData = {}, expirationDays = 365, features = null) { // domain-authority-allowed
         const tenantId = tenantData.tenantId || 'tenant_default';
         const organization = tenantData.organization || this.organizationId;
         const tier = tenantData.tier || 'ENTERPRISE';

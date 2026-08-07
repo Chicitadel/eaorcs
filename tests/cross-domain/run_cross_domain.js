@@ -36,13 +36,14 @@ const path = require('path');
 const CrossDomainValidator = require('../../engine/integration/CrossDomainValidator');
 const AdapterComplianceEngine = require('../../engine/integration/AdapterComplianceEngine');
 const BoundedContextGuard = require('../../engine/integration/BoundedContextGuard');
+const WorkspaceResolver = require('../../engine/governance/WorkspaceResolver');
 
 function main() {
   console.log('================================================================');
   console.log('  EAORCS Cross-Domain Integration Verification Runner');
   console.log('================================================================\n');
 
-  const rootDir = path.resolve(__dirname, '../../');
+  const rootDir = WorkspaceResolver.resolveWorkspaceRoot(__dirname);
   const docsDir = path.join(rootDir, 'docs');
 
   if (!fs.existsSync(docsDir)) {

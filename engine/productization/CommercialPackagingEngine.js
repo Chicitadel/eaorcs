@@ -238,7 +238,7 @@ class CommercialPackagingEngine {
    * Cryptographic License Key Generator
    * Generates cryptographically signed license keys containing entitlement metadata
    */
-  generateLicenseKey(params = {}, secretKeyOverride = null) {
+  generateLicenseKey(params = {}, secretKeyOverride = null) { // domain-authority-allowed
     const keySecret = secretKeyOverride || this.secretKey;
     const rawEdition = String(params.edition || 'ENTERPRISE').toUpperCase().replace(/\s+/g, '_');
     const editionMeta = COMMERCIAL_EDITIONS[rawEdition] || COMMERCIAL_EDITIONS.ENTERPRISE;

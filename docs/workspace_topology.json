@@ -1,0 +1,74 @@
+{
+  "workspaceRoot": "D:\\ujomor-platform\\products\\eaorcs",
+  "resolvedAt": "2026-08-07T07:01:50.885Z",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "nodeVersion": "v24.17.0",
+    "isCi": false
+  },
+  "indicators": [
+    "eaorcs.config.yaml",
+    "product.manifest.yaml",
+    ".governance",
+    "package.json",
+    ".git"
+  ],
+  "paths": {
+    "governance": "D:\\ujomor-platform\\products\\eaorcs\\.governance",
+    "docs": "D:\\ujomor-platform\\products\\eaorcs\\docs",
+    "ciLogs": "D:\\ujomor-platform\\products\\eaorcs\\ci\\logs",
+    "evidence": "D:\\ujomor-platform\\products\\eaorcs\\evidence",
+    "engine": "D:\\ujomor-platform\\products\\eaorcs\\engine",
+    "adapters": "D:\\ujomor-platform\\products\\eaorcs\\adapters",
+    "tests": "D:\\ujomor-platform\\products\\eaorcs\\tests",
+    "release": "D:\\ujomor-platform\\products\\eaorcs\\release"
+  },
+  "discovered": {
+    "all": [
+      {
+        "name": "@eaorcs/core",
+        "version": "2026.2.0-LTS",
+        "category": "root",
+        "path": "D:\\ujomor-platform\\products\\eaorcs",
+        "relativeFolder": "",
+        "hasManifest": true,
+        "hasConfig": true
+      }
+    ],
+    "products": [],
+    "projects": [],
+    "services": [],
+    "packages": [],
+    "root": [
+      {
+        "name": "@eaorcs/core",
+        "version": "2026.2.0-LTS",
+        "category": "root",
+        "path": "D:\\ujomor-platform\\products\\eaorcs",
+        "relativeFolder": "",
+        "hasManifest": true,
+        "hasConfig": true
+      }
+    ]
+  },
+  "scanners": {
+    "excludes": [
+      "node_modules",
+      ".git",
+      "dist",
+      "build",
+      "coverage",
+      "scratch",
+      "integration",
+      "tests",
+      "tmp",
+      ".gemini"
+    ]
+  },
+  "relationships": {
+    "crossDomainValidationEnabled": true,
+    "boundedContextGuardActive": true,
+    "zeroHardcodingEnforced": true
+  }
+}

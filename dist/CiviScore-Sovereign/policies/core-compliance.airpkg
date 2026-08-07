@@ -1,0 +1,12 @@
+{
+  "format": "AIRPKG_V1",
+  "capabilityId": "cap.civiscore.policy",
+  "version": "1.0.0",
+  "licenseTier": "SOVEREIGN",
+  "issuer": "Air Roofers Governance Directorate",
+  "signature": "dd323d8b138aea1dc00b208aa10806379c4c8a9d62e50ff38b245419d6fe4e50",
+  "iv": "b8cefb091b8b92356fcd57e4",
+  "authTag": "bcbd7e91ab8f248fba9e3edded502d7d",
+  "encryptedData": "347f82c9e502b6f14539bcb3b4f1c9b27da241ed9564c99cc857e9766fe5ee0fe848b43902f00a03f778d7cf977773cfec78351f1b4a1278f9ded41657af5a2a18749b1e947aedf09acb76aff93d0cb242a6dc3fa5fad3946b324394e1829c373cb1904e4ca3cd4a995695bd43feecdf88501ed806d5f850d8ddfa459d795602435ba2f015c2a1885ce2a78fa6fdc24eb27b11cff5b3a9c3604fc22878c84c314496194e97408fd5781caf3fe0e48215a7628d6044ee6f2180a163181d9d9c941e0efa2d93acc6fa65998030443c80e4e57ed3d7e1adfcea3ef9cb7ae2f35ace8b02d51c13c3a9bf58bff936213c0222d505e9c1aaa3b312567c7dd6a62ca6c39b973729841397f49a8df76a7e596a8e7487f3d7d3ee60e6c3d77f366ec78bf5df5b",
+  "integrityHash": "8f37a01da0219ff4e70b5096fb37027c569dfdf14eeb01712e80793b1c4414a0"
+}

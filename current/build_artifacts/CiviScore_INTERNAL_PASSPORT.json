@@ -1,0 +1,24 @@
+{
+  "passportId": "passport_3f971879726ec186_INT",
+  "publicPassportRef": "passport_3f971879726ec186_PUB",
+  "classification": "AIR_ROOFERS_SOVEREIGN_PRIVATE",
+  "createdDate": "2026-08-07T06:47:52.499Z",
+  "internalKnowledgeGraph": {
+    "privateWeights": [
+      0.98,
+      0.45
+    ]
+  },
+  "architectureDecisionRecords": [
+    "/private/adr/ADR-001"
+  ],
+  "proprietaryWeights": {
+    "entropyRiskMultiplier": 1.45,
+    "couplingFactor": 0.12
+  },
+  "sourceMapping": {
+    "kernelLines": "1..14200",
+    "testCoverageMatrix": "100% Path Integrity"
+  },
+  "signature": "e9b84973bf73997e843d6f6aec005fb4f2e999b9da1388758213a7fefcdcc305"
+}

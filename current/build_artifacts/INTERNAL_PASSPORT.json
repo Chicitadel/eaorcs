@@ -1,0 +1,24 @@
+{
+  "passportId": "passport_9bea8c5c586359ce_INT",
+  "publicPassportRef": "passport_9bea8c5c586359ce_PUB",
+  "classification": "AIR_ROOFERS_SOVEREIGN_PRIVATE",
+  "createdDate": "2026-08-06T20:45:25.646Z",
+  "internalKnowledgeGraph": {
+    "privateNodes": [
+      "InternalGraphWeightEngine"
+    ]
+  },
+  "architectureDecisionRecords": [
+    "/.governance/adr/ADR-001-SDPA-Trust-Boundaries.md",
+    "/.governance/adr/ADR-002-Encrypted-AirPkg-Containerization.md"
+  ],
+  "proprietaryWeights": {
+    "entropyRiskMultiplier": 1.45,
+    "couplingFactor": 0.12
+  },
+  "sourceMapping": {
+    "kernelLines": "1..14200",
+    "testCoverageMatrix": "100% Path Integrity"
+  },
+  "signature": "a1379113c79ba23838f137967fd2e650f368ef7d93bb3fa9fd08ccabb9dac352"
+}

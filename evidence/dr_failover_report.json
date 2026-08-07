@@ -2,7 +2,7 @@
   "reportTitle": "SaaS Disaster Recovery & Multi-Region Failover Audit Report",
   "system": "EAORCS SaaS Disaster Recovery Engine",
   "version": "2026.1.0-LTS",
-  "generatedAt": "2026-08-02T16:24:36.152Z",
+  "generatedAt": "2026-08-07T07:02:01.553Z",
   "governance": {
     "authority": "Ujomor Systems & Enterprise Governance Authority",
     "rtoTargetSeconds": 60,
@@ -27,15 +27,15 @@
     "sloStatus": "SLO_MET",
     "fiveNinesCompliant": true,
     "incidentCount": 1,
-    "timestamp": "2026-08-02T16:24:36.152Z"
+    "timestamp": "2026-08-07T07:02:01.553Z"
   },
   "recentFailovers": [
     {
-      "failoverId": "failover-1785687876149-fa60a420",
+      "failoverId": "failover-1786086121549-b1badeb9",
       "primaryRegion": "us-east-1",
       "secondaryRegion": "us-west-2",
-      "failoverDurationMs": 46,
-      "rtoAchievedSeconds": 0.046,
+      "failoverDurationMs": 45,
+      "rtoAchievedSeconds": 0.045,
       "rtoTargetSeconds": 60,
       "rtoCompliant": true,
       "rpoLossBytes": 0,
@@ -45,29 +45,29 @@
         "tenant-alpha"
       ],
       "status": "FAILOVER_COMPLETED",
-      "failoverTimestamp": "2026-08-02T16:24:36.149Z",
+      "failoverTimestamp": "2026-08-07T07:02:01.549Z",
       "healthStatus": "HEALTHY"
     }
   ],
   "recentRestorations": [
     {
-      "snapshotId": "snap-tenant-alpha-1785687876146-9044a3d0",
+      "snapshotId": "snap-tenant-alpha-1786086121547-0278012c",
       "tenantId": "tenant-alpha",
       "status": "RESTORED",
-      "restorationTimeMs": 30,
-      "rtoAchievedSeconds": 0.03,
+      "restorationTimeMs": 31,
+      "rtoAchievedSeconds": 0.031,
       "rtoTargetSeconds": 60,
       "rtoCompliant": true,
       "hashVerified": true,
       "signatureVerified": true,
       "zeroDataLossRpo": true,
       "rpoBytesLost": 0,
-      "restoredTimestamp": "2026-08-02T16:24:36.151Z"
+      "restoredTimestamp": "2026-08-07T07:02:01.552Z"
     }
   ],
   "auditVerification": {
-    "reportHash": "2dab342b230187b09b6917d4c2fbe47d3028c67c5cd73c35e8bf15ff57710301",
-    "digitalSignature": "2f2cc96df0ca02eff2fef38ed68e971e075a4a7cca8c00980daaeb9f83c34ead",
+    "reportHash": "7e4c0a563ab71b08685349a7917b50965e0122e35e128e20f9d2f26d00653f55",
+    "digitalSignature": "be166d2e42f256b667017d7f57745310b2a1a82c092fe39e282b31e09ccd4b94",
     "signedBy": "Ujomor Systems & Enterprise Governance Authority"
   }
 }

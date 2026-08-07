@@ -30,6 +30,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 const os = require('os');
+const WorkspaceResolver = require('./engine/governance/WorkspaceResolver');
 
 const TARGET_VERSION = '2026.1.0-lts';
 
@@ -133,9 +134,11 @@ const STREAMS = [
 ];
 
 function runCertify() {
-  const rootDir = process.cwd();
-  const ciLogsDir = path.join(rootDir, 'ci', 'logs');
-  const docsDir = path.join(rootDir, 'docs');
+  const rootDir = WorkspaceResolver.resolveWorkspaceRoot(__dirname);
+  const topologyReportPath = WorkspaceResolver.saveTopologyReport(__dirname);
+  const topology = WorkspaceResolver.getWorkspaceTopology(__dirname);
+  const ciLogsDir = topology.paths.ciLogs;
+  const docsDir = topology.paths.docs;
 
   if (!fs.existsSync(ciLogsDir)) {
     fs.mkdirSync(ciLogsDir, { recursive: true });
@@ -147,8 +150,11 @@ function runCertify() {
   console.log('\n' + '='.repeat(80));
   console.log('  EAORCS MASTER QUALIFICATION & CERTIFICATION PIPELINE');
   console.log(`  Target Version: ${TARGET_VERSION}`);
+  console.log(`  Workspace Root: ${topology.workspaceRoot}`);
+  console.log(`  Discovered Modules: ${topology.discovered.all.length}`);
   console.log('  Authority: Systems Engineering & Governance Authority');
   console.log('='.repeat(80) + '\n');
+  console.log(`🗺️  Workspace topology saved to: ${topologyReportPath}\n`);
 
   const results = [];
   let passCount = 0;
@@ -269,6 +275,7 @@ function runCertify() {
   const outputData = {
     timestamp: new Date().toISOString(),
     version: TARGET_VERSION,
+    topology,
     system: {
       platform: os.platform(),
       arch: os.arch(),

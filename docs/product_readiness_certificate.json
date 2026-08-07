@@ -1,5 +1,5 @@
 {
-  "certificateId": "CERT-EAORCS-2026.1.0-LTS-eabf6e6e-5163-4318-a130-d7e68567aec3",
+  "certificateId": "CERT-EAORCS-2026.1.0-LTS-9b7c7ce5-e6d3-413c-aaff-47c8604735c7",
   "product": "EAORCS",
   "version": "2026.1.0-lts",
   "certificationLevel": "PLATINUM",
@@ -17,14 +17,14 @@
     "OSAPPassport"
   ],
   "platformCompatibility": "Air Roofers Platform v2026+",
-  "issuedAt": "2026-08-02T16:24:42.235Z",
-  "expiresAt": "2027-08-02T16:24:42.235Z",
+  "issuedAt": "2026-08-07T07:02:07.016Z",
+  "expiresAt": "2027-08-07T07:02:07.016Z",
   "issuer": "EAORCS Certification Authority",
-  "merkleRoot": "0x28bc9ba9b9ee9f952c3b998f5f0f010a7444428e4a1faa371c1ee362871b95e3",
+  "merkleRoot": "0x6fd6850be8ae81ffe9819738ffbaa29c2b1b182982c4dd13aa4088d9be540d7c",
   "signature": {
     "algorithm": "Ed25519",
-    "value": "090dfa3877d531e0699142cfae9325cf9290092ba8423747e4b94f90b1f8c7744f2263091e5b7c31730585101448e0d35661633dba273be22619bfc256747909",
-    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA0Le5zXgyO8uKUdN+gWqukvwCdRPrYyFxsr+gK6M9J44=\n-----END PUBLIC KEY-----\n",
-    "signedAt": "2026-08-02T16:24:42.237Z"
+    "value": "1ec245c4ed1ac532367368753811d04289d9ad0f1a56fae1bfe033dc9472f80f5285a4c1a83b06ec61f487ad83b62018348d3a49fe8bb5c8e6388f724176aa0f",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEACI3gixNXeBgUkhss2C4Me2MPdqVdge2a+j6O8zv7rt8=\n-----END PUBLIC KEY-----\n",
+    "signedAt": "2026-08-07T07:02:07.018Z"
   }
 }

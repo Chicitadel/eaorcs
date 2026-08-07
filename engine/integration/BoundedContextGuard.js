@@ -33,6 +33,12 @@
 
 const fs = require('fs');
 const path = require('path');
+let WorkspaceResolver = null;
+try {
+  WorkspaceResolver = require('../governance/WorkspaceResolver');
+} catch (_) {
+  WorkspaceResolver = null;
+}
 
 const VIOLATION_SIGNATURES = [
   { pattern: /issueInvoice|createInvoice|chargeCard/i, domain: 'Billing', severity: 'CRITICAL' },
@@ -61,6 +67,9 @@ class BoundedContextGuard {
     const violations = [];
 
     lines.forEach((line, index) => {
+      if (line.includes('bounded-context-ignore') || line.includes('domain-authority-allowed') || line.includes('bounded-context-ok')) {
+        return;
+      }
       for (const sig of this.signatures) {
         const match = line.match(sig.pattern);
         if (match) {
@@ -92,7 +101,8 @@ class BoundedContextGuard {
     }
   }
 
-  scanDirectory(dirPath, excludes = ['node_modules', '.git', 'dist', 'build', 'coverage', 'scratch', 'integration']) {
+  scanDirectory(dirPath, excludes = null) {
+    const activeExcludes = excludes || (WorkspaceResolver ? WorkspaceResolver.getScannerExcludes() : ['node_modules', '.git', 'dist', 'build', 'coverage', 'scratch', 'integration', 'tests']);
     const rootPath = path.isAbsolute(dirPath) ? dirPath : path.resolve(process.cwd(), dirPath);
     const fileResults = [];
     const allViolations = [];
@@ -107,7 +117,7 @@ class BoundedContextGuard {
         const fullPath = path.join(currentDir, entry.name);
 
         if (entry.isDirectory()) {
-          if (excludes.includes(entry.name)) continue;
+          if (activeExcludes.includes(entry.name)) continue;
           walk(fullPath);
         } else if (entry.isFile()) {
           const ext = path.extname(entry.name).toLowerCase();

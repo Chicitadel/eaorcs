@@ -1,309 +1,309 @@
 {
-  "signerPublicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA053NODPUs7TS8gldK/LWCJBYOCr8PKtmqgvpZ5GeRZI=\n-----END PUBLIC KEY-----\n",
+  "signerPublicKey": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEABxjeFczgVn44kOr5WkNKGnlrywe5MebK2oueG9x+LtI=\n-----END PUBLIC KEY-----\n",
   "algorithm": "Ed25519",
-  "signingTimestamp": "2026-08-02T16:24:42.081Z",
+  "signingTimestamp": "2026-08-07T07:02:06.856Z",
   "fileCount": 50,
   "files": [
     {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\adapters\\IdentityProviderAdapter.js",
+      "hash": "6cf4096b6c18a1b64e19299d24db08931a5df2da4f7b24c52be1f0c83f695d0c",
+      "signature": "{\"signature\":\"379cce35ca1ccf3de4d3a7e96f94c9618415baf7b47cb1658fae0a5dc18bcc8641c6a1a37df6a9e372f42622e1f67297ee8a5a190f3b6c04e4733aaab0672101\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"74c689fffdb75aff1a39e618b1eed01cf4bb98d36368e520a0d6dbf9386abcbc\",\"signedAt\":\"2026-08-07T07:02:06.823Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\adapters\\LicenseAuthorityAdapter.js",
+      "hash": "346cd279219f5603fa418ec0e7b4020ba83c256b780ba05c46d85e89f4a05f97",
+      "signature": "{\"signature\":\"43cc0d9f301fe551fc2d1d00e67702ebdf4432c58a1ea53585ba29c4346362f47648e73e0952e1c7a3ed45cf7f45b51dc9a5c9adcc02435632f8485dd228c80a\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5ff08510d0872d6b40c856f1b4a3e977f86eeb8ac4c86091ab8dd55a55b182ce\",\"signedAt\":\"2026-08-07T07:02:06.824Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\adapters\\SCMAdapter.js",
+      "hash": "b322181efa3451af35feb15090ff59d1fafce5f4e3073a566fd243b1c03ef8ca",
+      "signature": "{\"signature\":\"5110d32553be1a0921a0ce633a9d309c64893fd05850119df5c32c156c712b8421a712df090923721aba024f0337abf9f8211b8df6a96ebcf23fba56f9f1c103\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7d6780585514bbba44bdf63d56ea85bb617655f1604eb8afae51c6148737dd64\",\"signedAt\":\"2026-08-07T07:02:06.825Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\adapters\\StorageProviderAdapter.js",
+      "hash": "840e0e1c0daff32992cfaa8e1f9073c6387abec1d8880be91726de90db59bbf8",
+      "signature": "{\"signature\":\"6bfe05a707f30bc7839531f81b8559f9e2458671aa7c1e52911a9d5781672c0cfec31a247226bc73924c9eedc4661b0e7dc0dcad4d92e40adccb28a16467ec04\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ba9f55778e3507704622b5fd2e5e8cbdc288d38c2fe1ba2ecd9168c4ca917b8f\",\"signedAt\":\"2026-08-07T07:02:06.826Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\adapters\\SupportProviderAdapter.js",
+      "hash": "b5988468cf20c0e0eed1745c0bd77e42a7a4d60268287d753d857c55ab913d56",
+      "signature": "{\"signature\":\"03ecf5668f176a333faed7430ab10f5c86b3d5c7dd74e2d17fc9e3d1310e844aeb166f9eb3e1204af42d20eb9b0dfd78fcb8230f203e44e72d9e0288ff10bc0e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"cec2d48ed9b267233481b328b897e69e37c4d6389963a91509bd47b858d3759a\",\"signedAt\":\"2026-08-07T07:02:06.827Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\adapters\\TelemetryProviderAdapter.js",
+      "hash": "08b489b893ede10f2c192bd7781d8d1efbf0afbad3ae8971c31d032fb4f9f7a2",
+      "signature": "{\"signature\":\"fa2112cfb2c89a9936a8ef0d300d5dac29342322d66937afed164de0015c7c52f5c12ba87e0f31ba269663ecee42ef6de1f566a0ab792e22c5cd50b8ecdd9a03\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"6f251481c7cb1bbe439521631e0aa8570f68fa45de7bbfd7ceecb31e4519cfba\",\"signedAt\":\"2026-08-07T07:02:06.828Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\AiCommandCenterEngine.js",
+      "hash": "46ae6d7e848557df40db74660345da82f8a6d8296f2fcb0e11b5f1daa6d380a4",
+      "signature": "{\"signature\":\"8cd505cc2c4e0be6cfb540177a4074d544debbf6b1a6ea7a86ef32f7c3bac5f90295ce483c1521aa1f0840810619a8d0a560c4477bae6365620b447501eefa0c\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"41af64cba5fb268750ba2407f3d0c82a058a29842ed02b34ee69f319f84b04b1\",\"signedAt\":\"2026-08-07T07:02:06.828Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\AiCorpusBenchmarkVerifier.js",
       "hash": "44e7f7d3f8ace4f40b7d6885abd307ac9d9b3947dc1c2fb62e45b7818baed144",
-      "signature": "{\"signature\":\"e7e692a0a01031a3e73460af6f7bdb13cea3f17065458fae07e1793ac9bd1e5dbae4c79064cd5d7ca78dd44d1941da79f9a770702caa928fc5329054a7f71c04\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"59b9b2b6e67da9a1e65646be1e170473ffc989ab29d5220df5d88b0a9fbe36ac\",\"signedAt\":\"2026-08-02T16:24:42.048Z\"}",
+      "signature": "{\"signature\":\"463bbf7c53fcf2672b5203f6a4702cd681932c070fb1fba48a1b74730de3dbdd3c6e1a30ef3f9d54f1915bfc4672ddde9494603b6190b7efd4f73a84dd93ae07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"59b9b2b6e67da9a1e65646be1e170473ffc989ab29d5220df5d88b0a9fbe36ac\",\"signedAt\":\"2026-08-07T07:02:06.829Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\AiCouncilEngine.cjs",
       "hash": "87cfa43ef21879dd788b4e7424ca9f06d36e5ad0c03def19fc9b5fc9894a559c",
-      "signature": "{\"signature\":\"6b0520e3ff32b52f64cbe7d29a967be2fa436aa3844ea650e403aecdc2221e3b697285d9152b8bd48c27a18b5eef58db4858c56b240125ae56b77fb22aaeb401\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"670aac0688d6f5843d3ba71c317ac617c2892cf1f96ee9ca8a905ee16fc555ed\",\"signedAt\":\"2026-08-02T16:24:42.049Z\"}",
+      "signature": "{\"signature\":\"3a3f1f95cecc14275a8521bf2e626ce018a10ee16a8a955c90f6618540042b4b1941672590b5f066b80952a1b1ccf3552fc053dacf56a69774cc670c1bda5c03\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"670aac0688d6f5843d3ba71c317ac617c2892cf1f96ee9ca8a905ee16fc555ed\",\"signedAt\":\"2026-08-07T07:02:06.830Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\AiCouncilEngine.js",
       "hash": "9e26808a0a48f20807d878e8bdabd2f09da11e189abb27eca84e9ac00a0bd6db",
-      "signature": "{\"signature\":\"74f39c670516e24ea99130b7271e1907f45a8c2a5e2b0f5c080623afd77215f8a5b5319183efbd7d0ee2d5568fabaf57a657a2d41e8888313bdf0f4cbe60920b\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"12c2403f9938a37e42a477444f45cb9585e16397b14fde3a05f88cfbbf5bf634\",\"signedAt\":\"2026-08-02T16:24:42.050Z\"}",
+      "signature": "{\"signature\":\"764d86b80be4676efe2b514fe378fb950fc03069275a2f1475ee7226e3b78635b433b50cf2cb4742516cad16a0ad8a64ddc635ccf45e4676789e48b357060003\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"12c2403f9938a37e42a477444f45cb9585e16397b14fde3a05f88cfbbf5bf634\",\"signedAt\":\"2026-08-07T07:02:06.830Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\AiGovernanceTracker.cjs",
       "hash": "552ccce1106e6bac80fad1b62897fd0f2712b18c68640921e7466ee9b4188dfc",
-      "signature": "{\"signature\":\"21b83a0079e70883f075e10a925ee15a3f8700d59e487622e6601a01ccc72c8d06bbbb058ca1c5cc3d66540bf3f626ab67d6be74529ff8872f9f7650f3b7430d\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1c64dc5fc08da130a80f3ebc7dcb02ded6ca512875593b12b7aff2b404205c6c\",\"signedAt\":\"2026-08-02T16:24:42.051Z\"}",
+      "signature": "{\"signature\":\"45e209f2f1943d6db5993668f8f472f9f02d55418d4927f309c5382fca0fac15c3f470d83c3cf78b9897839b310e36e16795995147b79bebc5d6f210593ea20a\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1c64dc5fc08da130a80f3ebc7dcb02ded6ca512875593b12b7aff2b404205c6c\",\"signedAt\":\"2026-08-07T07:02:06.831Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\AiPrecisionRecallBenchmark.js",
       "hash": "6d2718476eed859cef63cd0f46b7f8d79716c456eeb71eb221590d1a70a2a69b",
-      "signature": "{\"signature\":\"26e54f61a6991873879fda9c70606cbf1e720e3038c92e3e4a132f8da810900eece18503da2d3ef796564f31881b0a7e21f9f4a60cbda4cc154ba0716e883904\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5e6d101029be350c8f59ea80b21b222babac5f361d376a40713323a0634c2121\",\"signedAt\":\"2026-08-02T16:24:42.052Z\"}",
+      "signature": "{\"signature\":\"f729352e3784411c9705890092cd478db0721ffcda89b505bfb4a0df42c155c2225c8cc603e863487d9f1768b410fc2f3d690636ddbb7fbf5c7b2d0c5d759b0c\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5e6d101029be350c8f59ea80b21b222babac5f361d376a40713323a0634c2121\",\"signedAt\":\"2026-08-07T07:02:06.832Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\BlueprintGenerator.js",
       "hash": "d3a1489008591c804fe7ab8f3221fe67b23c4542cf71c0fd0e67f0ad062634b2",
-      "signature": "{\"signature\":\"0fcf54d9662ad4a1b206b42da28aab613f7b180326e6c5ecef62d621ff15cc3012ca9ab829a7d5c6f51929697059f2885ee164a7f666b07ce79e826cb1344302\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"38a2743f7285df499f087dd89644281ce40c10cb52dce5801381bbd8f850cf55\",\"signedAt\":\"2026-08-02T16:24:42.052Z\"}",
+      "signature": "{\"signature\":\"b4d95557b2f0679d68231286899daa6006931cca00738c0271af273296987ed528de917279d0fdc38fda117a9137323ab86c5f6c2f348e96ce81e879b60aea05\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"38a2743f7285df499f087dd89644281ce40c10cb52dce5801381bbd8f850cf55\",\"signedAt\":\"2026-08-07T07:02:06.832Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\ConsensusProtocol.cjs",
       "hash": "b7fd2d62b8100752b88f2a26ed5dff5bb30f56a52c2c7646556d68138b5e26f0",
-      "signature": "{\"signature\":\"f462fa21752a3cbe648d7e07f4f41af683c8c6493a74471b3f6b9749deabf36c3de228347c1f06e55e99a8742c0a1260ec84cc56f684f78e0701f0cd55f6a505\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"d40230d570f08e38707d5c135023345f7b9aba84abcbb5fde84ebaa3237aed92\",\"signedAt\":\"2026-08-02T16:24:42.053Z\"}",
+      "signature": "{\"signature\":\"e380c8fe6e7e68f4ae42300ff64a76a85311315a0cef4d832188a95ac930dc2ac8bc31c0f404de8c70e69903c7ee368df05632817bb87050221f93315ff34f00\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"d40230d570f08e38707d5c135023345f7b9aba84abcbb5fde84ebaa3237aed92\",\"signedAt\":\"2026-08-07T07:02:06.833Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\EngineeringInterviewEngine.js",
       "hash": "dbfdb9da09ca2005bc3fc6d42939ffbfbe431650af3c18af5facc5b609d91b93",
-      "signature": "{\"signature\":\"d3cefb421306438355a81c597991c75de1deddda4b9350496045ae819d560d92d5c4739b990c01c075f78bbf7e46ab1b352195ab7b88ff87c0cb923a9c40ec00\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"e99690201ee62abccf40841c1df8e14773c0fb9e6a53b5a3c57d7cdbaf016ecd\",\"signedAt\":\"2026-08-02T16:24:42.054Z\"}",
+      "signature": "{\"signature\":\"c4d1d55af9b6e5eed44b16ce782e8b7b9aea2760a309f5a09323e61e2e690e4877bffdeafe0824a85e6bd8c603ea3106350dc06599abf95d1fb09c5d8371a60e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"e99690201ee62abccf40841c1df8e14773c0fb9e6a53b5a3c57d7cdbaf016ecd\",\"signedAt\":\"2026-08-07T07:02:06.834Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\GovernanceCopilotEngine.js",
+      "hash": "c69dcd10e68553ea218d577d5a2d6092264e456f3b3e16294b908e092c1dd528",
+      "signature": "{\"signature\":\"8b8e98f4a83f513d6e8daff31409907a297a21aba0b3ac9c0fb2f9001be818efcf9ca91ccee2c58eae4e6d8a971e7e079d4294655d3ff7cc724bb56162773d07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"3b9480483a551f28eb6c038ffa3c973ef5698a777a5bfd95e12ac62106404d5b\",\"signedAt\":\"2026-08-07T07:02:06.834Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\MissingRequirementGenerator.js",
       "hash": "60b824d9c2949a5ba6cb695bafbbf4c3ebd94bbf5cd40220a9d7bdf4c7456096",
-      "signature": "{\"signature\":\"5e1633be8e48ef4d2fa556939975e676bf3ff832b0736a3a7c2610160d70d530a46ab91dd93f4ee914d83ec31602cd578dceb8a313b008be9de418089eb8720e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"8280589a824696ed2eb4c4df25c6e3134d46d5c8195a64f70676378e55aa27dc\",\"signedAt\":\"2026-08-02T16:24:42.054Z\"}",
+      "signature": "{\"signature\":\"f810a37ecd3ba7cd73e5c8dfd23ed334d2b5913336f4c802cd349c92a7d98cb642a801a55cc2f35cfb0b6d322bf2942a6a631d27d8e43757aab0e880e4050601\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"8280589a824696ed2eb4c4df25c6e3134d46d5c8195a64f70676378e55aa27dc\",\"signedAt\":\"2026-08-07T07:02:06.835Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\PeerReviewedAiCorpus.js",
       "hash": "b90d1827dc5b28c1ffb0a132667a54c7ff41da949c1fc4c5eb4c70646d8f208d",
-      "signature": "{\"signature\":\"3e84e50379a4cf86c133f8e07093edd5b48f3af386964e18beca36768235d878b3ed8d143cc842a4ce23dd53757d04c36e98da3c0c653461bbb7849d56e9f301\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"b0fcc823480385910ee55c92113a4f01a9ece69e5c1ce9786ab99b5af0a385eb\",\"signedAt\":\"2026-08-02T16:24:42.055Z\"}",
+      "signature": "{\"signature\":\"67b12a5640f7c841198e1c1c74a2381b3d734ca6bb020403f24bfd00d52a267154e9093ac7a6acec7c70dfd097855f598885c725767183cd4cdc6eadac312706\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"b0fcc823480385910ee55c92113a4f01a9ece69e5c1ce9786ab99b5af0a385eb\",\"signedAt\":\"2026-08-07T07:02:06.836Z\"}",
+      "algorithm": "Ed25519"
+    },
+    {
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\PredictiveTrustIntelligenceEngine.js",
+      "hash": "3891e6da68d223a41d4ce6375ebe922427de023c80b6f050c61740111bbebbe9",
+      "signature": "{\"signature\":\"ca279cea304a902bafa2cc5c449bbebef0c9fe5f5933eed7448fe1d6dbae20852aacd7b0cc462120e07c4d2c3c6ce95db3c1fd98dc76fcde124a9d12d4666c06\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"15542e8d11831ab03a2356883667a905493fc518c6f77734281c943385da24d2\",\"signedAt\":\"2026-08-07T07:02:06.836Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\RequirementGenerator.js",
       "hash": "842d03bacf9ea13209ae1b84ac78bd09e2c849e705c1adcb71bf870907677444",
-      "signature": "{\"signature\":\"1874552543d84390702ddeaf01318f7f166e26947e3639cbf719e989884af84157ecae411748e00631b355dd04b69260322343dd184f53e725e527392e9dd30e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"c1a1b2a8bf3d8e6c1ffebd1b43df19189a52096abde04004ed8d979190d87572\",\"signedAt\":\"2026-08-02T16:24:42.056Z\"}",
+      "signature": "{\"signature\":\"49ecda3990b695db002496d64b373c61c01908fbd8af5e08024c4168508facef84db3cea41259de76a198d28feb63943393ea4b3f208595f07955007779f1605\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"c1a1b2a8bf3d8e6c1ffebd1b43df19189a52096abde04004ed8d979190d87572\",\"signedAt\":\"2026-08-07T07:02:06.837Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\ai\\SpecialistAgents.cjs",
       "hash": "c94b90fbc8b7c9ae96976ac5528428e2c9994587ff7d7ace1b8e287c17057e6d",
-      "signature": "{\"signature\":\"d714935a8e3b319f40a75758b41ad1f5c81523fab15b15c2de895a79140166270042743ff255cc138850d2862f7e9da878792eb9bd1ef1cd63ac8945fa270c04\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"cee47f853f2f154d0653ae63f16338d93860da1502b43c42772c4cb0fcf2829b\",\"signedAt\":\"2026-08-02T16:24:42.056Z\"}",
+      "signature": "{\"signature\":\"5bafefe8a9d965f53c21e48e9cfe1a768c019d22a3ed13d2cd6c138bd14ee38f52b912f78351128741ab31c109ed6218d2b494fdaa0c0044279dd87b6b259e07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"cee47f853f2f154d0653ae63f16338d93860da1502b43c42772c4cb0fcf2829b\",\"signedAt\":\"2026-08-07T07:02:06.838Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\aicouncil\\AiCouncilEngine.js",
       "hash": "8a7a352b2e3a74cd26352fb9b6278518af1a72b7dae25c9c16211587dd602dca",
-      "signature": "{\"signature\":\"7c42f25391028f7554d81d8f8724e04405360ea7f700b6eba2d774d03cc860424d95b96bfd91da611e8be646cb19831c0fbfde6bb68ac2ccb5316a794ec9e706\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"8447430895897e84fba4752876a20f267bff970087d84c8d0c77fb1a9a7a371f\",\"signedAt\":\"2026-08-02T16:24:42.057Z\"}",
+      "signature": "{\"signature\":\"2aa78df8e2590009ff2bf67f70c049f9ecb8d5e4d7dc66e96ddca8963cc3b7c2bea808341a3dea15144b3cc103a186b6d33a78aab915426e3d1b2dc54c47700e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"8447430895897e84fba4752876a20f267bff970087d84c8d0c77fb1a9a7a371f\",\"signedAt\":\"2026-08-07T07:02:06.839Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\AnalyzerRegistry.cjs",
       "hash": "66524c4e16cafcf86cb51317e86fc86ccd7fc9d65347f932814d3e4cfd441c6e",
-      "signature": "{\"signature\":\"e11ee37e6ff10ec91a3984d05096287310cdf9664373ba1c9f50b476ecf905cea3597758dc3a5b0d66dfa38dc7aaca92736cc5abb38545dd8f4b85aef66a3407\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7eb7b290f23d15133fc01e28acd34c2ab43b4137eeb73760b412ed500189fb38\",\"signedAt\":\"2026-08-02T16:24:42.058Z\"}",
+      "signature": "{\"signature\":\"f7757698b2f6ddef36743db0daa0e210dd53e07cedc3526bb98791e6d6a8c0117247719d63d1501f6cc276ef7d0f5837980239f7deb3584c6e5a0af74e35a601\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7eb7b290f23d15133fc01e28acd34c2ab43b4137eeb73760b412ed500189fb38\",\"signedAt\":\"2026-08-07T07:02:06.840Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\ApiProtocolsAnalyzer.cjs",
       "hash": "e8358bc87d2708703dd362adc884e5fe75166f12ab8edfc6f42b20ed8f39da1b",
-      "signature": "{\"signature\":\"05882c217418e28c39aa0e4536535fb40d3e9a6946d7ee111d64c352e7f27bc3b3381e499c39948dbe748039b8289715ade191d9ea0c529fe6653631457b8f0b\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7e75892a00d82136363a717eaffa12b73e454155927427aa60eff048b2e3c8a5\",\"signedAt\":\"2026-08-02T16:24:42.058Z\"}",
+      "signature": "{\"signature\":\"6d5fec88bd48bf19f7424e8ed68f2718361646ff89ac801a5822c32c2b64ed5a49fed4eac9b3a570318f25ea077328b818c8c10da281b1a6200abfebef294800\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7e75892a00d82136363a717eaffa12b73e454155927427aa60eff048b2e3c8a5\",\"signedAt\":\"2026-08-07T07:02:06.840Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\CiCdEcosystemAnalyzer.cjs",
       "hash": "39adc44d4e9ae0d243418bffe42f41349432caa28cf087ac410efaf340972d34",
-      "signature": "{\"signature\":\"d99e0d6a3a7349b07ae4470aa391d1bdef273746a39598575de39a932771cb49d66d4a001c038e821760c0d670fda5ef8ef2193aaa27204d4898773b981fdd0f\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"96251ed33826e8b8f28f27a863cd1fe30df3d01e92a9511d3fd7222cd810219f\",\"signedAt\":\"2026-08-02T16:24:42.059Z\"}",
+      "signature": "{\"signature\":\"d9e25f191d783f92fa259ff5965a6f31316066d6a1089e9a47fb2c015b1f425af121ae2abdf3f9b158814be08596eb5b671b75b43e8e2268631dd54c6dbd8607\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"96251ed33826e8b8f28f27a863cd1fe30df3d01e92a9511d3fd7222cd810219f\",\"signedAt\":\"2026-08-07T07:02:06.841Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\CloudEcosystemAnalyzer.cjs",
       "hash": "3900bb46ae8c03a1ac2bca089f42a3b409e12a18f765f7bcdd953bfb3c1ef2bf",
-      "signature": "{\"signature\":\"196d2d6fa87bbdfcdb9d501f6925ef7a15140f23cb9f92fc4ace0eab18bb471dfe4950d26077f31745e11bb94ecc6d1c01dc772dd0a4ff811741c3b3a5627502\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"9da979bc87ff08f7dfa4257f11c37f75b3be051ab063ade182ff745ac327c72d\",\"signedAt\":\"2026-08-02T16:24:42.059Z\"}",
+      "signature": "{\"signature\":\"4b6e84007ae3c1813a10384e788daa3abf10744828bdea4c44b28118a7f52b5fbeb882e27ca6440bf3da197af0bd550b5026fe51f0eacfd7aee2bb0f09ab720d\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"9da979bc87ff08f7dfa4257f11c37f75b3be051ab063ade182ff745ac327c72d\",\"signedAt\":\"2026-08-07T07:02:06.841Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\CommercialReadinessCertifier.cjs",
       "hash": "6db2c75835c990b4c27c4b03e900442e57ee976723f12f1fdbb1c5ef90870edb",
-      "signature": "{\"signature\":\"a1db07a77a71b1855ad7a668b4b423a8affffd70cef5cf504e6790bf02685ad29096041188c34d99ead77e02b656485d7a91a9162db07bec752716503ccc5903\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"d5f2917cc32c1872b9f62012f6aa002ff3a9487497871b42aece62bd50c8c2df\",\"signedAt\":\"2026-08-02T16:24:42.060Z\"}",
+      "signature": "{\"signature\":\"afda64761c1ae0d3237000f869e8b9f7b180acde78e66a776cf09c81887ff947d4d9f175cd7cf8caaca1d420013603809687d7a4046c2f25eefa3585db70620e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"d5f2917cc32c1872b9f62012f6aa002ff3a9487497871b42aece62bd50c8c2df\",\"signedAt\":\"2026-08-07T07:02:06.842Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\ConfigDriftAuditor.cjs",
       "hash": "e4513a232609fe7df73323d27055fb80e12987a7b6ddbf8366ba99f41baa3843",
-      "signature": "{\"signature\":\"170eb21f42835b764016a0c7cb36433b91709e2733fd31f334661d3255801fc9285f2e4eaf9b4ba828290ea7ce3a735edf55e85d75c6022e88c303f272adde04\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"66d548b9ae2d8731d8fd36d5501e4690739cb0d80873928d00da6f285472312c\",\"signedAt\":\"2026-08-02T16:24:42.061Z\"}",
+      "signature": "{\"signature\":\"eb5189312892cfd1cbd8ef5ac176555077f6350d50762276ed2875a7d4fecd94e6d71c90b7d432366e5bb73f5a68e797cea81009fc7942e506fdf1cfbb455209\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"66d548b9ae2d8731d8fd36d5501e4690739cb0d80873928d00da6f285472312c\",\"signedAt\":\"2026-08-07T07:02:06.843Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\ContainerOrchestrationAnalyzer.cjs",
       "hash": "144a77b014d1751b081a1505b87cb9d2de2ed68b2b74180159d63dad40842199",
-      "signature": "{\"signature\":\"fea98467c16705709e0df67beca774536c498ae0c65fbe12c2de720a94bc8e10241e918524ddcda3b2c743f3c2169f41ce49cab2bd9d9340481f522f0d016f00\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"0f30619c2918bac64fd0bab8fe07c11558379b5f2bbc0b214c385b9ff25cff46\",\"signedAt\":\"2026-08-02T16:24:42.061Z\"}",
+      "signature": "{\"signature\":\"958660d49de93fe7016b43927180c9b8f8b1a7d41fb7a235eb593cee512a47c44e2a27c250cd0a422218e18089bf44f2f08406846f8aaa2cd55a19e5455c1a08\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"0f30619c2918bac64fd0bab8fe07c11558379b5f2bbc0b214c385b9ff25cff46\",\"signedAt\":\"2026-08-07T07:02:06.843Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\DatabaseCompatibilityAnalyzer.cjs",
       "hash": "8312e26786d9ab1b608d5d5514502fef236ca5017b7b9d3f5100943674e8e8e8",
-      "signature": "{\"signature\":\"19b91ba0132df1fc4c748f5ce6c5d01d108648de9e0824cef8bcd26439cbaee1335f2caad1b80cce951a6f042bd60a11e94661756ca53f6c6c8f420d7ed4f203\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5e72e0db1cb1f8a9ee295f8203aca09df2cf57a18abaf460c8cd85534fdcbbe6\",\"signedAt\":\"2026-08-02T16:24:42.062Z\"}",
+      "signature": "{\"signature\":\"74645a997c91185ae703bf4044d4a4f61983ac4d9b3dfceeefa0fb5a446642af48768634311063d40535203ddef5272a308bb68e9f2e893933040974850b8c0c\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5e72e0db1cb1f8a9ee295f8203aca09df2cf57a18abaf460c8cd85534fdcbbe6\",\"signedAt\":\"2026-08-07T07:02:06.844Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\DbMigrationCertifier.cjs",
       "hash": "5e6a2e2d5a063ee5b8d7f13eefd981f0357d6039dd770e58f1edfde8ff9929bf",
-      "signature": "{\"signature\":\"75b4f206e3ef4b1e1ac46ebc9525c7046e6b841d1b8c0535d2549f19a0fe19296250c6c04ed0b21b7b0ccace31405a0df173b31314df5ce04d807d7edd864e07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"60aaa02cf31a5dbaeb643953d59e0c1c41d2dfb0b1ff3d9781aa7dc3dc331364\",\"signedAt\":\"2026-08-02T16:24:42.062Z\"}",
+      "signature": "{\"signature\":\"3e86824573f1e12a031f2b3d030b3486b3ee491546ebf184759d94ac84c0ce86abbfb419a1b90c35b82a149e7b82a29223e82193b0ef54b87a83ed3ef03d3808\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"60aaa02cf31a5dbaeb643953d59e0c1c41d2dfb0b1ff3d9781aa7dc3dc331364\",\"signedAt\":\"2026-08-07T07:02:06.844Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\DisasterRecoveryCertifier.cjs",
       "hash": "d357bee0a2099369aa9ae1e69abdf1856f3732c7730604bca729804b6bfd6e9a",
-      "signature": "{\"signature\":\"d0c101a81a7b0a568c58064fa34b2ff18903f2051528036c13d43701425118551a78473175151311b404c4655135aa94717926ea6e19bde62e9cee28b80b0804\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ca491bde9b5c2ccb2d1bc234eb6c1217524266aa18599abfbfe04c413e5ef2b0\",\"signedAt\":\"2026-08-02T16:24:42.063Z\"}",
+      "signature": "{\"signature\":\"c5844fab95bd2298791a7083aaeebd04c86514852c1c42983f4be0b5dd1bc4b604214c363a676f1c5e10b6b1e41e344a68d590e4568e41387e623ee5784d000e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ca491bde9b5c2ccb2d1bc234eb6c1217524266aa18599abfbfe04c413e5ef2b0\",\"signedAt\":\"2026-08-07T07:02:06.845Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\LspDapAnalyzer.cjs",
       "hash": "0899dc402864d4d44ee0b74afe3b7a681eb82c78612cdb646ee8214a0deed9a7",
-      "signature": "{\"signature\":\"152997a82e4404ad3ef8217f25d457230491ce7ff2f11c5e6687c7d41c2e45ad2288e4f309da413201becf4eb1e98548cc97beb3afacf503541b924b7ce4d90c\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ec70bc2189a6c5bcdc039bdd0fff42f1a59b000cb6ad9b074a0491200e52780f\",\"signedAt\":\"2026-08-02T16:24:42.064Z\"}",
+      "signature": "{\"signature\":\"b9629dfe15ef36581cdd1e895d6eeff94dda652bba4f5623299d3ee7bcf7d95b970642c53a34bc1db016fb4bca451036ab1e587fe3b09bf5902e999b52058d0f\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ec70bc2189a6c5bcdc039bdd0fff42f1a59b000cb6ad9b074a0491200e52780f\",\"signedAt\":\"2026-08-07T07:02:06.845Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\ObservabilityCertifier.cjs",
       "hash": "e52dbc3889866ebc2821fb35680d39c38feb7a732bd0842bf6cd8d9efad59294",
-      "signature": "{\"signature\":\"4b4e8e30c7d19b36fd6a43f95c3b02a118e4383dae6bfea80ca0c4a2d8cbb221372a968f040eb9d64eea93291a44f4e4861241870987452d8d7c8435a129380e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"424321675ddb9da2c871e7ad0415829923502bfdaee26371095f7de04f2db827\",\"signedAt\":\"2026-08-02T16:24:42.064Z\"}",
+      "signature": "{\"signature\":\"578a542de512cb24b217d8c1994a0e887c7bb630806ef457c2a750e10e1de7195d3ffc5e05d7529bf94b5658c9340383adce0d424044508ddb297d1ffd26e70e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"424321675ddb9da2c871e7ad0415829923502bfdaee26371095f7de04f2db827\",\"signedAt\":\"2026-08-07T07:02:06.846Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\OsCompatibilityAnalyzer.cjs",
       "hash": "7908c9a8f5920fd242a28314b589cb14c2861857055679756a311ac75447eaa4",
-      "signature": "{\"signature\":\"0d61da25a320464577f68d4973293e00f688663e0c1508443fcb2ebe84906ebe7fb31f1846f40e6e6dfe4a259c5f8a68fd255e5beb7ffc9195426ad56e71ea0e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5522ae7dc811dbdf84525bbdc06b5e032c06f3840f50415e7085ccb0bade09e7\",\"signedAt\":\"2026-08-02T16:24:42.065Z\"}",
+      "signature": "{\"signature\":\"0d7580ee71271818b180c3d68268575801f0cc7b219d0613a661d4070154338b2d86ee5028e991a6f71e5640360a2159f08aaecc81947a3c02da696cc6745401\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5522ae7dc811dbdf84525bbdc06b5e032c06f3840f50415e7085ccb0bade09e7\",\"signedAt\":\"2026-08-07T07:02:06.847Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\PackageManagerAnalyzer.cjs",
       "hash": "579c8f69b0ab2ba2d51a0f597de6d19b1d212d38f076cd47fe014311552d69a2",
-      "signature": "{\"signature\":\"535a2c6de676163384a1418f71cce74b5b90c693b30aa7d27af4e7446dd9dfbe604a98089986c27464d6d71062c48b91afe94e785b24d1639508d64cfa82fd04\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"83e2cff61470c5b54205870c97444a45371b9593b44176504189188eb7f5d218\",\"signedAt\":\"2026-08-02T16:24:42.066Z\"}",
+      "signature": "{\"signature\":\"2b324ebe985568600459f94f7f7ca95dc9e47f813274b879191106a5b2b90536cd8c2d28fceef856bb5c4ab4809a9e4302ea60685adb439fc40e884291754300\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"83e2cff61470c5b54205870c97444a45371b9593b44176504189188eb7f5d218\",\"signedAt\":\"2026-08-07T07:02:06.847Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\ProductionOperationsCertifier.cjs",
       "hash": "8bfa9e3823159e8f88e3076e8103d0a40085a9c48b0d71591a24052160550c4d",
-      "signature": "{\"signature\":\"4d1c3c5c4d217f2b6082d7a58e8547488189fa8c409f2342f185784c7241877cbff1a6fc97b45e47e47fd480c9bc46f5d34abd2eef97743d77fe3fa98a16410e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"005623a2fddfd430704d6412b1e30f621c59407e34a08ee4af67d71e54f9a8e8\",\"signedAt\":\"2026-08-02T16:24:42.066Z\"}",
+      "signature": "{\"signature\":\"40b9e0908f1a12cd238b7cb831e9744883c652660a231f7c0d12d6e576f01da6e0455875385893e19b54887a9b111f3dba5385cc2e34e5fe2a0cb5ad2f04e401\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"005623a2fddfd430704d6412b1e30f621c59407e34a08ee4af67d71e54f9a8e8\",\"signedAt\":\"2026-08-07T07:02:06.848Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\RuntimeChaosCertifier.cjs",
       "hash": "9469d78faaab1030db947aa1b0fe5c7f5c60b20c62ba8c823486f6d6f310434d",
-      "signature": "{\"signature\":\"dadf1215cf49964a7867e3aae4cfd7ad806cad87578d0591a28b33c82bc42ab37b7190eccfbb4629122d5d5c154f26552dbcaf8cae9bf2aa9c7be72665037a06\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"9105286ce99896580b811f3d7c86d582842f888d092b4dae5f999f19e344f454\",\"signedAt\":\"2026-08-02T16:24:42.067Z\"}",
+      "signature": "{\"signature\":\"46e7e931a7609ef8d582390e94c0dba14866e8189a8c8217045facec2d6a5a81353fd6658a2c687d1531b33c88251ba732ca46e5f5612c940486fe5ee39c7700\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"9105286ce99896580b811f3d7c86d582842f888d092b4dae5f999f19e344f454\",\"signedAt\":\"2026-08-07T07:02:06.848Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\ScmEcosystemAnalyzer.cjs",
       "hash": "c0485c1d2d1d717cb17789fa96595216f0184adb2bfeed388c18a47719e6b591",
-      "signature": "{\"signature\":\"184dd7eda3c0a857bf74ed60ffec2255dd76977ac56bf291c30086427d6daa19b48578edb71221a84ca9399757db55f87515e377f906d1061f79c90eb1bb4702\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"2cbb1e0f05232f30445404e1bb0191020a6e694b09f233760c4492dc3a4a3c8d\",\"signedAt\":\"2026-08-02T16:24:42.067Z\"}",
+      "signature": "{\"signature\":\"4a6facc02fda837e48f3584073177c77a7f4530cc12476a770731b4cb0c1ee94ee20bc339377d49d0f1008473c163da089f9fc72353f9b598bd500bffbc66602\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"2cbb1e0f05232f30445404e1bb0191020a6e694b09f233760c4492dc3a4a3c8d\",\"signedAt\":\"2026-08-07T07:02:06.849Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\SecurityAnalyzer.cjs",
       "hash": "4d97edf1ac5cb707f8d0c79d074aa8ff70228652734eb4a03192d97b8846dd29",
-      "signature": "{\"signature\":\"3092886cddcf3fc8e76f81c18c1d1357bfa299b68fcef59a35d6e27b9f09db8b175add00358382366ac7d7f4acb07c532afab84af1e3b55eed6d4acd1e3a9a0a\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ff01a776ebcacd62d02b59116dc5cc5d6d028121bc0b0c5cfdb54815327d8dfa\",\"signedAt\":\"2026-08-02T16:24:42.068Z\"}",
+      "signature": "{\"signature\":\"5afe66433e2543c8f6f0ed5441b01945e33c3b458b332124f7474bb57cde7c6687796b91eac037c5e95748636816fe3748d8d113b3cbe1bd87eaab531e88c606\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ff01a776ebcacd62d02b59116dc5cc5d6d028121bc0b0c5cfdb54815327d8dfa\",\"signedAt\":\"2026-08-07T07:02:06.850Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\SecurityHardeningCertifier.cjs",
       "hash": "972e63dc0115529b9f1027756548491dd7047ce6566a4dd137929ea9d1e26733",
-      "signature": "{\"signature\":\"007d5a6e94d92ade9023e9dbaf6cec66faf728ae1201bd4d03775baa6881077ebedd8d11434669a2da04fc2712a0014a879df8a35eb3cdfeae3e675c581c1b07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5acdf1d56a673fdcab6b6124cf58df6a7b6cd23783b610a4da09a8dfa4714b77\",\"signedAt\":\"2026-08-02T16:24:42.069Z\"}",
+      "signature": "{\"signature\":\"2c03ec523331c2091a95e2da0b56ce0acd14761e70a256dfb9bbe9bbed50ad082bf6bbe302f6af828793915c0902b13614b11deb3fefb7948d6ff3ce199cb509\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5acdf1d56a673fdcab6b6124cf58df6a7b6cd23783b610a4da09a8dfa4714b77\",\"signedAt\":\"2026-08-07T07:02:06.850Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\SupplyChainAuditor.cjs",
       "hash": "026257b253dd173f3875f76bf0ee6699171fbbe3929d9e96948f2443b8e41c16",
-      "signature": "{\"signature\":\"28316f494bc89bb8d5259da4aabeb51a8af94a7570911d0cf4e52482304e5996c8694f8ca9a04ad2776d5dda72aff131e47d85a56da06dda38a4a690d44d0405\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1943f7f416664707b64bf453b79f15688fbcfbf1f72db00e02fc90037b2cc610\",\"signedAt\":\"2026-08-02T16:24:42.069Z\"}",
+      "signature": "{\"signature\":\"9cfb1c80cf779820593089467e80207183b716e8781ac4d3381ada107941e7783814fc15c1735c7aebcf9f9236bb1ea88d64a41191e931fb5b0142ac4fb9f203\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1943f7f416664707b64bf453b79f15688fbcfbf1f72db00e02fc90037b2cc610\",\"signedAt\":\"2026-08-07T07:02:06.851Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\test_SecurityAnalyzer.cjs",
       "hash": "b1d492906a0bb951372622968674c7693142589f21b827fb68c48f09877c881f",
-      "signature": "{\"signature\":\"db1c2e379d98799e8b780172a6efaa8df49678360113fcdcedcb43a76e79d34840205665e5b94c8f84eeb28a1ccd77ef6a2c1c4425d23ca0803ff703067c7802\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"22d0c051fff25b04a56c6e883657474bd6e59f84890bde1893580785361fb8df\",\"signedAt\":\"2026-08-02T16:24:42.070Z\"}",
+      "signature": "{\"signature\":\"da5eebc4347aaec4c5861239d8e86d5ea215f074f8c1ef3a5d34823d070b07fd96c5235f10d66d3bb6f9e0b661077678cf7bc871be6feadcd4a20bfab409d60a\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"22d0c051fff25b04a56c6e883657474bd6e59f84890bde1893580785361fb8df\",\"signedAt\":\"2026-08-07T07:02:06.851Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\UniversalIdeRegistry.cjs",
       "hash": "0ee5f911a20581ad8ce0d85373db1612b9c4039eab8eb2506ebc19efc51d2572",
-      "signature": "{\"signature\":\"ce3d9066244fe40900d6d17bb0a6b32e32581fa58b32c3a971d6706b60336862118c9395577adc563f04d7b8a9996e66a1c70e72449941de6ea7fd61d9a95c00\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7201018ae85a1c17958c40d67ee1c9cb9adef915590d00ee59042fef586e39d6\",\"signedAt\":\"2026-08-02T16:24:42.071Z\"}",
+      "signature": "{\"signature\":\"87e533335d408209bb475733c1936ed1e66d8331830577789f339f1c43a4779ee882f1ea0a7eeb739e13d23a81b82c7238370750c132cd7972a58296206e610c\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"7201018ae85a1c17958c40d67ee1c9cb9adef915590d00ee59042fef586e39d6\",\"signedAt\":\"2026-08-07T07:02:06.852Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\UpgradeCompatibilityCertifier.cjs",
       "hash": "7bd432033560ca6c3675ac1ad7ee7b411a049d3af1a7bd828aacdd406bbeabdf",
-      "signature": "{\"signature\":\"3b688895003a52282eb9da2f1e84bc8e95e92c49469ff178626759fb1a836582393731b1e5915d2f20f945ae9a86bd70b14610b1521251ec73dbb515f0d79402\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"be98dc219bc9b413a487f84534a4e9d0093c67a9cf79d9df746ee841131b6bdb\",\"signedAt\":\"2026-08-02T16:24:42.071Z\"}",
+      "signature": "{\"signature\":\"45ab2a7a07492c716a85097a3fb63b0832eb105d8248492c7c4acf95fb335ae3b064034f8aec0a12c3701fe8efbccd308efae7cf8108cb768a288c6071bb4d07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"be98dc219bc9b413a487f84534a4e9d0093c67a9cf79d9df746ee841131b6bdb\",\"signedAt\":\"2026-08-07T07:02:06.853Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\analyzers\\UtcfCoverageEngine.cjs",
       "hash": "a2f023c8916091202cb7a484a4d2a75f47be78eda23314e42e586bfc90b2d0fb",
-      "signature": "{\"signature\":\"05a593877909e1de74baccb4eb7afea0622f0b638c9b68829be41dceaa61c1959d06a6844ec1a0ea18647a0a41ad386411cd7d580eb9b20d3d230793f87e4c06\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1247d76cabe2ae9eca630c642220fb92f4f0c51e495cc5b5ec7597c5f15481e9\",\"signedAt\":\"2026-08-02T16:24:42.072Z\"}",
+      "signature": "{\"signature\":\"e9ccc692c2b6716392de6a37506c382c23a7be6faa25a227baca17b5d22952fe88261c7334acd6be10f94e073c17d7537e5bb0446423c1c4ed0590b44bc30a07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1247d76cabe2ae9eca630c642220fb92f4f0c51e495cc5b5ec7597c5f15481e9\",\"signedAt\":\"2026-08-07T07:02:06.853Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\AnalyzerSDK.cjs",
       "hash": "018153ff0c7cbcd34a5c892d63d597bab29e1bf0ea0b64fa8e33e4de36956600",
-      "signature": "{\"signature\":\"859c28fce51b18a46eb683d6177fcd5c45afa0250bca49a3d27b55448840c1d57afbe127435f4778cb67b3912f57489ed049d736c4909bf9303a6b6b217ca40a\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"f170463b229b6ca59abd73f9460d6a1f3e3dce2e95cd377576f2c64a649c6e0a\",\"signedAt\":\"2026-08-02T16:24:42.072Z\"}",
+      "signature": "{\"signature\":\"11c5d3b18135f951df8a2fcbe37c304da31dc4a4c697f61f8edaba2896695642af2cd7dd2efd2a417b279d9bc46ab55b186e78ebd5620c49e95bac9004c7720e\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"f170463b229b6ca59abd73f9460d6a1f3e3dce2e95cd377576f2c64a649c6e0a\",\"signedAt\":\"2026-08-07T07:02:06.854Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\api\\AutonomousApiGovernanceEngine.js",
       "hash": "6a8dd3d06fb0445fb9c1e9c9e60f312b903981c1ef05ebce7fe092721d292232",
-      "signature": "{\"signature\":\"452d5415dd4e656912a7353384f087c4f94c8f682a5491ea3c6f55ab85447c878e44b51cfe4826fc1f5ab223bf08bf7092cfb547a1d402efa7b59025f18e4006\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"bbccae2443964d6bc38a6e830deef8f637ffafa6715b440642836c314312562b\",\"signedAt\":\"2026-08-02T16:24:42.073Z\"}",
+      "signature": "{\"signature\":\"bd4376f75affb6fbfa5a1610ad217108420abda16be4df72896f1350293a328c56d1a6a1bbffd9e97af72f872fb05c5f5fdcb2df45c87a45b592a96041ec5708\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"bbccae2443964d6bc38a6e830deef8f637ffafa6715b440642836c314312562b\",\"signedAt\":\"2026-08-07T07:02:06.854Z\"}",
       "algorithm": "Ed25519"
     },
     {
       "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\api\\ContractEvolutionEngine.js",
       "hash": "67d051416e179c34e5b7d27d1d04512288f0645a118683a936fc8a5fa2a9b7d7",
-      "signature": "{\"signature\":\"9d347434358589498be748975e37ee1befd788b136f855920f2feb4efcfde87ede4b698a0deaaa2b1de463ae48728cd9c1a418ab65b124b6fc7d2176c1f3fa0a\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5d3690c8e6ecfac724eddfdba56860b97680cdb6c62d6d47eea506edb259183b\",\"signedAt\":\"2026-08-02T16:24:42.073Z\"}",
+      "signature": "{\"signature\":\"372f4f7e2b55f1b90638a3703546cbd168fabb2deb3e9b2e741d7bdac145751c7f0ccfd9e834c1ca7aa503f96a19aed3e0060342c851fd0b5584464542218001\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"5d3690c8e6ecfac724eddfdba56860b97680cdb6c62d6d47eea506edb259183b\",\"signedAt\":\"2026-08-07T07:02:06.855Z\"}",
       "algorithm": "Ed25519"
     },
     {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\api\\governance_api_router.cjs",
-      "hash": "15e4a22275b6fdca9a938efc0fcc357531443b887ca7427de59f3f9db157785c",
-      "signature": "{\"signature\":\"29dd0f066110b12f2324a0ff5823ec55d60f734e3d9378aa26b50c4e9563aa04d93b4a50a311ef12acafc994ec4194b4479cc38dad936cf7308464f27502da07\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"0110f2146cd4dd357da0c9a78aeb24f3c59cf6be30e3b20a8e7774f6a38363a6\",\"signedAt\":\"2026-08-02T16:24:42.074Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\architecture\\ArchitectureManager.cjs",
-      "hash": "934ba5aa5bbbd44c5e8cddacb55f9c5fd4f6b6c2a2f98ef2cd49ff747c2c630d",
-      "signature": "{\"signature\":\"ca69a3124009d0821c74f6645100dc003266b93a51ed5524e5333ae1adcee9bd28dec65e19cbb6d19e3eddc3ed7d8f4ab3a0ce98da003d61bc647e38593b6207\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"82722c17d96b38730d639337c09aa2152d62a802c6e960e9941e56f917ff9f85\",\"signedAt\":\"2026-08-02T16:24:42.075Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\AuditorReportExporter.js",
-      "hash": "963bf8208166cbd7746689225badbd7f8d6c4fd182e2c03ad4af57dbaadddb47",
-      "signature": "{\"signature\":\"2923e39ba935ef0f7afcef92530e949beff70fa6f66ecfecd372e90cd19ae75e3a4441f7ae9a7f7a6719e1eea7f4edff218dc428ec36a4d1ff1364f1a5e4b705\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"4a88a6d715a5c2f0d5a0e8979b9ea6fd321dadbb40cd88cf5961b4ba15bae0fb\",\"signedAt\":\"2026-08-02T16:24:42.075Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\AuditSummaryProvider.js",
-      "hash": "f3b41059e1d48be28db62e1a26ccf57b474fe9c647eca367fe4c909e74899468",
-      "signature": "{\"signature\":\"a1f2e7b89d284e9f72030316a26c2db294ff0783b141b37fd79d653d2c8f93c803c50245c2f6e2ecd534e91af08476840c6ba486fe67653222cf0af52a911401\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"3a9830ed9999ab3a54a548bec2703dc6c8bd3953a467ea6d77612d730cb37ee2\",\"signedAt\":\"2026-08-02T16:24:42.076Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\AutomatedExternalAuditPortalEngine.js",
-      "hash": "0c271550562467eeb198f52f5f9bb74a0ed5f8de82e3e451c7a060c9cf30a26a",
-      "signature": "{\"signature\":\"b945fa554a8652c885e14d29494521b9bb665a4c561f9d363145a0653e08754e7f9d86dbfcd84c34a470a35360e3ca03a76c43251a1ca4878517c023a28c9201\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"ecb0368403e918cb2ded81c2e41c39263c2d53c820a74d7826dbbeec09637964\",\"signedAt\":\"2026-08-02T16:24:42.077Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\AutonomousProductAssurancePipeline.js",
-      "hash": "4e60814cfb952216fc12cecc0070c9b2266feefd93911ff144aa6654b8390584",
-      "signature": "{\"signature\":\"b57815c4170fa0064f9cb2f638631b71bbdb2da677949b99736692300aea0b2455f854531d142345daa84bfe85498bd742ca372ca7817ca7392dfadd6c14c90f\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"3340f37aa24d4281851578143214d133c850c7b85a6e6ad8f8682b756a02f1fa\",\"signedAt\":\"2026-08-02T16:24:42.078Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\blueprint_compliance_audit.cjs",
-      "hash": "aa5c094fa156fc108180c0a66d5cc15ca14265ab7a3453b89674fb8653f24043",
-      "signature": "{\"signature\":\"4b0853eff3f0a624593039353874311f50d38bad088cc0d3fb9147684527fcb7d01f420f50d05a7138b7a3df99476ef5f17ca5132ee317051a2c56049ecb950b\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"6e9f18f172a20f2673f7776ad4a25afed8d57cc4aace1d9dd5b8fcce21175fb7\",\"signedAt\":\"2026-08-02T16:24:42.078Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\blueprint_compliance_report.json",
-      "hash": "313e5db59544d5939bbde29d04b718c90c660ad6eff64196394c1e2bc970731c",
-      "signature": "{\"signature\":\"c4e6aa1077ddb9291f90f87610755bc4b1a5396c46bd53b1e459ef02a31f490383a82fa47d8ecab311cc2fb003589a1f21bbe244d6ca90a8507c06619275fb00\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"8817107430fc221697ebd769eb1df8fe447de0edf775326f3c0e836569599307\",\"signedAt\":\"2026-08-02T16:24:42.079Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\CleanRoomReproducibilityEngine.js",
-      "hash": "fb9162e9d4dab6928e1d5881fd227310eb7968ee8694ff6c2ffcb1c3e356557c",
-      "signature": "{\"signature\":\"53468908dadae828218d4e7bb2c59d6f8f5cf71dd877eb94e6b7c1f9c0f19f0c4361f8e39bcd8062f467681ba3ce93c1598a7f60c4bd9b8a786cb18e7a498707\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"aa801b27a2de2ba54f4f80250a769119d5d8162e210fef2d222a8ce9a10d1be4\",\"signedAt\":\"2026-08-02T16:24:42.080Z\"}",
-      "algorithm": "Ed25519"
-    },
-    {
-      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\audit\\ComplianceProcurementPackager.js",
-      "hash": "7f85918770958bccc61099376a3fe7026cc6ebac385af2662b69e369f6aaa6fc",
-      "signature": "{\"signature\":\"8ed1b27a7a095f53266e14875b090c45a6699ee2d1f1e965f9134660705224b4896b33f996e79b7dd7803d3326142c5ab46ee27a632f2a3bf7995b47a8ff1e08\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"1346629d2144b34b7022ef64847f96036ed8d381afafd462303ebc4c8b8bb0e9\",\"signedAt\":\"2026-08-02T16:24:42.080Z\"}",
+      "filePath": "D:\\ujomor-platform\\products\\eaorcs\\engine\\api\\EnterpriseApiSuite.js",
+      "hash": "620490cec257efbb9018e437d8f0d7c311d40ebc8ea58dc48ab019db986076dd",
+      "signature": "{\"signature\":\"778d13470e3a81288de4bfdcab8b1f1fda56eb35f00bb62cd25ffb99c88c470d7a024fa54daa4f58a45ec3b7df61b5c0b685b9d69c2a0f4870fa9270eb790c08\",\"signatureAlgorithm\":\"Ed25519\",\"canonicalHash\":\"a09e6ecfd691be7963113ce7c970e77966cc2e41eaaad42972d8006da4a4040c\",\"signedAt\":\"2026-08-07T07:02:06.856Z\"}",
       "algorithm": "Ed25519"
     }
   ],
-  "manifestHash": "994c5cf6f0976e3a32666e9baa2aa94800f347e5dc93332652d1cafcbe8362d7"
+  "manifestHash": "c5ff906115bf7b8259275f8be6153e3547fc4090a8e57fedc9266947f400058d"
 }

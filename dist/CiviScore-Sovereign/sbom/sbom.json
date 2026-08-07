@@ -1,0 +1,9 @@
+{
+  "product": "Civic Infrastructure Integrity & Trust Scoring Engine",
+  "productId": "CiviScore",
+  "edition": "Sovereign",
+  "version": "2026.3.0-LTS",
+  "format": "CycloneDX_v1.4",
+  "componentsCount": 42,
+  "vulnerabilities": 0
+}

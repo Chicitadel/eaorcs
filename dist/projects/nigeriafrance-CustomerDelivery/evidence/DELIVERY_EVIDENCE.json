@@ -1,0 +1,10 @@
+{
+  "project": "nigeriafrance",
+  "acceptanceTestsPassed": 100,
+  "securityScanCleared": true,
+  "dataResidencyVerified": true,
+  "evidenceHashes": [
+    "ab40271abd5a029f4b95544ab84fcd47b3cab6541d44c2a28bdfc0ed3285a2d4",
+    "7f6885a6077e34a94ab31c5d0708fafb73353b3f2dbe7c853507bb22f5905497"
+  ]
+}

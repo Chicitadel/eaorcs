@@ -1,0 +1,15 @@
+{
+  "manifestVersion": "AGPA_v1.0",
+  "product": "EAORCS",
+  "name": "Enterprise Autonomous Operational Readiness & Certification System",
+  "edition": "Enterprise",
+  "version": "2026.3.0-LTS",
+  "createdDate": "2026-08-07T06:47:52.404Z",
+  "capabilities": [
+    "cap.governance.core",
+    "cap.audit.gate",
+    "cap.passport.dual",
+    "cap.policy.engine"
+  ],
+  "hash": "17ded267af725b4e0d7dd184c380758a927547033a313e1f3950a3a42e48ef0a"
+}

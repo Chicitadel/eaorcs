@@ -1,0 +1,50 @@
+name: Reusable EAORCS Platform Certification Workflow
+
+on:
+  workflow_call:
+    inputs:
+      target_version:
+        required: false
+        type: string
+        default: '2026.1.0-lts'
+      working_directory:
+        required: false
+        type: string
+        default: '.'
+
+jobs:
+  certify:
+    name: EAORCS Certification Pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        working-directory: ${{ inputs.working_directory }}
+        run: npm install --if-present
+
+      - name: Run Master Certification Pipeline
+        working-directory: ${{ inputs.working_directory }}
+        run: node certify.js
+
+      - name: Upload Qualification Reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qualification-reports-${{ github.sha }}
+          path: ${{ inputs.working_directory }}/docs/
+          retention-days: 90
+
+      - name: Upload CI Execution Logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ci-logs-${{ github.sha }}
+          path: ${{ inputs.working_directory }}/ci/logs/
+          retention-days: 90
