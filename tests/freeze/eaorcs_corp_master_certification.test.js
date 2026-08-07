@@ -67,10 +67,13 @@ async function runMasterCertification() {
     await runPhase('Layer J — Master GA Readiness & Launch Command Center', 'eaorcs_corp_ga_readiness.test.js');
     await runPhase('Workstreams 2 & 5 — GA Gates & Digital Twin', 'eaorcs_corp_ga_gates_and_twin.test.js');
     await runPhase('Master Readiness — Final 12 Streams (A-L)', 'eaorcs_corp_final_12_streams.test.js');
+    await runPhase('Subsystem 4 — Enterprise Command Center',      'eaorcs_corp_enterprise_command_center.test.js');
 
     // Verify all engine files exist
     console.log('\n[ENGINE FILE INVENTORY]');
     const expectedEngines = [
+        // Subsystem 4
+        'engine/enterprise/EnterpriseCommandCenterEngine.js',
         // Streams J, K, L (Customer Validation, Blueprint, 5-Year Strategy)
         'engine/validation/CustomerValidationPackageEngine.js',
         'engine/platform/AirRoofersPlatformBlueprintEngine.js',

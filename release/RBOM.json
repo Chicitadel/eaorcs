@@ -1,32 +1,32 @@
 {
   "release": "REL-2026.3.1-LTS",
   "sourceSnapshot": "01_source_snapshot.zip",
-  "provenanceHash": "abce275a6a923d6a76f9b3356e90893c884b65accc36e343f3be0754800934ba",
+  "provenanceHash": "46acb41ad2c4e6867d43751cc3ca6c57ea203550172d0896dd2b11bf8d3e2a22",
   "gitCommit": "c9b4e870e9ec48ef",
-  "buildId": "BUILD-1786109805969",
+  "buildId": "BUILD-1786114960270",
   "artifactsCount": 7,
   "generatedArtifacts": [
     {
       "packageId": "01_source_snapshot",
       "packageName": "EAORCS Full Source Snapshot",
       "filename": "01_source_snapshot.zip",
-      "sha256": "5b92a81be342b5112767f0b10b8b8e7b8ea433785530ca4c2a0ba70ced7fe272",
-      "sizeMB": "4.78",
+      "sha256": "1c6870719052820c19eb267f0c21ceec48b7b28839b2694be86b92e14bcf1788",
+      "sizeMB": "4.84",
       "audience": "architects_code_reviewers"
     },
     {
       "packageId": "02_external_audit",
       "packageName": "EAORCS External Technical Audit",
       "filename": "02_external_audit.zip",
-      "sha256": "92362306f99f7f1d7f2e35cc5e3b4402c71054816b790985dab5d7612aa0ba87",
-      "sizeMB": "2.29",
+      "sha256": "0a4175f796ec55550e40bdb64a84f71c52bc2b94ac391dcce13ea0ac2995563f",
+      "sizeMB": "2.32",
       "audience": "auditors"
     },
     {
       "packageId": "03_customer_release",
       "packageName": "EAORCS Customer Release",
       "filename": "03_customer_release.zip",
-      "sha256": "fc20ec22ae4de9a411e9f7fee6742b4e1e5533e48ab96b6dbe3210293553a460",
+      "sha256": "46f6607e5c596568531133668b50d2bbafda1e4a318b5367f92af00f40e6512a",
       "sizeMB": "0.10",
       "audience": "customers"
     },
@@ -34,23 +34,23 @@
       "packageId": "04_enterprise_sdk",
       "packageName": "EAORCS Enterprise SDK",
       "filename": "04_enterprise_sdk.zip",
-      "sha256": "fee8bbeca96c69b0ae1b2c4a7361df63b92c61cfed113c844db9f21e617d8dbb",
-      "sizeMB": "1.87",
+      "sha256": "7acc4e43b1727bd04c6f43461c0eaeb14df65d87d4276bf659126780d4ba8905",
+      "sizeMB": "1.88",
       "audience": "developers"
     },
     {
       "packageId": "05_regulatory_compliance",
       "packageName": "EAORCS Regulatory & Compliance Package",
       "filename": "05_regulatory_compliance.zip",
-      "sha256": "56b38e3a7df2771ad050920bf832d04ed45436ac8fcca83e792e54d6b25929e3",
-      "sizeMB": "0.41",
+      "sha256": "5c177f367845bdb356eb3bcde71778d9cb81e6ec83d07738dc1d174d6490cd47",
+      "sizeMB": "0.43",
       "audience": "procurement_compliance"
     },
     {
       "packageId": "06_sbom",
       "packageName": "EAORCS Software Bill of Materials (SBOM)",
       "filename": "06_sbom.zip",
-      "sha256": "4f64c3d5e655aaeff24506720530dfb475098525b0191dab557721a923acd0bb",
+      "sha256": "9f0e421b0c152d2ed7c93a33de01d04c3ae2cd41f146364c73ca8f386e953adb",
       "sizeMB": "0.03",
       "audience": "security_procurement"
     },
@@ -58,11 +58,11 @@
       "packageId": "07_signatures",
       "packageName": "EAORCS Digital Signatures & Governance Seals",
       "filename": "07_signatures.zip",
-      "sha256": "d9414a1240dbf34314817510d57a9c1f0b4683aa21d7934dae1140eef1c7c805",
-      "sizeMB": "0.03",
+      "sha256": "996066e4a63eb0ef59b181577eb6129f733d164ac2e0ba33e6aa2b5e0101a92d",
+      "sizeMB": "0.04",
       "audience": "cryptographic_verifiers"
     }
   ],
-  "generatedAt": "2026-08-07T13:36:45.970Z",
-  "rbomHash": "7f929506e19bbadd56555ee8cf5d829a7d2dc016340a21031fb552ae9461515c"
+  "generatedAt": "2026-08-07T15:02:40.270Z",
+  "rbomHash": "c403ea545ccb0c6eed9bd7a6dcee0a435d45a581bd3b14b4cac18c7e7b31c8d9"
 }

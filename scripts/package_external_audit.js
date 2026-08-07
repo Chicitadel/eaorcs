@@ -44,6 +44,7 @@ const GeneralAvailabilityGateEngine = require('../engine/governance/GeneralAvail
 const CustomerValidationPackageEngine = require('../engine/validation/CustomerValidationPackageEngine');
 const AirRoofersPlatformBlueprintEngine = require('../engine/platform/AirRoofersPlatformBlueprintEngine');
 const FiveYearPlatformStrategyEngine = require('../engine/strategy/FiveYearPlatformStrategyEngine');
+const EnterpriseCommandCenterEngine = require('../engine/enterprise/EnterpriseCommandCenterEngine');
 
 const sourceSnapshotPkg = require('./packaging/build_source_snapshot_package');
 const auditPkg          = require('./packaging/build_audit_package');
@@ -212,6 +213,18 @@ fiveYearStrategyEngine.exportFiveYearStrategy(tmpStrategyPath);
 fs.copyFileSync(tmpStrategyPath, releaseStrategyPath);
 console.log('    ✓ 5-Year Platform Strategy exported\n');
 
+console.log('[ENTERPRISE COMMAND CENTER ENGINE] Exporting Enterprise Command Center State & Dashboard (ecc_dashboard.json, ecc_dashboard.html)...');
+const eccEngine = new EnterpriseCommandCenterEngine(eaorcsRoot);
+const tmpEccJsonPath = path.join(tmpDir, 'ecc_dashboard.json');
+const releaseEccJsonPath = path.join(releaseDir, 'ecc_dashboard.json');
+const tmpEccHtmlPath = path.join(tmpDir, 'ecc_dashboard.html');
+const releaseEccHtmlPath = path.join(releaseDir, 'ecc_dashboard.html');
+eccEngine.compileAndSaveJSON(tmpEccJsonPath);
+fs.copyFileSync(tmpEccJsonPath, releaseEccJsonPath);
+eccEngine.compileAndSaveHTML(tmpEccHtmlPath);
+fs.copyFileSync(tmpEccHtmlPath, releaseEccHtmlPath);
+console.log('    ✓ Enterprise Command Center JSON & HTML exported\n');
+
 const procurementDossierPath = path.join(eaorcsRoot, 'docs', 'procurement', 'PROCUREMENT_DUE_DILIGENCE_PACK.md');
 const operationsManualPath = path.join(eaorcsRoot, 'docs', 'EAORCS_Operations_Manual.md');
 const customerSuccessDocsPath = path.join(eaorcsRoot, 'docs', 'support', 'SUPPORT_PORTAL.md');
@@ -303,6 +316,8 @@ for (const entry of packageBuilders) {
             tmpCustValPath,
             tmpBlueprintPath,
             tmpStrategyPath,
+            tmpEccJsonPath,
+            tmpEccHtmlPath,
             procurementDossierPath,
             operationsManualPath,
             customerSuccessDocsPath
@@ -431,6 +446,8 @@ checksumLines.push(`${fileStats(releaseGaDecisionPath).hash}  ga_gate_decision.j
 checksumLines.push(`${fileStats(releaseCustValPath).hash}  CUSTOMER_VALIDATION_PACKAGE.json`);
 checksumLines.push(`${fileStats(releaseBlueprintPath).hash}  UNIFIED_AIR_ROOFERS_PLATFORM_BLUEPRINT.md`);
 checksumLines.push(`${fileStats(releaseStrategyPath).hash}  FIVE_YEAR_PLATFORM_STRATEGY.md`);
+checksumLines.push(`${fileStats(releaseEccJsonPath).hash}  ecc_dashboard.json`);
+checksumLines.push(`${fileStats(releaseEccHtmlPath).hash}  ecc_dashboard.html`);
 
 const shaSumsPath = path.join(releaseDir, 'SHA256SUMS');
 fs.writeFileSync(shaSumsPath, checksumLines.join('\n') + '\n', 'utf8');

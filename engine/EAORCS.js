@@ -35,6 +35,7 @@ const path = require('path');
 const ProjectIntelligenceKernelEngine = require('./kernel/ProjectIntelligenceKernelEngine');
 const EAORCSRuntimeEngine = require('./runtime/EAORCSRuntimeEngine');
 const EngineeringHealthDashboardEngine = require('./operations/EngineeringHealthDashboardEngine');
+const CommandCenterServerEngine = require('./operations/CommandCenterServerEngine');
 const PlatformConstitutionEngine = require('./governance/PlatformConstitutionEngine');
 const EcosystemValidationProgramEngine = require('./validation/EcosystemValidationProgramEngine');
 const PerformanceBenchmarkEngine = require('./operations/PerformanceBenchmarkEngine');
@@ -272,6 +273,17 @@ class EAORCS {
     static validateMultiPlatform(options = {}) {
         const mpEngine = new MultiPlatformValidationEngine(options);
         return mpEngine.validatePlatformMatrix();
+    }
+
+    static launchCommandCenter(options = {}) {
+        const serverEngine = new CommandCenterServerEngine(options);
+        return serverEngine.launchCommandCenter(options);
+    }
+
+    static getCommandCenterData(options = {}) {
+        const workspaceDir = options.workspace || process.cwd();
+        const serverEngine = new CommandCenterServerEngine(options);
+        return serverEngine.getCommandCenterData(workspaceDir);
     }
 }
 

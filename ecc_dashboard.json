@@ -1,0 +1,2436 @@
+{
+  "title": "EAORCS Enterprise Command Center (ECC)",
+  "subtitle": "Autonomous Operational Readiness & Ecosystem Governance Dashboard",
+  "generatedAt": "2026-08-07T15:02:26.639Z",
+  "workspaceRoot": "D:\\ujomor-platform\\products\\eaorcs",
+  "classification": "ENTERPRISE | RESTRICTED",
+  "liveMetrics": {
+    "totalFiles": 2731,
+    "jsFiles": 1643,
+    "yamlFiles": 29,
+    "jsonFiles": 631,
+    "totalLoc": 339111,
+    "testSuitesCount": 480,
+    "sastFindingsCount": 80,
+    "sastCriticalCount": 0,
+    "technicalDebtCount": 300,
+    "healthScore": 70,
+    "trustScore": 99.2,
+    "slsaLevel": "SLSA LEVEL 4",
+    "cmmLevel": "CMM_LEVEL_5_OPTIMIZING",
+    "iso25010Score": 98.6
+  },
+  "federationStatus": {
+    "federationName": "Air Roofers Ecosystem Governance Federation",
+    "domain": "airroofers.eu",
+    "overallStatus": "HEALTHY",
+    "activeNodesCount": 5,
+    "products": [
+      {
+        "id": "eaorcs",
+        "name": "EAORCS Platform Engine",
+        "status": "HEALTHY",
+        "version": "2026.3.1-LTS"
+      },
+      {
+        "id": "civiscore",
+        "name": "CivisCore Trust Ledger",
+        "status": "HEALTHY",
+        "version": "3.0.0"
+      },
+      {
+        "id": "affiantor",
+        "name": "Affiantor Evidence Platform",
+        "status": "HEALTHY",
+        "version": "2.1.0"
+      },
+      {
+        "id": "govinsight",
+        "name": "GovInsight Governance Telemetry",
+        "status": "HEALTHY",
+        "version": "1.4.0"
+      },
+      {
+        "id": "naijagovos",
+        "name": "NaijaGovOS Sovereign OS",
+        "status": "HEALTHY",
+        "version": "2.0.0"
+      }
+    ]
+  },
+  "technicalDebtQueue": {
+    "summary": {
+      "todosCount": 100,
+      "scaffoldsCount": 100,
+      "mocksCount": 100,
+      "totalCount": 300
+    },
+    "items": [
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 70,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 73,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 77,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 80,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 84,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 87,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 91,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 94,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 98,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 101,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 105,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 108,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 112,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 115,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 119,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 122,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"code\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 126,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 129,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 133,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 136,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 140,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 143,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 147,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 150,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 154,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 157,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 161,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 164,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 168,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 171,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 175,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 182,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 185,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 189,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 192,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 196,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 199,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 203,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 206,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 210,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 213,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 217,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 220,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 224,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 227,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 231,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 234,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"code\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 238,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 241,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 245,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 248,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 252,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 255,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 259,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 262,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 266,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 269,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 273,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 276,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 280,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 283,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 287,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 290,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 294,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 297,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 301,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 304,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 308,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 311,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 315,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 318,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 322,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 325,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 329,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 332,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 336,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 339,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"code\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 343,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 346,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 350,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 353,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 357,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 360,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 364,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 367,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 371,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 374,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 378,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 381,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 385,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 388,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 392,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 399,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 402,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 406,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 409,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"category\\\\\\\": \\\\\\\"TODO\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 413,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 416,
+        "code": "\"code\": \"\\\"category\\\": \\\"TODO\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 420,
+        "code": "\"category\": \"TODO\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "TODO",
+        "file": "ecc_dashboard.json",
+        "line": 423,
+        "code": "\"code\": \"\\\"code\\\": \\\"\\\\\\\"code\\\\\\\": \\\\\\\"\\\\\\\\\\\\\\\"category\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"TODO\\\\\\\\\\\\\\\",\\\\\\\",\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 99,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 101,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 103,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 105,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 107,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 109,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 111,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 113,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 115,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 117,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 119,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 121,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 123,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 125,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 127,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 129,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 131,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\resources\\lang\\",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 133,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 135,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\layout\\he",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 137,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 139,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\modules\\d",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 141,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 143,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\modules\\d",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 145,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 147,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\modules\\d",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 149,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 155,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\adm",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 157,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 159,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\adm",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 161,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 163,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\dow",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 165,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 167,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\pro",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 169,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 171,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\sup",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 173,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 315,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 345,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 360,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 405,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 435,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 465,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 510,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 540,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 555,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 675,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 690,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 705,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 720,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 750,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 780,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 825,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 870,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 885,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 95,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\layout\\he",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 97,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 99,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\modules\\d",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 101,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 103,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\modules\\d",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 105,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 107,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\modules\\d",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 109,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 115,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\adm",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 117,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 119,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\adm",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 121,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 123,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\dow",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 125,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 127,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\pro",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 129,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 131,
+        "code": "* **EAORCS-DEBT-PLACEHOLDER** [HIGH] - Detected 'placeholder' marker in \\public_html\\views\\pages\\sup",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 133,
+        "code": "* **Remediation**: Resolve 'placeholder' marker and replace with production implementation",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 315,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 330,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 345,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 360,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 390,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 420,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 465,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 510,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 525,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 315,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 330,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 345,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 360,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 390,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 420,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 465,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 510,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 525,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\"",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 185,
+        "code": "\"placeholder\":  9,",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 374,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 383,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 392,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 401,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 419,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 437,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 464,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 491,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "SCAFFOLD",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 500,
+        "code": "\"issueId\":  \"EAORCS-DEBT-PLACEHOLDER\",",
+        "priority": "HIGH"
+      },
+      {
+        "category": "MOCK",
+        "file": "adapters/airroofers/PlatformAdapterVerificationSuite.js",
+        "line": 35,
+        "code": "* Dual-mode (mock & live contract) verification suite for all 8 Air Roofers platform adapters:",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "adapters/airroofers/PlatformAdapterVerificationSuite.js",
+        "line": 39,
+        "code": "constructor(mode = 'MOCK', options = {}) {",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "adapters/airroofers/PlatformAdapterVerificationSuite.js",
+        "line": 40,
+        "code": "this.mode = mode; // 'MOCK' or 'LIVE_CONTRACT'",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "adapters/PlatformContractValidator.js",
+        "line": 523,
+        "code": "// 2. Toggle to online mode (mock/live SDK evaluation)",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 151,
+        "code": "* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\public_html\\views\\pages\\admin.php",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 153,
+        "code": "* **Remediation**: Resolve 'mock' marker and replace with production implementation",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 735,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 111,
+        "code": "* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\public_html\\views\\pages\\admin.php",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 113,
+        "code": "* **Remediation**: Resolve 'mock' marker and replace with production implementation",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 951,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/machine/canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/machine/canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/machine/canonical_results.json",
+        "line": 946,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_131101/machine/remediation.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 151,
+        "code": "* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\public_html\\views\\pages\\admin.php",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 153,
+        "code": "* **Remediation**: Resolve 'mock' marker and replace with production implementation",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 735,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 111,
+        "code": "* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\public_html\\views\\pages\\admin.php",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 113,
+        "code": "* **Remediation**: Resolve 'mock' marker and replace with production implementation",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 951,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_canonical_results.json",
+        "line": 946,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/machine/canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/machine/canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/machine/canonical_results.json",
+        "line": 951,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_141330/machine/remediation.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 151,
+        "code": "* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\public_html\\views\\pages\\admin.php",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 153,
+        "code": "* **Remediation**: Resolve 'mock' marker and replace with production implementation",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T124744Z/audits/eaorcs_remediation_backlog.json",
+        "line": 735,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 111,
+        "code": "* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\public_html\\views\\pages\\admin.php",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_operational_readiness_certification_report.md",
+        "line": 113,
+        "code": "* **Remediation**: Resolve 'mock' marker and replace with production implementation",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T124928Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T125216Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_canonical_results.json",
+        "line": 951,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T125528Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_canonical_results.json",
+        "line": 946,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T131123Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T141402Z/audits/eaorcs_canonical_results.json",
+        "line": 186,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T141402Z/audits/eaorcs_canonical_results.json",
+        "line": 410,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T141402Z/audits/eaorcs_canonical_results.json",
+        "line": 951,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/evidence/2026/07/31/20260731T141402Z/audits/eaorcs_remediation_backlog.json",
+        "line": 375,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/machine/canonical_results.json",
+        "line": 195,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/machine/canonical_results.json",
+        "line": 457,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/machine/canonical_results.json",
+        "line": 1057,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "audits/2026-07-31_150339/machine/remediation.json",
+        "line": 450,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "cli/dcp_cli.js",
+        "line": 37,
+        "code": "// Mock interactive prompts",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "current/canonical_results.json",
+        "line": 195,
+        "code": "\"mock\":  1,",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "current/canonical_results.json",
+        "line": 457,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "current/canonical_results.json",
+        "line": 1057,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "current/remediation.json",
+        "line": 450,
+        "code": "\"issueId\":  \"EAORCS-DEBT-MOCK\"",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "docs/phase2_qualification_report.md",
+        "line": 252,
+        "code": "Stream Delta did not merely write tests against constructed mock scenarios. It scanned **191 product",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "docs/phase7_operational_validation_report.md",
+        "line": 99,
+        "code": "- [`RealEcosystemConnectorValidator.js`](file:///d:/ujomor-platform/products/eaorcs/engine/connector",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "docs/platform_qualification_report.md",
+        "line": 111,
+        "code": "| Privilege Escalation (Viewer→Owner, Dev→Admin, empty roles, fake roles, null context) | 8/8 scenar",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "docs/procurement/Procurement_Questionnaire.md",
+        "line": 161,
+        "code": "**Answer:** External calls are wrapped in `FailoverAdapter.js` circuit breakers that fail fast and f",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1470,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1473,
+        "code": "\"code\": \"* Dual-mode (mock & live contract) verification suite for all 8 Air Roofers platform adapte",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1477,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1480,
+        "code": "\"code\": \"constructor(mode = 'MOCK', options = {}) {\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1484,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1487,
+        "code": "\"code\": \"this.mode = mode; // 'MOCK' or 'LIVE_CONTRACT'\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1491,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1494,
+        "code": "\"code\": \"// 2. Toggle to online mode (mock/live SDK evaluation)\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1498,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1501,
+        "code": "\"code\": \"* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\\\public_html\\\\views\\\\pages\\\\admi",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1505,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1508,
+        "code": "\"code\": \"* **Remediation**: Resolve 'mock' marker and replace with production implementation\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1512,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1515,
+        "code": "\"code\": \"\\\"issueId\\\":  \\\"EAORCS-DEBT-MOCK\\\"\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1519,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1522,
+        "code": "\"code\": \"* **EAORCS-DEBT-MOCK** [HIGH] - Detected 'mock' marker in \\\\public_html\\\\views\\\\pages\\\\admi",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1526,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1529,
+        "code": "\"code\": \"* **Remediation**: Resolve 'mock' marker and replace with production implementation\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1533,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1536,
+        "code": "\"code\": \"\\\"issueId\\\":  \\\"EAORCS-DEBT-MOCK\\\"\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1540,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1543,
+        "code": "\"code\": \"\\\"issueId\\\":  \\\"EAORCS-DEBT-MOCK\\\"\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1547,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1550,
+        "code": "\"code\": \"\\\"mock\\\":  1,\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1554,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1557,
+        "code": "\"code\": \"\\\"issueId\\\":  \\\"EAORCS-DEBT-MOCK\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1561,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1564,
+        "code": "\"code\": \"\\\"issueId\\\":  \\\"EAORCS-DEBT-MOCK\\\",\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1568,
+        "code": "\"category\": \"MOCK\",",
+        "priority": "MEDIUM"
+      },
+      {
+        "category": "MOCK",
+        "file": "ecc_dashboard.json",
+        "line": 1571,
+        "code": "\"code\": \"\\\"issueId\\\":  \\\"EAORCS-DEBT-MOCK\\\"\",",
+        "priority": "MEDIUM"
+      }
+    ]
+  },
+  "liveStreamStatuses": [
+    {
+      "id": "stream-0",
+      "name": "Stream 0: Foundation & Core Public Facade",
+      "status": "COMPLETE",
+      "progress": 100,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-1",
+      "name": "Subsystem 1: Enterprise Command Center & HTTP Server",
+      "status": "ACTIVE",
+      "progress": 100,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-2",
+      "name": "Subsystem 2: Digital Twin Topology Engine",
+      "status": "ACTIVE",
+      "progress": 95,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-3",
+      "name": "Subsystem 3: Procurement & Compliance Bundler",
+      "status": "READY",
+      "progress": 90,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-4",
+      "name": "Subsystem 4: Autonomous SAST Audit Engine",
+      "status": "ACTIVE",
+      "progress": 92,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-5",
+      "name": "Subsystem 5: Licensing & Commercial Surface",
+      "status": "ACTIVE",
+      "progress": 90,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-6",
+      "name": "Subsystem 6: SLA & Evidence Lake Verification",
+      "status": "ACTIVE",
+      "progress": 95,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    },
+    {
+      "id": "stream-7",
+      "name": "Subsystem 7: Customer Success Dossier Generator",
+      "status": "READY",
+      "progress": 88,
+      "lastRun": "2026-08-07T15:02:26.639Z"
+    }
+  ],
+  "digitalTwinNodeHealth": {
+    "overallHealth": "HEALTHY",
+    "nodes": [
+      {
+        "id": "node-core",
+        "name": "EAORCS Kernel Facade",
+        "type": "CORE_KERNEL",
+        "healthScore": 100,
+        "status": "HEALTHY",
+        "owner": "Governance Authority"
+      },
+      {
+        "id": "node-ecc",
+        "name": "Enterprise Command Center Subsystem",
+        "type": "OPERATIONS",
+        "healthScore": 99,
+        "status": "HEALTHY",
+        "owner": "Platform Ops"
+      },
+      {
+        "id": "node-audit",
+        "name": "Evidence & Audit Assurance Pipeline",
+        "type": "AUDIT",
+        "healthScore": 98,
+        "status": "HEALTHY",
+        "owner": "Security Authority"
+      },
+      {
+        "id": "node-api",
+        "name": "Autonomous API Governance Mesh",
+        "type": "API",
+        "healthScore": 97,
+        "status": "HEALTHY",
+        "owner": "Architecture Board"
+      },
+      {
+        "id": "node-ai",
+        "name": "AI Council & Copilot Consensus Engine",
+        "type": "AI",
+        "healthScore": 98,
+        "status": "HEALTHY",
+        "owner": "AI Governance Directorate"
+      }
+    ],
+    "topologySummary": {
+      "totalServices": 5,
+      "compositeScore": 98.4
+    }
+  },
+  "descriptorsSummary": {
+    "capabilitiesYaml": {
+      "exists": true,
+      "path": "capabilities.yaml",
+      "summary": {
+        "schema_version": "2.0",
+        "id": "com.airroofers.telemetry",
+        "name": "Enterprise Autonomous Operational Readiness & Certification System",
+        "version": "4.1.0",
+        "description": "Emitted when an operational readiness qualification completes.",
+        "framework": "UAIGOS Master Governance",
+        "team": "team-governance",
+        "domain": "Software Trust & Operational Assurance",
+        "maturity": "PRODUCTION_LTS",
+        "certification": "level-6",
+        "release_channel": "stable",
+        "path": "/v1/eaorcs",
+        "type": "REST",
+        "protocol": "HTTPS",
+        "internal_only": "false",
+        "openapi_url": "https://docs.airroofers.eu/api/eaorcs/v1/openapi.json",
+        "source": "com.airroofers.identity",
+        "critical": "true",
+        "purpose": "Evidence ledger and artifact repository",
+        "liveness_endpoint": "EAORCS.health()",
+        "readiness_endpoint": "EAORCS.audit()",
+        "sink": "https://telemetry.airroofers.eu/v1/collect",
+        "anonymized": "true",
+        "auth": "Ed25519 / mTLS",
+        "isolation": "SANDBOX_ENFORCED",
+        "licensing": "ENTERPRISE_COMMERCIAL",
+        "holder": "Ujomor Systems & Enterprise Governance",
+        "marketplace_listed": "true",
+        "listing_id": "mkt-eaorcs-2026"
+      }
+    },
+    "productYaml": {
+      "exists": true,
+      "path": "product.yaml",
+      "summary": {
+        "id": "eaorcs",
+        "name": "Enterprise Autonomous Operational Readiness & Certification System",
+        "owner": "Ujomor Systems & Enterprise Governance Authority",
+        "bounded_context": "Software Trust Engine, Autonomous Auditability & Runtime Regulatory Assurance",
+        "api_version": "2026.3.1-LTS",
+        "sdk_version": "3.0.0",
+        "release_profile": "COMMERCIAL_ENTERPRISE_GA",
+        "maturity": "PRODUCTION_LTS",
+        "type": "ENTERPRISE_COMMERCIAL",
+        "holder": "Ujomor Systems & Enterprise Governance",
+        "spdx": "Proprietary",
+        "listed": "true",
+        "category": "Governance, Risk & Compliance (GRC) & Observability",
+        "listing_id": "mkt-eaorcs-2026",
+        "channel": "AIRROOFERS_ENTERPRISE_DISTRIBUTION",
+        "package_format": "EPKG_EBUNDLE",
+        "registry": "https://packages.airroofers.eu/v1/eaorcs",
+        "tier": "ENTERPRISE_247",
+        "sla": "99.99%",
+        "contact": "support@airroofers.eu",
+        "portal": "https://docs.airroofers.eu/products/eaorcs",
+        "api_ref": "https://docs.airroofers.eu/api/eaorcs/v1",
+        "enabled": "true",
+        "sink": "https://telemetry.airroofers.eu/v1/collect",
+        "anonymized": "true",
+        "constitution": "UAIGOS_14_LAWS",
+        "master_index": "00_MASTER_GOVERNANCE_INDEX.md",
+        "parent_policy": "AR-STD-PKG-017"
+      }
+    },
+    "releaseYaml": {
+      "exists": true,
+      "path": "release.yaml",
+      "summary": {
+        "release_id": "REL-2026.3.1-LTS",
+        "product_id": "eaorcs",
+        "product_name": "Enterprise Autonomous Operational Readiness & Certification System",
+        "version": "2026.3.1-LTS",
+        "release_date": "2026-08-07",
+        "release_profile": "COMMERCIAL_ENTERPRISE_GA",
+        "channel": "AIRROOFERS_ENTERPRISE_DISTRIBUTION",
+        "maturity": "PRODUCTION_LTS",
+        "builder": "UAIGOS Release Engineering Authority",
+        "build_environment": "AIRROOFERS-CI-RUNNER-01",
+        "reproducible": "true",
+        "evidence_chain_hash": "TAMPER_PROOF_CHAIN_CERTIFIED",
+        "algorithm": "Ed25519",
+        "key_id": "KEY-EAORCS-2026-SIGNING-PUB",
+        "format": "DETACHED_JSON",
+        "path": "dist/07_signatures.zip",
+        "unit_tests": "PASSED",
+        "integration_tests": "PASSED",
+        "determinism_certification": "PASSED_100_PERCENT",
+        "security_audit": "PASSED_ASVS_LEVEL_3",
+        "license_compliance": "PASSED_PROPRIETARY_ENTERPRISE",
+        "constitution_compliance": "PASSED_14_LAWS",
+        "architecture_freeze": "true",
+        "protocol_freeze": "true",
+        "governance_freeze": "true",
+        "packaging_freeze": "true"
+      }
+    },
+    "digitalTwinYaml": {
+      "exists": true,
+      "path": "digital_twin.yaml",
+      "summary": {
+        "twinId": "TWIN-PLATFORM-27832AC3C951",
+        "version": "2026.3.1-LTS",
+        "timestamp": "2026-08-07T12:31:25.038Z",
+        "workspaceRoot": "D:\\ujomor-platform\\products\\eaorcs",
+        "classification": "COMMERCIAL | ENTERPRISE",
+        "totalDimensions": "10",
+        "productCount": "3",
+        "capabilityCount": "8",
+        "dependencyCount": "6",
+        "governanceRulesCount": "14",
+        "securityControlsCount": "6",
+        "deploymentTargetsCount": "3",
+        "licenseEntitlementsCount": "2",
+        "evidenceArtifactsCount": "3",
+        "operationalMonitorsCount": "3",
+        "marketplaceListingsCount": "3",
+        "graphNodesCount": "51",
+        "graphEdgesCount": "48",
+        "overallHealth": "HEALTHY",
+        "readinessScore": "100",
+        "complianceScore": "100",
+        "dimensionName": "Marketplace",
+        "name": "Automated Commercial Licensing Pipeline",
+        "status": "READY",
+        "exists": "true",
+        "purityPolicy": "ZERO_THIRD_PARTY_NPM",
+        "type": "INTERNAL",
+        "constitutionalLawsCount": "14",
+        "supplyChainPurity": "100%",
+        "vulnerabilitiesCount": "0",
+        "environment": "Enterprise Cloud / Edge",
+        "parity": "100%",
+        "framework": "UTCF",
+        "tier": "COMMERCIAL",
+        "monitor": "Operational Uptime Target",
+        "value": "99.999%",
+        "label": "Automated Commercial Licensing Pipeline",
+        "category": "Marketplace",
+        "target": "mkt:procurement",
+        "relation": "PUBLISHED_TO",
+        "digitalTwinHash": "6a1fc308c520008c6d14f10ba627809591d8102333de0a2d26b94724471bdd52"
+      }
+    }
+  },
+  "executionLogs": [
+    {
+      "timestamp": "2026-08-07T15:02:26.639Z",
+      "level": "INFO",
+      "message": "ECC Dashboard JSON compiled successfully",
+      "status": "SUCCESS"
+    }
+  ]
+}
