@@ -473,6 +473,7 @@ class EEOSEngine {
                 const queryParams = Object.fromEntries(parsedUrl.searchParams.entries());
 
                 const sendJson = (statusCode, payload) => {
+                    if (res.headersSent) return;
                     res.writeHead(statusCode, { 'Content-Type': 'application/json' });
                     res.end(JSON.stringify(payload, null, 2));
                 };
@@ -643,10 +644,25 @@ class EEOSEngine {
      */
     compileAndSaveJSON(targetPath) {
         const state = this.aggregateWorkspaceState();
-        const searchIndex = this.buildSearchIndex();
+        // Ensure state JSON is lightweight by truncating massive file lists and syntax stats
+        if (state && state.workspaces && state.workspaces.repositoryExplorer && state.workspaces.repositoryExplorer.analysis) {
+            const cleanAnalysis = Object.assign({}, state.workspaces.repositoryExplorer.analysis);
+            delete cleanAnalysis.fileRecords;
+            delete cleanAnalysis.graph;
+            delete cleanAnalysis.fileTree;
+            if (cleanAnalysis.syntaxStats) {
+                const s = Object.assign({}, cleanAnalysis.syntaxStats);
+                delete s.functions;
+                delete s.classes;
+                delete s.apis;
+                cleanAnalysis.syntaxStats = s;
+            }
+            state.workspaces.repositoryExplorer.analysis = cleanAnalysis;
+        }
+        const searchIndex = this.buildSearchIndex().slice(0, 150);
         const historicalTrends = this.computeHistoricalTrends();
+
         const payload = {
-            compiledAt: new Date().toISOString(),
             version: '2026.3.1-LTS',
             activeRole: this.activeRole,
             workspaceRoot: this.workspaceRoot,
@@ -655,7 +671,13 @@ class EEOSEngine {
             historicalTrends
         };
         fs.mkdirSync(path.dirname(targetPath), { recursive: true });
-        fs.writeFileSync(targetPath, JSON.stringify(payload, null, 2), 'utf8');
+        let jsonStr;
+        try {
+            jsonStr = JSON.stringify(payload, null, 2);
+        } catch (err) {
+            jsonStr = JSON.stringify(payload);
+        }
+        fs.writeFileSync(targetPath, jsonStr, 'utf8');
         return payload;
     }
 

@@ -1,6 +1,6 @@
-twinId: TWIN-PLATFORM-123B5892127B
+twinId: TWIN-PLATFORM-9B938E33AA3A
 version: 2026.3.1-LTS
-timestamp: 2026-08-07T15:35:11.412Z
+timestamp: 2026-08-07T16:12:30.435Z
 workspaceRoot: D:\ujomor-platform\products\eaorcs
 classification: ENTERPRISE | RESTRICTED
 summary:
@@ -533,4 +533,4 @@ graph:
     - source: prod:eaorcs
       target: mkt:procurement
       relation: PUBLISHED_TO
-digitalTwinHash: f8f13bc3b66ce98d8ec662a0a4194959f24c9327c4b4419abd3213a3888f2cff
+digitalTwinHash: 000a61717fe1126ac80a5338ea6bae71e5ad3e254045c724fc4de49921ff55ab

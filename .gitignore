@@ -9,6 +9,9 @@ tmp/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+ecc_dashboard_state.json
+eeos_state.json
+release/eeos_state.json
 
 # Environment & Local Secrets
 .env

@@ -70,6 +70,8 @@ async function runMasterCertification() {
     await runPhase('Subsystem 4 — Enterprise Command Center',      'eaorcs_corp_enterprise_command_center.test.js');
     await runPhase('Subsystem 4 — EEOS Master Certification',      'eaorcs_corp_eeos_master.test.js');
     await runPhase('Subsystem 1 — Home & Report History',          'eaorcs_corp_home_and_history.test.js');
+    await runPhase('Subsystem 2 & DX — DX CLI & Browser Terminal', 'eaorcs_corp_dx_cli_subsystem.test.js');
+    await runPhase('Subsystem 4 — DXC Environment & Terminal Server', 'eaorcs_corp_dxc_environment.test.js');
 
     // Verify all engine files exist
     console.log('\n[ENGINE FILE INVENTORY]');
@@ -80,6 +82,7 @@ async function runMasterCertification() {
         'engine/intelligence/RepositoryIntelligenceEngine.js',
         'engine/enterprise/EEOSEngine.js',
         'engine/enterprise/EnterpriseCommandCenterEngine.js',
+        'engine/dxc/EnvironmentDetectionEngine.js',
         // Streams J, K, L (Customer Validation, Blueprint, 5-Year Strategy)
         'engine/validation/CustomerValidationPackageEngine.js',
         'engine/platform/AirRoofersPlatformBlueprintEngine.js',
@@ -119,6 +122,8 @@ async function runMasterCertification() {
         'engine/packaging/PackagingPlatformEngine.js',
         // Phase 4
         'engine/cli/CLICommandRegistryEngine.js',
+        'engine/cli/DeveloperExperienceEngine.js',
+        'engine/portal/BrowserTerminalServerEngine.js',
         'engine/sdk/SDKCapabilityRegistryEngine.js',
         'engine/marketplace/MarketplaceReadinessEngine.js',
         'engine/ux/DashboardDataEngine.js',

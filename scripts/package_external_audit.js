@@ -270,6 +270,27 @@ fs.copyFileSync(workspaceMaintenanceEnginePath, releaseWorkspaceMaintenanceEngin
 const procurementDossierPath = path.join(eaorcsRoot, 'docs', 'procurement', 'PROCUREMENT_DUE_DILIGENCE_PACK.md');
 const operationsManualPath = path.join(eaorcsRoot, 'docs', 'EAORCS_Operations_Manual.md');
 const customerSuccessDocsPath = path.join(eaorcsRoot, 'docs', 'support', 'SUPPORT_PORTAL.md');
+const cliCenterHtmlPath = path.join(eaorcsRoot, 'docs', 'cli_center.html');
+const licenseCenterHtmlPath = path.join(eaorcsRoot, 'docs', 'license_center.html');
+const devExperienceEnginePath = path.join(eaorcsRoot, 'engine', 'cli', 'DeveloperExperienceEngine.js');
+const browserTerminalServerEnginePath = path.join(eaorcsRoot, 'engine', 'portal', 'BrowserTerminalServerEngine.js');
+const environmentDetectionEnginePath = path.join(eaorcsRoot, 'engine', 'dxc', 'EnvironmentDetectionEngine.js');
+const eaorcsDxcPath = path.join(eaorcsRoot, 'bin', 'commercial', 'eaorcs_dxc.js');
+
+const releaseCliCenterHtmlPath = path.join(releaseDir, 'cli_center.html');
+const releaseLicenseCenterHtmlPath = path.join(releaseDir, 'license_center.html');
+const releaseDevExperienceEnginePath = path.join(releaseDir, 'DeveloperExperienceEngine.js');
+const releaseBrowserTerminalServerEnginePath = path.join(releaseDir, 'BrowserTerminalServerEngine.js');
+const releaseEnvironmentDetectionEnginePath = path.join(releaseDir, 'EnvironmentDetectionEngine.js');
+const releaseEaorcsDxcPath = path.join(releaseDir, 'eaorcs_dxc.js');
+
+if (fs.existsSync(cliCenterHtmlPath)) fs.copyFileSync(cliCenterHtmlPath, releaseCliCenterHtmlPath);
+if (fs.existsSync(licenseCenterHtmlPath)) fs.copyFileSync(licenseCenterHtmlPath, releaseLicenseCenterHtmlPath);
+if (fs.existsSync(devExperienceEnginePath)) fs.copyFileSync(devExperienceEnginePath, releaseDevExperienceEnginePath);
+if (fs.existsSync(browserTerminalServerEnginePath)) fs.copyFileSync(browserTerminalServerEnginePath, releaseBrowserTerminalServerEnginePath);
+if (fs.existsSync(environmentDetectionEnginePath)) fs.copyFileSync(environmentDetectionEnginePath, releaseEnvironmentDetectionEnginePath);
+if (fs.existsSync(eaorcsDxcPath)) fs.copyFileSync(eaorcsDxcPath, releaseEaorcsDxcPath);
+
 
 function safeUnlink(filePath) {
     if (fs.existsSync(filePath)) {
@@ -368,7 +389,13 @@ for (const entry of packageBuilders) {
             homeHtmlPath,
             reportsIndexPath,
             reportHistoryEnginePath,
-            workspaceMaintenanceEnginePath
+            workspaceMaintenanceEnginePath,
+            cliCenterHtmlPath,
+            licenseCenterHtmlPath,
+            devExperienceEnginePath,
+            browserTerminalServerEnginePath,
+            environmentDetectionEnginePath,
+            eaorcsDxcPath
         ];
 
         if (label !== '01_source_snapshot') {
@@ -502,6 +529,13 @@ checksumLines.push(`${fileStats(homeHtmlPath).hash}  home.html`);
 checksumLines.push(`${fileStats(reportsIndexPath).hash}  reports/index.json`);
 checksumLines.push(`${fileStats(reportHistoryEnginePath).hash}  ReportHistoryEngine.js`);
 checksumLines.push(`${fileStats(workspaceMaintenanceEnginePath).hash}  WorkspaceMaintenanceEngine.js`);
+if (fs.existsSync(cliCenterHtmlPath)) checksumLines.push(`${fileStats(cliCenterHtmlPath).hash}  cli_center.html`);
+if (fs.existsSync(licenseCenterHtmlPath)) checksumLines.push(`${fileStats(licenseCenterHtmlPath).hash}  license_center.html`);
+if (fs.existsSync(devExperienceEnginePath)) checksumLines.push(`${fileStats(devExperienceEnginePath).hash}  DeveloperExperienceEngine.js`);
+if (fs.existsSync(browserTerminalServerEnginePath)) checksumLines.push(`${fileStats(browserTerminalServerEnginePath).hash}  BrowserTerminalServerEngine.js`);
+if (fs.existsSync(environmentDetectionEnginePath)) checksumLines.push(`${fileStats(environmentDetectionEnginePath).hash}  EnvironmentDetectionEngine.js`);
+if (fs.existsSync(eaorcsDxcPath)) checksumLines.push(`${fileStats(eaorcsDxcPath).hash}  eaorcs_dxc.js`);
+
 
 const shaSumsPath = path.join(releaseDir, 'SHA256SUMS');
 fs.writeFileSync(shaSumsPath, checksumLines.join('\n') + '\n', 'utf8');

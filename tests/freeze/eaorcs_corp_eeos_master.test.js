@@ -159,7 +159,7 @@ async function runEEOSMasterSuite() {
 
     // 6. REST API Endpoints Verification
     console.log('\n[6/7] Testing Native HTTP Server & REST API Endpoints...');
-    const testPort = 8094;
+    const testPort = 8100 + Math.floor(Math.random() * 800);
     const serverControl = await eeos.startServer(testPort);
     assert.strictEqual(serverControl.status, 'RUNNING');
     const baseUrl = `http://localhost:${testPort}`;

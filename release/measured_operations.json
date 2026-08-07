@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-08-07T15:35:11.431Z",
+  "timestamp": "2026-08-07T16:12:30.460Z",
   "customerPilotJourney": {
-    "journeyId": "CPJ-25D26429",
-    "customerId": "CUST-PILOT-8A5D46",
-    "timestamp": "2026-08-07T15:35:11.430Z",
+    "journeyId": "CPJ-BB5B1D86",
+    "customerId": "CUST-PILOT-26A75E",
+    "timestamp": "2026-08-07T16:12:30.458Z",
     "status": "SUCCESS",
     "totalSteps": 12,
     "completedSteps": 12,
@@ -14,11 +14,11 @@
         "stepName": "Download",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.429Z",
+        "timestamp": "2026-08-07T16:12:30.456Z",
         "details": {
-          "packageUrl": "https://download.ujomor.com/eaorcs/v2026.3.1/eaorcs-enterprise-CUST-PILOT-8A5D46.tar.gz",
+          "packageUrl": "https://download.ujomor.com/eaorcs/v2026.3.1/eaorcs-enterprise-CUST-PILOT-26A75E.tar.gz",
           "bytesTransferred": 48592014,
-          "checksumSha256": "f24401d22ca8cecf6b887a44fc6aaf151ca58146374dc5e8b5b05395c003374e"
+          "checksumSha256": "ed87974a64a36e42025e2f87e76ee7476933f18dae06ad7cdd12560de50e7d11"
         }
       },
       {
@@ -26,7 +26,7 @@
         "stepName": "Install",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.429Z",
+        "timestamp": "2026-08-07T16:12:30.456Z",
         "details": {
           "installationPath": "/opt/ujomor/eaorcs",
           "binaryVersion": "2026.3.1-LTS",
@@ -38,9 +38,9 @@
         "stepName": "Activate",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.429Z",
+        "timestamp": "2026-08-07T16:12:30.456Z",
         "details": {
-          "activationToken": "9981d878fc621b5e00b0acb374850897",
+          "activationToken": "ab206b4666fdbec94b0953479a75ad3f",
           "tenantId": "EAORCS-RELEASE-TENANT-001",
           "status": "ACTIVATED"
         }
@@ -50,7 +50,7 @@
         "stepName": "License",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.429Z",
+        "timestamp": "2026-08-07T16:12:30.456Z",
         "details": {
           "licenseType": "ENTERPRISE_PLATFORM_TIER_1",
           "entitlements": [
@@ -66,7 +66,7 @@
         "stepName": "Configure",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.429Z",
+        "timestamp": "2026-08-07T16:12:30.457Z",
         "details": {
           "configuredPolicies": 14,
           "securityLevel": "RESTRICTED_ENTERPRISE",
@@ -82,8 +82,8 @@
         "stepNumber": 6,
         "stepName": "Import",
         "status": "PASSED",
-        "durationMs": 1,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T16:12:30.457Z",
         "details": {
           "importedAssets": 128,
           "intentSchemasIngested": 16,
@@ -95,11 +95,11 @@
         "stepName": "Execute",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "timestamp": "2026-08-07T16:12:30.457Z",
         "details": {
-          "executionGraphId": "EG-a062a7ee6988",
+          "executionGraphId": "EG-e2aa0dc4165c",
           "nodesExecuted": 42,
-          "deterministicProofHash": "a062a7ee698811d5e721550d46229fada598058fbc343d6700ad572805a0ce89"
+          "deterministicProofHash": "e2aa0dc4165cba1c1ffb26be7f2bebcfd70693d19ca0b21873f1273801211225"
         }
       },
       {
@@ -107,7 +107,7 @@
         "stepName": "Upgrade",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "timestamp": "2026-08-07T16:12:30.457Z",
         "details": {
           "priorVersion": "2026.3.0-RC3",
           "targetVersion": "2026.3.1-LTS",
@@ -119,19 +119,19 @@
         "stepName": "Backup",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "timestamp": "2026-08-07T16:12:30.457Z",
         "details": {
-          "backupId": "BKP-2619a1c0f9",
+          "backupId": "BKP-eee3dbd8d0",
           "snapshotSizeBytes": 104857600,
-          "backupChecksum": "2619a1c0f939e10d413474d247a0d5999d6cd8ddb2ae6cc5930472c5479d8c1d"
+          "backupChecksum": "eee3dbd8d025f0e6ebc570e00883c5702c5b380a26ecaf10edb8d2459b3dc951"
         }
       },
       {
         "stepNumber": 10,
         "stepName": "Restore",
         "status": "PASSED",
-        "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "durationMs": 1,
+        "timestamp": "2026-08-07T16:12:30.458Z",
         "details": {
           "restoredFromSnapshot": "BKP-RECENT",
           "integrityCheck": "VERIFIED_100_PERCENT",
@@ -143,7 +143,7 @@
         "stepName": "Renew",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "timestamp": "2026-08-07T16:12:30.458Z",
         "details": {
           "renewalStatus": "RENEWED_AUTOMATICALLY",
           "extendedTermMonths": 12,
@@ -155,7 +155,7 @@
         "stepName": "Support",
         "status": "PASSED",
         "durationMs": 0,
-        "timestamp": "2026-08-07T15:35:11.430Z",
+        "timestamp": "2026-08-07T16:12:30.458Z",
         "details": {
           "supportTier": "24_7_ENTERPRISE_PLATINUM",
           "diagnosticBundleGenerated": true,
@@ -170,8 +170,8 @@
     }
   },
   "observedVsProjectedMetrics": {
-    "reportId": "MOM-6E91C0F7",
-    "timestamp": "2026-08-07T15:35:11.431Z",
+    "reportId": "MOM-D9A5F804",
+    "timestamp": "2026-08-07T16:12:30.460Z",
     "tenantId": "EAORCS-RELEASE-TENANT-001",
     "classification": "ENTERPRISE_MEASURED_TELEMETRY",
     "projected": {

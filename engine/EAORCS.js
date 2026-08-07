@@ -73,6 +73,7 @@ const MultiPlatformValidationEngine = require('./validation/MultiPlatformValidat
 const ReportHistoryEngine = require('./governance/ReportHistoryEngine');
 const WorkspaceMaintenanceEngine = require('./operations/WorkspaceMaintenanceEngine');
 const HomeServerEngine = require('./portal/HomeServerEngine');
+const BrowserTerminalServerEngine = require('./portal/BrowserTerminalServerEngine');
 
 
 /**
@@ -322,6 +323,37 @@ class EAORCS {
         const maintenanceEngine = new WorkspaceMaintenanceEngine({ workspaceRoot });
         return maintenanceEngine.resetWorkspaceState();
     }
+
+    static getCommandRegistry(options = {}) {
+        const terminalEngine = new BrowserTerminalServerEngine(options);
+        return terminalEngine.getCommandRegistry();
+    }
+
+    static buildCliCommand(opts = {}) {
+        const terminalEngine = new BrowserTerminalServerEngine(opts);
+        return terminalEngine.buildCliCommand(opts);
+    }
+
+    static evaluateCliLicense(cmd, tier = 'COMMERCIAL', options = {}) {
+        const terminalEngine = new BrowserTerminalServerEngine(options);
+        return terminalEngine.evaluateCliLicense(cmd, tier);
+    }
+
+    static launchBrowserTerminal(options = {}) {
+        const terminalEngine = new BrowserTerminalServerEngine(options);
+        return terminalEngine.launchTerminalServer(options);
+    }
+
+    static detectEnvironmentCapabilities(options = {}) {
+        const DxcCapabilityEngine = require('./dxc/DxcCapabilityEngine');
+        const engine = new DxcCapabilityEngine(options);
+        return {
+            environment: engine.detectEnvironment(options),
+            matrix: engine.getReadinessMatrix(options),
+            equivalents: engine.getPlatformEquivalents(options)
+        };
+    }
 }
 
 module.exports = EAORCS;
+
