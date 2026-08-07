@@ -69,11 +69,14 @@ async function runMasterCertification() {
     await runPhase('Master Readiness — Final 12 Streams (A-L)', 'eaorcs_corp_final_12_streams.test.js');
     await runPhase('Subsystem 4 — Enterprise Command Center',      'eaorcs_corp_enterprise_command_center.test.js');
     await runPhase('Subsystem 4 — EEOS Master Certification',      'eaorcs_corp_eeos_master.test.js');
+    await runPhase('Subsystem 1 — Home & Report History',          'eaorcs_corp_home_and_history.test.js');
 
     // Verify all engine files exist
     console.log('\n[ENGINE FILE INVENTORY]');
     const expectedEngines = [
-        // Subsystem 4 EEOS
+        // Subsystem 1 & 4 Home & History & EEOS
+        'engine/governance/ReportHistoryEngine.js',
+        'engine/operations/WorkspaceMaintenanceEngine.js',
         'engine/intelligence/RepositoryIntelligenceEngine.js',
         'engine/enterprise/EEOSEngine.js',
         'engine/enterprise/EnterpriseCommandCenterEngine.js',

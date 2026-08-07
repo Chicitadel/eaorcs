@@ -1,0 +1,26 @@
+{
+  "version": "2026.3.1-LTS",
+  "activePreset": "default",
+  "panels": {
+    "sidebar": {
+      "visible": true,
+      "width": 280,
+      "position": "left"
+    },
+    "terminal": {
+      "visible": true,
+      "height": 240,
+      "position": "bottom"
+    },
+    "editor": {
+      "activeTab": null,
+      "split": "none"
+    },
+    "governanceDashboard": {
+      "visible": true,
+      "collapsed": false
+    }
+  },
+  "theme": "enterprise-dark",
+  "lastReset": "2026-08-07T15:35:11.095Z"
+}

@@ -70,6 +70,11 @@ const GovernanceProfileEngine = require('./governance/GovernanceProfileEngine');
 const ImmutableReleaseEvidenceEngine = require('./telemetry/ImmutableReleaseEvidenceEngine');
 const MultiPlatformValidationEngine = require('./validation/MultiPlatformValidationEngine');
 
+const ReportHistoryEngine = require('./governance/ReportHistoryEngine');
+const WorkspaceMaintenanceEngine = require('./operations/WorkspaceMaintenanceEngine');
+const HomeServerEngine = require('./portal/HomeServerEngine');
+
+
 /**
  * EAORCS Unified Public Facade API
  * 
@@ -299,6 +304,23 @@ class EAORCS {
             data.role = options.role;
         }
         return data;
+    }
+
+    static launchHome(options = {}) {
+        const homeEngine = new HomeServerEngine(options);
+        return homeEngine.launchHome(options);
+    }
+
+    static getReportHistory(options = {}) {
+        const workspaceRoot = options.workspace || process.cwd();
+        const historyEngine = new ReportHistoryEngine({ workspaceRoot });
+        return historyEngine.getReportHistory(options);
+    }
+
+    static resetWorkspace(options = {}) {
+        const workspaceRoot = options.workspace || process.cwd();
+        const maintenanceEngine = new WorkspaceMaintenanceEngine({ workspaceRoot });
+        return maintenanceEngine.resetWorkspaceState();
     }
 }
 

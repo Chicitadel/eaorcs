@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-07T15:25:29.537Z",
+  "timestamp": "2026-08-07T15:35:11.426Z",
   "cleanRoomDeployments": {
     "passed": true,
     "totalEnvironments": 7,
@@ -9,7 +9,7 @@
       "Windows": {
         "passed": true,
         "environment": "Windows",
-        "evidenceHash": "8c99b36872999ff97c12dbe4511585a665533247552153b7b79001af7b870ccd",
+        "evidenceHash": "7631c7739d0f51482df2f4b128dc4915c5a3cb544c0850c7a43842a4defbe275",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -54,7 +54,7 @@
       "Ubuntu": {
         "passed": true,
         "environment": "Ubuntu",
-        "evidenceHash": "8e1a0f6ae427be21dc56c2c3d78c08b73f9e80ecad578c57e98421ddeba64792",
+        "evidenceHash": "877c2b6a0f60e4036622639efedcde41cdc7289c6662f799060823c5c3899925",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -99,7 +99,7 @@
       "Debian": {
         "passed": true,
         "environment": "Debian",
-        "evidenceHash": "dbe6d3361c52fb23634cea0d904c1afd8c8dc99a73eab099173c4a679f7d1876",
+        "evidenceHash": "bc69df344542e3a82d5096e27fd294129928239198ee101bf47999a5abc6c273",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -144,9 +144,9 @@
       "macOS": {
         "passed": true,
         "environment": "macOS",
-        "evidenceHash": "1881c9e39e7fef5db0dfaf4d8b4f6ff527cc6bb8ad29d870bf31d3417afe4dd2",
+        "evidenceHash": "d637313f1c0a0b12d19e81f0943ead20c45d04d6a35aca9ee9e09db8efbaafbe",
         "airGapped": false,
-        "durationMs": 0,
+        "durationMs": 1,
         "steps": [
           {
             "step": "isolation_check",
@@ -189,9 +189,9 @@
       "Docker": {
         "passed": true,
         "environment": "Docker",
-        "evidenceHash": "00f9ad7b4962930419fd63b5a30a4b87e7a6ec122378a0bb9b76f130278ac1de",
+        "evidenceHash": "7d4a7f954d2c449a82fe787c70751e20b4e0c5413c03b382eab456b7900c0461",
         "airGapped": false,
-        "durationMs": 1,
+        "durationMs": 0,
         "steps": [
           {
             "step": "isolation_check",
@@ -234,7 +234,7 @@
       "Kubernetes": {
         "passed": true,
         "environment": "Kubernetes",
-        "evidenceHash": "fe4404e1185b8c9a56b5d6c52c42ac1060ed34b8ff7169d8e7fe54a6b636dc2f",
+        "evidenceHash": "cbdef0223b98703b9d3bc47f0e8814fa6a28bb85f6f8c83015be9b45a92359c8",
         "airGapped": false,
         "durationMs": 0,
         "steps": [
@@ -279,7 +279,7 @@
       "Air-Gapped": {
         "passed": true,
         "environment": "Air-Gapped",
-        "evidenceHash": "0f17b70972f56d7513dc77469deef9fd431c485b78f5eae8c9b1cc6cabccc27e",
+        "evidenceHash": "9636851fd87be007084b2e31ea77035b72698b0352c8b0d5c3aa972462ca76f2",
         "airGapped": true,
         "durationMs": 0,
         "steps": [
@@ -322,9 +322,9 @@
         ]
       }
     },
-    "aggregateEvidenceHash": "23bba6a579be9fa3d37c62622716140ee40e1d5ff6d7e5acb27c46088ca95120",
+    "aggregateEvidenceHash": "6563bac9924aeaaa8afbf12afe4e1493f1778167f348344b677f120a2e07dad6",
     "totalDurationMs": 1,
-    "timestamp": "2026-08-07T15:25:29.535Z"
+    "timestamp": "2026-08-07T15:35:11.424Z"
   },
   "pluginRollbackTest": {
     "passed": true,
@@ -341,44 +341,44 @@
         "phase": "hot_swap_license_activation",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "c7cb3892d3c91112c207c52e009591fc864c963793aefe81381fa31f3dab4b30",
-        "details": "Hot-swap license LIC-EAORCS-ENT-2026-953E5A6C activated for tier ENTERPRISE_LTS without engine restart."
+        "stateHash": "30ca86681eec19d14cd1fb47760cdd88b518bb95254168a033fbb932d0e18c33",
+        "details": "Hot-swap license LIC-EAORCS-ENT-2026-05C2870D activated for tier ENTERPRISE_LTS without engine restart."
       },
       {
         "phase": "state_recovery",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "5db5527f88b3396566aa6e4cd7a9d069d05309a36020df9f8874816a844ee13a",
+        "stateHash": "1db49fd5bfe63a492cca9d7ff41df5b33b5a2a80cb0aa00529129e146612fb8a",
         "details": "Simulated node disruption state recovery completed. License and plugin state reconstituted cleanly."
       },
       {
         "phase": "zero_downtime_upgrade",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "87b57171ff1e2a0e409d6892eeafd5bcd7810f38d81a59a33b3a1f971879cc23",
+        "stateHash": "e89684e44c2bac04dd8887588cc746ebc5bbd54f744828488ae885eabd9f23d8",
         "details": "Zero-downtime hot upgrade to version 1.1.0 completed with zero dropped requests."
       },
       {
         "phase": "rollback_verification",
         "passed": true,
         "durationMs": 0,
-        "stateHash": "c7cb3892d3c91112c207c52e009591fc864c963793aefe81381fa31f3dab4b30",
+        "stateHash": "30ca86681eec19d14cd1fb47760cdd88b518bb95254168a033fbb932d0e18c33",
         "details": "Rollback to version 1.0.0 verified. State hash matched pre-upgrade baseline perfectly."
       }
     ],
     "initialStateHash": "93262f57e3b56a56ccb2d00c965e15c86f61a60c3c09001b13975c003eafba87",
     "activeLicenseState": {
-      "licenseKey": "LIC-EAORCS-ENT-2026-953E5A6C",
+      "licenseKey": "LIC-EAORCS-ENT-2026-05C2870D",
       "licenseTier": "ENTERPRISE_LTS",
       "active": true
     },
-    "upgradedStateHash": "87b57171ff1e2a0e409d6892eeafd5bcd7810f38d81a59a33b3a1f971879cc23",
-    "rolledBackStateHash": "c7cb3892d3c91112c207c52e009591fc864c963793aefe81381fa31f3dab4b30",
+    "upgradedStateHash": "e89684e44c2bac04dd8887588cc746ebc5bbd54f744828488ae885eabd9f23d8",
+    "rolledBackStateHash": "30ca86681eec19d14cd1fb47760cdd88b518bb95254168a033fbb932d0e18c33",
     "zeroDowntimeVerified": true,
     "rollbackVerified": true,
-    "aggregateEvidenceHash": "a26f16801fe46951f84b5d7cf2723c410b4759fc6578a71a509870f8f596548a",
+    "aggregateEvidenceHash": "bab90e4a89ae1f176572922d9379b49b8da5dcbf42658e19fa068c5aa513d4bd",
     "totalDurationMs": 1,
-    "timestamp": "2026-08-07T15:25:29.537Z"
+    "timestamp": "2026-08-07T15:35:11.426Z"
   },
   "status": "PASSED"
 }

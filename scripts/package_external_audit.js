@@ -46,6 +46,8 @@ const AirRoofersPlatformBlueprintEngine = require('../engine/platform/AirRoofers
 const FiveYearPlatformStrategyEngine = require('../engine/strategy/FiveYearPlatformStrategyEngine');
 const EnterpriseCommandCenterEngine = require('../engine/enterprise/EnterpriseCommandCenterEngine');
 const EEOSEngine = require('../engine/enterprise/EEOSEngine');
+const ReportHistoryEngine = require('../engine/governance/ReportHistoryEngine');
+const WorkspaceMaintenanceEngine = require('../engine/operations/WorkspaceMaintenanceEngine');
 
 const sourceSnapshotPkg = require('./packaging/build_source_snapshot_package');
 const auditPkg          = require('./packaging/build_audit_package');
@@ -238,6 +240,33 @@ eeosEngine.compileAndSaveHTML(tmpEeosHtmlPath);
 fs.copyFileSync(tmpEeosHtmlPath, releaseEeosHtmlPath);
 console.log('    ✓ EEOS State JSON & Web App HTML exported\n');
 
+const homeHtmlPath = path.join(eaorcsRoot, 'home.html');
+const reportsIndexPath = path.join(eaorcsRoot, 'reports', 'index.json');
+const reportHistoryEnginePath = path.join(eaorcsRoot, 'engine', 'governance', 'ReportHistoryEngine.js');
+const workspaceMaintenanceEnginePath = path.join(eaorcsRoot, 'engine', 'operations', 'WorkspaceMaintenanceEngine.js');
+
+if (!fs.existsSync(homeHtmlPath)) {
+    const docsHome = path.join(eaorcsRoot, 'docs', 'home.html');
+    if (fs.existsSync(docsHome)) fs.copyFileSync(docsHome, homeHtmlPath);
+}
+
+if (!fs.existsSync(reportsIndexPath)) {
+    const reportsDir = path.join(eaorcsRoot, 'reports');
+    if (!fs.existsSync(reportsDir)) fs.mkdirSync(reportsDir, { recursive: true });
+    fs.writeFileSync(reportsIndexPath, JSON.stringify({ version: "2026.3.1-LTS", reports: [], lastUpdated: new Date().toISOString() }, null, 2), 'utf8');
+}
+
+const releaseHomeHtmlPath = path.join(releaseDir, 'home.html');
+const releaseReportsIndexPath = path.join(releaseDir, 'reports', 'index.json');
+const releaseReportHistoryEnginePath = path.join(releaseDir, 'ReportHistoryEngine.js');
+const releaseWorkspaceMaintenanceEnginePath = path.join(releaseDir, 'WorkspaceMaintenanceEngine.js');
+
+fs.copyFileSync(homeHtmlPath, releaseHomeHtmlPath);
+fs.mkdirSync(path.dirname(releaseReportsIndexPath), { recursive: true });
+fs.copyFileSync(reportsIndexPath, releaseReportsIndexPath);
+fs.copyFileSync(reportHistoryEnginePath, releaseReportHistoryEnginePath);
+fs.copyFileSync(workspaceMaintenanceEnginePath, releaseWorkspaceMaintenanceEnginePath);
+
 const procurementDossierPath = path.join(eaorcsRoot, 'docs', 'procurement', 'PROCUREMENT_DUE_DILIGENCE_PACK.md');
 const operationsManualPath = path.join(eaorcsRoot, 'docs', 'EAORCS_Operations_Manual.md');
 const customerSuccessDocsPath = path.join(eaorcsRoot, 'docs', 'support', 'SUPPORT_PORTAL.md');
@@ -311,7 +340,7 @@ for (const entry of packageBuilders) {
         const stageZip = path.join(tmpDir, `_stage_${label}_${Date.now()}.zip`);
         if (fs.existsSync(stageZip)) fs.rmSync(stageZip, { force: true });
 
-        // Include RELEASE_PROVENANCE.json, RBOM.json, evidence_index.yaml, launch_readiness_report.json, digital_twin.yaml, pilot_validation_report.json, measured_operations.json, ga_gate_decision.json, procurement dossier, ops manual, customer success docs inside ALL ZIP artifacts
+        // Include RELEASE_PROVENANCE.json, RBOM.json, evidence_index.yaml, launch_readiness_report.json, digital_twin.yaml, pilot_validation_report.json, measured_operations.json, ga_gate_decision.json, procurement dossier, ops manual, customer success docs, home.html, reports/index.json, ReportHistoryEngine.js, WorkspaceMaintenanceEngine.js inside ALL ZIP artifacts
         let sources = [
             ...manifest.includedPaths,
             tmpProvenancePath,
@@ -335,7 +364,11 @@ for (const entry of packageBuilders) {
             tmpEeosHtmlPath,
             procurementDossierPath,
             operationsManualPath,
-            customerSuccessDocsPath
+            customerSuccessDocsPath,
+            homeHtmlPath,
+            reportsIndexPath,
+            reportHistoryEnginePath,
+            workspaceMaintenanceEnginePath
         ];
 
         if (label !== '01_source_snapshot') {
@@ -465,6 +498,10 @@ checksumLines.push(`${fileStats(releaseEccJsonPath).hash}  ecc_dashboard.json`);
 checksumLines.push(`${fileStats(releaseEccHtmlPath).hash}  ecc_dashboard.html`);
 checksumLines.push(`${fileStats(releaseEeosJsonPath).hash}  eeos_state.json`);
 checksumLines.push(`${fileStats(releaseEeosHtmlPath).hash}  eeos_app.html`);
+checksumLines.push(`${fileStats(homeHtmlPath).hash}  home.html`);
+checksumLines.push(`${fileStats(reportsIndexPath).hash}  reports/index.json`);
+checksumLines.push(`${fileStats(reportHistoryEnginePath).hash}  ReportHistoryEngine.js`);
+checksumLines.push(`${fileStats(workspaceMaintenanceEnginePath).hash}  WorkspaceMaintenanceEngine.js`);
 
 const shaSumsPath = path.join(releaseDir, 'SHA256SUMS');
 fs.writeFileSync(shaSumsPath, checksumLines.join('\n') + '\n', 'utf8');

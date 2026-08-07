@@ -1,12 +1,12 @@
 {
   "releaseId": "REL-2026.3.1-LTS",
-  "buildId": "BUILD-1786116329465",
+  "buildId": "BUILD-1786116911367",
   "gitCommit": "c9b4e870e9ec48ef",
   "architectureVersion": "3.0.0",
   "constitutionVersion": "1.4.0",
   "contractRegistryVersion": "2026.3.1",
-  "generatedAt": "2026-08-07T15:25:29.465Z",
+  "generatedAt": "2026-08-07T15:35:11.368Z",
   "canonicalSourceSnapshot": "01_source_snapshot.zip",
   "governanceAuthority": "Ujomor Systems & Enterprise Governance Board",
-  "provenanceHash": "1e7d80e7587e3f5d686e70bc11018cb0c90c7b40df7775f87904ab62c5342b07"
+  "provenanceHash": "39b42d624114fea4c3acffd5f2062ee0987f29d3ef9fd9072b951644d3c30302"
 }

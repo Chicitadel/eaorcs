@@ -1,6 +1,6 @@
 {
-  "decisionId": "GA-DECISION-4F710FC62DD8",
-  "timestamp": "2026-08-07T15:25:29.546Z",
+  "decisionId": "GA-DECISION-B0B4EC16D4C2",
+  "timestamp": "2026-08-07T15:35:11.433Z",
   "workspaceRoot": "D:\\ujomor-platform\\products\\eaorcs",
   "classification": "ENTERPRISE | RESTRICTED",
   "overallDecision": "APPROVED",
@@ -48,5 +48,5 @@
     "passedCount": 4,
     "failedCount": 0
   },
-  "decisionHash": "d972e6d1b4ad83510babc789f7c04bd07020389775932cc5becde9b8b4decdd5"
+  "decisionHash": "f6882c215e44143d98a52c049518fb164789f85ff2a5e2d1a64a015d5ec8fe94"
 }
