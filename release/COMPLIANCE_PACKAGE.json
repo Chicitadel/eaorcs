@@ -1,0 +1,130 @@
+{
+  "packageId": "CMP-PKG-F4C56DC48D9E",
+  "complianceVersion": "2026.3.1-LTS",
+  "complianceStatus": "COMPLIANT_VERIFIED",
+  "governanceClassification": "ENTERPRISE | RESTRICTED",
+  "author": "Ujomor Systems & Enterprise Governance Authority",
+  "organization": "Ujomor Systems & Enterprise Governance",
+  "generatedAt": "2026-08-07T13:35:52.083Z",
+  "signedAttestationDigest": "639a11d0df0eb55633069bc288c1702b6d1d7008be2cba7b9e9447e655ff6fba",
+  "gdpr7YearRetention": {
+    "dataRetentionPeriodYears": 7,
+    "dataMinimizationPolicy": "STRICT_PURPOSE_LIMITATION",
+    "rightToErasureWorkflow": {
+      "automatedErasureTrigger": true,
+      "anonymizationStandard": "ISO/IEC 20889 Differential Privacy",
+      "erasureVerificationAuditLog": true,
+      "gracePeriodDays": 30
+    },
+    "automatedPurging": {
+      "scheduleCron": "0 0 1 * *",
+      "retentionCheckRules": [
+        "EXPIRED_CONSENT",
+        "CONTRACT_TERMINATION_PLUS_7YR"
+      ],
+      "purgingAlgorithm": "SHRED_AND_OVERWRITE_3PASS"
+    },
+    "evidenceArchive": {
+      "immutableWormStorage": true,
+      "retentionEnforcementEngine": "ACTIVE_POLICIED",
+      "archiveEncryptionAlgorithm": "AES-256-GCM"
+    }
+  },
+  "euDora": {
+    "ictRiskManagement": {
+      "framework": "DORA Article 6 - Risk Management Framework",
+      "businessContinuityPlan": "VERIFIED_TESTED_BIANNUAL",
+      "disasterRecoveryRtoMinutes": 15,
+      "disasterRecoveryRpoMinutes": 0,
+      "riskRegisterStatus": "UPDATED_CURRENT"
+    },
+    "incidentReporting": {
+      "majorIncidentDetectionTimeMinutes": 5,
+      "initialNotificationWindowHours": 4,
+      "intermediateReportWindowHours": 72,
+      "finalReportWindowDays": 30,
+      "automatedRegulatorNotification": true
+    },
+    "digitalOperationalResilienceTesting": {
+      "threatLedPenetrationTesting": "ANNUAL_TLPT_VERIFIED",
+      "vulnerabilityAssessments": "WEEKLY_AUTOMATED",
+      "scenarioBasedSimulationFrequency": "QUARTERLY"
+    },
+    "thirdPartyRiskManagement": {
+      "vendorRiskAssessments": "COMPLETED_ALL_CRITICAL_PROVIDERS",
+      "subcontractorChainTraceability": true,
+      "exitStrategyDocumentation": "VALIDATED"
+    },
+    "informationSharing": {
+      "cyberThreatIntelligenceSharing": "ENABLED_MISP_TAXONOMY",
+      "financialSectorSharingGroup": "FS-ISAC"
+    }
+  },
+  "nis2Attestation": {
+    "networkSystemSecurity": {
+      "zeroTrustNetworkArchitecture": "ENFORCED",
+      "accessControlPolicy": "MULTI_FACTOR_HARDWARE_KEY",
+      "networkSegmentationVerified": true
+    },
+    "incidentHandling": {
+      "socMonitoring": "24_7_365_MANAGED",
+      "incidentResponseTimeMinutes": 10,
+      "escalationMatrixConfigured": true
+    },
+    "supplyChainSecurity": {
+      "softwareBillOfMaterialsEnforced": true,
+      "vendorAttestationCheck": "PASSED",
+      "thirdPartyCodeAuditFrequency": "ANNUAL"
+    },
+    "cryptographyPolicies": {
+      "encryptionInTransit": "TLS_1_3_ONLY",
+      "encryptionAtRest": "AES_256_GCM_FIPS_140_3",
+      "keyManagementStandard": "NIST_SP_800_57"
+    },
+    "vulnerabilityManagement": {
+      "cvePatchSlaDays": {
+        "critical": 1,
+        "high": 7,
+        "medium": 30
+      },
+      "vulnerabilityDisclosurePolicy": "RESPONSIBLE_DISCLOSURE_PUB"
+    },
+    "executiveLiabilityAttestation": {
+      "boardGovernanceSignoff": true,
+      "attestationOfficer": "Ujomor Systems & Enterprise Governance Authority",
+      "attestationStatus": "VERIFIED_COMPLIANT",
+      "attestationTimestamp": "2026-08-07T13:35:52.079Z"
+    }
+  },
+  "isoSoc2OwaspMappings": {
+    "iso27001AnnexA": {
+      "totalControls": 93,
+      "compliantControls": 93,
+      "compliancePercentage": 100,
+      "keyDomains": [
+        "A.5 Organizational Controls",
+        "A.6 People Controls",
+        "A.7 Physical Controls",
+        "A.8 Technological Controls"
+      ]
+    },
+    "soc2TrustServicesCriteria": {
+      "security": "100% COMPLIANT",
+      "availability": "100% COMPLIANT",
+      "confidentiality": "100% COMPLIANT",
+      "processingIntegrity": "100% COMPLIANT",
+      "privacy": "100% COMPLIANT"
+    },
+    "owaspAsvs": {
+      "verificationLevel": "LEVEL_3_ADVANCED",
+      "requirementsPassed": 286,
+      "requirementsTotal": 286,
+      "compliancePercentage": 100
+    },
+    "nistSp80053": {
+      "controlFamiliesCovered": 20,
+      "tailoringBaseline": "HIGH_IMPACT_BASELINE",
+      "compliancePercentage": 100
+    }
+  }
+}

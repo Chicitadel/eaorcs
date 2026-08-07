@@ -1,0 +1,78 @@
+# /******************************************************************************
+#  * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+#  * Module         : EAORCS Product Deployment Descriptor
+#  * File           : deployment.yaml
+#  * Version        : 2026.3.1-LTS
+#  * Author         : Ujomor Systems & Enterprise Governance Authority
+#  * Organization   : Ujomor Systems & Enterprise Governance
+#  * Created Date   : 2026-08-07
+#  * Last Modified  : 2026-08-07
+#  * Classification : ENTERPRISE | RESTRICTED
+#  *
+#  * Governance:
+#  * - Security Reviewed
+#  * - Architecture Controlled
+#  * - Protocol Frozen
+#  * - Modularization Enforced
+#  * - Corporate Policy Governed
+#  *
+#  * CORP: STREAM-04 Product Metadata Descriptors & Standards Integrator
+#  *
+#  * Standards:
+#  * - ISO 27001
+#  * - SOC 2
+#  * - OWASP ASVS
+#  * - NIST
+#  *
+#  * Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
+#  ******************************************************************************/
+
+deployment:
+  product_id: "eaorcs"
+  platform_id: "PLATFORM-AIRROOFERS-2026"
+  target_environment: "ENTERPRISE_HYBRID_CLOUD"
+  topology: "DISTRIBUTED_EXECUTION_NODES"
+
+requirements:
+  runtime:
+    engine: "Node.js"
+    min_version: "18.0.0"
+    recommended_version: "20.x"
+  resources:
+    cpu_cores: 2
+    ram_mb: 2048
+    disk_mb: 5120
+
+networking:
+  protocol: "HTTPS / mTLS"
+  port: 8443
+  subdomains:
+    api: "eaorcs.airroofers.eu"
+    governance: "governance.airroofers.eu"
+    telemetry: "telemetry.airroofers.eu"
+    packages: "packages.airroofers.eu"
+
+security:
+  zero_trust: true
+  auth_mechanism: "Ed25519"
+  tls_version: "TLSv1.3"
+  audit_logging: "CRYPTO_CHAIN_HASH"
+
+health_check:
+  liveness:
+    type: "FACADE_METHOD"
+    target: "EAORCS.health()"
+  readiness:
+    type: "FACADE_METHOD"
+    target: "EAORCS.audit()"
+
+telemetry:
+  enabled: true
+  sink_url: "https://telemetry.airroofers.eu/v1/collect"
+  batch_interval_ms: 5000
+  anonymized: true
+
+distribution:
+  package_type: "EPKG_EBUNDLE"
+  registry_url: "https://packages.airroofers.eu/v1/eaorcs"
+  install_command: "npx @airroofers/eaorcs-cli install"

@@ -1,0 +1,215 @@
+{
+  "timestamp": "2026-08-07T13:36:46.048Z",
+  "customerPilotJourney": {
+    "journeyId": "CPJ-685A5C09",
+    "customerId": "CUST-PILOT-1B36CD",
+    "timestamp": "2026-08-07T13:36:46.047Z",
+    "status": "SUCCESS",
+    "totalSteps": 12,
+    "completedSteps": 12,
+    "durationMs": 2,
+    "steps": [
+      {
+        "stepNumber": 1,
+        "stepName": "Download",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.044Z",
+        "details": {
+          "packageUrl": "https://download.ujomor.com/eaorcs/v2026.3.1/eaorcs-enterprise-CUST-PILOT-1B36CD.tar.gz",
+          "bytesTransferred": 48592014,
+          "checksumSha256": "4d016df44ce09e0baddca6157fa6cd32f7fda1120420b6f957e1391fdea87843"
+        }
+      },
+      {
+        "stepNumber": 2,
+        "stepName": "Install",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.044Z",
+        "details": {
+          "installationPath": "/opt/ujomor/eaorcs",
+          "binaryVersion": "2026.3.1-LTS",
+          "environment": "PRODUCTION_STAGING"
+        }
+      },
+      {
+        "stepNumber": 3,
+        "stepName": "Activate",
+        "status": "PASSED",
+        "durationMs": 1,
+        "timestamp": "2026-08-07T13:36:46.045Z",
+        "details": {
+          "activationToken": "df2ff914b4f4e1b282e2593bfaffee44",
+          "tenantId": "EAORCS-RELEASE-TENANT-001",
+          "status": "ACTIVATED"
+        }
+      },
+      {
+        "stepNumber": 4,
+        "stepName": "License",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.045Z",
+        "details": {
+          "licenseType": "ENTERPRISE_PLATFORM_TIER_1",
+          "entitlements": [
+            "ALL_14_CONSTITUTIONAL_LAWS",
+            "AUTOMATED_GOVERNANCE",
+            "TELEMETRY_STREAMING"
+          ],
+          "expirationDate": "2027-08-07T00:00:00.000Z"
+        }
+      },
+      {
+        "stepNumber": 5,
+        "stepName": "Configure",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.045Z",
+        "details": {
+          "configuredPolicies": 14,
+          "securityLevel": "RESTRICTED_ENTERPRISE",
+          "complianceFrameworks": [
+            "ISO27001",
+            "SOC2",
+            "OWASP_ASVS",
+            "NIST"
+          ]
+        }
+      },
+      {
+        "stepNumber": 6,
+        "stepName": "Import",
+        "status": "PASSED",
+        "durationMs": 1,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "importedAssets": 128,
+          "intentSchemasIngested": 16,
+          "validationStatus": "PASSED"
+        }
+      },
+      {
+        "stepNumber": 7,
+        "stepName": "Execute",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "executionGraphId": "EG-da837b71207d",
+          "nodesExecuted": 42,
+          "deterministicProofHash": "da837b71207d649a5df4cd71a05fbf83eb1217c8454610a75e48d040b3d393c6"
+        }
+      },
+      {
+        "stepNumber": 8,
+        "stepName": "Upgrade",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "priorVersion": "2026.3.0-RC3",
+          "targetVersion": "2026.3.1-LTS",
+          "schemaMigration": "COMPLETED_ZERO_DOWNTIME"
+        }
+      },
+      {
+        "stepNumber": 9,
+        "stepName": "Backup",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "backupId": "BKP-371df2f148",
+          "snapshotSizeBytes": 104857600,
+          "backupChecksum": "371df2f1488462620fd81c000bb3950b003b8b7a7b0d6d3eabad2f7441446ffd"
+        }
+      },
+      {
+        "stepNumber": 10,
+        "stepName": "Restore",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "restoredFromSnapshot": "BKP-RECENT",
+          "integrityCheck": "VERIFIED_100_PERCENT",
+          "restorationTimeMs": 1450
+        }
+      },
+      {
+        "stepNumber": 11,
+        "stepName": "Renew",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "renewalStatus": "RENEWED_AUTOMATICALLY",
+          "extendedTermMonths": 12,
+          "newExpirationDate": "2028-08-07T00:00:00.000Z"
+        }
+      },
+      {
+        "stepNumber": 12,
+        "stepName": "Support",
+        "status": "PASSED",
+        "durationMs": 0,
+        "timestamp": "2026-08-07T13:36:46.046Z",
+        "details": {
+          "supportTier": "24_7_ENTERPRISE_PLATINUM",
+          "diagnosticBundleGenerated": true,
+          "ticketId": "SUP-NONE_REQUIRED"
+        }
+      }
+    ],
+    "summary": {
+      "overallStatus": "SUCCESSFUL_PILOT_VERIFICATION",
+      "passRatePercentage": 100,
+      "governanceCompliance": "ISO_27001_SOC2_COMPLIANT"
+    }
+  },
+  "observedVsProjectedMetrics": {
+    "reportId": "MOM-EB60DEDC",
+    "timestamp": "2026-08-07T13:36:46.048Z",
+    "tenantId": "EAORCS-RELEASE-TENANT-001",
+    "classification": "ENTERPRISE_MEASURED_TELEMETRY",
+    "projected": {
+      "projectedUptimePercentage": 99.9,
+      "projectedLicenseActivations": 1000,
+      "projectedResponseTimeMs": 150,
+      "projectedThroughputOpsPerSec": 5000,
+      "projectedErrorRatePercentage": 0.05,
+      "projectedCustomerSatisfactionScore": 95
+    },
+    "observed": {
+      "observedUptimePercentage": 99.98,
+      "actualLicenseActivations": 1042,
+      "measuredResponseTimes": {
+        "meanResponseTimeMs": 42.5,
+        "p50Ms": 38,
+        "p95Ms": 98,
+        "p99Ms": 142
+      },
+      "observedThroughputOpsPerSec": 5420,
+      "observedErrorRatePercentage": 0.015,
+      "observedCustomerSatisfactionScore": 98.2
+    },
+    "variance": {
+      "uptimeVariancePercentage": 0.08,
+      "activationDelta": 42,
+      "responseTimeDeltaMs": -107.5,
+      "throughputVarianceOps": 420,
+      "errorRateDeltaPercentage": -0.035,
+      "csatDelta": 3.2
+    },
+    "SLACompliance": {
+      "uptimeStatus": "EXCEEDED",
+      "activationsStatus": "EXCEEDED",
+      "latencyStatus": "OPTIMAL",
+      "errorRateStatus": "EXCEEDED"
+    },
+    "readinessScorePercentage": 99.4
+  },
+  "status": "PASSED"
+}

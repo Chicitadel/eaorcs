@@ -1,0 +1,82 @@
+# Air Roofers Enterprise Ecosystem Authoritative Workspace Manifest
+# Classification: ENTERPRISE | RESTRICTED
+# Governance: AR-STD-REP-001 / AR-STD-PKG-017 / AR-STD-PKG-020
+
+workspaceVersion: "3.0.0"
+governanceRuntimeVersion: "v3.0.0"
+organization: "Air Roofers Governance Directorate"
+standardsSourceOfTruth: "00_engineering_guide/Global_Product_Packaging"
+
+standardsIndex:
+  - id: "AR-STD-PKG-001"
+    name: "Global Product Packaging Standard"
+  - id: "AR-STD-PKG-002"
+    name: "IP Protection Standard"
+  - id: "AR-STD-PKG-017"
+    name: "Mandatory Governance Invocation Standard"
+  - id: "AR-STD-PKG-018"
+    name: "Packaging Capability Specification"
+  - id: "AR-STD-PKG-019"
+    name: "Universal Version Compatibility Matrix"
+  - id: "AR-STD-PKG-020"
+    name: "Governance Mesh & Federation Standard"
+  - id: "AR-STD-REP-001"
+    name: "Repository & Asset Governance Standard"
+
+assets:
+  products:
+    - id: "eaorcs"
+      name: "Enterprise Autonomous Operational Readiness & Certification System"
+      path: "products/eaorcs"
+      assetClass: "CLASS_A"
+      profile: "COMMERCIAL_PRODUCT_PROFILE"
+
+    - id: "civiscore"
+      name: "Civic Infrastructure Integrity & Trust Scoring Engine"
+      path: "products/civiscore"
+      assetClass: "CLASS_A"
+      profile: "COMMERCIAL_PRODUCT_PROFILE"
+
+    - id: "affiantor"
+      name: "Autonomous Legal Affidavits & Evidence Provenance Platform"
+      path: "products/affiantor"
+      assetClass: "CLASS_A"
+      profile: "COMMERCIAL_PRODUCT_PROFILE"
+
+    - id: "govinsight"
+      name: "Governmental Policy Analytics & Performance Intelligence"
+      path: "products/govinsight"
+      assetClass: "CLASS_A"
+      profile: "COMMERCIAL_PRODUCT_PROFILE"
+
+    - id: "naijagovos"
+      name: "Federated National Public Sector Governance Operating System"
+      path: "products/naijagovos"
+      assetClass: "CLASS_A"
+      profile: "COMMERCIAL_PRODUCT_PROFILE"
+
+  projects:
+    - id: "nigeriafrance"
+      name: "NigeriaFrance Bilateral Government Engagement Project"
+      path: "projects/nigeriafrance"
+      assetClass: "CLASS_D"
+      profile: "CUSTOMER_PROJECT_PROFILE"
+      contractRef: "CTR-2026-NGFR-001"
+
+  services:
+    - id: "audit-service"
+      path: "services/audit"
+      assetClass: "CLASS_C"
+      profile: "PLATFORM_SERVICE_PROFILE"
+
+  shared:
+    - id: "unified-sdk"
+      path: "shared/sdk"
+      assetClass: "CLASS_E"
+      profile: "REUSABLE_COMPONENT_PROFILE"
+
+  blueprints:
+    - id: "governance-blueprints"
+      path: "blueprints/governance"
+      assetClass: "CLASS_F"
+      profile: "KNOWLEDGE_ASSET_PROFILE"

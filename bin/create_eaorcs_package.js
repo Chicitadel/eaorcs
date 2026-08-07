@@ -95,6 +95,18 @@ function ensureAuditArtifacts(rootDir, releaseDir) {
     console.log('  ✅ Verified compatibility_matrix.json');
   }
 
+  // 4b. Ensure airroofers.workspace.yaml
+  const wsRootPath = path.join(rootDir, '../../airroofers.workspace.yaml');
+  const wsLocalPath = path.join(rootDir, 'airroofers.workspace.yaml');
+  if (fs.existsSync(wsRootPath)) {
+    fs.copyFileSync(wsRootPath, wsLocalPath);
+    console.log('  ✅ Synchronized airroofers.workspace.yaml from workspace root');
+  } else if (!fs.existsSync(wsLocalPath)) {
+    throw new Error(`Missing airroofers.workspace.yaml at ${wsLocalPath}`);
+  } else {
+    console.log('  ✅ Verified airroofers.workspace.yaml');
+  }
+
   // Helper to ensure file exists in audit/ and synchronize to docs/audit/
   const syncAuditArtifact = (filename) => {
     const auditPath = path.join(rootDir, 'audit', filename);
@@ -269,7 +281,14 @@ function createPackage() {
         'audit/artifact_lineage.json',
         'audit/architecture_conformance_matrix.md',
         'audit/audit_summary.json',
-        'version_synchronization.json'
+        'version_synchronization.json',
+        'docs/governance/AR-STD-PKG-017-MandatoryGovernanceInvocation.md',
+        'docs/governance/AR-STD-PKG-018-PackagingCapabilitySpecification.md',
+        'docs/governance/AR-STD-PKG-019-VersionCompatibilityMatrix.md',
+        'docs/governance/AR-STD-PKG-020-GovernanceMeshAndFederation.md',
+        'docs/governance/AR-STD-REP-001-RepositoryAssetGovernance.md',
+        'docs/governance/AGPA_STANDARDS_LINEAGE_INDEX.md',
+        'airroofers.workspace.yaml'
       );
       $missing = @();
       foreach ($r in $required) {

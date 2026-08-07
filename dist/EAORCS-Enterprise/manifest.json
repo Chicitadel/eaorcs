@@ -4,7 +4,7 @@
   "name": "Enterprise Autonomous Operational Readiness & Certification System",
   "edition": "Enterprise",
   "version": "2026.3.0-LTS",
-  "createdDate": "2026-08-07T06:47:52.404Z",
+  "createdDate": "2026-08-07T07:21:37.534Z",
   "capabilities": [
     "cap.governance.core",
     "cap.audit.gate",

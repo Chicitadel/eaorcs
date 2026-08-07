@@ -1,0 +1,25 @@
+version: 2026.3.1-LTS
+governanceAuthority: "Ujomor Systems & Enterprise Governance Board"
+lawsCertifiedCount: 14
+laws:
+- "Law 1: Single Public Facade"
+- "Law 2: Deterministic Execution"
+- "Law 3: Explainable Decisions"
+- "Law 4: Auditable Evidence"
+- "Law 5: Reversible Modifications"
+- "Law 6: Backward Compliance"
+- "Law 7: Explicit Capability Contracts"
+- "Law 8: Zero Hidden Side-Effects"
+- "Law 9: No AI-Only Dependency"
+- "Law 10: Reproducible Outcomes"
+- "Law 11: Platform Parity"
+- "Law 12: Native Surface Experience"
+- "Law 13: Interaction Continuity"
+- "Law 14: Rendering Neutrality"
+standards:
+- "ISO 27001"
+- "SOC 2"
+- "OWASP ASVS"
+- NIST
+decisionRegistry: "DEC-01 through DEC-13"
+generatedAt: "2026-08-07T13:38:19.783Z"

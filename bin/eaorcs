@@ -1,41 +1,34 @@
 #!/usr/bin/env bash
 ###############################################################################
 # Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
-# Module         : EAORCS CLI Launcher (Bash)
+# Module         : EAORCS Root CLI Launcher (Bash Wrapper)
 # File           : eaorcs
-# Version        : 2026.1-LTS
-# Author         : Architectural Governance Council & Ujomor Systems Engineering
-# Organization   : Ujomor Systems Ecosystem
+# Version        : 2026.3.1-LTS
+# Author         : Ujomor Systems & Enterprise Governance Authority
+# Organization   : Ujomor Systems & Enterprise Governance
+# Created Date   : 2026-08-07
+# Last Modified  : 2026-08-07
+# Classification : ENTERPRISE | RESTRICTED
+#
+# Governance:
+# - Security Reviewed
+# - Architecture Controlled
+# - Protocol Frozen
+# - Modularization Enforced
+# - Corporate Policy Governed
+#
+# CORP: Stream 2 — Structured bin/ Directory Taxonomy
+#
+# Standards:
+# - ISO 27001
+# - SOC 2
+# - OWASP ASVS
+# - NIST
+#
+# Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
 ###############################################################################
 
 set -e
 
-COMMAND="${1:-audit}"
-SUBCOMMAND="${2:-run}"
-WORKSPACE_ROOT="${WORKSPACE_ROOT:-$(pwd)}"
-
-echo "=========================================================================="
-echo " EAORCS 2026.1-LTS: ENTERPRISE ASSURANCE & CERTIFICATION PLATFORM"
-echo " UAIGOS 3.0.0 Standardized Product Engine"
-echo "=========================================================================="
-echo " Command   : $COMMAND $SUBCOMMAND"
-echo " Workspace : $WORKSPACE_ROOT"
-echo "=========================================================================="
-
-case "$COMMAND $SUBCOMMAND" in
-    "audit run"|"audit"|"run")
-        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" audit run
-        ;;
-    "certify"|"certify run")
-        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" certify
-        ;;
-    "verify")
-        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" verify
-        ;;
-    "utcf")
-        pwsh -NoProfile -ExecutionPolicy Bypass -File "$WORKSPACE_ROOT/eaorcs/bin/eaorcs.ps1" utcf
-        ;;
-    *)
-        echo "Usage: eaorcs [audit run | certify | verify | utcf]"
-        ;;
-esac
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+exec node "$DIR/commercial/eaorcs.js" "$@"

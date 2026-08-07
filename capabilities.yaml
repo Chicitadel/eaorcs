@@ -1,0 +1,148 @@
+# /******************************************************************************
+#  * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+#  * Module         : EAORCS Product Capability Manifest Descriptor
+#  * File           : capabilities.yaml
+#  * Version        : 2026.3.1-LTS
+#  * Author         : Ujomor Systems & Enterprise Governance Authority
+#  * Organization   : Ujomor Systems & Enterprise Governance
+#  * Created Date   : 2026-08-07
+#  * Last Modified  : 2026-08-07
+#  * Classification : ENTERPRISE | RESTRICTED
+#  *
+#  * Governance:
+#  * - Security Reviewed
+#  * - Architecture Controlled
+#  * - Protocol Frozen
+#  * - Modularization Enforced
+#  * - Corporate Policy Governed
+#  *
+#  * CORP: STREAM-04 Product Metadata Descriptors & Standards Integrator
+#  *
+#  * Standards:
+#  * - ISO 27001
+#  * - SOC 2
+#  * - OWASP ASVS
+#  * - NIST
+#  *
+#  * Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
+#  ******************************************************************************/
+
+schema_version: "2.0"
+capability:
+  identity:
+    id: "com.airroofers.eaorcs"
+    name: "Enterprise Autonomous Operational Readiness & Certification System"
+    version: "2026.3.1-LTS"
+    description: "Core platform engine for autonomous auditability, determinism verification, evidence chain tracking, and regulatory governance compliance."
+  
+  governance:
+    authority:
+      framework: "UAIGOS Master Governance"
+      version: "3.0.0"
+    policies:
+      security:
+        required:
+          - "GOV-SEC-001"
+          - "GOV-SEC-002"
+      commercial:
+        required:
+          - "GOV-COM-007"
+      ai:
+        required:
+          - "GOV-AI-004"
+      architecture:
+        required:
+          - "PES-102"
+          - "AR-STD-PKG-017"
+
+  ownership:
+    team: "team-governance"
+    domain: "Software Trust & Operational Assurance"
+    maintainers:
+      - "governance@airroofers.eu"
+      - "architecture@airroofers.eu"
+
+  lifecycle:
+    maturity: "PRODUCTION_LTS"
+    certification: "level-6"
+    release_channel: "stable"
+
+  apis:
+    provided:
+      - name: "EAORCS Facade API"
+        path: "engine/EAORCS.js"
+        type: "NODE_MODULE"
+        protocol: "IN_PROCESS"
+        internal_only: false
+      - name: "EAORCS Platform REST API"
+        path: "/v1/eaorcs"
+        type: "REST"
+        protocol: "HTTPS"
+        openapi_url: "https://docs.airroofers.eu/api/eaorcs/v1/openapi.json"
+        internal_only: false
+
+    consumed:
+      - name: "AirRoofers Identity Service API"
+        id: "com.airroofers.identity"
+        version: "v1"
+      - name: "AirRoofers Telemetry Sink API"
+        id: "com.airroofers.telemetry"
+        version: "v1"
+
+  events:
+    published:
+      - topic: "eaorcs.evidence.block_appended.v1"
+        description: "Emitted when a new cryptographic evidence block is appended to the hash chain."
+      - topic: "eaorcs.certification.completed.v1"
+        description: "Emitted when an operational readiness qualification completes."
+
+    subscribed:
+      - topic: "identity.user.authenticated.v1"
+        source: "com.airroofers.identity"
+
+  dependencies:
+    runtime:
+      - id: "node"
+        version: ">=18.0.0"
+        critical: true
+      - id: "uaigos-core"
+        version: ">=3.0.0"
+        critical: true
+
+    build_time:
+      - id: "airroofers-governance-mesh"
+        version: "4.1.0"
+
+  infrastructure:
+    storage:
+      - type: "LOCAL_FS"
+        purpose: "Evidence ledger and artifact repository"
+    messaging:
+      - type: "NODE_EVENTS"
+        topics: ["eaorcs.evidence.block_appended.v1"]
+
+  observability:
+    health:
+      liveness_endpoint: "EAORCS.health()"
+      readiness_endpoint: "EAORCS.audit()"
+    telemetry:
+      sink: "https://telemetry.airroofers.eu/v1/collect"
+      anonymized: true
+
+  security:
+    auth: "Ed25519 / mTLS"
+    isolation: "SANDBOX_ENFORCED"
+    compliance:
+      - "ISO 27001"
+      - "SOC 2 Type II"
+      - "OWASP ASVS Level 3"
+      - "NIST SP 800-161"
+      - "EU AI Act"
+      - "DORA"
+      - "NIS2"
+
+  commercial:
+    licensing: "ENTERPRISE_COMMERCIAL"
+    holder: "Ujomor Systems & Enterprise Governance"
+    marketplace_listed: true
+    listing_id: "mkt-eaorcs-2026"

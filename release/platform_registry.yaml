@@ -1,0 +1,22 @@
+platformName: "EAORCS Platform"
+version: 2026.3.1-LTS
+constitutionVersion: 1.4.0
+architectureVersion: 3.0.0
+layers:
+- Workspace
+- "Engineering Intent"
+- "Engineering Session"
+- "Execution Graph"
+- Transaction
+- Evidence
+contracts:
+- CONTRACT-FACADE
+- CONTRACT-CAPABILITY
+- CONTRACT-INTERACTION
+- CONTRACT-RESPONSE-MODEL
+- CONTRACT-SESSION
+- CONTRACT-JOURNAL
+- CONTRACT-RENDERER
+- CONTRACT-GOVERNANCE
+- CONTRACT-SURFACE-PROFILE
+generatedAt: "2026-08-07T13:38:19.779Z"

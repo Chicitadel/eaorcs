@@ -2,7 +2,7 @@
  * Project        : Air Roofers Platform Ecosystem
  * Module         : Air Roofers Global Product & Project Generation Architecture (AGPA) Master Kernel
  * File           : engine/packaging/AirRoofersPackagingEngine.js
- * Version        : 2026.3.0-LTS
+ * Version        : 2026.3.0-LTS (Governance Runtime v3.0.0)
  * Author         : Enterprise Architecture & Security Governance Board
  * Organization   : Air Roofers Governance Directorate
  * Created Date   : 2026-08-06
@@ -20,7 +20,7 @@
  * - SOC 2
  * - OWASP ASVS
  * - NIST
- * - AR-STD-PKG-017
+ * - AR-STD-PKG-017 to AR-STD-PKG-020
  * - AR-STD-REP-001
  *
  * Signatures:
@@ -41,6 +41,10 @@ const crypto = require('crypto');
 
 const RepositoryIntelligenceEngine = require('../governance/RepositoryIntelligenceEngine');
 const GovernanceKernelGateEngine = require('../governance/GovernanceKernelGateEngine');
+const AutomaticGovernanceDiscoveryEngine = require('../governance/AutomaticGovernanceDiscoveryEngine');
+const WorkspaceGovernanceRuntime = require('../governance/WorkspaceGovernanceRuntime');
+const EvidenceGraphEngine = require('../governance/EvidenceGraphEngine');
+const FederatedAutoRegistrationEngine = require('../federation/FederatedAutoRegistrationEngine');
 
 const AirRoofersProductRegistry = require('./AirRoofersProductRegistry');
 const EditionStrategy = require('./strategies/EditionStrategy');
@@ -61,6 +65,7 @@ class AirRoofersPackagingEngine {
   constructor(options = {}) {
     this.options = options;
     this.kernelGate = new GovernanceKernelGateEngine();
+    this.workspaceRuntime = new WorkspaceGovernanceRuntime();
   }
 
   /**
@@ -73,21 +78,29 @@ class AirRoofersPackagingEngine {
    */
   packageProduct(productId = 'EAORCS', edition = 'Enterprise', customOutputDir = null, invocationContext = { invokedViaKernel: true }) {
     console.log(`================================================================`);
-    console.log(`[AGPA KERNEL] Initiating Air Roofers Global Generation Pipeline`);
-    console.log(`[AGPA KERNEL] Target Identifier: ${productId} | Mode: ${edition}`);
+    console.log(`[AGPA KERNEL v3.0.0] Initiating Air Roofers Global Generation Pipeline`);
+    console.log(`[AGPA KERNEL v3.0.0] Target Identifier: ${productId} | Mode: ${edition}`);
     console.log(`================================================================`);
 
     // 1. Mandatory Default-Deny Governance Gate Clearance (AR-STD-PKG-017)
     const clearanceVerdict = this.kernelGate.evaluateClearance(invocationContext);
     console.log(`  ✅ [AR-STD-PKG-017 Gate] Clearance Verified (${clearanceVerdict.mode})`);
 
-    // 2. Automated Repository Intelligence Asset Classification (AR-STD-REP-001)
+    // 2. Workspace Governance Runtime v3.0.0 Execution & Manifest Resolution
+    const govCycle = this.workspaceRuntime.executeGovernanceCycle({ id: productId, version: '2026.3.0-LTS' });
+    console.log(`  ✅ [Workspace Governance Runtime v3.0.0] airroofers.workspace.yaml Loaded & Verified`);
+
+    // 3. Automatic Governance Discovery (AR-STD-PKG-020)
+    const autoDiscovery = AutomaticGovernanceDiscoveryEngine.discoverContext(productId);
+    console.log(`  ✅ [AGPA Discovery] Context Auto-Discovered (${autoDiscovery.loadedStandards.length} Standards Loaded)`);
+
+    // 4. Automated Repository Intelligence Asset Classification (AR-STD-REP-001)
     const assetProfile = RepositoryIntelligenceEngine.classifyTarget(productId);
     console.log(`  ✅ [AR-STD-REP-001 Intelligence] Asset Classified: ${assetProfile.className} (${assetProfile.assetClass})`);
 
     const rootDir = path.join(__dirname, '../..');
 
-    // 3. Handle Class D Customer Projects (e.g., projects/nigeriafrance)
+    // 5. Handle Class D Customer Projects (e.g., projects/nigeriafrance)
     if (assetProfile.assetClass === 'CLASS_D') {
       const projectStrat = new CustomerProjectStrategy();
       const projName = productId.replace(/^projects\//, '') || 'NigeriaFrance';
@@ -100,6 +113,16 @@ class AirRoofersPackagingEngine {
         milestone: 'FINAL_DELIVERY_ACCEPTANCE'
       }, outputDir);
 
+      // Emit 9 Federated Manifests
+      const fedSummary = FederatedAutoRegistrationEngine.emitFederatedManifests({ id: projName, version: '2026.3.0-LTS' }, outputDir);
+      console.log(`  ✅ [AR-STD-PKG-020 Mesh] 9 Canonical Federated Manifests Emitted & Registered`);
+
+      // Write End-to-End Evidence Graph
+      const evidenceGraph = EvidenceGraphEngine.buildEvidenceGraph({ id: projName, version: '2026.3.0-LTS' });
+      fs.mkdirSync(path.join(outputDir, 'evidence_graph'), { recursive: true });
+      fs.writeFileSync(path.join(outputDir, 'evidence_graph', 'EVIDENCE_GRAPH.json'), JSON.stringify(evidenceGraph, null, 2));
+      console.log(`  ✅ [Evidence Graph Engine] Complete Requirement-to-Deployment Traceability Graph Written`);
+
       console.log(`================================================================`);
       console.log(`[AGPA KERNEL SUCCESS] Customer Project Delivery Packaged: ${outputDir}`);
       console.log(`================================================================\n`);
@@ -108,11 +131,13 @@ class AirRoofersPackagingEngine {
         status: 'SUCCESS',
         assetClass: assetProfile.assetClass,
         profile: assetProfile.profile,
-        projectResult
+        projectResult,
+        federation: fedSummary,
+        evidenceGraph
       };
     }
 
-    // 4. Handle Class A Commercial Products (EAORCS, CiviScore, Affiantor, etc.)
+    // 6. Handle Class A Commercial Products (EAORCS, CiviScore, Affiantor, etc.)
     const product = AirRoofersProductRegistry.getProduct(productId);
     AirRoofersProductRegistry.validateEdition(productId, edition);
 
@@ -132,7 +157,8 @@ class AirRoofersPackagingEngine {
       'passport',
       'sbom',
       'config',
-      'docs'
+      'docs',
+      'evidence_graph'
     ];
     canonicalSubDirs.forEach(dir => fs.mkdirSync(path.join(distDir, dir), { recursive: true }));
 
@@ -234,6 +260,15 @@ class AirRoofersPackagingEngine {
     fs.writeFileSync(path.join(distDir, 'signature.sig'), JSON.stringify(attestation, null, 2));
     console.log(`  ✅ [Strategy] Manifest & Cryptographic Signatures Generated (SLSA Level 4 Attestation)`);
 
+    // Emit 9 Canonical Federated Manifests (AR-STD-PKG-020)
+    const fedSummary = FederatedAutoRegistrationEngine.emitFederatedManifests({ id: product.id, version: '2026.3.0-LTS', edition }, distDir);
+    console.log(`  ✅ [AR-STD-PKG-020 Mesh] 9 Canonical Federated Manifests Emitted & Registered`);
+
+    // Emit End-to-End Cryptographic Evidence Graph
+    const evidenceGraph = EvidenceGraphEngine.buildEvidenceGraph({ id: product.id, version: '2026.3.0-LTS' });
+    fs.writeFileSync(path.join(distDir, 'evidence_graph', 'EVIDENCE_GRAPH.json'), JSON.stringify(evidenceGraph, null, 2));
+    console.log(`  ✅ [Evidence Graph Engine] Complete Requirement-to-Deployment Traceability Graph Written`);
+
     // Apply IP Protection Strategy & Distribution Audit Gate
     const ipStrat = new IpProtectionStrategy('Layer3_ReleaseRepo');
     const clearance = ipStrat.enforceProtectionBoundary(distDir);
@@ -251,7 +286,9 @@ class AirRoofersPackagingEngine {
       packageDir: distDir,
       clearance: clearance.clearanceLevel,
       manifest: manifestPayload,
-      attestation
+      attestation,
+      federation: fedSummary,
+      evidenceGraph
     };
   }
 }

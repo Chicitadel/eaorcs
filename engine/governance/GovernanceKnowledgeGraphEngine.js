@@ -1,78 +1,131 @@
 /******************************************************************************
- * Project        : Enterprise Autonomous Operational Readiness & Certification System (EAORCS)
- * Module         : Governance Knowledge Graph Engine
+ * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+ * Module         : EAORCS Governance Knowledge Graph
  * File           : GovernanceKnowledgeGraphEngine.js
- * Version        : 2026.3.0-LTS
- * Author         : Air Roofers Governance & Architecture Authority
- * Organization   : Air Roofers Platform Ecosystem & Ujomor Systems
- * Created Date   : 2026-08-06
- * Last Modified  : 2026-08-06
- * Classification : GOVERNMENT | ENTERPRISE | RESTRICTED
+ * Version        : 2026.3.1-LTS
+ * Author         : Ujomor Systems & Enterprise Governance Authority
+ * Organization   : Ujomor Systems & Enterprise Governance
+ * Created Date   : 2026-08-07
+ * Last Modified  : 2026-08-07
+ * Classification : ENTERPRISE | RESTRICTED
  *
  * Governance:
- * - Air Roofers Knowledge-Centric Autonomous Governance Standard
- * - Unified Semantic Knowledge Graph
+ * - Security Reviewed
+ * - Architecture Controlled
+ * - Protocol Frozen
+ * - Modularization Enforced
+ * - Corporate Policy Governed
  *
- * Copyright (c) 2026 Air Roofers Platform Ecosystem & Ujomor Systems
- * All Rights Reserved.
+ * CORP: Stream S2
+ *
+ * Standards:
+ * - ISO 27001
+ * - SOC 2
+ * - OWASP ASVS
+ * - NIST
+ *
+ * Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
  ******************************************************************************/
 
-'use strict';
-
-const ArchitectureDecisionRegistryEngine = require('./ArchitectureDecisionRegistryEngine');
-const SpecificationRegistry = require('./SpecificationRegistry');
-
-/**
- * GovernanceKnowledgeGraphEngine
- *
- * Unified knowledge graph connecting Specifications, ADRs, Capabilities, Source Code,
- * Test Suites, Internal Evidence, External Audits, and Customer Pilots.
- */
 class GovernanceKnowledgeGraphEngine {
-  constructor(options = {}) {
-    this.options = options;
-    this.adrEngine = options.adrEngine || new ArchitectureDecisionRegistryEngine();
-    this.specRegistry = options.specRegistry || new SpecificationRegistry();
-  }
+    constructor() {
+        this.nodes = [];
+        this.edges = [];
+        this.metadata = {};
+        this.buildGraph();
+    }
 
-  /**
-   * Generates the complete unified governance knowledge graph.
-   */
-  generateGovernanceGraph() {
-    const specs = this.specRegistry.getAllSpecifications();
-    const adrs = this.adrEngine.getAllAdrs();
+    buildGraph() {
+        this.nodes = [
+            { id: 'GOV-L1', title: 'Constitution', tier: 1 },
+            { id: 'GOV-L2', title: 'Policies', tier: 2 },
+            { id: 'GOV-L3', title: 'Standards', tier: 3 },
+            { id: 'GOV-L4', title: 'ADRs', tier: 4 },
+            { id: 'GOV-L5', title: 'ARRs', tier: 5 },
+            { id: 'GOV-L6', title: 'Contracts', tier: 6 },
+            { id: 'GOV-L7', title: 'Evidence', tier: 7 }
+        ];
 
-    const nodes = [
-      ...specs.map(s => ({ id: s.id, type: 'SPECIFICATION', name: s.name, version: s.version })),
-      ...adrs.map(a => ({ id: a.id, type: 'ADR', name: a.title, status: a.status })),
-      { id: 'CAP-TRUST-SCORE', type: 'CAPABILITY', name: 'Software Trust Score Computation' },
-      { id: 'CAP-DIGITAL-TWIN', type: 'CAPABILITY', name: 'Interactive Digital Twin Simulation' },
-      { id: 'AUDIT-PEN-TEST', type: 'EXTERNAL_AUDIT', name: 'CyberSecure Penetration Audit', status: 'BOOKED_Q3_2026' },
-      { id: 'PILOT-SAAS-01', type: 'CUSTOMER_PILOT', name: 'SaaS Software SME Pilot', status: 'ACTIVE' },
-    ];
+        this.edges = [
+            { from: 'GOV-L2', to: 'GOV-L1', type: 'depends_on' },
+            { from: 'GOV-L3', to: 'GOV-L2', type: 'depends_on' },
+            { from: 'GOV-L4', to: 'GOV-L3', type: 'depends_on' },
+            { from: 'GOV-L5', to: 'GOV-L4', type: 'depends_on' },
+            { from: 'GOV-L6', to: 'GOV-L5', type: 'depends_on' },
+            { from: 'GOV-L7', to: 'GOV-L6', type: 'depends_on' }
+        ];
 
-    const edges = [
-      { from: 'eaorcs-master-blueprint', to: 'ADR-001', relation: 'RATIFIES' },
-      { from: 'ADR-001', to: 'CAP-TRUST-SCORE', relation: 'ENABLES_CAPABILITY' },
-      { from: 'ADR-006', to: 'AUDIT-PEN-TEST', relation: 'REQUIRES_EXTERNAL_EVIDENCE' },
-      { from: 'CAP-TRUST-SCORE', to: 'PILOT-SAAS-01', relation: 'VALIDATED_BY_PILOT' },
-    ];
+        this.metadata = { builtAt: Date.now(), totalNodes: 7, totalEdges: 6 };
 
-    return {
-      version: '2026.3.0-LTS',
-      totalNodes: nodes.length,
-      totalEdges: edges.length,
-      nodes,
-      edges,
-      isKnowledgeGraphUnified: true,
-      timestamp: new Date().toISOString(),
-    };
-  }
+        return { nodes: this.nodes, edges: this.edges, metadata: this.metadata };
+    }
 
-  getEngineStatus() {
-    return { initialized: true };
-  }
+    findDependencies(artifactId) {
+        const deps = new Set();
+        const stack = [artifactId];
+        while (stack.length > 0) {
+            const current = stack.pop();
+            for (const edge of this.edges) {
+                if (edge.from === current && !deps.has(edge.to)) {
+                    deps.add(edge.to);
+                    stack.push(edge.to);
+                }
+            }
+        }
+        return Array.from(deps);
+    }
+
+    computeImpact(artifactId) {
+        const impacts = new Set();
+        const stack = [artifactId];
+        while (stack.length > 0) {
+            const current = stack.pop();
+            for (const edge of this.edges) {
+                if (edge.to === current && !impacts.has(edge.from)) {
+                    impacts.add(edge.from);
+                    stack.push(edge.from);
+                }
+            }
+        }
+        return Array.from(impacts);
+    }
+
+    exportGraph(format) {
+        const data = { nodes: this.nodes, edges: this.edges, metadata: this.metadata };
+        if (format === 'json') return JSON.stringify(data, null, 2);
+        if (format === 'text') {
+            return `Nodes: ${this.nodes.map(n => n.id).join(', ')}\nEdges: ${this.edges.map(e => `${e.from}->${e.to}`).join(', ')}`;
+        }
+        return data;
+    }
+
+    searchArtifacts(query) {
+        const q = query.toLowerCase();
+        return this.nodes.filter(n => n.title.toLowerCase().includes(q) || n.id.toLowerCase().includes(q));
+    }
+
+    diffGraphs(snapshotA, snapshotB) {
+        const diff = {
+            addedNodes: [],
+            removedNodes: [],
+            changedNodes: []
+        };
+        const nodesA = new Map(snapshotA.nodes.map(n => [n.id, n]));
+        const nodesB = new Map(snapshotB.nodes.map(n => [n.id, n]));
+
+        for (const [id, node] of nodesB) {
+            if (!nodesA.has(id)) diff.addedNodes.push(node);
+            else {
+                if (JSON.stringify(node) !== JSON.stringify(nodesA.get(id))) {
+                    diff.changedNodes.push(node);
+                }
+            }
+        }
+        for (const [id, node] of nodesA) {
+            if (!nodesB.has(id)) diff.removedNodes.push(node);
+        }
+        return diff;
+    }
 }
 
 module.exports = GovernanceKnowledgeGraphEngine;
-module.exports.GovernanceKnowledgeGraphEngine = GovernanceKnowledgeGraphEngine;

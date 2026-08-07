@@ -1,0 +1,65 @@
+{
+  "graphVersion": "1.0.0-PROVENANCE",
+  "governanceRuntime": "v3.0.0",
+  "targetId": "EAORCS",
+  "version": "2026.3.0-LTS",
+  "timestamp": "2026-08-07T07:21:37.546Z",
+  "lineageChain": [
+    {
+      "stage": "REQUIREMENT",
+      "id": "REQ-AGPA-001",
+      "name": "Mandatory Governance Invocation & Protection Architecture",
+      "status": "FULFILLED"
+    },
+    {
+      "stage": "ARCHITECTURE",
+      "id": "ADR-017-AGPA-KERNEL",
+      "name": "AGPA Master Governance Kernel Architecture",
+      "status": "FROZEN"
+    },
+    {
+      "stage": "IMPLEMENTATION",
+      "id": "COMMIT-e418a93",
+      "name": "Core Kernel & Strategy Implementation",
+      "status": "VERIFIED"
+    },
+    {
+      "stage": "VERIFICATION",
+      "id": "TEST-AGPA-MASTER-SUITE",
+      "name": "AGPA Governance Consolidation Test Suite",
+      "result": "100% PASS"
+    },
+    {
+      "stage": "EVIDENCE",
+      "id": "EVID-SLSA-L4-PASSPORT",
+      "name": "OSAP Digital Passport & SLSA Attestation",
+      "status": "ATTESTED"
+    },
+    {
+      "stage": "PACKAGING",
+      "id": "PKG-AGPA-CANONICAL",
+      "name": "Canonical .airpkg & Distribution Packaging",
+      "status": "CLEARED"
+    },
+    {
+      "stage": "SIGNING",
+      "id": "SIG-ED25519-HMAC",
+      "name": "Cryptographic Artifact Signature",
+      "status": "SIGNED"
+    },
+    {
+      "stage": "DISTRIBUTION",
+      "id": "DIST-9-MANIFEST-MESH",
+      "name": "Federated 9-Manifest Mesh Registration",
+      "status": "REGISTERED"
+    },
+    {
+      "stage": "DEPLOYMENT",
+      "id": "DEP-CUSTOMER-ENV",
+      "name": "Customer Environment Target Deployment",
+      "status": "READY"
+    }
+  ],
+  "rootCryptographicHash": "0ad188958088695844a20b1f6f9fef13913136e11953c8d9e0c0c4dcbdc06e73",
+  "signature": "3059a4ea2aca7df3b8e252a9ff4d8fa940ccfc739f30c1116175059abb2ae288"
+}

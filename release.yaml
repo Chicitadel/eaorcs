@@ -1,0 +1,81 @@
+# /******************************************************************************
+#  * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+#  * Module         : EAORCS Product Release Descriptor
+#  * File           : release.yaml
+#  * Version        : 2026.3.1-LTS
+#  * Author         : Ujomor Systems & Enterprise Governance Authority
+#  * Organization   : Ujomor Systems & Enterprise Governance
+#  * Created Date   : 2026-08-07
+#  * Last Modified  : 2026-08-07
+#  * Classification : ENTERPRISE | RESTRICTED
+#  *
+#  * Governance:
+#  * - Security Reviewed
+#  * - Architecture Controlled
+#  * - Protocol Frozen
+#  * - Modularization Enforced
+#  * - Corporate Policy Governed
+#  *
+#  * CORP: STREAM-04 Product Metadata Descriptors & Standards Integrator
+#  *
+#  * Standards:
+#  * - ISO 27001
+#  * - SOC 2
+#  * - OWASP ASVS
+#  * - NIST
+#  *
+#  * Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
+#  ******************************************************************************/
+
+release:
+  release_id: "REL-2026.3.1-LTS"
+  product_id: "eaorcs"
+  product_name: "Enterprise Autonomous Operational Readiness & Certification System"
+  version: "2026.3.1-LTS"
+  release_date: "2026-08-07"
+  release_profile: "COMMERCIAL_ENTERPRISE_GA"
+  channel: "AIRROOFERS_ENTERPRISE_DISTRIBUTION"
+  maturity: "PRODUCTION_LTS"
+
+provenance:
+  builder: "UAIGOS Release Engineering Authority"
+  build_environment: "AIRROOFERS-CI-RUNNER-01"
+  reproducible: true
+  evidence_chain_hash: "TAMPER_PROOF_CHAIN_CERTIFIED"
+
+signatures:
+  algorithm: "Ed25519"
+  key_id: "KEY-EAORCS-2026-SIGNING-PUB"
+  authorities:
+    - "Architecture Authority"
+    - "Security Authority"
+    - "Governance Authority"
+    - "Deployment Authority"
+
+packages:
+  - id: "01_source_snapshot"
+    format: "ZIP"
+    path: "dist/01_source_snapshot.zip"
+  - id: "03_customer_release"
+    format: "EPKG_EBUNDLE"
+    path: "dist/03_customer_release.epkg"
+  - id: "06_sbom"
+    format: "SPDX_CYCLONEDX"
+    path: "dist/06_sbom.zip"
+  - id: "07_signatures"
+    format: "DETACHED_JSON"
+    path: "dist/07_signatures.zip"
+
+release_gates:
+  unit_tests: "PASSED"
+  integration_tests: "PASSED"
+  determinism_certification: "PASSED_100_PERCENT"
+  security_audit: "PASSED_ASVS_LEVEL_3"
+  license_compliance: "PASSED_PROPRIETARY_ENTERPRISE"
+  constitution_compliance: "PASSED_14_LAWS"
+
+governance_seals:
+  architecture_freeze: true
+  protocol_freeze: true
+  governance_freeze: true
+  packaging_freeze: true

@@ -1,0 +1,76 @@
+# /******************************************************************************
+#  * Project        : Universal Autonomous AI Governance Operating System (UAIGOS)
+#  * Module         : EAORCS Product Metadata Descriptors
+#  * File           : product.yaml
+#  * Version        : 2026.3.1-LTS
+#  * Author         : Ujomor Systems & Enterprise Governance Authority
+#  * Organization   : Ujomor Systems & Enterprise Governance
+#  * Created Date   : 2026-08-07
+#  * Last Modified  : 2026-08-07
+#  * Classification : ENTERPRISE | RESTRICTED
+#  *
+#  * Governance:
+#  * - Security Reviewed
+#  * - Architecture Controlled
+#  * - Protocol Frozen
+#  * - Modularization Enforced
+#  * - Corporate Policy Governed
+#  *
+#  * CORP: STREAM-04 Product Metadata Descriptors & Standards Integrator
+#  *
+#  * Standards:
+#  * - ISO 27001
+#  * - SOC 2
+#  * - OWASP ASVS
+#  * - NIST
+#  *
+#  * Copyright (c) 2026 Ujomor Systems & Enterprise Governance. All Rights Reserved.
+#  ******************************************************************************/
+
+id: "eaorcs"
+name: "Enterprise Autonomous Operational Readiness & Certification System"
+owner: "Ujomor Systems & Enterprise Governance Authority"
+bounded_context: "Software Trust Engine, Autonomous Auditability & Runtime Regulatory Assurance"
+platform_dependencies:
+  - "node >= 18.0.0"
+  - "uaigos-core >= 3.0.0"
+  - "airroofers-governance-mesh >= 4.1.0"
+api_version: "2026.3.1-LTS"
+sdk_version: "3.0.0"
+release_profile: "COMMERCIAL_ENTERPRISE_GA"
+maturity: "PRODUCTION_LTS"
+licensing:
+  type: "ENTERPRISE_COMMERCIAL"
+  holder: "Ujomor Systems & Enterprise Governance"
+  spdx: "Proprietary"
+marketplace:
+  listed: true
+  category: "Governance, Risk & Compliance (GRC) & Observability"
+  listing_id: "mkt-eaorcs-2026"
+distribution:
+  channel: "AIRROOFERS_ENTERPRISE_DISTRIBUTION"
+  package_format: "EPKG_EBUNDLE"
+  registry: "https://packages.airroofers.eu/v1/eaorcs"
+support:
+  tier: "ENTERPRISE_247"
+  sla: "99.99%"
+  contact: "support@airroofers.eu"
+documentation:
+  portal: "https://docs.airroofers.eu/products/eaorcs"
+  api_ref: "https://docs.airroofers.eu/api/eaorcs/v1"
+compliance:
+  - "ISO 27001"
+  - "SOC 2 Type II"
+  - "OWASP ASVS Level 3"
+  - "NIST SP 800-161"
+  - "EU AI Act"
+  - "DORA"
+  - "NIS2"
+telemetry:
+  enabled: true
+  sink: "https://telemetry.airroofers.eu/v1/collect"
+  anonymized: true
+inherits_governance:
+  constitution: "UAIGOS_14_LAWS"
+  master_index: "00_MASTER_GOVERNANCE_INDEX.md"
+  parent_policy: "AR-STD-PKG-017"

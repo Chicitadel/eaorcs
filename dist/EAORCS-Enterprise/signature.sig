@@ -1,8 +1,8 @@
 {
   "slsaLevel": "SLSA_LEVEL_4",
-  "signature": "4eb37d68722a7d697f97ea1014530933614232879cb586b10c44d15d3cc01baa",
-  "digest": "4eb37d68722a7d697f97ea1014530933614232879cb586b10c44d15d3cc01baa",
+  "signature": "4dcac2e37c3854ff8e29ecfae828d5e3d23b99402a3862641fb2c224e5bee623",
+  "digest": "4dcac2e37c3854ff8e29ecfae828d5e3d23b99402a3862641fb2c224e5bee623",
   "signedBy": "Air Roofers Governance Authority Key Authority",
-  "timestamp": "2026-08-07T06:47:52.406Z",
+  "timestamp": "2026-08-07T07:21:37.535Z",
   "supplyChainAttestation": "VERIFIED_IMMUTABLE_BUILD"
 }

@@ -1,8 +1,8 @@
 {
-  "passportId": "passport_f2fe80ef4e15246e_INT",
-  "publicPassportRef": "passport_f2fe80ef4e15246e_PUB",
+  "passportId": "passport_db1f19ffba63d342_INT",
+  "publicPassportRef": "passport_db1f19ffba63d342_PUB",
   "classification": "AIR_ROOFERS_SOVEREIGN_PRIVATE",
-  "createdDate": "2026-08-07T06:47:52.400Z",
+  "createdDate": "2026-08-07T07:21:37.529Z",
   "internalKnowledgeGraph": {
     "privateWeights": [
       0.98,
@@ -20,5 +20,5 @@
     "kernelLines": "1..14200",
     "testCoverageMatrix": "100% Path Integrity"
   },
-  "signature": "876b5e845a30ac2779d77c953c46cc554525ec8f37df6569a2b9a2840f3d7f74"
+  "signature": "6b8ffe8c9d06e9905f3cd680f6a434b0fb48780bc371e0ff0c49f27abdfd46d2"
 }

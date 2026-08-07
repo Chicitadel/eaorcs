@@ -1,0 +1,177 @@
+# Release Gates Configuration
+# ============================================================
+# EAORCS Declarative Release Gates
+# Version: 1.0.0
+# Owner: Release Authority
+# Classification: ENTERPRISE | RESTRICTED
+# CORP Stream: S6 — Release Readiness Framework (DEC-02)
+#
+# This file defines all release gates declaratively.
+# Gate enforcement is profile-driven — profiles may add, override,
+# or skip gates without modifying engine source code.
+#
+# Governance: All changes require a registered Decision Record.
+# Copyright (c) 2026 Ujomor Systems & Enterprise Governance.
+# ============================================================
+
+schemaVersion: "1.0.0"
+effectiveDate: "2026-08-07"
+owner: "Release Authority"
+
+# -------------------------------------------------------
+# Base gates — apply to ALL profiles
+# -------------------------------------------------------
+baseGates:
+  - gateId: GATE-01
+    name: Architecture Governance
+    category: Governance
+    required: true
+    description: "Platform Constitution enforced, 14 Laws verified"
+
+  - gateId: GATE-02
+    name: Security Baseline
+    category: Security
+    required: true
+    description: "Zero critical/high vulnerabilities, SBOM generated"
+
+  - gateId: GATE-03
+    name: Cross-Platform Qualification
+    category: Quality
+    required: true
+    description: "All supported OS/CI/runtime combinations pass qualification"
+
+  - gateId: GATE-04
+    name: Packaging Validation
+    category: Delivery
+    required: true
+    description: "All target package formats build and verify"
+
+  - gateId: GATE-05
+    name: Licensing Validation
+    category: Commercial
+    required: true
+    description: "All dependencies license-compatible with distribution model"
+
+  - gateId: GATE-06
+    name: Documentation Completeness
+    category: Docs
+    required: true
+    description: "Architecture, API, CLI, onboarding docs present and synchronized"
+
+  - gateId: GATE-07
+    name: Marketplace Assets
+    category: Commercial
+    required: true
+    description: "Screenshots, descriptions, metadata ready for marketplace submission"
+
+  - gateId: GATE-08
+    name: Installer Validation
+    category: Delivery
+    required: true
+    description: "Installer completes on all supported platforms"
+
+  - gateId: GATE-09
+    name: Upgrade Validation
+    category: Operations
+    required: true
+    description: "Upgrade from previous LTS version completes without data loss"
+
+  - gateId: GATE-10
+    name: Rollback Validation
+    category: Operations
+    required: true
+    description: "Rollback to previous release completes within SLA"
+
+  - gateId: GATE-11
+    name: Support Readiness
+    category: Operations
+    required: true
+    description: "Support channels, runbooks, and escalation paths defined"
+
+  - gateId: GATE-12
+    name: Legal / IP Readiness
+    category: Legal
+    required: true
+    description: "Legal review complete, IP rights cleared for all dependencies"
+
+# -------------------------------------------------------
+# Profile-specific gate additions
+# -------------------------------------------------------
+profileGates:
+  Government:
+    - gateId: GATE-GOV-01
+      name: Security Clearance Verification
+      category: Compliance
+      required: true
+      description: "Release artifacts verified against government security clearance requirements"
+
+    - gateId: GATE-GOV-02
+      name: Data Residency Compliance
+      category: Compliance
+      required: true
+      description: "Data residency constraints satisfied for target jurisdiction"
+
+    - gateId: GATE-GOV-03
+      name: Sovereign Hosting Validation
+      category: Compliance
+      required: true
+      description: "Platform verified to operate in sovereign/air-gapped hosting environments"
+
+  Sovereign:
+    - gateId: GATE-SOV-01
+      name: Air-Gap Operation Validation
+      category: Compliance
+      required: true
+      description: "Full qualification run completes with zero external network calls"
+
+    - gateId: GATE-SOV-02
+      name: Cryptographic Provenance Attestation
+      category: Security
+      required: true
+      description: "All artifacts carry Ed25519-signed provenance attestation at SLSA Level 4"
+
+    - gateId: GATE-SOV-03
+      name: Offline SBOM Verification
+      category: Security
+      required: true
+      description: "SBOM verifiable without internet connectivity"
+
+  Community:
+    # Community profile skips marketplace and legal gates
+    overrides:
+      - gateId: GATE-07
+        required: false
+      - gateId: GATE-12
+        required: false
+
+# -------------------------------------------------------
+# External Qualification milestone gates (DEC-12, DEC-13)
+# -------------------------------------------------------
+gates:
+  - id: GATE-SBOM-COMPLETE
+    name: SBOM Completeness
+    description: Both SPDX and CycloneDX SBOMs generated and validated
+    mandatory: true
+    profiles: [PROFILE-ENTERPRISE, PROFILE-GOVERNMENT, PROFILE-SOVEREIGN]
+    evidence: sbom_generation_report
+
+  - id: GATE-SECURITY-PIPELINE
+    name: Security Pipeline Passing
+    description: SAST, dependency scan, license scan, and secret scan all clean
+    mandatory: true
+    profiles: [PROFILE-PROFESSIONAL, PROFILE-ENTERPRISE, PROFILE-GOVERNMENT, PROFILE-SOVEREIGN]
+    evidence: security_pipeline_report
+
+  - id: GATE-UPGRADE-QUALIFIED
+    name: Upgrade Path Qualified
+    description: All supported upgrade paths validated by UpgradeQualificationEngine
+    mandatory: true
+    profiles: [PROFILE-ENTERPRISE, PROFILE-GOVERNMENT, PROFILE-SOVEREIGN]
+    evidence: upgrade_qualification_report
+
+  - id: GATE-DR-VALIDATED
+    name: Disaster Recovery Validated
+    description: All 4 DR scenarios pass within SLA
+    mandatory: true
+    profiles: [PROFILE-ENTERPRISE, PROFILE-GOVERNMENT, PROFILE-SOVEREIGN]
+    evidence: disaster_recovery_report

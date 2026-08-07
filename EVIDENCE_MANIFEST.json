@@ -1,0 +1,251 @@
+{
+  "manifestVersion": "2026.3.1-LTS",
+  "header": {
+    "project": "Universal Autonomous AI Governance Operating System (UAIGOS)",
+    "module": "EAORCS Commercial Evidence Index",
+    "author": "Ujomor Systems & Enterprise Governance Authority",
+    "generatedAt": "2026-08-07T13:36:45.994Z",
+    "classification": "ENTERPRISE | RESTRICTED"
+  },
+  "summary": {
+    "totalCategories": 9,
+    "totalRecords": 9,
+    "integrityStatus": "VALIDATED_HMAC_SHA256"
+  },
+  "categories": {
+    "security": [
+      {
+        "id": "d4e42e42-8268-44dd-a1ac-ee258499d392",
+        "category": "security",
+        "name": "security_baseline_attestation.json",
+        "path": "evidence/security/security_baseline_attestation.json",
+        "sha256": "127d06eef09f5e14c24e6fc9dfe42160e584bff76df2183d5d60152e1319a0ef",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "performance": [
+      {
+        "id": "6882341d-aab3-4a32-907e-e90906c0c258",
+        "category": "performance",
+        "name": "performance_baseline_attestation.json",
+        "path": "evidence/performance/performance_baseline_attestation.json",
+        "sha256": "b3471b33930db926ab2404e5dcf775e8b81050624e739546a6d9f00c0b873460",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "packaging": [
+      {
+        "id": "2f3b8b7f-49ec-49e3-8ff0-e05405a557c7",
+        "category": "packaging",
+        "name": "packaging_baseline_attestation.json",
+        "path": "evidence/packaging/packaging_baseline_attestation.json",
+        "sha256": "57ee3f191e8469e980954b414c2587547d0f9fd5564ca2e231ea82a2d83555c2",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "licensing": [
+      {
+        "id": "16ecdcce-8807-4bd7-8a13-326adb568075",
+        "category": "licensing",
+        "name": "licensing_baseline_attestation.json",
+        "path": "evidence/licensing/licensing_baseline_attestation.json",
+        "sha256": "c00cdf682a23ba09e17e4b663767a48b6dc055242db254ab2a707dc62410c4b4",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "governance": [
+      {
+        "id": "41954393-507c-4593-a1b6-0a14a94d01d2",
+        "category": "governance",
+        "name": "governance_baseline_attestation.json",
+        "path": "evidence/governance/governance_baseline_attestation.json",
+        "sha256": "349033c980ced0bced271dc7ccde0baad204ae360d920860f953c80501e0006f",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "architecture": [
+      {
+        "id": "a83c94e7-2501-4b9f-92f4-bb24d3cb1cdc",
+        "category": "architecture",
+        "name": "architecture_baseline_attestation.json",
+        "path": "evidence/architecture/architecture_baseline_attestation.json",
+        "sha256": "5cfe6ae193c1ebff0e0ee61f5ed20cc665fa7012c6cb27c798e9c679a85bcb97",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "marketplace": [
+      {
+        "id": "e34376b3-484b-4cb7-8b12-cae996c01f63",
+        "category": "marketplace",
+        "name": "marketplace_baseline_attestation.json",
+        "path": "evidence/marketplace/marketplace_baseline_attestation.json",
+        "sha256": "e0b10c4cde1070e2e5b5789a3749c9075dd21a9c34ced4128dad7079d7ad3830",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "deployment": [
+      {
+        "id": "ffdf0f28-f946-48e3-aab5-76c6350b1b64",
+        "category": "deployment",
+        "name": "deployment_baseline_attestation.json",
+        "path": "evidence/deployment/deployment_baseline_attestation.json",
+        "sha256": "5db77a455e874aea6156e6913f986407e1a7872a304021b8e7c403416cf3c09d",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ],
+    "validation": [
+      {
+        "id": "5ca7f3c7-c811-471d-ac1f-954c75e5021d",
+        "category": "validation",
+        "name": "validation_baseline_attestation.json",
+        "path": "evidence/validation/validation_baseline_attestation.json",
+        "sha256": "9b868681d59ba1ef012bcf03a7074653330605312351aa2c155fc2108377cb1d",
+        "ownerClaim": "Ujomor Systems & Enterprise Governance Authority",
+        "timestamp": "2026-08-07T13:36:45.994Z",
+        "expiration": {
+          "expiresAt": "2027-08-07T13:36:45.994Z",
+          "validityPeriodDays": 365,
+          "status": "ACTIVE"
+        },
+        "governance": {
+          "classification": "ENTERPRISE | RESTRICTED",
+          "standardsCompliance": [
+            "ISO 27001",
+            "SOC 2",
+            "OWASP ASVS",
+            "NIST"
+          ],
+          "reviewStatus": "APPROVED"
+        }
+      }
+    ]
+  }
+}

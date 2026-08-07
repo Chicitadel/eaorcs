@@ -1,8 +1,8 @@
 {
-  "passportId": "passport_f2fe80ef4e15246e_PUB",
+  "passportId": "passport_db1f19ffba63d342_PUB",
   "version": "2026.3.0-LTS",
   "classification": "PUBLIC_CUSTOMER_AUDITOR",
-  "issuedAt": "2026-08-07T06:47:52.400Z",
+  "issuedAt": "2026-08-07T07:21:37.529Z",
   "issuer": "Air Roofers Governance Directorate",
   "subject": "Enterprise Autonomous Operational Readiness & Certification System",
   "evidenceHashes": [
@@ -27,5 +27,5 @@
       "status": "COMPLIANT"
     }
   ],
-  "signature": "0b07537a6a6195ce15883f5373b092ed39ec4be76deb0629a568d24d8518d6ac"
+  "signature": "62a75c459a7e3d9297a09db778b61a1d6f3e8386eed4732861c690c677739ab3"
 }

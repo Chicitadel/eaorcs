@@ -1,0 +1,536 @@
+twinId: TWIN-PLATFORM-27832AC3C951
+version: 2026.3.1-LTS
+timestamp: 2026-08-07T12:31:25.038Z
+workspaceRoot: D:\ujomor-platform\products\eaorcs
+classification: ENTERPRISE | RESTRICTED
+summary:
+  totalDimensions: 10
+  productCount: 3
+  capabilityCount: 8
+  dependencyCount: 6
+  governanceRulesCount: 14
+  securityControlsCount: 6
+  deploymentTargetsCount: 3
+  licenseEntitlementsCount: 2
+  evidenceArtifactsCount: 3
+  operationalMonitorsCount: 3
+  marketplaceListingsCount: 3
+  graphNodesCount: 51
+  graphEdgesCount: 48
+  overallHealth: HEALTHY
+  readinessScore: 100
+  complianceScore: 100
+dimensions:
+  products:
+    dimensionName: Products
+    items:
+      - id: prod:eaorcs
+        name: EAORCS - Enterprise AI Operational Readiness System
+        version: 2026.3.1-LTS
+        status: OPERATIONAL
+        classification: ENTERPRISE | RESTRICTED
+        exists: true
+      - id: prod:airroofers
+        name: airroofers.eu Platform Suite
+        version: 2026.3.1-LTS
+        status: OPERATIONAL
+        classification: COMMERCIAL | ENTERPRISE
+        exists: true
+      - id: prod:convergence
+        name: convergence.airroofers.eu
+        version: 2026.3.1-LTS
+        status: OPERATIONAL
+        classification: COMMERCIAL | ENTERPRISE
+        exists: true
+  capabilities:
+    dimensionName: Capabilities
+    items:
+      - id: cap:governance
+        name: 14 Constitutional Laws Governance
+        status: ACTIVE
+      - id: cap:execution_graph
+        name: Deterministic Execution Graph Engine
+        status: ACTIVE
+      - id: cap:evidence_auditing
+        name: Immutable Commercial Evidence Auditing
+        status: ACTIVE
+      - id: cap:digital_twin
+        name: Live Dynamic Digital Twin Simulation
+        status: ACTIVE
+      - id: cap:ai_council
+        name: AI Council Multi-Model Consensus Engine
+        status: ACTIVE
+      - id: cap:licensing
+        name: UTCF Tiered Enterprise License Authority
+        status: ACTIVE
+      - id: cap:surface_adapters
+        name: Dynamic Surface Experience Negotiation
+        status: ACTIVE
+      - id: cap:security_pipeline
+        name: Zero-Trust Supply Chain Security Pipeline
+        status: ACTIVE
+  dependencies:
+    dimensionName: Dependencies
+    purityPolicy: ZERO_THIRD_PARTY_NPM
+    items:
+      - id: dep:node_fs
+        name: Node.js File System Module (fs)
+        type: BUILTIN
+        status: VERIFIED
+      - id: dep:node_path
+        name: Node.js Path Resolution Module (path)
+        type: BUILTIN
+        status: VERIFIED
+      - id: dep:node_crypto
+        name: Node.js Cryptography Module (crypto)
+        type: BUILTIN
+        status: VERIFIED
+      - id: dep:node_os
+        name: Node.js OS Module (os)
+        type: BUILTIN
+        status: VERIFIED
+      - id: dep:node_assert
+        name: Node.js Assertion Module (assert)
+        type: BUILTIN
+        status: VERIFIED
+      - id: dep:engine_facade
+        name: EAORCS Public Engine Facade
+        type: INTERNAL
+        status: VERIFIED
+  governance:
+    dimensionName: Governance
+    constitutionalLawsCount: 14
+    status: FROZEN
+    items:
+      - id: gov:law1
+        name: "Law 1: Single Public Facade"
+        status: ENFORCED
+      - id: gov:law2
+        name: "Law 2: Deterministic Execution"
+        status: ENFORCED
+      - id: gov:law3
+        name: "Law 3: Explainable Decisions"
+        status: ENFORCED
+      - id: gov:law4
+        name: "Law 4: Auditable Evidence"
+        status: ENFORCED
+      - id: gov:law5
+        name: "Law 5: Reversible Modifications"
+        status: ENFORCED
+      - id: gov:law6
+        name: "Law 6: Backward Compliance"
+        status: ENFORCED
+      - id: gov:law7
+        name: "Law 7: Explicit Capability Contracts"
+        status: ENFORCED
+      - id: gov:law8
+        name: "Law 8: Zero Hidden Side-Effects"
+        status: ENFORCED
+      - id: gov:law9
+        name: "Law 9: No AI-Only Dependency"
+        status: ENFORCED
+      - id: gov:law10
+        name: "Law 10: Reproducible Outcomes"
+        status: ENFORCED
+      - id: gov:law11
+        name: "Law 11: Platform Parity"
+        status: ENFORCED
+      - id: gov:law12
+        name: "Law 12: Native Surface Experience"
+        status: ENFORCED
+      - id: gov:law13
+        name: "Law 13: Interaction Continuity"
+        status: ENFORCED
+      - id: gov:law14
+        name: "Law 14: Rendering Neutrality"
+        status: ENFORCED
+  security:
+    dimensionName: Security
+    supplyChainPurity: 100%
+    items:
+      - id: sec:sast
+        name: SAST Audit Verification
+        status: PASSED
+        vulnerabilitiesCount: 0
+      - id: sec:sbom
+        name: Software Bill of Materials (SPDX)
+        status: VERIFIED
+      - id: sec:rbom
+        name: Release Bill of Materials Provenance
+        status: VERIFIED
+      - id: sec:secrets
+        name: Zero Exposed Credentials Scan
+        status: PASSED
+      - id: sec:headers
+        name: UAIGOS Mandatory Corporate Headers
+        status: ENFORCED
+      - id: sec:evidence
+        name: Immutable Evidence Hash Registry
+        status: VERIFIED
+  deployments:
+    dimensionName: Deployments
+    items:
+      - id: deploy:dev
+        environment: Development
+        status: ACTIVE
+        parity: 100%
+      - id: deploy:staging
+        environment: Staging Sandbox
+        status: ACTIVE
+        parity: 100%
+      - id: deploy:production
+        environment: Enterprise Cloud / Edge
+        status: READY
+        parity: 100%
+  licenses:
+    dimensionName: Licenses
+    framework: UTCF
+    items:
+      - id: lic:utcf_enterprise
+        name: UTCF Commercial Enterprise License
+        tier: ENTERPRISE_LTS
+        status: ACTIVE
+      - id: lic:multi_tenant
+        name: Multi-Tenant OEM Distribution Right
+        tier: COMMERCIAL
+        status: ACTIVE
+  evidence:
+    dimensionName: Evidence
+    items:
+      - id: evi:manifest
+        name: EVIDENCE_MANIFEST.json
+        status: PRESENT
+      - id: evi:sarif
+        name: SARIF Static Analysis Reports
+        status: PRESENT
+      - id: evi:certification
+        name: Commercial Readiness Certification Seal
+        status: VERIFIED
+  operations:
+    dimensionName: Operations
+    items:
+      - id: ops:health
+        monitor: System Health Check
+        status: HEALTHY
+        value: 100%
+      - id: ops:latency
+        monitor: Engine Response Latency
+        status: OPTIMAL
+        value: < 5ms
+      - id: ops:uptime
+        monitor: Operational Uptime Target
+        status: NOMINAL
+        value: 99.999%
+  marketplace:
+    dimensionName: Marketplace
+    items:
+      - id: mkt:listing
+        name: EAORCS Platform Marketplace Listing
+        status: PUBLISHED_VERIFIED
+      - id: mkt:adapters
+        name: AirRoofers Enterprise Adapter Suite
+        status: COMPATIBLE
+      - id: mkt:procurement
+        name: Automated Commercial Licensing Pipeline
+        status: READY
+graph:
+  nodes:
+    - id: prod:eaorcs
+      label: EAORCS - Enterprise AI Operational Readiness System
+      category: Product
+    - id: prod:airroofers
+      label: airroofers.eu Platform Suite
+      category: Product
+    - id: prod:convergence
+      label: convergence.airroofers.eu
+      category: Product
+    - id: cap:governance
+      label: 14 Constitutional Laws Governance
+      category: Capability
+    - id: cap:execution_graph
+      label: Deterministic Execution Graph Engine
+      category: Capability
+    - id: cap:evidence_auditing
+      label: Immutable Commercial Evidence Auditing
+      category: Capability
+    - id: cap:digital_twin
+      label: Live Dynamic Digital Twin Simulation
+      category: Capability
+    - id: cap:ai_council
+      label: AI Council Multi-Model Consensus Engine
+      category: Capability
+    - id: cap:licensing
+      label: UTCF Tiered Enterprise License Authority
+      category: Capability
+    - id: cap:surface_adapters
+      label: Dynamic Surface Experience Negotiation
+      category: Capability
+    - id: cap:security_pipeline
+      label: Zero-Trust Supply Chain Security Pipeline
+      category: Capability
+    - id: dep:node_fs
+      label: Node.js File System Module (fs)
+      category: Dependency
+    - id: dep:node_path
+      label: Node.js Path Resolution Module (path)
+      category: Dependency
+    - id: dep:node_crypto
+      label: Node.js Cryptography Module (crypto)
+      category: Dependency
+    - id: dep:node_os
+      label: Node.js OS Module (os)
+      category: Dependency
+    - id: dep:node_assert
+      label: Node.js Assertion Module (assert)
+      category: Dependency
+    - id: dep:engine_facade
+      label: EAORCS Public Engine Facade
+      category: Dependency
+    - id: gov:law1
+      label: "Law 1: Single Public Facade"
+      category: Governance
+    - id: gov:law2
+      label: "Law 2: Deterministic Execution"
+      category: Governance
+    - id: gov:law3
+      label: "Law 3: Explainable Decisions"
+      category: Governance
+    - id: gov:law4
+      label: "Law 4: Auditable Evidence"
+      category: Governance
+    - id: gov:law5
+      label: "Law 5: Reversible Modifications"
+      category: Governance
+    - id: gov:law6
+      label: "Law 6: Backward Compliance"
+      category: Governance
+    - id: gov:law7
+      label: "Law 7: Explicit Capability Contracts"
+      category: Governance
+    - id: gov:law8
+      label: "Law 8: Zero Hidden Side-Effects"
+      category: Governance
+    - id: gov:law9
+      label: "Law 9: No AI-Only Dependency"
+      category: Governance
+    - id: gov:law10
+      label: "Law 10: Reproducible Outcomes"
+      category: Governance
+    - id: gov:law11
+      label: "Law 11: Platform Parity"
+      category: Governance
+    - id: gov:law12
+      label: "Law 12: Native Surface Experience"
+      category: Governance
+    - id: gov:law13
+      label: "Law 13: Interaction Continuity"
+      category: Governance
+    - id: gov:law14
+      label: "Law 14: Rendering Neutrality"
+      category: Governance
+    - id: sec:sast
+      label: SAST Audit Verification
+      category: Security
+    - id: sec:sbom
+      label: Software Bill of Materials (SPDX)
+      category: Security
+    - id: sec:rbom
+      label: Release Bill of Materials Provenance
+      category: Security
+    - id: sec:secrets
+      label: Zero Exposed Credentials Scan
+      category: Security
+    - id: sec:headers
+      label: UAIGOS Mandatory Corporate Headers
+      category: Security
+    - id: sec:evidence
+      label: Immutable Evidence Hash Registry
+      category: Security
+    - id: deploy:dev
+      label: Development
+      category: Deployment
+    - id: deploy:staging
+      label: Staging Sandbox
+      category: Deployment
+    - id: deploy:production
+      label: Enterprise Cloud / Edge
+      category: Deployment
+    - id: lic:utcf_enterprise
+      label: UTCF Commercial Enterprise License
+      category: License
+    - id: lic:multi_tenant
+      label: Multi-Tenant OEM Distribution Right
+      category: License
+    - id: evi:manifest
+      label: EVIDENCE_MANIFEST.json
+      category: Evidence
+    - id: evi:sarif
+      label: SARIF Static Analysis Reports
+      category: Evidence
+    - id: evi:certification
+      label: Commercial Readiness Certification Seal
+      category: Evidence
+    - id: ops:health
+      label: System Health Check
+      category: Operations
+    - id: ops:latency
+      label: Engine Response Latency
+      category: Operations
+    - id: ops:uptime
+      label: Operational Uptime Target
+      category: Operations
+    - id: mkt:listing
+      label: EAORCS Platform Marketplace Listing
+      category: Marketplace
+    - id: mkt:adapters
+      label: AirRoofers Enterprise Adapter Suite
+      category: Marketplace
+    - id: mkt:procurement
+      label: Automated Commercial Licensing Pipeline
+      category: Marketplace
+  edges:
+    - source: prod:eaorcs
+      target: cap:governance
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:execution_graph
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:evidence_auditing
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:digital_twin
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:ai_council
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:licensing
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:surface_adapters
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: cap:security_pipeline
+      relation: PROVIDES_CAPABILITY
+    - source: prod:eaorcs
+      target: dep:node_fs
+      relation: REQUIRES_DEPENDENCY
+    - source: prod:eaorcs
+      target: dep:node_path
+      relation: REQUIRES_DEPENDENCY
+    - source: prod:eaorcs
+      target: dep:node_crypto
+      relation: REQUIRES_DEPENDENCY
+    - source: prod:eaorcs
+      target: dep:node_os
+      relation: REQUIRES_DEPENDENCY
+    - source: prod:eaorcs
+      target: dep:node_assert
+      relation: REQUIRES_DEPENDENCY
+    - source: prod:eaorcs
+      target: dep:engine_facade
+      relation: REQUIRES_DEPENDENCY
+    - source: prod:eaorcs
+      target: gov:law1
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law2
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law3
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law4
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law5
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law6
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law7
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law8
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law9
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law10
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law11
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law12
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law13
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: gov:law14
+      relation: ENFORCES_GOVERNANCE
+    - source: prod:eaorcs
+      target: sec:sast
+      relation: PROTECTED_BY
+    - source: prod:eaorcs
+      target: sec:sbom
+      relation: PROTECTED_BY
+    - source: prod:eaorcs
+      target: sec:rbom
+      relation: PROTECTED_BY
+    - source: prod:eaorcs
+      target: sec:secrets
+      relation: PROTECTED_BY
+    - source: prod:eaorcs
+      target: sec:headers
+      relation: PROTECTED_BY
+    - source: prod:eaorcs
+      target: sec:evidence
+      relation: PROTECTED_BY
+    - source: prod:eaorcs
+      target: deploy:dev
+      relation: TARGETS_DEPLOYMENT
+    - source: prod:eaorcs
+      target: deploy:staging
+      relation: TARGETS_DEPLOYMENT
+    - source: prod:eaorcs
+      target: deploy:production
+      relation: TARGETS_DEPLOYMENT
+    - source: prod:eaorcs
+      target: lic:utcf_enterprise
+      relation: GOVERNED_BY_LICENSE
+    - source: prod:eaorcs
+      target: lic:multi_tenant
+      relation: GOVERNED_BY_LICENSE
+    - source: prod:eaorcs
+      target: evi:manifest
+      relation: VERIFIED_BY_EVIDENCE
+    - source: prod:eaorcs
+      target: evi:sarif
+      relation: VERIFIED_BY_EVIDENCE
+    - source: prod:eaorcs
+      target: evi:certification
+      relation: VERIFIED_BY_EVIDENCE
+    - source: prod:eaorcs
+      target: ops:health
+      relation: MONITORED_BY
+    - source: prod:eaorcs
+      target: ops:latency
+      relation: MONITORED_BY
+    - source: prod:eaorcs
+      target: ops:uptime
+      relation: MONITORED_BY
+    - source: prod:eaorcs
+      target: mkt:listing
+      relation: PUBLISHED_TO
+    - source: prod:eaorcs
+      target: mkt:adapters
+      relation: PUBLISHED_TO
+    - source: prod:eaorcs
+      target: mkt:procurement
+      relation: PUBLISHED_TO
+digitalTwinHash: 6a1fc308c520008c6d14f10ba627809591d8102333de0a2d26b94724471bdd52
